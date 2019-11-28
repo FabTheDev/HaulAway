@@ -4,12 +4,7 @@
 	"Category": "",
 	"Description": "",
 	"Plugins": [
-		{
-			"Name": "OceanPlugin",
-  			"Type": "Runtime",
-  			"LoadingPhase": "PreDefault",
-  			"Enabled": true
-		}
+		
 	],
 	"TargetPlatforms": [
 		"WindowsNoEditor"
