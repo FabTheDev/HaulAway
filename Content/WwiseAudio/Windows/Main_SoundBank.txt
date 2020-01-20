@@ -1,0 +1,8 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1770734201	Play_wooden_creak2			\Default Work Unit\Play_wooden_creak2	
+	3516993385	Play_wooden_creak			\Default Work Unit\Play_wooden_creak	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	709596480	wooden_creak	D:\FabDocuments\HaulAway\HaulAwayProject\HaulAwayProject_WwiseProject\.cache\Windows\SFX\wooden_creak_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\wooden_creak		176984
+	993376183	wooden_creak2	D:\FabDocuments\HaulAway\HaulAwayProject\HaulAwayProject_WwiseProject\.cache\Windows\SFX\wooden_creak2_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\wooden_creak2		176984
+
