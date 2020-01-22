@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4ADDE529-1277-4E72-9EF3-BDCDA35E952A}" SchemaVersion="89">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{4ADDE529-1277-4E72-9EF3-BDCDA35E952A}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_wooden_creak" ID="{5C5527F9-8525-42FC-91C7-65DCFEB02B25}">
+					<ChildrenList>
+						<Action Name="" ID="{05A7DA29-1455-4A4E-A190-0E39100E7191}" ShortID="699083356">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="wooden_creak" ID="{FC40AB89-94C5-4583-8DAB-4068C477B7B4}" WorkUnitID="{CCAE097A-272F-4C63-B26B-0DFCE4DA35A7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_wooden_creak2" ID="{6951BC21-BFCF-4344-AF44-5EF2D765C458}">
+					<ChildrenList>
+						<Action Name="" ID="{761B07ED-A613-4BBC-B69A-E3089412A102}" ShortID="775583238">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="wooden_creak2" ID="{0E103BF5-2025-490A-9944-417EE34F5A33}" WorkUnitID="{CCAE097A-272F-4C63-B26B-0DFCE4DA35A7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

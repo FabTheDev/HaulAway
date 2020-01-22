@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CCAE097A-272F-4C63-B26B-0DFCE4DA35A7}" SchemaVersion="89">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{CCAE097A-272F-4C63-B26B-0DFCE4DA35A7}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="wooden_creak" ID="{FC40AB89-94C5-4583-8DAB-4068C477B7B4}" ShortID="999936176">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="wooden_creak" ID="{33F4406B-1064-48FB-8A4D-413AD64B851C}" ShortID="709596480">
+							<Language>SFX</Language>
+							<AudioFile>wooden_creak.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="wooden_creak" ID="{33F4406B-1064-48FB-8A4D-413AD64B851C}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="wooden_creak2" ID="{0E103BF5-2025-490A-9944-417EE34F5A33}" ShortID="310690118">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>-430</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="wooden_creak2" ID="{4255852B-1AEB-4284-A355-2A62ECA1B41F}" ShortID="993376183">
+							<Language>SFX</Language>
+							<AudioFile>wooden_creak2.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="wooden_creak2" ID="{4255852B-1AEB-4284-A355-2A62ECA1B41F}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
