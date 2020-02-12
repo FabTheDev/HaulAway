@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{B2EF58AA-AC08-48B1-B753-34CCFE6A3AB5}" SchemaVersion="89">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{B2EF58AA-AC08-48B1-B753-34CCFE6A3AB5}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{B2EF58AA-AC08-48B1-B753-34CCFE6A3AB5}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Character" ID="{5A05ED12-D687-4BEF-8933-E2C0FC893A25}" ShortID="1041471113">
+					<ChildrenList>
+						<Folder Name="Footsteps" ID="{DA37FB14-5DFA-484D-AAA1-0684B2FAFB16}" ShortID="878535097">
+							<ChildrenList>
+								<SwitchGroup Name="Ground_Material" ID="{4136359C-F88B-4AF0-BE30-B362A6266904}">
+									<ChildrenList>
+										<Switch Name="DryDirt" ID="{3ACDF8C5-731A-4217-817C-5A3173606D9C}"/>
+										<Switch Name="DrySand" ID="{77CC4B2A-7086-41ED-87B0-D58B7E98A792}"/>
+										<Switch Name="Grass" ID="{26A91647-F9F4-4736-A9A0-8F313994C2A3}"/>
+										<Switch Name="Gravel" ID="{8CA4851C-9E38-4DFC-BFBF-1CD6A477083B}"/>
+										<Switch Name="Ice" ID="{424DE8CD-620B-45F8-91B6-01F506C5141D}"/>
+										<Switch Name="Mud" ID="{1845DCF7-B800-4892-8D94-2146D5882FE0}"/>
+										<Switch Name="Stone" ID="{4354A1C4-0915-4AD0-BC29-9752846E4DE6}"/>
+										<Switch Name="Water" ID="{196AB4AA-232D-454E-B47B-EFA10A47FAA1}"/>
+										<Switch Name="WetSand" ID="{58FF7AD6-1DF7-4B9C-BFE8-5E82949371D7}"/>
+										<Switch Name="Wood" ID="{AD02081A-225D-437C-BF52-89E278904486}"/>
+									</ChildrenList>
+								</SwitchGroup>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{A9FC521F-7C0E-4D98-907C-357D7C17C708}" SchemaVersion="89">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{A9FC521F-7C0E-4D98-907C-357D7C17C708}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{A9FC521F-7C0E-4D98-907C-357D7C17C708}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Character" ID="{71FE3C7D-6745-473A-8945-752BD8F84E05}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Footstep" ID="{EFA52787-E6B3-4C96-A54B-1B96A6DD972E}" WorkUnitID="{4ADDE529-1277-4E72-9EF3-BDCDA35E952A}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Water_Depth" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}"/>
+							<Value>100</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Running" ID="{61C1907D-333E-446A-AFAB-F5B1780F2D3C}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="WetSand" ID="{58FF7AD6-1DF7-4B9C-BFE8-5E82949371D7}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

@@ -31,6 +31,34 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="Character" ID="{B28FECDC-EEAA-4FB8-9F93-2435152A4520}" ShortID="188282814">
+					<ChildrenList>
+						<Event Name="Play_Footstep" ID="{EFA52787-E6B3-4C96-A54B-1B96A6DD972E}">
+							<ChildrenList>
+								<Action Name="" ID="{A35047D8-45F7-42F8-AEE9-F67419F0468D}" ShortID="613017141">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Footsteps_WalkRun_SWITCH" ID="{6716A2EB-2E62-4F8C-81A2-FA9446629542}" WorkUnitID="{CCAE097A-272F-4C63-B26B-0DFCE4DA35A7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{135D357A-DC84-4D3E-960D-F0EAB2E44612}" ShortID="548970270">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Clothesteps_WalkRun_SWITCH" ID="{1F316799-5AD7-4843-A93E-61ACD7AE1BD0}" WorkUnitID="{CCAE097A-272F-4C63-B26B-0DFCE4DA35A7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="132">
 	<RootPaths>
-		<ProjectRoot>D:\FabDocuments\HaulAway\HaulAwayProject\HaulAwayProject_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\FabDocuments\HaulAway\HaulAwayProject\HaulAwayProject_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>D:\FabDocuments\HaulAway\HaulAwayProject\HaulAwayProject_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\FabDocuments\HaulAway\HaulAwayProject\HaulAwayProject_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -16,22 +16,801 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
+		<SoundBank Id="1661994096" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Soundbank</ObjectPath>
+			<ShortName>Soundbank</ShortName>
+			<Path>Soundbank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1602358412" Name="Play_Footstep" ObjectPath="\Events\Default Work Unit\Character\Play_Footstep"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="4101969" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Puddle_Run_00.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Puddle_Run_00_56D34C19.wem</Path>
+				</File>
+				<File Id="16945003" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_WaterIn_Walk_02.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_WaterIn_Walk_02_56D34C19.wem</Path>
+				</File>
+				<File Id="28871154" Language="SFX">
+					<ShortName>SFX_HA_Character_Clothes_Running_07.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Clothes_Running_07_56D34C19.wem</Path>
+				</File>
+				<File Id="36385276" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_DrySand_Run_07.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_DrySand_Run_07_56D34C19.wem</Path>
+				</File>
+				<File Id="55520995" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_DrySand_Walk_03.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_DrySand_Walk_03_56D34C19.wem</Path>
+				</File>
+				<File Id="56359513" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_WetSand_Walk_01.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_WetSand_Walk_01_56D34C19.wem</Path>
+				</File>
+				<File Id="58757605" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Puddle_Run_04.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Puddle_Run_04_56D34C19.wem</Path>
+				</File>
+				<File Id="74277112" Language="SFX">
+					<ShortName>SFX_HA_Character_Clothes_Walking_06.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Clothes_Walking_06_56D34C19.wem</Path>
+				</File>
+				<File Id="77461224" Language="SFX">
+					<ShortName>SFX_HA_Character_Clothes_Walking_04.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Clothes_Walking_04_56D34C19.wem</Path>
+				</File>
+				<File Id="80006195" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Wood_Run_04.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Wood_Run_04_56D34C19.wem</Path>
+				</File>
+				<File Id="94244851" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_DrySand_Walk_01.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_DrySand_Walk_01_56D34C19.wem</Path>
+				</File>
+				<File Id="100796695" Language="SFX">
+					<ShortName>SFX_HA_Character_Clothes_Running_00.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Clothes_Running_00_56D34C19.wem</Path>
+				</File>
+				<File Id="109065310" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Puddle_Walk_07.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Puddle_Walk_07_56D34C19.wem</Path>
+				</File>
+				<File Id="115510406" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_WaterIn_Walk_06.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_WaterIn_Walk_06_56D34C19.wem</Path>
+				</File>
+				<File Id="125845740" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Wood_Walk_03.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Wood_Walk_03_56D34C19.wem</Path>
+				</File>
+				<File Id="141863457" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_WetSand_Walk_02.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_WetSand_Walk_02_56D34C19.wem</Path>
+				</File>
+				<File Id="154959039" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Grass_Run_02.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Run_02_56D34C19.wem</Path>
+				</File>
+				<File Id="155011610" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Grass_Walk_07.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Walk_07_56D34C19.wem</Path>
+				</File>
+				<File Id="184487392" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Wood_Walk_07.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Wood_Walk_07_56D34C19.wem</Path>
+				</File>
+				<File Id="201271040" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_WetSand_Walk_03.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_WetSand_Walk_03_56D34C19.wem</Path>
+				</File>
+				<File Id="203105155" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_DrySand_Walk_05.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_DrySand_Walk_05_56D34C19.wem</Path>
+				</File>
+				<File Id="218012677" Language="SFX">
+					<ShortName>SFX_HA_Character_Clothes_Running_03.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Clothes_Running_03_56D34C19.wem</Path>
+				</File>
+				<File Id="228069452" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Wood_Run_03.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Wood_Run_03_56D34C19.wem</Path>
+				</File>
+				<File Id="253942775" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Grass_Walk_02.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Walk_02_56D34C19.wem</Path>
+				</File>
+				<File Id="254523341" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Puddle_Run_01.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Puddle_Run_01_56D34C19.wem</Path>
+				</File>
+				<File Id="258024753" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_DrySand_Walk_07.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_DrySand_Walk_07_56D34C19.wem</Path>
+				</File>
+				<File Id="259195200" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_DrySand_Run_05.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_DrySand_Run_05_56D34C19.wem</Path>
+				</File>
+				<File Id="294357935" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_DrySand_Walk_02.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_DrySand_Walk_02_56D34C19.wem</Path>
+				</File>
+				<File Id="302696958" Language="SFX">
+					<ShortName>SFX_HA_Character_Clothes_Running_06.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Clothes_Running_06_56D34C19.wem</Path>
+				</File>
+				<File Id="316274823" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_WaterIn_Walk_07.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_WaterIn_Walk_07_56D34C19.wem</Path>
+				</File>
+				<File Id="329652976" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_WetSand_Walk_04.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_WetSand_Walk_04_56D34C19.wem</Path>
+				</File>
+				<File Id="332501449" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Puddle_Walk_04.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Puddle_Walk_04_56D34C19.wem</Path>
+				</File>
+				<File Id="356297204" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Puddle_Walk_00.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Puddle_Walk_00_56D34C19.wem</Path>
+				</File>
+				<File Id="360475494" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Puddle_Walk_06.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Puddle_Walk_06_56D34C19.wem</Path>
+				</File>
+				<File Id="370388730" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_WaterIn_Walk_00.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_WaterIn_Walk_00_56D34C19.wem</Path>
+				</File>
+				<File Id="372645555" Language="SFX">
+					<ShortName>SFX_HA_Character_Clothes_Walking_02.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Clothes_Walking_02_56D34C19.wem</Path>
+				</File>
+				<File Id="388539468" Language="SFX">
+					<ShortName>SFX_HA_Character_Clothes_Walking_05.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Clothes_Walking_05_56D34C19.wem</Path>
+				</File>
+				<File Id="390985611" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_WaterIn_Walk_04.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_WaterIn_Walk_04_56D34C19.wem</Path>
+				</File>
+				<File Id="396803414" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Wood_Run_07.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Wood_Run_07_56D34C19.wem</Path>
+				</File>
+				<File Id="414801207" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Puddle_Run_05.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Puddle_Run_05_56D34C19.wem</Path>
+				</File>
+				<File Id="418290250" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Wood_Run_00.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Wood_Run_00_56D34C19.wem</Path>
+				</File>
+				<File Id="433796245" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Grass_Run_06.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Run_06_56D34C19.wem</Path>
+				</File>
+				<File Id="467738588" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Wood_Walk_01.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Wood_Walk_01_56D34C19.wem</Path>
+				</File>
+				<File Id="472594254" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_WetSand_Walk_06.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_WetSand_Walk_06_56D34C19.wem</Path>
+				</File>
+				<File Id="482602314" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Wood_Walk_00.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Wood_Walk_00_56D34C19.wem</Path>
+				</File>
+				<File Id="488409080" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_WetSand_Walk_07.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_WetSand_Walk_07_56D34C19.wem</Path>
+				</File>
+				<File Id="514965558" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Puddle_Walk_05.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Puddle_Walk_05_56D34C19.wem</Path>
+				</File>
+				<File Id="522097918" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Wood_Run_05.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Wood_Run_05_56D34C19.wem</Path>
+				</File>
+				<File Id="529331937" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_WetSand_Walk_05.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_WetSand_Walk_05_56D34C19.wem</Path>
+				</File>
+				<File Id="556366233" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Wood_Run_06.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Wood_Run_06_56D34C19.wem</Path>
+				</File>
+				<File Id="562271942" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Wood_Run_02.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Wood_Run_02_56D34C19.wem</Path>
+				</File>
+				<File Id="571565877" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_DrySand_Walk_00.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_DrySand_Walk_00_56D34C19.wem</Path>
+				</File>
+				<File Id="575501401" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Wood_Walk_04.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Wood_Walk_04_56D34C19.wem</Path>
+				</File>
+				<File Id="576926667" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Grass_Run_00.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Run_00_56D34C19.wem</Path>
+				</File>
+				<File Id="580919771" Language="SFX">
+					<ShortName>SFX_HA_Character_Clothes_Walking_03.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Clothes_Walking_03_56D34C19.wem</Path>
+				</File>
+				<File Id="583599996" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Grass_Walk_03.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Walk_03_56D34C19.wem</Path>
+				</File>
+				<File Id="586776565" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Puddle_Run_03.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Puddle_Run_03_56D34C19.wem</Path>
+				</File>
+				<File Id="597156306" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Grass_Run_03.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Run_03_56D34C19.wem</Path>
+				</File>
+				<File Id="599953954" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_DrySand_Walk_06.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_DrySand_Walk_06_56D34C19.wem</Path>
+				</File>
+				<File Id="607457752" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Puddle_Walk_01.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Puddle_Walk_01_56D34C19.wem</Path>
+				</File>
+				<File Id="622988411" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Grass_Run_05.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Run_05_56D34C19.wem</Path>
+				</File>
+				<File Id="630279414" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Grass_Run_01.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Run_01_56D34C19.wem</Path>
+				</File>
+				<File Id="660737223" Language="SFX">
+					<ShortName>SFX_HA_Character_Clothes_Running_05.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Clothes_Running_05_56D34C19.wem</Path>
+				</File>
+				<File Id="713288051" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_DrySand_Walk_04.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_DrySand_Walk_04_56D34C19.wem</Path>
+				</File>
+				<File Id="716023517" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Wood_Walk_02.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Wood_Walk_02_56D34C19.wem</Path>
+				</File>
+				<File Id="716913657" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_DrySand_Run_00.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_DrySand_Run_00_56D34C19.wem</Path>
+				</File>
+				<File Id="733835572" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Grass_Walk_06.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Walk_06_56D34C19.wem</Path>
+				</File>
+				<File Id="745756030" Language="SFX">
+					<ShortName>SFX_HA_Character_Clothes_Walking_00.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Clothes_Walking_00_56D34C19.wem</Path>
+				</File>
+				<File Id="749522484" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_DrySand_Run_04.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_DrySand_Run_04_56D34C19.wem</Path>
+				</File>
+				<File Id="779121661" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_DrySand_Run_06.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_DrySand_Run_06_56D34C19.wem</Path>
+				</File>
+				<File Id="789204039" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Puddle_Walk_03.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Puddle_Walk_03_56D34C19.wem</Path>
+				</File>
+				<File Id="792008929" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Puddle_Walk_02.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Puddle_Walk_02_56D34C19.wem</Path>
+				</File>
+				<File Id="799685926" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Wood_Walk_06.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Wood_Walk_06_56D34C19.wem</Path>
+				</File>
+				<File Id="812859158" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Grass_Walk_04.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Walk_04_56D34C19.wem</Path>
+				</File>
+				<File Id="826592745" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Wood_Walk_05.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Wood_Walk_05_56D34C19.wem</Path>
+				</File>
+				<File Id="877743677" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_DrySand_Run_01.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_DrySand_Run_01_56D34C19.wem</Path>
+				</File>
+				<File Id="888652473" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Puddle_Run_06.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Puddle_Run_06_56D34C19.wem</Path>
+				</File>
+				<File Id="894158880" Language="SFX">
+					<ShortName>SFX_HA_Character_Clothes_Running_02.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Clothes_Running_02_56D34C19.wem</Path>
+				</File>
+				<File Id="895819310" Language="SFX">
+					<ShortName>SFX_HA_Character_Clothes_Running_04.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Clothes_Running_04_56D34C19.wem</Path>
+				</File>
+				<File Id="897721645" Language="SFX">
+					<ShortName>SFX_HA_Character_Clothes_Running_01.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Clothes_Running_01_56D34C19.wem</Path>
+				</File>
+				<File Id="929774716" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Grass_Run_04.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Run_04_56D34C19.wem</Path>
+				</File>
+				<File Id="932451043" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_WaterIn_Walk_03.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_WaterIn_Walk_03_56D34C19.wem</Path>
+				</File>
+				<File Id="951306558" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Grass_Walk_00.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Walk_00_56D34C19.wem</Path>
+				</File>
+				<File Id="966571231" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_WaterIn_Walk_01.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_WaterIn_Walk_01_56D34C19.wem</Path>
+				</File>
+				<File Id="979378219" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Wood_Run_01.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Wood_Run_01_56D34C19.wem</Path>
+				</File>
+				<File Id="982538254" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Puddle_Run_02.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Puddle_Run_02_56D34C19.wem</Path>
+				</File>
+				<File Id="1015758888" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_WaterIn_Walk_05.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_WaterIn_Walk_05_56D34C19.wem</Path>
+				</File>
+				<File Id="1017991532" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_DrySand_Run_03.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_DrySand_Run_03_56D34C19.wem</Path>
+				</File>
+				<File Id="1024107810" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_DrySand_Run_02.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_DrySand_Run_02_56D34C19.wem</Path>
+				</File>
+				<File Id="1024152922" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Puddle_Run_07.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Puddle_Run_07_56D34C19.wem</Path>
+				</File>
+				<File Id="1035342194" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Grass_Run_07.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Run_07_56D34C19.wem</Path>
+				</File>
+				<File Id="1037438952" Language="SFX">
+					<ShortName>SFX_HA_Character_Clothes_Walking_07.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Clothes_Walking_07_56D34C19.wem</Path>
+				</File>
+				<File Id="1039157740" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Grass_Walk_05.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Walk_05_56D34C19.wem</Path>
+				</File>
+				<File Id="1066574610" Language="SFX">
+					<ShortName>SFX_HA_Character_Clothes_Walking_01.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Clothes_Walking_01_56D34C19.wem</Path>
+				</File>
+				<File Id="1066810180" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_WetSand_Walk_00.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_WetSand_Walk_00_56D34C19.wem</Path>
+				</File>
+				<File Id="1072088521" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Grass_Walk_01.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Walk_01_56D34C19.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
 		<SoundBank Id="2228651116" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main_SoundBank</ObjectPath>
 			<ShortName>Main_SoundBank</ShortName>
 			<Path>Main_SoundBank.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1602358412" Name="Play_Footstep" ObjectPath="\Events\Default Work Unit\Character\Play_Footstep"/>
 				<Event Id="3516993385" Name="Play_wooden_creak" ObjectPath="\Events\Default Work Unit\Play_wooden_creak"/>
 				<Event Id="1770734201" Name="Play_wooden_creak2" ObjectPath="\Events\Default Work Unit\Play_wooden_creak2"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="4101969" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Puddle_Run_00.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Puddle_Run_00_56D34C19.wem</Path>
+				</File>
+				<File Id="16945003" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_WaterIn_Walk_02.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_WaterIn_Walk_02_56D34C19.wem</Path>
+				</File>
+				<File Id="28871154" Language="SFX">
+					<ShortName>SFX_HA_Character_Clothes_Running_07.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Clothes_Running_07_56D34C19.wem</Path>
+				</File>
+				<File Id="36385276" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_DrySand_Run_07.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_DrySand_Run_07_56D34C19.wem</Path>
+				</File>
+				<File Id="55520995" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_DrySand_Walk_03.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_DrySand_Walk_03_56D34C19.wem</Path>
+				</File>
+				<File Id="56359513" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_WetSand_Walk_01.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_WetSand_Walk_01_56D34C19.wem</Path>
+				</File>
+				<File Id="58757605" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Puddle_Run_04.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Puddle_Run_04_56D34C19.wem</Path>
+				</File>
+				<File Id="74277112" Language="SFX">
+					<ShortName>SFX_HA_Character_Clothes_Walking_06.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Clothes_Walking_06_56D34C19.wem</Path>
+				</File>
+				<File Id="77461224" Language="SFX">
+					<ShortName>SFX_HA_Character_Clothes_Walking_04.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Clothes_Walking_04_56D34C19.wem</Path>
+				</File>
+				<File Id="80006195" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Wood_Run_04.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Wood_Run_04_56D34C19.wem</Path>
+				</File>
+				<File Id="94244851" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_DrySand_Walk_01.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_DrySand_Walk_01_56D34C19.wem</Path>
+				</File>
+				<File Id="100796695" Language="SFX">
+					<ShortName>SFX_HA_Character_Clothes_Running_00.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Clothes_Running_00_56D34C19.wem</Path>
+				</File>
+				<File Id="109065310" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Puddle_Walk_07.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Puddle_Walk_07_56D34C19.wem</Path>
+				</File>
+				<File Id="115510406" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_WaterIn_Walk_06.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_WaterIn_Walk_06_56D34C19.wem</Path>
+				</File>
+				<File Id="125845740" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Wood_Walk_03.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Wood_Walk_03_56D34C19.wem</Path>
+				</File>
+				<File Id="141863457" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_WetSand_Walk_02.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_WetSand_Walk_02_56D34C19.wem</Path>
+				</File>
+				<File Id="154959039" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Grass_Run_02.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Run_02_56D34C19.wem</Path>
+				</File>
+				<File Id="155011610" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Grass_Walk_07.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Walk_07_56D34C19.wem</Path>
+				</File>
+				<File Id="184487392" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Wood_Walk_07.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Wood_Walk_07_56D34C19.wem</Path>
+				</File>
+				<File Id="201271040" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_WetSand_Walk_03.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_WetSand_Walk_03_56D34C19.wem</Path>
+				</File>
+				<File Id="203105155" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_DrySand_Walk_05.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_DrySand_Walk_05_56D34C19.wem</Path>
+				</File>
+				<File Id="218012677" Language="SFX">
+					<ShortName>SFX_HA_Character_Clothes_Running_03.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Clothes_Running_03_56D34C19.wem</Path>
+				</File>
+				<File Id="228069452" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Wood_Run_03.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Wood_Run_03_56D34C19.wem</Path>
+				</File>
+				<File Id="253942775" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Grass_Walk_02.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Walk_02_56D34C19.wem</Path>
+				</File>
+				<File Id="254523341" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Puddle_Run_01.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Puddle_Run_01_56D34C19.wem</Path>
+				</File>
+				<File Id="258024753" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_DrySand_Walk_07.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_DrySand_Walk_07_56D34C19.wem</Path>
+				</File>
+				<File Id="259195200" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_DrySand_Run_05.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_DrySand_Run_05_56D34C19.wem</Path>
+				</File>
+				<File Id="294357935" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_DrySand_Walk_02.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_DrySand_Walk_02_56D34C19.wem</Path>
+				</File>
+				<File Id="302696958" Language="SFX">
+					<ShortName>SFX_HA_Character_Clothes_Running_06.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Clothes_Running_06_56D34C19.wem</Path>
+				</File>
+				<File Id="316274823" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_WaterIn_Walk_07.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_WaterIn_Walk_07_56D34C19.wem</Path>
+				</File>
+				<File Id="329652976" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_WetSand_Walk_04.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_WetSand_Walk_04_56D34C19.wem</Path>
+				</File>
+				<File Id="332501449" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Puddle_Walk_04.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Puddle_Walk_04_56D34C19.wem</Path>
+				</File>
+				<File Id="356297204" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Puddle_Walk_00.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Puddle_Walk_00_56D34C19.wem</Path>
+				</File>
+				<File Id="360475494" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Puddle_Walk_06.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Puddle_Walk_06_56D34C19.wem</Path>
+				</File>
+				<File Id="370388730" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_WaterIn_Walk_00.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_WaterIn_Walk_00_56D34C19.wem</Path>
+				</File>
+				<File Id="372645555" Language="SFX">
+					<ShortName>SFX_HA_Character_Clothes_Walking_02.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Clothes_Walking_02_56D34C19.wem</Path>
+				</File>
+				<File Id="388539468" Language="SFX">
+					<ShortName>SFX_HA_Character_Clothes_Walking_05.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Clothes_Walking_05_56D34C19.wem</Path>
+				</File>
+				<File Id="390985611" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_WaterIn_Walk_04.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_WaterIn_Walk_04_56D34C19.wem</Path>
+				</File>
+				<File Id="396803414" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Wood_Run_07.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Wood_Run_07_56D34C19.wem</Path>
+				</File>
+				<File Id="414801207" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Puddle_Run_05.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Puddle_Run_05_56D34C19.wem</Path>
+				</File>
+				<File Id="418290250" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Wood_Run_00.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Wood_Run_00_56D34C19.wem</Path>
+				</File>
+				<File Id="433796245" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Grass_Run_06.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Run_06_56D34C19.wem</Path>
+				</File>
+				<File Id="467738588" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Wood_Walk_01.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Wood_Walk_01_56D34C19.wem</Path>
+				</File>
+				<File Id="472594254" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_WetSand_Walk_06.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_WetSand_Walk_06_56D34C19.wem</Path>
+				</File>
+				<File Id="482602314" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Wood_Walk_00.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Wood_Walk_00_56D34C19.wem</Path>
+				</File>
+				<File Id="488409080" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_WetSand_Walk_07.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_WetSand_Walk_07_56D34C19.wem</Path>
+				</File>
+				<File Id="514965558" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Puddle_Walk_05.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Puddle_Walk_05_56D34C19.wem</Path>
+				</File>
+				<File Id="522097918" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Wood_Run_05.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Wood_Run_05_56D34C19.wem</Path>
+				</File>
+				<File Id="529331937" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_WetSand_Walk_05.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_WetSand_Walk_05_56D34C19.wem</Path>
+				</File>
+				<File Id="556366233" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Wood_Run_06.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Wood_Run_06_56D34C19.wem</Path>
+				</File>
+				<File Id="562271942" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Wood_Run_02.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Wood_Run_02_56D34C19.wem</Path>
+				</File>
+				<File Id="571565877" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_DrySand_Walk_00.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_DrySand_Walk_00_56D34C19.wem</Path>
+				</File>
+				<File Id="575501401" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Wood_Walk_04.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Wood_Walk_04_56D34C19.wem</Path>
+				</File>
+				<File Id="576926667" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Grass_Run_00.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Run_00_56D34C19.wem</Path>
+				</File>
+				<File Id="580919771" Language="SFX">
+					<ShortName>SFX_HA_Character_Clothes_Walking_03.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Clothes_Walking_03_56D34C19.wem</Path>
+				</File>
+				<File Id="583599996" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Grass_Walk_03.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Walk_03_56D34C19.wem</Path>
+				</File>
+				<File Id="586776565" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Puddle_Run_03.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Puddle_Run_03_56D34C19.wem</Path>
+				</File>
+				<File Id="597156306" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Grass_Run_03.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Run_03_56D34C19.wem</Path>
+				</File>
+				<File Id="599953954" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_DrySand_Walk_06.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_DrySand_Walk_06_56D34C19.wem</Path>
+				</File>
+				<File Id="607457752" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Puddle_Walk_01.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Puddle_Walk_01_56D34C19.wem</Path>
+				</File>
+				<File Id="622988411" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Grass_Run_05.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Run_05_56D34C19.wem</Path>
+				</File>
+				<File Id="630279414" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Grass_Run_01.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Run_01_56D34C19.wem</Path>
+				</File>
+				<File Id="660737223" Language="SFX">
+					<ShortName>SFX_HA_Character_Clothes_Running_05.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Clothes_Running_05_56D34C19.wem</Path>
+				</File>
 				<File Id="709596480" Language="SFX">
 					<ShortName>wooden_creak.wav</ShortName>
 					<Path>SFX\wooden_creak_56D34C19.wem</Path>
 				</File>
+				<File Id="713288051" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_DrySand_Walk_04.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_DrySand_Walk_04_56D34C19.wem</Path>
+				</File>
+				<File Id="716023517" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Wood_Walk_02.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Wood_Walk_02_56D34C19.wem</Path>
+				</File>
+				<File Id="716913657" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_DrySand_Run_00.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_DrySand_Run_00_56D34C19.wem</Path>
+				</File>
+				<File Id="733835572" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Grass_Walk_06.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Walk_06_56D34C19.wem</Path>
+				</File>
+				<File Id="745756030" Language="SFX">
+					<ShortName>SFX_HA_Character_Clothes_Walking_00.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Clothes_Walking_00_56D34C19.wem</Path>
+				</File>
+				<File Id="749522484" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_DrySand_Run_04.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_DrySand_Run_04_56D34C19.wem</Path>
+				</File>
+				<File Id="779121661" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_DrySand_Run_06.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_DrySand_Run_06_56D34C19.wem</Path>
+				</File>
+				<File Id="789204039" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Puddle_Walk_03.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Puddle_Walk_03_56D34C19.wem</Path>
+				</File>
+				<File Id="792008929" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Puddle_Walk_02.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Puddle_Walk_02_56D34C19.wem</Path>
+				</File>
+				<File Id="799685926" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Wood_Walk_06.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Wood_Walk_06_56D34C19.wem</Path>
+				</File>
+				<File Id="812859158" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Grass_Walk_04.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Walk_04_56D34C19.wem</Path>
+				</File>
+				<File Id="826592745" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Wood_Walk_05.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Wood_Walk_05_56D34C19.wem</Path>
+				</File>
+				<File Id="877743677" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_DrySand_Run_01.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_DrySand_Run_01_56D34C19.wem</Path>
+				</File>
+				<File Id="888652473" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Puddle_Run_06.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Puddle_Run_06_56D34C19.wem</Path>
+				</File>
+				<File Id="894158880" Language="SFX">
+					<ShortName>SFX_HA_Character_Clothes_Running_02.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Clothes_Running_02_56D34C19.wem</Path>
+				</File>
+				<File Id="895819310" Language="SFX">
+					<ShortName>SFX_HA_Character_Clothes_Running_04.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Clothes_Running_04_56D34C19.wem</Path>
+				</File>
+				<File Id="897721645" Language="SFX">
+					<ShortName>SFX_HA_Character_Clothes_Running_01.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Clothes_Running_01_56D34C19.wem</Path>
+				</File>
+				<File Id="929774716" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Grass_Run_04.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Run_04_56D34C19.wem</Path>
+				</File>
+				<File Id="932451043" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_WaterIn_Walk_03.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_WaterIn_Walk_03_56D34C19.wem</Path>
+				</File>
+				<File Id="951306558" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Grass_Walk_00.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Walk_00_56D34C19.wem</Path>
+				</File>
+				<File Id="966571231" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_WaterIn_Walk_01.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_WaterIn_Walk_01_56D34C19.wem</Path>
+				</File>
+				<File Id="979378219" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Wood_Run_01.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Wood_Run_01_56D34C19.wem</Path>
+				</File>
+				<File Id="982538254" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Puddle_Run_02.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Puddle_Run_02_56D34C19.wem</Path>
+				</File>
 				<File Id="993376183" Language="SFX">
 					<ShortName>wooden_creak2.wav</ShortName>
 					<Path>SFX\wooden_creak2_56D34C19.wem</Path>
+				</File>
+				<File Id="1015758888" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_WaterIn_Walk_05.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_WaterIn_Walk_05_56D34C19.wem</Path>
+				</File>
+				<File Id="1017991532" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_DrySand_Run_03.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_DrySand_Run_03_56D34C19.wem</Path>
+				</File>
+				<File Id="1024107810" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_DrySand_Run_02.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_DrySand_Run_02_56D34C19.wem</Path>
+				</File>
+				<File Id="1024152922" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Puddle_Run_07.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Puddle_Run_07_56D34C19.wem</Path>
+				</File>
+				<File Id="1035342194" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Grass_Run_07.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Run_07_56D34C19.wem</Path>
+				</File>
+				<File Id="1037438952" Language="SFX">
+					<ShortName>SFX_HA_Character_Clothes_Walking_07.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Clothes_Walking_07_56D34C19.wem</Path>
+				</File>
+				<File Id="1039157740" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Grass_Walk_05.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Walk_05_56D34C19.wem</Path>
+				</File>
+				<File Id="1066574610" Language="SFX">
+					<ShortName>SFX_HA_Character_Clothes_Walking_01.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Clothes_Walking_01_56D34C19.wem</Path>
+				</File>
+				<File Id="1066810180" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_WetSand_Walk_00.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_WetSand_Walk_00_56D34C19.wem</Path>
+				</File>
+				<File Id="1072088521" Language="SFX">
+					<ShortName>SFX_HA_Character_Footsteps_Grass_Walk_01.wav</ShortName>
+					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Walk_01_56D34C19.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

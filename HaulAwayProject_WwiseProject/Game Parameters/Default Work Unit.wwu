@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{1A7FBC17-7773-4724-AF80-50744009062C}" SchemaVersion="89">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{1A7FBC17-7773-4724-AF80-50744009062C}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{1A7FBC17-7773-4724-AF80-50744009062C}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Character" ID="{6B4E8EAA-655F-4DCA-A6CA-D5C874187A86}" ShortID="374288394">
+					<ChildrenList>
+						<GameParameter Name="Water_Depth" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>
