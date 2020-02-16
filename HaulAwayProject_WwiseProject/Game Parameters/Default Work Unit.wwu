@@ -5,7 +5,12 @@
 			<ChildrenList>
 				<Folder Name="Character" ID="{6B4E8EAA-655F-4DCA-A6CA-D5C874187A86}" ShortID="374288394">
 					<ChildrenList>
-						<GameParameter Name="Water_Depth" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}">
+						<GameParameter Name="Water_Depth_Left" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="Water_Depth_Right" ID="{E620FFDB-2280-4F9C-A0A5-E36477031F5F}">
 							<PropertyList>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
 							</PropertyList>

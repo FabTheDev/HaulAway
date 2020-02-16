@@ -3,52 +3,10 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{CCAE097A-272F-4C63-B26B-0DFCE4DA35A7}" PersistMode="Standalone">
 			<ChildrenList>
-				<Sound Name="wooden_creak" ID="{FC40AB89-94C5-4583-8DAB-4068C477B7B4}" ShortID="999936176">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="wooden_creak" ID="{33F4406B-1064-48FB-8A4D-413AD64B851C}" ShortID="709596480">
-							<Language>SFX</Language>
-							<AudioFile>wooden_creak.wav</AudioFile>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="wooden_creak" ID="{33F4406B-1064-48FB-8A4D-413AD64B851C}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="wooden_creak2" ID="{0E103BF5-2025-490A-9944-417EE34F5A33}" ShortID="310690118">
-					<PropertyList>
-						<Property Name="Pitch" Type="int32">
-							<ValueList>
-								<Value>-430</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="wooden_creak2" ID="{4255852B-1AEB-4284-A355-2A62ECA1B41F}" ShortID="993376183">
-							<Language>SFX</Language>
-							<AudioFile>wooden_creak2.wav</AudioFile>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="wooden_creak2" ID="{4255852B-1AEB-4284-A355-2A62ECA1B41F}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<ActorMixer Name="Character" ID="{4AF79BA2-2E3F-4A78-B63C-4FB61396ABEE}" ShortID="69315734">
+					<PropertyList>
+						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
@@ -1272,7 +1230,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="LayerCrossFadeControlInput">
-															<ObjectRef Name="Water_Depth" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+															<ObjectRef Name="Water_Depth_Left" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
 														</Reference>
 													</ReferenceList>
 													<BlendTrackAssocList>
@@ -1402,7 +1360,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
 										</Reference>
 										<Reference Name="DefaultSwitchOrState">
-											<ObjectRef Name="DrySand" ID="{77CC4B2A-7086-41ED-87B0-D58B7E98A792}" WorkUnitID="{B2EF58AA-AC08-48B1-B753-34CCFE6A3AB5}"/>
+											<ObjectRef Name="WetSand" ID="{58FF7AD6-1DF7-4B9C-BFE8-5E82949371D7}" WorkUnitID="{B2EF58AA-AC08-48B1-B753-34CCFE6A3AB5}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
@@ -2154,7 +2112,7 @@
 												</Reference>
 											</ReferenceList>
 										</RandomSequenceContainer>
-										<BlendContainer Name="Fttps_WaterDepth_Run_BLEND" ID="{7102EC1C-FDF7-4089-9005-7CF68DD86A9B}" ShortID="613107960">
+										<RandomSequenceContainer Name="Fttps_LR_Water_Run_SEQ" ID="{25C443C1-BF5D-4F66-AD2A-96EFECB69580}" ShortID="592873743">
 											<PropertyList>
 												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
@@ -2163,6 +2121,7 @@
 														<Value>2</Value>
 													</ValueList>
 												</Property>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 												<Property Name="UseMaxSoundPerInstance" Type="bool">
 													<ValueList>
 														<Value>True</Value>
@@ -2178,188 +2137,15 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<RandomSequenceContainer Name="Fttps_Puddle_Run_RND" ID="{560204D2-1BD4-4EB8-9BF3-13251C51CB1A}" ShortID="238029512">
+												<BlendContainer Name="Fttps_WaterLeft_Run_BLEND" ID="{7102EC1C-FDF7-4089-9005-7CF68DD86A9B}" ShortID="613107960">
 													<PropertyList>
-														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<Sound Name="SFX_HA_Character_Footsteps_Puddle_Run_00" ID="{FF678E9A-367A-4310-9900-424F85F641BD}" ShortID="79340136">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_00" ID="{6B3785B2-465E-4636-B992-1339569C7701}" ShortID="4101969">
-																	<Language>SFX</Language>
-																	<AudioFile>SFX_HA_Character_Footsteps_Puddle_Run_00.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="SFX_HA_Character_Footsteps_Puddle_Run_00" ID="{6B3785B2-465E-4636-B992-1339569C7701}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="SFX_HA_Character_Footsteps_Puddle_Run_01" ID="{7EA79BAA-B0DC-4980-BCF4-36EDD1649502}" ShortID="356034925">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_01" ID="{4C29A5C4-547E-4AEB-A223-F348CE3E9C65}" ShortID="254523341">
-																	<Language>SFX</Language>
-																	<AudioFile>SFX_HA_Character_Footsteps_Puddle_Run_01.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="SFX_HA_Character_Footsteps_Puddle_Run_01" ID="{4C29A5C4-547E-4AEB-A223-F348CE3E9C65}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="SFX_HA_Character_Footsteps_Puddle_Run_02" ID="{EFE0146A-E843-4759-AC11-7175DFB84E60}" ShortID="802897691">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_02" ID="{18DA89C3-9D3A-40CC-BBA7-43A4F8A6C899}" ShortID="982538254">
-																	<Language>SFX</Language>
-																	<AudioFile>SFX_HA_Character_Footsteps_Puddle_Run_02.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="SFX_HA_Character_Footsteps_Puddle_Run_02" ID="{18DA89C3-9D3A-40CC-BBA7-43A4F8A6C899}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="SFX_HA_Character_Footsteps_Puddle_Run_03" ID="{15E900FA-4440-40CC-A267-4C041D0C4E6A}" ShortID="970522648">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_03" ID="{6E4EA437-00D2-46D9-B2D8-5459E1E23BFC}" ShortID="586776565">
-																	<Language>SFX</Language>
-																	<AudioFile>SFX_HA_Character_Footsteps_Puddle_Run_03.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="SFX_HA_Character_Footsteps_Puddle_Run_03" ID="{6E4EA437-00D2-46D9-B2D8-5459E1E23BFC}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="SFX_HA_Character_Footsteps_Puddle_Run_04" ID="{CFD80BE0-30D1-417A-8EE9-DD008D6CE543}" ShortID="902924587">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_04" ID="{A49A0B05-8599-4F1D-BC52-7672F36BB77D}" ShortID="58757605">
-																	<Language>SFX</Language>
-																	<AudioFile>SFX_HA_Character_Footsteps_Puddle_Run_04.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="SFX_HA_Character_Footsteps_Puddle_Run_04" ID="{A49A0B05-8599-4F1D-BC52-7672F36BB77D}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="SFX_HA_Character_Footsteps_Puddle_Run_05" ID="{E9329D15-C4EA-4058-8D5A-F68A5C3A9690}" ShortID="307728382">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_05" ID="{5D6F339F-E559-4C46-AC41-33BEC226EA94}" ShortID="414801207">
-																	<Language>SFX</Language>
-																	<AudioFile>SFX_HA_Character_Footsteps_Puddle_Run_05.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="SFX_HA_Character_Footsteps_Puddle_Run_05" ID="{5D6F339F-E559-4C46-AC41-33BEC226EA94}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="SFX_HA_Character_Footsteps_Puddle_Run_06" ID="{502750D2-B82C-43B9-BC8C-BC2CAB9152E8}" ShortID="323363621">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_06" ID="{3DD8727F-DD75-4BF9-9273-16EE84037299}" ShortID="888652473">
-																	<Language>SFX</Language>
-																	<AudioFile>SFX_HA_Character_Footsteps_Puddle_Run_06.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="SFX_HA_Character_Footsteps_Puddle_Run_06" ID="{3DD8727F-DD75-4BF9-9273-16EE84037299}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="SFX_HA_Character_Footsteps_Puddle_Run_07" ID="{1BEEE903-7202-4FD0-9C62-24945A4D961A}" ShortID="339434472">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_07" ID="{2217A724-87CB-40D5-B662-80FB872EB2B7}" ShortID="1024152922">
-																	<Language>SFX</Language>
-																	<AudioFile>SFX_HA_Character_Footsteps_Puddle_Run_07.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="SFX_HA_Character_Footsteps_Puddle_Run_07" ID="{2217A724-87CB-40D5-B662-80FB872EB2B7}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-													</ChildrenList>
-												</RandomSequenceContainer>
-												<RandomSequenceContainer Name="Fttps_WaterIn_Run_RND" ID="{AA968715-A55D-412A-B1D8-1A177A530BF3}" ShortID="954830287">
-													<PropertyList>
-														<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 														<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 														<Property Name="MaxSoundPerInstance" Type="int16">
 															<ValueList>
 																<Value>2</Value>
 															</ValueList>
 														</Property>
-														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
-														<Property Name="UseMaxSoundPerInstance" Type="bool">
-															<ValueList>
-																<Value>True</Value>
-															</ValueList>
-														</Property>
+														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
@@ -2370,11 +2156,188 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<Sound Name="SFX_HA_Character_Footsteps_WaterIn_Run_00" ID="{23199F56-BC24-4690-9A2D-EB6BA29F9D5B}" ShortID="511693582">
+														<RandomSequenceContainer Name="Fttps_Puddle_Run_RND" ID="{560204D2-1BD4-4EB8-9BF3-13251C51CB1A}" ShortID="238029512">
 															<PropertyList>
-																<Property Name="Volume" Type="Real64">
+																<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+																<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="SFX_HA_Character_Footsteps_Puddle_Run_00" ID="{FF678E9A-367A-4310-9900-424F85F641BD}" ShortID="79340136">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_00" ID="{6B3785B2-465E-4636-B992-1339569C7701}" ShortID="4101969">
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_Character_Footsteps_Puddle_Run_00.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_Character_Footsteps_Puddle_Run_00" ID="{6B3785B2-465E-4636-B992-1339569C7701}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_Character_Footsteps_Puddle_Run_01" ID="{7EA79BAA-B0DC-4980-BCF4-36EDD1649502}" ShortID="356034925">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_01" ID="{4C29A5C4-547E-4AEB-A223-F348CE3E9C65}" ShortID="254523341">
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_Character_Footsteps_Puddle_Run_01.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_Character_Footsteps_Puddle_Run_01" ID="{4C29A5C4-547E-4AEB-A223-F348CE3E9C65}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_Character_Footsteps_Puddle_Run_02" ID="{EFE0146A-E843-4759-AC11-7175DFB84E60}" ShortID="802897691">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_02" ID="{18DA89C3-9D3A-40CC-BBA7-43A4F8A6C899}" ShortID="982538254">
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_Character_Footsteps_Puddle_Run_02.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_Character_Footsteps_Puddle_Run_02" ID="{18DA89C3-9D3A-40CC-BBA7-43A4F8A6C899}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_Character_Footsteps_Puddle_Run_03" ID="{15E900FA-4440-40CC-A267-4C041D0C4E6A}" ShortID="970522648">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_03" ID="{6E4EA437-00D2-46D9-B2D8-5459E1E23BFC}" ShortID="586776565">
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_Character_Footsteps_Puddle_Run_03.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_Character_Footsteps_Puddle_Run_03" ID="{6E4EA437-00D2-46D9-B2D8-5459E1E23BFC}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_Character_Footsteps_Puddle_Run_04" ID="{CFD80BE0-30D1-417A-8EE9-DD008D6CE543}" ShortID="902924587">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_04" ID="{A49A0B05-8599-4F1D-BC52-7672F36BB77D}" ShortID="58757605">
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_Character_Footsteps_Puddle_Run_04.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_Character_Footsteps_Puddle_Run_04" ID="{A49A0B05-8599-4F1D-BC52-7672F36BB77D}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_Character_Footsteps_Puddle_Run_05" ID="{E9329D15-C4EA-4058-8D5A-F68A5C3A9690}" ShortID="307728382">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_05" ID="{5D6F339F-E559-4C46-AC41-33BEC226EA94}" ShortID="414801207">
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_Character_Footsteps_Puddle_Run_05.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_Character_Footsteps_Puddle_Run_05" ID="{5D6F339F-E559-4C46-AC41-33BEC226EA94}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_Character_Footsteps_Puddle_Run_06" ID="{502750D2-B82C-43B9-BC8C-BC2CAB9152E8}" ShortID="323363621">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_06" ID="{3DD8727F-DD75-4BF9-9273-16EE84037299}" ShortID="888652473">
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_Character_Footsteps_Puddle_Run_06.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_Character_Footsteps_Puddle_Run_06" ID="{3DD8727F-DD75-4BF9-9273-16EE84037299}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_Character_Footsteps_Puddle_Run_07" ID="{1BEEE903-7202-4FD0-9C62-24945A4D961A}" ShortID="339434472">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_07" ID="{2217A724-87CB-40D5-B662-80FB872EB2B7}" ShortID="1024152922">
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_Character_Footsteps_Puddle_Run_07.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_Character_Footsteps_Puddle_Run_07" ID="{2217A724-87CB-40D5-B662-80FB872EB2B7}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+														</RandomSequenceContainer>
+														<RandomSequenceContainer Name="Fttps_WaterIn_Run_RND" ID="{AA968715-A55D-412A-B1D8-1A177A530BF3}" ShortID="954830287">
+															<PropertyList>
+																<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+																<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+																<Property Name="MaxSoundPerInstance" Type="int16">
 																	<ValueList>
-																		<Value>10</Value>
+																		<Value>2</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+																<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+																<Property Name="UseMaxSoundPerInstance" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -2387,241 +2350,922 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_00" ID="{7F029D0B-7F34-4E9E-BCFC-A3C1AF6FF01D}" ShortID="85024138">
-																	<Language>SFX</Language>
-																	<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_00.wav</AudioFile>
-																</AudioFileSource>
+																<Sound Name="SFX_HA_Character_Footsteps_WaterIn_Run_00" ID="{23199F56-BC24-4690-9A2D-EB6BA29F9D5B}" ShortID="511693582">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>10</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_00" ID="{7F029D0B-7F34-4E9E-BCFC-A3C1AF6FF01D}" ShortID="85024138">
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_00.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_00" ID="{7F029D0B-7F34-4E9E-BCFC-A3C1AF6FF01D}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_Character_Footsteps_WaterIn_Run_01" ID="{A1B12AD0-9EA0-4488-97B2-19138C2C1226}" ShortID="519295108">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>10</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_01" ID="{92387DF4-0DA8-4ED1-814E-552BD6C9744B}" ShortID="799387833">
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_01.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_01" ID="{92387DF4-0DA8-4ED1-814E-552BD6C9744B}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_Character_Footsteps_WaterIn_Run_02" ID="{1D9C0742-E729-4C9D-808A-00484A8D317E}" ShortID="610987544">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>10</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_02" ID="{4BAA0FCD-9545-4AEA-B188-04F5DC0A7A0A}" ShortID="789268961">
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_02.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_02" ID="{4BAA0FCD-9545-4AEA-B188-04F5DC0A7A0A}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_Character_Footsteps_WaterIn_Run_03" ID="{E96F02E5-A6A3-4BE6-A68E-780C7F58A683}" ShortID="82804934">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>10</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_03" ID="{4B18E4B6-2E7E-4018-83D0-1B3131301E06}" ShortID="502448179">
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_03.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_03" ID="{4B18E4B6-2E7E-4018-83D0-1B3131301E06}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_Character_Footsteps_WaterIn_Run_04" ID="{BF9C9152-9598-4CEF-8941-DC692D9AF62B}" ShortID="672528420">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>10</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_04" ID="{9B08D8EB-E6D5-437B-93C8-47B917CF1ED7}" ShortID="433412623">
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_04.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_04" ID="{9B08D8EB-E6D5-437B-93C8-47B917CF1ED7}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_Character_Footsteps_WaterIn_Run_05" ID="{8D47F31D-0FA4-4EB4-A270-42F8B8312321}" ShortID="118115716">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>10</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_05" ID="{E24B886A-D2C6-49AA-930A-F55A393D0965}" ShortID="843620571">
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_05.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_05" ID="{E24B886A-D2C6-49AA-930A-F55A393D0965}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_Character_Footsteps_WaterIn_Run_06" ID="{3A21E1C8-F0DD-47BF-9AA7-73193673155A}" ShortID="76058640">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>10</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_06" ID="{E6847EAB-6764-4ECB-80CE-4917A558903A}" ShortID="677916102">
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_06.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_06" ID="{E6847EAB-6764-4ECB-80CE-4917A558903A}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_Character_Footsteps_WaterIn_Run_07" ID="{D814D034-552A-4F58-8B61-96CDA293A17C}" ShortID="179494877">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>10</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_07" ID="{B5B6612F-6F7C-415F-ABDE-71C6FFB9EB56}" ShortID="72944737">
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_07.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_07" ID="{B5B6612F-6F7C-415F-ABDE-71C6FFB9EB56}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
 															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_00" ID="{7F029D0B-7F34-4E9E-BCFC-A3C1AF6FF01D}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="SFX_HA_Character_Footsteps_WaterIn_Run_01" ID="{A1B12AD0-9EA0-4488-97B2-19138C2C1226}" ShortID="519295108">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64">
-																	<ValueList>
-																		<Value>10</Value>
-																	</ValueList>
-																</Property>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_01" ID="{92387DF4-0DA8-4ED1-814E-552BD6C9744B}" ShortID="799387833">
-																	<Language>SFX</Language>
-																	<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_01.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_01" ID="{92387DF4-0DA8-4ED1-814E-552BD6C9744B}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="SFX_HA_Character_Footsteps_WaterIn_Run_02" ID="{1D9C0742-E729-4C9D-808A-00484A8D317E}" ShortID="610987544">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64">
-																	<ValueList>
-																		<Value>10</Value>
-																	</ValueList>
-																</Property>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_02" ID="{4BAA0FCD-9545-4AEA-B188-04F5DC0A7A0A}" ShortID="789268961">
-																	<Language>SFX</Language>
-																	<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_02.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_02" ID="{4BAA0FCD-9545-4AEA-B188-04F5DC0A7A0A}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="SFX_HA_Character_Footsteps_WaterIn_Run_03" ID="{E96F02E5-A6A3-4BE6-A68E-780C7F58A683}" ShortID="82804934">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64">
-																	<ValueList>
-																		<Value>10</Value>
-																	</ValueList>
-																</Property>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_03" ID="{4B18E4B6-2E7E-4018-83D0-1B3131301E06}" ShortID="502448179">
-																	<Language>SFX</Language>
-																	<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_03.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_03" ID="{4B18E4B6-2E7E-4018-83D0-1B3131301E06}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="SFX_HA_Character_Footsteps_WaterIn_Run_04" ID="{BF9C9152-9598-4CEF-8941-DC692D9AF62B}" ShortID="672528420">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64">
-																	<ValueList>
-																		<Value>10</Value>
-																	</ValueList>
-																</Property>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_04" ID="{9B08D8EB-E6D5-437B-93C8-47B917CF1ED7}" ShortID="433412623">
-																	<Language>SFX</Language>
-																	<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_04.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_04" ID="{9B08D8EB-E6D5-437B-93C8-47B917CF1ED7}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="SFX_HA_Character_Footsteps_WaterIn_Run_05" ID="{8D47F31D-0FA4-4EB4-A270-42F8B8312321}" ShortID="118115716">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64">
-																	<ValueList>
-																		<Value>10</Value>
-																	</ValueList>
-																</Property>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_05" ID="{E24B886A-D2C6-49AA-930A-F55A393D0965}" ShortID="843620571">
-																	<Language>SFX</Language>
-																	<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_05.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_05" ID="{E24B886A-D2C6-49AA-930A-F55A393D0965}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="SFX_HA_Character_Footsteps_WaterIn_Run_06" ID="{3A21E1C8-F0DD-47BF-9AA7-73193673155A}" ShortID="76058640">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64">
-																	<ValueList>
-																		<Value>10</Value>
-																	</ValueList>
-																</Property>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_06" ID="{E6847EAB-6764-4ECB-80CE-4917A558903A}" ShortID="677916102">
-																	<Language>SFX</Language>
-																	<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_06.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_06" ID="{E6847EAB-6764-4ECB-80CE-4917A558903A}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="SFX_HA_Character_Footsteps_WaterIn_Run_07" ID="{D814D034-552A-4F58-8B61-96CDA293A17C}" ShortID="179494877">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64">
-																	<ValueList>
-																		<Value>10</Value>
-																	</ValueList>
-																</Property>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_07" ID="{B5B6612F-6F7C-415F-ABDE-71C6FFB9EB56}" ShortID="72944737">
-																	<Language>SFX</Language>
-																	<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_07.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_07" ID="{B5B6612F-6F7C-415F-ABDE-71C6FFB9EB56}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
+														</RandomSequenceContainer>
 													</ChildrenList>
-												</RandomSequenceContainer>
-											</ChildrenList>
-											<BlendTrackList>
-												<BlendTrack Name="Water Depth" ID="{063C9455-5526-442E-87C2-1B92F09E778B}" ShortID="400606584">
+													<BlendTrackList>
+														<BlendTrack Name="Shallow" ID="{063C9455-5526-442E-87C2-1B92F09E778B}" ShortID="400606584">
+															<PropertyList>
+																<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+																<Property Name="Volume" Type="Real64">
+																	<RTPCList>
+																		<RTPC Name="" ID="{6299081C-9A12-4705-8562-D9BC40AD5639}" ShortID="608207837">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="Water_Depth_Left" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{57E947FB-E469-4AD9-B2BD-ECA6BCC40459}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0.315889999999996</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>60</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>100</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="LayerCrossFadeControlInput">
+																	<ObjectRef Name="Water_Depth_Left" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																</Reference>
+															</ReferenceList>
+															<BlendTrackAssocList>
+																<BlendTrackAssoc>
+																	<ItemRef Name="Fttps_Puddle_Run_RND" ID="{560204D2-1BD4-4EB8-9BF3-13251C51CB1A}"/>
+																	<CrossfadingInfo>
+																		<LeftEdgePos>0</LeftEdgePos>
+																		<LeftFadingMode>Automatic</LeftFadingMode>
+																		<RightEdgePos>60</RightEdgePos>
+																		<RightFadingMode>Automatic</RightFadingMode>
+																	</CrossfadingInfo>
+																</BlendTrackAssoc>
+															</BlendTrackAssocList>
+														</BlendTrack>
+														<BlendTrack Name="Deep" ID="{10AD6B41-0DEE-438B-9BAB-B1B1389F5330}" ShortID="116403809">
+															<PropertyList>
+																<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+																<Property Name="Volume" Type="Real64">
+																	<RTPCList>
+																		<RTPC Name="" ID="{9638B81E-C74D-4B49-B3E0-D641107C42A5}" ShortID="573639287">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="Water_Depth_Left" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{7AC43A67-5BD3-4A04-9D5E-D0784C2B4879}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>10</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>100</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="LayerCrossFadeControlInput">
+																	<ObjectRef Name="Water_Depth_Left" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																</Reference>
+															</ReferenceList>
+															<BlendTrackAssocList>
+																<BlendTrackAssoc>
+																	<ItemRef Name="Fttps_WaterIn_Run_RND" ID="{AA968715-A55D-412A-B1D8-1A177A530BF3}"/>
+																	<CrossfadingInfo>
+																		<LeftEdgePos>10</LeftEdgePos>
+																		<LeftFadingMode>Automatic</LeftFadingMode>
+																		<RightEdgePos>100</RightEdgePos>
+																		<RightFadingMode>Automatic</RightFadingMode>
+																	</CrossfadingInfo>
+																</BlendTrackAssoc>
+															</BlendTrackAssocList>
+														</BlendTrack>
+													</BlendTrackList>
+												</BlendContainer>
+												<BlendContainer Name="Fttps_WaterRight_Run_BLEND" ID="{6F6E6070-ECB7-4887-9E4F-392391853A0E}" ShortID="239003581">
 													<PropertyList>
-														<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+														<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>2</Value>
+															</ValueList>
+														</Property>
+														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 													</PropertyList>
 													<ReferenceList>
-														<Reference Name="LayerCrossFadeControlInput">
-															<ObjectRef Name="Water_Depth" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
 														</Reference>
 													</ReferenceList>
-													<BlendTrackAssocList>
-														<BlendTrackAssoc>
-															<ItemRef Name="Fttps_Puddle_Run_RND" ID="{560204D2-1BD4-4EB8-9BF3-13251C51CB1A}"/>
-															<CrossfadingInfo>
-																<LeftEdgePos>0</LeftEdgePos>
-																<LeftFadingMode>Automatic</LeftFadingMode>
-																<RightEdgePos>79.8431819371728</RightEdgePos>
-																<RightFadingMode>Automatic</RightFadingMode>
-															</CrossfadingInfo>
-														</BlendTrackAssoc>
-														<BlendTrackAssoc>
-															<ItemRef Name="Fttps_WaterIn_Run_RND" ID="{AA968715-A55D-412A-B1D8-1A177A530BF3}"/>
-															<CrossfadingInfo>
-																<LeftEdgePos>19.9214659685863</LeftEdgePos>
-																<LeftFadingMode>Automatic</LeftFadingMode>
-																<RightEdgePos>100</RightEdgePos>
-																<RightFadingMode>Automatic</RightFadingMode>
-															</CrossfadingInfo>
-														</BlendTrackAssoc>
-													</BlendTrackAssocList>
-												</BlendTrack>
-											</BlendTrackList>
-										</BlendContainer>
+													<ChildrenList>
+														<RandomSequenceContainer Name="Fttps_Puddle_Run_RND" ID="{39F63601-8279-4ED9-983C-7BA548B86E67}" ShortID="325257136">
+															<PropertyList>
+																<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+																<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="SFX_HA_Character_Footsteps_Puddle_Run_00" ID="{587B7327-14D7-4BAB-AFCD-E1A8DB550190}" ShortID="294931420">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_00" ID="{1BAAE6BA-5389-4AEE-B130-B19D9C0C78F2}" ShortID="703473460">
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_Character_Footsteps_Puddle_Run_00.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="4101969"/>
+																			</ConvertedFileIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_Character_Footsteps_Puddle_Run_00" ID="{1BAAE6BA-5389-4AEE-B130-B19D9C0C78F2}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_Character_Footsteps_Puddle_Run_01" ID="{B3B410DB-8E4D-4120-A738-E1CD938290F1}" ShortID="529303451">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_01" ID="{6579535D-F0C4-4E75-A694-F6435F0F4A1C}" ShortID="513690665">
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_Character_Footsteps_Puddle_Run_01.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="254523341"/>
+																			</ConvertedFileIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_Character_Footsteps_Puddle_Run_01" ID="{6579535D-F0C4-4E75-A694-F6435F0F4A1C}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_Character_Footsteps_Puddle_Run_02" ID="{8080ECD0-E1FE-4FB8-804E-F2ACC20D9E6E}" ShortID="847481616">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_02" ID="{A27B104B-DE29-40C2-8746-AB647B4724EA}" ShortID="654370619">
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_Character_Footsteps_Puddle_Run_02.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="982538254"/>
+																			</ConvertedFileIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_Character_Footsteps_Puddle_Run_02" ID="{A27B104B-DE29-40C2-8746-AB647B4724EA}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_Character_Footsteps_Puddle_Run_03" ID="{8786D738-AB7D-42DE-9F65-02D157FE96FA}" ShortID="323657863">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_03" ID="{8C41C1FE-388B-4314-A1D3-0D18AC542A8A}" ShortID="1049289580">
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_Character_Footsteps_Puddle_Run_03.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="586776565"/>
+																			</ConvertedFileIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_Character_Footsteps_Puddle_Run_03" ID="{8C41C1FE-388B-4314-A1D3-0D18AC542A8A}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_Character_Footsteps_Puddle_Run_04" ID="{30D6DDD3-438A-4A44-B806-96BB392F7386}" ShortID="315520584">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_04" ID="{B625FECC-300F-48AD-AA08-2A90A91FDF15}" ShortID="660037831">
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_Character_Footsteps_Puddle_Run_04.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="58757605"/>
+																			</ConvertedFileIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_Character_Footsteps_Puddle_Run_04" ID="{B625FECC-300F-48AD-AA08-2A90A91FDF15}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_Character_Footsteps_Puddle_Run_05" ID="{7272C078-FEFC-4B34-BE52-55B7B9DAA1AE}" ShortID="125295842">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_05" ID="{32910B4A-06DC-400E-AB0F-8E5BE5E49BC3}" ShortID="197355078">
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_Character_Footsteps_Puddle_Run_05.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="414801207"/>
+																			</ConvertedFileIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_Character_Footsteps_Puddle_Run_05" ID="{32910B4A-06DC-400E-AB0F-8E5BE5E49BC3}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_Character_Footsteps_Puddle_Run_06" ID="{F317895A-A90A-4A1D-A00C-0CA970A5B719}" ShortID="420757146">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_06" ID="{8421123B-46E2-4E02-8454-755309F983C5}" ShortID="642458177">
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_Character_Footsteps_Puddle_Run_06.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="888652473"/>
+																			</ConvertedFileIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_Character_Footsteps_Puddle_Run_06" ID="{8421123B-46E2-4E02-8454-755309F983C5}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_Character_Footsteps_Puddle_Run_07" ID="{6E8E58E9-FC99-4F82-80F9-CE0E11AAC027}" ShortID="462057089">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_07" ID="{C9F6B0E7-5387-435D-80FF-AF9894D73C82}" ShortID="262916329">
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_Character_Footsteps_Puddle_Run_07.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="1024152922"/>
+																			</ConvertedFileIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_Character_Footsteps_Puddle_Run_07" ID="{C9F6B0E7-5387-435D-80FF-AF9894D73C82}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+														</RandomSequenceContainer>
+														<RandomSequenceContainer Name="Fttps_WaterIn_Run_RND" ID="{82F27EFB-8EC3-4EB3-8066-3F0C733D84C3}" ShortID="616680311">
+															<PropertyList>
+																<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+																<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+																<Property Name="MaxSoundPerInstance" Type="int16">
+																	<ValueList>
+																		<Value>2</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+																<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+																<Property Name="UseMaxSoundPerInstance" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="SFX_HA_Character_Footsteps_WaterIn_Run_00" ID="{698050FE-6C6B-4652-A6E0-6A912FED2138}" ShortID="177222200">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>10</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_00" ID="{3C2D4955-3F1F-4967-B4D5-7B3231C5E5D5}" ShortID="679259530">
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_00.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="85024138"/>
+																			</ConvertedFileIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_00" ID="{3C2D4955-3F1F-4967-B4D5-7B3231C5E5D5}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_Character_Footsteps_WaterIn_Run_01" ID="{721DE6ED-C2CA-4FB3-AB7E-937EE169B939}" ShortID="52748386">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>10</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_01" ID="{A1E91A0F-12A3-4854-AEF5-E5449273BDB8}" ShortID="9148225">
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_01.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="799387833"/>
+																			</ConvertedFileIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_01" ID="{A1E91A0F-12A3-4854-AEF5-E5449273BDB8}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_Character_Footsteps_WaterIn_Run_02" ID="{209FAE23-D1AC-48FC-9417-B06D1B53862B}" ShortID="567775598">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>10</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_02" ID="{F1225D00-1B8E-4F64-9EA1-E7A205D56EAB}" ShortID="922777933">
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_02.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="789268961"/>
+																			</ConvertedFileIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_02" ID="{F1225D00-1B8E-4F64-9EA1-E7A205D56EAB}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_Character_Footsteps_WaterIn_Run_03" ID="{A1F08BE7-D5D2-4EF9-A738-17AFB2F0871D}" ShortID="3453500">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>10</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_03" ID="{63B30D85-CDBE-4463-8585-E6605D86F913}" ShortID="497836287">
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_03.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="502448179"/>
+																			</ConvertedFileIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_03" ID="{63B30D85-CDBE-4463-8585-E6605D86F913}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_Character_Footsteps_WaterIn_Run_04" ID="{CD24304D-BE73-4257-A442-26C02ED61F2B}" ShortID="507337394">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>10</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_04" ID="{DFA5267A-76CA-49C0-A63B-0629748FCDB8}" ShortID="870679079">
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_04.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="433412623"/>
+																			</ConvertedFileIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_04" ID="{DFA5267A-76CA-49C0-A63B-0629748FCDB8}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_Character_Footsteps_WaterIn_Run_05" ID="{25AA371B-53A7-4827-975D-2814D1F5F7ED}" ShortID="892186518">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>10</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_05" ID="{42F451A6-8E01-416A-9D66-AA0B5BBEB740}" ShortID="258192512">
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_05.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="843620571"/>
+																			</ConvertedFileIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_05" ID="{42F451A6-8E01-416A-9D66-AA0B5BBEB740}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_Character_Footsteps_WaterIn_Run_06" ID="{5E45C7CF-9B83-4036-B9F7-7A03948ECE52}" ShortID="276967571">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>10</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_06" ID="{CEE27874-C850-41BC-BBB2-290FC3AAD018}" ShortID="914192816">
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_06.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="677916102"/>
+																			</ConvertedFileIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_06" ID="{CEE27874-C850-41BC-BBB2-290FC3AAD018}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_Character_Footsteps_WaterIn_Run_07" ID="{35BF867A-4F6C-40B1-B1F4-2BBF5868FAC4}" ShortID="605417527">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>10</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_07" ID="{E4133042-B706-444A-8694-E8B4770A0D30}" ShortID="210291567">
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_07.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="72944737"/>
+																			</ConvertedFileIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_07" ID="{E4133042-B706-444A-8694-E8B4770A0D30}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+														</RandomSequenceContainer>
+													</ChildrenList>
+													<BlendTrackList>
+														<BlendTrack Name="Shallow" ID="{9F2718C3-E86E-493A-8156-E7FB534CAB19}" ShortID="738034587">
+															<PropertyList>
+																<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+																<Property Name="Volume" Type="Real64">
+																	<RTPCList>
+																		<RTPC Name="" ID="{0D060C2F-47D5-4155-8A2E-880A0A13B559}" ShortID="815941979">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="Water_Depth_Right" ID="{E620FFDB-2280-4F9C-A0A5-E36477031F5F}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{F96BA5E2-E0CD-40DA-AD39-91D4A97B1182}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0.315889999999996</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>60</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>100</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="LayerCrossFadeControlInput">
+																	<ObjectRef Name="Water_Depth_Left" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																</Reference>
+															</ReferenceList>
+															<BlendTrackAssocList>
+																<BlendTrackAssoc>
+																	<ItemRef Name="Fttps_Puddle_Run_RND" ID="{39F63601-8279-4ED9-983C-7BA548B86E67}"/>
+																	<CrossfadingInfo>
+																		<LeftEdgePos>0</LeftEdgePos>
+																		<LeftFadingMode>Automatic</LeftFadingMode>
+																		<RightEdgePos>60</RightEdgePos>
+																		<RightFadingMode>Automatic</RightFadingMode>
+																	</CrossfadingInfo>
+																</BlendTrackAssoc>
+															</BlendTrackAssocList>
+														</BlendTrack>
+														<BlendTrack Name="Deep" ID="{D3639A4C-6BE1-4B7D-8A11-6BE78E47402F}" ShortID="43511688">
+															<PropertyList>
+																<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+																<Property Name="Volume" Type="Real64">
+																	<RTPCList>
+																		<RTPC Name="" ID="{CBFAA8BB-BC54-4965-AEB9-EFF16715F65D}" ShortID="513818375">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="Water_Depth_Right" ID="{E620FFDB-2280-4F9C-A0A5-E36477031F5F}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{78CE4036-2644-49C2-B938-B26017AC8E6B}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>10</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>100</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="LayerCrossFadeControlInput">
+																	<ObjectRef Name="Water_Depth_Left" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																</Reference>
+															</ReferenceList>
+															<BlendTrackAssocList>
+																<BlendTrackAssoc>
+																	<ItemRef Name="Fttps_WaterIn_Run_RND" ID="{82F27EFB-8EC3-4EB3-8066-3F0C733D84C3}"/>
+																	<CrossfadingInfo>
+																		<LeftEdgePos>10</LeftEdgePos>
+																		<LeftFadingMode>Automatic</LeftFadingMode>
+																		<RightEdgePos>100</RightEdgePos>
+																		<RightFadingMode>Automatic</RightFadingMode>
+																	</CrossfadingInfo>
+																</BlendTrackAssoc>
+															</BlendTrackAssocList>
+														</BlendTrack>
+													</BlendTrackList>
+												</BlendContainer>
+											</ChildrenList>
+											<Playlist>
+												<ItemRef Name="Fttps_WaterLeft_Run_BLEND" ID="{7102EC1C-FDF7-4089-9005-7CF68DD86A9B}"/>
+												<ItemRef Name="Fttps_WaterRight_Run_BLEND" ID="{6F6E6070-ECB7-4887-9E4F-392391853A0E}"/>
+											</Playlist>
+										</RandomSequenceContainer>
 									</ChildrenList>
 									<GroupingInfo>
 										<GroupingBehaviorList>
 											<GroupingBehavior>
 												<ItemRef Name="Fttps_Gravel_Run_RND" ID="{9893C01B-BC4F-452A-8DDC-7514A08658F2}"/>
-											</GroupingBehavior>
-											<GroupingBehavior>
-												<ItemRef Name="Fttps_WaterDepth_Run_BLEND" ID="{7102EC1C-FDF7-4089-9005-7CF68DD86A9B}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
 												<ItemRef Name="Fttps_WetSand_Run_RND" ID="{996A7B39-86A0-4EA7-81F1-B8DEE3DD5299}"/>
@@ -2634,6 +3278,9 @@
 											</GroupingBehavior>
 											<GroupingBehavior>
 												<ItemRef Name="Fttps_Ice_Run_RND" ID="{263B73AD-9E79-465B-BA70-02F54BF27C5C}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Fttps_LR_Water_Run_SEQ" ID="{25C443C1-BF5D-4F66-AD2A-96EFECB69580}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
 												<ItemRef Name="Fttps_Wood_Run_RND" ID="{9AF47DD7-C453-4E1E-BCD3-5619F56F0860}"/>
@@ -2676,7 +3323,7 @@
 											<Grouping>
 												<SwitchRef Name="Water" ID="{196AB4AA-232D-454E-B47B-EFA10A47FAA1}"/>
 												<ItemList>
-													<ItemRef Name="Fttps_WaterDepth_Run_BLEND" ID="{7102EC1C-FDF7-4089-9005-7CF68DD86A9B}"/>
+													<ItemRef Name="Fttps_LR_Water_Run_SEQ" ID="{25C443C1-BF5D-4F66-AD2A-96EFECB69580}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
@@ -3126,6 +3773,470 @@
 								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
+						<RandomSequenceContainer Name="Swimming_RND" ID="{4973C82F-6E0C-45D7-9ABE-34CA81265DA2}" ShortID="723036301">
+							<PropertyList>
+								<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>9</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SFX_HA_Character_Clothes_Swiming_00" ID="{A93CB72E-A91D-488A-A9D1-FDB694D348AD}" ShortID="185930004">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_HA_Character_Clothes_Swiming_00" ID="{EFADE98B-D72D-4A37-9577-AC5733878F22}" ShortID="36988995">
+											<Language>SFX</Language>
+											<AudioFile>SFX_HA_Character_Clothes_Swiming_00.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_HA_Character_Clothes_Swiming_00" ID="{EFADE98B-D72D-4A37-9577-AC5733878F22}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_HA_Character_Clothes_Swiming_01" ID="{0FEF370F-A857-4777-9FE4-7AAD37D28CC1}" ShortID="286676941">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_HA_Character_Clothes_Swiming_01" ID="{D390DD7D-55C7-460D-935C-237D598A807A}" ShortID="286968490">
+											<Language>SFX</Language>
+											<AudioFile>SFX_HA_Character_Clothes_Swiming_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_HA_Character_Clothes_Swiming_01" ID="{D390DD7D-55C7-460D-935C-237D598A807A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_HA_Character_Clothes_Swiming_02" ID="{DA7F3A25-F8C2-44E2-AC4C-A213FF98393C}" ShortID="583706395">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_HA_Character_Clothes_Swiming_02" ID="{F5A0B42D-E48E-416F-B945-CD3DDBD755E4}" ShortID="971146116">
+											<Language>SFX</Language>
+											<AudioFile>SFX_HA_Character_Clothes_Swiming_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_HA_Character_Clothes_Swiming_02" ID="{F5A0B42D-E48E-416F-B945-CD3DDBD755E4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_HA_Character_Clothes_Swiming_03" ID="{0CD5420D-9118-4238-BB84-534E359BE7BB}" ShortID="591244287">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_HA_Character_Clothes_Swiming_03" ID="{48F497D0-B2D3-4996-B6F4-4A952353E6EB}" ShortID="1061810795">
+											<Language>SFX</Language>
+											<AudioFile>SFX_HA_Character_Clothes_Swiming_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_HA_Character_Clothes_Swiming_03" ID="{48F497D0-B2D3-4996-B6F4-4A952353E6EB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_HA_Character_Clothes_Swiming_04" ID="{D547C5E9-69FE-47F0-9270-1DD282614B17}" ShortID="1011409804">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_HA_Character_Clothes_Swiming_04" ID="{F9A755B4-1F35-480C-A919-AA1DC7300CE9}" ShortID="914645447">
+											<Language>SFX</Language>
+											<AudioFile>SFX_HA_Character_Clothes_Swiming_04.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_HA_Character_Clothes_Swiming_04" ID="{F9A755B4-1F35-480C-A919-AA1DC7300CE9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<ActorMixer Name="Objects" ID="{D84C6C73-BFB0-45FD-8E55-B4E646E11610}" ShortID="705966716">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SwitchContainer Name="Pickup_Objects_SWITCH" ID="{4C073056-08F3-40B4-8A3E-3242CE29510F}" ShortID="403214032">
+									<PropertyList>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="SailPiece" ID="{7B24844F-977A-40C6-B5BA-60EAB428EC4B}" WorkUnitID="{B2EF58AA-AC08-48B1-B753-34CCFE6A3AB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Object_Type" ID="{57B1C5AF-4F78-4D53-BDD0-6EDD59B5C5D9}" WorkUnitID="{B2EF58AA-AC08-48B1-B753-34CCFE6A3AB5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SFX_HA_Character_Pickup_MetalPiece" ID="{EB89008A-FECA-4937-B96E-7C4D49B57B2A}" ShortID="678483305">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_HA_Character_Pickup_MetalPiece" ID="{B05C12A7-0BEE-4CA0-BAB2-28E9959903E2}" ShortID="625115728">
+													<Language>SFX</Language>
+													<AudioFile>SFX_HA_Character_Pickup_MetalPiece.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_HA_Character_Pickup_MetalPiece" ID="{B05C12A7-0BEE-4CA0-BAB2-28E9959903E2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_HA_Character_Pickup_Nails" ID="{A4535610-3299-4F0B-8997-D45A27BC7245}" ShortID="945568405">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_HA_Character_Pickup_Nails" ID="{2BE8DAC3-2B98-479F-9FFC-8E238FEA1A85}" ShortID="356089791">
+													<Language>SFX</Language>
+													<AudioFile>SFX_HA_Character_Pickup_Nails.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_HA_Character_Pickup_Nails" ID="{2BE8DAC3-2B98-479F-9FFC-8E238FEA1A85}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_HA_Character_Pickup_Rope" ID="{3E77EA08-B5F8-4359-A9B1-D3FD3CE82FE7}" ShortID="1039428687">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_HA_Character_Pickup_Rope" ID="{18425EB1-4068-4A57-B9B3-BD3DCC3DED9B}" ShortID="238766777">
+													<Language>SFX</Language>
+													<AudioFile>SFX_HA_Character_Pickup_Rope.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_HA_Character_Pickup_Rope" ID="{18425EB1-4068-4A57-B9B3-BD3DCC3DED9B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_HA_Character_Pickup_SailPiece" ID="{E084AA1E-9D21-45DC-99B5-D2DD32584B91}" ShortID="91927462">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_HA_Character_Pickup_SailPiece" ID="{C9BE4980-8082-43CB-85C4-B63FF3B0DBC9}" ShortID="39666602">
+													<Language>SFX</Language>
+													<AudioFile>SFX_HA_Character_Pickup_SailPiece.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_HA_Character_Pickup_SailPiece" ID="{C9BE4980-8082-43CB-85C4-B63FF3B0DBC9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_HA_Character_Pickup_Woodplanks" ID="{8642B8BA-20AD-4B58-AEA2-9C4B350E728D}" ShortID="693346051">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_HA_Character_Pickup_Woodplanks" ID="{549ED3B3-4C06-4684-8668-F60A0BC62216}" ShortID="181231111">
+													<Language>SFX</Language>
+													<AudioFile>SFX_HA_Character_Pickup_Woodplanks.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_HA_Character_Pickup_Woodplanks" ID="{549ED3B3-4C06-4684-8668-F60A0BC62216}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="SFX_HA_Character_Pickup_Rope" ID="{3E77EA08-B5F8-4359-A9B1-D3FD3CE82FE7}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="SFX_HA_Character_Pickup_Nails" ID="{A4535610-3299-4F0B-8997-D45A27BC7245}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="SFX_HA_Character_Pickup_SailPiece" ID="{E084AA1E-9D21-45DC-99B5-D2DD32584B91}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="SFX_HA_Character_Pickup_MetalPiece" ID="{EB89008A-FECA-4937-B96E-7C4D49B57B2A}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="SFX_HA_Character_Pickup_Woodplanks" ID="{8642B8BA-20AD-4B58-AEA2-9C4B350E728D}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Rope" ID="{554B812F-B82A-483A-B7B9-24415A8F5930}"/>
+												<ItemList>
+													<ItemRef Name="SFX_HA_Character_Pickup_Rope" ID="{3E77EA08-B5F8-4359-A9B1-D3FD3CE82FE7}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Nails" ID="{94DADA30-BEA8-4DF9-8CA2-6E6F6FE976AA}"/>
+												<ItemList>
+													<ItemRef Name="SFX_HA_Character_Pickup_Nails" ID="{A4535610-3299-4F0B-8997-D45A27BC7245}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="SailPiece" ID="{7B24844F-977A-40C6-B5BA-60EAB428EC4B}"/>
+												<ItemList>
+													<ItemRef Name="SFX_HA_Character_Pickup_SailPiece" ID="{E084AA1E-9D21-45DC-99B5-D2DD32584B91}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="MetalPiece" ID="{519E237A-8D7C-4ADE-8896-3F24C4CC8A8C}"/>
+												<ItemList>
+													<ItemRef Name="SFX_HA_Character_Pickup_MetalPiece" ID="{EB89008A-FECA-4937-B96E-7C4D49B57B2A}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Woodplanks" ID="{32AD8DEA-5B6B-4997-BE82-96223526A478}"/>
+												<ItemList>
+													<ItemRef Name="SFX_HA_Character_Pickup_Woodplanks" ID="{8642B8BA-20AD-4B58-AEA2-9C4B350E728D}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+								<Sound Name="PickUp_FX" ID="{742542E3-F90B-4293-A3B4-ACF7192E80FA}" ShortID="868758132">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{8D98739C-2B16-4E70-AAC7-4965E121D8DA}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="150"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_HA_Character_FX_Pickup" ID="{E0151771-03FB-412E-81CD-8ED50262F5CD}" ShortID="78585654">
+											<PropertyList>
+												<Property Name="VolumeOffset" Type="Real64">
+													<ValueList>
+														<Value>10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_HA_Character_FX_Pickup.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_HA_Character_FX_Pickup" ID="{E0151771-03FB-412E-81CD-8ED50262F5CD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="Bag_Pickup_RND" ID="{2BC4E024-904D-494A-991E-1D45942CA04E}" ShortID="723911432">
+									<PropertyList>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SFX_HA_Character_Object_Pickup_00" ID="{903FCD21-E3B2-4B23-B3BD-B75E68EE6AB3}" ShortID="1052170640">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_HA_Character_Object_Pickup_00" ID="{CEA8D005-E349-4B3E-A30D-E884245B5130}" ShortID="789114010">
+													<Language>SFX</Language>
+													<AudioFile>SFX_HA_Character_Object_Pickup_00.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_HA_Character_Object_Pickup_00" ID="{CEA8D005-E349-4B3E-A30D-E884245B5130}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_HA_Character_Object_Pickup_01" ID="{650FB61A-66B3-4E14-880D-1639B015D506}" ShortID="477605698">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_HA_Character_Object_Pickup_01" ID="{7A2B318C-AA79-4A7C-AC7C-8C978528CF5A}" ShortID="153977148">
+													<Language>SFX</Language>
+													<AudioFile>SFX_HA_Character_Object_Pickup_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_HA_Character_Object_Pickup_01" ID="{7A2B318C-AA79-4A7C-AC7C-8C978528CF5A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_HA_Character_Object_Pickup_02" ID="{C1B580E9-4F84-42E1-9863-58733F31E193}" ShortID="929171093">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_HA_Character_Object_Pickup_02" ID="{F3E5A4AE-B13E-42BE-A1C7-A54BF8FB5202}" ShortID="543044772">
+													<Language>SFX</Language>
+													<AudioFile>SFX_HA_Character_Object_Pickup_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_HA_Character_Object_Pickup_02" ID="{F3E5A4AE-B13E-42BE-A1C7-A54BF8FB5202}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</ActorMixer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

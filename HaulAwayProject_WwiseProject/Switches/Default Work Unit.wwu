@@ -21,8 +21,51 @@
 										<Switch Name="Wood" ID="{AD02081A-225D-437C-BF52-89E278904486}"/>
 									</ChildrenList>
 								</SwitchGroup>
+								<SwitchGroup Name="Water_Depth" ID="{1959851A-4AF5-450F-A242-F07AF17ED45A}">
+									<PropertyList>
+										<Property Name="UseGameParameter" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<Switch Name="Shallow" ID="{4AC9BA45-EF76-4D6F-AFC7-E9A84C3FA4D4}"/>
+										<Switch Name="Deep" ID="{E1F17321-7537-4F0A-B16E-879CD5C93527}"/>
+									</ChildrenList>
+									<SwitchOnRTPC>
+										<GameParameterRef Name="Water_Depth_Left" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}"/>
+										<Curve Name="" ID="{A563C14A-C726-4806-A9F5-87C95D82BC9E}">
+											<PropertyList>
+												<Property Name="Flags" Type="int32" Value="65537"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>1</YPos>
+													<Flags>5</Flags>
+												</Point>
+												<Point>
+													<XPos>10</XPos>
+													<YPos>2</YPos>
+													<Flags>0</Flags>
+												</Point>
+												<Point>
+													<XPos>100</XPos>
+													<YPos>2</YPos>
+													<Flags>37</Flags>
+												</Point>
+											</PointList>
+										</Curve>
+									</SwitchOnRTPC>
+								</SwitchGroup>
 							</ChildrenList>
 						</Folder>
+						<SwitchGroup Name="Object_Type" ID="{57B1C5AF-4F78-4D53-BDD0-6EDD59B5C5D9}">
+							<ChildrenList>
+								<Switch Name="Nails" ID="{94DADA30-BEA8-4DF9-8CA2-6E6F6FE976AA}"/>
+								<Switch Name="Woodplanks" ID="{32AD8DEA-5B6B-4997-BE82-96223526A478}"/>
+								<Switch Name="MetalPiece" ID="{519E237A-8D7C-4ADE-8896-3F24C4CC8A8C}"/>
+								<Switch Name="SailPiece" ID="{7B24844F-977A-40C6-B5BA-60EAB428EC4B}"/>
+								<Switch Name="Rope" ID="{554B812F-B82A-483A-B7B9-24415A8F5930}"/>
+							</ChildrenList>
+						</SwitchGroup>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

@@ -3,9 +3,12 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{041C9DA3-1ADF-40ED-AA76-A66E20D13018}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="D:\ACFA\PROJETS JV\HAUL AWAY - Rubika\Assets\A valider\Character\Footsteps\Wet Sand"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="D:\ACFA\PROJETS JV\HAUL AWAY - Rubika\Assets\Validés\Character\Clothes\Pickup"/>
 				<Property Name="Event Action List\{5C5527F9-8525-42FC-91C7-65DCFEB02B25}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{6951BC21-BFCF-4344-AF44-5EF2D765C458}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{A736D28F-A91D-4A18-8ECD-8EFA3071071E}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{ADCF0009-ACAC-46C9-A06B-62C467D7211A}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{C35DAE63-6620-41BE-8376-3E65C4EB516A}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{EFA52787-E6B3-4C96-A54B-1B96A6DD972E}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
@@ -21,7 +24,7 @@
 					</ValueList>
 				</Property>
 				<Property Name="General\LatestLanguage" Type="int32" Value="684519430"/>
-				<Property Name="General\LatestPlatform" Type="string" Value="Mac"/>
+				<Property Name="General\LatestPlatform" Type="string" Value="Windows"/>
 				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value=""/>
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value=""/>
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="SdQYX29enEmD3p2fXu1KZw=="/>
@@ -56,13 +59,15 @@
 				<Property Name="ProjectExplorer\x64_Expanded_1_1" Type="string" Value="Chuflt1zi0yZmylwLEJ3GA=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_20_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_21_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="DFofrmZx40Sduwu0AcV76wxg3oEQCvlHu1G9tts/hgiZZzEf11pDSKk+YazXrhvQopv3Sj8ueEq2PE+2E5ar7noJrswvJ2NMsmsN/OTaNafrohZnYi6MT4Gi+pRGYpVC"/>
+				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="c2xM2LC//UWOVbTmRuEWEKKb90o/LnhKtjxPthOWq+56Ca7MLydjTLJrDfzk2jWn"/>
 				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="KeXdSncSck6e873No16VKtzsj7Kq7rhPn5MkNRUqRSA="/>
-				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value="FPs32vpdTUiqoQaEsvr7FqpY77IIrLFIt1M0zP5qOrWcNTZBi/jwSr4ws2KmJmkEEu0FWofW70uJM+LA/Ik6JQ=="/>
+				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value="qljvsgissUi3UzTM/mo6tRLtBVqH1u9LiTPiwPyJOiWvxbFXeE9TTb3Qbt1ZtcXZ"/>
 				<Property Name="ProjectExplorer\x64_Expanded_5_1" Type="string" Value="kltdAnmJGkKti2Jw4cHdeR1v4c5GKv1JpmvQoRhYwpL3nDoC5uWmTbTRmL8KKjuC"/>
 				<Property Name="ProjectExplorer\x64_Expanded_6_1" Type="string" Value="a2J4/KO0BEK0J+/9syxDIQ=="/>
-				<Property Name="ProjectExplorer\x64_Expanded_7_1" Type="string" Value=""/>
+				<Property Name="ProjectExplorer\x64_Expanded_7_1" Type="string" Value="F7x/GnN3JEevgFB0QAkGLKqOTmtfZcpNpsrVyHQYeoY="/>
 				<Property Name="ProjectExplorer\x64_Expanded_8_1" Type="string" Value=""/>
+				<Property Name="RTPC\GameParameterSimValue\{CF3F0519-D6B8-4652-847C-ADC3E736B06C}" Type="Real64" Value="46"/>
+				<Property Name="RTPC\GameParameterSimValue\{E620FFDB-2280-4F9C-A0A5-E36477031F5F}" Type="Real64" Value="37"/>
 				<Property Name="SoundBank Manager\x64_Expand States" Type="string" Value="a2J4/KO0BEK0J+/9syxDIQ=="/>
 				<Property Name="SoundBankHeaderFilePath" Type="string" Value="GeneratedSoundBanks\"/>
 				<Property Name="SoundBankPaths" Type="string">

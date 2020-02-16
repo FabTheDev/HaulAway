@@ -3,16 +3,9 @@
 	<SoundBanks>
 		<WorkUnit Name="Default Work Unit" ID="{FC78626B-B4A3-4204-B427-EFFDB32C4321}" PersistMode="Standalone">
 			<ChildrenList>
-				<SoundBank Name="Main_SoundBank" ID="{B77E6FE0-E09C-4D5A-9389-6267693BCE36}">
-					<ObjectInclusionList>
-						<ObjectRef Name="Default Work Unit" ID="{17A68295-DD7B-4042-A263-C4CEE409DB49}" WorkUnitID="{17A68295-DD7B-4042-A263-C4CEE409DB49}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Default Work Unit" ID="{CCAE097A-272F-4C63-B26B-0DFCE4DA35A7}" WorkUnitID="{CCAE097A-272F-4C63-B26B-0DFCE4DA35A7}" Filter="7" Origin="Manual"/>
-					</ObjectInclusionList>
-					<ObjectExclusionList/>
-					<GameSyncExclusionList/>
-				</SoundBank>
 				<SoundBank Name="Soundbank" ID="{5F18D449-5E6F-499C-83DE-9D9F5EED4A67}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Play_Swimming" ID="{ADCF0009-ACAC-46C9-A06B-62C467D7211A}" WorkUnitID="{4ADDE529-1277-4E72-9EF3-BDCDA35E952A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Footstep" ID="{EFA52787-E6B3-4C96-A54B-1B96A6DD972E}" WorkUnitID="{4ADDE529-1277-4E72-9EF3-BDCDA35E952A}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
