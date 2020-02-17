@@ -1,3 +1,18 @@
+Switch Group	ID	Name			Wwise Object Path	Notes
+	430223108	Water_Depth			\Default Work Unit\Character\Footsteps\Water_Depth	
+
+Switch	ID	Name	Switch Group			Notes
+	1976939195	Deep	Water_Depth			
+	2943574119	Shallow	Water_Depth			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	2951998248	Walk_Run			\Default Work Unit\Character\Footsteps\Walk_Run	
+
+State	ID	Name	State Group			Notes
+	0	None	Walk_Run			
+	340271938	Walking	Walk_Run			
+	3863236874	Running	Walk_Run			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 

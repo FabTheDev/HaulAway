@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}" SchemaVersion="89">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Character" ID="{025D5B92-8979-421A-AD8B-6270E1C1DD79}" ShortID="77317282">
+					<ChildrenList>
+						<Folder Name="Footsteps" ID="{023A9CF7-E5E6-4DA6-B4D1-98BF0A2A3B82}" ShortID="393912742">
+							<ChildrenList>
+								<StateGroup Name="Walk_Run" ID="{0DEBD533-6B75-4C1B-BB5A-37E06527369E}">
+									<ChildrenList>
+										<State Name="None" ID="{4F52A7E7-3240-4480-BCA4-A75985D30EDB}"/>
+										<State Name="Walking" ID="{0DA3EC48-DE20-451C-A639-31F81343B6E8}"/>
+										<State Name="Running" ID="{61C1907D-333E-446A-AFAB-F5B1780F2D3C}"/>
+									</ChildrenList>
+								</StateGroup>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>
