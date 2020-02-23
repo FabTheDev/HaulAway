@@ -1,2 +1,7 @@
 Soundbank	"Play_Footstep"
 Soundbank	"Play_Swimming"
+Soundbank	"Stop_Swimming"
+Soundbank	"Play_Jump"
+Soundbank	"Play_PickUp_Object"
+Soundbank	"Play_Land"
+Soundbank	"Play_DiveInWater"

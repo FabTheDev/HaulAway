@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{0ED7EBA1-F621-4832-9054-98078A25E231}" SchemaVersion="89">
+	<Events>
+		<WorkUnit Name="MUSIC" ID="{0ED7EBA1-F621-4832-9054-98078A25E231}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Theme_Sailing" ID="{6C74889B-90DB-4361-93E2-D32B183D0760}">
+					<ChildrenList>
+						<Action Name="" ID="{D6616FED-00FC-4AE6-B496-9E8ECE1357F9}" ShortID="699653282">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Theme_Sailing_SWITCH" ID="{593B216C-013D-4B75-A6A4-7EA9B3E67E67}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Theme_Storm" ID="{8FB3FDA6-4046-4182-BADF-1EA87922D29D}">
+					<ChildrenList>
+						<Action Name="" ID="{3B2170FD-0BF5-42FC-AF27-C69F0616CBE0}" ShortID="887597580">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Theme_Storm_SWITCH" ID="{EB7657E3-A3A9-40EB-BD19-FC7B755D81E3}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Theme_Going_To_Sea" ID="{B83F2075-527E-411A-B466-A30A838FB5C7}">
+					<ChildrenList>
+						<Action Name="" ID="{84F52C5D-B95C-417C-BAA3-131162D3900D}" ShortID="890354670">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Theme_Going_To_Sea_PLAYLIST" ID="{5E66A275-EC84-4098-83C1-9DE8340608D2}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Theme_Going_To_Sea" ID="{CB2635AD-16E9-4D05-BA31-72BCF30087C4}">
+					<ChildrenList>
+						<Action Name="" ID="{6F3E526A-F5AA-455B-97A1-A9CF453C7A2D}" ShortID="405775722">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Theme_Going_To_Sea_PLAYLIST" ID="{5E66A275-EC84-4098-83C1-9DE8340608D2}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Break_Theme_Going_To_Sea" ID="{A437F1DE-8606-446F-9A6C-4BD62E41045C}">
+					<ChildrenList>
+						<Action Name="" ID="{18E48FCF-1740-4BDD-ACED-CDA151F73462}" ShortID="91745560">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="34"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Theme_Going_To_Sea_PLAYLIST" ID="{5E66A275-EC84-4098-83C1-9DE8340608D2}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
