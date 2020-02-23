@@ -6,26 +6,50 @@
 				<SoundcasterSession Name="Character" ID="{71FE3C7D-6745-473A-8945-752BD8F84E05}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="Play_Footstep" ID="{EFA52787-E6B3-4C96-A54B-1B96A6DD972E}" WorkUnitID="{4ADDE529-1277-4E72-9EF3-BDCDA35E952A}"/>
+							<ObjectRef Name="Play_Footstep" ID="{EFA52787-E6B3-4C96-A54B-1B96A6DD972E}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_Swimming" ID="{ADCF0009-ACAC-46C9-A06B-62C467D7211A}" WorkUnitID="{4ADDE529-1277-4E72-9EF3-BDCDA35E952A}"/>
+							<ObjectRef Name="Play_Jump" ID="{5F613C6B-B30A-4518-AF7A-10E7821DAF20}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Land" ID="{CF1B53AE-226D-4F7E-8BEF-742D6DA30966}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_DiveInWater" ID="{F70F8017-C70D-456E-95CC-51A0FB563ADB}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
+							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_ClimbLadder" ID="{73DD60F1-5CBA-4016-8853-EBB50D50EA53}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_PickUp_Object" ID="{C35DAE63-6620-41BE-8376-3E65C4EB516A}" WorkUnitID="{4ADDE529-1277-4E72-9EF3-BDCDA35E952A}"/>
+							<ObjectRef Name="Play_Swimming" ID="{ADCF0009-ACAC-46C9-A06B-62C467D7211A}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_Swimming" ID="{36122071-4BD3-4318-B5F5-56F5675F2D05}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_PickUp_Object" ID="{C35DAE63-6620-41BE-8376-3E65C4EB516A}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
 							<Position X="3" Y="0"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
+							<GameParameterRef Name="Storm_Intensity" ID="{4EEBF857-B289-41C2-A6C6-C4AC116A1CB0}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Water_Depth_Left" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}"/>
-							<Value>46</Value>
+							<Value>76.7015706806283</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Water_Depth_Right" ID="{E620FFDB-2280-4F9C-A0A5-E36477031F5F}"/>
-							<Value>37</Value>
+							<Value>0</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
@@ -33,8 +57,45 @@
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Deep" ID="{E1F17321-7537-4F0A-B16E-879CD5C93527}"/>
-						<CurrentSwitchRef Name="Grass" ID="{26A91647-F9F4-4736-A9A0-8F313994C2A3}"/>
-						<CurrentSwitchRef Name="Rope" ID="{554B812F-B82A-483A-B7B9-24415A8F5930}"/>
+						<CurrentSwitchRef Name="No" ID="{557E11F3-E18E-4406-BA2D-24998C38DA37}"/>
+						<CurrentSwitchRef Name="Wood" ID="{AD02081A-225D-437C-BF52-89E278904486}"/>
+						<CurrentSwitchRef Name="No_Storm" ID="{63EACF52-8ED1-42BE-B451-55BC3BC5002D}"/>
+						<CurrentSwitchRef Name="No" ID="{5FB29E7F-3317-44DD-B6DD-124F2B6A3410}"/>
+						<CurrentSwitchRef Name="PaperSheet" ID="{6325DC74-50A2-43D5-9061-1D7C0CD1CB9A}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Music" ID="{85F1E3CF-42A7-44DD-B83C-45C26F95EDD2}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Loop" ID="{3B75DBEE-0C3B-4CCC-967F-BE9786285E6F}" WorkUnitID="{4ADDE529-1277-4E72-9EF3-BDCDA35E952A}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Storm_Intensity" ID="{4EEBF857-B289-41C2-A6C6-C4AC116A1CB0}"/>
+							<Value>68.902</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Water_Depth_Left" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}"/>
+							<Value>76.7015706806283</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Water_Depth_Right" ID="{E620FFDB-2280-4F9C-A0A5-E36477031F5F}"/>
+							<Value>0</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Running" ID="{61C1907D-333E-446A-AFAB-F5B1780F2D3C}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Storm" ID="{1A7062C2-75F6-47C5-8C7D-B8DB7E9A5952}"/>
+						<CurrentSwitchRef Name="Deep" ID="{E1F17321-7537-4F0A-B16E-879CD5C93527}"/>
+						<CurrentSwitchRef Name="Yes" ID="{87A41F97-7D80-493B-8A3C-455954AF3475}"/>
+						<CurrentSwitchRef Name="DryDirt" ID="{3ACDF8C5-731A-4217-817C-5A3173606D9C}"/>
+						<CurrentSwitchRef Name="Here" ID="{9C880D93-AA0C-4177-A690-7C85E55F7320}"/>
+						<CurrentSwitchRef Name="No" ID="{5FB29E7F-3317-44DD-B6DD-124F2B6A3410}"/>
+						<CurrentSwitchRef Name="Compass" ID="{CA054260-4F3C-411B-8F93-A47EAE9EAF92}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
