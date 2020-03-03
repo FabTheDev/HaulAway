@@ -74,27 +74,27 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Storm_Intensity" ID="{4EEBF857-B289-41C2-A6C6-C4AC116A1CB0}"/>
-							<Value>68.902</Value>
+							<Value>28.902</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Water_Depth_Left" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}"/>
-							<Value>76.7015706806283</Value>
+							<Value>1.28582412750145E-311</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Water_Depth_Right" ID="{E620FFDB-2280-4F9C-A0A5-E36477031F5F}"/>
-							<Value>0</Value>
+							<Value>1.28582412667142E-311</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="Running" ID="{61C1907D-333E-446A-AFAB-F5B1780F2D3C}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Storm" ID="{1A7062C2-75F6-47C5-8C7D-B8DB7E9A5952}"/>
+						<CurrentSwitchRef Name="End_Loop" ID="{AA947633-199D-4339-95BE-49FE4C400235}"/>
 						<CurrentSwitchRef Name="Deep" ID="{E1F17321-7537-4F0A-B16E-879CD5C93527}"/>
 						<CurrentSwitchRef Name="Yes" ID="{87A41F97-7D80-493B-8A3C-455954AF3475}"/>
 						<CurrentSwitchRef Name="DryDirt" ID="{3ACDF8C5-731A-4217-817C-5A3173606D9C}"/>
 						<CurrentSwitchRef Name="Here" ID="{9C880D93-AA0C-4177-A690-7C85E55F7320}"/>
-						<CurrentSwitchRef Name="No" ID="{5FB29E7F-3317-44DD-B6DD-124F2B6A3410}"/>
+						<CurrentSwitchRef Name="Yes" ID="{E4B8CC05-4AC4-4067-A717-1BA2FD1B0D32}"/>
 						<CurrentSwitchRef Name="Compass" ID="{CA054260-4F3C-411B-8F93-A47EAE9EAF92}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
