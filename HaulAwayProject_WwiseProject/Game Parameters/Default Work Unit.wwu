@@ -17,6 +17,15 @@
 						</GameParameter>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Weather" ID="{EAC9C7F0-BB75-4CDF-A416-AD007CC90EE1}" ShortID="764089694">
+					<ChildrenList>
+						<GameParameter Name="Storm_Intensity" ID="{4EEBF857-B289-41C2-A6C6-C4AC116A1CB0}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

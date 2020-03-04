@@ -64,6 +64,79 @@
 								<Switch Name="MetalPiece" ID="{519E237A-8D7C-4ADE-8896-3F24C4CC8A8C}"/>
 								<Switch Name="SailPiece" ID="{7B24844F-977A-40C6-B5BA-60EAB428EC4B}"/>
 								<Switch Name="Rope" ID="{554B812F-B82A-483A-B7B9-24415A8F5930}"/>
+								<Switch Name="Spyglass" ID="{7CECB4B4-5B45-409E-81D5-101D7BBA4EDC}"/>
+								<Switch Name="PaperSheet" ID="{6325DC74-50A2-43D5-9061-1D7C0CD1CB9A}"/>
+								<Switch Name="Compass" ID="{CA054260-4F3C-411B-8F93-A47EAE9EAF92}"/>
+								<Switch Name="MapFragment" ID="{1E047F3C-872D-4104-B19B-1AD44742F77A}"/>
+							</ChildrenList>
+						</SwitchGroup>
+						<SwitchGroup Name="IsSinging" ID="{661900C4-17C3-4D28-B9C0-FDF74B7A5C8C}">
+							<ChildrenList>
+								<Switch Name="Yes" ID="{E4B8CC05-4AC4-4067-A717-1BA2FD1B0D32}"/>
+								<Switch Name="No" ID="{5FB29E7F-3317-44DD-B6DD-124F2B6A3410}"/>
+							</ChildrenList>
+						</SwitchGroup>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Music" ID="{6646E0FC-3070-4995-AF7F-1699751BD89F}" ShortID="971261292">
+					<ChildrenList>
+						<SwitchGroup Name="Storm_Itensity" ID="{90612649-D056-4B8F-97D9-4773E14F05B8}">
+							<PropertyList>
+								<Property Name="UseGameParameter" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Switch Name="Approaching" ID="{02BA149D-05E5-4DEB-ACE3-BB1E437CFD67}"/>
+								<Switch Name="No_Storm" ID="{63EACF52-8ED1-42BE-B451-55BC3BC5002D}"/>
+								<Switch Name="Here" ID="{9C880D93-AA0C-4177-A690-7C85E55F7320}"/>
+							</ChildrenList>
+							<SwitchOnRTPC>
+								<GameParameterRef Name="Storm_Intensity" ID="{4EEBF857-B289-41C2-A6C6-C4AC116A1CB0}"/>
+								<Curve Name="" ID="{B070E212-358F-47C4-913D-EF12CE04A8C1}">
+									<PropertyList>
+										<Property Name="Flags" Type="int32" Value="65537"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>2</YPos>
+											<Flags>5</Flags>
+										</Point>
+										<Point>
+											<XPos>10</XPos>
+											<YPos>1</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>50</XPos>
+											<YPos>3</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>100</XPos>
+											<YPos>3</YPos>
+											<Flags>37</Flags>
+										</Point>
+									</PointList>
+								</Curve>
+							</SwitchOnRTPC>
+						</SwitchGroup>
+						<SwitchGroup Name="Which_Loop" ID="{453ECCB0-04A4-43FC-82E7-4EF56CB46E25}">
+							<ChildrenList>
+								<Switch Name="End_Loop" ID="{AA947633-199D-4339-95BE-49FE4C400235}"/>
+								<Switch Name="Going_To_Sea" ID="{4F1D9B68-8C4D-4387-81C3-B868C53CF108}"/>
+								<Switch Name="Main_Theme" ID="{FFD8DF6D-DCA3-44E4-9808-BA09F74887BE}"/>
+								<Switch Name="Storm" ID="{1A7062C2-75F6-47C5-8C7D-B8DB7E9A5952}"/>
+								<Switch Name="Sailing" ID="{E3BCEECC-DE78-45A3-8F31-CC44C47E4046}"/>
+							</ChildrenList>
+						</SwitchGroup>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Ship" ID="{24CA926C-8AF2-4A29-8EBA-A67E16F2E7BF}" ShortID="26110031">
+					<ChildrenList>
+						<SwitchGroup Name="StinkingOrNot" ID="{03061294-94E1-4949-B117-CDF796E66701}">
+							<ChildrenList>
+								<Switch Name="Yes" ID="{87A41F97-7D80-493B-8A3C-455954AF3475}"/>
+								<Switch Name="No" ID="{557E11F3-E18E-4406-BA2D-24998C38DA37}"/>
 							</ChildrenList>
 						</SwitchGroup>
 					</ChildrenList>

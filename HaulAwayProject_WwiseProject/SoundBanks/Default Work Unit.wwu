@@ -5,8 +5,13 @@
 			<ChildrenList>
 				<SoundBank Name="Soundbank" ID="{5F18D449-5E6F-499C-83DE-9D9F5EED4A67}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Play_Swimming" ID="{ADCF0009-ACAC-46C9-A06B-62C467D7211A}" WorkUnitID="{4ADDE529-1277-4E72-9EF3-BDCDA35E952A}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Play_Footstep" ID="{EFA52787-E6B3-4C96-A54B-1B96A6DD972E}" WorkUnitID="{4ADDE529-1277-4E72-9EF3-BDCDA35E952A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_PickUp_Object" ID="{C35DAE63-6620-41BE-8376-3E65C4EB516A}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Stop_Swimming" ID="{36122071-4BD3-4318-B5F5-56F5675F2D05}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Jump" ID="{5F613C6B-B30A-4518-AF7A-10E7821DAF20}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_DiveInWater" ID="{F70F8017-C70D-456E-95CC-51A0FB563ADB}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Swimming" ID="{ADCF0009-ACAC-46C9-A06B-62C467D7211A}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Footstep" ID="{EFA52787-E6B3-4C96-A54B-1B96A6DD972E}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Land" ID="{CF1B53AE-226D-4F7E-8BEF-742D6DA30966}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
