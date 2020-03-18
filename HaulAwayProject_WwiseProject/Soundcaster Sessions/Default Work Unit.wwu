@@ -45,23 +45,32 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Water_Depth_Left" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}"/>
-							<Value>76.7015706806283</Value>
+							<Value>57</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Ship_Health_GP" ID="{718CC684-1460-48DE-BD21-DEDF2B6A9D4A}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Ship_Speed_GP" ID="{72DFA80D-619E-4B12-8899-29FD2767932C}"/>
+							<Value>84.1623036649215</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Water_Depth_Right" ID="{E620FFDB-2280-4F9C-A0A5-E36477031F5F}"/>
-							<Value>0</Value>
+							<Value>60</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Running" ID="{61C1907D-333E-446A-AFAB-F5B1780F2D3C}"/>
+						<CurrentStateRef Name="Walking" ID="{0DA3EC48-DE20-451C-A639-31F81343B6E8}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="End_Loop" ID="{AA947633-199D-4339-95BE-49FE4C400235}"/>
 						<CurrentSwitchRef Name="Deep" ID="{E1F17321-7537-4F0A-B16E-879CD5C93527}"/>
 						<CurrentSwitchRef Name="No" ID="{557E11F3-E18E-4406-BA2D-24998C38DA37}"/>
 						<CurrentSwitchRef Name="Wood" ID="{AD02081A-225D-437C-BF52-89E278904486}"/>
 						<CurrentSwitchRef Name="No_Storm" ID="{63EACF52-8ED1-42BE-B451-55BC3BC5002D}"/>
 						<CurrentSwitchRef Name="No" ID="{5FB29E7F-3317-44DD-B6DD-124F2B6A3410}"/>
-						<CurrentSwitchRef Name="PaperSheet" ID="{6325DC74-50A2-43D5-9061-1D7C0CD1CB9A}"/>
+						<CurrentSwitchRef Name="Woodplanks" ID="{32AD8DEA-5B6B-4997-BE82-96223526A478}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 				<SoundcasterSession Name="Music" ID="{85F1E3CF-42A7-44DD-B83C-45C26F95EDD2}">
@@ -96,6 +105,129 @@
 						<CurrentSwitchRef Name="Here" ID="{9C880D93-AA0C-4177-A690-7C85E55F7320}"/>
 						<CurrentSwitchRef Name="Yes" ID="{E4B8CC05-4AC4-4067-A717-1BA2FD1B0D32}"/>
 						<CurrentSwitchRef Name="Compass" ID="{CA054260-4F3C-411B-8F93-A47EAE9EAF92}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Ship" ID="{04A9FA36-1976-46AC-969D-D496423AA0DE}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="E_Ship_Initialize" ID="{03856E7F-23E0-40B3-9FD6-7026E27B1B18}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Ship_Sail_Upping" ID="{5AB4D629-F756-4E98-92EA-CAF41060A121}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Ship_Sail_Downing" ID="{358B4B0B-29F3-4D38-A8AB-F6068D64988E}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Ship_Sail_SetWindBad" ID="{46388320-D52D-496A-B74D-AD822F0FED80}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
+							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Ship_Sheet_Pulling" ID="{2390BF3F-BF98-4523-BDA0-C573538B1C89}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
+							<Position X="0" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Ship_Sheet_Releasing" ID="{79B58E0D-F1AF-4FCF-90E8-A8447FB50460}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
+							<Position X="0" Y="6"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Ship_Sail_Stop_Upping" ID="{6990B549-0987-4F09-8B91-EDAB7E6F3FAF}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Ship_Sail_Stop_Downing" ID="{66998CC7-16B8-4BFD-BC45-4ED8E399A1BE}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Ship_Sail_SetWindCorrect" ID="{98D67F20-0951-4CF0-94FD-9052BAFAB0FC}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
+							<Position X="1" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Ship_Sheet_Stop_Pulling" ID="{03586636-9AB6-407F-945A-678AA7605BB9}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
+							<Position X="1" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Ship_Sheet_Stop_Releasing" ID="{CA44FAB0-A11F-4F08-87F1-0DEDA7A08677}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
+							<Position X="1" Y="6"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Ship_Sail_Up" ID="{C39E5576-77EA-486F-A0BF-69A31F9C1225}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Ship_Sail_Down" ID="{A88FEE74-4901-4718-8EBA-684BC53146D4}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Ship_Sail_SetWindPerfect" ID="{72741832-6F73-4CCE-BF10-5FCE708DB677}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
+							<Position X="2" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Ship_Sheet_Tightened" ID="{878207DA-33AA-4F46-8BCA-72351F410159}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
+							<Position X="2" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Ship_Sheet_Released" ID="{ADA35CBB-29D1-4716-B5AC-1F3586E2D28B}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
+							<Position X="2" Y="6"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Ship_Tiller_Turning" ID="{09A2607C-CC76-4A48-8C98-57CF4D4D38AB}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
+							<Position X="4" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Ship_Tiller_Stop_Turning" ID="{AB61E124-57CF-4745-A4E7-D9984A58104A}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
+							<Position X="4" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Ship_Tiller_Blocked" ID="{A9FD76E6-951C-4867-B44E-4F78FA42F4E6}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
+							<Position X="4" Y="3"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Storm_Intensity" ID="{4EEBF857-B289-41C2-A6C6-C4AC116A1CB0}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Ship_Wind_Quality_GP" ID="{D5E2F34F-A357-43B5-9C38-492B8A218557}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Ship_Sail_Height_GP" ID="{70F35A42-9104-442F-B66F-762CC58EE426}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Water_Depth_Left" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Ship_Health_GP" ID="{718CC684-1460-48DE-BD21-DEDF2B6A9D4A}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Ship_Speed_GP" ID="{72DFA80D-619E-4B12-8899-29FD2767932C}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Water_Depth_Right" ID="{E620FFDB-2280-4F9C-A0A5-E36477031F5F}"/>
+							<Value>0</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{B83E4870-EE12-480B-A54C-32436863F222}"/>
+						<CurrentStateRef Name="None" ID="{4F52A7E7-3240-4480-BCA4-A75985D30EDB}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="End_Loop" ID="{AA947633-199D-4339-95BE-49FE4C400235}"/>
+						<CurrentSwitchRef Name="Deep" ID="{E1F17321-7537-4F0A-B16E-879CD5C93527}"/>
+						<CurrentSwitchRef Name="No" ID="{557E11F3-E18E-4406-BA2D-24998C38DA37}"/>
+						<CurrentSwitchRef Name="Wood" ID="{AD02081A-225D-437C-BF52-89E278904486}"/>
+						<CurrentSwitchRef Name="No_Storm" ID="{63EACF52-8ED1-42BE-B451-55BC3BC5002D}"/>
+						<CurrentSwitchRef Name="No" ID="{5FB29E7F-3317-44DD-B6DD-124F2B6A3410}"/>
+						<CurrentSwitchRef Name="Woodplanks" ID="{32AD8DEA-5B6B-4997-BE82-96223526A478}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

@@ -28,6 +28,31 @@
 						</GameParameter>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Ship" ID="{5A50EF09-3341-495F-9080-172EE508318A}" ShortID="147073895">
+					<ChildrenList>
+						<GameParameter Name="Ship_Speed_GP" ID="{72DFA80D-619E-4B12-8899-29FD2767932C}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="Ship_Health_GP" ID="{718CC684-1460-48DE-BD21-DEDF2B6A9D4A}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="100"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="Ship_Wind_Quality_GP" ID="{D5E2F34F-A357-43B5-9C38-492B8A218557}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="10"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="Ship_Sail_Height_GP" ID="{70F35A42-9104-442F-B66F-762CC58EE426}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>
