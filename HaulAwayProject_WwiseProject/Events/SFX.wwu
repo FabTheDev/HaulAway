@@ -600,6 +600,26 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
+										<Action Name="" ID="{E8A9D653-24D3-4A17-B72E-F2884D6D3984}" ShortID="330706759">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Sail_Pulley_Or_Not_SWTCH" ID="{A3A1A278-A5BF-4976-995A-2489B99ECED0}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{48C8F6F9-BEF9-4F25-8DED-256CF26FA0D6}" ShortID="89685612">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="7"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Sail_Pulley_Or_Not_SWTCH" ID="{A3A1A278-A5BF-4976-995A-2489B99ECED0}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 									</ChildrenList>
 								</Event>
 							</ChildrenList>
@@ -709,6 +729,84 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="SFX_HA_Ship_Sheet_Pulling" ID="{C452AFDC-2E83-456F-B7A4-ED8FD735AE7C}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Wave Impacts" ID="{5DE47F4C-43BC-4144-9911-EE5216DDD9D4}" ShortID="54594945">
+							<ChildrenList>
+								<Event Name="E_Ship_Wave_On_Hull" ID="{9FE148BF-B7C9-42C9-BA83-DFDAF1DF0EFE}">
+									<ChildrenList>
+										<Action Name="" ID="{091A7F9F-B674-4965-AE0F-5B51D607D445}" ShortID="959571496">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ship_Wave_On_Hull_RND" ID="{F58FE5CB-0E1C-4EAE-8980-08365B7A3B5F}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Ship_Fall_from_Wave" ID="{AA8DEA17-3DF3-430F-B8F1-DCC635E14176}">
+									<ChildrenList>
+										<Action Name="" ID="{30B8FDF5-1072-4320-98D6-7A1D6AA0A9EC}" ShortID="1071231917">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ship_Fall_From_Wave_RND" ID="{52DBECE2-5970-4A41-B830-62342F60C008}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Collisions" ID="{7B0C64DA-CFB1-4734-87A3-5132850369E6}" ShortID="326489127">
+							<ChildrenList>
+								<Event Name="E_Ship_Light_Collision" ID="{07F1ABD5-7786-4F0E-9494-CE5980B243FC}">
+									<ChildrenList>
+										<Action Name="" ID="{E9269567-883F-46CD-8B00-22CA0BD93883}" ShortID="890386842">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ship_Collision_Light_RND" ID="{042B85AA-9BB2-42A6-B9A2-5972BA06F198}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Ship_Medium_Collision" ID="{C924D9D5-D907-4E96-8C3B-0A8D692A298F}">
+									<ChildrenList>
+										<Action Name="" ID="{5C372021-20CF-4434-83FE-AC039D958450}" ShortID="24446658">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ship_Collision_Medium_RND" ID="{324984FE-4693-4226-8933-626AD92EC34F}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Ship_Strong_Collision" ID="{3ADC14A4-734C-4E79-95A5-AAB578BA298D}">
+									<ChildrenList>
+										<Action Name="" ID="{346966C7-8444-4CFB-8EF8-B9C7AAAB0B95}" ShortID="731444388">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ship_Collision_Strong_RND" ID="{03EDBDB8-B8BB-4DE1-B19F-F165F9AC6CDB}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

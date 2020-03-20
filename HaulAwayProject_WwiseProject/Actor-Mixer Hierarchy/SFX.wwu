@@ -5473,9 +5473,19 @@
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Ship" ID="{3C995522-7277-4A6D-9209-796196EBC6B1}" ShortID="485826179">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+							<ObjectRef Name="Gentle_Program_Compressor_Minus_14dB_RMS" ID="{1595E6B0-DD58-4363-A3F0-DF0C96EC7C17}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
@@ -5893,6 +5903,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="SFX_HA_Ship_Sail_Take_Perfect_Wind_04" ID="{889FF442-19CC-482B-B148-85CBF414ECE9}" ShortID="174034770">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
@@ -5915,6 +5932,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="SFX_HA_Ship_Sail_Take_Perfect_Wind_05" ID="{0BD9883F-E903-4FF9-BF25-2330676CB092}" ShortID="53448444">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
@@ -5941,6 +5965,11 @@
 								<RandomSequenceContainer Name="Sail_Correct_Wind_RND" ID="{DF02E161-67F3-4F05-98FE-55D5A21709CC}" ShortID="565898351">
 									<PropertyList>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -5977,6 +6006,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="SFX_HA_Ship_Sail_Take_Correct_Wind_02" ID="{97756EAD-60F6-4729-A702-00AC8BCAE76C}" ShortID="1016104746">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
@@ -5999,6 +6035,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="SFX_HA_Ship_Sail_Take_Correct_Wind_03" ID="{F0882220-7DF2-4A03-A3A7-D8CEBBA11E48}" ShortID="251429830">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
@@ -6074,7 +6117,7 @@
 												<RTPC Name="" ID="{2FE2B32B-A46B-440A-B5CC-B79CB2F0C4DC}" ShortID="73452767">
 													<ReferenceList>
 														<Reference Name="ControlInput">
-															<ObjectRef Name="Ship_Wind_Quality_GP" ID="{D5E2F34F-A357-43B5-9C38-492B8A218557}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+															<ObjectRef Name="WindTaken_GP" ID="{D5E2F34F-A357-43B5-9C38-492B8A218557}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
 														</Reference>
 													</ReferenceList>
 													<Curve Name="" ID="{21C23024-5C9A-48F9-ABC7-B92CC3980799}">
@@ -6089,8 +6132,8 @@
 																<SegmentShape>Log2</SegmentShape>
 															</Point>
 															<Point>
-																<XPos>10</XPos>
-																<YPos>26</YPos>
+																<XPos>1</XPos>
+																<YPos>36</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
@@ -6100,13 +6143,13 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-5</Value>
+												<Value>1</Value>
 											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{0401EE3A-9AD6-4890-BE33-6E8E50B9596F}" ShortID="284144963">
 													<ReferenceList>
 														<Reference Name="ControlInput">
-															<ObjectRef Name="Ship_Wind_Quality_GP" ID="{D5E2F34F-A357-43B5-9C38-492B8A218557}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+															<ObjectRef Name="WindTaken_GP" ID="{D5E2F34F-A357-43B5-9C38-492B8A218557}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
 														</Reference>
 													</ReferenceList>
 													<Curve Name="" ID="{DB9C5D51-C794-41AB-A821-BF84DCD4ACF6}">
@@ -6121,7 +6164,7 @@
 																<SegmentShape>Exp1</SegmentShape>
 															</Point>
 															<Point>
-																<XPos>10</XPos>
+																<XPos>1</XPos>
 																<YPos>-200</YPos>
 																<Flags>37</Flags>
 															</Point>
@@ -6131,7 +6174,7 @@
 												<RTPC Name="" ID="{75CC00BD-7800-4D01-B278-983F10191144}" ShortID="282632941">
 													<ReferenceList>
 														<Reference Name="ControlInput">
-															<ObjectRef Name="Ship_Sail_Height_GP" ID="{70F35A42-9104-442F-B66F-762CC58EE426}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+															<ObjectRef Name="SailHoist_GP" ID="{70F35A42-9104-442F-B66F-762CC58EE426}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
 														</Reference>
 													</ReferenceList>
 													<Curve Name="" ID="{3381AB43-AEAB-49C4-AA71-FAB2F49961C7}">
@@ -6146,7 +6189,7 @@
 																<SegmentShape>Log2</SegmentShape>
 															</Point>
 															<Point>
-																<XPos>100</XPos>
+																<XPos>1</XPos>
 																<YPos>0</YPos>
 																<Flags>37</Flags>
 															</Point>
@@ -6320,6 +6363,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="SFX_HA_Ship_Sheet_Released_04" ID="{C794A520-5D4E-491C-A0A1-1DD0D2A90DFE}" ShortID="186445306">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
@@ -6494,6 +6544,11 @@
 								</Sound>
 								<RandomSequenceContainer Name="Tiller_Blocked_RND" ID="{A9C14D13-6CAD-465E-BF74-F0BB50E091F1}" ShortID="485323103">
 									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>17</Value>
+											</ValueList>
+										</Property>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
@@ -6506,6 +6561,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="SFX_HA_Ship_Tiller_Blocked_01" ID="{18871AAE-90B7-4657-9E50-460647BE11BC}" ShortID="496586978">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
@@ -6528,6 +6590,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="SFX_HA_Ship_Tiller_Blocked_02" ID="{0AB6DFDD-8A3C-49B2-8445-9752B2079640}" ShortID="306019387">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
@@ -6601,7 +6670,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-8</Value>
+										<Value>-12</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -6617,6 +6686,11 @@
 								<RandomSequenceContainer Name="Ship_Collision_Light_RND" ID="{042B85AA-9BB2-42A6-B9A2-5972BA06F198}" ShortID="1034566019">
 									<PropertyList>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -6929,7 +7003,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-3</Value>
+										<Value>-12</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -6947,7 +7021,12 @@
 										<Property Name="BlendBehavior" Type="int16" Value="1"/>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
-												<Value>32</Value>
+												<Value>13</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>10</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -6988,9 +7067,14 @@
 										<Sound Name="SFX_HA_Ship_SpeedWater_Low" ID="{7A8E9D7F-8CCB-4044-B2AD-2995366208AF}" ShortID="705736263">
 											<PropertyList>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>24</Value>
+													</ValueList>
+												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-6</Value>
+														<Value>-3</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -7042,7 +7126,7 @@
 										</Sound>
 									</ChildrenList>
 									<BlendTrackList>
-										<BlendTrack Name="Water Friction" ID="{C605C002-029C-4066-9385-B7BD538992F3}" ShortID="853534860">
+										<BlendTrack Name="Low Friction" ID="{C605C002-029C-4066-9385-B7BD538992F3}" ShortID="853534860">
 											<PropertyList>
 												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
@@ -7050,7 +7134,7 @@
 														<RTPC Name="" ID="{A423E7E7-3C6F-4439-BA4B-F0E37908E0B9}" ShortID="780082148">
 															<ReferenceList>
 																<Reference Name="ControlInput">
-																	<ObjectRef Name="Ship_Speed_GP" ID="{72DFA80D-619E-4B12-8899-29FD2767932C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																	<ObjectRef Name="ShipSpeed_GP" ID="{72DFA80D-619E-4B12-8899-29FD2767932C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
 																</Reference>
 															</ReferenceList>
 															<Curve Name="" ID="{A6ADDC88-BED1-4A53-85D1-94DB060F0583}">
@@ -7062,14 +7146,15 @@
 																		<XPos>0</XPos>
 																		<YPos>-200</YPos>
 																		<Flags>5</Flags>
+																		<SegmentShape>Log2</SegmentShape>
 																	</Point>
 																	<Point>
-																		<XPos>10</XPos>
+																		<XPos>0.3</XPos>
 																		<YPos>0</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>100</XPos>
+																		<XPos>1</XPos>
 																		<YPos>0</YPos>
 																		<Flags>37</Flags>
 																	</Point>
@@ -7081,7 +7166,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="LayerCrossFadeControlInput">
-													<ObjectRef Name="Ship_Speed_GP" ID="{72DFA80D-619E-4B12-8899-29FD2767932C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+													<ObjectRef Name="ShipSpeed_GP" ID="{72DFA80D-619E-4B12-8899-29FD2767932C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
 												</Reference>
 											</ReferenceList>
 											<BlendTrackAssocList>
@@ -7090,25 +7175,122 @@
 													<CrossfadingInfo>
 														<LeftEdgePos>0</LeftEdgePos>
 														<LeftFadingMode>Automatic</LeftFadingMode>
-														<RightEdgePos>42.5392670157068</RightEdgePos>
+														<RightEdgePos>0.4</RightEdgePos>
 														<RightFadingMode>Automatic</RightFadingMode>
 													</CrossfadingInfo>
 												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+										<BlendTrack Name="Medium Friction" ID="{F62257B0-BD39-475E-B5CD-50E18966EB9D}" ShortID="358307441">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{6F91F0F9-52FF-44C9-82AD-8EF24D607E41}" ShortID="659099710">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="ShipSpeed_GP" ID="{72DFA80D-619E-4B12-8899-29FD2767932C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{AC6D23BE-2767-4E15-A921-B4229CDDAA93}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.1</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Log2</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>0.4</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="ShipSpeed_GP" ID="{72DFA80D-619E-4B12-8899-29FD2767932C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+												</Reference>
+											</ReferenceList>
+											<BlendTrackAssocList>
 												<BlendTrackAssoc>
 													<ItemRef Name="SFX_HA_Ship_SpeedWater_Medium" ID="{AEC41BEE-A5B6-4C95-BE22-91E687405007}"/>
 													<CrossfadingInfo>
-														<LeftEdgePos>19.7122918848168</LeftEdgePos>
+														<LeftEdgePos>0</LeftEdgePos>
 														<LeftFadingMode>Automatic</LeftFadingMode>
-														<RightEdgePos>79.8955379581152</RightEdgePos>
+														<RightEdgePos>1</RightEdgePos>
 														<RightFadingMode>Automatic</RightFadingMode>
 													</CrossfadingInfo>
 												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+										<BlendTrack Name="High Friction" ID="{44C08AA4-4F5D-4BC0-9965-6B66047E2E80}" ShortID="720950949">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{141468DE-4CF2-4309-AE6D-9517957165F7}" ShortID="913756975">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="ShipSpeed_GP" ID="{72DFA80D-619E-4B12-8899-29FD2767932C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{EB05EC3D-D9F3-442B-A7FA-7ADBC52B2CDA}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.6</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Log2</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="ShipSpeed_GP" ID="{72DFA80D-619E-4B12-8899-29FD2767932C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+												</Reference>
+											</ReferenceList>
+											<BlendTrackAssocList>
 												<BlendTrackAssoc>
 													<ItemRef Name="SFX_HA_Ship_SpeedWater_High" ID="{1E546EE4-BDED-4F09-9625-840C9FBB9734}"/>
 													<CrossfadingInfo>
-														<LeftEdgePos>53.848542539267</LeftEdgePos>
+														<LeftEdgePos>0</LeftEdgePos>
 														<LeftFadingMode>Automatic</LeftFadingMode>
-														<RightEdgePos>100</RightEdgePos>
+														<RightEdgePos>1</RightEdgePos>
 														<RightFadingMode>Automatic</RightFadingMode>
 													</CrossfadingInfo>
 												</BlendTrackAssoc>
@@ -7417,6 +7599,11 @@
 								<BlendContainer Name="Ship_Health_BLEND" ID="{7F2C6DC2-F900-4774-B380-2CFA44BF00F7}" ShortID="878214247">
 									<PropertyList>
 										<Property Name="BlendBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -7497,7 +7684,7 @@
 														<RTPC Name="" ID="{167E5097-9C6E-4CEA-94F8-3E44F823263F}" ShortID="711367915">
 															<ReferenceList>
 																<Reference Name="ControlInput">
-																	<ObjectRef Name="Ship_Health_GP" ID="{718CC684-1460-48DE-BD21-DEDF2B6A9D4A}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																	<ObjectRef Name="ShipLife_GP" ID="{718CC684-1460-48DE-BD21-DEDF2B6A9D4A}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
 																</Reference>
 															</ReferenceList>
 															<Curve Name="" ID="{0660CA45-246B-4C54-B60F-17577825C929}">
@@ -7511,27 +7698,27 @@
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>30</XPos>
+																		<XPos>0.3</XPos>
 																		<YPos>-200</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>50</XPos>
+																		<XPos>0.5</XPos>
 																		<YPos>0</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>70</XPos>
+																		<XPos>0.7</XPos>
 																		<YPos>0</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>90</XPos>
+																		<XPos>0.9</XPos>
 																		<YPos>-87.141</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>100</XPos>
+																		<XPos>1</XPos>
 																		<YPos>-200</YPos>
 																		<Flags>37</Flags>
 																	</Point>
@@ -7543,16 +7730,16 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="LayerCrossFadeControlInput">
-													<ObjectRef Name="Ship_Health_GP" ID="{718CC684-1460-48DE-BD21-DEDF2B6A9D4A}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+													<ObjectRef Name="ShipLife_GP" ID="{718CC684-1460-48DE-BD21-DEDF2B6A9D4A}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
 												</Reference>
 											</ReferenceList>
 											<BlendTrackAssocList>
 												<BlendTrackAssoc>
 													<ItemRef Name="SFX_HA_Ship_ship_damaged_medium" ID="{1F02CE31-85DB-4F1A-8D4B-44A4556AAA66}"/>
 													<CrossfadingInfo>
-														<LeftEdgePos>30.2356020942408</LeftEdgePos>
+														<LeftEdgePos>0.302356020942408</LeftEdgePos>
 														<LeftFadingMode>Automatic</LeftFadingMode>
-														<RightEdgePos>90</RightEdgePos>
+														<RightEdgePos>0.9</RightEdgePos>
 														<RightFadingMode>Automatic</RightFadingMode>
 													</CrossfadingInfo>
 												</BlendTrackAssoc>
@@ -7566,7 +7753,7 @@
 														<RTPC Name="" ID="{3DF45800-07ED-4195-ADBF-55459A96457D}" ShortID="224415971">
 															<ReferenceList>
 																<Reference Name="ControlInput">
-																	<ObjectRef Name="Ship_Health_GP" ID="{718CC684-1460-48DE-BD21-DEDF2B6A9D4A}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																	<ObjectRef Name="ShipLife_GP" ID="{718CC684-1460-48DE-BD21-DEDF2B6A9D4A}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
 																</Reference>
 															</ReferenceList>
 															<Curve Name="" ID="{7A97F309-C53F-41C6-895C-EB1733507C55}">
@@ -7580,22 +7767,22 @@
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>10</XPos>
+																		<XPos>0.1</XPos>
 																		<YPos>0</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>29.8429319371728</XPos>
+																		<XPos>0.298429319371728</XPos>
 																		<YPos>0</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>50</XPos>
+																		<XPos>0.5</XPos>
 																		<YPos>-200</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>100</XPos>
+																		<XPos>1</XPos>
 																		<YPos>-200</YPos>
 																		<Flags>37</Flags>
 																	</Point>
@@ -7607,7 +7794,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="LayerCrossFadeControlInput">
-													<ObjectRef Name="Ship_Health_GP" ID="{718CC684-1460-48DE-BD21-DEDF2B6A9D4A}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+													<ObjectRef Name="ShipLife_GP" ID="{718CC684-1460-48DE-BD21-DEDF2B6A9D4A}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
 												</Reference>
 											</ReferenceList>
 											<BlendTrackAssocList>
@@ -7616,7 +7803,7 @@
 													<CrossfadingInfo>
 														<LeftEdgePos>0</LeftEdgePos>
 														<LeftFadingMode>Automatic</LeftFadingMode>
-														<RightEdgePos>50</RightEdgePos>
+														<RightEdgePos>0.5</RightEdgePos>
 														<RightFadingMode>Automatic</RightFadingMode>
 													</CrossfadingInfo>
 												</BlendTrackAssoc>
@@ -7676,7 +7863,7 @@
 														<RTPC Name="" ID="{4E62DD01-82B5-4E63-85FA-16E8C65D1D2E}" ShortID="154438198">
 															<ReferenceList>
 																<Reference Name="ControlInput">
-																	<ObjectRef Name="Ship_Health_GP" ID="{718CC684-1460-48DE-BD21-DEDF2B6A9D4A}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																	<ObjectRef Name="ShipLife_GP" ID="{718CC684-1460-48DE-BD21-DEDF2B6A9D4A}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
 																</Reference>
 															</ReferenceList>
 															<Curve Name="" ID="{3748BFD4-080B-4BE0-81B2-715BCBEE5996}">
@@ -7690,7 +7877,7 @@
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>100</XPos>
+																		<XPos>1</XPos>
 																		<YPos>5</YPos>
 																		<Flags>37</Flags>
 																	</Point>
@@ -7701,6 +7888,11 @@
 												</Property>
 												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -7836,7 +8028,7 @@
 														<RTPC Name="" ID="{F3509C57-BFCC-4B85-8668-66B173433A01}" ShortID="750176512">
 															<ReferenceList>
 																<Reference Name="ControlInput">
-																	<ObjectRef Name="Ship_Health_GP" ID="{718CC684-1460-48DE-BD21-DEDF2B6A9D4A}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																	<ObjectRef Name="ShipLife_GP" ID="{718CC684-1460-48DE-BD21-DEDF2B6A9D4A}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
 																</Reference>
 															</ReferenceList>
 															<Curve Name="" ID="{3010D3DC-99B1-47ED-B1E6-876B4ED5C177}">
@@ -7850,7 +8042,7 @@
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>100</XPos>
+																		<XPos>1</XPos>
 																		<YPos>-6</YPos>
 																		<Flags>37</Flags>
 																	</Point>
@@ -7862,7 +8054,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="LayerCrossFadeControlInput">
-													<ObjectRef Name="Ship_Health_GP" ID="{718CC684-1460-48DE-BD21-DEDF2B6A9D4A}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+													<ObjectRef Name="ShipLife_GP" ID="{718CC684-1460-48DE-BD21-DEDF2B6A9D4A}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
 												</Reference>
 											</ReferenceList>
 											<BlendTrackAssocList>
@@ -7871,7 +8063,7 @@
 													<CrossfadingInfo>
 														<LeftEdgePos>0</LeftEdgePos>
 														<LeftFadingMode>Automatic</LeftFadingMode>
-														<RightEdgePos>100</RightEdgePos>
+														<RightEdgePos>1</RightEdgePos>
 														<RightFadingMode>Automatic</RightFadingMode>
 													</CrossfadingInfo>
 												</BlendTrackAssoc>

@@ -44,15 +44,23 @@
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="WindTaken_GP" ID="{D5E2F34F-A357-43B5-9C38-492B8A218557}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SailHoist_GP" ID="{70F35A42-9104-442F-B66F-762CC58EE426}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Water_Depth_Left" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}"/>
 							<Value>57</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="Ship_Health_GP" ID="{718CC684-1460-48DE-BD21-DEDF2B6A9D4A}"/>
+							<GameParameterRef Name="ShipLife_GP" ID="{718CC684-1460-48DE-BD21-DEDF2B6A9D4A}"/>
 							<Value>100</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="Ship_Speed_GP" ID="{72DFA80D-619E-4B12-8899-29FD2767932C}"/>
+							<GameParameterRef Name="ShipSpeed_GP" ID="{72DFA80D-619E-4B12-8899-29FD2767932C}"/>
 							<Value>84.1623036649215</Value>
 						</RTPCValue>
 						<RTPCValue>
@@ -185,6 +193,26 @@
 							<ObjectRef Name="E_Ship_Tiller_Blocked" ID="{A9FD76E6-951C-4867-B44E-4F78FA42F4E6}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
 							<Position X="4" Y="3"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="E_Ship_Wave_On_Hull" ID="{9FE148BF-B7C9-42C9-BA83-DFDAF1DF0EFE}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
+							<Position X="4" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Ship_Fall_from_Wave" ID="{AA8DEA17-3DF3-430F-B8F1-DCC635E14176}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
+							<Position X="4" Y="6"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Ship_Light_Collision" ID="{07F1ABD5-7786-4F0E-9494-CE5980B243FC}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
+							<Position X="5" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Ship_Medium_Collision" ID="{C924D9D5-D907-4E96-8C3B-0A8D692A298F}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
+							<Position X="5" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Ship_Strong_Collision" ID="{3ADC14A4-734C-4E79-95A5-AAB578BA298D}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
+							<Position X="5" Y="6"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
@@ -192,11 +220,11 @@
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="Ship_Wind_Quality_GP" ID="{D5E2F34F-A357-43B5-9C38-492B8A218557}"/>
-							<Value>0</Value>
+							<GameParameterRef Name="WindTaken_GP" ID="{D5E2F34F-A357-43B5-9C38-492B8A218557}"/>
+							<Value>0.211017740429505</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="Ship_Sail_Height_GP" ID="{70F35A42-9104-442F-B66F-762CC58EE426}"/>
+							<GameParameterRef Name="SailHoist_GP" ID="{70F35A42-9104-442F-B66F-762CC58EE426}"/>
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
@@ -204,11 +232,11 @@
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="Ship_Health_GP" ID="{718CC684-1460-48DE-BD21-DEDF2B6A9D4A}"/>
-							<Value>100</Value>
+							<GameParameterRef Name="ShipLife_GP" ID="{718CC684-1460-48DE-BD21-DEDF2B6A9D4A}"/>
+							<Value>1</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="Ship_Speed_GP" ID="{72DFA80D-619E-4B12-8899-29FD2767932C}"/>
+							<GameParameterRef Name="ShipSpeed_GP" ID="{72DFA80D-619E-4B12-8899-29FD2767932C}"/>
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
