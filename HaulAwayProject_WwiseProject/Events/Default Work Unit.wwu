@@ -1,23 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{4ADDE529-1277-4E72-9EF3-BDCDA35E952A}" SchemaVersion="89">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{4ADDE529-1277-4E72-9EF3-BDCDA35E952A}" PersistMode="Standalone">
-			<ChildrenList>
-				<Event Name="Play_Loop" ID="{3B75DBEE-0C3B-4CCC-967F-BE9786285E6F}">
-					<ChildrenList>
-						<Action Name="" ID="{C1D82959-CEDC-4D28-BC46-A0DCD95A8879}" ShortID="599022584">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="WHICH_LOOP_SWITCH" ID="{9BAE5B72-2FC7-4F54-ADF0-73EF29AA6804}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-			</ChildrenList>
-		</WorkUnit>
+		<WorkUnit Name="Default Work Unit" ID="{4ADDE529-1277-4E72-9EF3-BDCDA35E952A}" PersistMode="Standalone"/>
 	</Events>
 </WwiseDocument>
