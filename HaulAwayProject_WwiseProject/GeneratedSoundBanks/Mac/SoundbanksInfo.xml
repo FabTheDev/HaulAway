@@ -1,196 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="132">
 	<RootPaths>
-		<ProjectRoot>D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>D:\GIT REPOSITORIES\Projets JV\HaulAway\HaulAwayProject_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\GIT REPOSITORIES\Projets JV\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>D:\GIT REPOSITORIES\Projets JV\HaulAway\HaulAwayProject_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\GIT REPOSITORIES\Projets JV\HaulAway\HaulAwayProject_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="589288447" Language="SFX">
-			<ObjectPath>\SoundBanks\Default Work Unit\Soundbank_Music_Jingles</ObjectPath>
-			<ShortName>Soundbank_Music_Jingles</ShortName>
-			<Path>Soundbank_Music_Jingles.bnk</Path>
-			<IncludedEvents>
-				<Event Id="2827343347" Name="E_Mus_Jingle_Exploring" ObjectPath="\Events\MUSIC\Jingles\E_Mus_Jingle_Exploring"/>
-				<Event Id="2078447827" Name="E_Mus_Jingle_Fire_Lit" ObjectPath="\Events\MUSIC\Jingles\E_Mus_Jingle_Fire_Lit"/>
-				<Event Id="1721311491" Name="E_Mus_Jingle_New_Island" ObjectPath="\Events\MUSIC\Jingles\E_Mus_Jingle_New_Island"/>
-				<Event Id="3073683524" Name="E_Mus_Jingle_Standby" ObjectPath="\Events\MUSIC\Jingles\E_Mus_Jingle_Standby"/>
-			</IncludedEvents>
-			<IncludedMemoryFiles>
-				<File Id="8945167" Language="SFX">
-					<ShortName>jingle_standby.wav</ShortName>
-					<Path>SFX\jingle_standby_8956FC97.wem</Path>
-				</File>
-				<File Id="73020892" Language="SFX">
-					<ShortName>theme_exploring_island_5.wav</ShortName>
-					<Path>SFX\theme_exploring_island_5_8956FC97.wem</Path>
-				</File>
-				<File Id="251101924" Language="SFX">
-					<ShortName>theme_exploring_island_4.wav</ShortName>
-					<Path>SFX\theme_exploring_island_4_8956FC97.wem</Path>
-				</File>
-				<File Id="257031866" Language="SFX">
-					<ShortName>theme_exploring_island_2.wav</ShortName>
-					<Path>SFX\theme_exploring_island_2_8956FC97.wem</Path>
-				</File>
-				<File Id="621855743" Language="SFX">
-					<ShortName>jingle_fire_lit.wav</ShortName>
-					<Path>SFX\jingle_fire_lit_8956FC97.wem</Path>
-				</File>
-				<File Id="837322129" Language="SFX">
-					<ShortName>theme_exploring_island_3.wav</ShortName>
-					<Path>SFX\theme_exploring_island_3_8956FC97.wem</Path>
-				</File>
-				<File Id="883134144" Language="SFX">
-					<ShortName>theme_new_island.wav</ShortName>
-					<Path>SFX\theme_new_island_8956FC97.wem</Path>
-				</File>
-				<File Id="955165182" Language="SFX">
-					<ShortName>theme_exploring_island_1.wav</ShortName>
-					<Path>SFX\theme_exploring_island_1_8956FC97.wem</Path>
-				</File>
-			</IncludedMemoryFiles>
-		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1656213197" Language="SFX">
-			<ObjectPath>\SoundBanks\Default Work Unit\Soundbank_Music_Themes</ObjectPath>
-			<ShortName>Soundbank_Music_Themes</ShortName>
-			<Path>Soundbank_Music_Themes.bnk</Path>
+		<SoundBank Id="1661994096" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Soundbank</ObjectPath>
+			<ShortName>Soundbank</ShortName>
+			<Path>Soundbank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2158869718" Name="E_Mus_Initiate_Themes_Loop" ObjectPath="\Events\MUSIC\Themes\E_Mus_Initiate_Themes_Loop"/>
-				<Event Id="1678044671" Name="E_Mus_Pause_Themes_Loop" ObjectPath="\Events\MUSIC\Themes\E_Mus_Pause_Themes_Loop"/>
-			</IncludedEvents>
-			<IncludedMemoryFiles>
-				<File Id="1505233" Language="SFX">
-					<ShortName>theme_main_3.wav</ShortName>
-					<Path>SFX\theme_main_3_8956FC97.wem</Path>
-				</File>
-				<File Id="19966419" Language="SFX">
-					<ShortName>theme_going_to_sea_3.wav</ShortName>
-					<Path>SFX\theme_going_to_sea_3_8956FC97.wem</Path>
-				</File>
-				<File Id="20160249" Language="SFX">
-					<ShortName>theme_main_1.wav</ShortName>
-					<Path>SFX\theme_main_1_8956FC97.wem</Path>
-				</File>
-				<File Id="44708438" Language="SFX">
-					<ShortName>theme_sailing_singing_5.wav</ShortName>
-					<Path>SFX\theme_sailing_singing_5_8956FC97.wem</Path>
-				</File>
-				<File Id="65060138" Language="SFX">
-					<ShortName>theme_going_to_sea_2.wav</ShortName>
-					<Path>SFX\theme_going_to_sea_2_8956FC97.wem</Path>
-				</File>
-				<File Id="93817900" Language="SFX">
-					<ShortName>theme_sailing_3.wav</ShortName>
-					<Path>SFX\theme_sailing_3_8956FC97.wem</Path>
-				</File>
-				<File Id="98723454" Language="SFX">
-					<ShortName>theme_going_to_sea_1.wav</ShortName>
-					<Path>SFX\theme_going_to_sea_1_8956FC97.wem</Path>
-				</File>
-				<File Id="112134903" Language="SFX">
-					<ShortName>theme_main_2.wav</ShortName>
-					<Path>SFX\theme_main_2_8956FC97.wem</Path>
-				</File>
-				<File Id="350143537" Language="SFX">
-					<ShortName>theme_going_to_sea_4.wav</ShortName>
-					<Path>SFX\theme_going_to_sea_4_8956FC97.wem</Path>
-				</File>
-				<File Id="395565942" Language="SFX">
-					<ShortName>theme_sailing_2.wav</ShortName>
-					<Path>SFX\theme_sailing_2_8956FC97.wem</Path>
-				</File>
-				<File Id="399430967" Language="SFX">
-					<ShortName>theme_sailing_singing_2.wav</ShortName>
-					<Path>SFX\theme_sailing_singing_2_8956FC97.wem</Path>
-				</File>
-				<File Id="483369898" Language="SFX">
-					<ShortName>theme_sailing_1.wav</ShortName>
-					<Path>SFX\theme_sailing_1_8956FC97.wem</Path>
-				</File>
-				<File Id="518980243" Language="SFX">
-					<ShortName>theme_sailing_singing_3.wav</ShortName>
-					<Path>SFX\theme_sailing_singing_3_8956FC97.wem</Path>
-				</File>
-				<File Id="896538631" Language="SFX">
-					<ShortName>theme_sailing_singing_1.wav</ShortName>
-					<Path>SFX\theme_sailing_singing_1_8956FC97.wem</Path>
-				</File>
-				<File Id="990444181" Language="SFX">
-					<ShortName>theme_sailing_singing_4.wav</ShortName>
-					<Path>SFX\theme_sailing_singing_4_8956FC97.wem</Path>
-				</File>
-				<File Id="1021127060" Language="SFX">
-					<ShortName>theme_sailing_4.wav</ShortName>
-					<Path>SFX\theme_sailing_4_8956FC97.wem</Path>
-				</File>
-			</IncludedMemoryFiles>
-		</SoundBank>
-		<SoundBank Id="3065566834" Language="SFX">
-			<ObjectPath>\SoundBanks\Default Work Unit\Soundbank_Global</ObjectPath>
-			<ShortName>Soundbank_Global</ShortName>
-			<Path>Soundbank_Global.bnk</Path>
-			<IncludedEvents>
-				<Event Id="1759276972" Name="E_Character_ClimbLadder" ObjectPath="\Events\SFX\Character\Interractions\E_Character_ClimbLadder"/>
-				<Event Id="1110834563" Name="E_Character_DiveInWater" ObjectPath="\Events\SFX\Character\Movements\E_Character_DiveInWater"/>
-				<Event Id="3499961615" Name="E_Character_Footstep" ObjectPath="\Events\SFX\Character\Movements\E_Character_Footstep"/>
-				<Event Id="1219545601" Name="E_Character_Jump" ObjectPath="\Events\SFX\Character\Movements\E_Character_Jump"/>
-				<Event Id="2360503902" Name="E_Character_Land" ObjectPath="\Events\SFX\Character\Movements\E_Character_Land"/>
-				<Event Id="166232405" Name="E_Character_PickUp_Object" ObjectPath="\Events\SFX\Character\Interractions\E_Character_PickUp_Object"/>
-				<Event Id="583108420" Name="E_Character_Stop_Swiming" ObjectPath="\Events\SFX\Character\Movements\E_Character_Stop_Swiming"/>
-				<Event Id="736698947" Name="E_Character_Swiming" ObjectPath="\Events\SFX\Character\Movements\E_Character_Swiming"/>
-				<Event Id="418228812" Name="E_Mus_Jingle_Random" ObjectPath="\Events\MUSIC\Jingles\E_Mus_Jingle_Random"/>
-				<Event Id="2880618140" Name="E_Ship_Fall_from_Wave" ObjectPath="\Events\SFX\Ship\Wave Impacts\E_Ship_Fall_from_Wave"/>
-				<Event Id="2153563704" Name="E_Ship_Initialize" ObjectPath="\Events\SFX\Ship\Global\E_Ship_Initialize"/>
-				<Event Id="834247839" Name="E_Ship_Light_Collision" ObjectPath="\Events\SFX\Ship\Collisions\E_Ship_Light_Collision"/>
-				<Event Id="4260985166" Name="E_Ship_Medium_Collision" ObjectPath="\Events\SFX\Ship\Collisions\E_Ship_Medium_Collision"/>
-				<Event Id="1312964464" Name="E_Ship_Sail_Down" ObjectPath="\Events\SFX\Ship\Sail\E_Ship_Sail_Down"/>
-				<Event Id="237702952" Name="E_Ship_Sail_Downing" ObjectPath="\Events\SFX\Ship\Sail\E_Ship_Sail_Downing"/>
-				<Event Id="1834234983" Name="E_Ship_Sail_SetWindBad" ObjectPath="\Events\SFX\Ship\Sail\E_Ship_Sail_SetWindBad"/>
-				<Event Id="2736294032" Name="E_Ship_Sail_SetWindCorrect" ObjectPath="\Events\SFX\Ship\Sail\E_Ship_Sail_SetWindCorrect"/>
-				<Event Id="2215086397" Name="E_Ship_Sail_SetWindPerfect" ObjectPath="\Events\SFX\Ship\Sail\E_Ship_Sail_SetWindPerfect"/>
-				<Event Id="1574976189" Name="E_Ship_Sail_Stop_Downing" ObjectPath="\Events\SFX\Ship\Sail\E_Ship_Sail_Stop_Downing"/>
-				<Event Id="1415761036" Name="E_Ship_Sail_Stop_Upping" ObjectPath="\Events\SFX\Ship\Sail\E_Ship_Sail_Stop_Upping"/>
-				<Event Id="278231955" Name="E_Ship_Sail_Up" ObjectPath="\Events\SFX\Ship\Sail\E_Ship_Sail_Up"/>
-				<Event Id="1948054895" Name="E_Ship_Sail_Upping" ObjectPath="\Events\SFX\Ship\Sail\E_Ship_Sail_Upping"/>
-				<Event Id="3281800217" Name="E_Ship_Sheet_Pulling" ObjectPath="\Events\SFX\Ship\Sheet\E_Ship_Sheet_Pulling"/>
-				<Event Id="3305120987" Name="E_Ship_Sheet_Released" ObjectPath="\Events\SFX\Ship\Sheet\E_Ship_Sheet_Released"/>
-				<Event Id="3494137752" Name="E_Ship_Sheet_Releasing" ObjectPath="\Events\SFX\Ship\Sheet\E_Ship_Sheet_Releasing"/>
-				<Event Id="2413030644" Name="E_Ship_Sheet_Stop_Pulling" ObjectPath="\Events\SFX\Ship\Sheet\E_Ship_Sheet_Stop_Pulling"/>
-				<Event Id="3223780345" Name="E_Ship_Sheet_Stop_Releasing" ObjectPath="\Events\SFX\Ship\Sheet\E_Ship_Sheet_Stop_Releasing"/>
-				<Event Id="4266917672" Name="E_Ship_Sheet_Tightened" ObjectPath="\Events\SFX\Ship\Sheet\E_Ship_Sheet_Tightened"/>
-				<Event Id="3714654970" Name="E_Ship_Strong_Collision" ObjectPath="\Events\SFX\Ship\Collisions\E_Ship_Strong_Collision"/>
-				<Event Id="1577901771" Name="E_Ship_Tiller_Blocked" ObjectPath="\Events\SFX\Ship\Tiller\E_Ship_Tiller_Blocked"/>
-				<Event Id="3910457259" Name="E_Ship_Tiller_Stop_Turning" ObjectPath="\Events\SFX\Ship\Tiller\E_Ship_Tiller_Stop_Turning"/>
-				<Event Id="61654196" Name="E_Ship_Tiller_Turning" ObjectPath="\Events\SFX\Ship\Tiller\E_Ship_Tiller_Turning"/>
-				<Event Id="4002400943" Name="E_Ship_Wave_On_Hull" ObjectPath="\Events\SFX\Ship\Wave Impacts\E_Ship_Wave_On_Hull"/>
+				<Event Id="1550746454" Name="Play_DiveInWater" ObjectPath="\Events\SFX\Character\Play_DiveInWater"/>
+				<Event Id="1602358412" Name="Play_Footstep" ObjectPath="\Events\SFX\Character\Play_Footstep"/>
+				<Event Id="3689126666" Name="Play_Jump" ObjectPath="\Events\SFX\Character\Play_Jump"/>
+				<Event Id="4285282925" Name="Play_Land" ObjectPath="\Events\SFX\Character\Play_Land"/>
+				<Event Id="3198472556" Name="Play_PickUp_Object" ObjectPath="\Events\SFX\Character\Play_PickUp_Object"/>
+				<Event Id="622433081" Name="Play_Swimming" ObjectPath="\Events\SFX\Character\Play_Swimming"/>
+				<Event Id="317643343" Name="Stop_Swimming" ObjectPath="\Events\SFX\Character\Stop_Swimming"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="4101969" Language="SFX">
 					<ShortName>SFX_HA_Character_Footsteps_Puddle_Run_00.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Footsteps_Puddle_Run_00_56D34C19.wem</Path>
 				</File>
-				<File Id="6442531" Language="SFX">
-					<ShortName>SFX_HA_Ship_Sail_Downing.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Sail_Downing_8956FC97.wem</Path>
-				</File>
 				<File Id="22144099" Language="SFX">
 					<ShortName>footstep_TerreHumide_run2.wav</ShortName>
 					<Path>SFX\footstep_TerreHumide_run2_56D34C19.wem</Path>
-				</File>
-				<File Id="23178484" Language="SFX">
-					<ShortName>jingle_random_6.wav</ShortName>
-					<Path>SFX\jingle_random_6_8956FC97.wem</Path>
 				</File>
 				<File Id="25541167" Language="SFX">
 					<ShortName>footstep_Pierre_run3.wav</ShortName>
@@ -212,25 +58,9 @@
 					<ShortName>SFX_HA_Character_Pickup_SailPiece.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Pickup_SailPiece_56D34C19.wem</Path>
 				</File>
-				<File Id="41256832" Language="SFX">
-					<ShortName>SFX_HA_Ship_Fall_From_Wave_02.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Fall_From_Wave_02_56D34C19.wem</Path>
-				</File>
-				<File Id="44806446" Language="SFX">
-					<ShortName>SFX_HA_Ship_collision_medium_2.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_collision_medium_2_56D34C19.wem</Path>
-				</File>
-				<File Id="48587491" Language="SFX">
-					<ShortName>SFX_HA_Ship_Wave_On_Hull_04.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Wave_On_Hull_04_56D34C19.wem</Path>
-				</File>
 				<File Id="55520995" Language="SFX">
 					<ShortName>SFX_HA_Character_Footsteps_DrySand_Walk_03.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Footsteps_DrySand_Walk_03_56D34C19.wem</Path>
-				</File>
-				<File Id="55582752" Language="SFX">
-					<ShortName>SFX_HA_Ship_SpeedWater_High.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_SpeedWater_High_8956FC97.wem</Path>
 				</File>
 				<File Id="56359513" Language="SFX">
 					<ShortName>SFX_HA_Character_Footsteps_WetSand_Walk_01.wav</ShortName>
@@ -240,21 +70,9 @@
 					<ShortName>SFX_HA_Character_Footsteps_Puddle_Run_04.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Footsteps_Puddle_Run_04_56D34C19.wem</Path>
 				</File>
-				<File Id="62885469" Language="SFX">
-					<ShortName>SFX_HA_Ship_rope_moving_1.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_rope_moving_1_56D34C19.wem</Path>
-				</File>
-				<File Id="65912671" Language="SFX">
-					<ShortName>jingle_random_7.wav</ShortName>
-					<Path>SFX\jingle_random_7_8956FC97.wem</Path>
-				</File>
 				<File Id="72944737" Language="SFX">
 					<ShortName>SFX_HA_Character_Footsteps_WaterIn_Run_07.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Footsteps_WaterIn_Run_07_56D34C19.wem</Path>
-				</File>
-				<File Id="73585706" Language="SFX">
-					<ShortName>SFX_HA_Ship_Tiller_Blocked_03.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Tiller_Blocked_03_56D34C19.wem</Path>
 				</File>
 				<File Id="74277112" Language="SFX">
 					<ShortName>SFX_HA_Character_Clothes_Walking_06.wav</ShortName>
@@ -263,10 +81,6 @@
 				<File Id="77461224" Language="SFX">
 					<ShortName>SFX_HA_Character_Clothes_Walking_04.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Clothes_Walking_04_56D34C19.wem</Path>
-				</File>
-				<File Id="78463399" Language="SFX">
-					<ShortName>SFX_HA_Ship_collision_medium_3.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_collision_medium_3_56D34C19.wem</Path>
 				</File>
 				<File Id="78585654" Language="SFX">
 					<ShortName>SFX_HA_Character_FX_Pickup.wav</ShortName>
@@ -279,10 +93,6 @@
 				<File Id="85024138" Language="SFX">
 					<ShortName>SFX_HA_Character_Footsteps_WaterIn_Run_00.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Footsteps_WaterIn_Run_00_56D34C19.wem</Path>
-				</File>
-				<File Id="86339821" Language="SFX">
-					<ShortName>SFX_HA_Ship_Sail_Take_Correct_Wind_03.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Sail_Take_Correct_Wind_03_56D34C19.wem</Path>
 				</File>
 				<File Id="94244851" Language="SFX">
 					<ShortName>SFX_HA_Character_Footsteps_DrySand_Walk_01.wav</ShortName>
@@ -300,33 +110,9 @@
 					<ShortName>footstep_TerreHumide_walk1.wav</ShortName>
 					<Path>SFX\footstep_TerreHumide_walk1_56D34C19.wem</Path>
 				</File>
-				<File Id="108910760" Language="SFX">
-					<ShortName>SFX_HA_Ship_ship_damaged_medium.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_ship_damaged_medium_F3AD3E26.wem</Path>
-				</File>
-				<File Id="122436575" Language="SFX">
-					<ShortName>SFX_HA_Ship_Wave_On_Hull_01.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Wave_On_Hull_01_56D34C19.wem</Path>
-				</File>
 				<File Id="125845740" Language="SFX">
 					<ShortName>SFX_HA_Character_Footsteps_Wood_Walk_03.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Footsteps_Wood_Walk_03_56D34C19.wem</Path>
-				</File>
-				<File Id="137731339" Language="SFX">
-					<ShortName>SFX_HA_Ship_rope_moving_3.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_rope_moving_3_56D34C19.wem</Path>
-				</File>
-				<File Id="139112625" Language="SFX">
-					<ShortName>SFX_HA_Ship_Sheet_Released_04.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Sheet_Released_04_56D34C19.wem</Path>
-				</File>
-				<File Id="139400207" Language="SFX">
-					<ShortName>SFX_HA_Ship_Sheet_Released_02.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Sheet_Released_02_56D34C19.wem</Path>
-				</File>
-				<File Id="140745851" Language="SFX">
-					<ShortName>SFX_HA_Ship_Wave_On_Hull_05.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Wave_On_Hull_05_56D34C19.wem</Path>
 				</File>
 				<File Id="141863457" Language="SFX">
 					<ShortName>SFX_HA_Character_Footsteps_WetSand_Walk_02.wav</ShortName>
@@ -347,18 +133,6 @@
 				<File Id="155011610" Language="SFX">
 					<ShortName>SFX_HA_Character_Footsteps_Grass_Walk_07.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Walk_07_56D34C19.wem</Path>
-				</File>
-				<File Id="164557556" Language="SFX">
-					<ShortName>SFX_HA_Ship_SpeedWater_Medium.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_SpeedWater_Medium_8956FC97.wem</Path>
-				</File>
-				<File Id="176712982" Language="SFX">
-					<ShortName>SFX_HA_Ship_Sail_Up_03.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Sail_Up_03_56D34C19.wem</Path>
-				</File>
-				<File Id="177061003" Language="SFX">
-					<ShortName>SFX_HA_Ship_Sail_Up_01.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Sail_Up_01_56D34C19.wem</Path>
 				</File>
 				<File Id="178235766" Language="SFX">
 					<ShortName>SFX_HA_Character_Clothes_Land_01.wav</ShortName>
@@ -384,17 +158,9 @@
 					<ShortName>SFX_HA_Character_Footsteps_DrySand_Walk_05.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Footsteps_DrySand_Walk_05_56D34C19.wem</Path>
 				</File>
-				<File Id="203227503" Language="SFX">
-					<ShortName>SFX_HA_Ship_Sheet_Tightened_04.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Sheet_Tightened_04_56D34C19.wem</Path>
-				</File>
 				<File Id="204103879" Language="SFX">
 					<ShortName>SFX_HA_Character_Pickup_Compass.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Pickup_Compass_56D34C19.wem</Path>
-				</File>
-				<File Id="210185600" Language="SFX">
-					<ShortName>SFX_HA_Ship_Sheet_Tightened_03.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Sheet_Tightened_03_56D34C19.wem</Path>
 				</File>
 				<File Id="218012677" Language="SFX">
 					<ShortName>SFX_HA_Character_Clothes_Running_03.wav</ShortName>
@@ -407,10 +173,6 @@
 				<File Id="238766777" Language="SFX">
 					<ShortName>SFX_HA_Character_Pickup_Rope.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Pickup_Rope_56D34C19.wem</Path>
-				</File>
-				<File Id="239922544" Language="SFX">
-					<ShortName>SFX_HA_Ship_Sail_Flapping.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Sail_Flapping_8956FC97.wem</Path>
 				</File>
 				<File Id="247146998" Language="SFX">
 					<ShortName>SFX_HA_Character_Clothes_Land_04.wav</ShortName>
@@ -436,18 +198,6 @@
 					<ShortName>SFX_HA_Character_Pickup_PaperSheet.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Pickup_PaperSheet_56D34C19.wem</Path>
 				</File>
-				<File Id="277736750" Language="SFX">
-					<ShortName>SFX_HA_Ship_Sail_Take_Correct_Wind_01.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Sail_Take_Correct_Wind_01_56D34C19.wem</Path>
-				</File>
-				<File Id="280336310" Language="SFX">
-					<ShortName>SFX_HA_Ship_Sail_Take_Correct_Wind_05.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Sail_Take_Correct_Wind_05_56D34C19.wem</Path>
-				</File>
-				<File Id="284003974" Language="SFX">
-					<ShortName>SFX_HA_Character_FootOnLadder_04.wav</ShortName>
-					<Path>SFX\SFX_HA_Character_FootOnLadder_04_56D34C19.wem</Path>
-				</File>
 				<File Id="286968490" Language="SFX">
 					<ShortName>SFX_HA_Character_Clothes_Swiming_01.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Clothes_Swiming_01_56D34C19.wem</Path>
@@ -455,18 +205,6 @@
 				<File Id="294357935" Language="SFX">
 					<ShortName>SFX_HA_Character_Footsteps_DrySand_Walk_02.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Footsteps_DrySand_Walk_02_56D34C19.wem</Path>
-				</File>
-				<File Id="296483510" Language="SFX">
-					<ShortName>SFX_HA_Ship_collision_strong_3.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_collision_strong_3_56D34C19.wem</Path>
-				</File>
-				<File Id="298783663" Language="SFX">
-					<ShortName>SFX_HA_Ship_Wave_On_Hull_02.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Wave_On_Hull_02_56D34C19.wem</Path>
-				</File>
-				<File Id="300942898" Language="SFX">
-					<ShortName>SFX_HA_Ship_collision_light_4.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_collision_light_4_56D34C19.wem</Path>
 				</File>
 				<File Id="302696958" Language="SFX">
 					<ShortName>SFX_HA_Character_Clothes_Running_06.wav</ShortName>
@@ -480,10 +218,6 @@
 					<ShortName>footstep_TerreHumide_walk3.wav</ShortName>
 					<Path>SFX\footstep_TerreHumide_walk3_56D34C19.wem</Path>
 				</File>
-				<File Id="329249998" Language="SFX">
-					<ShortName>SFX_HA_Ship_Wave_On_Hull_03.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Wave_On_Hull_03_56D34C19.wem</Path>
-				</File>
 				<File Id="329652976" Language="SFX">
 					<ShortName>SFX_HA_Character_Footsteps_WetSand_Walk_04.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Footsteps_WetSand_Walk_04_56D34C19.wem</Path>
@@ -492,33 +226,13 @@
 					<ShortName>footstep_Pierre_run5.wav</ShortName>
 					<Path>SFX\footstep_Pierre_run5_56D34C19.wem</Path>
 				</File>
-				<File Id="332812323" Language="SFX">
-					<ShortName>SFX_HA_Ship_Sail_Take_Perfect_Wind_03.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Sail_Take_Perfect_Wind_03_56D34C19.wem</Path>
-				</File>
 				<File Id="356089791" Language="SFX">
 					<ShortName>SFX_HA_Character_Pickup_Nails.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Pickup_Nails_56D34C19.wem</Path>
 				</File>
-				<File Id="367279712" Language="SFX">
-					<ShortName>SFX_HA_Ship_Sail_Take_Perfect_Wind_05.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Sail_Take_Perfect_Wind_05_56D34C19.wem</Path>
-				</File>
 				<File Id="372645555" Language="SFX">
 					<ShortName>SFX_HA_Character_Clothes_Walking_02.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Clothes_Walking_02_56D34C19.wem</Path>
-				</File>
-				<File Id="374260000" Language="SFX">
-					<ShortName>SFX_HA_Ship_Sheet_Tightened_01.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Sheet_Tightened_01_56D34C19.wem</Path>
-				</File>
-				<File Id="375303645" Language="SFX">
-					<ShortName>SFX_HA_Ship_rope_moving_5.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_rope_moving_5_56D34C19.wem</Path>
-				</File>
-				<File Id="377887250" Language="SFX">
-					<ShortName>SFX_HA_Ship_Sail_Down_03.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Sail_Down_03_56D34C19.wem</Path>
 				</File>
 				<File Id="381208652" Language="SFX">
 					<ShortName>footstep_Pierre_run2.wav</ShortName>
@@ -528,17 +242,9 @@
 					<ShortName>SFX_HA_Character_Clothes_Walking_05.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Clothes_Walking_05_56D34C19.wem</Path>
 				</File>
-				<File Id="392901724" Language="SFX">
-					<ShortName>SFX_HA_Character_FootOnLadder_01.wav</ShortName>
-					<Path>SFX\SFX_HA_Character_FootOnLadder_01_56D34C19.wem</Path>
-				</File>
 				<File Id="396803414" Language="SFX">
 					<ShortName>SFX_HA_Character_Footsteps_Wood_Run_07.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Footsteps_Wood_Run_07_56D34C19.wem</Path>
-				</File>
-				<File Id="413721206" Language="SFX">
-					<ShortName>SFX_HA_Ship_Sail_Up_05.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Sail_Up_05_56D34C19.wem</Path>
 				</File>
 				<File Id="414801207" Language="SFX">
 					<ShortName>SFX_HA_Character_Footsteps_Puddle_Run_05.wav</ShortName>
@@ -548,10 +254,6 @@
 					<ShortName>SFX_HA_Character_Footsteps_Wood_Run_00.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Footsteps_Wood_Run_00_56D34C19.wem</Path>
 				</File>
-				<File Id="428398015" Language="SFX">
-					<ShortName>SFX_HA_Character_HandOnLadder_01.wav</ShortName>
-					<Path>SFX\SFX_HA_Character_HandOnLadder_01_56D34C19.wem</Path>
-				</File>
 				<File Id="433412623" Language="SFX">
 					<ShortName>SFX_HA_Character_Footsteps_WaterIn_Run_04.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Footsteps_WaterIn_Run_04_56D34C19.wem</Path>
@@ -560,29 +262,13 @@
 					<ShortName>SFX_HA_Character_Footsteps_Grass_Run_06.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Run_06_56D34C19.wem</Path>
 				</File>
-				<File Id="445622444" Language="SFX">
-					<ShortName>SFX_HA_Ship_Sail_Down_01.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Sail_Down_01_56D34C19.wem</Path>
-				</File>
-				<File Id="447606056" Language="SFX">
-					<ShortName>SFX_HA_Ship_SpeedWater_Low.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_SpeedWater_Low_8956FC97.wem</Path>
-				</File>
 				<File Id="467738588" Language="SFX">
 					<ShortName>SFX_HA_Character_Footsteps_Wood_Walk_01.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Footsteps_Wood_Walk_01_56D34C19.wem</Path>
 				</File>
-				<File Id="472077425" Language="SFX">
-					<ShortName>SFX_HA_Ship_Wave_On_Hull_08.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Wave_On_Hull_08_56D34C19.wem</Path>
-				</File>
 				<File Id="472594254" Language="SFX">
 					<ShortName>SFX_HA_Character_Footsteps_WetSand_Walk_06.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Footsteps_WetSand_Walk_06_56D34C19.wem</Path>
-				</File>
-				<File Id="472798384" Language="SFX">
-					<ShortName>SFX_HA_Ship_Sail_Upping.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Sail_Upping_8956FC97.wem</Path>
 				</File>
 				<File Id="477722318" Language="SFX">
 					<ShortName>SFX_HA_Character_DiveInWater_01.wav</ShortName>
@@ -604,14 +290,6 @@
 					<ShortName>SFX_HA_Character_Footsteps_WaterIn_Run_03.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Footsteps_WaterIn_Run_03_56D34C19.wem</Path>
 				</File>
-				<File Id="520940297" Language="SFX">
-					<ShortName>SFX_HA_Ship_collision_light_2.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_collision_light_2_56D34C19.wem</Path>
-				</File>
-				<File Id="521076200" Language="SFX">
-					<ShortName>SFX_HA_Ship_collision_strong_2.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_collision_strong_2_56D34C19.wem</Path>
-				</File>
 				<File Id="522097918" Language="SFX">
 					<ShortName>SFX_HA_Character_Footsteps_Wood_Run_05.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Footsteps_Wood_Run_05_56D34C19.wem</Path>
@@ -627,22 +305,6 @@
 				<File Id="543044772" Language="SFX">
 					<ShortName>SFX_HA_Character_Object_Pickup_02.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Object_Pickup_02_56D34C19.wem</Path>
-				</File>
-				<File Id="547612009" Language="SFX">
-					<ShortName>SFX_HA_Ship_Sail_Take_Correct_Wind_02.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Sail_Take_Correct_Wind_02_56D34C19.wem</Path>
-				</File>
-				<File Id="548422164" Language="SFX">
-					<ShortName>SFX_HA_Ship_collision_strong_4.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_collision_strong_4_56D34C19.wem</Path>
-				</File>
-				<File Id="552046923" Language="SFX">
-					<ShortName>SFX_HA_Ship_Tiller_Blocked_02.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Tiller_Blocked_02_56D34C19.wem</Path>
-				</File>
-				<File Id="555462536" Language="SFX">
-					<ShortName>SFX_HA_Ship_rope_moving_2.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_rope_moving_2_56D34C19.wem</Path>
 				</File>
 				<File Id="556366233" Language="SFX">
 					<ShortName>SFX_HA_Character_Footsteps_Wood_Run_06.wav</ShortName>
@@ -660,10 +322,6 @@
 					<ShortName>SFX_HA_Character_Footsteps_Wood_Walk_04.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Footsteps_Wood_Walk_04_56D34C19.wem</Path>
 				</File>
-				<File Id="576026981" Language="SFX">
-					<ShortName>SFX_HA_Ship_Sheet_Releasing.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Sheet_Releasing_8956FC97.wem</Path>
-				</File>
 				<File Id="576926667" Language="SFX">
 					<ShortName>SFX_HA_Character_Footsteps_Grass_Run_00.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Run_00_56D34C19.wem</Path>
@@ -680,21 +338,9 @@
 					<ShortName>SFX_HA_Character_Footsteps_Puddle_Run_03.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Footsteps_Puddle_Run_03_56D34C19.wem</Path>
 				</File>
-				<File Id="587676602" Language="SFX">
-					<ShortName>SFX_HA_Ship_Sail_Take_Correct_Wind_04.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Sail_Take_Correct_Wind_04_56D34C19.wem</Path>
-				</File>
-				<File Id="588046048" Language="SFX">
-					<ShortName>SFX_HA_Ship_Sail_Up_04.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Sail_Up_04_56D34C19.wem</Path>
-				</File>
 				<File Id="597156306" Language="SFX">
 					<ShortName>SFX_HA_Character_Footsteps_Grass_Run_03.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Run_03_56D34C19.wem</Path>
-				</File>
-				<File Id="597751424" Language="SFX">
-					<ShortName>SFX_HA_Ship_collision_medium_4.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_collision_medium_4_56D34C19.wem</Path>
 				</File>
 				<File Id="599953954" Language="SFX">
 					<ShortName>SFX_HA_Character_Footsteps_DrySand_Walk_06.wav</ShortName>
@@ -720,25 +366,13 @@
 					<ShortName>footstep_Pierre_walk5.wav</ShortName>
 					<Path>SFX\footstep_Pierre_walk5_56D34C19.wem</Path>
 				</File>
-				<File Id="643316962" Language="SFX">
-					<ShortName>jingle_random_5.wav</ShortName>
-					<Path>SFX\jingle_random_5_8956FC97.wem</Path>
-				</File>
 				<File Id="660737223" Language="SFX">
 					<ShortName>SFX_HA_Character_Clothes_Running_05.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Clothes_Running_05_56D34C19.wem</Path>
 				</File>
-				<File Id="674812637" Language="SFX">
-					<ShortName>SFX_HA_Character_FootOnLadder_00.wav</ShortName>
-					<Path>SFX\SFX_HA_Character_FootOnLadder_00_56D34C19.wem</Path>
-				</File>
 				<File Id="675912006" Language="SFX">
 					<ShortName>SFX_HA_Character_Clothes_Jump_04.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Clothes_Jump_04_7D230083.wem</Path>
-				</File>
-				<File Id="676249289" Language="SFX">
-					<ShortName>SFX_HA_Ship_Sail_Take_Perfect_Wind_04.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Sail_Take_Perfect_Wind_04_56D34C19.wem</Path>
 				</File>
 				<File Id="677916102" Language="SFX">
 					<ShortName>SFX_HA_Character_Footsteps_WaterIn_Run_06.wav</ShortName>
@@ -748,10 +382,6 @@
 					<ShortName>footstep_TerreHumide_walk2.wav</ShortName>
 					<Path>SFX\footstep_TerreHumide_walk2_56D34C19.wem</Path>
 				</File>
-				<File Id="696921957" Language="SFX">
-					<ShortName>jingle_random_3.wav</ShortName>
-					<Path>SFX\jingle_random_3_8956FC97.wem</Path>
-				</File>
 				<File Id="698895873" Language="SFX">
 					<ShortName>footstep_Pierre_run1.wav</ShortName>
 					<Path>SFX\footstep_Pierre_run1_56D34C19.wem</Path>
@@ -759,10 +389,6 @@
 				<File Id="702786934" Language="SFX">
 					<ShortName>footstep_Pierre_walk1.wav</ShortName>
 					<Path>SFX\footstep_Pierre_walk1_56D34C19.wem</Path>
-				</File>
-				<File Id="704861771" Language="SFX">
-					<ShortName>SFX_HA_Ship_Wave_On_Hull_07.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Wave_On_Hull_07_56D34C19.wem</Path>
 				</File>
 				<File Id="713288051" Language="SFX">
 					<ShortName>SFX_HA_Character_Footsteps_DrySand_Walk_04.wav</ShortName>
@@ -788,14 +414,6 @@
 					<ShortName>SFX_HA_Character_Footsteps_Grass_Walk_06.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Walk_06_56D34C19.wem</Path>
 				</File>
-				<File Id="743069458" Language="SFX">
-					<ShortName>SFX_HA_Ship_Sail_Take_Perfect_Wind_01.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Sail_Take_Perfect_Wind_01_56D34C19.wem</Path>
-				</File>
-				<File Id="745218927" Language="SFX">
-					<ShortName>SFX_HA_Ship_Sail_Take_Perfect_Wind_02.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Sail_Take_Perfect_Wind_02_56D34C19.wem</Path>
-				</File>
 				<File Id="745756030" Language="SFX">
 					<ShortName>SFX_HA_Character_Clothes_Walking_00.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Clothes_Walking_00_56D34C19.wem</Path>
@@ -803,22 +421,6 @@
 				<File Id="749522484" Language="SFX">
 					<ShortName>SFX_HA_Character_Footsteps_DrySand_Run_04.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Footsteps_DrySand_Run_04_56D34C19.wem</Path>
-				</File>
-				<File Id="752159266" Language="SFX">
-					<ShortName>SFX_HA_Ship_Sail_Pulley_Loop.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Sail_Pulley_Loop_8956FC97.wem</Path>
-				</File>
-				<File Id="752596580" Language="SFX">
-					<ShortName>SFX_HA_Ship_Tiller_Blocked_04.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Tiller_Blocked_04_56D34C19.wem</Path>
-				</File>
-				<File Id="760385121" Language="SFX">
-					<ShortName>SFX_HA_Ship_ship_damaged_high.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_ship_damaged_high_6C9057A3.wem</Path>
-				</File>
-				<File Id="766167110" Language="SFX">
-					<ShortName>SFX_HA_Ship_Sheet_Released_03.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Sheet_Released_03_56D34C19.wem</Path>
 				</File>
 				<File Id="770172273" Language="SFX">
 					<ShortName>SFX_HA_Character_Pickup_Skyglass.wav</ShortName>
@@ -828,21 +430,9 @@
 					<ShortName>SFX_HA_Character_Footsteps_DrySand_Run_06.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Footsteps_DrySand_Run_06_56D34C19.wem</Path>
 				</File>
-				<File Id="779810105" Language="SFX">
-					<ShortName>SFX_HA_Ship_collision_light_1.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_collision_light_1_56D34C19.wem</Path>
-				</File>
 				<File Id="780259646" Language="SFX">
 					<ShortName>SFX_HA_Character_Clothes_Jump_00.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Clothes_Jump_00_CC436370.wem</Path>
-				</File>
-				<File Id="786746066" Language="SFX">
-					<ShortName>SFX_HA_Ship_Sail_Down_02.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Sail_Down_02_56D34C19.wem</Path>
-				</File>
-				<File Id="787622928" Language="SFX">
-					<ShortName>jingle_random_1.wav</ShortName>
-					<Path>SFX\jingle_random_1_8956FC97.wem</Path>
 				</File>
 				<File Id="789114010" Language="SFX">
 					<ShortName>SFX_HA_Character_Object_Pickup_00.wav</ShortName>
@@ -851,10 +441,6 @@
 				<File Id="789268961" Language="SFX">
 					<ShortName>SFX_HA_Character_Footsteps_WaterIn_Run_02.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Footsteps_WaterIn_Run_02_56D34C19.wem</Path>
-				</File>
-				<File Id="793335222" Language="SFX">
-					<ShortName>SFX_HA_Ship_Sheet_Pulling.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Sheet_Pulling_8956FC97.wem</Path>
 				</File>
 				<File Id="799387833" Language="SFX">
 					<ShortName>SFX_HA_Character_Footsteps_WaterIn_Run_01.wav</ShortName>
@@ -872,10 +458,6 @@
 					<ShortName>SFX_HA_Character_Footsteps_Grass_Walk_04.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Walk_04_56D34C19.wem</Path>
 				</File>
-				<File Id="819813331" Language="SFX">
-					<ShortName>SFX_HA_Character_FootOnLadder_02.wav</ShortName>
-					<Path>SFX\SFX_HA_Character_FootOnLadder_02_56D34C19.wem</Path>
-				</File>
 				<File Id="819921945" Language="SFX">
 					<ShortName>SFX_HA_Character_DiveInWater_00.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_DiveInWater_00_56D34C19.wem</Path>
@@ -884,10 +466,6 @@
 					<ShortName>SFX_HA_Character_Footsteps_Wood_Walk_05.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Footsteps_Wood_Walk_05_56D34C19.wem</Path>
 				</File>
-				<File Id="841458271" Language="SFX">
-					<ShortName>SFX_HA_Ship_Sheet_Released_01.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Sheet_Released_01_56D34C19.wem</Path>
-				</File>
 				<File Id="842992221" Language="SFX">
 					<ShortName>footstep_TerreHumide_run3.wav</ShortName>
 					<Path>SFX\footstep_TerreHumide_run3_56D34C19.wem</Path>
@@ -895,10 +473,6 @@
 				<File Id="843620571" Language="SFX">
 					<ShortName>SFX_HA_Character_Footsteps_WaterIn_Run_05.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Footsteps_WaterIn_Run_05_56D34C19.wem</Path>
-				</File>
-				<File Id="851495797" Language="SFX">
-					<ShortName>SFX_HA_Ship_Tiller_Blocked_01.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Tiller_Blocked_01_56D34C19.wem</Path>
 				</File>
 				<File Id="855813183" Language="SFX">
 					<ShortName>footstep_Pierre_walk2.wav</ShortName>
@@ -928,33 +502,13 @@
 					<ShortName>SFX_HA_Character_Clothes_Running_01.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Clothes_Running_01_56D34C19.wem</Path>
 				</File>
-				<File Id="900476832" Language="SFX">
-					<ShortName>SFX_HA_Ship_Wave_On_Hull_06.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Wave_On_Hull_06_56D34C19.wem</Path>
-				</File>
 				<File Id="914645447" Language="SFX">
 					<ShortName>SFX_HA_Character_Clothes_Swiming_04.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Clothes_Swiming_04_56D34C19.wem</Path>
 				</File>
-				<File Id="925651725" Language="SFX">
-					<ShortName>SFX_HA_Ship_Sheet_Tightened_02.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Sheet_Tightened_02_56D34C19.wem</Path>
-				</File>
-				<File Id="926651627" Language="SFX">
-					<ShortName>SFX_HA_Ship_collision_strong_1.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_collision_strong_1_56D34C19.wem</Path>
-				</File>
-				<File Id="928202562" Language="SFX">
-					<ShortName>SFX_HA_Ship_rope_moving_4.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_rope_moving_4_56D34C19.wem</Path>
-				</File>
 				<File Id="929774716" Language="SFX">
 					<ShortName>SFX_HA_Character_Footsteps_Grass_Run_04.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Run_04_56D34C19.wem</Path>
-				</File>
-				<File Id="933461864" Language="SFX">
-					<ShortName>SFX_HA_Ship_collision_medium_1.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_collision_medium_1_56D34C19.wem</Path>
 				</File>
 				<File Id="934318076" Language="SFX">
 					<ShortName>SFX_HA_Character_Clothes_Jump_02.wav</ShortName>
@@ -964,17 +518,9 @@
 					<ShortName>SFX_HA_Character_Footsteps_Grass_Walk_00.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Walk_00_56D34C19.wem</Path>
 				</File>
-				<File Id="963880152" Language="SFX">
-					<ShortName>SFX_HA_Ship_Fall_From_Wave_01.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Fall_From_Wave_01_56D34C19.wem</Path>
-				</File>
 				<File Id="971146116" Language="SFX">
 					<ShortName>SFX_HA_Character_Clothes_Swiming_02.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Clothes_Swiming_02_56D34C19.wem</Path>
-				</File>
-				<File Id="977073523" Language="SFX">
-					<ShortName>SFX_HA_Ship_Sail_Up_02.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Sail_Up_02_56D34C19.wem</Path>
 				</File>
 				<File Id="979378219" Language="SFX">
 					<ShortName>SFX_HA_Character_Footsteps_Wood_Run_01.wav</ShortName>
@@ -988,25 +534,9 @@
 					<ShortName>SFX_HA_Character_Clothes_Jump_03.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Clothes_Jump_03_1EE0BEDD.wem</Path>
 				</File>
-				<File Id="985858223" Language="SFX">
-					<ShortName>SFX_HA_Character_HandOnLadder_00.wav</ShortName>
-					<Path>SFX\SFX_HA_Character_HandOnLadder_00_56D34C19.wem</Path>
-				</File>
-				<File Id="987921627" Language="SFX">
-					<ShortName>SFX_HA_Ship_collision_light_3.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_collision_light_3_56D34C19.wem</Path>
-				</File>
-				<File Id="998896544" Language="SFX">
-					<ShortName>SFX_HA_Ship_Tiller_Turning.wav</ShortName>
-					<Path>SFX\SFX_HA_Ship_Tiller_Turning_FDFE8BA6.wem</Path>
-				</File>
 				<File Id="1001534449" Language="SFX">
 					<ShortName>footstep_TerreHumide_walk4.wav</ShortName>
 					<Path>SFX\footstep_TerreHumide_walk4_56D34C19.wem</Path>
-				</File>
-				<File Id="1013220003" Language="SFX">
-					<ShortName>SFX_HA_Character_FootOnLadder_03.wav</ShortName>
-					<Path>SFX\SFX_HA_Character_FootOnLadder_03_56D34C19.wem</Path>
 				</File>
 				<File Id="1017991532" Language="SFX">
 					<ShortName>SFX_HA_Character_Footsteps_DrySand_Run_03.wav</ShortName>
@@ -1024,10 +554,6 @@
 					<ShortName>SFX_HA_Character_Clothes_Land_03.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Clothes_Land_03_56D34C19.wem</Path>
 				</File>
-				<File Id="1031661151" Language="SFX">
-					<ShortName>jingle_random_4.wav</ShortName>
-					<Path>SFX\jingle_random_4_8956FC97.wem</Path>
-				</File>
 				<File Id="1035342194" Language="SFX">
 					<ShortName>SFX_HA_Character_Footsteps_Grass_Run_07.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Run_07_56D34C19.wem</Path>
@@ -1039,10 +565,6 @@
 				<File Id="1039157740" Language="SFX">
 					<ShortName>SFX_HA_Character_Footsteps_Grass_Walk_05.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Walk_05_56D34C19.wem</Path>
-				</File>
-				<File Id="1046666640" Language="SFX">
-					<ShortName>jingle_random_2.wav</ShortName>
-					<Path>SFX\jingle_random_2_8956FC97.wem</Path>
 				</File>
 				<File Id="1061810795" Language="SFX">
 					<ShortName>SFX_HA_Character_Clothes_Swiming_03.wav</ShortName>

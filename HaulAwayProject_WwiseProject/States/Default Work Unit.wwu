@@ -7,7 +7,7 @@
 					<ChildrenList>
 						<Folder Name="Footsteps" ID="{023A9CF7-E5E6-4DA6-B4D1-98BF0A2A3B82}" ShortID="393912742">
 							<ChildrenList>
-								<StateGroup Name="Char_Walk_Run" ID="{0DEBD533-6B75-4C1B-BB5A-37E06527369E}">
+								<StateGroup Name="Walk_Run" ID="{0DEBD533-6B75-4C1B-BB5A-37E06527369E}">
 									<ChildrenList>
 										<State Name="None" ID="{4F52A7E7-3240-4480-BCA4-A75985D30EDB}"/>
 										<State Name="Walking" ID="{0DA3EC48-DE20-451C-A639-31F81343B6E8}"/>
@@ -22,7 +22,7 @@
 					<ChildrenList>
 						<Folder Name="Sail" ID="{48B3887A-2FC0-4A27-A55E-B73B4F4A67A1}" ShortID="384205075">
 							<ChildrenList>
-								<StateGroup Name="Ship_IsThereAPulley" ID="{F54E9215-423F-44C2-8279-05D3CEB5D50B}">
+								<StateGroup Name="IsThereAPulley_STATE" ID="{F54E9215-423F-44C2-8279-05D3CEB5D50B}">
 									<ChildrenList>
 										<State Name="None" ID="{B83E4870-EE12-480B-A54C-32436863F222}"/>
 										<State Name="Pulley" ID="{EF571314-96FA-4E21-B797-7371B66B4B91}"/>

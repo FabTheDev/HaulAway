@@ -1417,7 +1417,7 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
 										</Reference>
 										<Reference Name="SwitchGroupOrStateGroup">
-											<ObjectRef Name="Char_Walk_Run" ID="{0DEBD533-6B75-4C1B-BB5A-37E06527369E}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
+											<ObjectRef Name="Walk_Run" ID="{0DEBD533-6B75-4C1B-BB5A-37E06527369E}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
 										</Reference>
 										<Reference Name="UserAuxSend0">
 											<ObjectRef Name="Exterior_Acoustic_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
@@ -5090,7 +5090,7 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
 										</Reference>
 										<Reference Name="SwitchGroupOrStateGroup">
-											<ObjectRef Name="Char_Walk_Run" ID="{0DEBD533-6B75-4C1B-BB5A-37E06527369E}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
+											<ObjectRef Name="Walk_Run" ID="{0DEBD533-6B75-4C1B-BB5A-37E06527369E}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
 										</Reference>
 										<Reference Name="UserAuxSend0">
 											<ObjectRef Name="Exterior_Acoustic_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
@@ -5774,7 +5774,7 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
 										</Reference>
 										<Reference Name="SwitchGroupOrStateGroup">
-											<ObjectRef Name="Ship_IsThereAPulley" ID="{F54E9215-423F-44C2-8279-05D3CEB5D50B}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
+											<ObjectRef Name="IsThereAPulley_STATE" ID="{F54E9215-423F-44C2-8279-05D3CEB5D50B}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
