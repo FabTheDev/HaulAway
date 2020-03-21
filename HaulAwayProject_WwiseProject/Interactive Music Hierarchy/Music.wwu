@@ -624,6 +624,9 @@
 							</SequenceList>
 						</MusicTrack>
 					</ChildrenList>
+					<StingerList>
+						<MusicStinger Name="" ID="{9E6B12F6-80C8-4490-BF6E-B3CF8D9392F6}"/>
+					</StingerList>
 					<CueList>
 						<MusicCue Name="Entry Cue" ID="{5B1DC4FC-C9EF-4B34-ADF1-FB271E8B38AC}"/>
 						<MusicCue Name="Exit Cue" ID="{2214383D-9F42-4EF4-8050-0D9D78F03E01}">
@@ -1472,7 +1475,6 @@
 											<PropertyList>
 												<Property Name="DestinationContextType" Type="int16" Value="1"/>
 											</PropertyList>
-											<ReferenceList/>
 											<TransitionInfo/>
 										</MusicTransition>
 									</ChildrenList>
@@ -4033,33 +4035,18 @@
 																<MusicPlaylistItem Name="" ID="{C489FE68-C42C-41C6-A338-6D0D4E340453}" ShortID="419491605">
 																	<PropertyList>
 																		<Property Name="PlaylistItemType" Type="int16" Value="1"/>
-																		<Property Name="Weight" Type="Real64">
-																			<ValueList>
-																				<Value>0.001</Value>
-																			</ValueList>
-																		</Property>
 																	</PropertyList>
 																	<SegmentRef Name="theme_storm_1-3" ID="{9EC65891-AABD-4122-ACA6-AA564D3C7C6E}"/>
 																</MusicPlaylistItem>
 																<MusicPlaylistItem Name="" ID="{EE4AC184-E6C2-483D-94BA-0977BE3FF7FF}" ShortID="473378857">
 																	<PropertyList>
 																		<Property Name="PlaylistItemType" Type="int16" Value="1"/>
-																		<Property Name="Weight" Type="Real64">
-																			<ValueList>
-																				<Value>0.001</Value>
-																			</ValueList>
-																		</Property>
 																	</PropertyList>
 																	<SegmentRef Name="theme_storm_2-2" ID="{5FC05475-C2DF-4566-9A89-38E55FB9CC83}"/>
 																</MusicPlaylistItem>
 																<MusicPlaylistItem Name="" ID="{E4E76AAC-922A-47E9-A99E-8CDBA7281679}" ShortID="866030101">
 																	<PropertyList>
 																		<Property Name="PlaylistItemType" Type="int16" Value="1"/>
-																		<Property Name="Weight" Type="Real64">
-																			<ValueList>
-																				<Value>0.001</Value>
-																			</ValueList>
-																		</Property>
 																	</PropertyList>
 																	<SegmentRef Name="theme_storm_3-2" ID="{330C6299-7B0D-4D23-A9FF-5A7A59D323B4}"/>
 																</MusicPlaylistItem>
@@ -4459,6 +4446,30 @@
 									</PropertyList>
 									<TransitionInfo/>
 								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{93A7B842-5547-4AE5-96D2-B7B436051F4B}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="1"/>
+										<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="Theme_Sailing_SWITCH" ID="{593B216C-013D-4B75-A6A4-7EA9B3E67E67}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{8ECD4F9F-19B0-4F84-AA6C-FDA1EE994858}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="4"/>
+													<Property Name="FadeTime" Type="Real64" Value="4"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+									</TransitionInfo>
+								</MusicTransition>
 								<MusicTransition Name="Transition" ID="{B6B91893-A20E-4165-91A0-135615C90D25}">
 									<PropertyList>
 										<Property Name="DestinationContextType" Type="int16" Value="2"/>
@@ -4520,6 +4531,35 @@
 											<MusicFade Name="Source Fade-out" ID="{148836BD-6B30-4D1B-B51D-0DD09C3D70A8}">
 												<PropertyList>
 													<Property Name="FadeTime" Type="Real64" Value="8"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{D24BF3BB-4D61-40C6-AAD7-6B164EF434C4}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="1"/>
+										<Property Name="PlayDestinationPreEntry" Type="bool" Value="False"/>
+										<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="Main_Theme_PLAYLIST" ID="{6D657D4D-B9F4-4287-9CF3-34BF341DC257}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="Theme_Storm_SWITCH" ID="{EB7657E3-A3A9-40EB-BD19-FC7B755D81E3}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{F84B5682-7BF0-4B26-B31B-36C3B24D5A0E}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="4"/>
+													<Property Name="FadeTime" Type="Real64" Value="4"/>
 													<Property Name="FadeType" Type="int16" Value="1"/>
 												</PropertyList>
 											</MusicFade>

@@ -4,28 +4,28 @@
 		<Banks>
 			<Language ID="393239870">
 				<File Name="HaulAwaySoundBank" Hash="1365132702" Timestamp="1579525883"/>
-				<File Name="Init" Hash="93036671" Timestamp="1582047130"/>
+				<File Name="Init" Hash="3515241913" Timestamp="1582542872"/>
 				<File Name="Main_SoundBank" Hash="4725378" Timestamp="1581607616"/>
-				<File Name="Soundbank" Hash="2828702720" Timestamp="1582047130"/>
+				<File Name="Soundbank" Hash="2018174712" Timestamp="1582542872"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="3770147451" Timestamp="1582047130"/>
+				<File Name="" Hash="1379980226" Timestamp="1582542872"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{96EB6CBB-DE11-4BE5-B8BC-8D615F0BF02E}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Init" Hash="1308675045" Timestamp="1581958981"/>
+				<File Name="Init" Hash="1670628831" Timestamp="1582541708"/>
 				<File Name="Main_SoundBank" Hash="4725378" Timestamp="1581607611"/>
-				<File Name="Soundbank" Hash="3321463403" Timestamp="1582047118"/>
+				<File Name="Soundbank" Hash="2018174712" Timestamp="1582541708"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="3501822461" Timestamp="1582047118"/>
+				<File Name="" Hash="838270503" Timestamp="1582541708"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
