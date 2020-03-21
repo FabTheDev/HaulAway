@@ -4,22 +4,22 @@
 		<Banks>
 			<Language ID="393239870">
 				<File Name="HaulAwaySoundBank" Hash="1365132702" Timestamp="1579525883"/>
-				<File Name="Init" Hash="550441400" Timestamp="1584818344"/>
+				<File Name="Init" Hash="550441400" Timestamp="1584820462"/>
 				<File Name="Main_SoundBank" Hash="4725378" Timestamp="1581607616"/>
 				<File Name="Soundbank" Hash="2018174712" Timestamp="1582542872"/>
 				<File Name="Soundbank_Character" Hash="4090553745" Timestamp="1584816674"/>
 				<File Name="Soundbank_Environment_Extra" Hash="133741130" Timestamp="1584816674"/>
-				<File Name="Soundbank_Global" Hash="533531758" Timestamp="1584818341"/>
+				<File Name="Soundbank_Global" Hash="533531758" Timestamp="1584820460"/>
 				<File Name="Soundbank_Music" Hash="133382607" Timestamp="1584816680"/>
 				<File Name="Soundbank_MusicJingles" Hash="433052302" Timestamp="1584818212"/>
-				<File Name="Soundbank_Music_Jingles" Hash="1013585044" Timestamp="1584818337"/>
-				<File Name="Soundbank_Music_Themes" Hash="1056933683" Timestamp="1584818344"/>
+				<File Name="Soundbank_Music_Jingles" Hash="1013585044" Timestamp="1584820456"/>
+				<File Name="Soundbank_Music_Themes" Hash="1056933683" Timestamp="1584820462"/>
 				<File Name="Soundbank_Ship" Hash="741234195" Timestamp="1584816681"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="2998003131" Timestamp="1584818344"/>
+				<File Name="" Hash="641443020" Timestamp="1584820462"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
