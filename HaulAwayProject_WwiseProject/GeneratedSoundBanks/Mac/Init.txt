@@ -1,24 +1,33 @@
 Switch Group	ID	Name			Wwise Object Path	Notes
 	430223108	Water_Depth			\Default Work Unit\Character\Footsteps\Water_Depth	
-	874328620	Storm_Itensity			\Default Work Unit\Music\Storm_Itensity	
 
 Switch	ID	Name	Switch Group			Notes
 	1976939195	Deep	Water_Depth			
 	2943574119	Shallow	Water_Depth			
-	1772670678	No_Storm	Storm_Itensity			
-	3196610211	Here	Storm_Itensity			
-	3272866067	Approaching	Storm_Itensity			
 
 State Group	ID	Name			Wwise Object Path	Notes
-	2951998248	Walk_Run			\Default Work Unit\Character\Footsteps\Walk_Run	
+	755124726	Ship_IsThereAPulley			\Default Work Unit\Ship\Sail\Ship_IsThereAPulley	
+	3166210129	Char_Walk_Run			\Default Work Unit\Character\Footsteps\Char_Walk_Run	
 
 State	ID	Name	State Group			Notes
-	0	None	Walk_Run			
-	340271938	Walking	Walk_Run			
-	3863236874	Running	Walk_Run			
+	0	None	Ship_IsThereAPulley			
+	164038870	Pulley	Ship_IsThereAPulley			
+	794970764	No_Pulley	Ship_IsThereAPulley			
+	0	None	Char_Walk_Run			
+	340271938	Walking	Char_Walk_Run			
+	3863236874	Running	Char_Walk_Run			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	285976211	Music_Theme_BUS			\Default Work Unit\Master Audio Bus\Music_Theme_BUS	
+	2138725528	Acoustics_BUS			\Default Work Unit\Master Audio Bus\Acoustics_BUS	
+	2310520346	Music_Jingles_BUS			\Default Work Unit\Master Audio Bus\Music_Jingles_BUS	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	1060063872	Exterior_Acoustic_AUX			\Default Work Unit\Master Audio Bus\Acoustics_BUS\Exterior_Acoustic_AUX	
+
+Effect plug-ins	ID	Name	Type				Notes
+	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

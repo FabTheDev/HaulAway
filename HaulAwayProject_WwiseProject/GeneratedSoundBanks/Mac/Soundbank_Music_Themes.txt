@@ -1,0 +1,25 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1678044671	E_Mus_Pause_Themes_Loop			\MUSIC\Themes\E_Mus_Pause_Themes_Loop	
+	2158869718	E_Mus_Initiate_Themes_Loop			\MUSIC\Themes\E_Mus_Initiate_Themes_Loop	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	591246720	Storm_Intensity_GP			\Default Work Unit\Weather\Storm_Intensity_GP	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	1505233	theme_main_3	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_main_3_8956FC97.wem		\Interactive Music Hierarchy\Music\Themes\Theme_Selection_SWITCH\Main_Theme_PLAYLIST\theme_main_3\theme_main_3		11289664
+	19966419	theme_going_to_sea_3	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_going_to_sea_3_8956FC97.wem		\Interactive Music Hierarchy\Music\Themes\Theme_Selection_SWITCH\Theme_Going_To_Sea_PLAYLIST\theme_going_to_sea_3\theme_going_to_sea_3		2116864
+	20160249	theme_main_1	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_main_1_8956FC97.wem		\Interactive Music Hierarchy\Music\Themes\Theme_Selection_SWITCH\Main_Theme_PLAYLIST\theme_main_1\theme_main_1		11289664
+	44708438	theme_sailing_singing_5	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_sailing_singing_5_8956FC97.wem		\Interactive Music Hierarchy\Music\Themes\Theme_Selection_SWITCH\Theme_Sailing_SWITCH\Theme_Sailing_Singing_PLAYLIST\theme_sailing_singing_5\theme_sailing_singing_5		5644864
+	65060138	theme_going_to_sea_2	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_going_to_sea_2_8956FC97.wem		\Interactive Music Hierarchy\Music\Themes\Theme_Selection_SWITCH\Theme_Going_To_Sea_PLAYLIST\theme_going_to_sea_2\theme_going_to_sea_2		2116864
+	93817900	theme_sailing_3	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_sailing_3_8956FC97.wem		\Interactive Music Hierarchy\Music\Themes\Theme_Selection_SWITCH\Theme_Sailing_SWITCH\Theme_Sailing_PLAYLIST\theme_sailing_3\theme_sailing_3		5644864
+	98723454	theme_going_to_sea_1	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_going_to_sea_1_8956FC97.wem		\Interactive Music Hierarchy\Music\Themes\Theme_Selection_SWITCH\Theme_Going_To_Sea_PLAYLIST\theme_going_to_sea_1\theme_going_to_sea_1		2116864
+	112134903	theme_main_2	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_main_2_8956FC97.wem		\Interactive Music Hierarchy\Music\Themes\Theme_Selection_SWITCH\Main_Theme_PLAYLIST\theme_main_2\theme_main_2		11289664
+	350143537	theme_going_to_sea_4	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_going_to_sea_4_8956FC97.wem		\Interactive Music Hierarchy\Music\Themes\Theme_Selection_SWITCH\Theme_Going_To_Sea_PLAYLIST\theme_going_to_sea_4\theme_going_to_sea_4		2116864
+	395565942	theme_sailing_2	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_sailing_2_8956FC97.wem		\Interactive Music Hierarchy\Music\Themes\Theme_Selection_SWITCH\Theme_Sailing_SWITCH\Theme_Sailing_PLAYLIST\theme_sailing_2\theme_sailing_2		5644864
+	399430967	theme_sailing_singing_2	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_sailing_singing_2_8956FC97.wem		\Interactive Music Hierarchy\Music\Themes\Theme_Selection_SWITCH\Theme_Sailing_SWITCH\Theme_Sailing_Singing_PLAYLIST\theme_sailing_singing_2\theme_sailing_singing_2		5644864
+	483369898	theme_sailing_1	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_sailing_1_8956FC97.wem		\Interactive Music Hierarchy\Music\Themes\Theme_Selection_SWITCH\Theme_Sailing_SWITCH\Theme_Sailing_PLAYLIST\theme_sailing_1\theme_sailing_1		5644864
+	518980243	theme_sailing_singing_3	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_sailing_singing_3_8956FC97.wem		\Interactive Music Hierarchy\Music\Themes\Theme_Selection_SWITCH\Theme_Sailing_SWITCH\Theme_Sailing_Singing_PLAYLIST\theme_sailing_singing_3\theme_sailing_singing_3		5644864
+	896538631	theme_sailing_singing_1	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_sailing_singing_1_8956FC97.wem		\Interactive Music Hierarchy\Music\Themes\Theme_Selection_SWITCH\Theme_Sailing_SWITCH\Theme_Sailing_Singing_PLAYLIST\theme_sailing_singing_1\theme_sailing_singing_1		5644864
+	990444181	theme_sailing_singing_4	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_sailing_singing_4_8956FC97.wem		\Interactive Music Hierarchy\Music\Themes\Theme_Selection_SWITCH\Theme_Sailing_SWITCH\Theme_Sailing_Singing_PLAYLIST\theme_sailing_singing_4\theme_sailing_singing_4		5644864
+	1021127060	theme_sailing_4	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_sailing_4_8956FC97.wem		\Interactive Music Hierarchy\Music\Themes\Theme_Selection_SWITCH\Theme_Sailing_SWITCH\Theme_Sailing_PLAYLIST\theme_sailing_4\theme_sailing_4		5644864
+

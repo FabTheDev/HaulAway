@@ -21,6 +21,20 @@
 								</AuxBus>
 							</ChildrenList>
 						</Bus>
+						<Bus Name="Music_Theme_BUS" ID="{E98A5F2E-E786-43DB-8254-3BEE4959E4AF}"/>
+						<Bus Name="Music_Jingles_BUS" ID="{FCCEE5C4-A0BC-48DA-A4CE-38A91C1B2D52}">
+							<DuckingList>
+								<DuckItem>
+									<BusRef Name="Music_Theme_BUS" ID="{E98A5F2E-E786-43DB-8254-3BEE4959E4AF}"/>
+									<DuckingParam>
+										<Volume>-96</Volume>
+										<FadeInTime>5</FadeInTime>
+										<FadeOutTime>1</FadeOutTime>
+										<FadeCurve>FadeExp2</FadeCurve>
+									</DuckingParam>
+								</DuckItem>
+							</DuckingList>
+						</Bus>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

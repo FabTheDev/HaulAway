@@ -5,160 +5,168 @@
 			<ChildrenList>
 				<Folder Name="Character" ID="{B28FECDC-EEAA-4FB8-9F93-2435152A4520}" ShortID="188282814">
 					<ChildrenList>
-						<Event Name="Play_Footstep" ID="{EFA52787-E6B3-4C96-A54B-1B96A6DD972E}">
+						<Folder Name="Movements" ID="{293A5BB9-1BA4-44F3-A2EF-7B05EE88FEEE}" ShortID="203240403">
 							<ChildrenList>
-								<Action Name="" ID="{A35047D8-45F7-42F8-AEE9-F67419F0468D}" ShortID="613017141">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Footsteps_WalkRun_SWITCH" ID="{6716A2EB-2E62-4F8C-81A2-FA9446629542}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{135D357A-DC84-4D3E-960D-F0EAB2E44612}" ShortID="548970270">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Clothesteps_WalkRun_SWITCH" ID="{1F316799-5AD7-4843-A93E-61ACD7AE1BD0}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
+								<Event Name="E_Character_Swiming" ID="{ADCF0009-ACAC-46C9-A06B-62C467D7211A}">
+									<ChildrenList>
+										<Action Name="" ID="{764A5F57-FEE5-40C1-A759-66CEECD1EBB8}" ShortID="500982117">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Swimming_RND" ID="{4973C82F-6E0C-45D7-9ABE-34CA81265DA2}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Character_Stop_Swiming" ID="{36122071-4BD3-4318-B5F5-56F5675F2D05}">
+									<ChildrenList>
+										<Action Name="" ID="{4AA8E24C-E072-4FBB-A624-42AB7552A036}" ShortID="536516638">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.4"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Swimming_RND" ID="{4973C82F-6E0C-45D7-9ABE-34CA81265DA2}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Character_Jump" ID="{5F613C6B-B30A-4518-AF7A-10E7821DAF20}">
+									<ChildrenList>
+										<Action Name="" ID="{F25C1D8C-6295-4876-8314-F3A6282CF45C}" ShortID="972936721">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="JumpClothe_RND" ID="{E19D1D35-0B07-4DDA-B8DC-68A7562E6BF6}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Character_DiveInWater" ID="{F70F8017-C70D-456E-95CC-51A0FB563ADB}">
+									<ChildrenList>
+										<Action Name="" ID="{16D08870-6D03-4810-A641-37B5C2E462B5}" ShortID="164213406">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="DiveInWater_RND" ID="{EA39B53F-E646-4E1F-9FDC-5528921831FB}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Character_Land" ID="{CF1B53AE-226D-4F7E-8BEF-742D6DA30966}">
+									<ChildrenList>
+										<Action Name="" ID="{A16AE475-238D-44BC-BE19-4D8FB232D6EC}" ShortID="544767676">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="LandClothe_RND" ID="{4FA96F1F-7C78-4A18-953B-7F64AF2243FA}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Character_Footstep" ID="{EFA52787-E6B3-4C96-A54B-1B96A6DD972E}">
+									<ChildrenList>
+										<Action Name="" ID="{A35047D8-45F7-42F8-AEE9-F67419F0468D}" ShortID="613017141">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Footsteps_WalkRun_SWITCH" ID="{6716A2EB-2E62-4F8C-81A2-FA9446629542}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{135D357A-DC84-4D3E-960D-F0EAB2E44612}" ShortID="548970270">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Clothesteps_WalkRun_SWITCH" ID="{1F316799-5AD7-4843-A93E-61ACD7AE1BD0}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
-						</Event>
-						<Event Name="Play_Swimming" ID="{ADCF0009-ACAC-46C9-A06B-62C467D7211A}">
+						</Folder>
+						<Folder Name="Interractions" ID="{1AF7EB15-0F4A-4589-8C1A-7858E5A028AB}" ShortID="721422149">
 							<ChildrenList>
-								<Action Name="" ID="{764A5F57-FEE5-40C1-A759-66CEECD1EBB8}" ShortID="500982117">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Swimming_RND" ID="{4973C82F-6E0C-45D7-9ABE-34CA81265DA2}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
+								<Event Name="E_Character_ClimbLadder" ID="{73DD60F1-5CBA-4016-8853-EBB50D50EA53}">
+									<ChildrenList>
+										<Action Name="" ID="{272F8F2C-79A3-4F71-9043-5390C1D87CF3}" ShortID="1013908792">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="LadderClimb_SEQ" ID="{DD693375-3298-4379-A50C-3749E8C61255}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{E880DE19-A870-4260-A0D7-737BD1F03F7E}" ShortID="807292760">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Clothes_Walking_RND" ID="{A990149D-8D5F-41D3-9F0F-B321E76449C2}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Character_PickUp_Object" ID="{C35DAE63-6620-41BE-8376-3E65C4EB516A}">
+									<ChildrenList>
+										<Action Name="" ID="{14799405-6CA7-4B0A-B52E-4EA2DD6D4FDE}" ShortID="654428245">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Bag_Pickup_RND" ID="{2BC4E024-904D-494A-991E-1D45942CA04E}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{626FCE8A-2118-4B4B-99C4-602B3D90B3EF}" ShortID="471612595">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Pickup_Objects_SWITCH" ID="{4C073056-08F3-40B4-8A3E-3242CE29510F}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{9E0039FF-DAC9-4DE7-8353-A117B196843C}" ShortID="185981494">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="0.45"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="FX_Pickup_SWITCH" ID="{193BCF4A-7ACB-466D-906F-4C59FB4046DD}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
-						</Event>
-						<Event Name="Play_PickUp_Object" ID="{C35DAE63-6620-41BE-8376-3E65C4EB516A}">
-							<ChildrenList>
-								<Action Name="" ID="{14799405-6CA7-4B0A-B52E-4EA2DD6D4FDE}" ShortID="654428245">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Bag_Pickup_RND" ID="{2BC4E024-904D-494A-991E-1D45942CA04E}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{626FCE8A-2118-4B4B-99C4-602B3D90B3EF}" ShortID="471612595">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Pickup_Objects_SWITCH" ID="{4C073056-08F3-40B4-8A3E-3242CE29510F}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{9E0039FF-DAC9-4DE7-8353-A117B196843C}" ShortID="185981494">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-										<Property Name="Delay" Type="Real64" Value="0.45"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="FX_Pickup_SWITCH" ID="{193BCF4A-7ACB-466D-906F-4C59FB4046DD}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Stop_Swimming" ID="{36122071-4BD3-4318-B5F5-56F5675F2D05}">
-							<ChildrenList>
-								<Action Name="" ID="{4AA8E24C-E072-4FBB-A624-42AB7552A036}" ShortID="536516638">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-										<Property Name="FadeTime" Type="Real64" Value="0.4"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Swimming_RND" ID="{4973C82F-6E0C-45D7-9ABE-34CA81265DA2}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_Jump" ID="{5F613C6B-B30A-4518-AF7A-10E7821DAF20}">
-							<ChildrenList>
-								<Action Name="" ID="{F25C1D8C-6295-4876-8314-F3A6282CF45C}" ShortID="972936721">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="JumpClothe_RND" ID="{E19D1D35-0B07-4DDA-B8DC-68A7562E6BF6}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_Land" ID="{CF1B53AE-226D-4F7E-8BEF-742D6DA30966}">
-							<ChildrenList>
-								<Action Name="" ID="{A16AE475-238D-44BC-BE19-4D8FB232D6EC}" ShortID="544767676">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="LandClothe_RND" ID="{4FA96F1F-7C78-4A18-953B-7F64AF2243FA}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_DiveInWater" ID="{F70F8017-C70D-456E-95CC-51A0FB563ADB}">
-							<ChildrenList>
-								<Action Name="" ID="{16D08870-6D03-4810-A641-37B5C2E462B5}" ShortID="164213406">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="DiveInWater_RND" ID="{EA39B53F-E646-4E1F-9FDC-5528921831FB}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_ClimbLadder" ID="{73DD60F1-5CBA-4016-8853-EBB50D50EA53}">
-							<ChildrenList>
-								<Action Name="" ID="{272F8F2C-79A3-4F71-9043-5390C1D87CF3}" ShortID="1013908792">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="LadderClimb_SEQ" ID="{DD693375-3298-4379-A50C-3749E8C61255}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{E880DE19-A870-4260-A0D7-737BD1F03F7E}" ShortID="807292760">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Clothes_Walking_RND" ID="{A990149D-8D5F-41D3-9F0F-B321E76449C2}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Ship" ID="{AA6F6A4A-BD8F-40C0-849F-1293DD4B41D7}" ShortID="365870156">
