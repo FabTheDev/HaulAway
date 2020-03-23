@@ -161,6 +161,661 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Ship" ID="{AA6F6A4A-BD8F-40C0-849F-1293DD4B41D7}" ShortID="365870156">
+					<ChildrenList>
+						<Folder Name="Sail" ID="{313C2A7B-D626-48DA-94F8-FC3D324C7281}" ShortID="692137243">
+							<ChildrenList>
+								<Event Name="E_Ship_Sail_Stop_Upping" ID="{6990B549-0987-4F09-8B91-EDAB7E6F3FAF}">
+									<ChildrenList>
+										<Action Name="" ID="{599518C4-D1AE-4EF9-93FC-C304BE6FA010}" ShortID="300421866">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="7"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HA_Ship_Sail_Upping" ID="{31A073E0-BC4D-4F26-BC60-950D4511D1B0}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{A39B6566-0E67-4033-BC91-FBF650CEF927}" ShortID="934326439">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="7"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Sail_Pulley_Or_Not_SWTCH" ID="{A3A1A278-A5BF-4976-995A-2489B99ECED0}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Ship_Sail_Stop_Downing" ID="{66998CC7-16B8-4BFD-BC45-4ED8E399A1BE}">
+									<ChildrenList>
+										<Action Name="" ID="{53BF5861-A028-416D-97B6-D0F610395F04}" ShortID="948950866">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="7"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HA_Ship_Sail_Downing" ID="{3D7D6F9A-3D07-4DED-A658-8491DCC946DF}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{C0D1790F-63DE-496C-AF10-C65CCAE61898}" ShortID="676888676">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="7"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Sail_Pulley_Or_Not_SWTCH" ID="{A3A1A278-A5BF-4976-995A-2489B99ECED0}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Ship_Sail_Upping" ID="{5AB4D629-F756-4E98-92EA-CAF41060A121}">
+									<ChildrenList>
+										<Action Name="" ID="{BE1928AF-FC71-4B77-90AC-73754975F21D}" ShortID="803031440">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="9"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HA_Ship_Sail_Upping" ID="{31A073E0-BC4D-4F26-BC60-950D4511D1B0}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{6279F8E7-B769-4C8D-BBC0-57FF25C35498}" ShortID="97231483">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="9"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Sail_Pulley_Or_Not_SWTCH" ID="{A3A1A278-A5BF-4976-995A-2489B99ECED0}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Ship_Sail_Downing" ID="{358B4B0B-29F3-4D38-A8AB-F6068D64988E}">
+									<ChildrenList>
+										<Action Name="" ID="{AD7EAE7E-9BD1-42A4-AE6B-B6A340A93009}" ShortID="421180521">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="9"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HA_Ship_Sail_Downing" ID="{3D7D6F9A-3D07-4DED-A658-8491DCC946DF}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{BB43D1AF-3360-427D-88D1-6DAA071DE9F8}" ShortID="48061710">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="9"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Sail_Pulley_Or_Not_SWTCH" ID="{A3A1A278-A5BF-4976-995A-2489B99ECED0}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Ship_Sail_Up" ID="{C39E5576-77EA-486F-A0BF-69A31F9C1225}">
+									<ChildrenList>
+										<Action Name="" ID="{BC86A3DD-C9FF-4FB2-98E1-67BC35EDE8B4}" ShortID="186473351">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Sail_Up_RND" ID="{6C2C9E41-533D-4F53-BC4A-C8931DB14EDD}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{CB5CA8E4-B519-4B9E-94BE-D951CD9F2FD5}" ShortID="42696803">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="7"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HA_Ship_Sail_Upping" ID="{31A073E0-BC4D-4F26-BC60-950D4511D1B0}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{97DC2EA2-06FD-481C-9340-52D88EBF26D4}" ShortID="155910127">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="7"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Sail_Pulley_Or_Not_SWTCH" ID="{A3A1A278-A5BF-4976-995A-2489B99ECED0}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Ship_Sail_Down" ID="{A88FEE74-4901-4718-8EBA-684BC53146D4}">
+									<ChildrenList>
+										<Action Name="" ID="{7AA6F75A-0FBF-4868-A613-9CDE64ED9037}" ShortID="1023885164">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Sail_Down_RND" ID="{2F76DFD6-3C4C-4155-95E6-D45948CC13D8}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{EBC01EA6-62E8-4B2F-937B-24787029DEE7}" ShortID="204701955">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="7"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HA_Ship_Sail_Downing" ID="{3D7D6F9A-3D07-4DED-A658-8491DCC946DF}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{80ED1CB1-BDDA-4842-BBA6-801393566552}" ShortID="482455771">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="7"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Sail_Pulley_Or_Not_SWTCH" ID="{A3A1A278-A5BF-4976-995A-2489B99ECED0}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Ship_Sail_SetWindBad" ID="{46388320-D52D-496A-B74D-AD822F0FED80}">
+									<ChildrenList>
+										<Action Name="" ID="{A1EBF5BC-DE80-4E83-866E-4C526147FB0C}" ShortID="713840923">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HA_Ship_Sail_Flapping" ID="{19D89888-C6A5-4468-BAD6-4FE86B77700D}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Ship_Sail_SetWindCorrect" ID="{98D67F20-0951-4CF0-94FD-9052BAFAB0FC}">
+									<ChildrenList>
+										<Action Name="" ID="{9CEFB88D-20CA-4B94-8A74-B212C123301D}" ShortID="950608252">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HA_Ship_Sail_Flapping" ID="{19D89888-C6A5-4468-BAD6-4FE86B77700D}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{512FA46B-9A30-4E30-833B-160B2BB9397B}" ShortID="699880670">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Sail_Correct_Wind_RND" ID="{DF02E161-67F3-4F05-98FE-55D5A21709CC}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Ship_Sail_SetWindPerfect" ID="{72741832-6F73-4CCE-BF10-5FCE708DB677}">
+									<ChildrenList>
+										<Action Name="" ID="{0A98D6AB-C25F-4150-A7FB-41C767E77BDB}" ShortID="813481284">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HA_Ship_Sail_Flapping" ID="{19D89888-C6A5-4468-BAD6-4FE86B77700D}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{835A6B41-16A3-4012-9F39-FD16EBC20B7A}" ShortID="987648099">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Sail_Perfect_Wind_RND" ID="{AF6A5855-FB5E-46CE-B53F-F9721714F4C9}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Tiller" ID="{8220E665-D17E-4838-9D56-811E814BC891}" ShortID="65625124">
+							<ChildrenList>
+								<Event Name="E_Ship_Tiller_Turning" ID="{09A2607C-CC76-4A48-8C98-57CF4D4D38AB}">
+									<ChildrenList>
+										<Action Name="" ID="{46390D22-3780-4064-B265-399F42AE6146}" ShortID="65828428">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="9"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HA_Ship_Tiller_Turning" ID="{C6BCBC6B-846C-44E0-BB28-44A7F153F389}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Ship_Tiller_Stop_Turning" ID="{AB61E124-57CF-4745-A4E7-D9984A58104A}">
+									<ChildrenList>
+										<Action Name="" ID="{3F2A7EDA-E1B6-482C-8AD6-E387677D0E28}" ShortID="301074489">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="7"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HA_Ship_Tiller_Turning" ID="{C6BCBC6B-846C-44E0-BB28-44A7F153F389}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Ship_Tiller_Blocked" ID="{A9FD76E6-951C-4867-B44E-4F78FA42F4E6}">
+									<ChildrenList>
+										<Action Name="" ID="{466BB736-8032-4277-A62D-352D5B6D5C48}" ShortID="280614952">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Tiller_Blocked_RND" ID="{A9C14D13-6CAD-465E-BF74-F0BB50E091F1}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{3ACE8B73-26B9-415F-8DCA-78534C78D159}" ShortID="712121842">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="7"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HA_Ship_Tiller_Turning" ID="{C6BCBC6B-846C-44E0-BB28-44A7F153F389}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Global" ID="{5732DA7A-ED30-428B-B6BD-7056CC0E5225}" ShortID="819891371">
+							<ChildrenList>
+								<Event Name="E_Ship_Initialize" ID="{03856E7F-23E0-40B3-9FD6-7026E27B1B18}">
+									<ChildrenList>
+										<Action Name="" ID="{CBACD3D3-B096-4F72-B6C5-81EDFB43B58A}" ShortID="450902030">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ship_Ambience_BLEND" ID="{E06168DC-172A-4614-9B2B-BE342949A67C}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{0473E2DB-F4F9-4055-818B-06BD131AC55B}" ShortID="188904793">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ship_WaterFriction_Speed_BLEND" ID="{94B43C8B-EAA7-4C01-84F4-EA60DAC753B8}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{A4C5A406-A6CB-416D-A7C4-1982398EE466}" ShortID="779675301">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ship_Health_BLEND" ID="{7F2C6DC2-F900-4774-B380-2CFA44BF00F7}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{F2EDAC9C-E46E-4DDB-87A3-BED44D1494B2}" ShortID="909731789">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HA_Ship_Sail_Upping" ID="{31A073E0-BC4D-4F26-BC60-950D4511D1B0}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{8819EE28-5BFB-4DFF-8A28-5D089CEBF3C7}" ShortID="457660879">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="7"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HA_Ship_Sail_Upping" ID="{31A073E0-BC4D-4F26-BC60-950D4511D1B0}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{5BF5D90C-E2A3-45C6-9B3F-E170917A34D3}" ShortID="849934005">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HA_Ship_Sail_Downing" ID="{3D7D6F9A-3D07-4DED-A658-8491DCC946DF}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{003486B2-FDFC-4A73-9A8E-F223969253C2}" ShortID="602063566">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="7"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HA_Ship_Sail_Downing" ID="{3D7D6F9A-3D07-4DED-A658-8491DCC946DF}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{F475ED1C-4EDD-4A29-93C4-53506A2BD533}" ShortID="589059061">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HA_Ship_Tiller_Turning" ID="{C6BCBC6B-846C-44E0-BB28-44A7F153F389}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{04476F59-D974-4EBC-AB7D-1E2E771828A4}" ShortID="212950575">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="7"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HA_Ship_Tiller_Turning" ID="{C6BCBC6B-846C-44E0-BB28-44A7F153F389}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{00090920-DFDE-45AB-87E2-69D74775D743}" ShortID="667076433">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HA_Ship_Sheet_Pulling" ID="{C452AFDC-2E83-456F-B7A4-ED8FD735AE7C}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{13C8FE64-9C87-4007-9E15-8C8F0D8FC59F}" ShortID="430701276">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="7"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HA_Ship_Sheet_Pulling" ID="{C452AFDC-2E83-456F-B7A4-ED8FD735AE7C}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{BA5AAA54-05BE-429C-8EC9-1CAD2953F09A}" ShortID="70123348">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HA_Ship_Sheet_Releasing" ID="{E189671E-14E5-44A6-BC2F-DA9E3789BA6E}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{4F896ABD-D450-438D-A44D-5216BA03278B}" ShortID="796974249">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="7"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HA_Ship_Sheet_Releasing" ID="{E189671E-14E5-44A6-BC2F-DA9E3789BA6E}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{E8A9D653-24D3-4A17-B72E-F2884D6D3984}" ShortID="330706759">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Sail_Pulley_Or_Not_SWTCH" ID="{A3A1A278-A5BF-4976-995A-2489B99ECED0}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{48C8F6F9-BEF9-4F25-8DED-256CF26FA0D6}" ShortID="89685612">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="7"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Sail_Pulley_Or_Not_SWTCH" ID="{A3A1A278-A5BF-4976-995A-2489B99ECED0}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Sheet" ID="{29B7AC89-A344-47CA-B8AA-8E702E5DDAF5}" ShortID="583140789">
+							<ChildrenList>
+								<Event Name="E_Ship_Sheet_Pulling" ID="{2390BF3F-BF98-4523-BDA0-C573538B1C89}">
+									<ChildrenList>
+										<Action Name="" ID="{AC200A69-FE1B-4982-B14B-0B79140B17E9}" ShortID="714690655">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="9"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HA_Ship_Sheet_Pulling" ID="{C452AFDC-2E83-456F-B7A4-ED8FD735AE7C}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Ship_Sheet_Stop_Pulling" ID="{03586636-9AB6-407F-945A-678AA7605BB9}">
+									<ChildrenList>
+										<Action Name="" ID="{02CA4B9B-90FB-46CC-92FD-3C206AACDED4}" ShortID="649663739">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="7"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HA_Ship_Sheet_Pulling" ID="{C452AFDC-2E83-456F-B7A4-ED8FD735AE7C}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Ship_Sheet_Releasing" ID="{79B58E0D-F1AF-4FCF-90E8-A8447FB50460}">
+									<ChildrenList>
+										<Action Name="" ID="{B9BF92E0-9E40-4AE8-B0B0-DD518E456616}" ShortID="33794090">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="9"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HA_Ship_Sheet_Releasing" ID="{E189671E-14E5-44A6-BC2F-DA9E3789BA6E}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Ship_Sheet_Stop_Releasing" ID="{CA44FAB0-A11F-4F08-87F1-0DEDA7A08677}">
+									<ChildrenList>
+										<Action Name="" ID="{D0CF4A4A-9E31-47D2-8132-D3DA636483D7}" ShortID="27841570">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="7"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HA_Ship_Sheet_Releasing" ID="{E189671E-14E5-44A6-BC2F-DA9E3789BA6E}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Ship_Sheet_Released" ID="{ADA35CBB-29D1-4716-B5AC-1F3586E2D28B}">
+									<ChildrenList>
+										<Action Name="" ID="{76FE52F3-7A52-4699-8DE8-8726D026D95B}" ShortID="12748178">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Sheet_Released_RND" ID="{CB8F6073-9EC5-421E-AB68-90625ABF5429}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{4258AD6E-DE4C-4808-B05A-92193936E092}" ShortID="757009029">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="7"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HA_Ship_Sheet_Releasing" ID="{E189671E-14E5-44A6-BC2F-DA9E3789BA6E}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Ship_Sheet_Tightened" ID="{878207DA-33AA-4F46-8BCA-72351F410159}">
+									<ChildrenList>
+										<Action Name="" ID="{30FD608E-8655-4C04-964B-D732CFDC98F1}" ShortID="888967138">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Sheet_Tightened_RND" ID="{6DD534BA-BF20-4902-87A7-655FDAD474BD}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{00992B9E-49DB-481A-9C2F-FB1C4DE07894}" ShortID="44438702">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="7"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HA_Ship_Sheet_Pulling" ID="{C452AFDC-2E83-456F-B7A4-ED8FD735AE7C}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Wave Impacts" ID="{5DE47F4C-43BC-4144-9911-EE5216DDD9D4}" ShortID="54594945">
+							<ChildrenList>
+								<Event Name="E_Ship_Wave_On_Hull" ID="{9FE148BF-B7C9-42C9-BA83-DFDAF1DF0EFE}">
+									<ChildrenList>
+										<Action Name="" ID="{091A7F9F-B674-4965-AE0F-5B51D607D445}" ShortID="959571496">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ship_Wave_On_Hull_RND" ID="{F58FE5CB-0E1C-4EAE-8980-08365B7A3B5F}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Ship_Fall_from_Wave" ID="{AA8DEA17-3DF3-430F-B8F1-DCC635E14176}">
+									<ChildrenList>
+										<Action Name="" ID="{30B8FDF5-1072-4320-98D6-7A1D6AA0A9EC}" ShortID="1071231917">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ship_Fall_From_Wave_RND" ID="{52DBECE2-5970-4A41-B830-62342F60C008}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Collisions" ID="{7B0C64DA-CFB1-4734-87A3-5132850369E6}" ShortID="326489127">
+							<ChildrenList>
+								<Event Name="E_Ship_Light_Collision" ID="{07F1ABD5-7786-4F0E-9494-CE5980B243FC}">
+									<ChildrenList>
+										<Action Name="" ID="{E9269567-883F-46CD-8B00-22CA0BD93883}" ShortID="890386842">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ship_Collision_Light_RND" ID="{042B85AA-9BB2-42A6-B9A2-5972BA06F198}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Ship_Medium_Collision" ID="{C924D9D5-D907-4E96-8C3B-0A8D692A298F}">
+									<ChildrenList>
+										<Action Name="" ID="{5C372021-20CF-4434-83FE-AC039D958450}" ShortID="24446658">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ship_Collision_Medium_RND" ID="{324984FE-4693-4226-8933-626AD92EC34F}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Ship_Strong_Collision" ID="{3ADC14A4-734C-4E79-95A5-AAB578BA298D}">
+									<ChildrenList>
+										<Action Name="" ID="{346966C7-8444-4CFB-8EF8-B9C7AAAB0B95}" ShortID="731444388">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ship_Collision_Strong_RND" ID="{03EDBDB8-B8BB-4DE1-B19F-F165F9AC6CDB}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
