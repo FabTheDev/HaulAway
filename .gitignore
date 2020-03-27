@@ -5,3 +5,4 @@ Build/*
 Config/*
 Plugins/OceanPlugin/Intermediate/*
 Plugins/Wwise/*
+.vs/*
