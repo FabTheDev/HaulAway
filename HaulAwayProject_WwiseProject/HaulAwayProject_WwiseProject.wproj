@@ -31,6 +31,7 @@
 						<Value Platform="Mac">256</Value>
 					</ValueList>
 				</Property>
+				<Property Name="LicenseKey" Type="string" Value="PHByb2plY3QgaWQ9IjgzMDYiIG1hc2s9IkZMUlc0MzgzIiBlbmM9IjAiPjxsaWNlbnNlIGlkPSIxIiBuYW1lPSJXd2lzZSIgdHlwZT0iMyIgcGxhdGZvcm1zPSIyLDMsNCwxMCwxMywxNCIgZXhwaXJlcz0iMjAyMC0wNy0zMSIgIC8+PGxpY2Vuc2UgaWQ9IjIyIiBuYW1lPSJMZXZlbCBBIExpY2Vuc2UiIHR5cGU9IjMiIHBsYXRmb3Jtcz0iMiwzLDQsMTAsMTMsMTQiIGV4cGlyZXM9IjIwMjAtMDctMzEiICAvPjxsaWNlbnNlIGlkPSIyMSIgbmFtZT0iTWFpbnRlbmFuY2UiIHR5cGU9IjMiIHBsYXRmb3Jtcz0iMiwzLDQsMTAsMTMsMTQiIGV4cGlyZXM9IjIwMjAtMDctMzEiICAvPjxsaWNlbnNlIGlkPSIyNSIgbmFtZT0iQWxsIFd3aXNlIFBsdWctSW5zIiB0eXBlPSIzIiAgZXhwaXJlcz0iMjAyMC0wNy0zMSIgIC8+PC9wcm9qZWN0Pg==|T4+DXEtbcS668EP9snWkCf1LzqHKw8L7he8MbUr5ESxy8idGlZ3455cb+MJ0wQBRfiY8CoEtXhw3FOgzCvW2OPrjBil2IquzRPl9vHOQ1PL0qT+pkgos1tphk3esp6Jx9UOoutpE2twpKmFq7mE4lflbJNx8foD2QO1wZoTfJikQmSuAUHih7QE6zbCEetxIAkHPOJLwV31LZzIgpA8BQp3EjZAc/hbMAdzSpgeWSpmu5sU3o30BMENL9mMqs59MbWHihdNa1s1KlhXEg1ASm+E1Oxlpx1EvQkmpDydAsjtpRGCEkmD3bp9XsMyjGi0f/iu5WHTgBJ1adKx7QyiJhg=="/>
 				<Property Name="SoundBankHeaderFilePath" Type="string" Value="GeneratedSoundBanks\"/>
 				<Property Name="SoundBankPaths" Type="string">
 					<ValueList>
