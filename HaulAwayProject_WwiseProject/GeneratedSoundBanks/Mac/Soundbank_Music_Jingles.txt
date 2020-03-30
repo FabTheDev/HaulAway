@@ -1,0 +1,16 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1721311491	E_Mus_Jingle_New_Island			\MUSIC\Jingles\E_Mus_Jingle_New_Island	
+	2078447827	E_Mus_Jingle_Fire_Lit			\MUSIC\Jingles\E_Mus_Jingle_Fire_Lit	
+	2827343347	E_Mus_Jingle_Exploring			\MUSIC\Jingles\E_Mus_Jingle_Exploring	
+	3073683524	E_Mus_Jingle_Standby			\MUSIC\Jingles\E_Mus_Jingle_Standby	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	8945167	jingle_standby	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\jingle_standby_8956FC97.wem		\Interactive Music Hierarchy\Music\Jingles\Jingle_Standby_SEG\jingle_standby		2043696
+	73020892	theme_exploring_island_5	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_exploring_island_5_8956FC97.wem		\Interactive Music Hierarchy\Music\Jingles\Jingle_Exploring_RND\theme_exploring_island_5\theme_exploring_island_5		15523264
+	251101924	theme_exploring_island_4	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_exploring_island_4_8956FC97.wem		\Interactive Music Hierarchy\Music\Jingles\Jingle_Exploring_RND\theme_exploring_island_4\theme_exploring_island_4		15523264
+	257031866	theme_exploring_island_2	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_exploring_island_2_8956FC97.wem		\Interactive Music Hierarchy\Music\Jingles\Jingle_Exploring_RND\theme_exploring_island_2\theme_exploring_island_2		15523264
+	621855743	jingle_fire_lit	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\jingle_fire_lit_8956FC97.wem		\Interactive Music Hierarchy\Music\Jingles\Jingle_Fire_Lit_SEG\jingle_fire_lit		1058464
+	837322129	theme_exploring_island_3	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_exploring_island_3_8956FC97.wem		\Interactive Music Hierarchy\Music\Jingles\Jingle_Exploring_RND\theme_exploring_island_3\theme_exploring_island_3		15523264
+	883134144	theme_new_island	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_new_island_8956FC97.wem		\Interactive Music Hierarchy\Music\Jingles\Jingle_New_Island_SEG\theme_new_island		6350464
+	955165182	theme_exploring_island_1	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_exploring_island_1_8956FC97.wem		\Interactive Music Hierarchy\Music\Jingles\Jingle_Exploring_RND\theme_exploring_island_1\theme_exploring_island_1		15523264
+
