@@ -6,3 +6,12 @@ Config/*
 Plugins/OceanPlugin/Intermediate/*
 Plugins/Wwise/*
 .vs/*
+
+# Wwise
+**/.cache/*
+**/*.akd
+**/*.prof
+**/*.wsettings
+**/*.validationcache
+**/*.wem
+Plugins/Wwise/LauncherInfo.json

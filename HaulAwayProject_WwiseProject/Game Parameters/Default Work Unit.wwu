@@ -56,6 +56,31 @@
 						</GameParameter>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Global" ID="{B44679C3-FF14-447E-895F-9CB06AF035F4}" ShortID="878799778">
+					<ChildrenList>
+						<GameParameter Name="Music_Volume_GP" ID="{B6A43168-1DA1-4E4B-A564-6DDAF525B065}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="80"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="SFX_Volume_GP" ID="{C9F5422A-020E-4D7B-AF1B-5A807144C983}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="80"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="Dialog_Volume_GP" ID="{193F0126-347C-409F-B90C-2601DAF8ECCF}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="80"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="Intra_Music_LowPassFilter_GP" ID="{F457DEC5-2431-4441-8DDC-2DBD7379D01C}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="100"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="UI_Volume_GP" ID="{8A19730F-E82D-497F-9812-8D5F21AD724B}"/>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>
