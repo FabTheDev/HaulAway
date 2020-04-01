@@ -11,48 +11,187 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="589288447" Language="SFX">
-			<ObjectPath>\SoundBanks\Default Work Unit\Soundbank_Music_Jingles</ObjectPath>
-			<ShortName>Soundbank_Music_Jingles</ShortName>
-			<Path>Soundbank_Music_Jingles.bnk</Path>
+		<SoundBank Id="474740052" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Soundbank_Music</ObjectPath>
+			<ShortName>Soundbank_Music</ShortName>
+			<Path>Soundbank_Music.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2827343347" Name="E_Mus_Jingle_Exploring" ObjectPath="\Events\MUSIC\Jingles\E_Mus_Jingle_Exploring"/>
-				<Event Id="2078447827" Name="E_Mus_Jingle_Fire_Lit" ObjectPath="\Events\MUSIC\Jingles\E_Mus_Jingle_Fire_Lit"/>
-				<Event Id="1721311491" Name="E_Mus_Jingle_New_Island" ObjectPath="\Events\MUSIC\Jingles\E_Mus_Jingle_New_Island"/>
-				<Event Id="3073683524" Name="E_Mus_Jingle_Standby" ObjectPath="\Events\MUSIC\Jingles\E_Mus_Jingle_Standby"/>
+				<Event Id="2690400740" Name="E_Mus_ImmediateStop_Music" ObjectPath="\Events\MUSIC\Global\E_Mus_ImmediateStop_Music"/>
+				<Event Id="208377844" Name="E_Mus_Initiate_Music" ObjectPath="\Events\MUSIC\Global\E_Mus_Initiate_Music"/>
+				<Event Id="2278932593" Name="E_Mus_Pause_Music" ObjectPath="\Events\MUSIC\Global\E_Mus_Pause_Music"/>
+				<Event Id="4105446904" Name="E_Mus_Resume_Music" ObjectPath="\Events\MUSIC\Global\E_Mus_Resume_Music"/>
+				<Event Id="1149952562" Name="E_Mus_Set_Exploring_Jingle" ObjectPath="\Events\MUSIC\Jingles\E_Mus_Set_Exploring_Jingle"/>
+				<Event Id="3364487932" Name="E_Mus_Set_Fire_Lit_Jingle" ObjectPath="\Events\MUSIC\Jingles\E_Mus_Set_Fire_Lit_Jingle"/>
+				<Event Id="998551706" Name="E_Mus_Set_Going_To_Sea_Theme" ObjectPath="\Events\MUSIC\Themes\E_Mus_Set_Going_To_Sea_Theme"/>
+				<Event Id="2897087438" Name="E_Mus_Set_Icebergs_Theme" ObjectPath="\Events\MUSIC\Themes\E_Mus_Set_Icebergs_Theme"/>
+				<Event Id="4000917327" Name="E_Mus_Set_Main_Theme" ObjectPath="\Events\MUSIC\Themes\E_Mus_Set_Main_Theme"/>
+				<Event Id="1872721172" Name="E_Mus_Set_New_Island_Jingle" ObjectPath="\Events\MUSIC\Jingles\E_Mus_Set_New_Island_Jingle"/>
+				<Event Id="3396100293" Name="E_Mus_Set_No_Theme" ObjectPath="\Events\MUSIC\Themes\E_Mus_Set_No_Theme"/>
+				<Event Id="820318689" Name="E_Mus_Set_Random_Jingle" ObjectPath="\Events\MUSIC\Jingles\E_Mus_Set_Random_Jingle"/>
+				<Event Id="1014433881" Name="E_Mus_Set_Sailing_Theme" ObjectPath="\Events\MUSIC\Themes\E_Mus_Set_Sailing_Theme"/>
+				<Event Id="2901789171" Name="E_Mus_Set_Standby_Jingle" ObjectPath="\Events\MUSIC\Jingles\E_Mus_Set_Standby_Jingle"/>
+				<Event Id="4100489055" Name="E_Mus_Set_Storm_Theme" ObjectPath="\Events\MUSIC\Themes\E_Mus_Set_Storm_Theme"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="1505233" Language="SFX">
+					<ShortName>theme_main_3.wav</ShortName>
+					<Path>SFX\theme_main_3_7C1F5570.wem</Path>
+				</File>
 				<File Id="8945167" Language="SFX">
 					<ShortName>jingle_standby.wav</ShortName>
-					<Path>SFX\jingle_standby_8956FC97.wem</Path>
+					<Path>SFX\jingle_standby_7C1F5570.wem</Path>
+				</File>
+				<File Id="19966419" Language="SFX">
+					<ShortName>theme_going_to_sea_3.wav</ShortName>
+					<Path>SFX\theme_going_to_sea_3_7C1F5570.wem</Path>
+				</File>
+				<File Id="20160249" Language="SFX">
+					<ShortName>theme_main_1.wav</ShortName>
+					<Path>SFX\theme_main_1_7C1F5570.wem</Path>
+				</File>
+				<File Id="23178484" Language="SFX">
+					<ShortName>jingle_random_6.wav</ShortName>
+					<Path>SFX\jingle_random_6_7C1F5570.wem</Path>
+				</File>
+				<File Id="44708438" Language="SFX">
+					<ShortName>theme_sailing_singing_5.wav</ShortName>
+					<Path>SFX\theme_sailing_singing_5_7C1F5570.wem</Path>
+				</File>
+				<File Id="65060138" Language="SFX">
+					<ShortName>theme_going_to_sea_2.wav</ShortName>
+					<Path>SFX\theme_going_to_sea_2_7C1F5570.wem</Path>
+				</File>
+				<File Id="65912671" Language="SFX">
+					<ShortName>jingle_random_7.wav</ShortName>
+					<Path>SFX\jingle_random_7_7C1F5570.wem</Path>
 				</File>
 				<File Id="73020892" Language="SFX">
 					<ShortName>theme_exploring_island_5.wav</ShortName>
-					<Path>SFX\theme_exploring_island_5_8956FC97.wem</Path>
+					<Path>SFX\theme_exploring_island_5_7C1F5570.wem</Path>
+				</File>
+				<File Id="93817900" Language="SFX">
+					<ShortName>theme_sailing_3.wav</ShortName>
+					<Path>SFX\theme_sailing_3_7C1F5570.wem</Path>
+				</File>
+				<File Id="98723454" Language="SFX">
+					<ShortName>theme_going_to_sea_1.wav</ShortName>
+					<Path>SFX\theme_going_to_sea_1_7C1F5570.wem</Path>
+				</File>
+				<File Id="112134903" Language="SFX">
+					<ShortName>theme_main_2.wav</ShortName>
+					<Path>SFX\theme_main_2_7C1F5570.wem</Path>
+				</File>
+				<File Id="217597194" Language="SFX">
+					<ShortName>theme_storm_death.wav</ShortName>
+					<Path>SFX\theme_storm_death_7C1F5570.wem</Path>
 				</File>
 				<File Id="251101924" Language="SFX">
 					<ShortName>theme_exploring_island_4.wav</ShortName>
-					<Path>SFX\theme_exploring_island_4_8956FC97.wem</Path>
+					<Path>SFX\theme_exploring_island_4_7C1F5570.wem</Path>
 				</File>
 				<File Id="257031866" Language="SFX">
 					<ShortName>theme_exploring_island_2.wav</ShortName>
-					<Path>SFX\theme_exploring_island_2_8956FC97.wem</Path>
+					<Path>SFX\theme_exploring_island_2_7C1F5570.wem</Path>
+				</File>
+				<File Id="304684611" Language="SFX">
+					<ShortName>theme_storm_4.wav</ShortName>
+					<Path>SFX\theme_storm_4_7C1F5570.wem</Path>
+				</File>
+				<File Id="350143537" Language="SFX">
+					<ShortName>theme_going_to_sea_4.wav</ShortName>
+					<Path>SFX\theme_going_to_sea_4_7C1F5570.wem</Path>
+				</File>
+				<File Id="395565942" Language="SFX">
+					<ShortName>theme_sailing_2.wav</ShortName>
+					<Path>SFX\theme_sailing_2_7C1F5570.wem</Path>
+				</File>
+				<File Id="399430967" Language="SFX">
+					<ShortName>theme_sailing_singing_2.wav</ShortName>
+					<Path>SFX\theme_sailing_singing_2_7C1F5570.wem</Path>
+				</File>
+				<File Id="415557483" Language="SFX">
+					<ShortName>theme_storm_2.wav</ShortName>
+					<Path>SFX\theme_storm_2_7C1F5570.wem</Path>
+				</File>
+				<File Id="483369898" Language="SFX">
+					<ShortName>theme_sailing_1.wav</ShortName>
+					<Path>SFX\theme_sailing_1_7C1F5570.wem</Path>
+				</File>
+				<File Id="518980243" Language="SFX">
+					<ShortName>theme_sailing_singing_3.wav</ShortName>
+					<Path>SFX\theme_sailing_singing_3_7C1F5570.wem</Path>
+				</File>
+				<File Id="576222389" Language="SFX">
+					<ShortName>theme_icebergs_death.wav</ShortName>
+					<Path>SFX\theme_icebergs_death_7C1F5570.wem</Path>
 				</File>
 				<File Id="621855743" Language="SFX">
 					<ShortName>jingle_fire_lit.wav</ShortName>
-					<Path>SFX\jingle_fire_lit_8956FC97.wem</Path>
+					<Path>SFX\jingle_fire_lit_7C1F5570.wem</Path>
+				</File>
+				<File Id="632281725" Language="SFX">
+					<ShortName>theme_storm_1.wav</ShortName>
+					<Path>SFX\theme_storm_1_7C1F5570.wem</Path>
+				</File>
+				<File Id="643316962" Language="SFX">
+					<ShortName>jingle_random_5.wav</ShortName>
+					<Path>SFX\jingle_random_5_7C1F5570.wem</Path>
+				</File>
+				<File Id="696921957" Language="SFX">
+					<ShortName>jingle_random_3.wav</ShortName>
+					<Path>SFX\jingle_random_3_7C1F5570.wem</Path>
+				</File>
+				<File Id="787622928" Language="SFX">
+					<ShortName>jingle_random_1.wav</ShortName>
+					<Path>SFX\jingle_random_1_7C1F5570.wem</Path>
+				</File>
+				<File Id="791292477" Language="SFX">
+					<ShortName>theme_icebergs_singing.wav</ShortName>
+					<Path>SFX\theme_icebergs_singing_7C1F5570.wem</Path>
 				</File>
 				<File Id="837322129" Language="SFX">
 					<ShortName>theme_exploring_island_3.wav</ShortName>
-					<Path>SFX\theme_exploring_island_3_8956FC97.wem</Path>
+					<Path>SFX\theme_exploring_island_3_7C1F5570.wem</Path>
 				</File>
 				<File Id="883134144" Language="SFX">
 					<ShortName>theme_new_island.wav</ShortName>
-					<Path>SFX\theme_new_island_8956FC97.wem</Path>
+					<Path>SFX\theme_new_island_7C1F5570.wem</Path>
+				</File>
+				<File Id="890530192" Language="SFX">
+					<ShortName>theme_storm_3.wav</ShortName>
+					<Path>SFX\theme_storm_3_7C1F5570.wem</Path>
+				</File>
+				<File Id="896538631" Language="SFX">
+					<ShortName>theme_sailing_singing_1.wav</ShortName>
+					<Path>SFX\theme_sailing_singing_1_7C1F5570.wem</Path>
+				</File>
+				<File Id="930855079" Language="SFX">
+					<ShortName>theme_icebergs.wav</ShortName>
+					<Path>SFX\theme_icebergs_7C1F5570.wem</Path>
 				</File>
 				<File Id="955165182" Language="SFX">
 					<ShortName>theme_exploring_island_1.wav</ShortName>
-					<Path>SFX\theme_exploring_island_1_8956FC97.wem</Path>
+					<Path>SFX\theme_exploring_island_1_7C1F5570.wem</Path>
+				</File>
+				<File Id="990444181" Language="SFX">
+					<ShortName>theme_sailing_singing_4.wav</ShortName>
+					<Path>SFX\theme_sailing_singing_4_7C1F5570.wem</Path>
+				</File>
+				<File Id="1008805516" Language="SFX">
+					<ShortName>theme_storm_approaching_edited.wav</ShortName>
+					<Path>SFX\theme_storm_approaching_edited_7C1F5570.wem</Path>
+				</File>
+				<File Id="1021127060" Language="SFX">
+					<ShortName>theme_sailing_4.wav</ShortName>
+					<Path>SFX\theme_sailing_4_7C1F5570.wem</Path>
+				</File>
+				<File Id="1031661151" Language="SFX">
+					<ShortName>jingle_random_4.wav</ShortName>
+					<Path>SFX\jingle_random_4_7C1F5570.wem</Path>
+				</File>
+				<File Id="1046666640" Language="SFX">
+					<ShortName>jingle_random_2.wav</ShortName>
+					<Path>SFX\jingle_random_2_7C1F5570.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
@@ -60,81 +199,6 @@
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
-		</SoundBank>
-		<SoundBank Id="1656213197" Language="SFX">
-			<ObjectPath>\SoundBanks\Default Work Unit\Soundbank_Music_Themes</ObjectPath>
-			<ShortName>Soundbank_Music_Themes</ShortName>
-			<Path>Soundbank_Music_Themes.bnk</Path>
-			<IncludedEvents>
-				<Event Id="2158869718" Name="E_Mus_Initiate_Themes_Loop" ObjectPath="\Events\MUSIC\Themes\E_Mus_Initiate_Themes_Loop"/>
-				<Event Id="1678044671" Name="E_Mus_Pause_Themes_Loop" ObjectPath="\Events\MUSIC\Themes\E_Mus_Pause_Themes_Loop"/>
-			</IncludedEvents>
-			<IncludedMemoryFiles>
-				<File Id="1505233" Language="SFX">
-					<ShortName>theme_main_3.wav</ShortName>
-					<Path>SFX\theme_main_3_8956FC97.wem</Path>
-				</File>
-				<File Id="19966419" Language="SFX">
-					<ShortName>theme_going_to_sea_3.wav</ShortName>
-					<Path>SFX\theme_going_to_sea_3_8956FC97.wem</Path>
-				</File>
-				<File Id="20160249" Language="SFX">
-					<ShortName>theme_main_1.wav</ShortName>
-					<Path>SFX\theme_main_1_8956FC97.wem</Path>
-				</File>
-				<File Id="44708438" Language="SFX">
-					<ShortName>theme_sailing_singing_5.wav</ShortName>
-					<Path>SFX\theme_sailing_singing_5_8956FC97.wem</Path>
-				</File>
-				<File Id="65060138" Language="SFX">
-					<ShortName>theme_going_to_sea_2.wav</ShortName>
-					<Path>SFX\theme_going_to_sea_2_8956FC97.wem</Path>
-				</File>
-				<File Id="93817900" Language="SFX">
-					<ShortName>theme_sailing_3.wav</ShortName>
-					<Path>SFX\theme_sailing_3_8956FC97.wem</Path>
-				</File>
-				<File Id="98723454" Language="SFX">
-					<ShortName>theme_going_to_sea_1.wav</ShortName>
-					<Path>SFX\theme_going_to_sea_1_8956FC97.wem</Path>
-				</File>
-				<File Id="112134903" Language="SFX">
-					<ShortName>theme_main_2.wav</ShortName>
-					<Path>SFX\theme_main_2_8956FC97.wem</Path>
-				</File>
-				<File Id="350143537" Language="SFX">
-					<ShortName>theme_going_to_sea_4.wav</ShortName>
-					<Path>SFX\theme_going_to_sea_4_8956FC97.wem</Path>
-				</File>
-				<File Id="395565942" Language="SFX">
-					<ShortName>theme_sailing_2.wav</ShortName>
-					<Path>SFX\theme_sailing_2_8956FC97.wem</Path>
-				</File>
-				<File Id="399430967" Language="SFX">
-					<ShortName>theme_sailing_singing_2.wav</ShortName>
-					<Path>SFX\theme_sailing_singing_2_8956FC97.wem</Path>
-				</File>
-				<File Id="483369898" Language="SFX">
-					<ShortName>theme_sailing_1.wav</ShortName>
-					<Path>SFX\theme_sailing_1_8956FC97.wem</Path>
-				</File>
-				<File Id="518980243" Language="SFX">
-					<ShortName>theme_sailing_singing_3.wav</ShortName>
-					<Path>SFX\theme_sailing_singing_3_8956FC97.wem</Path>
-				</File>
-				<File Id="896538631" Language="SFX">
-					<ShortName>theme_sailing_singing_1.wav</ShortName>
-					<Path>SFX\theme_sailing_singing_1_8956FC97.wem</Path>
-				</File>
-				<File Id="990444181" Language="SFX">
-					<ShortName>theme_sailing_singing_4.wav</ShortName>
-					<Path>SFX\theme_sailing_singing_4_8956FC97.wem</Path>
-				</File>
-				<File Id="1021127060" Language="SFX">
-					<ShortName>theme_sailing_4.wav</ShortName>
-					<Path>SFX\theme_sailing_4_8956FC97.wem</Path>
-				</File>
-			</IncludedMemoryFiles>
 		</SoundBank>
 		<SoundBank Id="3065566834" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\Soundbank_Global</ObjectPath>
@@ -149,9 +213,10 @@
 				<Event Id="166232405" Name="E_Character_PickUp_Object" ObjectPath="\Events\SFX\Character\Interractions\E_Character_PickUp_Object"/>
 				<Event Id="583108420" Name="E_Character_Stop_Swiming" ObjectPath="\Events\SFX\Character\Movements\E_Character_Stop_Swiming"/>
 				<Event Id="736698947" Name="E_Character_Swiming" ObjectPath="\Events\SFX\Character\Movements\E_Character_Swiming"/>
-				<Event Id="418228812" Name="E_Mus_Jingle_Random" ObjectPath="\Events\MUSIC\Jingles\E_Mus_Jingle_Random"/>
+				<Event Id="538207684" Name="E_Ship_Enter_Hold" ObjectPath="\Events\SFX\Ship\Hold\E_Ship_Enter_Hold"/>
 				<Event Id="2880618140" Name="E_Ship_Fall_from_Wave" ObjectPath="\Events\SFX\Ship\Wave Impacts\E_Ship_Fall_from_Wave"/>
 				<Event Id="2153563704" Name="E_Ship_Initialize" ObjectPath="\Events\SFX\Ship\Global\E_Ship_Initialize"/>
+				<Event Id="4109780601" Name="E_Ship_Leave_Hold" ObjectPath="\Events\SFX\Ship\Hold\E_Ship_Leave_Hold"/>
 				<Event Id="834247839" Name="E_Ship_Light_Collision" ObjectPath="\Events\SFX\Ship\Collisions\E_Ship_Light_Collision"/>
 				<Event Id="4260985166" Name="E_Ship_Medium_Collision" ObjectPath="\Events\SFX\Ship\Collisions\E_Ship_Medium_Collision"/>
 				<Event Id="1312964464" Name="E_Ship_Sail_Down" ObjectPath="\Events\SFX\Ship\Sail\E_Ship_Sail_Down"/>
@@ -188,10 +253,6 @@
 					<ShortName>footstep_TerreHumide_run2.wav</ShortName>
 					<Path>SFX\footstep_TerreHumide_run2_56D34C19.wem</Path>
 				</File>
-				<File Id="23178484" Language="SFX">
-					<ShortName>jingle_random_6.wav</ShortName>
-					<Path>SFX\jingle_random_6_8956FC97.wem</Path>
-				</File>
 				<File Id="25541167" Language="SFX">
 					<ShortName>footstep_Pierre_run3.wav</ShortName>
 					<Path>SFX\footstep_Pierre_run3_56D34C19.wem</Path>
@@ -224,6 +285,10 @@
 					<ShortName>SFX_HA_Ship_Wave_On_Hull_04.wav</ShortName>
 					<Path>SFX\SFX_HA_Ship_Wave_On_Hull_04_56D34C19.wem</Path>
 				</File>
+				<File Id="48993912" Language="SFX">
+					<ShortName>SFX_HA_Ship_leaving_hold.wav</ShortName>
+					<Path>SFX\SFX_HA_Ship_leaving_hold_17B1E28D.wem</Path>
+				</File>
 				<File Id="55520995" Language="SFX">
 					<ShortName>SFX_HA_Character_Footsteps_DrySand_Walk_03.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Footsteps_DrySand_Walk_03_56D34C19.wem</Path>
@@ -243,10 +308,6 @@
 				<File Id="62885469" Language="SFX">
 					<ShortName>SFX_HA_Ship_rope_moving_1.wav</ShortName>
 					<Path>SFX\SFX_HA_Ship_rope_moving_1_56D34C19.wem</Path>
-				</File>
-				<File Id="65912671" Language="SFX">
-					<ShortName>jingle_random_7.wav</ShortName>
-					<Path>SFX\jingle_random_7_8956FC97.wem</Path>
 				</File>
 				<File Id="72944737" Language="SFX">
 					<ShortName>SFX_HA_Character_Footsteps_WaterIn_Run_07.wav</ShortName>
@@ -688,6 +749,10 @@
 					<ShortName>SFX_HA_Ship_Sail_Up_04.wav</ShortName>
 					<Path>SFX\SFX_HA_Ship_Sail_Up_04_56D34C19.wem</Path>
 				</File>
+				<File Id="592199408" Language="SFX">
+					<ShortName>SFX_HA_Ship_ship_damaged_high.wav</ShortName>
+					<Path>SFX\SFX_HA_Ship_ship_damaged_high_8956FC97.wem</Path>
+				</File>
 				<File Id="597156306" Language="SFX">
 					<ShortName>SFX_HA_Character_Footsteps_Grass_Run_03.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Run_03_56D34C19.wem</Path>
@@ -708,6 +773,10 @@
 					<ShortName>SFX_HA_Character_Pickup_MetalPiece.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Pickup_MetalPiece_56D34C19.wem</Path>
 				</File>
+				<File Id="627644474" Language="SFX">
+					<ShortName>SFX_HA_Ship_leaving_hold.wav</ShortName>
+					<Path>SFX\SFX_HA_Ship_leaving_hold_EB26EE13.wem</Path>
+				</File>
 				<File Id="628737640" Language="SFX">
 					<ShortName>footstep_Pierre_walk3.wav</ShortName>
 					<Path>SFX\footstep_Pierre_walk3_56D34C19.wem</Path>
@@ -719,10 +788,6 @@
 				<File Id="639544385" Language="SFX">
 					<ShortName>footstep_Pierre_walk5.wav</ShortName>
 					<Path>SFX\footstep_Pierre_walk5_56D34C19.wem</Path>
-				</File>
-				<File Id="643316962" Language="SFX">
-					<ShortName>jingle_random_5.wav</ShortName>
-					<Path>SFX\jingle_random_5_8956FC97.wem</Path>
 				</File>
 				<File Id="660737223" Language="SFX">
 					<ShortName>SFX_HA_Character_Clothes_Running_05.wav</ShortName>
@@ -747,10 +812,6 @@
 				<File Id="694108302" Language="SFX">
 					<ShortName>footstep_TerreHumide_walk2.wav</ShortName>
 					<Path>SFX\footstep_TerreHumide_walk2_56D34C19.wem</Path>
-				</File>
-				<File Id="696921957" Language="SFX">
-					<ShortName>jingle_random_3.wav</ShortName>
-					<Path>SFX\jingle_random_3_8956FC97.wem</Path>
 				</File>
 				<File Id="698895873" Language="SFX">
 					<ShortName>footstep_Pierre_run1.wav</ShortName>
@@ -839,10 +900,6 @@
 				<File Id="786746066" Language="SFX">
 					<ShortName>SFX_HA_Ship_Sail_Down_02.wav</ShortName>
 					<Path>SFX\SFX_HA_Ship_Sail_Down_02_56D34C19.wem</Path>
-				</File>
-				<File Id="787622928" Language="SFX">
-					<ShortName>jingle_random_1.wav</ShortName>
-					<Path>SFX\jingle_random_1_8956FC97.wem</Path>
 				</File>
 				<File Id="789114010" Language="SFX">
 					<ShortName>SFX_HA_Character_Object_Pickup_00.wav</ShortName>
@@ -1024,10 +1081,6 @@
 					<ShortName>SFX_HA_Character_Clothes_Land_03.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Clothes_Land_03_56D34C19.wem</Path>
 				</File>
-				<File Id="1031661151" Language="SFX">
-					<ShortName>jingle_random_4.wav</ShortName>
-					<Path>SFX\jingle_random_4_8956FC97.wem</Path>
-				</File>
 				<File Id="1035342194" Language="SFX">
 					<ShortName>SFX_HA_Character_Footsteps_Grass_Run_07.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Run_07_56D34C19.wem</Path>
@@ -1040,13 +1093,13 @@
 					<ShortName>SFX_HA_Character_Footsteps_Grass_Walk_05.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Footsteps_Grass_Walk_05_56D34C19.wem</Path>
 				</File>
-				<File Id="1046666640" Language="SFX">
-					<ShortName>jingle_random_2.wav</ShortName>
-					<Path>SFX\jingle_random_2_8956FC97.wem</Path>
-				</File>
 				<File Id="1061810795" Language="SFX">
 					<ShortName>SFX_HA_Character_Clothes_Swiming_03.wav</ShortName>
 					<Path>SFX\SFX_HA_Character_Clothes_Swiming_03_56D34C19.wem</Path>
+				</File>
+				<File Id="1063319655" Language="SFX">
+					<ShortName>SFX_HA_Ship_entering_hold.wav</ShortName>
+					<Path>SFX\SFX_HA_Ship_entering_hold_EEE2378A.wem</Path>
 				</File>
 				<File Id="1066574610" Language="SFX">
 					<ShortName>SFX_HA_Character_Clothes_Walking_01.wav</ShortName>
