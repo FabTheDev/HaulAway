@@ -85,6 +85,12 @@
 								<Switch Name="Main_Theme" ID="{FFD8DF6D-DCA3-44E4-9808-BA09F74887BE}"/>
 								<Switch Name="Storm_Theme" ID="{1A7062C2-75F6-47C5-8C7D-B8DB7E9A5952}"/>
 								<Switch Name="Sailing_Theme" ID="{E3BCEECC-DE78-45A3-8F31-CC44C47E4046}"/>
+								<Switch Name="Icebergs_Theme" ID="{1F2898AA-B427-47C3-9B0E-63A35214C498}"/>
+								<Switch Name="Jingle_NewIsland" ID="{85F87923-E01F-4453-95F8-5A5C4F02E201}"/>
+								<Switch Name="Jingle_FireLit" ID="{283E7AF4-0C75-4DA5-B37C-98BA431EDC72}"/>
+								<Switch Name="Jingle_Random" ID="{3041EEE3-0FFA-415F-9227-E940AC047C08}"/>
+								<Switch Name="Jingle_Standby" ID="{CE4A10C5-B54D-4ADD-A0D4-2C4118B75FE7}"/>
+								<Switch Name="Jingle_Exploring" ID="{269603AA-A4DF-4E05-BCAD-CC127578CBC5}"/>
 							</ChildrenList>
 						</SwitchGroup>
 						<SwitchGroup Name="Mus_IsSinging" ID="{661900C4-17C3-4D28-B9C0-FDF74B7A5C8C}">
@@ -97,6 +103,52 @@
 							<ChildrenList>
 								<Switch Name="Yes" ID="{87A41F97-7D80-493B-8A3C-455954AF3475}"/>
 								<Switch Name="No" ID="{557E11F3-E18E-4406-BA2D-24998C38DA37}"/>
+							</ChildrenList>
+						</SwitchGroup>
+						<SwitchGroup Name="Storm_State" ID="{97900644-A614-42D7-94CA-FC806699D964}">
+							<PropertyList>
+								<Property Name="UseGameParameter" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Switch Name="No_Storm" ID="{E78CBCA8-F732-4137-8C04-8954CE37709D}"/>
+								<Switch Name="Approaching" ID="{14491DD2-3190-486E-8C3D-40FEE6BA2370}"/>
+								<Switch Name="Here" ID="{FF091E42-011C-4CE6-B2E9-001D64A5C636}"/>
+							</ChildrenList>
+							<SwitchOnRTPC>
+								<GameParameterRef Name="Storm_Intensity_GP" ID="{4EEBF857-B289-41C2-A6C6-C4AC116A1CB0}"/>
+								<Curve Name="" ID="{3BC2BACD-EECA-404E-A2FC-A348BEDBDE04}">
+									<PropertyList>
+										<Property Name="Flags" Type="int32" Value="65537"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>1</YPos>
+											<Flags>5</Flags>
+										</Point>
+										<Point>
+											<XPos>0.84459</XPos>
+											<YPos>2</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>50</XPos>
+											<YPos>3</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>100</XPos>
+											<YPos>0</YPos>
+											<Flags>37</Flags>
+										</Point>
+									</PointList>
+								</Curve>
+							</SwitchOnRTPC>
+						</SwitchGroup>
+						<SwitchGroup Name="Mus_IsInHold" ID="{272492A0-AF2B-4C68-8A95-94001BF6C919}">
+							<ChildrenList>
+								<Switch Name="In" ID="{F431CC99-F201-401D-B118-93F3EE1C9EAD}"/>
+								<Switch Name="Out" ID="{CBED7C89-B2E3-47EC-A878-0D6580FF55FF}"/>
 							</ChildrenList>
 						</SwitchGroup>
 					</ChildrenList>
