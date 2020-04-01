@@ -1,11 +1,7 @@
 Switch Group	ID	Name			Wwise Object Path	Notes
-	47400186	Storm_State			\Default Work Unit\Music\Storm_State	
 	430223108	Water_Depth			\Default Work Unit\Character\Footsteps\Water_Depth	
 
 Switch	ID	Name	Switch Group			Notes
-	1772670678	No_Storm	Storm_State			
-	3196610211	Here	Storm_State			
-	3272866067	Approaching	Storm_State			
 	1976939195	Deep	Water_Depth			
 	2943574119	Shallow	Water_Depth			
 
@@ -21,21 +17,14 @@ State	ID	Name	State Group			Notes
 	340271938	Walking	Char_Walk_Run			
 	3863236874	Running	Char_Walk_Run			
 
-Game Parameter	ID	Name			Wwise Object Path	Notes
-	626750949	Intra_Music_LowPassFilter_GP			\Default Work Unit\Global\Intra_Music_LowPassFilter_GP	
-	1130989983	SFX_Volume_GP			\Default Work Unit\Global\SFX_Volume_GP	
-	1986689900	Dialog_Volume_GP			\Default Work Unit\Global\Dialog_Volume_GP	
-	2093986695	Music_Volume_GP			\Default Work Unit\Global\Music_Volume_GP	
-
 Audio Bus	ID	Name			Wwise Object Path	Notes
-	213475909	SFX_BUS			\Default Work Unit\Master Audio Bus\SFX_BUS	
-	1177004814	DIALOG_BUS			\Default Work Unit\Master Audio Bus\DIALOG_BUS	
-	2680856269	MUSIC_BUS			\Default Work Unit\Master Audio Bus\MUSIC_BUS	
-	3247222208	UI_BUS			\Default Work Unit\Master Audio Bus\UI_BUS	
+	285976211	Music_Theme_BUS			\Default Work Unit\Master Audio Bus\Music_Theme_BUS	
+	2138725528	Acoustics_BUS			\Default Work Unit\Master Audio Bus\Acoustics_BUS	
+	2310520346	Music_Jingles_BUS			\Default Work Unit\Master Audio Bus\Music_Jingles_BUS	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
-	1060063872	Exterior_Acoustic_AUX			\Default Work Unit\Master Audio Bus\SFX_BUS\Exterior_Acoustic_AUX	
+	1060063872	Exterior_Acoustic_AUX			\Default Work Unit\Master Audio Bus\Acoustics_BUS\Exterior_Acoustic_AUX	
 
 Effect plug-ins	ID	Name	Type				Notes
 	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
