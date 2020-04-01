@@ -1,0 +1,62 @@
+Event	ID	Name			Wwise Object Path	Notes
+	208377844	E_Mus_Initiate_Music			\MUSIC\Global\E_Mus_Initiate_Music	
+	820318689	E_Mus_Set_Random_Jingle			\MUSIC\Jingles\E_Mus_Set_Random_Jingle	
+	998551706	E_Mus_Set_Going_To_Sea_Theme			\MUSIC\Themes\E_Mus_Set_Going_To_Sea_Theme	
+	1014433881	E_Mus_Set_Sailing_Theme			\MUSIC\Themes\E_Mus_Set_Sailing_Theme	
+	1149952562	E_Mus_Set_Exploring_Jingle			\MUSIC\Jingles\E_Mus_Set_Exploring_Jingle	
+	1872721172	E_Mus_Set_New_Island_Jingle			\MUSIC\Jingles\E_Mus_Set_New_Island_Jingle	
+	2278932593	E_Mus_Pause_Music			\MUSIC\Global\E_Mus_Pause_Music	
+	2690400740	E_Mus_ImmediateStop_Music			\MUSIC\Global\E_Mus_ImmediateStop_Music	
+	2897087438	E_Mus_Set_Icebergs_Theme			\MUSIC\Themes\E_Mus_Set_Icebergs_Theme	
+	2901789171	E_Mus_Set_Standby_Jingle			\MUSIC\Jingles\E_Mus_Set_Standby_Jingle	
+	3364487932	E_Mus_Set_Fire_Lit_Jingle			\MUSIC\Jingles\E_Mus_Set_Fire_Lit_Jingle	
+	3396100293	E_Mus_Set_No_Theme			\MUSIC\Themes\E_Mus_Set_No_Theme	
+	4000917327	E_Mus_Set_Main_Theme			\MUSIC\Themes\E_Mus_Set_Main_Theme	
+	4100489055	E_Mus_Set_Storm_Theme			\MUSIC\Themes\E_Mus_Set_Storm_Theme	
+	4105446904	E_Mus_Resume_Music			\MUSIC\Global\E_Mus_Resume_Music	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	591246720	Storm_Intensity_GP			\Default Work Unit\Weather\Storm_Intensity_GP	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	1505233	theme_main_3	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_main_3_7C1F5570.wem		\Interactive Music Hierarchy\Music\Main_Music_SWITCH\Main_Theme_PLAYLIST\theme_main_3\theme_main_3		3636875
+	8945167	jingle_standby	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\jingle_standby_7C1F5570.wem		\Interactive Music Hierarchy\Music\Main_Music_SWITCH\Jingle_Standby_SEG\jingle_standby		68899
+	19966419	theme_going_to_sea_3	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_going_to_sea_3_7C1F5570.wem		\Interactive Music Hierarchy\Music\Main_Music_SWITCH\Theme_Going_To_Sea_PLAYLIST\theme_going_to_sea_3\theme_going_to_sea_3		282149
+	20160249	theme_main_1	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_main_1_7C1F5570.wem		\Interactive Music Hierarchy\Music\Main_Music_SWITCH\Main_Theme_PLAYLIST\theme_main_1\theme_main_1		3329582
+	23178484	jingle_random_6	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\jingle_random_6_7C1F5570.wem		\Interactive Music Hierarchy\Music\Main_Music_SWITCH\Jingle_Random_RND\jingle_random_6\jingle_random_6		161653
+	44708438	theme_sailing_singing_5	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_sailing_singing_5_7C1F5570.wem		\Interactive Music Hierarchy\Music\Main_Music_SWITCH\Theme_Sailing_SWITCH\Theme_Sailing_Singing_SWITCH\Theme_Sailing_Singing_PLAYLIST\theme_sailing_singing_5\theme_sailing_singing_5		1799004
+	65060138	theme_going_to_sea_2	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_going_to_sea_2_7C1F5570.wem		\Interactive Music Hierarchy\Music\Main_Music_SWITCH\Theme_Going_To_Sea_PLAYLIST\theme_going_to_sea_2\theme_going_to_sea_2		280453
+	65912671	jingle_random_7	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\jingle_random_7_7C1F5570.wem		\Interactive Music Hierarchy\Music\Main_Music_SWITCH\Jingle_Random_RND\jingle_random_7\jingle_random_7		156921
+	73020892	theme_exploring_island_5	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_exploring_island_5_7C1F5570.wem		\Interactive Music Hierarchy\Music\Main_Music_SWITCH\Jingle_Exploring_RND\theme_exploring_island_5\theme_exploring_island_5		739136
+	93817900	theme_sailing_3	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_sailing_3_7C1F5570.wem		\Interactive Music Hierarchy\Music\Main_Music_SWITCH\Theme_Sailing_SWITCH\Theme_Sailing_Singing_SWITCH\Theme_Sailing_Singing_PLAYLIST\theme_sailing_3\theme_sailing_3		701502
+	98723454	theme_going_to_sea_1	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_going_to_sea_1_7C1F5570.wem		\Interactive Music Hierarchy\Music\Main_Music_SWITCH\Theme_Going_To_Sea_PLAYLIST\theme_going_to_sea_1\theme_going_to_sea_1		279449
+	112134903	theme_main_2	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_main_2_7C1F5570.wem		\Interactive Music Hierarchy\Music\Main_Music_SWITCH\Main_Theme_PLAYLIST\theme_main_2\theme_main_2		3758197
+	217597194	theme_storm_death	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_storm_death_7C1F5570.wem		\Interactive Music Hierarchy\Music\Main_Music_SWITCH\Theme_Storm_SWITCH\Theme_Storm_Death_PLAYLIST\Jingle_Storm_Death\theme_storm_death		646921
+	251101924	theme_exploring_island_4	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_exploring_island_4_7C1F5570.wem		\Interactive Music Hierarchy\Music\Main_Music_SWITCH\Jingle_Exploring_RND\theme_exploring_island_4\theme_exploring_island_4		981083
+	257031866	theme_exploring_island_2	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_exploring_island_2_7C1F5570.wem		\Interactive Music Hierarchy\Music\Main_Music_SWITCH\Jingle_Exploring_RND\theme_exploring_island_2\theme_exploring_island_2		979850
+	304684611	theme_storm_4	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_storm_4_7C1F5570.wem		\Interactive Music Hierarchy\Music\Main_Music_SWITCH\Theme_Storm_SWITCH\Theme_Storm_PLAYLIST\theme_storm_4\theme_storm_4		1822489
+	350143537	theme_going_to_sea_4	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_going_to_sea_4_7C1F5570.wem		\Interactive Music Hierarchy\Music\Main_Music_SWITCH\Theme_Going_To_Sea_PLAYLIST\theme_going_to_sea_4\theme_going_to_sea_4		287902
+	395565942	theme_sailing_2	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_sailing_2_7C1F5570.wem		\Interactive Music Hierarchy\Music\Main_Music_SWITCH\Theme_Sailing_SWITCH\Theme_Sailing_Singing_SWITCH\Theme_Sailing_Singing_PLAYLIST\theme_sailing_2\theme_sailing_2		1642988
+	399430967	theme_sailing_singing_2	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_sailing_singing_2_7C1F5570.wem		\Interactive Music Hierarchy\Music\Main_Music_SWITCH\Theme_Sailing_SWITCH\Theme_Sailing_Singing_SWITCH\Theme_Sailing_Singing_PLAYLIST\theme_sailing_singing_2\theme_sailing_singing_2		1752460
+	415557483	theme_storm_2	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_storm_2_7C1F5570.wem		\Interactive Music Hierarchy\Music\Main_Music_SWITCH\Theme_Storm_SWITCH\Theme_Storm_PLAYLIST\theme_storm_2\theme_storm_2		1573707
+	483369898	theme_sailing_1	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_sailing_1_7C1F5570.wem		\Interactive Music Hierarchy\Music\Main_Music_SWITCH\Theme_Sailing_SWITCH\Theme_Sailing_Singing_SWITCH\Theme_Sailing_Singing_PLAYLIST\theme_sailing_1\theme_sailing_1		1802048
+	518980243	theme_sailing_singing_3	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_sailing_singing_3_7C1F5570.wem		\Interactive Music Hierarchy\Music\Main_Music_SWITCH\Theme_Sailing_SWITCH\Theme_Sailing_Singing_SWITCH\Theme_Sailing_Singing_PLAYLIST\theme_sailing_singing_3\theme_sailing_singing_3		1688609
+	576222389	theme_icebergs_death	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_icebergs_death_7C1F5570.wem		\Interactive Music Hierarchy\Music\Main_Music_SWITCH\Theme_Iceberg_SWITCH\theme_icebergs_death\theme_icebergs_death		151828
+	621855743	jingle_fire_lit	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\jingle_fire_lit_7C1F5570.wem		\Interactive Music Hierarchy\Music\Main_Music_SWITCH\Jingle_Fire_Lit_SEG\jingle_fire_lit		121115
+	632281725	theme_storm_1	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_storm_1_7C1F5570.wem		\Interactive Music Hierarchy\Music\Main_Music_SWITCH\Theme_Storm_SWITCH\Theme_Storm_PLAYLIST\theme_storm_1\theme_storm_1		2279191
+	643316962	jingle_random_5	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\jingle_random_5_7C1F5570.wem		\Interactive Music Hierarchy\Music\Main_Music_SWITCH\Jingle_Random_RND\jingle_random_5\jingle_random_5		166925
+	696921957	jingle_random_3	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\jingle_random_3_7C1F5570.wem		\Interactive Music Hierarchy\Music\Main_Music_SWITCH\Jingle_Random_RND\jingle_random_3\jingle_random_3		1036953
+	787622928	jingle_random_1	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\jingle_random_1_7C1F5570.wem		\Interactive Music Hierarchy\Music\Main_Music_SWITCH\Jingle_Random_RND\jingle_random_1\jingle_random_1		192982
+	791292477	theme_icebergs_singing	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_icebergs_singing_7C1F5570.wem		\Interactive Music Hierarchy\Music\Main_Music_SWITCH\Theme_Iceberg_SWITCH\Theme_Icebergs_Singing_SWITCH\Theme_Iceberg_Singing_LOOP\theme_icebergs_singing\theme_icebergs_singing		517553
+	837322129	theme_exploring_island_3	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_exploring_island_3_7C1F5570.wem		\Interactive Music Hierarchy\Music\Main_Music_SWITCH\Jingle_Exploring_RND\theme_exploring_island_3\theme_exploring_island_3		1040933
+	883134144	theme_new_island	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_new_island_7C1F5570.wem		\Interactive Music Hierarchy\Music\Main_Music_SWITCH\Jingle_New_Island_SEG\theme_new_island		2017681
+	890530192	theme_storm_3	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_storm_3_7C1F5570.wem		\Interactive Music Hierarchy\Music\Main_Music_SWITCH\Theme_Storm_SWITCH\Theme_Storm_PLAYLIST\theme_storm_3\theme_storm_3		1821873
+	896538631	theme_sailing_singing_1	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_sailing_singing_1_7C1F5570.wem		\Interactive Music Hierarchy\Music\Main_Music_SWITCH\Theme_Sailing_SWITCH\Theme_Sailing_Singing_SWITCH\Theme_Sailing_Singing_PLAYLIST\theme_sailing_singing_1\theme_sailing_singing_1		1711294
+	930855079	theme_icebergs	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_icebergs_7C1F5570.wem		\Interactive Music Hierarchy\Music\Main_Music_SWITCH\Theme_Iceberg_SWITCH\Theme_Icebergs_Singing_SWITCH\Theme_Iceberg_LOOP\theme_icebergs\theme_icebergs		554923
+	955165182	theme_exploring_island_1	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_exploring_island_1_7C1F5570.wem		\Interactive Music Hierarchy\Music\Main_Music_SWITCH\Jingle_Exploring_RND\theme_exploring_island_1\theme_exploring_island_1		1343164
+	990444181	theme_sailing_singing_4	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_sailing_singing_4_7C1F5570.wem		\Interactive Music Hierarchy\Music\Main_Music_SWITCH\Theme_Sailing_SWITCH\Theme_Sailing_Singing_SWITCH\Theme_Sailing_Singing_PLAYLIST\theme_sailing_singing_4\theme_sailing_singing_4		1786297
+	1008805516	theme_storm_approaching_edited	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_storm_approaching_edited_7C1F5570.wem		\Interactive Music Hierarchy\Music\Main_Music_SWITCH\Theme_Storm_SWITCH\Theme_Storm_Approaching_PLAYLIST\theme_storm_approaching\theme_storm_approaching_edited		440472
+	1021127060	theme_sailing_4	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\theme_sailing_4_7C1F5570.wem		\Interactive Music Hierarchy\Music\Main_Music_SWITCH\Theme_Sailing_SWITCH\Theme_Sailing_Singing_SWITCH\Theme_Sailing_Singing_PLAYLIST\theme_sailing_4\theme_sailing_4		1790942
+	1031661151	jingle_random_4	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\jingle_random_4_7C1F5570.wem		\Interactive Music Hierarchy\Music\Main_Music_SWITCH\Jingle_Random_RND\jingle_random_4\jingle_random_4		164690
+	1046666640	jingle_random_2	D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Mac\SFX\jingle_random_2_7C1F5570.wem		\Interactive Music Hierarchy\Music\Main_Music_SWITCH\Jingle_Random_RND\jingle_random_2\jingle_random_2		934613
+

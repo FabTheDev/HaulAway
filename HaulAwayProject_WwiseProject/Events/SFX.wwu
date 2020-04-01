@@ -822,6 +822,108 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Hold" ID="{FBA8F505-A50D-4F32-B963-8925CD4B1D6F}" ShortID="311090816">
+							<ChildrenList>
+								<Event Name="E_Ship_Enter_Hold" ID="{47F8F7D5-0338-4070-8140-A6A7BCF20A75}">
+									<ChildrenList>
+										<Action Name="" ID="{0BAEAABE-2002-461A-8275-A341B508B23A}" ShortID="698796284">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ship_Entering_Hold_SEQ" ID="{D3AC215F-15AC-48A4-9193-2F85EC15A747}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{D2D3FBC8-9148-4550-B302-CA2BF6F298C7}" ShortID="951836546">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="23"/>
+												<Property Name="Delay" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="In" ID="{F431CC99-F201-401D-B118-93F3EE1C9EAD}" WorkUnitID="{B2EF58AA-AC08-48B1-B753-34CCFE6A3AB5}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{3F989486-B7F2-4A0C-AFB2-1312EF214E16}" ShortID="989694286">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="38"/>
+												<Property Name="Delay" Type="Real64" Value="0.8"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+												<Property Name="GameParameterValue" Type="Real64" Value="38"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Intra_Music_LowPassFilter_GP" ID="{F457DEC5-2431-4441-8DDC-2DBD7379D01C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{772FD397-B073-48E3-8663-DD78C94668C8}" ShortID="646591419">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="1"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Ship_InHold_Ambience" ID="{9974E777-FE58-4366-BFB4-B92C30A9B287}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Ship_Leave_Hold" ID="{EF85B494-2FAD-4BB9-9152-6EE8D1E84072}">
+									<ChildrenList>
+										<Action Name="" ID="{BB5AFC86-05E0-4353-B8ED-3D470137CCA7}" ShortID="107426502">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HA_Ship_leaving_hold" ID="{0ACBE3A8-9A67-4A2B-8DBD-A124AA83EE28}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{6C77569C-4FF5-4B71-B3F0-045924B7A79F}" ShortID="143452131">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="23"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Out" ID="{CBED7C89-B2E3-47EC-A878-0D6580FF55FF}" WorkUnitID="{B2EF58AA-AC08-48B1-B753-34CCFE6A3AB5}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{BABA3E81-6C67-4C92-BC22-F17F7414AC09}" ShortID="514828030">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="38"/>
+												<Property Name="Delay" Type="Real64" Value="0.5"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+												<Property Name="GameParameterValue" Type="Real64" Value="100"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Intra_Music_LowPassFilter_GP" ID="{F457DEC5-2431-4441-8DDC-2DBD7379D01C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{E30391D4-5164-45C7-BFE0-74238ED68C33}" ShortID="642651331">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Ship_InHold_Ambience" ID="{9974E777-FE58-4366-BFB4-B92C30A9B287}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
