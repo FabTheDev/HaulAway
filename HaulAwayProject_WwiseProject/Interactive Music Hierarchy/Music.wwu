@@ -7,7 +7,7 @@
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-2</Value>
+								<Value>-8</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -2511,7 +2511,7 @@
 																		<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 																		<Property Name="Weight" Type="Real64">
 																			<ValueList>
-																				<Value>0.001</Value>
+																				<Value>20</Value>
 																			</ValueList>
 																		</Property>
 																	</PropertyList>
@@ -2522,7 +2522,7 @@
 																		<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 																		<Property Name="Weight" Type="Real64">
 																			<ValueList>
-																				<Value>0.001</Value>
+																				<Value>20</Value>
 																			</ValueList>
 																		</Property>
 																	</PropertyList>
@@ -2533,7 +2533,7 @@
 																		<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 																		<Property Name="Weight" Type="Real64">
 																			<ValueList>
-																				<Value>0.001</Value>
+																				<Value>20</Value>
 																			</ValueList>
 																		</Property>
 																	</PropertyList>
@@ -2544,7 +2544,7 @@
 																		<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 																		<Property Name="Weight" Type="Real64">
 																			<ValueList>
-																				<Value>0.001</Value>
+																				<Value>20</Value>
 																			</ValueList>
 																		</Property>
 																	</PropertyList>
@@ -3254,12 +3254,12 @@
 								</MusicTransition>
 							</TransitionList>
 							<ArgumentList>
-								<ArgumentRef Name="Mus_IsSinging" ID="{661900C4-17C3-4D28-B9C0-FDF74B7A5C8C}"/>
+								<ArgumentRef Name="Mus_CharIsSinging_STATE" ID="{1FD7C1DB-8989-494F-811B-F4E93B5E80AB}"/>
 							</ArgumentList>
 							<EntryList>
 								<Entry>
 									<Path>
-										<PathElementRef Name="Yes" ID="{E4B8CC05-4AC4-4067-A717-1BA2FD1B0D32}"/>
+										<PathElementRef Name="Yes_Char_Singing" ID="{1A488AB7-9718-4B2D-AC57-3B7BE6B57266}"/>
 									</Path>
 									<AudioNodeInfo>
 										<AudioNodeRef Name="Theme_Sailing_Singing_SWITCH" ID="{4F3079F6-9BE5-43F2-878C-52F9AF84974D}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
@@ -3267,7 +3267,15 @@
 								</Entry>
 								<Entry>
 									<Path>
-										<PathElementRef Name="No" ID="{5FB29E7F-3317-44DD-B6DD-124F2B6A3410}"/>
+										<PathElementRef Name="None" ID="{6507D9A9-729F-4C4B-AA8E-16815F487179}"/>
+									</Path>
+									<AudioNodeInfo>
+										<AudioNodeRef Name="Theme_Sailing_PLAYLIST" ID="{D0BE4EC7-74B8-454F-BFAE-1908E9A33C3C}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
+									</AudioNodeInfo>
+								</Entry>
+								<Entry>
+									<Path>
+										<PathElementRef Name="No_Char_Singing" ID="{CC851A52-942B-4F5D-984D-2F321AFDD69E}"/>
 									</Path>
 									<AudioNodeInfo>
 										<AudioNodeRef Name="Theme_Sailing_PLAYLIST" ID="{D0BE4EC7-74B8-454F-BFAE-1908E9A33C3C}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
@@ -4881,14 +4889,23 @@
 								</MusicTransition>
 							</TransitionList>
 							<ArgumentList>
-								<ArgumentRef Name="Mus_StinkingOrNot" ID="{03061294-94E1-4949-B117-CDF796E66701}"/>
-								<ArgumentRef Name="Storm_State" ID="{97900644-A614-42D7-94CA-FC806699D964}"/>
+								<ArgumentRef Name="Mus_ShipIsSinking_STATE" ID="{7233AD8A-5881-43C9-8E6F-5361C7B3FA02}"/>
+								<ArgumentRef Name="Mus_Storm_Intensity_STATE" ID="{4649E4E0-414E-4656-BE8B-4B21D4CDD009}"/>
 							</ArgumentList>
 							<EntryList>
 								<Entry>
 									<Path>
-										<PathElementRef Name="No" ID="{557E11F3-E18E-4406-BA2D-24998C38DA37}"/>
-										<PathElementRef Name="Approaching" ID="{14491DD2-3190-486E-8C3D-40FEE6BA2370}"/>
+										<PathElementRef Name="Yes_Ship_Sinking" ID="{139A3CEB-24A2-42BB-84D9-9D9AB25668E6}"/>
+										<PathElementRef Name="Here_Storm" ID="{A0300296-6DED-4FB9-8C27-F9CECC588BFE}"/>
+									</Path>
+									<AudioNodeInfo>
+										<AudioNodeRef Name="Theme_Storm_Death_PLAYLIST" ID="{8EAACEA2-C762-4D12-A086-50537C68B581}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
+									</AudioNodeInfo>
+								</Entry>
+								<Entry>
+									<Path>
+										<PathElementRef Name="No_Ship_Sinking" ID="{61F19502-08FC-437E-AFCF-D89896B4FCA5}"/>
+										<PathElementRef Name="Approaching_Storm" ID="{CA76B6BE-DBE1-42CD-8025-5958E2EF091C}"/>
 									</Path>
 									<AudioNodeInfo>
 										<AudioNodeRef Name="Theme_Storm_Approaching_PLAYLIST" ID="{29C5007A-2C25-47E9-920B-0702EBB1F151}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
@@ -4896,8 +4913,17 @@
 								</Entry>
 								<Entry>
 									<Path>
-										<PathElementRef Name="No" ID="{557E11F3-E18E-4406-BA2D-24998C38DA37}"/>
-										<PathElementRef Name="Here" ID="{FF091E42-011C-4CE6-B2E9-001D64A5C636}"/>
+										<PathElementRef Name="None" ID="{2A3C993C-BC43-40A0-A46B-83C2DC8B3A95}"/>
+										<PathElementRef Name="Approaching_Storm" ID="{CA76B6BE-DBE1-42CD-8025-5958E2EF091C}"/>
+									</Path>
+									<AudioNodeInfo>
+										<AudioNodeRef Name="Theme_Storm_Approaching_PLAYLIST" ID="{29C5007A-2C25-47E9-920B-0702EBB1F151}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
+									</AudioNodeInfo>
+								</Entry>
+								<Entry>
+									<Path>
+										<PathElementRef Name="No_Ship_Sinking" ID="{61F19502-08FC-437E-AFCF-D89896B4FCA5}"/>
+										<PathElementRef Name="Here_Storm" ID="{A0300296-6DED-4FB9-8C27-F9CECC588BFE}"/>
 									</Path>
 									<AudioNodeInfo>
 										<AudioNodeRef Name="Theme_Storm_PLAYLIST" ID="{0DF18A6D-8C0B-474A-9662-A73FF562A7F4}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
@@ -4905,11 +4931,29 @@
 								</Entry>
 								<Entry>
 									<Path>
-										<PathElementRef Name="Yes" ID="{87A41F97-7D80-493B-8A3C-455954AF3475}"/>
-										<PathElementRef Name="Here" ID="{FF091E42-011C-4CE6-B2E9-001D64A5C636}"/>
+										<PathElementRef Name="None" ID="{2A3C993C-BC43-40A0-A46B-83C2DC8B3A95}"/>
+										<PathElementRef Name="Here_Storm" ID="{A0300296-6DED-4FB9-8C27-F9CECC588BFE}"/>
 									</Path>
 									<AudioNodeInfo>
-										<AudioNodeRef Name="Theme_Storm_Death_PLAYLIST" ID="{8EAACEA2-C762-4D12-A086-50537C68B581}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
+										<AudioNodeRef Name="Theme_Storm_PLAYLIST" ID="{0DF18A6D-8C0B-474A-9662-A73FF562A7F4}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
+									</AudioNodeInfo>
+								</Entry>
+								<Entry>
+									<Path>
+										<PathElementRef Name="No_Ship_Sinking" ID="{61F19502-08FC-437E-AFCF-D89896B4FCA5}"/>
+										<PathElementRef Name="None" ID="{2CFE3A44-5351-4DE6-A79B-39203CDC3FA3}"/>
+									</Path>
+									<AudioNodeInfo>
+										<AudioNodeRef Name="Theme_Storm_Approaching_PLAYLIST" ID="{29C5007A-2C25-47E9-920B-0702EBB1F151}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
+									</AudioNodeInfo>
+								</Entry>
+								<Entry>
+									<Path>
+										<PathElementRef Name="None" ID="{2A3C993C-BC43-40A0-A46B-83C2DC8B3A95}"/>
+										<PathElementRef Name="None" ID="{2CFE3A44-5351-4DE6-A79B-39203CDC3FA3}"/>
+									</Path>
+									<AudioNodeInfo>
+										<AudioNodeRef Name="Theme_Storm_Approaching_PLAYLIST" ID="{29C5007A-2C25-47E9-920B-0702EBB1F151}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
 									</AudioNodeInfo>
 								</Entry>
 							</EntryList>
@@ -4964,6 +5008,7 @@
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
+															<ReferenceList/>
 															<TransitionInfo/>
 														</MusicTransition>
 													</TransitionList>
@@ -4999,8 +5044,10 @@
 											<PropertyList>
 												<Property Name="IsFolder" Type="bool" Value="True"/>
 											</PropertyList>
+											<ReferenceList/>
 											<ChildrenList>
 												<MusicTransition Name="Transition" ID="{393B25B2-A576-4287-BDB1-A08ECFF78A16}">
+													<ReferenceList/>
 													<TransitionInfo/>
 												</MusicTransition>
 											</ChildrenList>
@@ -5053,6 +5100,7 @@
 													<PropertyList>
 														<Property Name="IsFolder" Type="bool" Value="True"/>
 													</PropertyList>
+													<ReferenceList/>
 													<TransitionInfo/>
 												</MusicTransition>
 											</TransitionList>
@@ -5132,6 +5180,7 @@
 																	<PropertyList>
 																		<Property Name="IsFolder" Type="bool" Value="True"/>
 																	</PropertyList>
+																	<ReferenceList/>
 																	<TransitionInfo/>
 																</MusicTransition>
 															</TransitionList>
@@ -5167,8 +5216,10 @@
 													<PropertyList>
 														<Property Name="IsFolder" Type="bool" Value="True"/>
 													</PropertyList>
+													<ReferenceList/>
 													<ChildrenList>
 														<MusicTransition Name="Transition" ID="{C0E45FE7-7881-42A6-AC88-711F00114180}">
+															<ReferenceList/>
 															<TransitionInfo/>
 														</MusicTransition>
 													</ChildrenList>
@@ -5234,6 +5285,7 @@
 																	<PropertyList>
 																		<Property Name="IsFolder" Type="bool" Value="True"/>
 																	</PropertyList>
+																	<ReferenceList/>
 																	<TransitionInfo/>
 																</MusicTransition>
 															</TransitionList>
@@ -5269,8 +5321,10 @@
 													<PropertyList>
 														<Property Name="IsFolder" Type="bool" Value="True"/>
 													</PropertyList>
+													<ReferenceList/>
 													<ChildrenList>
 														<MusicTransition Name="Transition" ID="{5E813180-8526-49D7-8BB5-B94BF5023FF7}">
+															<ReferenceList/>
 															<TransitionInfo/>
 														</MusicTransition>
 													</ChildrenList>
@@ -5299,6 +5353,7 @@
 											<PropertyList>
 												<Property Name="IsFolder" Type="bool" Value="True"/>
 											</PropertyList>
+											<ReferenceList/>
 											<ChildrenList>
 												<MusicTransition Name="Transition" ID="{F0FF7EC0-E20D-443F-9754-C787A42AA309}">
 													<PropertyList>
@@ -5309,6 +5364,7 @@
 														<Property Name="PlayDestinationPreEntry" Type="bool" Value="False"/>
 														<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
 													</PropertyList>
+													<ReferenceList/>
 													<TransitionInfo>
 														<SourceFadeOut>
 															<MusicFade Name="Source Fade-out" ID="{AB065BE7-6C17-4761-8DCE-987076945909}">
@@ -5333,12 +5389,20 @@
 										</MusicTransition>
 									</TransitionList>
 									<ArgumentList>
-										<ArgumentRef Name="Mus_IsInHold" ID="{272492A0-AF2B-4C68-8A95-94001BF6C919}"/>
+										<ArgumentRef Name="Mus_IsInHold_STATE" ID="{59C4C0BF-47BE-4CE3-A14F-7E8207DC3CD6}"/>
 									</ArgumentList>
 									<EntryList>
 										<Entry>
 											<Path>
-												<PathElementRef Name="Out" ID="{CBED7C89-B2E3-47EC-A878-0D6580FF55FF}"/>
+												<PathElementRef Name="In_Hold" ID="{E19B7EE3-E36A-4D88-8054-3C0C0247FDBC}"/>
+											</Path>
+											<AudioNodeInfo>
+												<AudioNodeRef Name="Theme_Iceberg_LOOP" ID="{291160AF-56C7-4E8D-B24A-1C8BBF5C406F}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
+											</AudioNodeInfo>
+										</Entry>
+										<Entry>
+											<Path>
+												<PathElementRef Name="None" ID="{141295CE-4617-432C-8DBE-52A7396D515C}"/>
 											</Path>
 											<AudioNodeInfo>
 												<AudioNodeRef Name="Theme_Iceberg_Singing_LOOP" ID="{1A2275D6-8CF3-4B55-9CDC-F06CDF056479}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
@@ -5346,10 +5410,10 @@
 										</Entry>
 										<Entry>
 											<Path>
-												<PathElementRef Name="In" ID="{F431CC99-F201-401D-B118-93F3EE1C9EAD}"/>
+												<PathElementRef Name="Out_Hold" ID="{4799B397-87EA-4934-ACC2-73FA0C65A854}"/>
 											</Path>
 											<AudioNodeInfo>
-												<AudioNodeRef Name="Theme_Iceberg_LOOP" ID="{291160AF-56C7-4E8D-B24A-1C8BBF5C406F}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
+												<AudioNodeRef Name="Theme_Iceberg_Singing_LOOP" ID="{1A2275D6-8CF3-4B55-9CDC-F06CDF056479}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
 											</AudioNodeInfo>
 										</Entry>
 									</EntryList>
@@ -5360,6 +5424,7 @@
 									<PropertyList>
 										<Property Name="IsFolder" Type="bool" Value="True"/>
 									</PropertyList>
+									<ReferenceList/>
 									<ChildrenList>
 										<MusicTransition Name="Transition" ID="{D631D26C-4BB7-49BC-A5CB-5C6252450127}">
 											<PropertyList>
@@ -5370,6 +5435,7 @@
 												<Property Name="PlayDestinationPreEntry" Type="bool" Value="False"/>
 												<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
 											</PropertyList>
+											<ReferenceList/>
 											<TransitionInfo>
 												<SourceFadeOut>
 													<MusicFade Name="Source Fade-out" ID="{E8C7C488-3DF3-4961-9C3E-A2B683D65B54}">
@@ -5427,23 +5493,14 @@
 								</MusicTransition>
 							</TransitionList>
 							<ArgumentList>
-								<ArgumentRef Name="Mus_IsSinging" ID="{661900C4-17C3-4D28-B9C0-FDF74B7A5C8C}"/>
-								<ArgumentRef Name="Mus_StinkingOrNot" ID="{03061294-94E1-4949-B117-CDF796E66701}"/>
+								<ArgumentRef Name="Mus_CharIsSinging_STATE" ID="{1FD7C1DB-8989-494F-811B-F4E93B5E80AB}"/>
+								<ArgumentRef Name="Mus_ShipIsSinking_STATE" ID="{7233AD8A-5881-43C9-8E6F-5361C7B3FA02}"/>
 							</ArgumentList>
 							<EntryList>
 								<Entry>
 									<Path>
-										<PathElementRef Name="Yes" ID="{E4B8CC05-4AC4-4067-A717-1BA2FD1B0D32}"/>
-										<PathElementRef Name="Yes" ID="{87A41F97-7D80-493B-8A3C-455954AF3475}"/>
-									</Path>
-									<AudioNodeInfo>
-										<AudioNodeRef Name="theme_icebergs_death" ID="{7BE994E1-BC26-48F6-B5C4-2A2017033D75}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
-									</AudioNodeInfo>
-								</Entry>
-								<Entry>
-									<Path>
-										<PathElementRef Name="Yes" ID="{E4B8CC05-4AC4-4067-A717-1BA2FD1B0D32}"/>
-										<PathElementRef Name="No" ID="{557E11F3-E18E-4406-BA2D-24998C38DA37}"/>
+										<PathElementRef Name="Yes_Char_Singing" ID="{1A488AB7-9718-4B2D-AC57-3B7BE6B57266}"/>
+										<PathElementRef Name="No_Ship_Sinking" ID="{61F19502-08FC-437E-AFCF-D89896B4FCA5}"/>
 									</Path>
 									<AudioNodeInfo>
 										<AudioNodeRef Name="Theme_Icebergs_Singing_SWITCH" ID="{1CD1551C-685F-46C0-AEC5-7413713B8648}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
@@ -5451,8 +5508,35 @@
 								</Entry>
 								<Entry>
 									<Path>
-										<PathElementRef Name="No" ID="{5FB29E7F-3317-44DD-B6DD-124F2B6A3410}"/>
-										<PathElementRef Name="Yes" ID="{87A41F97-7D80-493B-8A3C-455954AF3475}"/>
+										<PathElementRef Name="Yes_Char_Singing" ID="{1A488AB7-9718-4B2D-AC57-3B7BE6B57266}"/>
+										<PathElementRef Name="None" ID="{2A3C993C-BC43-40A0-A46B-83C2DC8B3A95}"/>
+									</Path>
+									<AudioNodeInfo>
+										<AudioNodeRef Name="Theme_Icebergs_Singing_SWITCH" ID="{1CD1551C-685F-46C0-AEC5-7413713B8648}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
+									</AudioNodeInfo>
+								</Entry>
+								<Entry>
+									<Path>
+										<PathElementRef Name="None" ID="{6507D9A9-729F-4C4B-AA8E-16815F487179}"/>
+										<PathElementRef Name="No_Ship_Sinking" ID="{61F19502-08FC-437E-AFCF-D89896B4FCA5}"/>
+									</Path>
+									<AudioNodeInfo>
+										<AudioNodeRef Name="Theme_Iceberg_LOOP" ID="{7B46938F-1687-460D-A8B9-5ECD7DA168F0}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
+									</AudioNodeInfo>
+								</Entry>
+								<Entry>
+									<Path>
+										<PathElementRef Name="None" ID="{6507D9A9-729F-4C4B-AA8E-16815F487179}"/>
+										<PathElementRef Name="None" ID="{2A3C993C-BC43-40A0-A46B-83C2DC8B3A95}"/>
+									</Path>
+									<AudioNodeInfo>
+										<AudioNodeRef Name="Theme_Iceberg_LOOP" ID="{7B46938F-1687-460D-A8B9-5ECD7DA168F0}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
+									</AudioNodeInfo>
+								</Entry>
+								<Entry>
+									<Path>
+										<PathElementRef Name="No_Char_Singing" ID="{CC851A52-942B-4F5D-984D-2F321AFDD69E}"/>
+										<PathElementRef Name="Yes_Ship_Sinking" ID="{139A3CEB-24A2-42BB-84D9-9D9AB25668E6}"/>
 									</Path>
 									<AudioNodeInfo>
 										<AudioNodeRef Name="theme_icebergs_death" ID="{7BE994E1-BC26-48F6-B5C4-2A2017033D75}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
@@ -5460,8 +5544,26 @@
 								</Entry>
 								<Entry>
 									<Path>
-										<PathElementRef Name="No" ID="{5FB29E7F-3317-44DD-B6DD-124F2B6A3410}"/>
-										<PathElementRef Name="No" ID="{557E11F3-E18E-4406-BA2D-24998C38DA37}"/>
+										<PathElementRef Name="None" ID="{6507D9A9-729F-4C4B-AA8E-16815F487179}"/>
+										<PathElementRef Name="Yes_Ship_Sinking" ID="{139A3CEB-24A2-42BB-84D9-9D9AB25668E6}"/>
+									</Path>
+									<AudioNodeInfo>
+										<AudioNodeRef Name="theme_icebergs_death" ID="{7BE994E1-BC26-48F6-B5C4-2A2017033D75}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
+									</AudioNodeInfo>
+								</Entry>
+								<Entry>
+									<Path>
+										<PathElementRef Name="Yes_Char_Singing" ID="{1A488AB7-9718-4B2D-AC57-3B7BE6B57266}"/>
+										<PathElementRef Name="Yes_Ship_Sinking" ID="{139A3CEB-24A2-42BB-84D9-9D9AB25668E6}"/>
+									</Path>
+									<AudioNodeInfo>
+										<AudioNodeRef Name="theme_icebergs_death" ID="{7BE994E1-BC26-48F6-B5C4-2A2017033D75}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
+									</AudioNodeInfo>
+								</Entry>
+								<Entry>
+									<Path>
+										<PathElementRef Name="No_Char_Singing" ID="{CC851A52-942B-4F5D-984D-2F321AFDD69E}"/>
+										<PathElementRef Name="No_Ship_Sinking" ID="{61F19502-08FC-437E-AFCF-D89896B4FCA5}"/>
 									</Path>
 									<AudioNodeInfo>
 										<AudioNodeRef Name="Theme_Iceberg_LOOP" ID="{7B46938F-1687-460D-A8B9-5ECD7DA168F0}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
@@ -6635,24 +6737,28 @@
 										</SourceFadeOut>
 									</TransitionInfo>
 								</MusicTransition>
-								<MusicTransition Name="Transition" ID="{B6B91893-A20E-4165-91A0-135615C90D25}">
+								<MusicTransition Name="Transition" ID="{93D0D10A-6302-44B3-ADA4-C03051239334}">
 									<PropertyList>
-										<Property Name="DestinationContextType" Type="int16" Value="2"/>
-										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 										<Property Name="ExitSourceAt" Type="int16" Value="2"/>
 										<Property Name="PlayDestinationPreEntry" Type="bool" Value="False"/>
 										<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
+										<Property Name="SourceContextType" Type="int16" Value="1"/>
 									</PropertyList>
-									<ReferenceList>
-										<Reference Name="DestinationContextObject">
-											<ObjectRef Name="End_Loop" ID="{68E09478-E98C-4298-8F07-68D0EF3D8F1F}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}"/>
-										</Reference>
-									</ReferenceList>
+									<ReferenceList/>
+									<TransitionInfo/>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{AE6021E3-342C-41BE-A470-4EEF818A5424}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="1"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+										<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
+									</PropertyList>
+									<ReferenceList/>
 									<TransitionInfo>
 										<SourceFadeOut>
-											<MusicFade Name="Source Fade-out" ID="{73BBA9A9-5302-451E-A7BB-12EAA2DADB8F}">
+											<MusicFade Name="Source Fade-out" ID="{078E0F32-FF3E-4390-B2C0-D87DE5FB3441}">
 												<PropertyList>
-													<Property Name="FadeCurve" Type="int16" Value="6"/>
 													<Property Name="FadeOffset" Type="Real64" Value="12"/>
 													<Property Name="FadeTime" Type="Real64" Value="12"/>
 													<Property Name="FadeType" Type="int16" Value="1"/>
@@ -6788,6 +6894,7 @@
 								</MusicTransition>
 								<MusicTransition Name="Transition" ID="{BAF7C94F-71E0-4A58-BD93-86A63D631CF4}">
 									<PropertyList>
+										<Property Name="PlayDestinationPreEntry" Type="bool" Value="False"/>
 										<Property Name="SourceContextType" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
@@ -6799,6 +6906,7 @@
 								</MusicTransition>
 								<MusicTransition Name="Transition" ID="{D5D6E285-B7BF-4027-9B33-38AF8360CF67}">
 									<PropertyList>
+										<Property Name="PlayDestinationPreEntry" Type="bool" Value="False"/>
 										<Property Name="SourceContextType" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
@@ -6810,6 +6918,7 @@
 								</MusicTransition>
 								<MusicTransition Name="Transition" ID="{B570DFE7-78B2-4F69-B615-B0E05E7ED718}">
 									<PropertyList>
+										<Property Name="PlayDestinationPreEntry" Type="bool" Value="False"/>
 										<Property Name="SourceContextType" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
@@ -6821,6 +6930,7 @@
 								</MusicTransition>
 								<MusicTransition Name="Transition" ID="{A3CA9500-9342-4C54-8230-4AEBDB01D50A}">
 									<PropertyList>
+										<Property Name="PlayDestinationPreEntry" Type="bool" Value="False"/>
 										<Property Name="SourceContextType" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
@@ -6832,6 +6942,7 @@
 								</MusicTransition>
 								<MusicTransition Name="Transition" ID="{1A7AE4E1-688C-48AA-85E6-BF900E41EF04}">
 									<PropertyList>
+										<Property Name="PlayDestinationPreEntry" Type="bool" Value="False"/>
 										<Property Name="SourceContextType" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
@@ -6846,6 +6957,7 @@
 										<Property Name="DestinationContextType" Type="int16" Value="2"/>
 										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 										<Property Name="ExitSourceAt" Type="int16" Value="1"/>
+										<Property Name="PlayDestinationPreEntry" Type="bool" Value="False"/>
 										<Property Name="SourceContextType" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
@@ -6873,6 +6985,7 @@
 										<Property Name="DestinationContextType" Type="int16" Value="2"/>
 										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 										<Property Name="ExitSourceAt" Type="int16" Value="1"/>
+										<Property Name="PlayDestinationPreEntry" Type="bool" Value="False"/>
 										<Property Name="SourceContextType" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
@@ -6900,52 +7013,12 @@
 						</MusicTransition>
 					</TransitionList>
 					<ArgumentList>
-						<ArgumentRef Name="Mus_Which_Theme" ID="{453ECCB0-04A4-43FC-82E7-4EF56CB46E25}"/>
+						<ArgumentRef Name="Mus_Selector_STATE" ID="{11FA8EE3-87A2-42A9-8E49-31C88C8EA2B4}"/>
 					</ArgumentList>
 					<EntryList>
 						<Entry>
 							<Path>
-								<PathElementRef Name="No_Theme" ID="{AA947633-199D-4339-95BE-49FE4C400235}"/>
-							</Path>
-							<AudioNodeInfo>
-								<AudioNodeRef Name="End_Loop" ID="{68E09478-E98C-4298-8F07-68D0EF3D8F1F}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
-							</AudioNodeInfo>
-						</Entry>
-						<Entry>
-							<Path>
-								<PathElementRef Name="Going_To_Sea_Theme" ID="{4F1D9B68-8C4D-4387-81C3-B868C53CF108}"/>
-							</Path>
-							<AudioNodeInfo>
-								<AudioNodeRef Name="Theme_Going_To_Sea_PLAYLIST" ID="{5E66A275-EC84-4098-83C1-9DE8340608D2}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
-							</AudioNodeInfo>
-						</Entry>
-						<Entry>
-							<Path>
-								<PathElementRef Name="Sailing_Theme" ID="{E3BCEECC-DE78-45A3-8F31-CC44C47E4046}"/>
-							</Path>
-							<AudioNodeInfo>
-								<AudioNodeRef Name="Theme_Sailing_SWITCH" ID="{593B216C-013D-4B75-A6A4-7EA9B3E67E67}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
-							</AudioNodeInfo>
-						</Entry>
-						<Entry>
-							<Path>
-								<PathElementRef Name="Storm_Theme" ID="{1A7062C2-75F6-47C5-8C7D-B8DB7E9A5952}"/>
-							</Path>
-							<AudioNodeInfo>
-								<AudioNodeRef Name="Theme_Storm_SWITCH" ID="{EB7657E3-A3A9-40EB-BD19-FC7B755D81E3}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
-							</AudioNodeInfo>
-						</Entry>
-						<Entry>
-							<Path>
-								<PathElementRef Name="Main_Theme" ID="{FFD8DF6D-DCA3-44E4-9808-BA09F74887BE}"/>
-							</Path>
-							<AudioNodeInfo>
-								<AudioNodeRef Name="Main_Theme_PLAYLIST" ID="{6D657D4D-B9F4-4287-9CF3-34BF341DC257}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
-							</AudioNodeInfo>
-						</Entry>
-						<Entry>
-							<Path>
-								<PathElementRef Name="Icebergs_Theme" ID="{1F2898AA-B427-47C3-9B0E-63A35214C498}"/>
+								<PathElementRef Name="Icebergs_Theme" ID="{0A9398CF-CA04-41C5-A4A5-0C4420E8B380}"/>
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="Theme_Iceberg_SWITCH" ID="{A189BCDE-1273-4534-94CE-C043E528007B}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
@@ -6953,7 +7026,23 @@
 						</Entry>
 						<Entry>
 							<Path>
-								<PathElementRef Name="Jingle_Exploring" ID="{269603AA-A4DF-4E05-BCAD-CC127578CBC5}"/>
+								<PathElementRef Name="Sailing_Theme" ID="{E89ACF6F-325E-4A89-ADEF-44ADD6B60929}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="Theme_Sailing_SWITCH" ID="{593B216C-013D-4B75-A6A4-7EA9B3E67E67}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Storm_Theme" ID="{F9140ED6-73FA-43E8-A1C7-ED18288192C9}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="Theme_Storm_SWITCH" ID="{EB7657E3-A3A9-40EB-BD19-FC7B755D81E3}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Jingle_Exploring" ID="{B8D7EBFC-2FA5-4EEB-B70A-9B262FBA7D1E}"/>
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="Jingle_Exploring_RND" ID="{397BE302-93A0-430D-998A-1D9AA693BC8F}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
@@ -6961,7 +7050,7 @@
 						</Entry>
 						<Entry>
 							<Path>
-								<PathElementRef Name="Jingle_Random" ID="{3041EEE3-0FFA-415F-9227-E940AC047C08}"/>
+								<PathElementRef Name="Jingle_Random" ID="{AF978F2A-A5A5-4848-A7C1-2EEF8E59F1CA}"/>
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="Jingle_Random_RND" ID="{1A949065-73CA-43BC-97A4-312AE3358974}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
@@ -6969,7 +7058,23 @@
 						</Entry>
 						<Entry>
 							<Path>
-								<PathElementRef Name="Jingle_FireLit" ID="{283E7AF4-0C75-4DA5-B37C-98BA431EDC72}"/>
+								<PathElementRef Name="Main_Theme" ID="{4D6A6F2A-117D-45C3-AEDC-915AC7F7B281}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="Main_Theme_PLAYLIST" ID="{6D657D4D-B9F4-4287-9CF3-34BF341DC257}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Going_To_Sea_Theme" ID="{5B0E47F5-AEF0-4D3A-A0EC-B3F46D7B2C74}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="Theme_Going_To_Sea_PLAYLIST" ID="{5E66A275-EC84-4098-83C1-9DE8340608D2}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Jingle_FireLit" ID="{9C96EBAE-96DF-43CE-99AD-D494EA16A9A7}"/>
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="Jingle_Fire_Lit_SEG" ID="{3FEAB42D-5865-4C54-938C-8CE6B0C99D47}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
@@ -6977,7 +7082,7 @@
 						</Entry>
 						<Entry>
 							<Path>
-								<PathElementRef Name="Jingle_NewIsland" ID="{85F87923-E01F-4453-95F8-5A5C4F02E201}"/>
+								<PathElementRef Name="Jingle_NewIsland" ID="{D645922F-0EF2-48D2-99BE-B081C2ED6BC5}"/>
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="Jingle_New_Island_SEG" ID="{01D7C6FD-E852-4C79-BD3C-FA7964D7E03F}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
@@ -6985,7 +7090,7 @@
 						</Entry>
 						<Entry>
 							<Path>
-								<PathElementRef Name="Jingle_Standby" ID="{CE4A10C5-B54D-4ADD-A0D4-2C4118B75FE7}"/>
+								<PathElementRef Name="Jingle_Standby" ID="{7F245BDB-E9CC-4632-9633-045A3640C4FB}"/>
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="Jingle_Standby_SEG" ID="{ABB5E598-0FE8-4EA8-82BC-5DD50FF6731E}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>

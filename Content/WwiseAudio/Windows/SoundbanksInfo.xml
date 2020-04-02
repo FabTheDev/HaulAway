@@ -20,6 +20,8 @@
 				<Event Id="208377844" Name="E_Mus_Initiate_Music" ObjectPath="\Events\MUSIC\Global\E_Mus_Initiate_Music"/>
 				<Event Id="2278932593" Name="E_Mus_Pause_Music" ObjectPath="\Events\MUSIC\Global\E_Mus_Pause_Music"/>
 				<Event Id="4105446904" Name="E_Mus_Resume_Music" ObjectPath="\Events\MUSIC\Global\E_Mus_Resume_Music"/>
+				<Event Id="3703424250" Name="E_Mus_Set_Char_Singing_NO" ObjectPath="\Events\MUSIC\States\E_Mus_Set_Char_Singing_NO"/>
+				<Event Id="1317201836" Name="E_Mus_Set_Char_Singing_YES" ObjectPath="\Events\MUSIC\States\E_Mus_Set_Char_Singing_YES"/>
 				<Event Id="1149952562" Name="E_Mus_Set_Exploring_Jingle" ObjectPath="\Events\MUSIC\Jingles\E_Mus_Set_Exploring_Jingle"/>
 				<Event Id="3364487932" Name="E_Mus_Set_Fire_Lit_Jingle" ObjectPath="\Events\MUSIC\Jingles\E_Mus_Set_Fire_Lit_Jingle"/>
 				<Event Id="998551706" Name="E_Mus_Set_Going_To_Sea_Theme" ObjectPath="\Events\MUSIC\Themes\E_Mus_Set_Going_To_Sea_Theme"/>
@@ -29,7 +31,12 @@
 				<Event Id="3396100293" Name="E_Mus_Set_No_Theme" ObjectPath="\Events\MUSIC\Themes\E_Mus_Set_No_Theme"/>
 				<Event Id="820318689" Name="E_Mus_Set_Random_Jingle" ObjectPath="\Events\MUSIC\Jingles\E_Mus_Set_Random_Jingle"/>
 				<Event Id="1014433881" Name="E_Mus_Set_Sailing_Theme" ObjectPath="\Events\MUSIC\Themes\E_Mus_Set_Sailing_Theme"/>
+				<Event Id="2007564" Name="E_Mus_Set_Ship_Sinking_NO" ObjectPath="\Events\MUSIC\States\E_Mus_Set_Ship_Sinking_NO"/>
+				<Event Id="1444871718" Name="E_Mus_Set_Ship_Sinking_YES" ObjectPath="\Events\MUSIC\States\E_Mus_Set_Ship_Sinking_YES"/>
 				<Event Id="2901789171" Name="E_Mus_Set_Standby_Jingle" ObjectPath="\Events\MUSIC\Jingles\E_Mus_Set_Standby_Jingle"/>
+				<Event Id="2261095996" Name="E_Mus_Set_Storm_Appoaching" ObjectPath="\Events\MUSIC\States\E_Mus_Set_Storm_Appoaching"/>
+				<Event Id="574194178" Name="E_Mus_Set_Storm_Here" ObjectPath="\Events\MUSIC\States\E_Mus_Set_Storm_Here"/>
+				<Event Id="3014714910" Name="E_Mus_Set_Storm_None" ObjectPath="\Events\MUSIC\States\E_Mus_Set_Storm_None"/>
 				<Event Id="4100489055" Name="E_Mus_Set_Storm_Theme" ObjectPath="\Events\MUSIC\Themes\E_Mus_Set_Storm_Theme"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
