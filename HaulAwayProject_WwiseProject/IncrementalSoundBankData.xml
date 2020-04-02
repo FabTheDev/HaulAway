@@ -4,44 +4,44 @@
 		<Banks>
 			<Language ID="393239870">
 				<File Name="HaulAwaySoundBank" Hash="1365132702" Timestamp="1579525883"/>
-				<File Name="Init" Hash="550441400" Timestamp="1584820462"/>
+				<File Name="Init" Hash="2471326101" Timestamp="1585760272"/>
 				<File Name="Main_SoundBank" Hash="4725378" Timestamp="1581607616"/>
 				<File Name="Soundbank" Hash="2018174712" Timestamp="1582542872"/>
 				<File Name="Soundbank_Character" Hash="4090553745" Timestamp="1584816674"/>
 				<File Name="Soundbank_Environment_Extra" Hash="133741130" Timestamp="1584816674"/>
-				<File Name="Soundbank_Global" Hash="533531758" Timestamp="1584820460"/>
-				<File Name="Soundbank_Music" Hash="133382607" Timestamp="1584816680"/>
+				<File Name="Soundbank_Global" Hash="1084139772" Timestamp="1585760272"/>
+				<File Name="Soundbank_Music" Hash="943899547" Timestamp="1585760272"/>
 				<File Name="Soundbank_MusicJingles" Hash="433052302" Timestamp="1584818212"/>
-				<File Name="Soundbank_Music_Jingles" Hash="1013585044" Timestamp="1584820456"/>
-				<File Name="Soundbank_Music_Themes" Hash="1056933683" Timestamp="1584820462"/>
+				<File Name="Soundbank_Music_Jingles" Hash="2935941526" Timestamp="1585652826"/>
+				<File Name="Soundbank_Music_Themes" Hash="1306100214" Timestamp="1585654380"/>
 				<File Name="Soundbank_Ship" Hash="741234195" Timestamp="1584816681"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="641443020" Timestamp="1584820462"/>
+				<File Name="" Hash="39410759" Timestamp="1585760272"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{96EB6CBB-DE11-4BE5-B8BC-8D615F0BF02E}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Init" Hash="4152540034" Timestamp="1584818335"/>
+				<File Name="Init" Hash="2294237098" Timestamp="1585675960"/>
 				<File Name="Main_SoundBank" Hash="4725378" Timestamp="1581607611"/>
 				<File Name="Soundbank" Hash="2018174712" Timestamp="1582541708"/>
 				<File Name="Soundbank_Character" Hash="4090553745" Timestamp="1584816660"/>
 				<File Name="Soundbank_Environment_Extra" Hash="133741130" Timestamp="1584816660"/>
-				<File Name="Soundbank_Global" Hash="533531758" Timestamp="1584818331"/>
-				<File Name="Soundbank_Music" Hash="133382607" Timestamp="1584816669"/>
+				<File Name="Soundbank_Global" Hash="947874185" Timestamp="1585675370"/>
+				<File Name="Soundbank_Music" Hash="2730167868" Timestamp="1585675960"/>
 				<File Name="Soundbank_MusicJingles" Hash="433052302" Timestamp="1584818200"/>
-				<File Name="Soundbank_Music_Jingles" Hash="1013585044" Timestamp="1584818327"/>
-				<File Name="Soundbank_Music_Themes" Hash="1056933683" Timestamp="1584818335"/>
+				<File Name="Soundbank_Music_Jingles" Hash="2935941526" Timestamp="1585652814"/>
+				<File Name="Soundbank_Music_Themes" Hash="1306100214" Timestamp="1585654380"/>
 				<File Name="Soundbank_Ship" Hash="741234195" Timestamp="1584816672"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="1196224957" Timestamp="1584818335"/>
+				<File Name="" Hash="2439855578" Timestamp="1585675960"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
