@@ -33,6 +33,55 @@
 						</Folder>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Music" ID="{3B07CDAB-DE57-4EC1-8B18-9BEB5E1C671F}" ShortID="506226600">
+					<ChildrenList>
+						<StateGroup Name="Mus_Selector_STATE" ID="{11FA8EE3-87A2-42A9-8E49-31C88C8EA2B4}">
+							<ChildrenList>
+								<State Name="None" ID="{E47E565D-CFAA-4A90-B728-CEF6C832CF4A}"/>
+								<State Name="Going_To_Sea_Theme" ID="{5B0E47F5-AEF0-4D3A-A0EC-B3F46D7B2C74}"/>
+								<State Name="Icebergs_Theme" ID="{0A9398CF-CA04-41C5-A4A5-0C4420E8B380}"/>
+								<State Name="Jingle_Exploring" ID="{B8D7EBFC-2FA5-4EEB-B70A-9B262FBA7D1E}"/>
+								<State Name="Jingle_FireLit" ID="{9C96EBAE-96DF-43CE-99AD-D494EA16A9A7}"/>
+								<State Name="Jingle_NewIsland" ID="{D645922F-0EF2-48D2-99BE-B081C2ED6BC5}"/>
+								<State Name="Jingle_Random" ID="{AF978F2A-A5A5-4848-A7C1-2EEF8E59F1CA}"/>
+								<State Name="Jingle_Standby" ID="{7F245BDB-E9CC-4632-9633-045A3640C4FB}"/>
+								<State Name="Main_Theme" ID="{4D6A6F2A-117D-45C3-AEDC-915AC7F7B281}"/>
+								<State Name="No_Theme" ID="{80DEA391-FC31-4B8E-8827-283AB4485692}"/>
+								<State Name="Sailing_Theme" ID="{E89ACF6F-325E-4A89-ADEF-44ADD6B60929}"/>
+								<State Name="Storm_Theme" ID="{F9140ED6-73FA-43E8-A1C7-ED18288192C9}"/>
+							</ChildrenList>
+						</StateGroup>
+						<StateGroup Name="Mus_Storm_Intensity_STATE" ID="{4649E4E0-414E-4656-BE8B-4B21D4CDD009}">
+							<ChildrenList>
+								<State Name="None" ID="{2CFE3A44-5351-4DE6-A79B-39203CDC3FA3}"/>
+								<State Name="Approaching_Storm" ID="{CA76B6BE-DBE1-42CD-8025-5958E2EF091C}"/>
+								<State Name="Here_Storm" ID="{A0300296-6DED-4FB9-8C27-F9CECC588BFE}"/>
+								<State Name="No_Storm" ID="{6CB7680E-6578-4568-8BBF-6F3289ADBFBA}"/>
+							</ChildrenList>
+						</StateGroup>
+						<StateGroup Name="Mus_ShipIsSinking_STATE" ID="{7233AD8A-5881-43C9-8E6F-5361C7B3FA02}">
+							<ChildrenList>
+								<State Name="None" ID="{2A3C993C-BC43-40A0-A46B-83C2DC8B3A95}"/>
+								<State Name="Yes_Ship_Sinking" ID="{139A3CEB-24A2-42BB-84D9-9D9AB25668E6}"/>
+								<State Name="No_Ship_Sinking" ID="{61F19502-08FC-437E-AFCF-D89896B4FCA5}"/>
+							</ChildrenList>
+						</StateGroup>
+						<StateGroup Name="Mus_CharIsSinging_STATE" ID="{1FD7C1DB-8989-494F-811B-F4E93B5E80AB}">
+							<ChildrenList>
+								<State Name="None" ID="{6507D9A9-729F-4C4B-AA8E-16815F487179}"/>
+								<State Name="Yes_Char_Singing" ID="{1A488AB7-9718-4B2D-AC57-3B7BE6B57266}"/>
+								<State Name="No_Char_Singing" ID="{CC851A52-942B-4F5D-984D-2F321AFDD69E}"/>
+							</ChildrenList>
+						</StateGroup>
+						<StateGroup Name="Mus_IsInHold_STATE" ID="{59C4C0BF-47BE-4CE3-A14F-7E8207DC3CD6}">
+							<ChildrenList>
+								<State Name="None" ID="{141295CE-4617-432C-8DBE-52A7396D515C}"/>
+								<State Name="In_Hold" ID="{E19B7EE3-E36A-4D88-8054-3C0C0247FDBC}"/>
+								<State Name="Out_Hold" ID="{4799B397-87EA-4934-ACC2-73FA0C65A854}"/>
+							</ChildrenList>
+						</StateGroup>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</States>
