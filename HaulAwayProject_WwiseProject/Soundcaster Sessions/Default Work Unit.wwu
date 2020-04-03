@@ -40,10 +40,6 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
-							<GameParameterRef Name="Storm_Intensity_GP" ID="{4EEBF857-B289-41C2-A6C6-C4AC116A1CB0}"/>
-							<Value>0</Value>
-						</RTPCValue>
-						<RTPCValue>
 							<GameParameterRef Name="WindTaken_GP" ID="{D5E2F34F-A357-43B5-9C38-492B8A218557}"/>
 							<Value>1</Value>
 						</RTPCValue>
@@ -142,7 +138,7 @@
 							<Position X="4" Y="3"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="E_Mus_Set_Random_Jingle" ID="{AA57BBD5-3087-4A1F-80F7-C7C00B952502}" WorkUnitID="{0ED7EBA1-F621-4832-9054-98078A25E231}"/>
+							<ObjectRef Name="E_Mus_Set_Standby_Jingle" ID="{1A1405B3-7C1F-4AD2-971F-2D1ABEAF6120}" WorkUnitID="{0ED7EBA1-F621-4832-9054-98078A25E231}"/>
 							<Position X="4" Y="4"/>
 						</Module>
 						<Module>
@@ -160,10 +156,6 @@
 						<Module>
 							<ObjectRef Name="E_Mus_Set_Storm_Theme" ID="{9FF835A8-1F1D-4386-9547-56BE8A7B5086}" WorkUnitID="{0ED7EBA1-F621-4832-9054-98078A25E231}"/>
 							<Position X="5" Y="3"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="E_Mus_Set_Standby_Jingle" ID="{1A1405B3-7C1F-4AD2-971F-2D1ABEAF6120}" WorkUnitID="{0ED7EBA1-F621-4832-9054-98078A25E231}"/>
-							<Position X="5" Y="4"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="E_Mus_Set_Storm_Here" ID="{153EFD7E-E533-4216-A5F5-11F01ACE37F5}" WorkUnitID="{0ED7EBA1-F621-4832-9054-98078A25E231}"/>
@@ -190,10 +182,6 @@
 						<RTPCValue>
 							<GameParameterRef Name="Dialog_Volume_GP" ID="{193F0126-347C-409F-B90C-2601DAF8ECCF}"/>
 							<Value>80</Value>
-						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="Storm_Intensity_GP" ID="{4EEBF857-B289-41C2-A6C6-C4AC116A1CB0}"/>
-							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="WindTaken_GP" ID="{D5E2F34F-A357-43B5-9C38-492B8A218557}"/>
@@ -229,7 +217,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Music_Volume_GP" ID="{B6A43168-1DA1-4E4B-A564-6DDAF525B065}"/>
-							<Value>80</Value>
+							<Value>79.9019607843137</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Water_Depth_Right" ID="{E620FFDB-2280-4F9C-A0A5-E36477031F5F}"/>
@@ -237,7 +225,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Main_Theme" ID="{4D6A6F2A-117D-45C3-AEDC-915AC7F7B281}"/>
+						<CurrentStateRef Name="Going_To_Sea_Theme" ID="{5B0E47F5-AEF0-4D3A-A0EC-B3F46D7B2C74}"/>
 						<CurrentStateRef Name="No_Ship_Sinking" ID="{61F19502-08FC-437E-AFCF-D89896B4FCA5}"/>
 						<CurrentStateRef Name="None" ID="{B83E4870-EE12-480B-A54C-32436863F222}"/>
 						<CurrentStateRef Name="No_Storm" ID="{6CB7680E-6578-4568-8BBF-6F3289ADBFBA}"/>
@@ -370,10 +358,6 @@
 						<RTPCValue>
 							<GameParameterRef Name="Dialog_Volume_GP" ID="{193F0126-347C-409F-B90C-2601DAF8ECCF}"/>
 							<Value>80</Value>
-						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="Storm_Intensity_GP" ID="{4EEBF857-B289-41C2-A6C6-C4AC116A1CB0}"/>
-							<Value>46</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="WindTaken_GP" ID="{D5E2F34F-A357-43B5-9C38-492B8A218557}"/>

@@ -66,7 +66,6 @@
 						<ObjectRef Name="E_Mus_Set_Fire_Lit_Jingle" ID="{99F51088-29FB-44E3-B64D-D4614A1F48F8}" WorkUnitID="{0ED7EBA1-F621-4832-9054-98078A25E231}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mus_Set_Main_Theme" ID="{3D68DE05-DECB-474B-B343-33CB0A544A89}" WorkUnitID="{0ED7EBA1-F621-4832-9054-98078A25E231}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mus_Pause_Music" ID="{33C54356-C04E-47E0-AA2D-E3EA35080350}" WorkUnitID="{0ED7EBA1-F621-4832-9054-98078A25E231}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="E_Mus_Set_Random_Jingle" ID="{AA57BBD5-3087-4A1F-80F7-C7C00B952502}" WorkUnitID="{0ED7EBA1-F621-4832-9054-98078A25E231}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mus_Resume_Music" ID="{B75C3503-7176-4A76-AB03-A97B84B8DFDA}" WorkUnitID="{0ED7EBA1-F621-4832-9054-98078A25E231}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mus_Set_Standby_Jingle" ID="{1A1405B3-7C1F-4AD2-971F-2D1ABEAF6120}" WorkUnitID="{0ED7EBA1-F621-4832-9054-98078A25E231}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mus_Initiate_Music" ID="{3B75DBEE-0C3B-4CCC-967F-BE9786285E6F}" WorkUnitID="{0ED7EBA1-F621-4832-9054-98078A25E231}" Filter="7" Origin="Manual"/>

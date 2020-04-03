@@ -43,7 +43,6 @@
 								<State Name="Jingle_Exploring" ID="{B8D7EBFC-2FA5-4EEB-B70A-9B262FBA7D1E}"/>
 								<State Name="Jingle_FireLit" ID="{9C96EBAE-96DF-43CE-99AD-D494EA16A9A7}"/>
 								<State Name="Jingle_NewIsland" ID="{D645922F-0EF2-48D2-99BE-B081C2ED6BC5}"/>
-								<State Name="Jingle_Random" ID="{AF978F2A-A5A5-4848-A7C1-2EEF8E59F1CA}"/>
 								<State Name="Jingle_Standby" ID="{7F245BDB-E9CC-4632-9633-045A3640C4FB}"/>
 								<State Name="Main_Theme" ID="{4D6A6F2A-117D-45C3-AEDC-915AC7F7B281}"/>
 								<State Name="No_Theme" ID="{80DEA391-FC31-4B8E-8827-283AB4485692}"/>
