@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="132">
 	<RootPaths>
-		<ProjectRoot>D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>D:\GIT REPOSITORIES\HaulAway\Content\WwiseAudio\Windows\</SoundBanksRoot>
+		<ProjectRoot>D:\FabDocuments\Games\HaulAway\HaulAwayProject\HaulAwayProject_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\FabDocuments\Games\HaulAway\HaulAwayProject\HaulAwayProject_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\FabDocuments\Games\HaulAway\HaulAwayProject\Content\WwiseAudio\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\FabDocuments\Games\HaulAway\HaulAwayProject\HaulAwayProject_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
