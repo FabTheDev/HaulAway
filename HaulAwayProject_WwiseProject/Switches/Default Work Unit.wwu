@@ -114,36 +114,6 @@
 								<Switch Name="Approaching" ID="{14491DD2-3190-486E-8C3D-40FEE6BA2370}"/>
 								<Switch Name="Here" ID="{FF091E42-011C-4CE6-B2E9-001D64A5C636}"/>
 							</ChildrenList>
-							<SwitchOnRTPC>
-								<GameParameterRef Name="Storm_Intensity_GP" ID="{4EEBF857-B289-41C2-A6C6-C4AC116A1CB0}"/>
-								<Curve Name="" ID="{3BC2BACD-EECA-404E-A2FC-A348BEDBDE04}">
-									<PropertyList>
-										<Property Name="Flags" Type="int32" Value="65537"/>
-									</PropertyList>
-									<PointList>
-										<Point>
-											<XPos>0</XPos>
-											<YPos>1</YPos>
-											<Flags>5</Flags>
-										</Point>
-										<Point>
-											<XPos>0.84459</XPos>
-											<YPos>2</YPos>
-											<Flags>0</Flags>
-										</Point>
-										<Point>
-											<XPos>50</XPos>
-											<YPos>3</YPos>
-											<Flags>0</Flags>
-										</Point>
-										<Point>
-											<XPos>100</XPos>
-											<YPos>0</YPos>
-											<Flags>37</Flags>
-										</Point>
-									</PointList>
-								</Curve>
-							</SwitchOnRTPC>
 						</SwitchGroup>
 						<SwitchGroup Name="Mus_IsInHold" ID="{272492A0-AF2B-4C68-8A95-94001BF6C919}">
 							<ChildrenList>
