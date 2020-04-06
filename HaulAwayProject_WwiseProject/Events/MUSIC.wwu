@@ -94,7 +94,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="None" ID="{E47E565D-CFAA-4A90-B728-CEF6C832CF4A}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
+											<ObjectRef Name="No_Theme" ID="{80DEA391-FC31-4B8E-8827-283AB4485692}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -165,7 +165,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="None" ID="{E47E565D-CFAA-4A90-B728-CEF6C832CF4A}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
+											<ObjectRef Name="No_Theme" ID="{80DEA391-FC31-4B8E-8827-283AB4485692}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -254,20 +254,6 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Jingle_NewIsland" ID="{D645922F-0EF2-48D2-99BE-B081C2ED6BC5}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="E_Mus_Set_Random_Jingle" ID="{AA57BBD5-3087-4A1F-80F7-C7C00B952502}">
-							<ChildrenList>
-								<Action Name="" ID="{D3701027-42EE-4415-BFE9-9DEB00732BC2}" ShortID="1038307466">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="22"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Jingle_Random" ID="{AF978F2A-A5A5-4848-A7C1-2EEF8E59F1CA}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

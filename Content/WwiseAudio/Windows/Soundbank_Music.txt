@@ -2,7 +2,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	2007564	E_Mus_Set_Ship_Sinking_NO			\MUSIC\States\E_Mus_Set_Ship_Sinking_NO	
 	208377844	E_Mus_Initiate_Music			\MUSIC\Global\E_Mus_Initiate_Music	
 	574194178	E_Mus_Set_Storm_Here			\MUSIC\States\E_Mus_Set_Storm_Here	
-	820318689	E_Mus_Set_Random_Jingle			\MUSIC\Jingles\E_Mus_Set_Random_Jingle	
 	998551706	E_Mus_Set_Going_To_Sea_Theme			\MUSIC\Themes\E_Mus_Set_Going_To_Sea_Theme	
 	1014433881	E_Mus_Set_Sailing_Theme			\MUSIC\Themes\E_Mus_Set_Sailing_Theme	
 	1149952562	E_Mus_Set_Exploring_Jingle			\MUSIC\Jingles\E_Mus_Set_Exploring_Jingle	
@@ -22,10 +21,8 @@ Event	ID	Name			Wwise Object Path	Notes
 	4100489055	E_Mus_Set_Storm_Theme			\MUSIC\Themes\E_Mus_Set_Storm_Theme	
 	4105446904	E_Mus_Resume_Music			\MUSIC\Global\E_Mus_Resume_Music	
 
-Game Parameter	ID	Name			Wwise Object Path	Notes
-	591246720	Storm_Intensity_GP			\Default Work Unit\Weather\Storm_Intensity_GP	
-
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+
 	1505233	theme_main_3	D:\FabDocuments\Games\HaulAway\HaulAwayProject\HaulAwayProject_WwiseProject\.cache\Windows\SFX\theme_main_3_7C1F5570.wem		\Interactive Music Hierarchy\Music\Main_Music_SWITCH\Main_Theme_PLAYLIST\theme_main_3\theme_main_3		3636875
 	8945167	jingle_standby	D:\FabDocuments\Games\HaulAway\HaulAwayProject\HaulAwayProject_WwiseProject\.cache\Windows\SFX\jingle_standby_7C1F5570.wem		\Interactive Music Hierarchy\Music\Main_Music_SWITCH\Jingle_Standby_SEG\jingle_standby		68899
 	19966419	theme_going_to_sea_3	D:\FabDocuments\Games\HaulAway\HaulAwayProject\HaulAwayProject_WwiseProject\.cache\Windows\SFX\theme_going_to_sea_3_7C1F5570.wem		\Interactive Music Hierarchy\Music\Main_Music_SWITCH\Theme_Going_To_Sea_PLAYLIST\theme_going_to_sea_3\theme_going_to_sea_3		282149

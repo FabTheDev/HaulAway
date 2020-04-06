@@ -29,7 +29,6 @@
 				<Event Id="4000917327" Name="E_Mus_Set_Main_Theme" ObjectPath="\Events\MUSIC\Themes\E_Mus_Set_Main_Theme"/>
 				<Event Id="1872721172" Name="E_Mus_Set_New_Island_Jingle" ObjectPath="\Events\MUSIC\Jingles\E_Mus_Set_New_Island_Jingle"/>
 				<Event Id="3396100293" Name="E_Mus_Set_No_Theme" ObjectPath="\Events\MUSIC\Themes\E_Mus_Set_No_Theme"/>
-				<Event Id="820318689" Name="E_Mus_Set_Random_Jingle" ObjectPath="\Events\MUSIC\Jingles\E_Mus_Set_Random_Jingle"/>
 				<Event Id="1014433881" Name="E_Mus_Set_Sailing_Theme" ObjectPath="\Events\MUSIC\Themes\E_Mus_Set_Sailing_Theme"/>
 				<Event Id="2007564" Name="E_Mus_Set_Ship_Sinking_NO" ObjectPath="\Events\MUSIC\States\E_Mus_Set_Ship_Sinking_NO"/>
 				<Event Id="1444871718" Name="E_Mus_Set_Ship_Sinking_YES" ObjectPath="\Events\MUSIC\States\E_Mus_Set_Ship_Sinking_YES"/>
