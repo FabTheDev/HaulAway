@@ -64,11 +64,11 @@ State Group	ID	Name			Wwise Object Path	Notes
 	3166210129	Char_Walk_Run			\Default Work Unit\Character\Footsteps\Char_Walk_Run	
 
 State	ID	Name	State Group			Notes
-	0	None	Ship_IsThereAPulley			
 	164038870	Pulley	Ship_IsThereAPulley			
+	748895195	None	Ship_IsThereAPulley			
 	794970764	No_Pulley	Ship_IsThereAPulley			
-	0	None	Char_Walk_Run			
 	340271938	Walking	Char_Walk_Run			
+	748895195	None	Char_Walk_Run			
 	3863236874	Running	Char_Walk_Run			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes

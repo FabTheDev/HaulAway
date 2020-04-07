@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}" SchemaVersion="89">
+<WwiseDocument Type="WorkUnit" ID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}" SchemaVersion="97">
 	<AudioObjects>
 		<WorkUnit Name="SFX" ID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}" PersistMode="Standalone">
 			<ChildrenList>
@@ -58,9 +58,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Character_Pickup_MetalPiece" ID="{B05C12A7-0BEE-4CA0-BAB2-28E9959903E2}" ShortID="625115728">
+												<AudioFileSource Name="SFX_HA_Character_Pickup_MetalPiece" ID="{B05C12A7-0BEE-4CA0-BAB2-28E9959903E2}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Character_Pickup_MetalPiece.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="625115728"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -77,9 +80,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Character_Pickup_Nails" ID="{2BE8DAC3-2B98-479F-9FFC-8E238FEA1A85}" ShortID="356089791">
+												<AudioFileSource Name="SFX_HA_Character_Pickup_Nails" ID="{2BE8DAC3-2B98-479F-9FFC-8E238FEA1A85}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Character_Pickup_Nails.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="356089791"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -111,9 +117,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Character_Pickup_Rope" ID="{18425EB1-4068-4A57-B9B3-BD3DCC3DED9B}" ShortID="238766777">
+												<AudioFileSource Name="SFX_HA_Character_Pickup_Rope" ID="{18425EB1-4068-4A57-B9B3-BD3DCC3DED9B}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Character_Pickup_Rope.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="238766777"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -130,9 +139,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Character_Pickup_SailPiece" ID="{C9BE4980-8082-43CB-85C4-B63FF3B0DBC9}" ShortID="39666602">
+												<AudioFileSource Name="SFX_HA_Character_Pickup_SailPiece" ID="{C9BE4980-8082-43CB-85C4-B63FF3B0DBC9}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Character_Pickup_SailPiece.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="39666602"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -164,9 +176,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Character_Pickup_Woodplanks" ID="{549ED3B3-4C06-4684-8668-F60A0BC62216}" ShortID="181231111">
+												<AudioFileSource Name="SFX_HA_Character_Pickup_Woodplanks" ID="{549ED3B3-4C06-4684-8668-F60A0BC62216}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Character_Pickup_Woodplanks.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="181231111"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -183,9 +198,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Character_Pickup_Compass" ID="{B30610DF-1D41-4D9C-B887-BBFBEA248A66}" ShortID="204103879">
+												<AudioFileSource Name="SFX_HA_Character_Pickup_Compass" ID="{B30610DF-1D41-4D9C-B887-BBFBEA248A66}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Character_Pickup_Compass.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="204103879"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -202,9 +220,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Character_Pickup_MapFragment" ID="{ABE6868B-B6C2-4F1A-AA15-1F1E948A1BA9}" ShortID="729330925">
+												<AudioFileSource Name="SFX_HA_Character_Pickup_MapFragment" ID="{ABE6868B-B6C2-4F1A-AA15-1F1E948A1BA9}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Character_Pickup_MapFragment.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="729330925"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -221,9 +242,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Character_Pickup_PaperSheet" ID="{BB904EAE-6A45-4484-971A-A0944388C3B1}" ShortID="270710571">
+												<AudioFileSource Name="SFX_HA_Character_Pickup_PaperSheet" ID="{BB904EAE-6A45-4484-971A-A0944388C3B1}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Character_Pickup_PaperSheet.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="270710571"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -249,9 +273,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Character_Pickup_Skyglass" ID="{D7199CBE-64A1-43BC-AE41-4E8956FCD93B}" ShortID="770172273">
+												<AudioFileSource Name="SFX_HA_Character_Pickup_Skyglass" ID="{D7199CBE-64A1-43BC-AE41-4E8956FCD93B}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Character_Pickup_Skyglass.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="770172273"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -370,9 +397,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Character_Object_Pickup_00" ID="{CEA8D005-E349-4B3E-A30D-E884245B5130}" ShortID="789114010">
+												<AudioFileSource Name="SFX_HA_Character_Object_Pickup_00" ID="{CEA8D005-E349-4B3E-A30D-E884245B5130}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Character_Object_Pickup_00.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="789114010"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -389,9 +419,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Character_Object_Pickup_01" ID="{7A2B318C-AA79-4A7C-AC7C-8C978528CF5A}" ShortID="153977148">
+												<AudioFileSource Name="SFX_HA_Character_Object_Pickup_01" ID="{7A2B318C-AA79-4A7C-AC7C-8C978528CF5A}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Character_Object_Pickup_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="153977148"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -408,9 +441,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Character_Object_Pickup_02" ID="{F3E5A4AE-B13E-42BE-A1C7-A54BF8FB5202}" ShortID="543044772">
+												<AudioFileSource Name="SFX_HA_Character_Object_Pickup_02" ID="{F3E5A4AE-B13E-42BE-A1C7-A54BF8FB5202}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Character_Object_Pickup_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="543044772"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -471,7 +507,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Character_FX_Pickup" ID="{E0151771-03FB-412E-81CD-8ED50262F5CD}" ShortID="78585654">
+												<AudioFileSource Name="SFX_HA_Character_FX_Pickup" ID="{E0151771-03FB-412E-81CD-8ED50262F5CD}">
 													<PropertyList>
 														<Property Name="VolumeOffset" Type="Real64">
 															<ValueList>
@@ -481,6 +517,9 @@
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Character_FX_Pickup.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="78585654"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -644,9 +683,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Character_DiveInWater_00" ID="{B2A1F208-B558-4362-9705-0FA9C0DBCB94}" ShortID="819921945">
+												<AudioFileSource Name="SFX_HA_Character_DiveInWater_00" ID="{B2A1F208-B558-4362-9705-0FA9C0DBCB94}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Character_DiveInWater_00.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="819921945"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -683,9 +725,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Character_DiveInWater_01" ID="{54B3CE73-591C-48BF-938F-FF5BEC82F4FC}" ShortID="477722318">
+												<AudioFileSource Name="SFX_HA_Character_DiveInWater_01" ID="{54B3CE73-591C-48BF-938F-FF5BEC82F4FC}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Character_DiveInWater_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="477722318"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -750,14 +795,17 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Character_Clothes_Jump_00" ID="{230B6F77-FE54-477D-8B04-EB7633AF85AF}" ShortID="780259646">
+												<AudioFileSource Name="SFX_HA_Character_Clothes_Jump_00" ID="{230B6F77-FE54-477D-8B04-EB7633AF85AF}">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="8.25108157298007E-02"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="1.41954091578151E-02"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0825108157298007"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0141954091578151"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.197848515137049"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Character_Clothes_Jump_00.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="780259646"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -781,14 +829,17 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Character_Clothes_Jump_01" ID="{27CC3CAE-DD95-4B6E-AC10-0C4D392BCF80}" ShortID="713621780">
+												<AudioFileSource Name="SFX_HA_Character_Clothes_Jump_01" ID="{27CC3CAE-DD95-4B6E-AC10-0C4D392BCF80}">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="7.40497076023392E-02"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0740497076023392"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.017983500417711"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.199934210526316"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Character_Clothes_Jump_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="713621780"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -812,14 +863,17 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Character_Clothes_Jump_02" ID="{7A02AAE1-3CD6-4F87-8CCD-99811B7C2262}" ShortID="934318076">
+												<AudioFileSource Name="SFX_HA_Character_Clothes_Jump_02" ID="{7A02AAE1-3CD6-4F87-8CCD-99811B7C2262}">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="5.43561284162788E-02"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0543561284162788"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.046202709153837"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.202023610613836"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Character_Clothes_Jump_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="934318076"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -843,14 +897,17 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Character_Clothes_Jump_03" ID="{891166CD-DD35-4C0F-8A37-BE18561C5555}" ShortID="983971749">
+												<AudioFileSource Name="SFX_HA_Character_Clothes_Jump_03" ID="{891166CD-DD35-4C0F-8A37-BE18561C5555}">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="8.01240452321279E-02"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="7.79874040259378E-02"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0801240452321279"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0779874040259378"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.202980914588057"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Character_Clothes_Jump_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="983971749"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -874,14 +931,17 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Character_Clothes_Jump_04" ID="{6A87B607-EECA-400B-A9F5-CC41447D307E}" ShortID="675912006">
+												<AudioFileSource Name="SFX_HA_Character_Clothes_Jump_04" ID="{6A87B607-EECA-400B-A9F5-CC41447D307E}">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="9.56359649122808E-02"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="7.41447368421053E-02"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0956359649122808"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0741447368421053"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.268640350877193"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Character_Clothes_Jump_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="675912006"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -934,9 +994,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Character_Clothes_Land_00" ID="{FA47A73A-281D-42E7-BA89-83DDEC164521}" ShortID="322302731">
+												<AudioFileSource Name="SFX_HA_Character_Clothes_Land_00" ID="{FA47A73A-281D-42E7-BA89-83DDEC164521}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Character_Clothes_Land_00.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="322302731"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -953,9 +1016,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Character_Clothes_Land_01" ID="{9F5A4751-94CF-458A-A167-646A8F2E143B}" ShortID="178235766">
+												<AudioFileSource Name="SFX_HA_Character_Clothes_Land_01" ID="{9F5A4751-94CF-458A-A167-646A8F2E143B}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Character_Clothes_Land_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="178235766"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -972,9 +1038,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Character_Clothes_Land_02" ID="{55F02031-1E36-42DB-B132-454699B12D6B}" ShortID="189842670">
+												<AudioFileSource Name="SFX_HA_Character_Clothes_Land_02" ID="{55F02031-1E36-42DB-B132-454699B12D6B}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Character_Clothes_Land_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="189842670"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -991,9 +1060,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Character_Clothes_Land_03" ID="{75B4F590-5EDA-4640-8DE0-E4391DDC8196}" ShortID="1031444540">
+												<AudioFileSource Name="SFX_HA_Character_Clothes_Land_03" ID="{75B4F590-5EDA-4640-8DE0-E4391DDC8196}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Character_Clothes_Land_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1031444540"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -1010,9 +1082,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Character_Clothes_Land_04" ID="{CE2CA695-BC8D-4FAE-95C6-31ABCF7AAE42}" ShortID="247146998">
+												<AudioFileSource Name="SFX_HA_Character_Clothes_Land_04" ID="{CE2CA695-BC8D-4FAE-95C6-31ABCF7AAE42}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Character_Clothes_Land_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="247146998"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -1091,9 +1166,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_HA_Character_HandOnLadder_00" ID="{7DC458D0-21DD-4C41-89D1-451D914557B2}" ShortID="985858223">
+														<AudioFileSource Name="SFX_HA_Character_HandOnLadder_00" ID="{7DC458D0-21DD-4C41-89D1-451D914557B2}">
 															<Language>SFX</Language>
 															<AudioFile>SFX_HA_Character_HandOnLadder_00.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="985858223"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -1110,9 +1188,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_HA_Character_HandOnLadder_01" ID="{9DC550E0-256E-436F-BFB8-A3155DFEBB0E}" ShortID="428398015">
+														<AudioFileSource Name="SFX_HA_Character_HandOnLadder_01" ID="{9DC550E0-256E-436F-BFB8-A3155DFEBB0E}">
 															<Language>SFX</Language>
 															<AudioFile>SFX_HA_Character_HandOnLadder_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="428398015"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -1154,9 +1235,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_HA_Character_FootOnLadder_00" ID="{BAB22237-C8B1-4DC5-B4E4-5A621DED9DA2}" ShortID="674812637">
+														<AudioFileSource Name="SFX_HA_Character_FootOnLadder_00" ID="{BAB22237-C8B1-4DC5-B4E4-5A621DED9DA2}">
 															<Language>SFX</Language>
 															<AudioFile>SFX_HA_Character_FootOnLadder_00.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="674812637"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -1173,9 +1257,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_HA_Character_FootOnLadder_01" ID="{77D92488-FFCF-4CC2-AAFD-5F6CBC7A8A8E}" ShortID="392901724">
+														<AudioFileSource Name="SFX_HA_Character_FootOnLadder_01" ID="{77D92488-FFCF-4CC2-AAFD-5F6CBC7A8A8E}">
 															<Language>SFX</Language>
 															<AudioFile>SFX_HA_Character_FootOnLadder_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="392901724"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -1192,9 +1279,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_HA_Character_FootOnLadder_02" ID="{F5C58953-D694-4E51-97D8-8AFFBFC79B1E}" ShortID="819813331">
+														<AudioFileSource Name="SFX_HA_Character_FootOnLadder_02" ID="{F5C58953-D694-4E51-97D8-8AFFBFC79B1E}">
 															<Language>SFX</Language>
 															<AudioFile>SFX_HA_Character_FootOnLadder_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="819813331"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -1211,9 +1301,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_HA_Character_FootOnLadder_03" ID="{C5C238F6-194C-4AAF-A15B-056C53A5ABAA}" ShortID="1013220003">
+														<AudioFileSource Name="SFX_HA_Character_FootOnLadder_03" ID="{C5C238F6-194C-4AAF-A15B-056C53A5ABAA}">
 															<Language>SFX</Language>
 															<AudioFile>SFX_HA_Character_FootOnLadder_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1013220003"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -1230,9 +1323,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_HA_Character_FootOnLadder_04" ID="{D82C37BD-6744-402D-9910-92A9E3734DA5}" ShortID="284003974">
+														<AudioFileSource Name="SFX_HA_Character_FootOnLadder_04" ID="{D82C37BD-6744-402D-9910-92A9E3734DA5}">
 															<Language>SFX</Language>
 															<AudioFile>SFX_HA_Character_FootOnLadder_04.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="284003974"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -1298,9 +1394,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Character_Clothes_Swiming_00" ID="{EFADE98B-D72D-4A37-9577-AC5733878F22}" ShortID="36988995">
+												<AudioFileSource Name="SFX_HA_Character_Clothes_Swiming_00" ID="{EFADE98B-D72D-4A37-9577-AC5733878F22}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Character_Clothes_Swiming_00.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="36988995"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -1317,9 +1416,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Character_Clothes_Swiming_01" ID="{D390DD7D-55C7-460D-935C-237D598A807A}" ShortID="286968490">
+												<AudioFileSource Name="SFX_HA_Character_Clothes_Swiming_01" ID="{D390DD7D-55C7-460D-935C-237D598A807A}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Character_Clothes_Swiming_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="286968490"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -1336,9 +1438,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Character_Clothes_Swiming_02" ID="{F5A0B42D-E48E-416F-B945-CD3DDBD755E4}" ShortID="971146116">
+												<AudioFileSource Name="SFX_HA_Character_Clothes_Swiming_02" ID="{F5A0B42D-E48E-416F-B945-CD3DDBD755E4}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Character_Clothes_Swiming_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="971146116"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -1355,9 +1460,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Character_Clothes_Swiming_03" ID="{48F497D0-B2D3-4996-B6F4-4A952353E6EB}" ShortID="1061810795">
+												<AudioFileSource Name="SFX_HA_Character_Clothes_Swiming_03" ID="{48F497D0-B2D3-4996-B6F4-4A952353E6EB}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Character_Clothes_Swiming_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1061810795"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -1374,9 +1482,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Character_Clothes_Swiming_04" ID="{F9A755B4-1F35-480C-A919-AA1DC7300CE9}" ShortID="914645447">
+												<AudioFileSource Name="SFX_HA_Character_Clothes_Swiming_04" ID="{F9A755B4-1F35-480C-A919-AA1DC7300CE9}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Character_Clothes_Swiming_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="914645447"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -1470,9 +1581,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_Grass_Walk_00" ID="{EAB4780E-C59C-4954-B669-512BB58FEEE1}" ShortID="951306558">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_Grass_Walk_00" ID="{EAB4780E-C59C-4954-B669-512BB58FEEE1}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_Grass_Walk_00.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="951306558"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -1489,9 +1603,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_Grass_Walk_01" ID="{110AD93A-CF83-4F55-BE6C-898CEA7F9DDB}" ShortID="1072088521">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_Grass_Walk_01" ID="{110AD93A-CF83-4F55-BE6C-898CEA7F9DDB}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_Grass_Walk_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="1072088521"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -1508,9 +1625,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_Grass_Walk_02" ID="{4107C4A5-F2B9-4C77-B0AA-0446EB1A6F27}" ShortID="253942775">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_Grass_Walk_02" ID="{4107C4A5-F2B9-4C77-B0AA-0446EB1A6F27}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_Grass_Walk_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="253942775"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -1527,9 +1647,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_Grass_Walk_03" ID="{5D4C53FF-C0C0-4095-A2BB-D0F4E9AC5744}" ShortID="583599996">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_Grass_Walk_03" ID="{5D4C53FF-C0C0-4095-A2BB-D0F4E9AC5744}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_Grass_Walk_03.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="583599996"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -1546,9 +1669,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_Grass_Walk_04" ID="{5FB42A39-6F16-4D24-ADF4-21F6E6882AB7}" ShortID="812859158">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_Grass_Walk_04" ID="{5FB42A39-6F16-4D24-ADF4-21F6E6882AB7}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_Grass_Walk_04.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="812859158"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -1565,9 +1691,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_Grass_Walk_05" ID="{FF68E190-00FD-48B7-9AA1-2C3326315FE5}" ShortID="1039157740">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_Grass_Walk_05" ID="{FF68E190-00FD-48B7-9AA1-2C3326315FE5}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_Grass_Walk_05.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="1039157740"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -1584,9 +1713,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_Grass_Walk_06" ID="{3D039CA6-67C7-411E-AFE2-F2807F89D081}" ShortID="733835572">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_Grass_Walk_06" ID="{3D039CA6-67C7-411E-AFE2-F2807F89D081}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_Grass_Walk_06.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="733835572"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -1603,9 +1735,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_Grass_Walk_07" ID="{BBC28B39-E2B1-412B-92DA-E085F2F54165}" ShortID="155011610">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_Grass_Walk_07" ID="{BBC28B39-E2B1-412B-92DA-E085F2F54165}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_Grass_Walk_07.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="155011610"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -1647,9 +1782,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_DrySand_Walk_00" ID="{7096F73C-B78C-4A34-AADB-CCC27EF6D806}" ShortID="571565877">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_DrySand_Walk_00" ID="{7096F73C-B78C-4A34-AADB-CCC27EF6D806}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_DrySand_Walk_00.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="571565877"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -1666,9 +1804,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_DrySand_Walk_01" ID="{F5116A08-04EE-47B3-9E91-C98E58DDB10E}" ShortID="94244851">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_DrySand_Walk_01" ID="{F5116A08-04EE-47B3-9E91-C98E58DDB10E}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_DrySand_Walk_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="94244851"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -1685,9 +1826,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_DrySand_Walk_02" ID="{423367BF-6BE7-43A2-8948-15A4214B08B5}" ShortID="294357935">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_DrySand_Walk_02" ID="{423367BF-6BE7-43A2-8948-15A4214B08B5}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_DrySand_Walk_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="294357935"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -1704,9 +1848,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_DrySand_Walk_03" ID="{A46B0DDE-1DAA-41A8-9AC9-C0851427FE8C}" ShortID="55520995">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_DrySand_Walk_03" ID="{A46B0DDE-1DAA-41A8-9AC9-C0851427FE8C}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_DrySand_Walk_03.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="55520995"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -1723,9 +1870,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_DrySand_Walk_04" ID="{E0D7F04B-04DF-4B92-8959-8E9AC72C5E73}" ShortID="713288051">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_DrySand_Walk_04" ID="{E0D7F04B-04DF-4B92-8959-8E9AC72C5E73}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_DrySand_Walk_04.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="713288051"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -1742,9 +1892,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_DrySand_Walk_05" ID="{A48A80D2-298D-4080-AC3D-D18F93E4C950}" ShortID="203105155">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_DrySand_Walk_05" ID="{A48A80D2-298D-4080-AC3D-D18F93E4C950}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_DrySand_Walk_05.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="203105155"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -1761,9 +1914,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_DrySand_Walk_06" ID="{D2FF1147-0936-4672-AEA7-03A57C55CFF2}" ShortID="599953954">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_DrySand_Walk_06" ID="{D2FF1147-0936-4672-AEA7-03A57C55CFF2}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_DrySand_Walk_06.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="599953954"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -1780,9 +1936,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_DrySand_Walk_07" ID="{6F8EF03F-C108-4ED6-AA8E-8B59C3F7CB4A}" ShortID="258024753">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_DrySand_Walk_07" ID="{6F8EF03F-C108-4ED6-AA8E-8B59C3F7CB4A}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_DrySand_Walk_07.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="258024753"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -1834,9 +1993,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="footstep_TerreHumide_walk1" ID="{9C909E0A-4CBB-4832-B437-25C9C244160D}" ShortID="106247066">
+																<AudioFileSource Name="footstep_TerreHumide_walk1" ID="{9C909E0A-4CBB-4832-B437-25C9C244160D}">
 																	<Language>SFX</Language>
 																	<AudioFile>footstep_TerreHumide_walk1.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="106247066"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -1853,9 +2015,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="footstep_TerreHumide_walk2" ID="{282ADE2B-ED66-4129-BFEE-8DBC4E117B01}" ShortID="694108302">
+																<AudioFileSource Name="footstep_TerreHumide_walk2" ID="{282ADE2B-ED66-4129-BFEE-8DBC4E117B01}">
 																	<Language>SFX</Language>
 																	<AudioFile>footstep_TerreHumide_walk2.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="694108302"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -1872,9 +2037,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="footstep_TerreHumide_walk3" ID="{07DB83A5-1F2B-4D5A-8628-BDEEBCDD4892}" ShortID="322484238">
+																<AudioFileSource Name="footstep_TerreHumide_walk3" ID="{07DB83A5-1F2B-4D5A-8628-BDEEBCDD4892}">
 																	<Language>SFX</Language>
 																	<AudioFile>footstep_TerreHumide_walk3.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="322484238"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -1891,9 +2059,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="footstep_TerreHumide_walk4" ID="{A473626D-27DD-4073-956B-5C503BDABF94}" ShortID="1001534449">
+																<AudioFileSource Name="footstep_TerreHumide_walk4" ID="{A473626D-27DD-4073-956B-5C503BDABF94}">
 																	<Language>SFX</Language>
 																	<AudioFile>footstep_TerreHumide_walk4.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="1001534449"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -1910,9 +2081,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="footstep_TerreHumide_walk5" ID="{576F7D31-1A66-4A2A-A4D6-CB7C985B8A26}" ShortID="144626451">
+																<AudioFileSource Name="footstep_TerreHumide_walk5" ID="{576F7D31-1A66-4A2A-A4D6-CB7C985B8A26}">
 																	<Language>SFX</Language>
 																	<AudioFile>footstep_TerreHumide_walk5.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="144626451"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -1941,9 +2115,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="footstep_Pierre_walk1" ID="{56850B07-1AC5-49C5-9E8C-F6155D8D6A8C}" ShortID="702786934">
+																<AudioFileSource Name="footstep_Pierre_walk1" ID="{56850B07-1AC5-49C5-9E8C-F6155D8D6A8C}">
 																	<Language>SFX</Language>
 																	<AudioFile>footstep_Pierre_walk1.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="702786934"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -1960,9 +2137,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="footstep_Pierre_walk2" ID="{50AB49C7-EB02-4D8A-ADA2-B81F991E32D4}" ShortID="855813183">
+																<AudioFileSource Name="footstep_Pierre_walk2" ID="{50AB49C7-EB02-4D8A-ADA2-B81F991E32D4}">
 																	<Language>SFX</Language>
 																	<AudioFile>footstep_Pierre_walk2.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="855813183"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -1979,9 +2159,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="footstep_Pierre_walk3" ID="{5BAD5E62-A835-4590-B7C4-806A446E7E9B}" ShortID="628737640">
+																<AudioFileSource Name="footstep_Pierre_walk3" ID="{5BAD5E62-A835-4590-B7C4-806A446E7E9B}">
 																	<Language>SFX</Language>
 																	<AudioFile>footstep_Pierre_walk3.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="628737640"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -1998,9 +2181,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="footstep_Pierre_walk4" ID="{1C2DB307-57C4-4131-9687-B68B268186AF}" ShortID="857275489">
+																<AudioFileSource Name="footstep_Pierre_walk4" ID="{1C2DB307-57C4-4131-9687-B68B268186AF}">
 																	<Language>SFX</Language>
 																	<AudioFile>footstep_Pierre_walk4.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="857275489"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -2017,9 +2203,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="footstep_Pierre_walk5" ID="{F4D7396E-670F-462C-AAE0-4DA3F0183269}" ShortID="639544385">
+																<AudioFileSource Name="footstep_Pierre_walk5" ID="{F4D7396E-670F-462C-AAE0-4DA3F0183269}">
 																	<Language>SFX</Language>
 																	<AudioFile>footstep_Pierre_walk5.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="639544385"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -2051,9 +2240,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_WetSand_Walk_00" ID="{9C184B06-71F0-4D25-8D0E-5349936C6A72}" ShortID="1066810180">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_WetSand_Walk_00" ID="{9C184B06-71F0-4D25-8D0E-5349936C6A72}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_WetSand_Walk_00.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="1066810180"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -2070,9 +2262,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_WetSand_Walk_01" ID="{23B54D74-BBBB-43AA-85CC-C7E4B13E5904}" ShortID="56359513">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_WetSand_Walk_01" ID="{23B54D74-BBBB-43AA-85CC-C7E4B13E5904}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_WetSand_Walk_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="56359513"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -2089,9 +2284,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_WetSand_Walk_02" ID="{2FC332B7-249D-4DED-86A9-ACEFD2B98363}" ShortID="141863457">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_WetSand_Walk_02" ID="{2FC332B7-249D-4DED-86A9-ACEFD2B98363}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_WetSand_Walk_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="141863457"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -2108,9 +2306,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_WetSand_Walk_03" ID="{3CFD7A78-73EF-4830-95EC-64B283F3A980}" ShortID="201271040">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_WetSand_Walk_03" ID="{3CFD7A78-73EF-4830-95EC-64B283F3A980}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_WetSand_Walk_03.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="201271040"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -2127,9 +2328,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_WetSand_Walk_04" ID="{22C219E4-0CEC-4277-9E11-2AFFA3434C72}" ShortID="329652976">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_WetSand_Walk_04" ID="{22C219E4-0CEC-4277-9E11-2AFFA3434C72}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_WetSand_Walk_04.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="329652976"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -2146,9 +2350,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_WetSand_Walk_05" ID="{8132F0AD-0B48-452D-B3A2-D817AB791D5C}" ShortID="529331937">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_WetSand_Walk_05" ID="{8132F0AD-0B48-452D-B3A2-D817AB791D5C}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_WetSand_Walk_05.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="529331937"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -2165,9 +2372,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_WetSand_Walk_06" ID="{559B3CDA-2DF3-4216-9459-9840BDFCAC54}" ShortID="472594254">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_WetSand_Walk_06" ID="{559B3CDA-2DF3-4216-9459-9840BDFCAC54}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_WetSand_Walk_06.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="472594254"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -2184,9 +2394,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_WetSand_Walk_07" ID="{1850CF9D-2CD9-4E8D-AEB3-C6FC5AF63F2A}" ShortID="488409080">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_WetSand_Walk_07" ID="{1850CF9D-2CD9-4E8D-AEB3-C6FC5AF63F2A}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_WetSand_Walk_07.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="488409080"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -2223,9 +2436,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_Wood_Walk_00" ID="{0AC8CFB7-BAD9-4F98-A292-86C718BEB081}" ShortID="482602314">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_Wood_Walk_00" ID="{0AC8CFB7-BAD9-4F98-A292-86C718BEB081}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_Wood_Walk_00.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="482602314"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -2242,9 +2458,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_Wood_Walk_01" ID="{701FC056-7097-468F-84D6-A25D868A3565}" ShortID="467738588">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_Wood_Walk_01" ID="{701FC056-7097-468F-84D6-A25D868A3565}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_Wood_Walk_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="467738588"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -2261,9 +2480,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_Wood_Walk_02" ID="{951C00FE-0652-48A3-B7CB-792CA9D42090}" ShortID="716023517">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_Wood_Walk_02" ID="{951C00FE-0652-48A3-B7CB-792CA9D42090}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_Wood_Walk_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="716023517"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -2280,9 +2502,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_Wood_Walk_03" ID="{539E535C-007D-491C-9E78-CE3118B20921}" ShortID="125845740">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_Wood_Walk_03" ID="{539E535C-007D-491C-9E78-CE3118B20921}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_Wood_Walk_03.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="125845740"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -2299,9 +2524,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_Wood_Walk_04" ID="{B96C5672-4402-4F15-B7C2-CA304E5C1C84}" ShortID="575501401">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_Wood_Walk_04" ID="{B96C5672-4402-4F15-B7C2-CA304E5C1C84}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_Wood_Walk_04.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="575501401"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -2318,9 +2546,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_Wood_Walk_05" ID="{E5D62894-6AA7-4DD6-8401-67AF1D12DB81}" ShortID="826592745">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_Wood_Walk_05" ID="{E5D62894-6AA7-4DD6-8401-67AF1D12DB81}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_Wood_Walk_05.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="826592745"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -2337,9 +2568,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_Wood_Walk_06" ID="{8F16D5B0-B51B-4E73-A545-D13E9B813BD9}" ShortID="799685926">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_Wood_Walk_06" ID="{8F16D5B0-B51B-4E73-A545-D13E9B813BD9}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_Wood_Walk_06.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="799685926"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -2356,9 +2590,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_Wood_Walk_07" ID="{78569712-93C9-450E-889A-A159ED02E8BA}" ShortID="184487392">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_Wood_Walk_07" ID="{78569712-93C9-450E-889A-A159ED02E8BA}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_Wood_Walk_07.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="184487392"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -2423,9 +2660,12 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Walk_00" ID="{FEE6E9C7-9CD7-4F32-B1D8-4EEC9ECB758D}" ShortID="356297204">
+																				<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Walk_00" ID="{FEE6E9C7-9CD7-4F32-B1D8-4EEC9ECB758D}">
 																					<Language>SFX</Language>
 																					<AudioFile>SFX_HA_Character_Footsteps_Puddle_Walk_00.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="356297204"/>
+																					</MediaIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
 																			<ActiveSourceList>
@@ -2442,9 +2682,12 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Walk_01" ID="{3C032768-EDD0-429C-A110-4967EEAADD05}" ShortID="607457752">
+																				<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Walk_01" ID="{3C032768-EDD0-429C-A110-4967EEAADD05}">
 																					<Language>SFX</Language>
 																					<AudioFile>SFX_HA_Character_Footsteps_Puddle_Walk_01.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="607457752"/>
+																					</MediaIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
 																			<ActiveSourceList>
@@ -2461,9 +2704,12 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Walk_02" ID="{02CCDE7A-1988-45F0-844E-FD710B6E3EE2}" ShortID="792008929">
+																				<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Walk_02" ID="{02CCDE7A-1988-45F0-844E-FD710B6E3EE2}">
 																					<Language>SFX</Language>
 																					<AudioFile>SFX_HA_Character_Footsteps_Puddle_Walk_02.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="792008929"/>
+																					</MediaIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
 																			<ActiveSourceList>
@@ -2480,9 +2726,12 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Walk_03" ID="{80616B56-0D29-440C-A4A1-718BE6E4B8E3}" ShortID="789204039">
+																				<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Walk_03" ID="{80616B56-0D29-440C-A4A1-718BE6E4B8E3}">
 																					<Language>SFX</Language>
 																					<AudioFile>SFX_HA_Character_Footsteps_Puddle_Walk_03.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="789204039"/>
+																					</MediaIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
 																			<ActiveSourceList>
@@ -2533,12 +2782,12 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_00" ID="{0A986272-3244-4D86-9B2C-2880B1BF6B46}" ShortID="37809215">
+																				<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_00" ID="{0A986272-3244-4D86-9B2C-2880B1BF6B46}">
 																					<Language>SFX</Language>
 																					<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_00.wav</AudioFile>
-																					<ConvertedFileIDList>
-																						<File ID="85024138"/>
-																					</ConvertedFileIDList>
+																					<MediaIDList>
+																						<MediaID ID="85024138"/>
+																					</MediaIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
 																			<ActiveSourceList>
@@ -2562,12 +2811,12 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_01" ID="{AA7F1B7D-5353-4DC2-ACCD-B3F1A2582794}" ShortID="982867309">
+																				<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_01" ID="{AA7F1B7D-5353-4DC2-ACCD-B3F1A2582794}">
 																					<Language>SFX</Language>
 																					<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_01.wav</AudioFile>
-																					<ConvertedFileIDList>
-																						<File ID="799387833"/>
-																					</ConvertedFileIDList>
+																					<MediaIDList>
+																						<MediaID ID="799387833"/>
+																					</MediaIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
 																			<ActiveSourceList>
@@ -2591,12 +2840,12 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_02" ID="{80516B19-F29B-4AAC-B518-9F6ED0792465}" ShortID="166698633">
+																				<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_02" ID="{80516B19-F29B-4AAC-B518-9F6ED0792465}">
 																					<Language>SFX</Language>
 																					<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_02.wav</AudioFile>
-																					<ConvertedFileIDList>
-																						<File ID="789268961"/>
-																					</ConvertedFileIDList>
+																					<MediaIDList>
+																						<MediaID ID="789268961"/>
+																					</MediaIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
 																			<ActiveSourceList>
@@ -2620,12 +2869,12 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_03" ID="{9E37CF40-3C7F-4473-976D-14327E5612F6}" ShortID="1057691738">
+																				<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_03" ID="{9E37CF40-3C7F-4473-976D-14327E5612F6}">
 																					<Language>SFX</Language>
 																					<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_03.wav</AudioFile>
-																					<ConvertedFileIDList>
-																						<File ID="502448179"/>
-																					</ConvertedFileIDList>
+																					<MediaIDList>
+																						<MediaID ID="502448179"/>
+																					</MediaIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
 																			<ActiveSourceList>
@@ -2789,12 +3038,12 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Walk_04" ID="{DCB96086-20F6-4F25-AF68-F4CAE3B49ADC}" ShortID="774594507">
+																				<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Walk_04" ID="{DCB96086-20F6-4F25-AF68-F4CAE3B49ADC}">
 																					<Language>SFX</Language>
 																					<AudioFile>SFX_HA_Character_Footsteps_Puddle_Walk_04.wav</AudioFile>
-																					<ConvertedFileIDList>
-																						<File ID="332501449"/>
-																					</ConvertedFileIDList>
+																					<MediaIDList>
+																						<MediaID ID="332501449"/>
+																					</MediaIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
 																			<ActiveSourceList>
@@ -2811,12 +3060,12 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Walk_05" ID="{4DCD1974-670B-4546-9A9A-75ACD8A45BEF}" ShortID="168353215">
+																				<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Walk_05" ID="{4DCD1974-670B-4546-9A9A-75ACD8A45BEF}">
 																					<Language>SFX</Language>
 																					<AudioFile>SFX_HA_Character_Footsteps_Puddle_Walk_05.wav</AudioFile>
-																					<ConvertedFileIDList>
-																						<File ID="514965558"/>
-																					</ConvertedFileIDList>
+																					<MediaIDList>
+																						<MediaID ID="514965558"/>
+																					</MediaIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
 																			<ActiveSourceList>
@@ -2833,12 +3082,12 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Walk_06" ID="{CBAC90EA-A4A2-4876-924A-45F3C2EC6145}" ShortID="795179864">
+																				<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Walk_06" ID="{CBAC90EA-A4A2-4876-924A-45F3C2EC6145}">
 																					<Language>SFX</Language>
 																					<AudioFile>SFX_HA_Character_Footsteps_Puddle_Walk_06.wav</AudioFile>
-																					<ConvertedFileIDList>
-																						<File ID="360475494"/>
-																					</ConvertedFileIDList>
+																					<MediaIDList>
+																						<MediaID ID="360475494"/>
+																					</MediaIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
 																			<ActiveSourceList>
@@ -2855,12 +3104,12 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Walk_07" ID="{B981B426-C78C-438C-9416-44C17361392F}" ShortID="972841049">
+																				<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Walk_07" ID="{B981B426-C78C-438C-9416-44C17361392F}">
 																					<Language>SFX</Language>
 																					<AudioFile>SFX_HA_Character_Footsteps_Puddle_Walk_07.wav</AudioFile>
-																					<ConvertedFileIDList>
-																						<File ID="109065310"/>
-																					</ConvertedFileIDList>
+																					<MediaIDList>
+																						<MediaID ID="109065310"/>
+																					</MediaIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
 																			<ActiveSourceList>
@@ -2911,12 +3160,12 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_04" ID="{1E5DE4F4-DB14-4EAB-8F83-5BE79004B01D}" ShortID="1036228123">
+																				<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_04" ID="{1E5DE4F4-DB14-4EAB-8F83-5BE79004B01D}">
 																					<Language>SFX</Language>
 																					<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_04.wav</AudioFile>
-																					<ConvertedFileIDList>
-																						<File ID="433412623"/>
-																					</ConvertedFileIDList>
+																					<MediaIDList>
+																						<MediaID ID="433412623"/>
+																					</MediaIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
 																			<ActiveSourceList>
@@ -2940,12 +3189,12 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_05" ID="{D37E0E61-03DF-43BB-A9BC-1C1296ABBD45}" ShortID="899111093">
+																				<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_05" ID="{D37E0E61-03DF-43BB-A9BC-1C1296ABBD45}">
 																					<Language>SFX</Language>
 																					<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_05.wav</AudioFile>
-																					<ConvertedFileIDList>
-																						<File ID="843620571"/>
-																					</ConvertedFileIDList>
+																					<MediaIDList>
+																						<MediaID ID="843620571"/>
+																					</MediaIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
 																			<ActiveSourceList>
@@ -2969,12 +3218,12 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_06" ID="{8F13B06C-A20C-484B-8A43-14AF9798F8EB}" ShortID="36459093">
+																				<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_06" ID="{8F13B06C-A20C-484B-8A43-14AF9798F8EB}">
 																					<Language>SFX</Language>
 																					<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_06.wav</AudioFile>
-																					<ConvertedFileIDList>
-																						<File ID="677916102"/>
-																					</ConvertedFileIDList>
+																					<MediaIDList>
+																						<MediaID ID="677916102"/>
+																					</MediaIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
 																			<ActiveSourceList>
@@ -2998,12 +3247,12 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_07" ID="{9FB6A005-4786-4183-A4D6-F9378CFBC2A6}" ShortID="109358393">
+																				<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_07" ID="{9FB6A005-4786-4183-A4D6-F9378CFBC2A6}">
 																					<Language>SFX</Language>
 																					<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_07.wav</AudioFile>
-																					<ConvertedFileIDList>
-																						<File ID="72944737"/>
-																					</ConvertedFileIDList>
+																					<MediaIDList>
+																						<MediaID ID="72944737"/>
+																					</MediaIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
 																			<ActiveSourceList>
@@ -3262,9 +3511,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_Wood_Run_00" ID="{FF6598CB-9E8F-4777-8795-C14B212E0C49}" ShortID="418290250">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_Wood_Run_00" ID="{FF6598CB-9E8F-4777-8795-C14B212E0C49}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_Wood_Run_00.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="418290250"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -3281,9 +3533,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_Wood_Run_01" ID="{45A78FA7-F824-4FD7-8306-EE118AE5A001}" ShortID="979378219">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_Wood_Run_01" ID="{45A78FA7-F824-4FD7-8306-EE118AE5A001}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_Wood_Run_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="979378219"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -3300,9 +3555,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_Wood_Run_02" ID="{3E1C89A5-47D2-4731-BC13-449EEC2A2728}" ShortID="562271942">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_Wood_Run_02" ID="{3E1C89A5-47D2-4731-BC13-449EEC2A2728}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_Wood_Run_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="562271942"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -3319,9 +3577,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_Wood_Run_03" ID="{437767CA-62FF-48AF-9828-A1A166B56A53}" ShortID="228069452">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_Wood_Run_03" ID="{437767CA-62FF-48AF-9828-A1A166B56A53}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_Wood_Run_03.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="228069452"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -3338,9 +3599,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_Wood_Run_04" ID="{1087B35A-181B-44D1-AA01-326886A08716}" ShortID="80006195">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_Wood_Run_04" ID="{1087B35A-181B-44D1-AA01-326886A08716}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_Wood_Run_04.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="80006195"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -3357,9 +3621,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_Wood_Run_05" ID="{B24CF9D5-2E6F-4DF6-9ADF-985FC9EE05C5}" ShortID="522097918">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_Wood_Run_05" ID="{B24CF9D5-2E6F-4DF6-9ADF-985FC9EE05C5}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_Wood_Run_05.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="522097918"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -3376,9 +3643,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_Wood_Run_06" ID="{9A25DE40-1E4D-4C70-9A59-A3D4153948D1}" ShortID="556366233">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_Wood_Run_06" ID="{9A25DE40-1E4D-4C70-9A59-A3D4153948D1}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_Wood_Run_06.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="556366233"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -3395,9 +3665,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_Wood_Run_07" ID="{0B8A10A7-0BCE-47EA-8411-F9D6118590EF}" ShortID="396803414">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_Wood_Run_07" ID="{0B8A10A7-0BCE-47EA-8411-F9D6118590EF}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_Wood_Run_07.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="396803414"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -3429,9 +3702,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_DrySand_Run_00" ID="{89F4C5C1-F094-4B87-9010-EDECE2C07F03}" ShortID="716913657">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_DrySand_Run_00" ID="{89F4C5C1-F094-4B87-9010-EDECE2C07F03}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_DrySand_Run_00.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="716913657"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -3448,9 +3724,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_DrySand_Run_01" ID="{D657C7EA-3860-4D58-A4C6-7BEB390CED68}" ShortID="877743677">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_DrySand_Run_01" ID="{D657C7EA-3860-4D58-A4C6-7BEB390CED68}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_DrySand_Run_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="877743677"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -3467,9 +3746,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_DrySand_Run_02" ID="{561EDD14-E11E-4A63-A6BD-76DB7DB5463A}" ShortID="1024107810">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_DrySand_Run_02" ID="{561EDD14-E11E-4A63-A6BD-76DB7DB5463A}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_DrySand_Run_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="1024107810"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -3486,9 +3768,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_DrySand_Run_03" ID="{C0B96C47-D7A6-42DF-BE49-F862DBA75EC8}" ShortID="1017991532">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_DrySand_Run_03" ID="{C0B96C47-D7A6-42DF-BE49-F862DBA75EC8}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_DrySand_Run_03.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="1017991532"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -3505,9 +3790,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_DrySand_Run_04" ID="{553AF28F-5857-4CB0-9D71-44FF372ACB81}" ShortID="749522484">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_DrySand_Run_04" ID="{553AF28F-5857-4CB0-9D71-44FF372ACB81}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_DrySand_Run_04.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="749522484"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -3524,9 +3812,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_DrySand_Run_05" ID="{CFA71BFD-31CB-4D4B-8C84-62C027335E3A}" ShortID="259195200">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_DrySand_Run_05" ID="{CFA71BFD-31CB-4D4B-8C84-62C027335E3A}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_DrySand_Run_05.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="259195200"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -3543,9 +3834,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_DrySand_Run_06" ID="{D0601886-8144-43F3-B5B4-FE32935F87BC}" ShortID="779121661">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_DrySand_Run_06" ID="{D0601886-8144-43F3-B5B4-FE32935F87BC}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_DrySand_Run_06.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="779121661"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -3562,9 +3856,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_DrySand_Run_07" ID="{F9BFFCF2-5F09-410A-B3FD-6091A1CDDC19}" ShortID="36385276">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_DrySand_Run_07" ID="{F9BFFCF2-5F09-410A-B3FD-6091A1CDDC19}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_DrySand_Run_07.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="36385276"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -3596,12 +3893,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_WetSand_Walk_00" ID="{D2433859-0D7D-4967-BB46-5D1D4EA8AE4C}" ShortID="205510292">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_WetSand_Walk_00" ID="{D2433859-0D7D-4967-BB46-5D1D4EA8AE4C}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_WetSand_Walk_00.wav</AudioFile>
-																	<ConvertedFileIDList>
-																		<File ID="1066810180"/>
-																	</ConvertedFileIDList>
+																	<MediaIDList>
+																		<MediaID ID="1066810180"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -3618,12 +3915,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_WetSand_Walk_01" ID="{0F46F2C6-273B-41DC-B641-A2DF6DB7F3F1}" ShortID="547771352">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_WetSand_Walk_01" ID="{0F46F2C6-273B-41DC-B641-A2DF6DB7F3F1}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_WetSand_Walk_01.wav</AudioFile>
-																	<ConvertedFileIDList>
-																		<File ID="56359513"/>
-																	</ConvertedFileIDList>
+																	<MediaIDList>
+																		<MediaID ID="56359513"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -3640,12 +3937,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_WetSand_Walk_02" ID="{38E84AA8-283D-42D5-9429-D2FF82662CEA}" ShortID="660404377">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_WetSand_Walk_02" ID="{38E84AA8-283D-42D5-9429-D2FF82662CEA}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_WetSand_Walk_02.wav</AudioFile>
-																	<ConvertedFileIDList>
-																		<File ID="141863457"/>
-																	</ConvertedFileIDList>
+																	<MediaIDList>
+																		<MediaID ID="141863457"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -3662,12 +3959,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_WetSand_Walk_03" ID="{17B474FA-48B3-40D7-8282-720DF753753F}" ShortID="24180804">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_WetSand_Walk_03" ID="{17B474FA-48B3-40D7-8282-720DF753753F}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_WetSand_Walk_03.wav</AudioFile>
-																	<ConvertedFileIDList>
-																		<File ID="201271040"/>
-																	</ConvertedFileIDList>
+																	<MediaIDList>
+																		<MediaID ID="201271040"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -3684,12 +3981,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_WetSand_Walk_04" ID="{C54CAFC3-7E30-422D-BF95-17D1DF738677}" ShortID="938582248">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_WetSand_Walk_04" ID="{C54CAFC3-7E30-422D-BF95-17D1DF738677}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_WetSand_Walk_04.wav</AudioFile>
-																	<ConvertedFileIDList>
-																		<File ID="329652976"/>
-																	</ConvertedFileIDList>
+																	<MediaIDList>
+																		<MediaID ID="329652976"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -3706,12 +4003,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_WetSand_Walk_05" ID="{C1BC8F67-1275-468D-BFB2-2FE53815E34F}" ShortID="769165729">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_WetSand_Walk_05" ID="{C1BC8F67-1275-468D-BFB2-2FE53815E34F}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_WetSand_Walk_05.wav</AudioFile>
-																	<ConvertedFileIDList>
-																		<File ID="529331937"/>
-																	</ConvertedFileIDList>
+																	<MediaIDList>
+																		<MediaID ID="529331937"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -3728,12 +4025,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_WetSand_Walk_06" ID="{6043D718-A29E-4270-8141-45ED3C4C96A8}" ShortID="300597048">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_WetSand_Walk_06" ID="{6043D718-A29E-4270-8141-45ED3C4C96A8}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_WetSand_Walk_06.wav</AudioFile>
-																	<ConvertedFileIDList>
-																		<File ID="472594254"/>
-																	</ConvertedFileIDList>
+																	<MediaIDList>
+																		<MediaID ID="472594254"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -3750,12 +4047,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_WetSand_Walk_07" ID="{D8544CD6-44DE-4B39-9CBB-FFC16F88EBE2}" ShortID="228162869">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_WetSand_Walk_07" ID="{D8544CD6-44DE-4B39-9CBB-FFC16F88EBE2}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_WetSand_Walk_07.wav</AudioFile>
-																	<ConvertedFileIDList>
-																		<File ID="488409080"/>
-																	</ConvertedFileIDList>
+																	<MediaIDList>
+																		<MediaID ID="488409080"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -3787,9 +4084,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_Grass_Run_00" ID="{B6020846-0272-4922-8E09-3B4B7719AC82}" ShortID="576926667">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_Grass_Run_00" ID="{B6020846-0272-4922-8E09-3B4B7719AC82}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_Grass_Run_00.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="576926667"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -3806,9 +4106,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_Grass_Run_01" ID="{0DD5AC70-B266-4364-9470-0BF8631F472A}" ShortID="630279414">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_Grass_Run_01" ID="{0DD5AC70-B266-4364-9470-0BF8631F472A}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_Grass_Run_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="630279414"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -3825,9 +4128,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_Grass_Run_02" ID="{BA1F9C88-8362-4408-8189-82F8056DE849}" ShortID="154959039">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_Grass_Run_02" ID="{BA1F9C88-8362-4408-8189-82F8056DE849}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_Grass_Run_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="154959039"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -3844,9 +4150,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_Grass_Run_03" ID="{C41BA6DD-BED5-4E3B-B507-405EDDFA377F}" ShortID="597156306">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_Grass_Run_03" ID="{C41BA6DD-BED5-4E3B-B507-405EDDFA377F}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_Grass_Run_03.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="597156306"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -3863,9 +4172,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_Grass_Run_04" ID="{B85AB5FD-75CC-4A65-9141-FA7F7460A74E}" ShortID="929774716">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_Grass_Run_04" ID="{B85AB5FD-75CC-4A65-9141-FA7F7460A74E}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_Grass_Run_04.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="929774716"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -3882,9 +4194,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_Grass_Run_05" ID="{AC7B7197-E772-4C06-9DF2-23287572E750}" ShortID="622988411">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_Grass_Run_05" ID="{AC7B7197-E772-4C06-9DF2-23287572E750}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_Grass_Run_05.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="622988411"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -3901,9 +4216,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_Grass_Run_06" ID="{911F7013-3F02-4408-9418-10CA0376538F}" ShortID="433796245">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_Grass_Run_06" ID="{911F7013-3F02-4408-9418-10CA0376538F}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_Grass_Run_06.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="433796245"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -3920,9 +4238,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Character_Footsteps_Grass_Run_07" ID="{2A3C4CB2-98B0-493E-9F9D-549A37310290}" ShortID="1035342194">
+																<AudioFileSource Name="SFX_HA_Character_Footsteps_Grass_Run_07" ID="{2A3C4CB2-98B0-493E-9F9D-549A37310290}">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HA_Character_Footsteps_Grass_Run_07.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="1035342194"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -3964,9 +4285,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="footstep_TerreHumide_run1" ID="{A76E70D3-9953-496F-8704-FBC9DE97746E}" ShortID="104890377">
+																<AudioFileSource Name="footstep_TerreHumide_run1" ID="{A76E70D3-9953-496F-8704-FBC9DE97746E}">
 																	<Language>SFX</Language>
 																	<AudioFile>footstep_TerreHumide_run1.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="104890377"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -3983,9 +4307,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="footstep_TerreHumide_run2" ID="{E1AAE701-466F-427B-8E5B-DE292519DC0F}" ShortID="22144099">
+																<AudioFileSource Name="footstep_TerreHumide_run2" ID="{E1AAE701-466F-427B-8E5B-DE292519DC0F}">
 																	<Language>SFX</Language>
 																	<AudioFile>footstep_TerreHumide_run2.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="22144099"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -4002,9 +4329,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="footstep_TerreHumide_run3" ID="{D42560FA-3855-40C2-8BB9-FEB887281CAD}" ShortID="842992221">
+																<AudioFileSource Name="footstep_TerreHumide_run3" ID="{D42560FA-3855-40C2-8BB9-FEB887281CAD}">
 																	<Language>SFX</Language>
 																	<AudioFile>footstep_TerreHumide_run3.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="842992221"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -4021,9 +4351,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="footstep_TerreHumide_run4" ID="{3E8565AA-6C6C-4E18-8900-09014BB10141}" ShortID="804884315">
+																<AudioFileSource Name="footstep_TerreHumide_run4" ID="{3E8565AA-6C6C-4E18-8900-09014BB10141}">
 																	<Language>SFX</Language>
 																	<AudioFile>footstep_TerreHumide_run4.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="804884315"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -4040,9 +4373,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="footstep_TerreHumide_run5" ID="{B0FCC3AD-0791-40A8-973E-70E04B30D0FD}" ShortID="502026075">
+																<AudioFileSource Name="footstep_TerreHumide_run5" ID="{B0FCC3AD-0791-40A8-973E-70E04B30D0FD}">
 																	<Language>SFX</Language>
 																	<AudioFile>footstep_TerreHumide_run5.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="502026075"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -4074,9 +4410,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="footstep_Pierre_run1" ID="{B0DCAAFE-1364-44DA-A838-60AC21D73DCF}" ShortID="698895873">
+																<AudioFileSource Name="footstep_Pierre_run1" ID="{B0DCAAFE-1364-44DA-A838-60AC21D73DCF}">
 																	<Language>SFX</Language>
 																	<AudioFile>footstep_Pierre_run1.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="698895873"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -4093,9 +4432,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="footstep_Pierre_run2" ID="{1E06D2A2-0280-4FA0-BDC7-D4617B213E64}" ShortID="381208652">
+																<AudioFileSource Name="footstep_Pierre_run2" ID="{1E06D2A2-0280-4FA0-BDC7-D4617B213E64}">
 																	<Language>SFX</Language>
 																	<AudioFile>footstep_Pierre_run2.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="381208652"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -4112,9 +4454,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="footstep_Pierre_run3" ID="{2C520DD3-EC8C-4CBE-BD89-EC1F1492CD47}" ShortID="25541167">
+																<AudioFileSource Name="footstep_Pierre_run3" ID="{2C520DD3-EC8C-4CBE-BD89-EC1F1492CD47}">
 																	<Language>SFX</Language>
 																	<AudioFile>footstep_Pierre_run3.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="25541167"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -4131,9 +4476,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="footstep_Pierre_run4" ID="{DC971A73-D186-4FC3-A9B6-969FD18E30A7}" ShortID="537606685">
+																<AudioFileSource Name="footstep_Pierre_run4" ID="{DC971A73-D186-4FC3-A9B6-969FD18E30A7}">
 																	<Language>SFX</Language>
 																	<AudioFile>footstep_Pierre_run4.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="537606685"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -4150,9 +4498,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="footstep_Pierre_run5" ID="{03A0B8B4-109B-4476-9D2F-338CE4F14F93}" ShortID="331769767">
+																<AudioFileSource Name="footstep_Pierre_run5" ID="{03A0B8B4-109B-4476-9D2F-338CE4F14F93}">
 																	<Language>SFX</Language>
 																	<AudioFile>footstep_Pierre_run5.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="331769767"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -4249,9 +4600,12 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_00" ID="{6B3785B2-465E-4636-B992-1339569C7701}" ShortID="4101969">
+																				<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_00" ID="{6B3785B2-465E-4636-B992-1339569C7701}">
 																					<Language>SFX</Language>
 																					<AudioFile>SFX_HA_Character_Footsteps_Puddle_Run_00.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="4101969"/>
+																					</MediaIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
 																			<ActiveSourceList>
@@ -4268,9 +4622,12 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_01" ID="{4C29A5C4-547E-4AEB-A223-F348CE3E9C65}" ShortID="254523341">
+																				<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_01" ID="{4C29A5C4-547E-4AEB-A223-F348CE3E9C65}">
 																					<Language>SFX</Language>
 																					<AudioFile>SFX_HA_Character_Footsteps_Puddle_Run_01.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="254523341"/>
+																					</MediaIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
 																			<ActiveSourceList>
@@ -4287,9 +4644,12 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_02" ID="{18DA89C3-9D3A-40CC-BBA7-43A4F8A6C899}" ShortID="982538254">
+																				<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_02" ID="{18DA89C3-9D3A-40CC-BBA7-43A4F8A6C899}">
 																					<Language>SFX</Language>
 																					<AudioFile>SFX_HA_Character_Footsteps_Puddle_Run_02.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="982538254"/>
+																					</MediaIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
 																			<ActiveSourceList>
@@ -4306,9 +4666,12 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_03" ID="{6E4EA437-00D2-46D9-B2D8-5459E1E23BFC}" ShortID="586776565">
+																				<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_03" ID="{6E4EA437-00D2-46D9-B2D8-5459E1E23BFC}">
 																					<Language>SFX</Language>
 																					<AudioFile>SFX_HA_Character_Footsteps_Puddle_Run_03.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="586776565"/>
+																					</MediaIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
 																			<ActiveSourceList>
@@ -4360,9 +4723,12 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_00" ID="{7F029D0B-7F34-4E9E-BCFC-A3C1AF6FF01D}" ShortID="85024138">
+																				<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_00" ID="{7F029D0B-7F34-4E9E-BCFC-A3C1AF6FF01D}">
 																					<Language>SFX</Language>
 																					<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_00.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="85024138"/>
+																					</MediaIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
 																			<ActiveSourceList>
@@ -4386,9 +4752,12 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_01" ID="{92387DF4-0DA8-4ED1-814E-552BD6C9744B}" ShortID="799387833">
+																				<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_01" ID="{92387DF4-0DA8-4ED1-814E-552BD6C9744B}">
 																					<Language>SFX</Language>
 																					<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_01.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="799387833"/>
+																					</MediaIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
 																			<ActiveSourceList>
@@ -4412,9 +4781,12 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_02" ID="{4BAA0FCD-9545-4AEA-B188-04F5DC0A7A0A}" ShortID="789268961">
+																				<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_02" ID="{4BAA0FCD-9545-4AEA-B188-04F5DC0A7A0A}">
 																					<Language>SFX</Language>
 																					<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_02.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="789268961"/>
+																					</MediaIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
 																			<ActiveSourceList>
@@ -4438,9 +4810,12 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_03" ID="{4B18E4B6-2E7E-4018-83D0-1B3131301E06}" ShortID="502448179">
+																				<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_03" ID="{4B18E4B6-2E7E-4018-83D0-1B3131301E06}">
 																					<Language>SFX</Language>
 																					<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_03.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="502448179"/>
+																					</MediaIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
 																			<ActiveSourceList>
@@ -4604,12 +4979,12 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_04" ID="{B625FECC-300F-48AD-AA08-2A90A91FDF15}" ShortID="660037831">
+																				<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_04" ID="{B625FECC-300F-48AD-AA08-2A90A91FDF15}">
 																					<Language>SFX</Language>
 																					<AudioFile>SFX_HA_Character_Footsteps_Puddle_Run_04.wav</AudioFile>
-																					<ConvertedFileIDList>
-																						<File ID="58757605"/>
-																					</ConvertedFileIDList>
+																					<MediaIDList>
+																						<MediaID ID="58757605"/>
+																					</MediaIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
 																			<ActiveSourceList>
@@ -4626,12 +5001,12 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_05" ID="{32910B4A-06DC-400E-AB0F-8E5BE5E49BC3}" ShortID="197355078">
+																				<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_05" ID="{32910B4A-06DC-400E-AB0F-8E5BE5E49BC3}">
 																					<Language>SFX</Language>
 																					<AudioFile>SFX_HA_Character_Footsteps_Puddle_Run_05.wav</AudioFile>
-																					<ConvertedFileIDList>
-																						<File ID="414801207"/>
-																					</ConvertedFileIDList>
+																					<MediaIDList>
+																						<MediaID ID="414801207"/>
+																					</MediaIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
 																			<ActiveSourceList>
@@ -4648,12 +5023,12 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_06" ID="{8421123B-46E2-4E02-8454-755309F983C5}" ShortID="642458177">
+																				<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_06" ID="{8421123B-46E2-4E02-8454-755309F983C5}">
 																					<Language>SFX</Language>
 																					<AudioFile>SFX_HA_Character_Footsteps_Puddle_Run_06.wav</AudioFile>
-																					<ConvertedFileIDList>
-																						<File ID="888652473"/>
-																					</ConvertedFileIDList>
+																					<MediaIDList>
+																						<MediaID ID="888652473"/>
+																					</MediaIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
 																			<ActiveSourceList>
@@ -4670,12 +5045,12 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_07" ID="{C9F6B0E7-5387-435D-80FF-AF9894D73C82}" ShortID="262916329">
+																				<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_07" ID="{C9F6B0E7-5387-435D-80FF-AF9894D73C82}">
 																					<Language>SFX</Language>
 																					<AudioFile>SFX_HA_Character_Footsteps_Puddle_Run_07.wav</AudioFile>
-																					<ConvertedFileIDList>
-																						<File ID="1024152922"/>
-																					</ConvertedFileIDList>
+																					<MediaIDList>
+																						<MediaID ID="1024152922"/>
+																					</MediaIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
 																			<ActiveSourceList>
@@ -4727,12 +5102,12 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_04" ID="{DFA5267A-76CA-49C0-A63B-0629748FCDB8}" ShortID="870679079">
+																				<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_04" ID="{DFA5267A-76CA-49C0-A63B-0629748FCDB8}">
 																					<Language>SFX</Language>
 																					<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_04.wav</AudioFile>
-																					<ConvertedFileIDList>
-																						<File ID="433412623"/>
-																					</ConvertedFileIDList>
+																					<MediaIDList>
+																						<MediaID ID="433412623"/>
+																					</MediaIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
 																			<ActiveSourceList>
@@ -4756,12 +5131,12 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_05" ID="{42F451A6-8E01-416A-9D66-AA0B5BBEB740}" ShortID="258192512">
+																				<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_05" ID="{42F451A6-8E01-416A-9D66-AA0B5BBEB740}">
 																					<Language>SFX</Language>
 																					<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_05.wav</AudioFile>
-																					<ConvertedFileIDList>
-																						<File ID="843620571"/>
-																					</ConvertedFileIDList>
+																					<MediaIDList>
+																						<MediaID ID="843620571"/>
+																					</MediaIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
 																			<ActiveSourceList>
@@ -4785,12 +5160,12 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_06" ID="{CEE27874-C850-41BC-BBB2-290FC3AAD018}" ShortID="914192816">
+																				<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_06" ID="{CEE27874-C850-41BC-BBB2-290FC3AAD018}">
 																					<Language>SFX</Language>
 																					<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_06.wav</AudioFile>
-																					<ConvertedFileIDList>
-																						<File ID="677916102"/>
-																					</ConvertedFileIDList>
+																					<MediaIDList>
+																						<MediaID ID="677916102"/>
+																					</MediaIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
 																			<ActiveSourceList>
@@ -4814,12 +5189,12 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_07" ID="{E4133042-B706-444A-8694-E8B4770A0D30}" ShortID="210291567">
+																				<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_07" ID="{E4133042-B706-444A-8694-E8B4770A0D30}">
 																					<Language>SFX</Language>
 																					<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_07.wav</AudioFile>
-																					<ConvertedFileIDList>
-																						<File ID="72944737"/>
-																					</ConvertedFileIDList>
+																					<MediaIDList>
+																						<MediaID ID="72944737"/>
+																					</MediaIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
 																			<ActiveSourceList>
@@ -5120,9 +5495,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_HA_Character_Clothes_Running_00" ID="{FDB4E458-3747-4081-9F74-0E039B666A00}" ShortID="100796695">
+														<AudioFileSource Name="SFX_HA_Character_Clothes_Running_00" ID="{FDB4E458-3747-4081-9F74-0E039B666A00}">
 															<Language>SFX</Language>
 															<AudioFile>SFX_HA_Character_Clothes_Running_00.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="100796695"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -5139,9 +5517,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_HA_Character_Clothes_Running_01" ID="{B2258CBA-DCF4-48CB-AC11-37508957BDBA}" ShortID="897721645">
+														<AudioFileSource Name="SFX_HA_Character_Clothes_Running_01" ID="{B2258CBA-DCF4-48CB-AC11-37508957BDBA}">
 															<Language>SFX</Language>
 															<AudioFile>SFX_HA_Character_Clothes_Running_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="897721645"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -5158,9 +5539,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_HA_Character_Clothes_Running_02" ID="{40065528-5947-418D-AF89-5D9FE312389D}" ShortID="894158880">
+														<AudioFileSource Name="SFX_HA_Character_Clothes_Running_02" ID="{40065528-5947-418D-AF89-5D9FE312389D}">
 															<Language>SFX</Language>
 															<AudioFile>SFX_HA_Character_Clothes_Running_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="894158880"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -5177,9 +5561,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_HA_Character_Clothes_Running_03" ID="{E30F081A-0A5C-4B6F-87B7-F788CF62F472}" ShortID="218012677">
+														<AudioFileSource Name="SFX_HA_Character_Clothes_Running_03" ID="{E30F081A-0A5C-4B6F-87B7-F788CF62F472}">
 															<Language>SFX</Language>
 															<AudioFile>SFX_HA_Character_Clothes_Running_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="218012677"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -5196,9 +5583,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_HA_Character_Clothes_Running_04" ID="{14CF1B4F-724B-45EB-9DFD-701B72B54E4A}" ShortID="895819310">
+														<AudioFileSource Name="SFX_HA_Character_Clothes_Running_04" ID="{14CF1B4F-724B-45EB-9DFD-701B72B54E4A}">
 															<Language>SFX</Language>
 															<AudioFile>SFX_HA_Character_Clothes_Running_04.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="895819310"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -5215,9 +5605,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_HA_Character_Clothes_Running_05" ID="{354FE9DA-09EA-457B-B8F9-AFD59BB5C091}" ShortID="660737223">
+														<AudioFileSource Name="SFX_HA_Character_Clothes_Running_05" ID="{354FE9DA-09EA-457B-B8F9-AFD59BB5C091}">
 															<Language>SFX</Language>
 															<AudioFile>SFX_HA_Character_Clothes_Running_05.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="660737223"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -5234,9 +5627,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_HA_Character_Clothes_Running_06" ID="{9446BAC1-AB1B-4F8C-8FEA-1C4DCFC6681C}" ShortID="302696958">
+														<AudioFileSource Name="SFX_HA_Character_Clothes_Running_06" ID="{9446BAC1-AB1B-4F8C-8FEA-1C4DCFC6681C}">
 															<Language>SFX</Language>
 															<AudioFile>SFX_HA_Character_Clothes_Running_06.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="302696958"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -5253,9 +5649,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_HA_Character_Clothes_Running_07" ID="{2F80520E-9ED7-44A6-8DC6-93DA10852C6F}" ShortID="28871154">
+														<AudioFileSource Name="SFX_HA_Character_Clothes_Running_07" ID="{2F80520E-9ED7-44A6-8DC6-93DA10852C6F}">
 															<Language>SFX</Language>
 															<AudioFile>SFX_HA_Character_Clothes_Running_07.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="28871154"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -5298,9 +5697,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_HA_Character_Clothes_Walking_00" ID="{579302F2-B267-4356-BFC1-9F6C60518196}" ShortID="745756030">
+														<AudioFileSource Name="SFX_HA_Character_Clothes_Walking_00" ID="{579302F2-B267-4356-BFC1-9F6C60518196}">
 															<Language>SFX</Language>
 															<AudioFile>SFX_HA_Character_Clothes_Walking_00.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="745756030"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -5317,9 +5719,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_HA_Character_Clothes_Walking_01" ID="{DE201906-AF9C-4C9A-83B1-C7F990898CA1}" ShortID="1066574610">
+														<AudioFileSource Name="SFX_HA_Character_Clothes_Walking_01" ID="{DE201906-AF9C-4C9A-83B1-C7F990898CA1}">
 															<Language>SFX</Language>
 															<AudioFile>SFX_HA_Character_Clothes_Walking_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1066574610"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -5336,9 +5741,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_HA_Character_Clothes_Walking_02" ID="{E995196D-1F4D-4719-97CC-19A97C719AC2}" ShortID="372645555">
+														<AudioFileSource Name="SFX_HA_Character_Clothes_Walking_02" ID="{E995196D-1F4D-4719-97CC-19A97C719AC2}">
 															<Language>SFX</Language>
 															<AudioFile>SFX_HA_Character_Clothes_Walking_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="372645555"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -5355,9 +5763,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_HA_Character_Clothes_Walking_03" ID="{5408FCD0-0187-49BA-AA0B-DB81C1FCC7B2}" ShortID="580919771">
+														<AudioFileSource Name="SFX_HA_Character_Clothes_Walking_03" ID="{5408FCD0-0187-49BA-AA0B-DB81C1FCC7B2}">
 															<Language>SFX</Language>
 															<AudioFile>SFX_HA_Character_Clothes_Walking_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="580919771"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -5374,9 +5785,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_HA_Character_Clothes_Walking_04" ID="{9234935F-B0ED-42D9-9158-2ED1D5EEF48C}" ShortID="77461224">
+														<AudioFileSource Name="SFX_HA_Character_Clothes_Walking_04" ID="{9234935F-B0ED-42D9-9158-2ED1D5EEF48C}">
 															<Language>SFX</Language>
 															<AudioFile>SFX_HA_Character_Clothes_Walking_04.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="77461224"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -5393,9 +5807,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_HA_Character_Clothes_Walking_05" ID="{F2F3FE4A-2C76-4E91-A154-3CE077BCF2F6}" ShortID="388539468">
+														<AudioFileSource Name="SFX_HA_Character_Clothes_Walking_05" ID="{F2F3FE4A-2C76-4E91-A154-3CE077BCF2F6}">
 															<Language>SFX</Language>
 															<AudioFile>SFX_HA_Character_Clothes_Walking_05.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="388539468"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -5412,9 +5829,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_HA_Character_Clothes_Walking_06" ID="{89D8B7BD-C054-459F-AAC5-DE1D166A9431}" ShortID="74277112">
+														<AudioFileSource Name="SFX_HA_Character_Clothes_Walking_06" ID="{89D8B7BD-C054-459F-AAC5-DE1D166A9431}">
 															<Language>SFX</Language>
 															<AudioFile>SFX_HA_Character_Clothes_Walking_06.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="74277112"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -5431,9 +5851,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_HA_Character_Clothes_Walking_07" ID="{B1C26F23-E3F1-4960-B03F-3BFAD09DC385}" ShortID="1037438952">
+														<AudioFileSource Name="SFX_HA_Character_Clothes_Walking_07" ID="{B1C26F23-E3F1-4960-B03F-3BFAD09DC385}">
 															<Language>SFX</Language>
 															<AudioFile>SFX_HA_Character_Clothes_Walking_07.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1037438952"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -5525,9 +5948,12 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="SFX_HA_Ship_Sail_Downing" ID="{B794BC88-2FEA-4EA7-B007-6450974D446C}" ShortID="6442531">
+										<AudioFileSource Name="SFX_HA_Ship_Sail_Downing" ID="{B794BC88-2FEA-4EA7-B007-6450974D446C}">
 											<Language>SFX</Language>
 											<AudioFile>SFX_HA_Ship_Sail_Downing.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="6442531"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -5547,9 +5973,12 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="SFX_HA_Ship_Sail_Upping" ID="{57C93310-BC04-4508-86F3-AF4A62CC62C1}" ShortID="472798384">
+										<AudioFileSource Name="SFX_HA_Ship_Sail_Upping" ID="{57C93310-BC04-4508-86F3-AF4A62CC62C1}">
 											<Language>SFX</Language>
 											<AudioFile>SFX_HA_Ship_Sail_Upping.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="472798384"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -5579,9 +6008,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Sail_Down_01" ID="{7FF07CCD-0ECE-46B9-9A2C-BC237723DDD6}" ShortID="445622444">
+												<AudioFileSource Name="SFX_HA_Ship_Sail_Down_01" ID="{7FF07CCD-0ECE-46B9-9A2C-BC237723DDD6}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Sail_Down_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="445622444"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -5601,9 +6033,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Sail_Down_02" ID="{F5D563C0-424F-49AC-9285-E818BCEE8748}" ShortID="786746066">
+												<AudioFileSource Name="SFX_HA_Ship_Sail_Down_02" ID="{F5D563C0-424F-49AC-9285-E818BCEE8748}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Sail_Down_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="786746066"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -5623,9 +6058,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Sail_Down_03" ID="{E027C557-AA16-4CA6-B272-67482E59337D}" ShortID="377887250">
+												<AudioFileSource Name="SFX_HA_Ship_Sail_Down_03" ID="{E027C557-AA16-4CA6-B272-67482E59337D}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Sail_Down_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="377887250"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -5660,9 +6098,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Sail_Up_01" ID="{208F14B2-DC26-41D4-BBB3-7EBFAE74B92F}" ShortID="177061003">
+												<AudioFileSource Name="SFX_HA_Ship_Sail_Up_01" ID="{208F14B2-DC26-41D4-BBB3-7EBFAE74B92F}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Sail_Up_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="177061003"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -5682,9 +6123,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Sail_Up_02" ID="{2760299F-45DD-445E-92CE-E1B56537BCBA}" ShortID="977073523">
+												<AudioFileSource Name="SFX_HA_Ship_Sail_Up_02" ID="{2760299F-45DD-445E-92CE-E1B56537BCBA}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Sail_Up_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="977073523"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -5704,9 +6148,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Sail_Up_03" ID="{1D9388E5-292E-4E47-9E85-4B448055C24E}" ShortID="176712982">
+												<AudioFileSource Name="SFX_HA_Ship_Sail_Up_03" ID="{1D9388E5-292E-4E47-9E85-4B448055C24E}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Sail_Up_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="176712982"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -5726,9 +6173,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Sail_Up_04" ID="{95851F06-D887-4ABD-ACDC-70B098CEDBBD}" ShortID="588046048">
+												<AudioFileSource Name="SFX_HA_Ship_Sail_Up_04" ID="{95851F06-D887-4ABD-ACDC-70B098CEDBBD}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Sail_Up_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="588046048"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -5748,9 +6198,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Sail_Up_05" ID="{A24AC350-8792-4E1A-AC0D-E35BCD4C8E4B}" ShortID="413721206">
+												<AudioFileSource Name="SFX_HA_Ship_Sail_Up_05" ID="{A24AC350-8792-4E1A-AC0D-E35BCD4C8E4B}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Sail_Up_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="413721206"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -5794,9 +6247,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Sail_Pulley_Loop" ID="{AC75E3E9-BAAC-47B9-8A42-F18EE2D99F77}" ShortID="752159266">
+												<AudioFileSource Name="SFX_HA_Ship_Sail_Pulley_Loop" ID="{AC75E3E9-BAAC-47B9-8A42-F18EE2D99F77}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Sail_Pulley_Loop.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="752159266"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -5849,9 +6305,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Sail_Take_Perfect_Wind_01" ID="{72B77282-176C-4883-8A0D-4CFDEBE65BC3}" ShortID="743069458">
+												<AudioFileSource Name="SFX_HA_Ship_Sail_Take_Perfect_Wind_01" ID="{72B77282-176C-4883-8A0D-4CFDEBE65BC3}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Sail_Take_Perfect_Wind_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="743069458"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -5871,9 +6330,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Sail_Take_Perfect_Wind_02" ID="{EA157A6B-D59E-49CF-8A49-98EEF0F4B820}" ShortID="745218927">
+												<AudioFileSource Name="SFX_HA_Ship_Sail_Take_Perfect_Wind_02" ID="{EA157A6B-D59E-49CF-8A49-98EEF0F4B820}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Sail_Take_Perfect_Wind_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="745218927"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -5893,9 +6355,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Sail_Take_Perfect_Wind_03" ID="{E1DF7E69-E3D6-4454-9154-E118E1AB2F3F}" ShortID="332812323">
+												<AudioFileSource Name="SFX_HA_Ship_Sail_Take_Perfect_Wind_03" ID="{E1DF7E69-E3D6-4454-9154-E118E1AB2F3F}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Sail_Take_Perfect_Wind_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="332812323"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -5922,9 +6387,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Sail_Take_Perfect_Wind_04" ID="{2B3240A7-AACC-4174-A43A-AE7FFB05A0E0}" ShortID="676249289">
+												<AudioFileSource Name="SFX_HA_Ship_Sail_Take_Perfect_Wind_04" ID="{2B3240A7-AACC-4174-A43A-AE7FFB05A0E0}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Sail_Take_Perfect_Wind_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="676249289"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -5951,9 +6419,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Sail_Take_Perfect_Wind_05" ID="{F00CEDCA-327E-4F01-8CE9-283E499AA7BE}" ShortID="367279712">
+												<AudioFileSource Name="SFX_HA_Ship_Sail_Take_Perfect_Wind_05" ID="{F00CEDCA-327E-4F01-8CE9-283E499AA7BE}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Sail_Take_Perfect_Wind_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="367279712"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -5996,9 +6467,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Sail_Take_Correct_Wind_01" ID="{4ADF4973-C033-49BA-8889-B4D101CF2FF5}" ShortID="277736750">
+												<AudioFileSource Name="SFX_HA_Ship_Sail_Take_Correct_Wind_01" ID="{4ADF4973-C033-49BA-8889-B4D101CF2FF5}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Sail_Take_Correct_Wind_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="277736750"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -6025,9 +6499,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Sail_Take_Correct_Wind_02" ID="{2D168478-F26F-4536-B4CE-183974880130}" ShortID="547612009">
+												<AudioFileSource Name="SFX_HA_Ship_Sail_Take_Correct_Wind_02" ID="{2D168478-F26F-4536-B4CE-183974880130}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Sail_Take_Correct_Wind_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="547612009"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -6054,9 +6531,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Sail_Take_Correct_Wind_03" ID="{6EC606F8-2CC1-4FEC-9FA6-33C4E3BA2519}" ShortID="86339821">
+												<AudioFileSource Name="SFX_HA_Ship_Sail_Take_Correct_Wind_03" ID="{6EC606F8-2CC1-4FEC-9FA6-33C4E3BA2519}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Sail_Take_Correct_Wind_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="86339821"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -6076,9 +6556,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Sail_Take_Correct_Wind_04" ID="{6365FB33-335D-4DD5-8616-94FDD742B280}" ShortID="587676602">
+												<AudioFileSource Name="SFX_HA_Ship_Sail_Take_Correct_Wind_04" ID="{6365FB33-335D-4DD5-8616-94FDD742B280}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Sail_Take_Correct_Wind_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="587676602"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -6098,9 +6581,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Sail_Take_Correct_Wind_05" ID="{732459F8-ABA7-43F6-9F98-EE11C56A8E46}" ShortID="280336310">
+												<AudioFileSource Name="SFX_HA_Ship_Sail_Take_Correct_Wind_05" ID="{732459F8-ABA7-43F6-9F98-EE11C56A8E46}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Sail_Take_Correct_Wind_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="280336310"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -6211,9 +6697,12 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="SFX_HA_Ship_Sail_Flapping" ID="{0FE5431B-015F-4701-9D29-1B7AC6D4BF37}" ShortID="239922544">
+										<AudioFileSource Name="SFX_HA_Ship_Sail_Flapping" ID="{0FE5431B-015F-4701-9D29-1B7AC6D4BF37}">
 											<Language>SFX</Language>
 											<AudioFile>SFX_HA_Ship_Sail_Flapping.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="239922544"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -6252,9 +6741,12 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="SFX_HA_Ship_Sheet_Pulling" ID="{BD7C84E3-B88D-44C8-A3E9-3EAD5875B799}" ShortID="793335222">
+										<AudioFileSource Name="SFX_HA_Ship_Sheet_Pulling" ID="{BD7C84E3-B88D-44C8-A3E9-3EAD5875B799}">
 											<Language>SFX</Language>
 											<AudioFile>SFX_HA_Ship_Sheet_Pulling.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="793335222"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -6274,9 +6766,12 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="SFX_HA_Ship_Sheet_Releasing" ID="{B40C8101-DA85-4A1D-B7F1-6DB775CBBCB0}" ShortID="576026981">
+										<AudioFileSource Name="SFX_HA_Ship_Sheet_Releasing" ID="{B40C8101-DA85-4A1D-B7F1-6DB775CBBCB0}">
 											<Language>SFX</Language>
 											<AudioFile>SFX_HA_Ship_Sheet_Releasing.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="576026981"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -6309,9 +6804,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Sheet_Released_01" ID="{505E7157-2CBC-449E-A298-389927E7016F}" ShortID="841458271">
+												<AudioFileSource Name="SFX_HA_Ship_Sheet_Released_01" ID="{505E7157-2CBC-449E-A298-389927E7016F}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Sheet_Released_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="841458271"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -6331,9 +6829,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Sheet_Released_02" ID="{7822C796-8E84-4498-8E29-57BAB976CD76}" ShortID="139400207">
+												<AudioFileSource Name="SFX_HA_Ship_Sheet_Released_02" ID="{7822C796-8E84-4498-8E29-57BAB976CD76}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Sheet_Released_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="139400207"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -6353,9 +6854,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Sheet_Released_03" ID="{4EC7A537-BB68-4026-B694-CC28E5C58421}" ShortID="766167110">
+												<AudioFileSource Name="SFX_HA_Ship_Sheet_Released_03" ID="{4EC7A537-BB68-4026-B694-CC28E5C58421}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Sheet_Released_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="766167110"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -6382,9 +6886,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Sheet_Released_04" ID="{839787FA-E504-4A68-996F-1CB872E11E12}" ShortID="139112625">
+												<AudioFileSource Name="SFX_HA_Ship_Sheet_Released_04" ID="{839787FA-E504-4A68-996F-1CB872E11E12}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Sheet_Released_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="139112625"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -6419,9 +6926,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Sheet_Tightened_01" ID="{278173E6-970D-4F0C-902B-CF121DCAA2E9}" ShortID="374260000">
+												<AudioFileSource Name="SFX_HA_Ship_Sheet_Tightened_01" ID="{278173E6-970D-4F0C-902B-CF121DCAA2E9}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Sheet_Tightened_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="374260000"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -6441,9 +6951,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Sheet_Tightened_02" ID="{A5A8AF5B-2BDE-455B-9456-E358934981C2}" ShortID="925651725">
+												<AudioFileSource Name="SFX_HA_Ship_Sheet_Tightened_02" ID="{A5A8AF5B-2BDE-455B-9456-E358934981C2}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Sheet_Tightened_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="925651725"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -6463,9 +6976,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Sheet_Tightened_03" ID="{905AC2D6-4798-481B-B414-05438C94AB65}" ShortID="210185600">
+												<AudioFileSource Name="SFX_HA_Ship_Sheet_Tightened_03" ID="{905AC2D6-4798-481B-B414-05438C94AB65}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Sheet_Tightened_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="210185600"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -6485,9 +7001,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Sheet_Tightened_04" ID="{BE562CA1-AC57-4A40-85F8-98A7251448E1}" ShortID="203227503">
+												<AudioFileSource Name="SFX_HA_Ship_Sheet_Tightened_04" ID="{BE562CA1-AC57-4A40-85F8-98A7251448E1}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Sheet_Tightened_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="203227503"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -6528,14 +7047,17 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="SFX_HA_Ship_Tiller_Turning" ID="{8D1AE32F-5B7B-42AA-8726-2681E7228C35}" ShortID="998896544">
+										<AudioFileSource Name="SFX_HA_Ship_Tiller_Turning" ID="{8D1AE32F-5B7B-42AA-8726-2681E7228C35}">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="1.73426061295213E-02"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="2.32747598887268E-02"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0173426061295213"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0232747598887268"/>
 												<Property Name="TrimEnd" Type="Real64" Value="4.67616036184211"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>SFX_HA_Ship_Tiller_Turning.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="998896544"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -6580,9 +7102,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Tiller_Blocked_01" ID="{80F4AB58-3033-47BE-80DE-91586C41D03B}" ShortID="851495797">
+												<AudioFileSource Name="SFX_HA_Ship_Tiller_Blocked_01" ID="{80F4AB58-3033-47BE-80DE-91586C41D03B}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Tiller_Blocked_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="851495797"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -6609,9 +7134,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Tiller_Blocked_02" ID="{FD8F50C8-D224-4258-A0BF-7806D3C50C70}" ShortID="552046923">
+												<AudioFileSource Name="SFX_HA_Ship_Tiller_Blocked_02" ID="{FD8F50C8-D224-4258-A0BF-7806D3C50C70}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Tiller_Blocked_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="552046923"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -6631,9 +7159,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Tiller_Blocked_03" ID="{B5BD71B5-17F7-4323-82D7-2CEE268EBCF7}" ShortID="73585706">
+												<AudioFileSource Name="SFX_HA_Ship_Tiller_Blocked_03" ID="{B5BD71B5-17F7-4323-82D7-2CEE268EBCF7}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Tiller_Blocked_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="73585706"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -6653,9 +7184,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Tiller_Blocked_04" ID="{80CE5887-1860-46BF-BF23-3EA32386D92C}" ShortID="752596580">
+												<AudioFileSource Name="SFX_HA_Ship_Tiller_Blocked_04" ID="{80CE5887-1860-46BF-BF23-3EA32386D92C}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Tiller_Blocked_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="752596580"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -6714,9 +7248,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_collision_light_1" ID="{937E9F57-FC3B-4326-B553-F19D8042D27A}" ShortID="779810105">
+												<AudioFileSource Name="SFX_HA_Ship_collision_light_1" ID="{937E9F57-FC3B-4326-B553-F19D8042D27A}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_collision_light_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="779810105"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -6736,9 +7273,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_collision_light_2" ID="{4F8EC868-FE03-4B47-9575-CEB8B4F74C9E}" ShortID="520940297">
+												<AudioFileSource Name="SFX_HA_Ship_collision_light_2" ID="{4F8EC868-FE03-4B47-9575-CEB8B4F74C9E}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_collision_light_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="520940297"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -6758,9 +7298,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_collision_light_3" ID="{9A83E113-054F-4F46-91BF-88D499380509}" ShortID="987921627">
+												<AudioFileSource Name="SFX_HA_Ship_collision_light_3" ID="{9A83E113-054F-4F46-91BF-88D499380509}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_collision_light_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="987921627"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -6780,9 +7323,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_collision_light_4" ID="{AF4545CC-29B9-438B-83F6-321914C55536}" ShortID="300942898">
+												<AudioFileSource Name="SFX_HA_Ship_collision_light_4" ID="{AF4545CC-29B9-438B-83F6-321914C55536}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_collision_light_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="300942898"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -6817,9 +7363,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_collision_medium_1" ID="{FE93BD57-5723-478D-AB28-B9CBE93C2318}" ShortID="933461864">
+												<AudioFileSource Name="SFX_HA_Ship_collision_medium_1" ID="{FE93BD57-5723-478D-AB28-B9CBE93C2318}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_collision_medium_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="933461864"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -6839,9 +7388,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_collision_medium_2" ID="{EB8591C9-EAEC-4EF4-ABD2-7DE9B4839CAE}" ShortID="44806446">
+												<AudioFileSource Name="SFX_HA_Ship_collision_medium_2" ID="{EB8591C9-EAEC-4EF4-ABD2-7DE9B4839CAE}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_collision_medium_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="44806446"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -6861,9 +7413,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_collision_medium_3" ID="{60F31208-734C-4D05-BA3B-89510E5BF7E7}" ShortID="78463399">
+												<AudioFileSource Name="SFX_HA_Ship_collision_medium_3" ID="{60F31208-734C-4D05-BA3B-89510E5BF7E7}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_collision_medium_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="78463399"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -6883,9 +7438,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_collision_medium_4" ID="{44F40226-14F5-4DC8-BBE1-042B15EDB3FF}" ShortID="597751424">
+												<AudioFileSource Name="SFX_HA_Ship_collision_medium_4" ID="{44F40226-14F5-4DC8-BBE1-042B15EDB3FF}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_collision_medium_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="597751424"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -6920,9 +7478,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_collision_strong_1" ID="{98999753-85A6-4135-86C0-38B333770BD6}" ShortID="926651627">
+												<AudioFileSource Name="SFX_HA_Ship_collision_strong_1" ID="{98999753-85A6-4135-86C0-38B333770BD6}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_collision_strong_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="926651627"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -6942,9 +7503,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_collision_strong_2" ID="{0EE5ABCE-8205-49BD-A30E-3BEEE66B6022}" ShortID="521076200">
+												<AudioFileSource Name="SFX_HA_Ship_collision_strong_2" ID="{0EE5ABCE-8205-49BD-A30E-3BEEE66B6022}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_collision_strong_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="521076200"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -6964,9 +7528,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_collision_strong_3" ID="{D6279E76-608C-4A8D-9651-4D51AE7678D0}" ShortID="296483510">
+												<AudioFileSource Name="SFX_HA_Ship_collision_strong_3" ID="{D6279E76-608C-4A8D-9651-4D51AE7678D0}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_collision_strong_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="296483510"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -6986,9 +7553,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_collision_strong_4" ID="{0625F812-7129-43A0-865A-087E3DE736D4}" ShortID="548422164">
+												<AudioFileSource Name="SFX_HA_Ship_collision_strong_4" ID="{0625F812-7129-43A0-865A-087E3DE736D4}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_collision_strong_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="548422164"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -7055,9 +7625,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_SpeedWater_High" ID="{380367EB-6841-49AE-A828-D89AFED6537B}" ShortID="55582752">
+												<AudioFileSource Name="SFX_HA_Ship_SpeedWater_High" ID="{380367EB-6841-49AE-A828-D89AFED6537B}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_SpeedWater_High.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="55582752"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -7090,9 +7663,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_SpeedWater_Low" ID="{186B1A9F-87D7-454A-B90D-3508FAEC2692}" ShortID="447606056">
+												<AudioFileSource Name="SFX_HA_Ship_SpeedWater_Low" ID="{186B1A9F-87D7-454A-B90D-3508FAEC2692}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_SpeedWater_Low.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="447606056"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -7115,9 +7691,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_SpeedWater_Medium" ID="{4E02B2CF-FA04-4FF2-9D5B-036F050999B5}" ShortID="164557556">
+												<AudioFileSource Name="SFX_HA_Ship_SpeedWater_Medium" ID="{4E02B2CF-FA04-4FF2-9D5B-036F050999B5}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_SpeedWater_Medium.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="164557556"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -7348,9 +7927,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Fall_From_Wave_01" ID="{9344A7FC-EBC6-4E90-8B4A-35035E45A318}" ShortID="963880152">
+												<AudioFileSource Name="SFX_HA_Ship_Fall_From_Wave_01" ID="{9344A7FC-EBC6-4E90-8B4A-35035E45A318}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Fall_From_Wave_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="963880152"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -7370,9 +7952,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Fall_From_Wave_02" ID="{995C51DF-E6A7-436C-AC72-5792383F05A2}" ShortID="41256832">
+												<AudioFileSource Name="SFX_HA_Ship_Fall_From_Wave_02" ID="{995C51DF-E6A7-436C-AC72-5792383F05A2}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Fall_From_Wave_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="41256832"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -7407,9 +7992,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Wave_On_Hull_01" ID="{59BCEC9D-BB31-46C1-96B4-1583C510FDA7}" ShortID="122436575">
+												<AudioFileSource Name="SFX_HA_Ship_Wave_On_Hull_01" ID="{59BCEC9D-BB31-46C1-96B4-1583C510FDA7}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Wave_On_Hull_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="122436575"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -7429,9 +8017,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Wave_On_Hull_02" ID="{FC506267-F1C7-4F81-96E3-AC5720072472}" ShortID="298783663">
+												<AudioFileSource Name="SFX_HA_Ship_Wave_On_Hull_02" ID="{FC506267-F1C7-4F81-96E3-AC5720072472}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Wave_On_Hull_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="298783663"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -7451,9 +8042,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Wave_On_Hull_03" ID="{8FD47408-7536-4928-B1C6-627D1B41AAB8}" ShortID="329249998">
+												<AudioFileSource Name="SFX_HA_Ship_Wave_On_Hull_03" ID="{8FD47408-7536-4928-B1C6-627D1B41AAB8}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Wave_On_Hull_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="329249998"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -7473,9 +8067,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Wave_On_Hull_04" ID="{461A916C-A618-44CA-90E3-5AE671A32ACB}" ShortID="48587491">
+												<AudioFileSource Name="SFX_HA_Ship_Wave_On_Hull_04" ID="{461A916C-A618-44CA-90E3-5AE671A32ACB}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Wave_On_Hull_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="48587491"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -7495,9 +8092,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Wave_On_Hull_05" ID="{DFF5736D-8343-4B03-9A39-D3C4FA2381CA}" ShortID="140745851">
+												<AudioFileSource Name="SFX_HA_Ship_Wave_On_Hull_05" ID="{DFF5736D-8343-4B03-9A39-D3C4FA2381CA}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Wave_On_Hull_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="140745851"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -7517,9 +8117,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Wave_On_Hull_06" ID="{6BCC2340-271A-41C9-888D-B3F486B8ADEE}" ShortID="900476832">
+												<AudioFileSource Name="SFX_HA_Ship_Wave_On_Hull_06" ID="{6BCC2340-271A-41C9-888D-B3F486B8ADEE}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Wave_On_Hull_06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="900476832"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -7539,9 +8142,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Wave_On_Hull_07" ID="{11DD9C02-4207-460D-893B-760F006761AC}" ShortID="704861771">
+												<AudioFileSource Name="SFX_HA_Ship_Wave_On_Hull_07" ID="{11DD9C02-4207-460D-893B-760F006761AC}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Wave_On_Hull_07.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="704861771"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -7561,9 +8167,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Wave_On_Hull_08" ID="{37F2DCEC-CC4D-4C43-926D-FA43F13FC337}" ShortID="472077425">
+												<AudioFileSource Name="SFX_HA_Ship_Wave_On_Hull_08" ID="{37F2DCEC-CC4D-4C43-926D-FA43F13FC337}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Wave_On_Hull_08.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="472077425"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -7658,15 +8267,18 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_ship_damaged_high" ID="{D1D82373-EC1D-415C-87D3-5A5D33D4C014}" ShortID="760385121">
+												<AudioFileSource Name="SFX_HA_Ship_ship_damaged_high" ID="{D1D82373-EC1D-415C-87D3-5A5D33D4C014}">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="3.58183156303457E-02"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="3.58183156303458E-02"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0358183156303457"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0358183156303458"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.107454946891037"/>
 														<Property Name="TrimEnd" Type="Real64" Value="16.0107870867645"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_ship_damaged_high.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="760385121"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -7689,13 +8301,16 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_ship_damaged_medium" ID="{0297EA0A-19ED-4B0B-BB1E-44863B3E950C}" ShortID="108910760">
+												<AudioFileSource Name="SFX_HA_Ship_ship_damaged_medium" ID="{0297EA0A-19ED-4B0B-BB1E-44863B3E950C}">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="1.31176154672396E-02"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0131176154672396"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.013117615467241"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_ship_damaged_medium.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="108910760"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -7947,9 +8562,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_HA_Ship_rope_moving_1" ID="{02E9B8F0-A873-4233-A994-070704C98A5D}" ShortID="62885469">
+														<AudioFileSource Name="SFX_HA_Ship_rope_moving_1" ID="{02E9B8F0-A873-4233-A994-070704C98A5D}">
 															<Language>SFX</Language>
 															<AudioFile>SFX_HA_Ship_rope_moving_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="62885469"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -7969,9 +8587,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_HA_Ship_rope_moving_2" ID="{2F77CD2B-C45E-43E4-B14B-B5E5F38CC495}" ShortID="555462536">
+														<AudioFileSource Name="SFX_HA_Ship_rope_moving_2" ID="{2F77CD2B-C45E-43E4-B14B-B5E5F38CC495}">
 															<Language>SFX</Language>
 															<AudioFile>SFX_HA_Ship_rope_moving_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="555462536"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -7991,9 +8612,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_HA_Ship_rope_moving_3" ID="{3AE16F04-9BE8-47A0-AE38-A60F0859A60C}" ShortID="137731339">
+														<AudioFileSource Name="SFX_HA_Ship_rope_moving_3" ID="{3AE16F04-9BE8-47A0-AE38-A60F0859A60C}">
 															<Language>SFX</Language>
 															<AudioFile>SFX_HA_Ship_rope_moving_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="137731339"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -8013,9 +8637,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_HA_Ship_rope_moving_4" ID="{9827CD50-C90F-4D03-A773-220B94D4A225}" ShortID="928202562">
+														<AudioFileSource Name="SFX_HA_Ship_rope_moving_4" ID="{9827CD50-C90F-4D03-A773-220B94D4A225}">
 															<Language>SFX</Language>
 															<AudioFile>SFX_HA_Ship_rope_moving_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="928202562"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -8035,9 +8662,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_HA_Ship_rope_moving_5" ID="{8A958D6A-3285-4253-94E0-AC2AB5BA3E02}" ShortID="375303645">
+														<AudioFileSource Name="SFX_HA_Ship_rope_moving_5" ID="{8A958D6A-3285-4253-94E0-AC2AB5BA3E02}">
 															<Language>SFX</Language>
 															<AudioFile>SFX_HA_Ship_rope_moving_5.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="375303645"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -8128,9 +8758,12 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="SFX_HA_Ship_ship_damaged_high" ID="{50026455-C3DC-4BA1-8821-D497311822F8}" ShortID="592199408">
+										<AudioFileSource Name="SFX_HA_Ship_ship_damaged_high" ID="{50026455-C3DC-4BA1-8821-D497311822F8}">
 											<Language>SFX</Language>
 											<AudioFile>SFX_HA_Ship_ship_damaged_high.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="592199408"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -8175,9 +8808,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_beam_destroyed_1" ID="{67A06943-3B1C-41C0-A941-F455BEA9B37E}" ShortID="840028237">
+												<AudioFileSource Name="SFX_HA_Ship_beam_destroyed_1" ID="{67A06943-3B1C-41C0-A941-F455BEA9B37E}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_beam_destroyed_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="840028237"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -8197,9 +8833,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_beam_destroyed_2" ID="{4C901D1A-F503-4590-B020-98FFD40698D7}" ShortID="204709400">
+												<AudioFileSource Name="SFX_HA_Ship_beam_destroyed_2" ID="{4C901D1A-F503-4590-B020-98FFD40698D7}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_beam_destroyed_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="204709400"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -8219,9 +8858,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_beam_destroyed_3" ID="{BAD51ABD-D299-4EB3-BBD7-1908BC07AE6F}" ShortID="758455318">
+												<AudioFileSource Name="SFX_HA_Ship_beam_destroyed_3" ID="{BAD51ABD-D299-4EB3-BBD7-1908BC07AE6F}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_beam_destroyed_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="758455318"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -8241,9 +8883,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_beam_destroyed_4" ID="{2A6A15FC-DFDD-4513-8622-03A830790FCE}" ShortID="252621758">
+												<AudioFileSource Name="SFX_HA_Ship_beam_destroyed_4" ID="{2A6A15FC-DFDD-4513-8622-03A830790FCE}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_beam_destroyed_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="252621758"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -8263,9 +8908,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_beam_destroyed_5" ID="{BD4E3A7D-D855-4650-B91E-1A3F45123034}" ShortID="258809248">
+												<AudioFileSource Name="SFX_HA_Ship_beam_destroyed_5" ID="{BD4E3A7D-D855-4650-B91E-1A3F45123034}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_beam_destroyed_5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="258809248"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -8300,9 +8948,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Beam_in_water_1" ID="{E51D184D-8415-4581-B641-C6B8200DF297}" ShortID="3592345">
+												<AudioFileSource Name="SFX_HA_Ship_Beam_in_water_1" ID="{E51D184D-8415-4581-B641-C6B8200DF297}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Beam_in_water_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="3592345"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -8322,9 +8973,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Beam_in_water_2" ID="{5FD711C5-CBD7-469B-AB89-E63F91947D01}" ShortID="846479682">
+												<AudioFileSource Name="SFX_HA_Ship_Beam_in_water_2" ID="{5FD711C5-CBD7-469B-AB89-E63F91947D01}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Beam_in_water_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="846479682"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -8344,9 +8998,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Beam_in_water_3" ID="{80564310-8E7A-405B-B577-FCACACCF7B8A}" ShortID="81803181">
+												<AudioFileSource Name="SFX_HA_Ship_Beam_in_water_3" ID="{80564310-8E7A-405B-B577-FCACACCF7B8A}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Beam_in_water_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="81803181"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -8366,9 +9023,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Beam_in_water_4" ID="{C485CB00-AFAF-4D31-B8DD-82436555259A}" ShortID="26304214">
+												<AudioFileSource Name="SFX_HA_Ship_Beam_in_water_4" ID="{C485CB00-AFAF-4D31-B8DD-82436555259A}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Beam_in_water_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="26304214"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -8388,9 +9048,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Beam_in_water_5" ID="{469A6D76-CD9C-4BF9-A04A-814CE8F901FD}" ShortID="191650642">
+												<AudioFileSource Name="SFX_HA_Ship_Beam_in_water_5" ID="{469A6D76-CD9C-4BF9-A04A-814CE8F901FD}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_Beam_in_water_5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="191650642"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -8430,15 +9093,18 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="SFX_HA_Ship_leaving_hold" ID="{F00B20B3-8E47-4DEC-85A7-C62A7DAA6160}" ShortID="48993912">
+										<AudioFileSource Name="SFX_HA_Ship_leaving_hold" ID="{F00B20B3-8E47-4DEC-85A7-C62A7DAA6160}">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="2.08333333333333E-02"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0208333333333333"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.427083333333333"/>
-												<Property Name="TrimBegin" Type="Real64" Value="2.08333333333333E-02"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0208333333333333"/>
 												<Property Name="TrimEnd" Type="Real64" Value="2.78125"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>SFX_HA_Ship_leaving_hold.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="48993912"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -8489,14 +9155,17 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_leaving_hold" ID="{23540DA5-AC8D-4823-B767-4E524599C7D8}" ShortID="627644474">
+												<AudioFileSource Name="SFX_HA_Ship_leaving_hold" ID="{23540DA5-AC8D-4823-B767-4E524599C7D8}">
 													<PropertyList>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.203125"/>
-														<Property Name="TrimBegin" Type="Real64" Value="2.08333333333333E-02"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0208333333333333"/>
 														<Property Name="TrimEnd" Type="Real64" Value="1.16145833333333"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_leaving_hold.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="627644474"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -8531,7 +9200,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_entering_hold" ID="{18198D02-D43D-4891-8FDC-4757FFC4F056}" ShortID="1063319655">
+												<AudioFileSource Name="SFX_HA_Ship_entering_hold" ID="{18198D02-D43D-4891-8FDC-4757FFC4F056}">
 													<PropertyList>
 														<Property Name="FadeInDuration" Type="Real64" Value="0.046875"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.130208333333333"/>
@@ -8540,6 +9209,9 @@
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Ship_entering_hold.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1063319655"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>

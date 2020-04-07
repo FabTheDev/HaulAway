@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" SchemaVersion="89">
+<WwiseDocument Type="WorkUnit" ID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" SchemaVersion="97">
 	<InteractiveMusic>
 		<WorkUnit Name="Music" ID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" PersistMode="Standalone">
 			<ChildrenList>
@@ -57,9 +57,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="theme_going_to_sea_1" ID="{D1A56FF9-833B-46F5-A2A8-FE098BC2C7AE}" ShortID="98723454">
+												<AudioFileSource Name="theme_going_to_sea_1" ID="{D1A56FF9-833B-46F5-A2A8-FE098BC2C7AE}">
 													<Language>SFX</Language>
 													<AudioFile>theme_going_to_sea_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="98723454"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
@@ -174,9 +177,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="theme_going_to_sea_2" ID="{9D6656C0-125B-4FD6-B207-91E6EA5342D8}" ShortID="65060138">
+												<AudioFileSource Name="theme_going_to_sea_2" ID="{9D6656C0-125B-4FD6-B207-91E6EA5342D8}">
 													<Language>SFX</Language>
 													<AudioFile>theme_going_to_sea_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="65060138"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
@@ -232,9 +238,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="theme_going_to_sea_3" ID="{37BE0952-CF03-4574-8774-88DA559A46F5}" ShortID="19966419">
+												<AudioFileSource Name="theme_going_to_sea_3" ID="{37BE0952-CF03-4574-8774-88DA559A46F5}">
 													<Language>SFX</Language>
 													<AudioFile>theme_going_to_sea_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="19966419"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
@@ -290,9 +299,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="theme_going_to_sea_4" ID="{73DA78D4-2BEA-4367-A26C-3B5957961766}" ShortID="350143537">
+												<AudioFileSource Name="theme_going_to_sea_4" ID="{73DA78D4-2BEA-4367-A26C-3B5957961766}">
 													<Language>SFX</Language>
 													<AudioFile>theme_going_to_sea_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="350143537"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
@@ -437,9 +449,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="theme_main_1" ID="{49668FFD-2869-4475-B027-2F7B66AF7507}" ShortID="20160249">
+												<AudioFileSource Name="theme_main_1" ID="{49668FFD-2869-4475-B027-2F7B66AF7507}">
 													<Language>SFX</Language>
 													<AudioFile>theme_main_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="20160249"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
@@ -555,9 +570,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="theme_main_2" ID="{17A928BE-99A1-4800-8741-B9D3B5C65DD1}" ShortID="112134903">
+												<AudioFileSource Name="theme_main_2" ID="{17A928BE-99A1-4800-8741-B9D3B5C65DD1}">
 													<Language>SFX</Language>
 													<AudioFile>theme_main_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="112134903"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
@@ -673,9 +691,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="theme_main_3" ID="{0FADC4B3-069C-449B-9941-4EFC1942D040}" ShortID="1505233">
+												<AudioFileSource Name="theme_main_3" ID="{0FADC4B3-069C-449B-9941-4EFC1942D040}">
 													<Language>SFX</Language>
 													<AudioFile>theme_main_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1505233"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
@@ -884,12 +905,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="theme_sailing_4" ID="{678BD7D6-AB4C-416E-BF7D-17717D97F222}" ShortID="140094774">
+														<AudioFileSource Name="theme_sailing_4" ID="{678BD7D6-AB4C-416E-BF7D-17717D97F222}">
 															<Language>SFX</Language>
 															<AudioFile>theme_sailing_4.wav</AudioFile>
-															<ConvertedFileIDList>
-																<File ID="1021127060"/>
-															</ConvertedFileIDList>
+															<MediaIDList>
+																<MediaID ID="1021127060"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<TransitionList>
@@ -1010,12 +1031,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="theme_sailing_2" ID="{4BDC3BC7-100A-4964-9110-C63E732B7BBD}" ShortID="256121833">
+														<AudioFileSource Name="theme_sailing_2" ID="{4BDC3BC7-100A-4964-9110-C63E732B7BBD}">
 															<Language>SFX</Language>
 															<AudioFile>theme_sailing_2.wav</AudioFile>
-															<ConvertedFileIDList>
-																<File ID="395565942"/>
-															</ConvertedFileIDList>
+															<MediaIDList>
+																<MediaID ID="395565942"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<TransitionList>
@@ -1131,12 +1152,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="theme_sailing_3" ID="{3AE7EECC-EAD1-4033-8E1B-13A7D63BB616}" ShortID="601342803">
+														<AudioFileSource Name="theme_sailing_3" ID="{3AE7EECC-EAD1-4033-8E1B-13A7D63BB616}">
 															<Language>SFX</Language>
 															<AudioFile>theme_sailing_3.wav</AudioFile>
-															<ConvertedFileIDList>
-																<File ID="93817900"/>
-															</ConvertedFileIDList>
+															<MediaIDList>
+																<MediaID ID="93817900"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<TransitionList>
@@ -1251,12 +1272,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="theme_sailing_1" ID="{45B06AA1-6ED7-430F-AF4B-05AC9DD5D264}" ShortID="999372628">
+														<AudioFileSource Name="theme_sailing_1" ID="{45B06AA1-6ED7-430F-AF4B-05AC9DD5D264}">
 															<Language>SFX</Language>
 															<AudioFile>theme_sailing_1.wav</AudioFile>
-															<ConvertedFileIDList>
-																<File ID="483369898"/>
-															</ConvertedFileIDList>
+															<MediaIDList>
+																<MediaID ID="483369898"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<TransitionList>
@@ -1456,9 +1477,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="theme_sailing_singing_1" ID="{A7DAD525-E0C7-4A23-A22A-6AE08EBB5B0A}" ShortID="896538631">
+																<AudioFileSource Name="theme_sailing_singing_1" ID="{A7DAD525-E0C7-4A23-A22A-6AE08EBB5B0A}">
 																	<Language>SFX</Language>
 																	<AudioFile>theme_sailing_singing_1.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="896538631"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<TransitionList>
@@ -1573,9 +1597,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="theme_sailing_singing_2" ID="{8AA298E6-15CA-47DA-B19C-FF32EEF0106D}" ShortID="399430967">
+																<AudioFileSource Name="theme_sailing_singing_2" ID="{8AA298E6-15CA-47DA-B19C-FF32EEF0106D}">
 																	<Language>SFX</Language>
 																	<AudioFile>theme_sailing_singing_2.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="399430967"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<TransitionList>
@@ -1690,9 +1717,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="theme_sailing_singing_3" ID="{BA17D8E7-67A5-43DB-80C1-6761A21BC18C}" ShortID="518980243">
+																<AudioFileSource Name="theme_sailing_singing_3" ID="{BA17D8E7-67A5-43DB-80C1-6761A21BC18C}">
 																	<Language>SFX</Language>
 																	<AudioFile>theme_sailing_singing_3.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="518980243"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<TransitionList>
@@ -1808,9 +1838,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="theme_sailing_singing_4" ID="{45CB4D38-1C0B-4202-A786-C7756AAE848D}" ShortID="990444181">
+																<AudioFileSource Name="theme_sailing_singing_4" ID="{45CB4D38-1C0B-4202-A786-C7756AAE848D}">
 																	<Language>SFX</Language>
 																	<AudioFile>theme_sailing_singing_4.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="990444181"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<TransitionList>
@@ -1926,9 +1959,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="theme_sailing_singing_5" ID="{6E12915B-CE34-4C8C-8470-DD75565D775A}" ShortID="44708438">
+																<AudioFileSource Name="theme_sailing_singing_5" ID="{6E12915B-CE34-4C8C-8470-DD75565D775A}">
 																	<Language>SFX</Language>
 																	<AudioFile>theme_sailing_singing_5.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="44708438"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<TransitionList>
@@ -1985,12 +2021,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="theme_sailing_3" ID="{0ED85B48-D1F2-44FE-B106-DC3176E57261}" ShortID="603556359">
+																<AudioFileSource Name="theme_sailing_3" ID="{0ED85B48-D1F2-44FE-B106-DC3176E57261}">
 																	<Language>SFX</Language>
 																	<AudioFile>theme_sailing_3.wav</AudioFile>
-																	<ConvertedFileIDList>
-																		<File ID="93817900"/>
-																	</ConvertedFileIDList>
+																	<MediaIDList>
+																		<MediaID ID="93817900"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<TransitionList>
@@ -2110,12 +2146,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="theme_sailing_2" ID="{E0490E70-377D-40F1-9547-F779748624DF}" ShortID="318629690">
+																<AudioFileSource Name="theme_sailing_2" ID="{E0490E70-377D-40F1-9547-F779748624DF}">
 																	<Language>SFX</Language>
 																	<AudioFile>theme_sailing_2.wav</AudioFile>
-																	<ConvertedFileIDList>
-																		<File ID="395565942"/>
-																	</ConvertedFileIDList>
+																	<MediaIDList>
+																		<MediaID ID="395565942"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<TransitionList>
@@ -2236,12 +2272,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="theme_sailing_4" ID="{99E9E643-6D48-4362-A341-00A5390E7F7D}" ShortID="250996535">
+																<AudioFileSource Name="theme_sailing_4" ID="{99E9E643-6D48-4362-A341-00A5390E7F7D}">
 																	<Language>SFX</Language>
 																	<AudioFile>theme_sailing_4.wav</AudioFile>
-																	<ConvertedFileIDList>
-																		<File ID="1021127060"/>
-																	</ConvertedFileIDList>
+																	<MediaIDList>
+																		<MediaID ID="1021127060"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<TransitionList>
@@ -2357,12 +2393,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="theme_sailing_1" ID="{50D6B8EE-E9F0-4E27-9811-259FB0BC9101}" ShortID="697455408">
+																<AudioFileSource Name="theme_sailing_1" ID="{50D6B8EE-E9F0-4E27-9811-259FB0BC9101}">
 																	<Language>SFX</Language>
 																	<AudioFile>theme_sailing_1.wav</AudioFile>
-																	<ConvertedFileIDList>
-																		<File ID="483369898"/>
-																	</ConvertedFileIDList>
+																	<MediaIDList>
+																		<MediaID ID="483369898"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<TransitionList>
@@ -2602,12 +2638,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="theme_sailing_4" ID="{0F44231D-76D0-4AB2-A922-7ABA11CFB165}" ShortID="579142806">
+																<AudioFileSource Name="theme_sailing_4" ID="{0F44231D-76D0-4AB2-A922-7ABA11CFB165}">
 																	<Language>SFX</Language>
 																	<AudioFile>theme_sailing_4.wav</AudioFile>
-																	<ConvertedFileIDList>
-																		<File ID="1021127060"/>
-																	</ConvertedFileIDList>
+																	<MediaIDList>
+																		<MediaID ID="1021127060"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<TransitionList>
@@ -2728,12 +2764,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="theme_sailing_2" ID="{128E4F2A-EF0D-459A-AA52-F10784FD33A6}" ShortID="591597189">
+																<AudioFileSource Name="theme_sailing_2" ID="{128E4F2A-EF0D-459A-AA52-F10784FD33A6}">
 																	<Language>SFX</Language>
 																	<AudioFile>theme_sailing_2.wav</AudioFile>
-																	<ConvertedFileIDList>
-																		<File ID="395565942"/>
-																	</ConvertedFileIDList>
+																	<MediaIDList>
+																		<MediaID ID="395565942"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<TransitionList>
@@ -2849,12 +2885,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="theme_sailing_3" ID="{E1B60960-A3D4-4E46-9142-6B5DC90CE3DE}" ShortID="351636562">
+																<AudioFileSource Name="theme_sailing_3" ID="{E1B60960-A3D4-4E46-9142-6B5DC90CE3DE}">
 																	<Language>SFX</Language>
 																	<AudioFile>theme_sailing_3.wav</AudioFile>
-																	<ConvertedFileIDList>
-																		<File ID="93817900"/>
-																	</ConvertedFileIDList>
+																	<MediaIDList>
+																		<MediaID ID="93817900"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<TransitionList>
@@ -2969,12 +3005,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="theme_sailing_1" ID="{231ADC7E-D52C-48AD-BB0E-EF0BBD66BBC4}" ShortID="679519284">
+																<AudioFileSource Name="theme_sailing_1" ID="{231ADC7E-D52C-48AD-BB0E-EF0BBD66BBC4}">
 																	<Language>SFX</Language>
 																	<AudioFile>theme_sailing_1.wav</AudioFile>
-																	<ConvertedFileIDList>
-																		<File ID="483369898"/>
-																	</ConvertedFileIDList>
+																	<MediaIDList>
+																		<MediaID ID="483369898"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<TransitionList>
@@ -3296,9 +3332,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="theme_storm_1" ID="{1895EB4C-B437-49D1-B291-DE2428BBDE38}" ShortID="632281725">
+														<AudioFileSource Name="theme_storm_1" ID="{1895EB4C-B437-49D1-B291-DE2428BBDE38}">
 															<Language>SFX</Language>
 															<AudioFile>theme_storm_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="632281725"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<TransitionList>
@@ -3416,9 +3455,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="theme_storm_2" ID="{1654DC51-7AF8-44C2-8EFA-88B9C61DEF26}" ShortID="415557483">
+														<AudioFileSource Name="theme_storm_2" ID="{1654DC51-7AF8-44C2-8EFA-88B9C61DEF26}">
 															<Language>SFX</Language>
 															<AudioFile>theme_storm_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="415557483"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<TransitionList>
@@ -3534,9 +3576,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="theme_storm_3" ID="{D3C49D43-A51B-46EE-9AC5-8FE913EA768D}" ShortID="890530192">
+														<AudioFileSource Name="theme_storm_3" ID="{D3C49D43-A51B-46EE-9AC5-8FE913EA768D}">
 															<Language>SFX</Language>
 															<AudioFile>theme_storm_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="890530192"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<TransitionList>
@@ -3652,9 +3697,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="theme_storm_4" ID="{D79A5DD3-D628-43F1-ADFF-852365C595A3}" ShortID="304684611">
+														<AudioFileSource Name="theme_storm_4" ID="{D79A5DD3-D628-43F1-ADFF-852365C595A3}">
 															<Language>SFX</Language>
 															<AudioFile>theme_storm_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="304684611"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<TransitionList>
@@ -3770,12 +3818,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="theme_storm_1" ID="{945191AB-2B40-4585-AEDD-0EE61EB9ADF8}" ShortID="799931242">
+														<AudioFileSource Name="theme_storm_1" ID="{945191AB-2B40-4585-AEDD-0EE61EB9ADF8}">
 															<Language>SFX</Language>
 															<AudioFile>theme_storm_1.wav</AudioFile>
-															<ConvertedFileIDList>
-																<File ID="632281725"/>
-															</ConvertedFileIDList>
+															<MediaIDList>
+																<MediaID ID="632281725"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<TransitionList>
@@ -3897,12 +3945,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="theme_storm_4" ID="{1B218B2A-7D00-40A1-AAB8-40D5C57D0EAC}" ShortID="798719049">
+														<AudioFileSource Name="theme_storm_4" ID="{1B218B2A-7D00-40A1-AAB8-40D5C57D0EAC}">
 															<Language>SFX</Language>
 															<AudioFile>theme_storm_4.wav</AudioFile>
-															<ConvertedFileIDList>
-																<File ID="304684611"/>
-															</ConvertedFileIDList>
+															<MediaIDList>
+																<MediaID ID="304684611"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<TransitionList>
@@ -4020,12 +4068,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="theme_storm_2" ID="{4C71ADCD-69D9-4144-BB84-403602256269}" ShortID="923311038">
+														<AudioFileSource Name="theme_storm_2" ID="{4C71ADCD-69D9-4144-BB84-403602256269}">
 															<Language>SFX</Language>
 															<AudioFile>theme_storm_2.wav</AudioFile>
-															<ConvertedFileIDList>
-																<File ID="415557483"/>
-															</ConvertedFileIDList>
+															<MediaIDList>
+																<MediaID ID="415557483"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<TransitionList>
@@ -4143,12 +4191,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="theme_storm_3" ID="{B3F0E871-8316-41B8-8D96-BF0A62CE9581}" ShortID="267394813">
+														<AudioFileSource Name="theme_storm_3" ID="{B3F0E871-8316-41B8-8D96-BF0A62CE9581}">
 															<Language>SFX</Language>
 															<AudioFile>theme_storm_3.wav</AudioFile>
-															<ConvertedFileIDList>
-																<File ID="890530192"/>
-															</ConvertedFileIDList>
+															<MediaIDList>
+																<MediaID ID="890530192"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<TransitionList>
@@ -4266,12 +4314,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="theme_storm_1" ID="{6DED7E27-7C71-4721-A9EE-E53C8C6E29C2}" ShortID="1068294544">
+														<AudioFileSource Name="theme_storm_1" ID="{6DED7E27-7C71-4721-A9EE-E53C8C6E29C2}">
 															<Language>SFX</Language>
 															<AudioFile>theme_storm_1.wav</AudioFile>
-															<ConvertedFileIDList>
-																<File ID="632281725"/>
-															</ConvertedFileIDList>
+															<MediaIDList>
+																<MediaID ID="632281725"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<TransitionList>
@@ -4507,12 +4555,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="theme_storm_approaching_edited" ID="{ADA44FBB-E4FE-43D8-94EF-24A19C4B2389}" ShortID="838386738">
+														<AudioFileSource Name="theme_storm_approaching_edited" ID="{ADA44FBB-E4FE-43D8-94EF-24A19C4B2389}">
 															<Language>SFX</Language>
 															<AudioFile>theme_storm_approaching_edited.wav</AudioFile>
-															<ConvertedFileIDList>
-																<File ID="1008805516"/>
-															</ConvertedFileIDList>
+															<MediaIDList>
+																<MediaID ID="1008805516"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<TransitionList>
@@ -4669,9 +4717,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="theme_storm_death" ID="{A3EE0B92-9198-4321-8E63-A7253AC0B9A7}" ShortID="217597194">
+														<AudioFileSource Name="theme_storm_death" ID="{A3EE0B92-9198-4321-8E63-A7253AC0B9A7}">
 															<Language>SFX</Language>
 															<AudioFile>theme_storm_death.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="217597194"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<TransitionList>
@@ -4931,9 +4982,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="theme_icebergs" ID="{616D5238-C599-4B25-B45F-49F2161447F1}" ShortID="930855079">
+														<AudioFileSource Name="theme_icebergs" ID="{616D5238-C599-4B25-B45F-49F2161447F1}">
 															<Language>SFX</Language>
 															<AudioFile>theme_icebergs.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="930855079"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<TransitionList>
@@ -5020,9 +5074,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="theme_icebergs_death" ID="{9E6D8EC0-5148-489A-8204-40CCCB2C2988}" ShortID="576222389">
+												<AudioFileSource Name="theme_icebergs_death" ID="{9E6D8EC0-5148-489A-8204-40CCCB2C2988}">
 													<Language>SFX</Language>
 													<AudioFile>theme_icebergs_death.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="576222389"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
@@ -5099,9 +5156,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="theme_icebergs_singing" ID="{CE0243C2-C246-4BC7-9CE3-43C27E6F629E}" ShortID="791292477">
+																<AudioFileSource Name="theme_icebergs_singing" ID="{CE0243C2-C246-4BC7-9CE3-43C27E6F629E}">
 																	<Language>SFX</Language>
 																	<AudioFile>theme_icebergs_singing.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="791292477"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<TransitionList>
@@ -5198,12 +5258,12 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="theme_icebergs" ID="{2A32E8C3-F9B1-43A4-AE6B-EBDBAF00710C}" ShortID="934648926">
+																<AudioFileSource Name="theme_icebergs" ID="{2A32E8C3-F9B1-43A4-AE6B-EBDBAF00710C}">
 																	<Language>SFX</Language>
 																	<AudioFile>theme_icebergs.wav</AudioFile>
-																	<ConvertedFileIDList>
-																		<File ID="930855079"/>
-																	</ConvertedFileIDList>
+																	<MediaIDList>
+																		<MediaID ID="930855079"/>
+																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<TransitionList>
@@ -5529,9 +5589,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="theme_exploring_island_1" ID="{8850FD05-9DA9-48C5-B2D3-75977954E96A}" ShortID="955165182">
+												<AudioFileSource Name="theme_exploring_island_1" ID="{8850FD05-9DA9-48C5-B2D3-75977954E96A}">
 													<Language>SFX</Language>
 													<AudioFile>theme_exploring_island_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="955165182"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
@@ -5589,9 +5652,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="theme_exploring_island_2" ID="{D528DEB8-46E8-442E-9180-772E41A320DE}" ShortID="257031866">
+												<AudioFileSource Name="theme_exploring_island_2" ID="{D528DEB8-46E8-442E-9180-772E41A320DE}">
 													<Language>SFX</Language>
 													<AudioFile>theme_exploring_island_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="257031866"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
@@ -5649,9 +5715,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="theme_exploring_island_3" ID="{9B020B62-D531-48EB-BE4E-59D23B6E3E34}" ShortID="837322129">
+												<AudioFileSource Name="theme_exploring_island_3" ID="{9B020B62-D531-48EB-BE4E-59D23B6E3E34}">
 													<Language>SFX</Language>
 													<AudioFile>theme_exploring_island_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="837322129"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
@@ -5709,9 +5778,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="theme_exploring_island_4" ID="{109A650F-F0F1-42F5-9DAA-025850B7A3E4}" ShortID="251101924">
+												<AudioFileSource Name="theme_exploring_island_4" ID="{109A650F-F0F1-42F5-9DAA-025850B7A3E4}">
 													<Language>SFX</Language>
 													<AudioFile>theme_exploring_island_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="251101924"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
@@ -5769,9 +5841,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="theme_exploring_island_5" ID="{4338CDA4-D855-4FAC-B2B9-71DABD4FF25B}" ShortID="73020892">
+												<AudioFileSource Name="theme_exploring_island_5" ID="{4338CDA4-D855-4FAC-B2B9-71DABD4FF25B}">
 													<Language>SFX</Language>
 													<AudioFile>theme_exploring_island_5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="73020892"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
@@ -5892,9 +5967,12 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="jingle_standby" ID="{F9C81AD6-5D8D-48DF-827D-EEBF4637A34C}" ShortID="8945167">
+										<AudioFileSource Name="jingle_standby" ID="{F9C81AD6-5D8D-48DF-827D-EEBF4637A34C}">
 											<Language>SFX</Language>
 											<AudioFile>jingle_standby.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="8945167"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<TransitionList>
@@ -5958,9 +6036,12 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="theme_new_island" ID="{C4B70FCB-F8D1-469E-A13F-DD85B006B523}" ShortID="883134144">
+										<AudioFileSource Name="theme_new_island" ID="{C4B70FCB-F8D1-469E-A13F-DD85B006B523}">
 											<Language>SFX</Language>
 											<AudioFile>theme_new_island.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="883134144"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<TransitionList>
@@ -6033,9 +6114,12 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="jingle_fire_lit" ID="{2F331067-284B-4029-889B-B5BB54322770}" ShortID="621855743">
+										<AudioFileSource Name="jingle_fire_lit" ID="{2F331067-284B-4029-889B-B5BB54322770}">
 											<Language>SFX</Language>
 											<AudioFile>jingle_fire_lit.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="621855743"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<TransitionList>
@@ -6184,9 +6268,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="jingle_random_6" ID="{C3DA4CA9-979C-40E4-80AB-0CAC76BBB5C5}" ShortID="23178484">
+												<AudioFileSource Name="jingle_random_6" ID="{C3DA4CA9-979C-40E4-80AB-0CAC76BBB5C5}">
 													<Language>SFX</Language>
 													<AudioFile>jingle_random_6.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="23178484"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
@@ -6243,9 +6330,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="jingle_random_7" ID="{EBDE4BE6-8989-4C8F-A97A-7CAB147260A0}" ShortID="65912671">
+												<AudioFileSource Name="jingle_random_7" ID="{EBDE4BE6-8989-4C8F-A97A-7CAB147260A0}">
 													<Language>SFX</Language>
 													<AudioFile>jingle_random_7.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="65912671"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
@@ -6302,9 +6392,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="jingle_random_4" ID="{106E0246-6856-4542-A76D-25341B98FD8E}" ShortID="1031661151">
+												<AudioFileSource Name="jingle_random_4" ID="{106E0246-6856-4542-A76D-25341B98FD8E}">
 													<Language>SFX</Language>
 													<AudioFile>jingle_random_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1031661151"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
@@ -6361,9 +6454,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="jingle_random_1" ID="{9F6872FB-D498-4AEB-8E04-141BC4D8E8A1}" ShortID="787622928">
+												<AudioFileSource Name="jingle_random_1" ID="{9F6872FB-D498-4AEB-8E04-141BC4D8E8A1}">
 													<Language>SFX</Language>
 													<AudioFile>jingle_random_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="787622928"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
@@ -6420,9 +6516,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="jingle_random_2" ID="{ADEADFEF-BC2B-4E19-B94F-F5CCCF4A9B63}" ShortID="1046666640">
+												<AudioFileSource Name="jingle_random_2" ID="{ADEADFEF-BC2B-4E19-B94F-F5CCCF4A9B63}">
 													<Language>SFX</Language>
 													<AudioFile>jingle_random_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1046666640"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
@@ -6479,9 +6578,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="jingle_random_3" ID="{7014E261-928F-4799-910A-CB9CF5A0775A}" ShortID="696921957">
+												<AudioFileSource Name="jingle_random_3" ID="{7014E261-928F-4799-910A-CB9CF5A0775A}">
 													<Language>SFX</Language>
 													<AudioFile>jingle_random_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="696921957"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
@@ -6538,9 +6640,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="jingle_random_5" ID="{B8BDA61A-221F-45C2-A356-0F9A8967627D}" ShortID="643316962">
+												<AudioFileSource Name="jingle_random_5" ID="{B8BDA61A-221F-45C2-A356-0F9A8967627D}">
 													<Language>SFX</Language>
 													<AudioFile>jingle_random_5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="643316962"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
@@ -6701,7 +6806,6 @@
 										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
 										<Property Name="SourceContextType" Type="int16" Value="1"/>
 									</PropertyList>
-									<ReferenceList/>
 									<TransitionInfo/>
 								</MusicTransition>
 								<MusicTransition Name="Transition" ID="{AEAF77AB-13B1-4CE8-A40B-18DBF86D9076}">
@@ -6711,7 +6815,6 @@
 										<Property Name="ExitSourceAt" Type="int16" Value="2"/>
 										<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
 									</PropertyList>
-									<ReferenceList/>
 									<TransitionInfo>
 										<SourceFadeOut>
 											<MusicFade Name="Source Fade-out" ID="{FCD4E038-CE7A-4066-88D2-4E8FDED06E20}">

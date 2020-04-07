@@ -15,20 +15,20 @@ State Group	ID	Name			Wwise Object Path	Notes
 	3992907366	Mus_CharIsSinging_STATE			\Default Work Unit\Music\Mus_CharIsSinging_STATE	
 
 State	ID	Name	State Group			Notes
-	0	None	Mus_Storm_Intensity_STATE			
 	449340473	Approaching_Storm	Mus_Storm_Intensity_STATE			
+	748895195	None	Mus_Storm_Intensity_STATE			
 	1330195145	Here_Storm	Mus_Storm_Intensity_STATE			
 	1772670678	No_Storm	Mus_Storm_Intensity_STATE			
-	0	None	Ship_IsThereAPulley			
 	164038870	Pulley	Ship_IsThereAPulley			
+	748895195	None	Ship_IsThereAPulley			
 	794970764	No_Pulley	Ship_IsThereAPulley			
-	0	None	Mus_IsInHold_STATE			
+	748895195	None	Mus_IsInHold_STATE			
 	3988698113	Out_Hold	Mus_IsInHold_STATE			
 	4114861348	In_Hold	Mus_IsInHold_STATE			
-	0	None	Mus_Selector_STATE			
 	47571379	Jingle_Exploring	Mus_Selector_STATE			
 	89478398	Jingle_NewIsland	Mus_Selector_STATE			
 	245705138	No_Theme	Mus_Selector_STATE			
+	748895195	None	Mus_Selector_STATE			
 	1068345713	Icebergs_Theme	Mus_Selector_STATE			
 	1745846020	Jingle_Standby	Mus_Selector_STATE			
 	2557777556	Main_Theme	Mus_Selector_STATE			
@@ -36,13 +36,13 @@ State	ID	Name	State Group			Notes
 	3504910062	Storm_Theme	Mus_Selector_STATE			
 	3652298044	Sailing_Theme	Mus_Selector_STATE			
 	3941864196	Jingle_FireLit	Mus_Selector_STATE			
-	0	None	Mus_ShipIsSinking_STATE			
+	748895195	None	Mus_ShipIsSinking_STATE			
 	2571399905	Yes_Ship_Sinking	Mus_ShipIsSinking_STATE			
 	4135774875	No_Ship_Sinking	Mus_ShipIsSinking_STATE			
-	0	None	Char_Walk_Run			
 	340271938	Walking	Char_Walk_Run			
+	748895195	None	Char_Walk_Run			
 	3863236874	Running	Char_Walk_Run			
-	0	None	Mus_CharIsSinging_STATE			
+	748895195	None	Mus_CharIsSinging_STATE			
 	2068055449	No_Char_Singing	Mus_CharIsSinging_STATE			
 	2215819083	Yes_Char_Singing	Mus_CharIsSinging_STATE			
 
