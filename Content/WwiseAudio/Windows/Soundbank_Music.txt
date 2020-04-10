@@ -1,22 +1,15 @@
 Event	ID	Name			Wwise Object Path	Notes
-	2007564	E_Mus_Set_Ship_Sinking_NO			\MUSIC\States\E_Mus_Set_Ship_Sinking_NO	
 	208377844	E_Mus_Initiate_Music			\MUSIC\Global\E_Mus_Initiate_Music	
-	574194178	E_Mus_Set_Storm_Here			\MUSIC\States\E_Mus_Set_Storm_Here	
 	998551706	E_Mus_Set_Going_To_Sea_Theme			\MUSIC\Themes\E_Mus_Set_Going_To_Sea_Theme	
 	1014433881	E_Mus_Set_Sailing_Theme			\MUSIC\Themes\E_Mus_Set_Sailing_Theme	
 	1149952562	E_Mus_Set_Exploring_Jingle			\MUSIC\Jingles\E_Mus_Set_Exploring_Jingle	
-	1317201836	E_Mus_Set_Char_Singing_YES			\MUSIC\States\E_Mus_Set_Char_Singing_YES	
-	1444871718	E_Mus_Set_Ship_Sinking_YES			\MUSIC\States\E_Mus_Set_Ship_Sinking_YES	
 	1872721172	E_Mus_Set_New_Island_Jingle			\MUSIC\Jingles\E_Mus_Set_New_Island_Jingle	
-	2261095996	E_Mus_Set_Storm_Appoaching			\MUSIC\States\E_Mus_Set_Storm_Appoaching	
 	2278932593	E_Mus_Pause_Music			\MUSIC\Global\E_Mus_Pause_Music	
 	2690400740	E_Mus_ImmediateStop_Music			\MUSIC\Global\E_Mus_ImmediateStop_Music	
 	2897087438	E_Mus_Set_Icebergs_Theme			\MUSIC\Themes\E_Mus_Set_Icebergs_Theme	
 	2901789171	E_Mus_Set_Standby_Jingle			\MUSIC\Jingles\E_Mus_Set_Standby_Jingle	
-	3014714910	E_Mus_Set_Storm_None			\MUSIC\States\E_Mus_Set_Storm_None	
 	3364487932	E_Mus_Set_Fire_Lit_Jingle			\MUSIC\Jingles\E_Mus_Set_Fire_Lit_Jingle	
 	3396100293	E_Mus_Set_No_Theme			\MUSIC\Themes\E_Mus_Set_No_Theme	
-	3703424250	E_Mus_Set_Char_Singing_NO			\MUSIC\States\E_Mus_Set_Char_Singing_NO	
 	4000917327	E_Mus_Set_Main_Theme			\MUSIC\Themes\E_Mus_Set_Main_Theme	
 	4100489055	E_Mus_Set_Storm_Theme			\MUSIC\Themes\E_Mus_Set_Storm_Theme	
 	4105446904	E_Mus_Resume_Music			\MUSIC\Global\E_Mus_Resume_Music	

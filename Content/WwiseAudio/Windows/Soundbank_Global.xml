@@ -910,22 +910,6 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="538207684" Name="E_Ship_Enter_Hold" ObjectPath="\Events\SFX\Ship\Hold\E_Ship_Enter_Hold" GUID="{47F8F7D5-0338-4070-8140-A6A7BCF20A75}" DurationType="Infinite">
-					<IncludedMemoryFiles>
-						<File Id="592199408" Language="SFX">
-							<ShortName>SFX_HA_Ship_ship_damaged_high.wav</ShortName>
-							<Path>SFX\SFX_HA_Ship_ship_damaged_high_8956FC97.wem</Path>
-						</File>
-						<File Id="627644474" Language="SFX">
-							<ShortName>SFX_HA_Ship_leaving_hold.wav</ShortName>
-							<Path>SFX\SFX_HA_Ship_leaving_hold_EB26EE13.wem</Path>
-						</File>
-						<File Id="1063319655" Language="SFX">
-							<ShortName>SFX_HA_Ship_entering_hold.wav</ShortName>
-							<Path>SFX\SFX_HA_Ship_entering_hold_EEE2378A.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
 				<Event Id="2880618140" Name="E_Ship_Fall_from_Wave" ObjectPath="\Events\SFX\Ship\Wave Impacts\E_Ship_Fall_from_Wave" GUID="{AA8DEA17-3DF3-430F-B8F1-DCC635E14176}" DurationType="OneShot" DurationMin="3.855136" DurationMax="4.534326">
 					<IncludedMemoryFiles>
 						<File Id="41256832" Language="SFX">
@@ -1012,14 +996,6 @@
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
-				</Event>
-				<Event Id="4109780601" Name="E_Ship_Leave_Hold" ObjectPath="\Events\SFX\Ship\Hold\E_Ship_Leave_Hold" GUID="{EF85B494-2FAD-4BB9-9152-6EE8D1E84072}" DurationType="OneShot" DurationMin="2.760417" DurationMax="2.760417">
-					<IncludedMemoryFiles>
-						<File Id="48993912" Language="SFX">
-							<ShortName>SFX_HA_Ship_leaving_hold.wav</ShortName>
-							<Path>SFX\SFX_HA_Ship_leaving_hold_17B1E28D.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="834247839" Name="E_Ship_Light_Collision" ObjectPath="\Events\SFX\Ship\Collisions\E_Ship_Light_Collision" GUID="{07F1ABD5-7786-4F0E-9494-CE5980B243FC}" DurationType="OneShot" DurationMin="1.418934" DurationMax="1.517143">
 					<IncludedMemoryFiles>
