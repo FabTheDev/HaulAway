@@ -378,8 +378,6 @@
 				</Event>
 				<Event Id="2278932593" Name="E_Mus_Pause_Music" ObjectPath="\Events\MUSIC\Global\E_Mus_Pause_Music" GUID="{33C54356-C04E-47E0-AA2D-E3EA35080350}" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="4105446904" Name="E_Mus_Resume_Music" ObjectPath="\Events\MUSIC\Global\E_Mus_Resume_Music" GUID="{B75C3503-7176-4A76-AB03-A97B84B8DFDA}" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3703424250" Name="E_Mus_Set_Char_Singing_NO" ObjectPath="\Events\MUSIC\States\E_Mus_Set_Char_Singing_NO" GUID="{323AA92A-059F-47AF-8B83-A0C63F0293B2}" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="1317201836" Name="E_Mus_Set_Char_Singing_YES" ObjectPath="\Events\MUSIC\States\E_Mus_Set_Char_Singing_YES" GUID="{80F59379-0A36-4271-BD67-2D0DBE50D43A}" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1149952562" Name="E_Mus_Set_Exploring_Jingle" ObjectPath="\Events\MUSIC\Jingles\E_Mus_Set_Exploring_Jingle" GUID="{C5D208F5-0E46-40C7-A1A1-6F310C7060C7}" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3364487932" Name="E_Mus_Set_Fire_Lit_Jingle" ObjectPath="\Events\MUSIC\Jingles\E_Mus_Set_Fire_Lit_Jingle" GUID="{99F51088-29FB-44E3-B64D-D4614A1F48F8}" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="998551706" Name="E_Mus_Set_Going_To_Sea_Theme" ObjectPath="\Events\MUSIC\Themes\E_Mus_Set_Going_To_Sea_Theme" GUID="{2A0FE6B5-153A-42B1-82C7-47F9585E64D1}" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
@@ -388,12 +386,7 @@
 				<Event Id="1872721172" Name="E_Mus_Set_New_Island_Jingle" ObjectPath="\Events\MUSIC\Jingles\E_Mus_Set_New_Island_Jingle" GUID="{E73D55AC-4F77-4D3D-887B-157A05116FA9}" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3396100293" Name="E_Mus_Set_No_Theme" ObjectPath="\Events\MUSIC\Themes\E_Mus_Set_No_Theme" GUID="{D2EB5110-9CA9-446B-9D83-2EF3D7D1DC6E}" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1014433881" Name="E_Mus_Set_Sailing_Theme" ObjectPath="\Events\MUSIC\Themes\E_Mus_Set_Sailing_Theme" GUID="{808CB8CC-C0A6-421F-8776-645480621397}" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="2007564" Name="E_Mus_Set_Ship_Sinking_NO" ObjectPath="\Events\MUSIC\States\E_Mus_Set_Ship_Sinking_NO" GUID="{04F171A0-E169-4155-BC0C-8FBF80FF0BAC}" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="1444871718" Name="E_Mus_Set_Ship_Sinking_YES" ObjectPath="\Events\MUSIC\States\E_Mus_Set_Ship_Sinking_YES" GUID="{77DA8B05-AA75-4F07-8F8C-53AF1C2D55CA}" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2901789171" Name="E_Mus_Set_Standby_Jingle" ObjectPath="\Events\MUSIC\Jingles\E_Mus_Set_Standby_Jingle" GUID="{1A1405B3-7C1F-4AD2-971F-2D1ABEAF6120}" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="2261095996" Name="E_Mus_Set_Storm_Appoaching" ObjectPath="\Events\MUSIC\States\E_Mus_Set_Storm_Appoaching" GUID="{1863A054-F709-4AAA-8A18-27B1EE6C2022}" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="574194178" Name="E_Mus_Set_Storm_Here" ObjectPath="\Events\MUSIC\States\E_Mus_Set_Storm_Here" GUID="{153EFD7E-E533-4216-A5F5-11F01ACE37F5}" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3014714910" Name="E_Mus_Set_Storm_None" ObjectPath="\Events\MUSIC\States\E_Mus_Set_Storm_None" GUID="{75C6A7F6-48BE-402A-B226-2810991C5883}" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="4100489055" Name="E_Mus_Set_Storm_Theme" ObjectPath="\Events\MUSIC\Themes\E_Mus_Set_Storm_Theme" GUID="{9FF835A8-1F1D-4386-9547-56BE8A7B5086}" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<StateGroups>
@@ -451,6 +444,11 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
+		<SoundBank Id="589288447" GUID="{231FD3FF-D3FF-13FF-FFFF-FFFFFFFFFFFF}" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Soundbank_Music_Jingles</ObjectPath>
+			<ShortName>Soundbank_Music_Jingles</ShortName>
+			<Path>Soundbank_Music_Jingles.bnk</Path>
+		</SoundBank>
 		<SoundBank Id="1355168291" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
@@ -465,6 +463,11 @@
 				<GameParameter Id="2093986695" Name="Music_Volume_GP" ObjectPath="\Game Parameters\Default Work Unit\Global\Music_Volume_GP" GUID="{B6A43168-1DA1-4E4B-A564-6DDAF525B065}"/>
 				<GameParameter Id="2518588078" Name="UI_Volume_GP" ObjectPath="\Game Parameters\Default Work Unit\Global\UI_Volume_GP" GUID="{8A19730F-E82D-497F-9812-8D5F21AD724B}"/>
 			</GameParameters>
+		</SoundBank>
+		<SoundBank Id="1656213197" GUID="{62B7CECD-CECD-1ECD-CDCD-CDCDCDCDCDCD}" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Soundbank_Music_Themes</ObjectPath>
+			<ShortName>Soundbank_Music_Themes</ShortName>
+			<Path>Soundbank_Music_Themes.bnk</Path>
 		</SoundBank>
 		<SoundBank Id="3065566834" GUID="{8FE3AAE7-0226-493D-A1EA-8372BF7A265E}" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\Soundbank_Global</ObjectPath>
@@ -1368,22 +1371,6 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="538207684" Name="E_Ship_Enter_Hold" ObjectPath="\Events\SFX\Ship\Hold\E_Ship_Enter_Hold" GUID="{47F8F7D5-0338-4070-8140-A6A7BCF20A75}" DurationType="Infinite">
-					<IncludedMemoryFiles>
-						<File Id="592199408" Language="SFX">
-							<ShortName>SFX_HA_Ship_ship_damaged_high.wav</ShortName>
-							<Path>SFX\SFX_HA_Ship_ship_damaged_high_8956FC97.wem</Path>
-						</File>
-						<File Id="627644474" Language="SFX">
-							<ShortName>SFX_HA_Ship_leaving_hold.wav</ShortName>
-							<Path>SFX\SFX_HA_Ship_leaving_hold_EB26EE13.wem</Path>
-						</File>
-						<File Id="1063319655" Language="SFX">
-							<ShortName>SFX_HA_Ship_entering_hold.wav</ShortName>
-							<Path>SFX\SFX_HA_Ship_entering_hold_EEE2378A.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
 				<Event Id="2880618140" Name="E_Ship_Fall_from_Wave" ObjectPath="\Events\SFX\Ship\Wave Impacts\E_Ship_Fall_from_Wave" GUID="{AA8DEA17-3DF3-430F-B8F1-DCC635E14176}" DurationType="OneShot" DurationMin="3.855136" DurationMax="4.534326">
 					<IncludedMemoryFiles>
 						<File Id="41256832" Language="SFX">
@@ -1470,14 +1457,6 @@
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
-				</Event>
-				<Event Id="4109780601" Name="E_Ship_Leave_Hold" ObjectPath="\Events\SFX\Ship\Hold\E_Ship_Leave_Hold" GUID="{EF85B494-2FAD-4BB9-9152-6EE8D1E84072}" DurationType="OneShot" DurationMin="2.760417" DurationMax="2.760417">
-					<IncludedMemoryFiles>
-						<File Id="48993912" Language="SFX">
-							<ShortName>SFX_HA_Ship_leaving_hold.wav</ShortName>
-							<Path>SFX\SFX_HA_Ship_leaving_hold_17B1E28D.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="834247839" Name="E_Ship_Light_Collision" ObjectPath="\Events\SFX\Ship\Collisions\E_Ship_Light_Collision" GUID="{07F1ABD5-7786-4F0E-9494-CE5980B243FC}" DurationType="OneShot" DurationMin="1.418934" DurationMax="1.517143">
 					<IncludedMemoryFiles>

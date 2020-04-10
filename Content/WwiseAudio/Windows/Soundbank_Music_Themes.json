@@ -1,0 +1,25 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "12",
+  "SoundbankVersion": "135",
+  "RootPaths": {
+   "ProjectRoot": "D:\\FabDocuments\\Games\\HaulAway\\HaulAwayProject\\HaulAwayProject_WwiseProject\\",
+   "SourceFilesRoot": "D:\\FabDocuments\\Games\\HaulAway\\HaulAwayProject\\HaulAwayProject_WwiseProject\\.cache\\Windows\\",
+   "SoundBanksRoot": "D:\\FabDocuments\\Games\\HaulAway\\HaulAwayProject\\Content\\WwiseAudio\\Windows\\",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "D:\\FabDocuments\\Games\\HaulAway\\HaulAwayProject\\HaulAwayProject_WwiseProject\\GeneratedSoundBanks\\Windows"
+  },
+  "SoundBanks": [
+   {
+    "Id": "1656213197",
+    "GUID": "{62B7CECD-CECD-1ECD-CDCD-CDCDCDCDCDCD}",
+    "Language": "SFX",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Soundbank_Music_Themes",
+    "ShortName": "Soundbank_Music_Themes",
+    "Path": "Soundbank_Music_Themes.bnk"
+   }
+  ]
+ }
+}

@@ -640,26 +640,6 @@
       "DurationMax": "0.000000"
      },
      {
-      "Id": "3703424250",
-      "Name": "E_Mus_Set_Char_Singing_NO",
-      "ObjectPath": "\\Events\\MUSIC\\States\\E_Mus_Set_Char_Singing_NO",
-      "GUID": "{323AA92A-059F-47AF-8B83-A0C63F0293B2}",
-      "MaxAttenuation": "0.000000",
-      "DurationType": "OneShot",
-      "DurationMin": "0.000000",
-      "DurationMax": "0.000000"
-     },
-     {
-      "Id": "1317201836",
-      "Name": "E_Mus_Set_Char_Singing_YES",
-      "ObjectPath": "\\Events\\MUSIC\\States\\E_Mus_Set_Char_Singing_YES",
-      "GUID": "{80F59379-0A36-4271-BD67-2D0DBE50D43A}",
-      "MaxAttenuation": "0.000000",
-      "DurationType": "OneShot",
-      "DurationMin": "0.000000",
-      "DurationMax": "0.000000"
-     },
-     {
       "Id": "1149952562",
       "Name": "E_Mus_Set_Exploring_Jingle",
       "ObjectPath": "\\Events\\MUSIC\\Jingles\\E_Mus_Set_Exploring_Jingle",
@@ -740,60 +720,10 @@
       "DurationMax": "0.000000"
      },
      {
-      "Id": "2007564",
-      "Name": "E_Mus_Set_Ship_Sinking_NO",
-      "ObjectPath": "\\Events\\MUSIC\\States\\E_Mus_Set_Ship_Sinking_NO",
-      "GUID": "{04F171A0-E169-4155-BC0C-8FBF80FF0BAC}",
-      "MaxAttenuation": "0.000000",
-      "DurationType": "OneShot",
-      "DurationMin": "0.000000",
-      "DurationMax": "0.000000"
-     },
-     {
-      "Id": "1444871718",
-      "Name": "E_Mus_Set_Ship_Sinking_YES",
-      "ObjectPath": "\\Events\\MUSIC\\States\\E_Mus_Set_Ship_Sinking_YES",
-      "GUID": "{77DA8B05-AA75-4F07-8F8C-53AF1C2D55CA}",
-      "MaxAttenuation": "0.000000",
-      "DurationType": "OneShot",
-      "DurationMin": "0.000000",
-      "DurationMax": "0.000000"
-     },
-     {
       "Id": "2901789171",
       "Name": "E_Mus_Set_Standby_Jingle",
       "ObjectPath": "\\Events\\MUSIC\\Jingles\\E_Mus_Set_Standby_Jingle",
       "GUID": "{1A1405B3-7C1F-4AD2-971F-2D1ABEAF6120}",
-      "MaxAttenuation": "0.000000",
-      "DurationType": "OneShot",
-      "DurationMin": "0.000000",
-      "DurationMax": "0.000000"
-     },
-     {
-      "Id": "2261095996",
-      "Name": "E_Mus_Set_Storm_Appoaching",
-      "ObjectPath": "\\Events\\MUSIC\\States\\E_Mus_Set_Storm_Appoaching",
-      "GUID": "{1863A054-F709-4AAA-8A18-27B1EE6C2022}",
-      "MaxAttenuation": "0.000000",
-      "DurationType": "OneShot",
-      "DurationMin": "0.000000",
-      "DurationMax": "0.000000"
-     },
-     {
-      "Id": "574194178",
-      "Name": "E_Mus_Set_Storm_Here",
-      "ObjectPath": "\\Events\\MUSIC\\States\\E_Mus_Set_Storm_Here",
-      "GUID": "{153EFD7E-E533-4216-A5F5-11F01ACE37F5}",
-      "MaxAttenuation": "0.000000",
-      "DurationType": "OneShot",
-      "DurationMin": "0.000000",
-      "DurationMax": "0.000000"
-     },
-     {
-      "Id": "3014714910",
-      "Name": "E_Mus_Set_Storm_None",
-      "ObjectPath": "\\Events\\MUSIC\\States\\E_Mus_Set_Storm_None",
-      "GUID": "{75C6A7F6-48BE-402A-B226-2810991C5883}",
       "MaxAttenuation": "0.000000",
       "DurationType": "OneShot",
       "DurationMin": "0.000000",
