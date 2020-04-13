@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1A7FBC17-7773-4724-AF80-50744009062C}" SchemaVersion="97">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{1A7FBC17-7773-4724-AF80-50744009062C}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Character" ID="{6B4E8EAA-655F-4DCA-A6CA-D5C874187A86}" ShortID="374288394">
+					<ChildrenList>
+						<GameParameter Name="Water_Depth_Left" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="RTPCRamping" Type="int16" Value="1"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="Water_Depth_Right" ID="{E620FFDB-2280-4F9C-A0A5-E36477031F5F}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="RTPCRamping" Type="int16" Value="1"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Weather" ID="{EAC9C7F0-BB75-4CDF-A416-AD007CC90EE1}" ShortID="764089694"/>
+				<Folder Name="Ship" ID="{5A50EF09-3341-495F-9080-172EE508318A}" ShortID="147073895">
+					<ChildrenList>
+						<GameParameter Name="ShipSpeed_GP" ID="{72DFA80D-619E-4B12-8899-29FD2767932C}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="ShipLife_GP" ID="{718CC684-1460-48DE-BD21-DEDF2B6A9D4A}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="1"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="WindTaken_GP" ID="{D5E2F34F-A357-43B5-9C38-492B8A218557}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="SailHoist_GP" ID="{70F35A42-9104-442F-B66F-762CC58EE426}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Global" ID="{B44679C3-FF14-447E-895F-9CB06AF035F4}" ShortID="878799778">
+					<ChildrenList>
+						<GameParameter Name="Music_Volume_GP" ID="{B6A43168-1DA1-4E4B-A564-6DDAF525B065}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="80"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="SFX_Volume_GP" ID="{C9F5422A-020E-4D7B-AF1B-5A807144C983}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="80"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="Dialog_Volume_GP" ID="{193F0126-347C-409F-B90C-2601DAF8ECCF}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="80"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="Intra_Music_LowPassFilter_GP" ID="{F457DEC5-2431-4441-8DDC-2DBD7379D01C}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="100"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="UI_Volume_GP" ID="{8A19730F-E82D-497F-9812-8D5F21AD724B}"/>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>
