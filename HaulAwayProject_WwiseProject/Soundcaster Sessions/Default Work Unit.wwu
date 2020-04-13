@@ -377,7 +377,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="ShipLife_GP" ID="{718CC684-1460-48DE-BD21-DEDF2B6A9D4A}"/>
-							<Value>0.84</Value>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="UI_Volume_GP" ID="{8A19730F-E82D-497F-9812-8D5F21AD724B}"/>
