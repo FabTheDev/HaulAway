@@ -15,6 +15,8 @@
 			<PropertyList>
 <Property Name="GenerateSoundBankXML" Type="bool" Value="False"/>
 <Property Name="GenerateMainSoundBank" Type="bool" Value="False"/>
+
+
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
 						<Value Platform="Windows"></Value>
