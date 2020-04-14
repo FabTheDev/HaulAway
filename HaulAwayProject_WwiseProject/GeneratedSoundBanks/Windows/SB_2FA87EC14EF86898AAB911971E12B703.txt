@@ -1,0 +1,88 @@
+Event	ID	Name			Wwise Object Path	Notes
+	61654196	E_Ship_Tiller_Turning			\SFX\Ship\Tiller\E_Ship_Tiller_Turning	
+	166232405	E_Character_PickUp_Object			\SFX\Character\Interractions\E_Character_PickUp_Object	
+	237702952	E_Ship_Sail_Downing			\SFX\Ship\Sail\E_Ship_Sail_Downing	
+	278231955	E_Ship_Sail_Up			\SFX\Ship\Sail\E_Ship_Sail_Up	
+	538207684	E_Ship_Enter_Hold			\SFX\Ship\Hold\E_Ship_Enter_Hold	
+	583108420	E_Character_Stop_Swiming			\SFX\Character\Movements\E_Character_Stop_Swiming	
+	736698947	E_Character_Swiming			\SFX\Character\Movements\E_Character_Swiming	
+	834247839	E_Ship_Light_Collision			\SFX\Ship\Collisions\E_Ship_Light_Collision	
+	1110834563	E_Character_DiveInWater			\SFX\Character\Movements\E_Character_DiveInWater	
+	1219545601	E_Character_Jump			\SFX\Character\Movements\E_Character_Jump	
+	1312964464	E_Ship_Sail_Down			\SFX\Ship\Sail\E_Ship_Sail_Down	
+	1415761036	E_Ship_Sail_Stop_Upping			\SFX\Ship\Sail\E_Ship_Sail_Stop_Upping	
+	1574976189	E_Ship_Sail_Stop_Downing			\SFX\Ship\Sail\E_Ship_Sail_Stop_Downing	
+	1577901771	E_Ship_Tiller_Blocked			\SFX\Ship\Tiller\E_Ship_Tiller_Blocked	
+	1759276972	E_Character_ClimbLadder			\SFX\Character\Interractions\E_Character_ClimbLadder	
+	1834234983	E_Ship_Sail_SetWindBad			\SFX\Ship\Sail\E_Ship_Sail_SetWindBad	
+	1948054895	E_Ship_Sail_Upping			\SFX\Ship\Sail\E_Ship_Sail_Upping	
+	2153563704	E_Ship_Initialize			\SFX\Ship\Global\E_Ship_Initialize	
+	2215086397	E_Ship_Sail_SetWindPerfect			\SFX\Ship\Sail\E_Ship_Sail_SetWindPerfect	
+	2360503902	E_Character_Land			\SFX\Character\Movements\E_Character_Land	
+	2413030644	E_Ship_Sheet_Stop_Pulling			\SFX\Ship\Sheet\E_Ship_Sheet_Stop_Pulling	
+	2736294032	E_Ship_Sail_SetWindCorrect			\SFX\Ship\Sail\E_Ship_Sail_SetWindCorrect	
+	2880618140	E_Ship_Fall_from_Wave			\SFX\Ship\Wave Impacts\E_Ship_Fall_from_Wave	
+	3223780345	E_Ship_Sheet_Stop_Releasing			\SFX\Ship\Sheet\E_Ship_Sheet_Stop_Releasing	
+	3281800217	E_Ship_Sheet_Pulling			\SFX\Ship\Sheet\E_Ship_Sheet_Pulling	
+	3305120987	E_Ship_Sheet_Released			\SFX\Ship\Sheet\E_Ship_Sheet_Released	
+	3494137752	E_Ship_Sheet_Releasing			\SFX\Ship\Sheet\E_Ship_Sheet_Releasing	
+	3499961615	E_Character_Footstep			\SFX\Character\Movements\E_Character_Footstep	
+	3714654970	E_Ship_Strong_Collision			\SFX\Ship\Collisions\E_Ship_Strong_Collision	
+	3910457259	E_Ship_Tiller_Stop_Turning			\SFX\Ship\Tiller\E_Ship_Tiller_Stop_Turning	
+	4002400943	E_Ship_Wave_On_Hull			\SFX\Ship\Wave Impacts\E_Ship_Wave_On_Hull	
+	4109780601	E_Ship_Leave_Hold			\SFX\Ship\Hold\E_Ship_Leave_Hold	
+	4260985166	E_Ship_Medium_Collision			\SFX\Ship\Collisions\E_Ship_Medium_Collision	
+	4266917672	E_Ship_Sheet_Tightened			\SFX\Ship\Sheet\E_Ship_Sheet_Tightened	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	537633323	Object_Type			\Default Work Unit\Character\Interactions\Object_Type	
+	3539622648	Ground_Material			\Default Work Unit\Character\Footsteps\Ground_Material	
+
+Switch	ID	Name	Switch Group			Notes
+	64971129	Woodplanks	Object_Type			
+	92862575	Compass	Object_Type			
+	622987580	SailPiece	Object_Type			
+	1295909452	MetalPiece	Object_Type			
+	2362472877	Rope	Object_Type			
+	3186729599	Spyglass	Object_Type			
+	3577244112	Nails	Object_Type			
+	3596002789	MapFragment	Object_Type			
+	3972739434	PaperSheet	Object_Type			
+	344481046	Ice	Ground_Material			
+	680282486	DrySand	Ground_Material			
+	712897245	Mud	Ground_Material			
+	1216965916	Stone	Ground_Material			
+	2058049674	Wood	Ground_Material			
+	2157066035	DryDirt	Ground_Material			
+	2185786256	Gravel	Ground_Material			
+	2654748154	Water	Ground_Material			
+	4097484397	WetSand	Ground_Material			
+	4248645337	Grass	Ground_Material			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	755124726	Ship_IsThereAPulley			\Default Work Unit\Ship\Sail\Ship_IsThereAPulley	
+	3166210129	Char_Walk_Run			\Default Work Unit\Character\Footsteps\Char_Walk_Run	
+
+State	ID	Name	State Group			Notes
+	164038870	Pulley	Ship_IsThereAPulley			
+	748895195	None	Ship_IsThereAPulley			
+	794970764	No_Pulley	Ship_IsThereAPulley			
+	340271938	Walking	Char_Walk_Run			
+	748895195	None	Char_Walk_Run			
+	3863236874	Running	Char_Walk_Run			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	77161642	WindTaken_GP			\Default Work Unit\Ship\WindTaken_GP	
+	626750949	Intra_Music_LowPassFilter_GP			\Default Work Unit\Global\Intra_Music_LowPassFilter_GP	
+	718813323	Water_Depth_Right			\Default Work Unit\Character\Water_Depth_Right	
+	1749248652	Water_Depth_Left			\Default Work Unit\Character\Water_Depth_Left	
+	2198442037	ShipLife_GP			\Default Work Unit\Ship\ShipLife_GP	
+	3513187991	SailHoist_GP			\Default Work Unit\Ship\SailHoist_GP	
+	3685998990	ShipSpeed_GP			\Default Work Unit\Ship\ShipSpeed_GP	
+
+Effect plug-ins	ID	Name	Type				Notes
+	418265525	Gentle_Program_Compressor_Minus_14dB_RMS	Wwise Compressor			
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	969811498	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\SFX\Character\Objects PickUp\FX_Pickup_SWITCH\Silence\Wwise Silence	
+
