@@ -1,0 +1,47 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "12",
+  "SoundbankVersion": "135",
+  "RootPaths": {
+   "ProjectRoot": "D:\\FabDocuments\\Games\\HaulAway\\HaulAwayProject\\HaulAwayProject_WwiseProject\\",
+   "SourceFilesRoot": "D:\\FabDocuments\\Games\\HaulAway\\HaulAwayProject\\HaulAwayProject_WwiseProject\\.cache\\Windows\\",
+   "SoundBanksRoot": "D:\\FabDocuments\\Games\\HaulAway\\HaulAwayProject\\HaulAwayProject_WwiseProject\\GeneratedSoundBanks\\Windows\\",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "D:\\FabDocuments\\Games\\HaulAway\\HaulAwayProject\\HaulAwayProject_WwiseProject\\GeneratedSoundBanks\\Windows"
+  },
+  "SoundBanks": [
+   {
+    "Id": "1992847495",
+    "GUID": "{76C87087-7087-1087-8787-878787878787}",
+    "Language": "SFX",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SB_390D116FCA0144C8A8DEFAF79069473B",
+    "ShortName": "SB_390D116FCA0144C8A8DEFAF79069473B",
+    "Path": "SB_390D116FCA0144C8A8DEFAF79069473B.bnk",
+    "IncludedAuxBusses": [
+     {
+      "Id": "1060063872",
+      "Name": "Exterior_Acoustic_AUX",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SFX_BUS\\Exterior_Acoustic_AUX",
+      "GUID": "{390D116F-CA01-44C8-A8DE-FAF79069473B}"
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "626750949",
+      "Name": "Intra_Music_LowPassFilter_GP",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Global\\Intra_Music_LowPassFilter_GP",
+      "GUID": "{F457DEC5-2431-4441-8DDC-2DBD7379D01C}"
+     },
+     {
+      "Id": "1130989983",
+      "Name": "SFX_Volume_GP",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Global\\SFX_Volume_GP",
+      "GUID": "{C9F5422A-020E-4D7B-AF1B-5A807144C983}"
+     }
+    ]
+   }
+  ]
+ }
+}
