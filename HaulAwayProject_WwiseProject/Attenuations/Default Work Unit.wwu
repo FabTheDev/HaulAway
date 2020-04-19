@@ -174,17 +174,17 @@
 									<PointList>
 										<Point>
 											<XPos>0</XPos>
-											<YPos>0</YPos>
+											<YPos>40</YPos>
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>1496.420055</XPos>
-											<YPos>0</YPos>
+											<XPos>1500</XPos>
+											<YPos>40</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
 											<XPos>6000</XPos>
-											<YPos>100</YPos>
+											<YPos>-0</YPos>
 											<Flags>37</Flags>
 										</Point>
 									</PointList>

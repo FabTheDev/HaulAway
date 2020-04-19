@@ -86,6 +86,11 @@
 						</Bus>
 						<Bus Name="MUSIC_BUS" ID="{E98A5F2E-E786-43DB-8254-3BEE4959E4AF}">
 							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-96</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Lowpass" Type="int16">
 									<RTPCList>
 										<RTPC Name="" ID="{E8BE1AF0-729A-40BF-9120-D9354592FD16}" ShortID="1030727728">
