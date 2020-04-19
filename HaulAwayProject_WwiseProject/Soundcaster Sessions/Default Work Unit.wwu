@@ -37,8 +37,28 @@
 							<ObjectRef Name="E_Character_PickUp_Object" ID="{C35DAE63-6620-41BE-8376-3E65C4EB516A}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
 							<Position X="3" Y="0"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="VOICE_HA_Anecdote_FatherChanged" ID="{8DF67F76-BF58-4C4B-AA3B-C227CBC10DF5}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+							<Position X="3" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Voice_Humming_RND" ID="{3251F359-DAEB-4D02-A2BF-02B1FBC05DAE}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+							<Position X="3" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="VOICE_HA_Collision_YouWontMakeItFar" ID="{1A4EE16F-F148-4FDE-A18F-159F007FFA54}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+							<Position X="5" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="VOICE_HA_Collision_DamnItISwear" ID="{345773DE-48A1-47A5-A2F7-27D616FFFB76}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+							<Position X="6" Y="3"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Dialog_Volume_GP" ID="{193F0126-347C-409F-B90C-2601DAF8ECCF}"/>
+							<Value>80</Value>
+						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="WindTaken_GP" ID="{D5E2F34F-A357-43B5-9C38-492B8A218557}"/>
 							<Value>1</Value>
@@ -46,6 +66,10 @@
 						<RTPCValue>
 							<GameParameterRef Name="SailHoist_GP" ID="{70F35A42-9104-442F-B66F-762CC58EE426}"/>
 							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Intra_Music_LowPassFilter_GP" ID="{F457DEC5-2431-4441-8DDC-2DBD7379D01C}"/>
+							<Value>100</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Water_Depth_Left" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}"/>
@@ -56,8 +80,20 @@
 							<Value>100</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="UI_Volume_GP" ID="{8A19730F-E82D-497F-9812-8D5F21AD724B}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="ShipSpeed_GP" ID="{72DFA80D-619E-4B12-8899-29FD2767932C}"/>
 							<Value>84.1623036649215</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SFX_Volume_GP" ID="{C9F5422A-020E-4D7B-AF1B-5A807144C983}"/>
+							<Value>80</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Music_Volume_GP" ID="{B6A43168-1DA1-4E4B-A564-6DDAF525B065}"/>
+							<Value>80</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Water_Depth_Right" ID="{E620FFDB-2280-4F9C-A0A5-E36477031F5F}"/>
@@ -65,12 +101,21 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Jingle_Exploring" ID="{B8D7EBFC-2FA5-4EEB-B70A-9B262FBA7D1E}"/>
+						<CurrentStateRef Name="No_Ship_Sinking" ID="{61F19502-08FC-437E-AFCF-D89896B4FCA5}"/>
+						<CurrentStateRef Name="None" ID="{B83E4870-EE12-480B-A54C-32436863F222}"/>
+						<CurrentStateRef Name="No_Storm" ID="{6CB7680E-6578-4568-8BBF-6F3289ADBFBA}"/>
+						<CurrentStateRef Name="Yes_Char_Singing" ID="{1A488AB7-9718-4B2D-AC57-3B7BE6B57266}"/>
 						<CurrentStateRef Name="Walking" ID="{0DA3EC48-DE20-451C-A639-31F81343B6E8}"/>
+						<CurrentStateRef Name="Out_Hold" ID="{4799B397-87EA-4934-ACC2-73FA0C65A854}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Approaching" ID="{14491DD2-3190-486E-8C3D-40FEE6BA2370}"/>
+						<CurrentSwitchRef Name="Going_To_Sea_Theme" ID="{4F1D9B68-8C4D-4387-81C3-B868C53CF108}"/>
 						<CurrentSwitchRef Name="Deep" ID="{E1F17321-7537-4F0A-B16E-879CD5C93527}"/>
 						<CurrentSwitchRef Name="No" ID="{557E11F3-E18E-4406-BA2D-24998C38DA37}"/>
 						<CurrentSwitchRef Name="Wood" ID="{AD02081A-225D-437C-BF52-89E278904486}"/>
+						<CurrentSwitchRef Name="In" ID="{F431CC99-F201-401D-B118-93F3EE1C9EAD}"/>
 						<CurrentSwitchRef Name="No" ID="{5FB29E7F-3317-44DD-B6DD-124F2B6A3410}"/>
 						<CurrentSwitchRef Name="Woodplanks" ID="{32AD8DEA-5B6B-4997-BE82-96223526A478}"/>
 					</CurrentSwitchList>
@@ -365,11 +410,11 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SailHoist_GP" ID="{70F35A42-9104-442F-B66F-762CC58EE426}"/>
-							<Value>1</Value>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Intra_Music_LowPassFilter_GP" ID="{F457DEC5-2431-4441-8DDC-2DBD7379D01C}"/>
-							<Value>37.6506024096386</Value>
+							<Value>100</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Water_Depth_Left" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}"/>
@@ -377,7 +422,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="ShipLife_GP" ID="{718CC684-1460-48DE-BD21-DEDF2B6A9D4A}"/>
-							<Value>0</Value>
+							<Value>1</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="UI_Volume_GP" ID="{8A19730F-E82D-497F-9812-8D5F21AD724B}"/>
@@ -393,7 +438,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Music_Volume_GP" ID="{B6A43168-1DA1-4E4B-A564-6DDAF525B065}"/>
-							<Value>80.0417972831766</Value>
+							<Value>80</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Water_Depth_Right" ID="{E620FFDB-2280-4F9C-A0A5-E36477031F5F}"/>
@@ -401,12 +446,12 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="No_Theme" ID="{80DEA391-FC31-4B8E-8827-283AB4485692}"/>
+						<CurrentStateRef Name="Jingle_Exploring" ID="{B8D7EBFC-2FA5-4EEB-B70A-9B262FBA7D1E}"/>
 						<CurrentStateRef Name="No_Ship_Sinking" ID="{61F19502-08FC-437E-AFCF-D89896B4FCA5}"/>
 						<CurrentStateRef Name="None" ID="{B83E4870-EE12-480B-A54C-32436863F222}"/>
 						<CurrentStateRef Name="No_Storm" ID="{6CB7680E-6578-4568-8BBF-6F3289ADBFBA}"/>
-						<CurrentStateRef Name="No_Char_Singing" ID="{CC851A52-942B-4F5D-984D-2F321AFDD69E}"/>
-						<CurrentStateRef Name="Running" ID="{61C1907D-333E-446A-AFAB-F5B1780F2D3C}"/>
+						<CurrentStateRef Name="Yes_Char_Singing" ID="{1A488AB7-9718-4B2D-AC57-3B7BE6B57266}"/>
+						<CurrentStateRef Name="None" ID="{4F52A7E7-3240-4480-BCA4-A75985D30EDB}"/>
 						<CurrentStateRef Name="Out_Hold" ID="{4799B397-87EA-4934-ACC2-73FA0C65A854}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
@@ -415,7 +460,7 @@
 						<CurrentSwitchRef Name="Deep" ID="{E1F17321-7537-4F0A-B16E-879CD5C93527}"/>
 						<CurrentSwitchRef Name="No" ID="{557E11F3-E18E-4406-BA2D-24998C38DA37}"/>
 						<CurrentSwitchRef Name="Wood" ID="{AD02081A-225D-437C-BF52-89E278904486}"/>
-						<CurrentSwitchRef Name="Out" ID="{CBED7C89-B2E3-47EC-A878-0D6580FF55FF}"/>
+						<CurrentSwitchRef Name="In" ID="{F431CC99-F201-401D-B118-93F3EE1C9EAD}"/>
 						<CurrentSwitchRef Name="Yes" ID="{E4B8CC05-4AC4-4067-A717-1BA2FD1B0D32}"/>
 						<CurrentSwitchRef Name="Compass" ID="{CA054260-4F3C-411B-8F93-A47EAE9EAF92}"/>
 					</CurrentSwitchList>

@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" SchemaVersion="97">
+	<Events>
+		<WorkUnit Name="VOICE" ID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Voicelines" ID="{7E00024F-0753-42AF-BC70-9E9F9418B9EE}" ShortID="609679324">
+					<ChildrenList>
+						<Folder Name="Anecdote" ID="{D19CDB8D-2834-481C-A8FA-2A7AE0540093}" ShortID="149619329">
+							<ChildrenList>
+								<Event Name="E_Voice_Anecdote_FatherChanged" ID="{6BDA1436-DC8B-433C-9BC4-5AB2D3CFBEDC}">
+									<ChildrenList>
+										<Action Name="" ID="{0DA23243-9933-4AE7-B629-6E58E95CB5C4}" ShortID="638582707">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_Anecdote_FatherChanged" ID="{8DF67F76-BF58-4C4B-AA3B-C227CBC10DF5}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_Anecdote_FindAChestBoardNextIsland" ID="{99D0A66A-E340-4BFF-BBB9-464FC971DA32}">
+									<ChildrenList>
+										<Action Name="" ID="{CC4A6ABA-0549-416B-8307-833606D3E81D}" ShortID="654244799">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_Anecdote_FindAChestBoardNextIsland" ID="{6795F2FF-049D-4750-8E99-B1E20B016632}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_Anecdote_HidingSomewhereDrawInPeace" ID="{23521D47-77B2-4EFA-BAC6-F9A2EFF5AB44}">
+									<ChildrenList>
+										<Action Name="" ID="{D421B233-D81F-4EF3-B702-18B514333544}" ShortID="552914187">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_Anecdote_HidingSomewhereDrawInPeace" ID="{AD748C99-32E7-4506-9374-E03B066B5922}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_Anecdote_HowTheyUsedToCallMe" ID="{A1BAA6D6-D61D-4230-ACA2-D79E5D1FE0B5}">
+									<ChildrenList>
+										<Action Name="" ID="{5F844724-983B-4591-B499-24AB780F0DC8}" ShortID="518972009">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_Anecdote_HowTheyUsedToCallMe" ID="{2B5FF493-6016-4353-8E11-618C69D03D09}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_Anecdote_MonstersLurkingBelow" ID="{653C5690-F010-4AEB-AEBF-57135414AF4E}">
+									<ChildrenList>
+										<Action Name="" ID="{10648C5E-4315-422A-9EC9-2EF3858D76B3}" ShortID="162904976">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_Anecdote_MonstersLurkingBelow" ID="{06702E7E-5A3C-4C80-AA3F-0B188D4EE62A}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_Anecdote_NeverTrustTheSea" ID="{41C7A59E-337F-45E4-B7FC-5183E11CE0D7}">
+									<ChildrenList>
+										<Action Name="" ID="{5DBE06F6-64D6-4819-9F2B-804AFC32C608}" ShortID="459791881">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_Anecdote_NeverTrustTheSea" ID="{7B6DED78-63EE-45C6-96A0-899D9BD6F3CF}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_Anecdote_NoIdeaHowLongDamnIsland" ID="{CB6E2A03-AAA6-4686-A734-84C37D1F8783}">
+									<ChildrenList>
+										<Action Name="" ID="{E82FF27F-2D51-4FE1-B1DC-130D2879E19F}" ShortID="320676906">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_Anecdote_NoIdeaHowLongDamnIsland" ID="{4C0E60AC-779A-434B-A89B-88BF7D573EA3}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_Anecdote_PartyWhenIBackHome" ID="{CE499204-1FA6-4E84-A4C3-6575765869F3}">
+									<ChildrenList>
+										<Action Name="" ID="{A96AFE3B-5CF6-4160-9F51-37A887E27D45}" ShortID="974841156">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_Anecdote_PartyWhenIBackHome" ID="{726A376F-E866-4C1C-8405-4AB09736AD9F}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_Anecdote_StoryToTellWhenOlder" ID="{DC7C16DE-11FA-420E-95E3-888F5DE9E1A4}">
+									<ChildrenList>
+										<Action Name="" ID="{B273AEDC-BA4F-455B-9D82-1EAB3BCA2466}" ShortID="29003252">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_Anecdote_StoryToTellWhenOlder" ID="{2B1E0BB6-F0FE-4787-810A-6E0CE4172761}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Collision" ID="{802271FF-DD90-4E50-9AF1-DF7F64DAE4F0}" ShortID="465005032">
+							<ChildrenList>
+								<Event Name="E_Voice_Collision_AahShit" ID="{81871A86-E6D9-4FB1-BB1D-7A5431307A8D}">
+									<ChildrenList>
+										<Action Name="" ID="{2C417B6F-5DFD-415A-9CF6-4DA553BCDB5F}" ShortID="733832968">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_Collision_AahShit" ID="{66D29438-9FDE-4A9C-8D62-B6E676B5D820}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_Collision_DamnItISwear" ID="{7C30DF37-0565-4B45-B310-EB59AB13B237}">
+									<ChildrenList>
+										<Action Name="" ID="{79A6BAC5-4BFB-4EB8-901F-85B0B47E662B}" ShortID="1044336953">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_Collision_DamnItISwear" ID="{345773DE-48A1-47A5-A2F7-27D616FFFB76}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_Collision_ForSake" ID="{46A69151-A607-409D-99D1-F359FDA2450B}">
+									<ChildrenList>
+										<Action Name="" ID="{45EC7364-15AB-42B4-8AAC-75F695D566B1}" ShortID="1038542716">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_Collision_ForSake" ID="{02BC38E5-C77E-4FB6-AE60-26AF35FC0A12}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_Collision_KeepUp" ID="{967B34C1-329E-450D-98FD-4DCEB31D96C1}">
+									<ChildrenList>
+										<Action Name="" ID="{A5264DC3-5475-4BAF-8FC3-3478535E69CC}" ShortID="931016547">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_Collision_KeepUp" ID="{8397734B-D5B3-4FAE-804B-4348C5C3853C}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_Collision_WhatTheHell" ID="{E96F41E7-CAAD-425C-BD8C-233F822F2C3E}">
+									<ChildrenList>
+										<Action Name="" ID="{954AABEC-B6B8-489D-B5B5-395D40D2FBA4}" ShortID="161350680">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_Collision_WhatTheHell" ID="{314CC1CC-5582-4963-B8F8-8332BDAD0A1C}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_Collision_YouCanDoBetterThanThat" ID="{CFDB66EF-6F40-4C13-A1B1-90201C1472FD}">
+									<ChildrenList>
+										<Action Name="" ID="{6936BE87-6059-47E7-A1A9-BE00F6540AA9}" ShortID="536403100">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_Collision_YouCanDoBetterThanThat" ID="{A4DF4855-63CE-4DF3-8A39-A285AC1E230F}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_Collision_YouWontMakeItFar" ID="{D9B8DE2D-D08A-4B63-B294-38E6528A049D}">
+									<ChildrenList>
+										<Action Name="" ID="{36A0921B-7846-4A45-ABA7-A2AF44B360A8}" ShortID="818943890">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_Collision_YouWontMakeItFar" ID="{1A4EE16F-F148-4FDE-A18F-159F007FFA54}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Damaged" ID="{801FEF25-AEC0-4EF6-B58C-A36B2BCD4443}" ShortID="333109375">
+							<ChildrenList>
+								<Event Name="E_Voice_DontWorryIllFixYou" ID="{8724FB6C-A108-4FD0-BCD6-E6EB575B50AA}">
+									<ChildrenList>
+										<Action Name="" ID="{7B5A15B6-998F-4D55-889C-45A3E455ECD8}" ShortID="706229600">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_Damaged_DontWorryIllFixYou" ID="{5EE2FF9A-7BCD-47F5-835D-0A42315C6DCA}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_Damaged_IfIHearYouCrack" ID="{05E52783-4B7F-4868-88B9-070537F7D66A}">
+									<ChildrenList>
+										<Action Name="" ID="{50CD3D37-651F-474A-B5F2-5D1BD667DF88}" ShortID="129534307">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_Damaged_IfIHearYouCrack" ID="{9F45E781-D6BB-4F86-9ABE-8C2D85212D8C}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_Damaged_IKnowItsHard" ID="{8AE63DD1-0D72-4A6E-B51D-66BED231513D}">
+									<ChildrenList>
+										<Action Name="" ID="{D06C2E71-54EE-4904-8C7C-894A84935A49}" ShortID="930936813">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_Damaged_IKnowItsHard" ID="{EBFACD20-3C14-4B44-8DF7-965A2ABC28C9}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_Damaged_WeAreAlmostThere" ID="{6B18FBC7-6641-4B4B-AA99-4C439272BEC6}">
+									<ChildrenList>
+										<Action Name="" ID="{07AF36E9-2FE5-46BD-8314-658A2C35F68D}" ShortID="413504081">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_Damaged_WeAreAlmostThere" ID="{F3010C7C-15C0-444B-A885-E12A89466E52}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Found" ID="{CE5B86B1-E8E9-4BC5-B72B-464D7AB713DB}" ShortID="248369122">
+							<ChildrenList>
+								<Event Name="E_Voice_Found_Compass" ID="{48B9B2AF-55FA-4B2A-B415-4B905ED0940F}">
+									<ChildrenList>
+										<Action Name="" ID="{17CF8FEF-8D93-40FD-9272-F51B7EA57443}" ShortID="742647904">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_Found_Compass" ID="{5F80D1B9-ADAF-4CE9-9588-424B2E593974}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_Found_Drawing" ID="{EA006774-8F89-4A05-9DC0-D9D34C95A5B5}">
+									<ChildrenList>
+										<Action Name="" ID="{0CF076D2-5BD4-4B2A-8958-8A0EB1A77ED5}" ShortID="476407196">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_Found_Drawing" ID="{B261EFEE-34EC-4FF9-8E10-5BC4D32E5094}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_Found_Map1" ID="{AF799C44-3ED0-46F0-A324-E75032D05B9D}">
+									<ChildrenList>
+										<Action Name="" ID="{EC011E5F-AC20-46E6-8240-90F4F679EF45}" ShortID="209029506">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_Found_Map1" ID="{F00DB6CD-B65B-4E55-9D88-F1D04D6C18E2}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_Found_Map2" ID="{3110BF86-1622-4900-895C-7410C9134C66}">
+									<ChildrenList>
+										<Action Name="" ID="{F0D0CE37-2C6E-43F9-8013-D7712A960401}" ShortID="669490497">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_Found_Map2" ID="{AD34A461-2CD3-4B6B-83A8-28ECBDD1C947}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_Found_Map3" ID="{C348422C-DDAF-48EB-9B1A-9F104C621F3D}">
+									<ChildrenList>
+										<Action Name="" ID="{1F562355-E860-4100-9577-13C8A889EC2B}" ShortID="783103462">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_Found_Map3" ID="{9D06E7A8-A180-403D-9032-5DE00B66D0A2}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_Found_Ressource1" ID="{73BE67A9-7D6E-4ED2-9F26-34B91A410849}">
+									<ChildrenList>
+										<Action Name="" ID="{15F8D5B3-C86E-4121-85E9-427524739730}" ShortID="127694993">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_Found_Ressource1" ID="{33BC2897-69F4-4B15-90B6-9252DD432FE3}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_Found_Ressource2" ID="{44BED0FE-9C1E-4912-B0F0-B7256007690A}">
+									<ChildrenList>
+										<Action Name="" ID="{97EEAA75-BFA7-4833-BC75-9E1C736DE8CA}" ShortID="471920784">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_Found_Ressource2" ID="{0C34CF60-5F3B-4EBE-AF96-0C2BF09F5046}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_Found_SailPlan" ID="{FF9DBF95-F769-4171-B430-6AE18A23FE01}">
+									<ChildrenList>
+										<Action Name="" ID="{D96B9DEE-D194-402C-A6AB-CC16E3CC1961}" ShortID="894663492">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_Found_SailPlan" ID="{206725B8-F088-48A3-8365-B43014691C22}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="New Island" ID="{6B53A83D-CCAA-4EE1-A801-0A34516123DE}" ShortID="485654730">
+							<ChildrenList>
+								<Event Name="E_Voice_NewIsland_IsAnyoneHere" ID="{2850539C-3BA2-40D9-B779-E6CBFF00B835}">
+									<ChildrenList>
+										<Action Name="" ID="{61210E65-BCB9-459F-85E3-50E95E3CD02E}" ShortID="152463675">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_NewIsland_IsAnyoneHere" ID="{B30E3015-3ACE-46F1-9BF1-3AA16D6DBAEE}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_NewIsland_Someone" ID="{11EF09B3-7344-42D3-B3E1-4952056470A0}">
+									<ChildrenList>
+										<Action Name="" ID="{F9CEF3C0-F479-4266-B2F1-FC4AF2405329}" ShortID="132351719">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_NewIsland_Someone" ID="{A9775A14-A1E3-44A1-9BD1-FE499AE5CB33}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="No Wind" ID="{8DFCCAF4-9F57-462D-A0D7-1F1A4983B79B}" ShortID="702562513">
+							<ChildrenList>
+								<Event Name="E_Voice_NoWind_EvenFasterWithSailDown" ID="{A2F415F6-C141-48A0-9CAA-421ACB338D5C}">
+									<ChildrenList>
+										<Action Name="" ID="{054BE8C6-CDC7-44C6-AF5A-C08BB376A2D0}" ShortID="131072696">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_NoWind_EvenFasterWithSailDown" ID="{EE9806CF-BF98-4549-AB77-59C870F4CA5E}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_NoWind_GoingAnywhereLikeThat" ID="{CF36212F-E7C3-44BA-924C-65FD22DDC68B}">
+									<ChildrenList>
+										<Action Name="" ID="{59562C4A-C9E7-4F04-AD46-41E13A1D017C}" ShortID="920887977">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_NoWind_GoingAnywhereLikeThat" ID="{1FC2EFD9-D4CA-4768-A2EF-FC99EC58B12C}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_NoWind_MustBeBetterWay" ID="{E4FCF069-6E03-48B8-880B-8B79AFE9437B}">
+									<ChildrenList>
+										<Action Name="" ID="{9CBF43EA-D17A-4694-A322-A85D7E9DF87F}" ShortID="1006130442">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_NoWind_MustBeBetterWay" ID="{C1ABE2F0-590A-4AD9-932C-D9BD7FFB9A4C}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_NoWind_WindPissingMeOff" ID="{4B638156-48AB-4F39-BA4A-228C45119D0F}">
+									<ChildrenList>
+										<Action Name="" ID="{02F0E856-0E78-4CC2-B579-67525A18169D}" ShortID="647847642">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_NoWind_WindPissingMeOff" ID="{60E4BA31-72CE-4B2E-A52B-AA44A16A8E13}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Repaired" ID="{72139973-B6B6-4CDE-8164-3783E136D936}" ShortID="545699828">
+							<ChildrenList>
+								<Event Name="E_Voice_HA_Repaired_AsGoodAsNew" ID="{64E35089-ABA1-4F84-925E-99D4DD266DA4}">
+									<ChildrenList>
+										<Action Name="" ID="{70BC7193-A825-45F4-B778-087CA6C960B7}" ShortID="1050801034">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_Repaired_AsGoodAsNew" ID="{FFE0DBC9-E922-4741-8E46-C38CCC1ECC43}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_HA_Repaired_HopeYouWillStayLikeThat" ID="{E412BAAF-6263-4F22-BEFB-BC1FEFEEBA2E}">
+									<ChildrenList>
+										<Action Name="" ID="{51F6572D-2901-45EC-96A6-B247D2CA99B1}" ShortID="1050278922">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_Repaired_HopeYouWillStayLikeThat" ID="{DD0DE011-D0A2-45F3-9D27-3C5CCB2A7376}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_HA_Repaired_ThatllHaveToDo" ID="{811FCE83-6B10-4865-97D5-450193AB765E}">
+									<ChildrenList>
+										<Action Name="" ID="{2F13A7FC-6B64-43C8-B0E8-E14EDC416CAA}" ShortID="80856309">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_Repaired_ThatllHaveToDo" ID="{A8D9FF36-F631-42AA-824C-8E28822E3E28}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_HA_Repaired_YouWontTakeWaterAnymore" ID="{7599EE75-82F6-4BAB-AAEA-990D7C720FD3}">
+									<ChildrenList>
+										<Action Name="" ID="{3206F4A1-028E-429F-B7D8-538C57A8F5BE}" ShortID="733873905">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_Repaired_YouWontTakeWaterAnymore" ID="{7E370C02-90B7-45B7-8CC1-48B51D75BC6A}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="See" ID="{4744C853-4B40-474E-9FF6-DD2DEE098FAF}" ShortID="278176448">
+							<ChildrenList>
+								<Event Name="E_Voice_HA_See_Anchors" ID="{0EED961F-B608-4091-AE28-4102E6FC0391}">
+									<ChildrenList>
+										<Action Name="" ID="{F582AF4D-6E82-429E-880F-D57749444B0D}" ShortID="44080294">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_See_Anchors" ID="{E3AE9044-2218-45C8-8A4E-7230404B3545}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_HA_See_Bell" ID="{E2FF8C7D-29C4-492C-9172-6C7B639A7BBA}">
+									<ChildrenList>
+										<Action Name="" ID="{8E9F77DF-6480-4413-8FF3-B06A14964336}" ShortID="536711870">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_See_Bell" ID="{3FDD0744-4115-4E71-9CE5-3891E60A5321}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_HA_See_CalmSea" ID="{A891F49E-5195-4F4C-9F03-9701F24FC6D1}">
+									<ChildrenList>
+										<Action Name="" ID="{3EB4CD34-E164-484D-AF9B-FAF4BC44D4E7}" ShortID="723720083">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_See_CalmSea" ID="{DD7A5B64-3E1E-435E-95DC-94CE4E20C6EE}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_HA_See_DarkWater" ID="{9FA39962-91A7-430F-BCB5-C2422B37FA18}">
+									<ChildrenList>
+										<Action Name="" ID="{005FBA37-EE1A-429E-8697-A2C5555B83F5}" ShortID="355972182">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_See_DarkWater" ID="{9FAE2223-4928-4933-AE8A-83E52AE41A61}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_HA_See_Icebergs1" ID="{46042A85-AED3-4D36-9FC1-3100B2A9CE94}">
+									<ChildrenList>
+										<Action Name="" ID="{D5A13BA3-3753-4418-A5EF-7AC2A012C93F}" ShortID="952510763">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_See_Icebergs1" ID="{0B207D79-48C4-4C74-BEF8-82CBEA8BCACF}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_HA_See_Icebergs2" ID="{32D60957-9560-4D0E-B432-7045821A7E8D}">
+									<ChildrenList>
+										<Action Name="" ID="{350EDC64-66B8-4BBD-A110-256EB582648C}" ShortID="835423869">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_See_Icebergs2" ID="{6F47CC36-5914-474A-9CD9-BAE63C5B64F3}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_HA_See_Lighthouse" ID="{934499C2-93FE-4C70-9756-3E8268C9BB94}">
+									<ChildrenList>
+										<Action Name="" ID="{CC54E735-D8D6-46A5-8931-95F6B3AA4C3F}" ShortID="508742387">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_See_Lighthouse" ID="{F81779E7-43F5-4E55-98F1-A74CFC7E3510}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_HA_See_Reefs" ID="{73D9F1A2-1A92-4AB7-8A84-3CA236B7DC94}">
+									<ChildrenList>
+										<Action Name="" ID="{7EC2CA90-6CBF-4F68-9016-A252AE059D09}" ShortID="464263201">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_See_Reefs" ID="{F4B44063-30E8-4456-87EB-362244E09627}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_HA_See_Snow" ID="{4E3230E3-9AE3-4852-AA20-6CAF19607A06}">
+									<ChildrenList>
+										<Action Name="" ID="{884AA95B-5A7F-4873-B43E-A4EF9FD15962}" ShortID="907390017">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_See_Snow" ID="{7366AB25-DE72-4938-BC47-BB60C0CED7C2}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_HA_See_Storm" ID="{31D4F669-150A-4E45-936C-E7BCC86BC815}">
+									<ChildrenList>
+										<Action Name="" ID="{D4D8587E-8A38-4911-8727-C32866A7F55D}" ShortID="1067995669">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_See_Storm" ID="{809A3AD5-3E23-43BB-81D7-BD9C0CA73DC8}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_HA_See_Tree" ID="{54C9EE06-DBC9-4E75-9C5A-9A790CF0D64F}">
+									<ChildrenList>
+										<Action Name="" ID="{8A4B5009-2CA0-47AF-8E4A-A95D4C789AA5}" ShortID="572242145">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_See_Tree" ID="{D2388055-FEB1-48AC-A432-F10D9A784481}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_HA_See_Vessel" ID="{22A2A4BF-B017-4100-BA00-F7CAD2CFDE64}">
+									<ChildrenList>
+										<Action Name="" ID="{0DFC8226-07CC-4E85-B4DD-52C663055FC5}" ShortID="763810691">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_See_Vessel" ID="{72A26895-ACEF-4830-B403-FA18F8349E82}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_HA_See_WeirdPlace" ID="{FAEA8982-A3F9-406D-992E-E8A54A7D92F1}">
+									<ChildrenList>
+										<Action Name="" ID="{E5D9FB2A-0650-4F3E-AB02-FC8C872CBADC}" ShortID="454335283">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_See_WeirdPlace" ID="{3AE14AF1-BB39-481E-9991-E7F008DD862C}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_HA_See_Whale1" ID="{CCB17021-9EB1-4EA6-B70F-B46BCF9DF664}">
+									<ChildrenList>
+										<Action Name="" ID="{6DF53A5B-642B-488A-9730-F04E441D3DF1}" ShortID="568657530">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_See_Whale1" ID="{4E9368E1-15A7-4CDF-82EF-3C5B653F497E}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_HA_See_Whale2" ID="{DCEE71B9-A33A-40CE-AB86-D41F3C6B1580}">
+									<ChildrenList>
+										<Action Name="" ID="{C4BFF496-BA62-4121-98D9-BEC00D263ED3}" ShortID="560581332">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_See_Whale2" ID="{371B6ED6-3EFC-46E7-8CFD-FB9AB907C49F}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Special Events" ID="{46C54D65-65DC-47CE-9DEC-1CB2D074A450}" ShortID="516210624">
+							<ChildrenList>
+								<Event Name="E_Voice_HA_Amelioration" ID="{91255D42-2303-452D-BB7C-261E0D3E732E}">
+									<ChildrenList>
+										<Action Name="" ID="{0698650B-8413-4AD1-8EE8-79BCE21D92DC}" ShortID="553438488">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_Amelioration" ID="{743CF39B-1A4E-4564-B9B2-43A0B6B9F419}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_HA_ColdWater_ItsSoCold" ID="{F09D40B0-C63E-4B31-8CEC-A6C1DF69B9D5}">
+									<ChildrenList>
+										<Action Name="" ID="{DBDD3A12-2562-43F2-833C-2526B4172535}" ShortID="525038505">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_ColdWater_ItsSoCold" ID="{3EF7D317-EBFA-4B65-ADB1-EA1CD40EE185}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_HA_ColdWater_ThatWasNotAGoodIdea" ID="{8ECF2AF1-9957-4BB3-90B0-D56959A84758}">
+									<ChildrenList>
+										<Action Name="" ID="{923E27E1-1444-43D4-9085-2CD6DC8EADE7}" ShortID="1020617307">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_ColdWater_ThatWasNotAGoodIdea" ID="{90F38809-68B1-420A-B7EC-31EC3F308CB3}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_HA_FirstClue" ID="{C0A4720A-4859-4CD5-8D87-D4F3D07927C0}">
+									<ChildrenList>
+										<Action Name="" ID="{0EF4DBD9-E2F9-4888-92AF-E0693CE1C7C1}" ShortID="313391276">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_FirstClue" ID="{3D59A9EE-BFA1-4E1B-9777-D39ED4D821A3}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_HA_IceBreakerCrafted" ID="{26AA0A8C-7599-4638-B254-52C8356DE70B}">
+									<ChildrenList>
+										<Action Name="" ID="{D33F596F-0F00-45DD-AD43-3972502096E3}" ShortID="201919987">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_IceBreakerCrafted" ID="{BEE67078-B6D3-4C2B-87B1-0ECFC668A6B4}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_HA_Success" ID="{F4719C63-822F-4294-97CE-DC9D3FD833BF}">
+									<ChildrenList>
+										<Action Name="" ID="{73C008C7-4D98-48C6-B2BA-CF218D306777}" ShortID="856921391">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_Success" ID="{61CA1FC3-6562-4D75-A8C8-6D658051FB85}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Humming" ID="{4A41E30C-8A9F-4792-9EEC-53B99B7ACCCF}" ShortID="890963918">
+							<ChildrenList>
+								<Event Name="E_Voice_Humming_Random" ID="{86269055-2590-4DEA-A3D9-BE25E59B5F40}">
+									<ChildrenList>
+										<Action Name="" ID="{5E51E3C1-A2DC-4406-B773-C7470DD9BB03}" ShortID="458634259">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Voice_Humming_RND" ID="{3251F359-DAEB-4D02-A2BF-02B1FBC05DAE}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_Humming_NoThatsNotIt" ID="{F4D65157-9C5B-41E4-A2D4-2B40D1A0728D}">
+									<ChildrenList>
+										<Action Name="" ID="{C4390C1D-A98F-4456-8433-70423669BBED}" ShortID="1006334236">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_Humming_08_NoThatsNotIt" ID="{B13E877A-4334-4EA7-B223-B2194D021AE1}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
