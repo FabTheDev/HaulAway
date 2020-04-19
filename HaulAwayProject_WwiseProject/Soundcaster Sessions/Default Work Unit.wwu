@@ -26,6 +26,10 @@
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="E_Voice_Cold_STOP_LOOP" ID="{E671A7E1-7B26-4B5F-B02A-B8A004FA5669}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}"/>
+							<Position X="1" Y="6"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="E_Character_Swiming" ID="{ADCF0009-ACAC-46C9-A06B-62C467D7211A}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
 							<Position X="2" Y="0"/>
 						</Module>
