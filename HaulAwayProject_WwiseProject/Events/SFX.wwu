@@ -48,6 +48,16 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
+										<Action Name="" ID="{E6AC7FBC-A70F-40EF-9E59-DDC561967984}" ShortID="672952077">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Voice_Jump_RND" ID="{5C42F8E6-F45D-42C1-9AFD-814BDF58FC14}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 									</ChildrenList>
 								</Event>
 								<Event Name="E_Character_DiveInWater" ID="{F70F8017-C70D-456E-95CC-51A0FB563ADB}">

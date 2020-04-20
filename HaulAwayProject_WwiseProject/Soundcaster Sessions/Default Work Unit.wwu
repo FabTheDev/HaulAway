@@ -26,12 +26,24 @@
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="E_Voice_Cold_STOP_LOOP" ID="{E671A7E1-7B26-4B5F-B02A-B8A004FA5669}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}"/>
+							<Position X="1" Y="6"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="E_Character_Swiming" ID="{ADCF0009-ACAC-46C9-A06B-62C467D7211A}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
 							<Position X="2" Y="0"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="E_Character_Stop_Swiming" ID="{36122071-4BD3-4318-B5F5-56F5675F2D05}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
 							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Voice_Jump" ID="{20C0A7F1-483D-4B77-AB92-FBED048089F5}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}"/>
+							<Position X="2" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Voice_Cold_LOOP" ID="{4E0C728F-A748-4C19-BC09-28D3C8631C4C}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}"/>
+							<Position X="2" Y="6"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="E_Character_PickUp_Object" ID="{C35DAE63-6620-41BE-8376-3E65C4EB516A}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
@@ -42,16 +54,44 @@
 							<Position X="3" Y="3"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Voice_Humming_RND" ID="{3251F359-DAEB-4D02-A2BF-02B1FBC05DAE}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
-							<Position X="3" Y="4"/>
+							<ObjectRef Name="E_Voice_Drowned" ID="{EFEC4E06-D06F-4676-8FBE-7A359743F43B}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}"/>
+							<Position X="3" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Voice_LittleEffort_LOOP" ID="{D757627F-47C9-4816-BA70-F894B2443192}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}"/>
+							<Position X="3" Y="6"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Voice_EfforRelease" ID="{4CE5B0BA-1767-456A-AEB9-D6C901FBD7FA}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}"/>
+							<Position X="4" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Voice_StrongEffort_LOOP" ID="{807EF240-D371-433E-A7FE-0586B5CEB790}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}"/>
+							<Position X="4" Y="6"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="VOICE_HA_Collision_YouWontMakeItFar" ID="{1A4EE16F-F148-4FDE-A18F-159F007FFA54}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
 							<Position X="5" Y="3"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="E_Voice_Exhale" ID="{651CEF3A-B365-4192-8915-FF62FC5E8BBF}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}"/>
+							<Position X="5" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Voice_InWater_LOOP" ID="{EEBA7EFF-100F-4268-876A-3B788936C9AF}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}"/>
+							<Position X="5" Y="6"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="VOICE_HA_Collision_DamnItISwear" ID="{345773DE-48A1-47A5-A2F7-27D616FFFB76}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
 							<Position X="6" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Voice_Impact" ID="{BA62C5B6-B6E2-4454-8E5D-3D35064CC8C1}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}"/>
+							<Position X="6" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Voice_Inhale" ID="{B44F5068-F421-4DAA-ABA1-75381562FCCB}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}"/>
+							<Position X="7" Y="5"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
@@ -69,7 +109,11 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Intra_Music_LowPassFilter_GP" ID="{F457DEC5-2431-4441-8DDC-2DBD7379D01C}"/>
-							<Value>100</Value>
+							<Value>93.5279187817259</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="DrowningRatio_GP" ID="{DA7FBB8F-9949-4564-877C-43BA9796238A}"/>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Water_Depth_Left" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}"/>
@@ -77,7 +121,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="ShipLife_GP" ID="{718CC684-1460-48DE-BD21-DEDF2B6A9D4A}"/>
-							<Value>100</Value>
+							<Value>0.982984293193717</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="UI_Volume_GP" ID="{8A19730F-E82D-497F-9812-8D5F21AD724B}"/>
