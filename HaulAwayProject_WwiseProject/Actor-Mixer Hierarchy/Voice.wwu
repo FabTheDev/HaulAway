@@ -27,13 +27,16 @@
 						<Reference Name="OutputBus">
 							<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
 						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Exterior_Acoustic_Voice_AUX" ID="{68513103-99BC-4A30-9F0A-22590B4A8AF9}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<ActorMixer Name="Voicelines" ID="{0E2BA5FE-1AD7-4216-A635-5AF03CED4260}" ShortID="13948714">
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-6</Value>
+										<Value>-3</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -46,6 +49,1154 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
+								<ActorMixer Name="Special Events" ID="{76A73D3B-F918-4139-930D-E056BF1C4828}" ShortID="96357861">
+									<PropertyList>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+										<Property Name="OverridePriority" Type="bool" Value="True"/>
+										<Property Name="Priority" Type="int16">
+											<ValueList>
+												<Value>40</Value>
+											</ValueList>
+										</Property>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="VOICE_HA_Amelioration" ID="{743CF39B-1A4E-4564-B9B2-43A0B6B9F419}" ShortID="534282503">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VOICE_HA_Amelioration" ID="{ADCCE4BF-28C7-4A62-B6C6-A4C805DE3153}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VOICE_HA_Amelioration.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="66811425"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VOICE_HA_Amelioration" ID="{ADCCE4BF-28C7-4A62-B6C6-A4C805DE3153}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VOICE_HA_ColdWater_ItsSoCold" ID="{3EF7D317-EBFA-4B65-ADB1-EA1CD40EE185}" ShortID="568228706">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VOICE_HA_ColdWater_ItsSoCold" ID="{195BDA12-37BE-43D5-9835-24820FAC5EB9}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VOICE_HA_ColdWater_ItsSoCold.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="869081150"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VOICE_HA_ColdWater_ItsSoCold" ID="{195BDA12-37BE-43D5-9835-24820FAC5EB9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VOICE_HA_ColdWater_ThatWasNotAGoodIdea" ID="{90F38809-68B1-420A-B7EC-31EC3F308CB3}" ShortID="810207684">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VOICE_HA_ColdWater_ThatWasNotAGoodIdea" ID="{9E4917F9-5BFB-4E43-9845-72103F7F3079}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VOICE_HA_ColdWater_ThatWasNotAGoodIdea.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="51795145"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VOICE_HA_ColdWater_ThatWasNotAGoodIdea" ID="{9E4917F9-5BFB-4E43-9845-72103F7F3079}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VOICE_HA_FirstClue" ID="{3D59A9EE-BFA1-4E1B-9777-D39ED4D821A3}" ShortID="773652795">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VOICE_HA_FirstClue" ID="{6C6A33F4-3A79-422C-BD5E-9BC97DC86628}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VOICE_HA_FirstClue.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1045483149"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VOICE_HA_FirstClue" ID="{6C6A33F4-3A79-422C-BD5E-9BC97DC86628}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VOICE_HA_IceBreakerCrafted" ID="{BEE67078-B6D3-4C2B-87B1-0ECFC668A6B4}" ShortID="735250165">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VOICE_HA_IceBreakerCrafted" ID="{0451476B-0801-4755-8544-8DFED7ECFA68}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VOICE_HA_IceBreakerCrafted.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="496449851"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VOICE_HA_IceBreakerCrafted" ID="{0451476B-0801-4755-8544-8DFED7ECFA68}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VOICE_HA_Success" ID="{61CA1FC3-6562-4D75-A8C8-6D658051FB85}" ShortID="785346815">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VOICE_HA_Success" ID="{A5E870F8-F236-4B37-A77D-C8299411810A}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VOICE_HA_Success.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="286933755"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VOICE_HA_Success" ID="{A5E870F8-F236-4B37-A77D-C8299411810A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</ActorMixer>
+								<ActorMixer Name="No Wind" ID="{8CB65E40-0C88-462C-9BF0-D4E0053985B5}" ShortID="1052366703">
+									<PropertyList>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+										<Property Name="OverridePriority" Type="bool" Value="True"/>
+										<Property Name="Priority" Type="int16">
+											<ValueList>
+												<Value>20</Value>
+											</ValueList>
+										</Property>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="VOICE_HA_NoWind_EvenFasterWithSailDown" ID="{EE9806CF-BF98-4549-AB77-59C870F4CA5E}" ShortID="708816416">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VOICE_HA_NoWind_EvenFasterWithSailDown" ID="{2B92E2A8-FCCE-4025-9438-31260FA091D2}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VOICE_HA_NoWind_EvenFasterWithSailDown.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="335204359"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VOICE_HA_NoWind_EvenFasterWithSailDown" ID="{2B92E2A8-FCCE-4025-9438-31260FA091D2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VOICE_HA_NoWind_GoingAnywhereLikeThat" ID="{1FC2EFD9-D4CA-4768-A2EF-FC99EC58B12C}" ShortID="910154568">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VOICE_HA_NoWind_GoingAnywhereLikeThat" ID="{E0C6A030-4621-4AAE-967E-5D9AD7C8232A}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VOICE_HA_NoWind_GoingAnywhereLikeThat.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="701938893"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VOICE_HA_NoWind_GoingAnywhereLikeThat" ID="{E0C6A030-4621-4AAE-967E-5D9AD7C8232A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VOICE_HA_NoWind_MustBeBetterWay" ID="{C1ABE2F0-590A-4AD9-932C-D9BD7FFB9A4C}" ShortID="2452491">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VOICE_HA_NoWind_MustBeBetterWay" ID="{82ED9FD0-4483-461B-A9E4-306424C8358D}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VOICE_HA_NoWind_MustBeBetterWay.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="816956509"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VOICE_HA_NoWind_MustBeBetterWay" ID="{82ED9FD0-4483-461B-A9E4-306424C8358D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VOICE_HA_NoWind_WindPissingMeOff" ID="{60E4BA31-72CE-4B2E-A52B-AA44A16A8E13}" ShortID="829198674">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VOICE_HA_NoWind_WindPissingMeOff" ID="{EA4FA805-FF29-4134-AB55-ECEADD44B7A7}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VOICE_HA_NoWind_WindPissingMeOff.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="633903463"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VOICE_HA_NoWind_WindPissingMeOff" ID="{EA4FA805-FF29-4134-AB55-ECEADD44B7A7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</ActorMixer>
+								<ActorMixer Name="New Island" ID="{CB092A35-EC58-451D-9744-A3D8B290DEDA}" ShortID="901138285">
+									<PropertyList>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="OverridePriority" Type="bool" Value="True"/>
+										<Property Name="Priority" Type="int16">
+											<ValueList>
+												<Value>40</Value>
+											</ValueList>
+										</Property>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+											<ObjectRef Name="Nearly_Forever" ID="{38550FDA-9236-4FC5-8AE0-68DB08164B25}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="VOICE_HA_NewIsland_IsAnyoneHere" ID="{B30E3015-3ACE-46F1-9BF1-3AA16D6DBAEE}" ShortID="712004735">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VOICE_HA_NewIsland_IsAnyoneHere" ID="{749D3F58-B515-47C2-B2DA-D691D86D89B0}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VOICE_HA_NewIsland_IsAnyoneHere.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="860757277"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VOICE_HA_NewIsland_IsAnyoneHere" ID="{749D3F58-B515-47C2-B2DA-D691D86D89B0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VOICE_HA_NewIsland_Someone" ID="{A9775A14-A1E3-44A1-9BD1-FE499AE5CB33}" ShortID="69028759">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VOICE_HA_NewIsland_Someone" ID="{67AD6961-8661-44A1-B24F-987EE0EC7724}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VOICE_HA_NewIsland_Someone.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="154282895"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VOICE_HA_NewIsland_Someone" ID="{67AD6961-8661-44A1-B24F-987EE0EC7724}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</ActorMixer>
+								<ActorMixer Name="Repaired" ID="{7F6F78B5-A988-4436-A9F0-D88D8AC2F272}" ShortID="38536719">
+									<PropertyList>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+										<Property Name="OverridePriority" Type="bool" Value="True"/>
+										<Property Name="Priority" Type="int16">
+											<ValueList>
+												<Value>40</Value>
+											</ValueList>
+										</Property>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="VOICE_HA_Repaired_AsGoodAsNew" ID="{FFE0DBC9-E922-4741-8E46-C38CCC1ECC43}" ShortID="307390745">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VOICE_HA_Repaired_AsGoodAsNew" ID="{E831DD54-A116-4ECC-B49B-301E734C057E}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VOICE_HA_Repaired_AsGoodAsNew.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="437011583"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VOICE_HA_Repaired_AsGoodAsNew" ID="{E831DD54-A116-4ECC-B49B-301E734C057E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VOICE_HA_Repaired_HopeYouWillStayLikeThat" ID="{DD0DE011-D0A2-45F3-9D27-3C5CCB2A7376}" ShortID="504551942">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VOICE_HA_Repaired_HopeYouWillStayLikeThat" ID="{8E8644F5-7FCE-4B77-B8D2-D216B5B64823}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VOICE_HA_Repaired_HopeYouWillStayLikeThat.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="999872788"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VOICE_HA_Repaired_HopeYouWillStayLikeThat" ID="{8E8644F5-7FCE-4B77-B8D2-D216B5B64823}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VOICE_HA_Repaired_ThatllHaveToDo" ID="{A8D9FF36-F631-42AA-824C-8E28822E3E28}" ShortID="77344143">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VOICE_HA_Repaired_ThatllHaveToDo" ID="{A658127F-65C8-444C-A17C-838441D3DBEF}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VOICE_HA_Repaired_ThatllHaveToDo.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="494409370"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VOICE_HA_Repaired_ThatllHaveToDo" ID="{A658127F-65C8-444C-A17C-838441D3DBEF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VOICE_HA_Repaired_YouWontTakeWaterAnymore" ID="{7E370C02-90B7-45B7-8CC1-48B51D75BC6A}" ShortID="660404059">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VOICE_HA_Repaired_YouWontTakeWaterAnymore" ID="{00E99F18-3196-4315-9883-DB2C948AE8A6}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VOICE_HA_Repaired_YouWontTakeWaterAnymore.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="741110166"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VOICE_HA_Repaired_YouWontTakeWaterAnymore" ID="{00E99F18-3196-4315-9883-DB2C948AE8A6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</ActorMixer>
+								<ActorMixer Name="Collision" ID="{0D9A0A56-9C87-4B6B-95E8-2DF57456D825}" ShortID="172289220">
+									<PropertyList>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+										<Property Name="OverridePriority" Type="bool" Value="True"/>
+										<Property Name="Priority" Type="int16">
+											<ValueList>
+												<Value>40</Value>
+											</ValueList>
+										</Property>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="VOICE_HA_Collision_AahShit" ID="{66D29438-9FDE-4A9C-8D62-B6E676B5D820}" ShortID="442532633">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VOICE_HA_Collision_AahShit" ID="{676D5B05-6DF9-445F-A44A-FAD5B75DC150}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VOICE_HA_Collision_AahShit.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="416782334"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VOICE_HA_Collision_AahShit" ID="{676D5B05-6DF9-445F-A44A-FAD5B75DC150}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VOICE_HA_Collision_DamnItISwear" ID="{345773DE-48A1-47A5-A2F7-27D616FFFB76}" ShortID="947400644">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VOICE_HA_Collision_DamnItISwear" ID="{0B71EA59-11E9-4194-A38D-F0EEDC1D66ED}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VOICE_HA_Collision_DamnItISwear.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="978834239"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VOICE_HA_Collision_DamnItISwear" ID="{0B71EA59-11E9-4194-A38D-F0EEDC1D66ED}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VOICE_HA_Collision_ForSake" ID="{02BC38E5-C77E-4FB6-AE60-26AF35FC0A12}" ShortID="744691399">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>30</Value>
+													</ValueList>
+												</Property>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VOICE_HA_Collision_ForSake" ID="{0077E9B0-CF3F-4FF5-BDC4-8E67CB47BD0B}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VOICE_HA_Collision_ForSake.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="911939663"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VOICE_HA_Collision_ForSake" ID="{0077E9B0-CF3F-4FF5-BDC4-8E67CB47BD0B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VOICE_HA_Collision_KeepUp" ID="{8397734B-D5B3-4FAE-804B-4348C5C3853C}" ShortID="401004785">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VOICE_HA_Collision_KeepUp" ID="{10DF8946-18D5-4C6D-8D61-E79F6127F8C6}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VOICE_HA_Collision_KeepUp.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="266469211"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VOICE_HA_Collision_KeepUp" ID="{10DF8946-18D5-4C6D-8D61-E79F6127F8C6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VOICE_HA_Collision_WhatTheHell" ID="{314CC1CC-5582-4963-B8F8-8332BDAD0A1C}" ShortID="582110792">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VOICE_HA_Collision_WhatTheHell" ID="{9A55B989-90FE-41CD-8BB7-E825FFDE1FA7}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VOICE_HA_Collision_WhatTheHell.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="297297313"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VOICE_HA_Collision_WhatTheHell" ID="{9A55B989-90FE-41CD-8BB7-E825FFDE1FA7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VOICE_HA_Collision_YouCanDoBetterThanThat" ID="{A4DF4855-63CE-4DF3-8A39-A285AC1E230F}" ShortID="236881048">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VOICE_HA_Collision_YouCanDoBetterThanThat" ID="{07E834C0-23B5-4E41-9E25-4328AABEA320}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VOICE_HA_Collision_YouCanDoBetterThanThat.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="703140650"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VOICE_HA_Collision_YouCanDoBetterThanThat" ID="{07E834C0-23B5-4E41-9E25-4328AABEA320}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VOICE_HA_Collision_YouWontMakeItFar" ID="{1A4EE16F-F148-4FDE-A18F-159F007FFA54}" ShortID="860124563">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VOICE_HA_Collision_YouWontMakeItFar" ID="{4231B690-5325-4804-9DE0-17C6983167C3}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VOICE_HA_Collision_YouWontMakeItFar.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="945392606"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VOICE_HA_Collision_YouWontMakeItFar" ID="{4231B690-5325-4804-9DE0-17C6983167C3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</ActorMixer>
+								<ActorMixer Name="Found" ID="{9C345E41-5A1B-4D72-946A-8A0A981198E1}" ShortID="329743323">
+									<PropertyList>
+										<Property Name="OverridePriority" Type="bool" Value="True"/>
+										<Property Name="Priority" Type="int16">
+											<ValueList>
+												<Value>40</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="VOICE_HA_Found_Compass" ID="{5F80D1B9-ADAF-4CE9-9588-424B2E593974}" ShortID="105739286">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VOICE_HA_Found_Compass" ID="{BF7B67EF-5536-43C0-877E-B9077ABDB0A4}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VOICE_HA_Found_Compass.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="174526353"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VOICE_HA_Found_Compass" ID="{BF7B67EF-5536-43C0-877E-B9077ABDB0A4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VOICE_HA_Found_Drawing" ID="{B261EFEE-34EC-4FF9-8E10-5BC4D32E5094}" ShortID="1043493142">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VOICE_HA_Found_Drawing" ID="{3F5F5E4F-D7CD-4D0D-9897-6603D619B7AB}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VOICE_HA_Found_Drawing.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="495771808"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VOICE_HA_Found_Drawing" ID="{3F5F5E4F-D7CD-4D0D-9897-6603D619B7AB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VOICE_HA_Found_Map1" ID="{F00DB6CD-B65B-4E55-9D88-F1D04D6C18E2}" ShortID="57057877">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VOICE_HA_Found_Map1" ID="{87023641-BA1D-4E26-8D95-7FD0D3046EB9}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VOICE_HA_Found_Map1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="953079433"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VOICE_HA_Found_Map1" ID="{87023641-BA1D-4E26-8D95-7FD0D3046EB9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VOICE_HA_Found_Map2" ID="{AD34A461-2CD3-4B6B-83A8-28ECBDD1C947}" ShortID="230316818">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VOICE_HA_Found_Map2" ID="{F8BCC69D-419C-47F9-A72C-74E3489AB245}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VOICE_HA_Found_Map2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="583605425"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VOICE_HA_Found_Map2" ID="{F8BCC69D-419C-47F9-A72C-74E3489AB245}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VOICE_HA_Found_Map3" ID="{9D06E7A8-A180-403D-9032-5DE00B66D0A2}" ShortID="365821931">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VOICE_HA_Found_Map3" ID="{FB3083B0-ABB0-41DD-A968-481C4D30DCC1}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VOICE_HA_Found_Map3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="266028618"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VOICE_HA_Found_Map3" ID="{FB3083B0-ABB0-41DD-A968-481C4D30DCC1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VOICE_HA_Found_Ressource1" ID="{33BC2897-69F4-4B15-90B6-9252DD432FE3}" ShortID="168059738">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VOICE_HA_Found_Ressource1" ID="{DB2B08A4-E29F-4C00-9AE4-2313D68EE004}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VOICE_HA_Found_Ressource1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="133972969"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VOICE_HA_Found_Ressource1" ID="{DB2B08A4-E29F-4C00-9AE4-2313D68EE004}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VOICE_HA_Found_Ressource2" ID="{0C34CF60-5F3B-4EBE-AF96-0C2BF09F5046}" ShortID="353647914">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VOICE_HA_Found_Ressource2" ID="{08845328-C1F4-46E6-B666-A33083B9263D}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VOICE_HA_Found_Ressource2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="637567642"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VOICE_HA_Found_Ressource2" ID="{08845328-C1F4-46E6-B666-A33083B9263D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VOICE_HA_Found_SailPlan" ID="{206725B8-F088-48A3-8365-B43014691C22}" ShortID="769522262">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VOICE_HA_Found_SailPlan" ID="{1777A90B-5FC2-409B-B28C-D373B7188020}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VOICE_HA_Found_SailPlan.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="445963451"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VOICE_HA_Found_SailPlan" ID="{1777A90B-5FC2-409B-B28C-D373B7188020}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</ActorMixer>
 								<ActorMixer Name="Anecdotes" ID="{E0DC85CC-2712-4C15-9C19-3868C865CA18}" ShortID="848754826">
 									<PropertyList>
 										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
@@ -63,6 +1214,9 @@
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Exterior_Acoustic_Voice_AUX" ID="{68513103-99BC-4A30-9F0A-22590B4A8AF9}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -361,730 +1515,15 @@
 										</Sound>
 									</ChildrenList>
 								</ActorMixer>
-								<ActorMixer Name="Special Events" ID="{76A73D3B-F918-4139-930D-E056BF1C4828}" ShortID="96357861">
-									<PropertyList>
-										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-										<Property Name="OverridePriority" Type="bool" Value="True"/>
-										<Property Name="Priority" Type="int16">
-											<ValueList>
-												<Value>70</Value>
-											</ValueList>
-										</Property>
-										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="VOICE_HA_Amelioration" ID="{743CF39B-1A4E-4564-B9B2-43A0B6B9F419}" ShortID="534282503">
-											<PropertyList>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_Amelioration" ID="{ADCCE4BF-28C7-4A62-B6C6-A4C805DE3153}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_Amelioration.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="66811425"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_Amelioration" ID="{ADCCE4BF-28C7-4A62-B6C6-A4C805DE3153}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="VOICE_HA_ColdWater_ItsSoCold" ID="{3EF7D317-EBFA-4B65-ADB1-EA1CD40EE185}" ShortID="568228706">
-											<PropertyList>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_ColdWater_ItsSoCold" ID="{195BDA12-37BE-43D5-9835-24820FAC5EB9}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_ColdWater_ItsSoCold.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="869081150"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_ColdWater_ItsSoCold" ID="{195BDA12-37BE-43D5-9835-24820FAC5EB9}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="VOICE_HA_ColdWater_ThatWasNotAGoodIdea" ID="{90F38809-68B1-420A-B7EC-31EC3F308CB3}" ShortID="810207684">
-											<PropertyList>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_ColdWater_ThatWasNotAGoodIdea" ID="{9E4917F9-5BFB-4E43-9845-72103F7F3079}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_ColdWater_ThatWasNotAGoodIdea.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="51795145"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_ColdWater_ThatWasNotAGoodIdea" ID="{9E4917F9-5BFB-4E43-9845-72103F7F3079}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="VOICE_HA_FirstClue" ID="{3D59A9EE-BFA1-4E1B-9777-D39ED4D821A3}" ShortID="773652795">
-											<PropertyList>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-2</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_FirstClue" ID="{6C6A33F4-3A79-422C-BD5E-9BC97DC86628}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_FirstClue.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="1045483149"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_FirstClue" ID="{6C6A33F4-3A79-422C-BD5E-9BC97DC86628}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="VOICE_HA_IceBreakerCrafted" ID="{BEE67078-B6D3-4C2B-87B1-0ECFC668A6B4}" ShortID="735250165">
-											<PropertyList>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_IceBreakerCrafted" ID="{0451476B-0801-4755-8544-8DFED7ECFA68}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_IceBreakerCrafted.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="496449851"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_IceBreakerCrafted" ID="{0451476B-0801-4755-8544-8DFED7ECFA68}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="VOICE_HA_Success" ID="{61CA1FC3-6562-4D75-A8C8-6D658051FB85}" ShortID="785346815">
-											<PropertyList>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_Success" ID="{A5E870F8-F236-4B37-A77D-C8299411810A}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_Success.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="286933755"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_Success" ID="{A5E870F8-F236-4B37-A77D-C8299411810A}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</ActorMixer>
-								<ActorMixer Name="See" ID="{293FCEE5-8660-40D3-8014-B6E94D5A5E19}" ShortID="631295959">
-									<PropertyList>
-										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-										<Property Name="OverridePriority" Type="bool" Value="True"/>
-										<Property Name="Priority" Type="int16">
-											<ValueList>
-												<Value>60</Value>
-											</ValueList>
-										</Property>
-										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="VOICE_HA_See_Anchors" ID="{E3AE9044-2218-45C8-8A4E-7230404B3545}" ShortID="92331232">
-											<PropertyList>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_See_Anchors" ID="{E1FF722E-BD34-4E8B-8C92-90A80CD236B3}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_See_Anchors.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="847999823"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_See_Anchors" ID="{E1FF722E-BD34-4E8B-8C92-90A80CD236B3}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="VOICE_HA_See_Bell" ID="{3FDD0744-4115-4E71-9CE5-3891E60A5321}" ShortID="119804259">
-											<PropertyList>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_See_Bell" ID="{A49A96E3-38B3-47AF-9680-82028E27F07A}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_See_Bell.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="343968085"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_See_Bell" ID="{A49A96E3-38B3-47AF-9680-82028E27F07A}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="VOICE_HA_See_CalmSea" ID="{DD7A5B64-3E1E-435E-95DC-94CE4E20C6EE}" ShortID="324695921">
-											<PropertyList>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_See_CalmSea" ID="{277A39B3-A762-4D01-9C29-3137BA1CAB53}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_See_CalmSea.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="233896740"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_See_CalmSea" ID="{277A39B3-A762-4D01-9C29-3137BA1CAB53}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="VOICE_HA_See_DarkWater" ID="{9FAE2223-4928-4933-AE8A-83E52AE41A61}" ShortID="233311507">
-											<PropertyList>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_See_DarkWater" ID="{8B8DB011-CBE5-437B-AD2F-89B4007AF539}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_See_DarkWater.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="944451800"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_See_DarkWater" ID="{8B8DB011-CBE5-437B-AD2F-89B4007AF539}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="VOICE_HA_See_Icebergs1" ID="{0B207D79-48C4-4C74-BEF8-82CBEA8BCACF}" ShortID="960755372">
-											<PropertyList>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_See_Icebergs1" ID="{44EA094F-93FB-4288-B840-6C8C4EA47E50}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_See_Icebergs1.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="1018887341"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_See_Icebergs1" ID="{44EA094F-93FB-4288-B840-6C8C4EA47E50}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="VOICE_HA_See_Icebergs2" ID="{6F47CC36-5914-474A-9CD9-BAE63C5B64F3}" ShortID="755282096">
-											<PropertyList>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_See_Icebergs2" ID="{68843D2B-2A96-4746-B318-30C414E244E4}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_See_Icebergs2.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="880258122"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_See_Icebergs2" ID="{68843D2B-2A96-4746-B318-30C414E244E4}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="VOICE_HA_See_Lighthouse" ID="{F81779E7-43F5-4E55-98F1-A74CFC7E3510}" ShortID="188995269">
-											<PropertyList>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_See_Lighthouse" ID="{9A555765-6E8F-4991-A638-1440219FA050}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_See_Lighthouse.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="286198655"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_See_Lighthouse" ID="{9A555765-6E8F-4991-A638-1440219FA050}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="VOICE_HA_See_Reefs" ID="{F4B44063-30E8-4456-87EB-362244E09627}" ShortID="43563570">
-											<PropertyList>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_See_Reefs" ID="{5A5CEF4A-3D3E-453C-A220-57292E834DE7}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_See_Reefs.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="768938663"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_See_Reefs" ID="{5A5CEF4A-3D3E-453C-A220-57292E834DE7}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="VOICE_HA_See_Snow" ID="{7366AB25-DE72-4938-BC47-BB60C0CED7C2}" ShortID="679654615">
-											<PropertyList>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_See_Snow" ID="{6D13ED8C-36D4-42D4-88A4-7D119920A5F0}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_See_Snow.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="147874690"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_See_Snow" ID="{6D13ED8C-36D4-42D4-88A4-7D119920A5F0}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="VOICE_HA_See_Storm" ID="{809A3AD5-3E23-43BB-81D7-BD9C0CA73DC8}" ShortID="357199267">
-											<PropertyList>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_See_Storm" ID="{F12FD5CD-C6B5-41DE-BF96-94BBD8528C9C}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_See_Storm.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="563294677"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_See_Storm" ID="{F12FD5CD-C6B5-41DE-BF96-94BBD8528C9C}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="VOICE_HA_See_Tree" ID="{D2388055-FEB1-48AC-A432-F10D9A784481}" ShortID="967455818">
-											<PropertyList>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_See_Tree" ID="{E99A8038-A6AB-4DCD-AF80-9C470B5AF2EB}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_See_Tree.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="360762557"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_See_Tree" ID="{E99A8038-A6AB-4DCD-AF80-9C470B5AF2EB}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="VOICE_HA_See_Vessel" ID="{72A26895-ACEF-4830-B403-FA18F8349E82}" ShortID="982311459">
-											<PropertyList>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_See_Vessel" ID="{1A95A81C-3D7A-4BF4-A021-B6446B3ED71B}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_See_Vessel.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="257657906"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_See_Vessel" ID="{1A95A81C-3D7A-4BF4-A021-B6446B3ED71B}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="VOICE_HA_See_WeirdPlace" ID="{3AE14AF1-BB39-481E-9991-E7F008DD862C}" ShortID="400352729">
-											<PropertyList>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_See_WeirdPlace" ID="{86980C5F-B044-40CB-BD0F-516FEE1D05BA}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_See_WeirdPlace.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="778684753"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_See_WeirdPlace" ID="{86980C5F-B044-40CB-BD0F-516FEE1D05BA}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="VOICE_HA_See_Whale1" ID="{4E9368E1-15A7-4CDF-82EF-3C5B653F497E}" ShortID="174102560">
-											<PropertyList>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_See_Whale1" ID="{A6A75BA7-AE27-4F17-BB4E-0D25DCBC8A62}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_See_Whale1.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="619410916"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_See_Whale1" ID="{A6A75BA7-AE27-4F17-BB4E-0D25DCBC8A62}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="VOICE_HA_See_Whale2" ID="{371B6ED6-3EFC-46E7-8CFD-FB9AB907C49F}" ShortID="634666066">
-											<PropertyList>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_See_Whale2" ID="{C5459825-9648-4A6A-BDB6-2CD9F4130069}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_See_Whale2.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="277158030"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_See_Whale2" ID="{C5459825-9648-4A6A-BDB6-2CD9F4130069}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</ActorMixer>
 								<ActorMixer Name="Damaged" ID="{9ABDA589-9B05-4D5D-9470-E2FBEC76DE81}" ShortID="512096979">
 									<PropertyList>
 										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+										<Property Name="OverridePriority" Type="bool" Value="True"/>
+										<Property Name="Priority" Type="int16">
+											<ValueList>
+												<Value>30</Value>
+											</ValueList>
+										</Property>
 										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
@@ -1093,6 +1532,9 @@
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Exterior_Acoustic_Voice_AUX" ID="{68513103-99BC-4A30-9F0A-22590B4A8AF9}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -1226,150 +1668,6 @@
 										</Sound>
 									</ChildrenList>
 								</ActorMixer>
-								<ActorMixer Name="No Wind" ID="{8CB65E40-0C88-462C-9BF0-D4E0053985B5}" ShortID="1052366703">
-									<PropertyList>
-										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="VOICE_HA_NoWind_EvenFasterWithSailDown" ID="{EE9806CF-BF98-4549-AB77-59C870F4CA5E}" ShortID="708816416">
-											<PropertyList>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_NoWind_EvenFasterWithSailDown" ID="{2B92E2A8-FCCE-4025-9438-31260FA091D2}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_NoWind_EvenFasterWithSailDown.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="335204359"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_NoWind_EvenFasterWithSailDown" ID="{2B92E2A8-FCCE-4025-9438-31260FA091D2}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="VOICE_HA_NoWind_GoingAnywhereLikeThat" ID="{1FC2EFD9-D4CA-4768-A2EF-FC99EC58B12C}" ShortID="910154568">
-											<PropertyList>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_NoWind_GoingAnywhereLikeThat" ID="{E0C6A030-4621-4AAE-967E-5D9AD7C8232A}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_NoWind_GoingAnywhereLikeThat.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="701938893"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_NoWind_GoingAnywhereLikeThat" ID="{E0C6A030-4621-4AAE-967E-5D9AD7C8232A}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="VOICE_HA_NoWind_MustBeBetterWay" ID="{C1ABE2F0-590A-4AD9-932C-D9BD7FFB9A4C}" ShortID="2452491">
-											<PropertyList>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_NoWind_MustBeBetterWay" ID="{82ED9FD0-4483-461B-A9E4-306424C8358D}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_NoWind_MustBeBetterWay.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="816956509"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_NoWind_MustBeBetterWay" ID="{82ED9FD0-4483-461B-A9E4-306424C8358D}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="VOICE_HA_NoWind_WindPissingMeOff" ID="{60E4BA31-72CE-4B2E-A52B-AA44A16A8E13}" ShortID="829198674">
-											<PropertyList>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_NoWind_WindPissingMeOff" ID="{EA4FA805-FF29-4134-AB55-ECEADD44B7A7}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_NoWind_WindPissingMeOff.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="633903463"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_NoWind_WindPissingMeOff" ID="{EA4FA805-FF29-4134-AB55-ECEADD44B7A7}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</ActorMixer>
 								<ActorMixer Name="Humming" ID="{31D06E1B-36DF-4F8D-AA8A-55A3C8699B99}" ShortID="836951583">
 									<PropertyList>
 										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
@@ -1387,6 +1685,9 @@
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Exterior_Acoustic_Voice_AUX" ID="{68513103-99BC-4A30-9F0A-22590B4A8AF9}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -1757,13 +2058,13 @@
 										</Sound>
 									</ChildrenList>
 								</ActorMixer>
-								<BlendContainer Name="Found" ID="{57FA4578-F8F0-4F32-B393-631410871C47}" ShortID="327185682">
+								<ActorMixer Name="See" ID="{293FCEE5-8660-40D3-8014-B6E94D5A5E19}" ShortID="631295959">
 									<PropertyList>
 										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 										<Property Name="OverridePriority" Type="bool" Value="True"/>
 										<Property Name="Priority" Type="int16">
 											<ValueList>
-												<Value>70</Value>
+												<Value>30</Value>
 											</ValueList>
 										</Property>
 										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
@@ -1775,363 +2076,12 @@
 										<Reference Name="OutputBus">
 											<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
 										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="VOICE_HA_Found_Map1" ID="{F00DB6CD-B65B-4E55-9D88-F1D04D6C18E2}" ShortID="57057877">
-											<PropertyList>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_Found_Map1" ID="{87023641-BA1D-4E26-8D95-7FD0D3046EB9}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_Found_Map1.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="953079433"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_Found_Map1" ID="{87023641-BA1D-4E26-8D95-7FD0D3046EB9}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="VOICE_HA_Found_Map3" ID="{9D06E7A8-A180-403D-9032-5DE00B66D0A2}" ShortID="365821931">
-											<PropertyList>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_Found_Map3" ID="{FB3083B0-ABB0-41DD-A968-481C4D30DCC1}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_Found_Map3.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="266028618"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_Found_Map3" ID="{FB3083B0-ABB0-41DD-A968-481C4D30DCC1}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="VOICE_HA_Found_Ressource2" ID="{0C34CF60-5F3B-4EBE-AF96-0C2BF09F5046}" ShortID="353647914">
-											<PropertyList>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_Found_Ressource2" ID="{08845328-C1F4-46E6-B666-A33083B9263D}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_Found_Ressource2.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="637567642"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_Found_Ressource2" ID="{08845328-C1F4-46E6-B666-A33083B9263D}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="VOICE_HA_Found_Drawing" ID="{B261EFEE-34EC-4FF9-8E10-5BC4D32E5094}" ShortID="1043493142">
-											<PropertyList>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_Found_Drawing" ID="{3F5F5E4F-D7CD-4D0D-9897-6603D619B7AB}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_Found_Drawing.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="495771808"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_Found_Drawing" ID="{3F5F5E4F-D7CD-4D0D-9897-6603D619B7AB}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="VOICE_HA_Found_SailPlan" ID="{206725B8-F088-48A3-8365-B43014691C22}" ShortID="769522262">
-											<PropertyList>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_Found_SailPlan" ID="{1777A90B-5FC2-409B-B28C-D373B7188020}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_Found_SailPlan.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="445963451"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_Found_SailPlan" ID="{1777A90B-5FC2-409B-B28C-D373B7188020}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="VOICE_HA_Found_Map2" ID="{AD34A461-2CD3-4B6B-83A8-28ECBDD1C947}" ShortID="230316818">
-											<PropertyList>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_Found_Map2" ID="{F8BCC69D-419C-47F9-A72C-74E3489AB245}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_Found_Map2.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="583605425"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_Found_Map2" ID="{F8BCC69D-419C-47F9-A72C-74E3489AB245}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="VOICE_HA_Found_Compass" ID="{5F80D1B9-ADAF-4CE9-9588-424B2E593974}" ShortID="105739286">
-											<PropertyList>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_Found_Compass" ID="{BF7B67EF-5536-43C0-877E-B9077ABDB0A4}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_Found_Compass.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="174526353"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_Found_Compass" ID="{BF7B67EF-5536-43C0-877E-B9077ABDB0A4}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="VOICE_HA_Found_Ressource1" ID="{33BC2897-69F4-4B15-90B6-9252DD432FE3}" ShortID="168059738">
-											<PropertyList>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_Found_Ressource1" ID="{DB2B08A4-E29F-4C00-9AE4-2313D68EE004}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_Found_Ressource1.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="133972969"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_Found_Ressource1" ID="{DB2B08A4-E29F-4C00-9AE4-2313D68EE004}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</BlendContainer>
-								<ActorMixer Name="New Island" ID="{CB092A35-EC58-451D-9744-A3D8B290DEDA}" ShortID="901138285">
-									<PropertyList>
-										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-										<Property Name="OverrideEffect" Type="bool" Value="True"/>
-										<Property Name="OverridePriority" Type="bool" Value="True"/>
-										<Property Name="Priority" Type="int16">
-											<ValueList>
-												<Value>60</Value>
-											</ValueList>
-										</Property>
-										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-										</Reference>
-										<Reference Name="Effect0" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
-											<ObjectRef Name="Nearly_Forever" ID="{38550FDA-9236-4FC5-8AE0-68DB08164B25}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Exterior_Acoustic_Voice_AUX" ID="{68513103-99BC-4A30-9F0A-22590B4A8AF9}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="VOICE_HA_NewIsland_IsAnyoneHere" ID="{B30E3015-3ACE-46F1-9BF1-3AA16D6DBAEE}" ShortID="712004735">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_NewIsland_IsAnyoneHere" ID="{749D3F58-B515-47C2-B2DA-D691D86D89B0}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_NewIsland_IsAnyoneHere.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="860757277"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_NewIsland_IsAnyoneHere" ID="{749D3F58-B515-47C2-B2DA-D691D86D89B0}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="VOICE_HA_NewIsland_Someone" ID="{A9775A14-A1E3-44A1-9BD1-FE499AE5CB33}" ShortID="69028759">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_NewIsland_Someone" ID="{67AD6961-8661-44A1-B24F-987EE0EC7724}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_NewIsland_Someone.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="154282895"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_NewIsland_Someone" ID="{67AD6961-8661-44A1-B24F-987EE0EC7724}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</ActorMixer>
-								<ActorMixer Name="Repaired" ID="{7F6F78B5-A988-4436-A9F0-D88D8AC2F272}" ShortID="38536719">
-									<PropertyList>
-										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="VOICE_HA_Repaired_AsGoodAsNew" ID="{FFE0DBC9-E922-4741-8E46-C38CCC1ECC43}" ShortID="307390745">
+										<Sound Name="VOICE_HA_See_Anchors" ID="{E3AE9044-2218-45C8-8A4E-7230404B3545}" ShortID="92331232">
 											<PropertyList>
 												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
@@ -2145,7 +2095,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_Repaired_AsGoodAsNew" ID="{E831DD54-A116-4ECC-B49B-301E734C057E}">
+												<AudioFileSource Name="VOICE_HA_See_Anchors" ID="{E1FF722E-BD34-4E8B-8C92-90A80CD236B3}">
 													<PropertyList>
 														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
 														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
@@ -2153,17 +2103,17 @@
 														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
 													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_Repaired_AsGoodAsNew.wav</AudioFile>
+													<AudioFile>VOICE_HA_See_Anchors.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="437011583"/>
+														<MediaID ID="847999823"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_Repaired_AsGoodAsNew" ID="{E831DD54-A116-4ECC-B49B-301E734C057E}" Platform="Linked"/>
+												<ActiveSource Name="VOICE_HA_See_Anchors" ID="{E1FF722E-BD34-4E8B-8C92-90A80CD236B3}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="VOICE_HA_Repaired_HopeYouWillStayLikeThat" ID="{DD0DE011-D0A2-45F3-9D27-3C5CCB2A7376}" ShortID="504551942">
+										<Sound Name="VOICE_HA_See_Bell" ID="{3FDD0744-4115-4E71-9CE5-3891E60A5321}" ShortID="119804259">
 											<PropertyList>
 												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
@@ -2177,7 +2127,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_Repaired_HopeYouWillStayLikeThat" ID="{8E8644F5-7FCE-4B77-B8D2-D216B5B64823}">
+												<AudioFileSource Name="VOICE_HA_See_Bell" ID="{A49A96E3-38B3-47AF-9680-82028E27F07A}">
 													<PropertyList>
 														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
 														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
@@ -2185,17 +2135,17 @@
 														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
 													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_Repaired_HopeYouWillStayLikeThat.wav</AudioFile>
+													<AudioFile>VOICE_HA_See_Bell.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="999872788"/>
+														<MediaID ID="343968085"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_Repaired_HopeYouWillStayLikeThat" ID="{8E8644F5-7FCE-4B77-B8D2-D216B5B64823}" Platform="Linked"/>
+												<ActiveSource Name="VOICE_HA_See_Bell" ID="{A49A96E3-38B3-47AF-9680-82028E27F07A}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="VOICE_HA_Repaired_ThatllHaveToDo" ID="{A8D9FF36-F631-42AA-824C-8E28822E3E28}" ShortID="77344143">
+										<Sound Name="VOICE_HA_See_CalmSea" ID="{DD7A5B64-3E1E-435E-95DC-94CE4E20C6EE}" ShortID="324695921">
 											<PropertyList>
 												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
@@ -2209,7 +2159,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_Repaired_ThatllHaveToDo" ID="{A658127F-65C8-444C-A17C-838441D3DBEF}">
+												<AudioFileSource Name="VOICE_HA_See_CalmSea" ID="{277A39B3-A762-4D01-9C29-3137BA1CAB53}">
 													<PropertyList>
 														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
 														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
@@ -2217,17 +2167,17 @@
 														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
 													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_Repaired_ThatllHaveToDo.wav</AudioFile>
+													<AudioFile>VOICE_HA_See_CalmSea.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="494409370"/>
+														<MediaID ID="233896740"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_Repaired_ThatllHaveToDo" ID="{A658127F-65C8-444C-A17C-838441D3DBEF}" Platform="Linked"/>
+												<ActiveSource Name="VOICE_HA_See_CalmSea" ID="{277A39B3-A762-4D01-9C29-3137BA1CAB53}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="VOICE_HA_Repaired_YouWontTakeWaterAnymore" ID="{7E370C02-90B7-45B7-8CC1-48B51D75BC6A}" ShortID="660404059">
+										<Sound Name="VOICE_HA_See_DarkWater" ID="{9FAE2223-4928-4933-AE8A-83E52AE41A61}" ShortID="233311507">
 											<PropertyList>
 												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
@@ -2241,7 +2191,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_Repaired_YouWontTakeWaterAnymore" ID="{00E99F18-3196-4315-9883-DB2C948AE8A6}">
+												<AudioFileSource Name="VOICE_HA_See_DarkWater" ID="{8B8DB011-CBE5-437B-AD2F-89B4007AF539}">
 													<PropertyList>
 														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
 														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
@@ -2249,144 +2199,17 @@
 														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
 													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_Repaired_YouWontTakeWaterAnymore.wav</AudioFile>
+													<AudioFile>VOICE_HA_See_DarkWater.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="741110166"/>
+														<MediaID ID="944451800"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_Repaired_YouWontTakeWaterAnymore" ID="{00E99F18-3196-4315-9883-DB2C948AE8A6}" Platform="Linked"/>
+												<ActiveSource Name="VOICE_HA_See_DarkWater" ID="{8B8DB011-CBE5-437B-AD2F-89B4007AF539}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-									</ChildrenList>
-								</ActorMixer>
-								<ActorMixer Name="Collision" ID="{0D9A0A56-9C87-4B6B-95E8-2DF57456D825}" ShortID="172289220">
-									<PropertyList>
-										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="VOICE_HA_Collision_AahShit" ID="{66D29438-9FDE-4A9C-8D62-B6E676B5D820}" ShortID="442532633">
-											<PropertyList>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>2</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_Collision_AahShit" ID="{676D5B05-6DF9-445F-A44A-FAD5B75DC150}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_Collision_AahShit.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="416782334"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_Collision_AahShit" ID="{676D5B05-6DF9-445F-A44A-FAD5B75DC150}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="VOICE_HA_Collision_DamnItISwear" ID="{345773DE-48A1-47A5-A2F7-27D616FFFB76}" ShortID="947400644">
-											<PropertyList>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>2</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_Collision_DamnItISwear" ID="{0B71EA59-11E9-4194-A38D-F0EEDC1D66ED}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_Collision_DamnItISwear.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="978834239"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_Collision_DamnItISwear" ID="{0B71EA59-11E9-4194-A38D-F0EEDC1D66ED}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="VOICE_HA_Collision_ForSake" ID="{02BC38E5-C77E-4FB6-AE60-26AF35FC0A12}" ShortID="744691399">
-											<PropertyList>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="Highpass" Type="int16">
-													<ValueList>
-														<Value>30</Value>
-													</ValueList>
-												</Property>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_Collision_ForSake" ID="{0077E9B0-CF3F-4FF5-BDC4-8E67CB47BD0B}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_Collision_ForSake.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="911939663"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_Collision_ForSake" ID="{0077E9B0-CF3F-4FF5-BDC4-8E67CB47BD0B}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="VOICE_HA_Collision_KeepUp" ID="{8397734B-D5B3-4FAE-804B-4348C5C3853C}" ShortID="401004785">
+										<Sound Name="VOICE_HA_See_Icebergs1" ID="{0B207D79-48C4-4C74-BEF8-82CBEA8BCACF}" ShortID="960755372">
 											<PropertyList>
 												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
@@ -2400,7 +2223,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_Collision_KeepUp" ID="{10DF8946-18D5-4C6D-8D61-E79F6127F8C6}">
+												<AudioFileSource Name="VOICE_HA_See_Icebergs1" ID="{44EA094F-93FB-4288-B840-6C8C4EA47E50}">
 													<PropertyList>
 														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
 														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
@@ -2408,54 +2231,17 @@
 														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
 													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_Collision_KeepUp.wav</AudioFile>
+													<AudioFile>VOICE_HA_See_Icebergs1.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="266469211"/>
+														<MediaID ID="1018887341"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_Collision_KeepUp" ID="{10DF8946-18D5-4C6D-8D61-E79F6127F8C6}" Platform="Linked"/>
+												<ActiveSource Name="VOICE_HA_See_Icebergs1" ID="{44EA094F-93FB-4288-B840-6C8C4EA47E50}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="VOICE_HA_Collision_WhatTheHell" ID="{314CC1CC-5582-4963-B8F8-8332BDAD0A1C}" ShortID="582110792">
-											<PropertyList>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>2</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_Collision_WhatTheHell" ID="{9A55B989-90FE-41CD-8BB7-E825FFDE1FA7}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_Collision_WhatTheHell.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="297297313"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_Collision_WhatTheHell" ID="{9A55B989-90FE-41CD-8BB7-E825FFDE1FA7}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="VOICE_HA_Collision_YouCanDoBetterThanThat" ID="{A4DF4855-63CE-4DF3-8A39-A285AC1E230F}" ShortID="236881048">
+										<Sound Name="VOICE_HA_See_Icebergs2" ID="{6F47CC36-5914-474A-9CD9-BAE63C5B64F3}" ShortID="755282096">
 											<PropertyList>
 												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
@@ -2469,7 +2255,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_Collision_YouCanDoBetterThanThat" ID="{07E834C0-23B5-4E41-9E25-4328AABEA320}">
+												<AudioFileSource Name="VOICE_HA_See_Icebergs2" ID="{68843D2B-2A96-4746-B318-30C414E244E4}">
 													<PropertyList>
 														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
 														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
@@ -2477,25 +2263,20 @@
 														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
 													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_Collision_YouCanDoBetterThanThat.wav</AudioFile>
+													<AudioFile>VOICE_HA_See_Icebergs2.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="703140650"/>
+														<MediaID ID="880258122"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_Collision_YouCanDoBetterThanThat" ID="{07E834C0-23B5-4E41-9E25-4328AABEA320}" Platform="Linked"/>
+												<ActiveSource Name="VOICE_HA_See_Icebergs2" ID="{68843D2B-2A96-4746-B318-30C414E244E4}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="VOICE_HA_Collision_YouWontMakeItFar" ID="{1A4EE16F-F148-4FDE-A18F-159F007FFA54}" ShortID="860124563">
+										<Sound Name="VOICE_HA_See_Lighthouse" ID="{F81779E7-43F5-4E55-98F1-A74CFC7E3510}" ShortID="188995269">
 											<PropertyList>
 												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>2</Value>
-													</ValueList>
-												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -2506,7 +2287,41 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="VOICE_HA_Collision_YouWontMakeItFar" ID="{4231B690-5325-4804-9DE0-17C6983167C3}">
+												<AudioFileSource Name="VOICE_HA_See_Lighthouse" ID="{9A555765-6E8F-4991-A638-1440219FA050}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0114773688923178"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.76816284297832"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VOICE_HA_See_Lighthouse.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="286198655"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VOICE_HA_See_Lighthouse" ID="{9A555765-6E8F-4991-A638-1440219FA050}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VOICE_HA_See_Reefs" ID="{F4B44063-30E8-4456-87EB-362244E09627}" ShortID="43563570">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VOICE_HA_See_Reefs" ID="{5A5CEF4A-3D3E-453C-A220-57292E834DE7}">
 													<PropertyList>
 														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
 														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
@@ -2514,14 +2329,238 @@
 														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
 													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>VOICE_HA_Collision_YouWontMakeItFar.wav</AudioFile>
+													<AudioFile>VOICE_HA_See_Reefs.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="945392606"/>
+														<MediaID ID="768938663"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="VOICE_HA_Collision_YouWontMakeItFar" ID="{4231B690-5325-4804-9DE0-17C6983167C3}" Platform="Linked"/>
+												<ActiveSource Name="VOICE_HA_See_Reefs" ID="{5A5CEF4A-3D3E-453C-A220-57292E834DE7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VOICE_HA_See_Snow" ID="{7366AB25-DE72-4938-BC47-BB60C0CED7C2}" ShortID="679654615">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VOICE_HA_See_Snow" ID="{6D13ED8C-36D4-42D4-88A4-7D119920A5F0}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VOICE_HA_See_Snow.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="147874690"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VOICE_HA_See_Snow" ID="{6D13ED8C-36D4-42D4-88A4-7D119920A5F0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VOICE_HA_See_Storm" ID="{809A3AD5-3E23-43BB-81D7-BD9C0CA73DC8}" ShortID="357199267">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VOICE_HA_See_Storm" ID="{F12FD5CD-C6B5-41DE-BF96-94BBD8528C9C}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VOICE_HA_See_Storm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="563294677"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VOICE_HA_See_Storm" ID="{F12FD5CD-C6B5-41DE-BF96-94BBD8528C9C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VOICE_HA_See_Tree" ID="{D2388055-FEB1-48AC-A432-F10D9A784481}" ShortID="967455818">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VOICE_HA_See_Tree" ID="{E99A8038-A6AB-4DCD-AF80-9C470B5AF2EB}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VOICE_HA_See_Tree.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="360762557"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VOICE_HA_See_Tree" ID="{E99A8038-A6AB-4DCD-AF80-9C470B5AF2EB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VOICE_HA_See_Vessel" ID="{72A26895-ACEF-4830-B403-FA18F8349E82}" ShortID="982311459">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VOICE_HA_See_Vessel" ID="{1A95A81C-3D7A-4BF4-A021-B6446B3ED71B}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VOICE_HA_See_Vessel.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="257657906"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VOICE_HA_See_Vessel" ID="{1A95A81C-3D7A-4BF4-A021-B6446B3ED71B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VOICE_HA_See_WeirdPlace" ID="{3AE14AF1-BB39-481E-9991-E7F008DD862C}" ShortID="400352729">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VOICE_HA_See_WeirdPlace" ID="{86980C5F-B044-40CB-BD0F-516FEE1D05BA}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VOICE_HA_See_WeirdPlace.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="778684753"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VOICE_HA_See_WeirdPlace" ID="{86980C5F-B044-40CB-BD0F-516FEE1D05BA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VOICE_HA_See_Whale1" ID="{4E9368E1-15A7-4CDF-82EF-3C5B653F497E}" ShortID="174102560">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VOICE_HA_See_Whale1" ID="{A6A75BA7-AE27-4F17-BB4E-0D25DCBC8A62}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VOICE_HA_See_Whale1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="619410916"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VOICE_HA_See_Whale1" ID="{A6A75BA7-AE27-4F17-BB4E-0D25DCBC8A62}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VOICE_HA_See_Whale2" ID="{371B6ED6-3EFC-46E7-8CFD-FB9AB907C49F}" ShortID="634666066">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VOICE_HA_See_Whale2" ID="{C5459825-9648-4A6A-BDB6-2CD9F4130069}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>VOICE_HA_See_Whale2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="277158030"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VOICE_HA_See_Whale2" ID="{C5459825-9648-4A6A-BDB6-2CD9F4130069}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -2546,6 +2585,14 @@
 							</ReferenceList>
 							<ChildrenList>
 								<ActorMixer Name="Cold" ID="{4C8A0500-6108-4A51-A7AA-16715352B07B}" ShortID="213862944">
+									<PropertyList>
+										<Property Name="OverridePriority" Type="bool" Value="True"/>
+										<Property Name="Priority" Type="int16">
+											<ValueList>
+												<Value>10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
@@ -3444,11 +3491,6 @@
 								<ActorMixer Name="Drowned" ID="{DE136250-1509-4D34-8E0C-0B458A2BAAE0}" ShortID="809047283">
 									<PropertyList>
 										<Property Name="OverridePriority" Type="bool" Value="True"/>
-										<Property Name="Priority" Type="int16">
-											<ValueList>
-												<Value>90</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-4</Value>
@@ -3555,11 +3597,6 @@
 								<ActorMixer Name="Drowning" ID="{6755A3A1-66A6-4037-8A77-AD8074D84D23}" ShortID="436220877">
 									<PropertyList>
 										<Property Name="OverridePriority" Type="bool" Value="True"/>
-										<Property Name="Priority" Type="int16">
-											<ValueList>
-												<Value>80</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -3614,7 +3651,7 @@
 																			</Point>
 																			<Point>
 																				<XPos>1</XPos>
-																				<YPos>-0</YPos>
+																				<YPos>0</YPos>
 																				<Flags>37</Flags>
 																			</Point>
 																		</PointList>
@@ -4475,7 +4512,7 @@
 										<Property Name="OverridePriority" Type="bool" Value="True"/>
 										<Property Name="Priority" Type="int16">
 											<ValueList>
-												<Value>80</Value>
+												<Value>10</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -4638,7 +4675,7 @@
 										<Property Name="OverridePriority" Type="bool" Value="True"/>
 										<Property Name="Priority" Type="int16">
 											<ValueList>
-												<Value>80</Value>
+												<Value>10</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -4833,7 +4870,7 @@
 										<Property Name="OverridePriority" Type="bool" Value="True"/>
 										<Property Name="Priority" Type="int16">
 											<ValueList>
-												<Value>80</Value>
+												<Value>10</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -5028,7 +5065,7 @@
 										<Property Name="OverridePriority" Type="bool" Value="True"/>
 										<Property Name="Priority" Type="int16">
 											<ValueList>
-												<Value>80</Value>
+												<Value>10</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -5187,6 +5224,14 @@
 									</ChildrenList>
 								</ActorMixer>
 								<ActorMixer Name="Jump" ID="{755AD737-DD19-4370-B816-7BF838BED87F}" ShortID="481621965">
+									<PropertyList>
+										<Property Name="OverridePriority" Type="bool" Value="True"/>
+										<Property Name="Priority" Type="int16">
+											<ValueList>
+												<Value>10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
@@ -5506,7 +5551,7 @@
 										<Property Name="OverridePriority" Type="bool" Value="True"/>
 										<Property Name="Priority" Type="int16">
 											<ValueList>
-												<Value>75</Value>
+												<Value>10</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -5802,7 +5847,7 @@
 										<Property Name="OverridePriority" Type="bool" Value="True"/>
 										<Property Name="Priority" Type="int16">
 											<ValueList>
-												<Value>80</Value>
+												<Value>10</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
