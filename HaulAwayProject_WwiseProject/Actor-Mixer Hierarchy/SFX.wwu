@@ -684,6 +684,15 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="SFX_HA_Character_DiveInWater_00" ID="{B2A1F208-B558-4362-9705-0FA9C0DBCB94}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.175234367719691"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.268327625570776"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Character_DiveInWater_00.wav</AudioFile>
 													<MediaIDList>
@@ -726,6 +735,15 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="SFX_HA_Character_DiveInWater_01" ID="{54B3CE73-591C-48BF-938F-FF5BEC82F4FC}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.233779354207437"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.178117603205666"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>SFX_HA_Character_DiveInWater_01.wav</AudioFile>
 													<MediaIDList>
@@ -755,7 +773,7 @@
 									<PropertyList>
 										<Property Name="Highpass" Type="int16">
 											<ValueList>
-												<Value>33</Value>
+												<Value>42</Value>
 											</ValueList>
 										</Property>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
@@ -953,6 +971,13 @@
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Land" ID="{45493C9A-2F96-454C-BEDA-0DE66565E6E4}" ShortID="124718499">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
@@ -964,6 +989,11 @@
 							<ChildrenList>
 								<RandomSequenceContainer Name="LandClothe_RND" ID="{4FA96F1F-7C78-4A18-953B-7F64AF2243FA}" ShortID="821537981">
 									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>30</Value>
+											</ValueList>
+										</Property>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 										<Property Name="Volume" Type="Real64">
@@ -1499,6 +1529,13 @@
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Footsteps" ID="{E4279B6E-2FA2-4204-ACF3-D3ED0F721DD6}" ShortID="896240784">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
@@ -5897,6 +5934,8 @@
 				</ActorMixer>
 				<ActorMixer Name="Ship" ID="{3C995522-7277-4A6D-9209-796196EBC6B1}" ShortID="485826179">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>6</Value>
@@ -5904,6 +5943,9 @@
 						</Property>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="ATT_Ship" ID="{169C76BE-EB0C-49DF-B3D1-FE9C674509EE}" WorkUnitID="{ECCA167F-1726-4A47-BB4C-2B3121B715A3}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
 						</Reference>
@@ -6292,32 +6334,22 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="SFX_HA_Ship_Sail_Take_Perfect_Wind_01" ID="{28FE88F3-0140-4F47-8FBB-5BD7EF84F88F}" ShortID="450145915">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-												<Reference Name="UserAuxSend0">
-													<ObjectRef Name="Exterior_Acoustic_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Sail_Take_Perfect_Wind_01" ID="{72B77282-176C-4883-8A0D-4CFDEBE65BC3}">
-													<Language>SFX</Language>
-													<AudioFile>SFX_HA_Ship_Sail_Take_Perfect_Wind_01.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="743069458"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="SFX_HA_Ship_Sail_Take_Perfect_Wind_01" ID="{72B77282-176C-4883-8A0D-4CFDEBE65BC3}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
 										<Sound Name="SFX_HA_Ship_Sail_Take_Perfect_Wind_02" ID="{C2178276-C452-452E-BE9B-654DE1E5DA41}" ShortID="648537083">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{2A5CA652-750D-478A-8C9D-DAB1A9FC0DBB}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="200"/>
+																	<Property Name="Min" Type="Real64" Value="-200"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
@@ -6340,95 +6372,6 @@
 											</ChildrenList>
 											<ActiveSourceList>
 												<ActiveSource Name="SFX_HA_Ship_Sail_Take_Perfect_Wind_02" ID="{EA157A6B-D59E-49CF-8A49-98EEF0F4B820}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="SFX_HA_Ship_Sail_Take_Perfect_Wind_03" ID="{3E05967A-8AF5-4861-9E2A-8568768D8E3D}" ShortID="1013959408">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-												<Reference Name="UserAuxSend0">
-													<ObjectRef Name="Exterior_Acoustic_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Sail_Take_Perfect_Wind_03" ID="{E1DF7E69-E3D6-4454-9154-E118E1AB2F3F}">
-													<Language>SFX</Language>
-													<AudioFile>SFX_HA_Ship_Sail_Take_Perfect_Wind_03.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="332812323"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="SFX_HA_Ship_Sail_Take_Perfect_Wind_03" ID="{E1DF7E69-E3D6-4454-9154-E118E1AB2F3F}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="SFX_HA_Ship_Sail_Take_Perfect_Wind_04" ID="{889FF442-19CC-482B-B148-85CBF414ECE9}" ShortID="174034770">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-3</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-												<Reference Name="UserAuxSend0">
-													<ObjectRef Name="Exterior_Acoustic_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Sail_Take_Perfect_Wind_04" ID="{2B3240A7-AACC-4174-A43A-AE7FFB05A0E0}">
-													<Language>SFX</Language>
-													<AudioFile>SFX_HA_Ship_Sail_Take_Perfect_Wind_04.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="676249289"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="SFX_HA_Ship_Sail_Take_Perfect_Wind_04" ID="{2B3240A7-AACC-4174-A43A-AE7FFB05A0E0}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="SFX_HA_Ship_Sail_Take_Perfect_Wind_05" ID="{0BD9883F-E903-4FF9-BF25-2330676CB092}" ShortID="53448444">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-3</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-												<Reference Name="UserAuxSend0">
-													<ObjectRef Name="Exterior_Acoustic_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Ship_Sail_Take_Perfect_Wind_05" ID="{F00CEDCA-327E-4F01-8CE9-283E499AA7BE}">
-													<Language>SFX</Language>
-													<AudioFile>SFX_HA_Ship_Sail_Take_Perfect_Wind_05.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="367279712"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="SFX_HA_Ship_Sail_Take_Perfect_Wind_05" ID="{F00CEDCA-327E-4F01-8CE9-283E499AA7BE}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -6629,7 +6572,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>1</Value>
+												<Value>-7</Value>
 											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{0401EE3A-9AD6-4890-BE33-6E8E50B9596F}" ShortID="284144963">
@@ -8357,7 +8300,7 @@
 																	</Point>
 																	<Point>
 																		<XPos>0.9</XPos>
-																		<YPos>-87.141</YPos>
+																		<YPos>-200</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
@@ -8382,7 +8325,7 @@
 													<CrossfadingInfo>
 														<LeftEdgePos>0.302356020942408</LeftEdgePos>
 														<LeftFadingMode>Automatic</LeftFadingMode>
-														<RightEdgePos>0.9</RightEdgePos>
+														<RightEdgePos>1</RightEdgePos>
 														<RightFadingMode>Automatic</RightFadingMode>
 													</CrossfadingInfo>
 												</BlendTrackAssoc>
@@ -9224,6 +9167,84 @@
 										<ItemRef Name="SFX_HA_Ship_Hold_Close" ID="{ED18852F-832E-451C-B3CA-9863AF8C0181}"/>
 									</Playlist>
 								</RandomSequenceContainer>
+							</ChildrenList>
+						</ActorMixer>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="Enviro" ID="{8C2864E7-86A8-4818-8A3F-C1A162F594D1}" ShortID="766872558">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Exterior_Acoustic_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="Waves" ID="{F168B326-A4D7-4072-AA2A-B2291D7773DA}" ShortID="847299424">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<ActorMixer Name="Waves Beach" ID="{FB22B006-7314-4931-BDDD-5D0FA9246E86}" ShortID="250155408">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="30"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="ATT_Waves_Beach" ID="{29C87231-15EA-4B02-A13E-F1300E6006AA}" WorkUnitID="{ECCA167F-1726-4A47-BB4C-2B3121B715A3}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SFX_HA_Enviro_Waves_Beach_Loop" ID="{AF9928E8-4C3E-4C5E-A231-CB4A188413B2}" ShortID="790808663">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_HA_Enviro_Waves_Beach_Loop" ID="{90FD4E0C-BA04-43A3-BA19-FC9888682511}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>SFX_HA_Enviro_Waves_Beach_Loop.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="496341463"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_HA_Enviro_Waves_Beach_Loop" ID="{90FD4E0C-BA04-43A3-BA19-FC9888682511}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</ActorMixer>
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>

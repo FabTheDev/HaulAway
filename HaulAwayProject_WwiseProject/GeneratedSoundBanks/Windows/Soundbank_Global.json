@@ -1597,6 +1597,7 @@
       "Name": "E_Ship_Fall_from_Wave",
       "ObjectPath": "\\Events\\SFX\\Ship\\Wave Impacts\\E_Ship_Fall_from_Wave",
       "GUID": "{AA8DEA17-3DF3-430F-B8F1-DCC635E14176}",
+      "MaxAttenuation": "6000.000000",
       "DurationType": "OneShot",
       "DurationMin": "3.855136",
       "DurationMax": "4.534326",
@@ -1620,6 +1621,7 @@
       "Name": "E_Ship_Initialize",
       "ObjectPath": "\\Events\\SFX\\Ship\\Global\\E_Ship_Initialize",
       "GUID": "{03856E7F-23E0-40B3-9FD6-7026E27B1B18}",
+      "MaxAttenuation": "6000.000000",
       "DurationType": "Infinite",
       "IncludedMemoryFiles": [
        {
@@ -1735,6 +1737,7 @@
       "Name": "E_Ship_Light_Collision",
       "ObjectPath": "\\Events\\SFX\\Ship\\Collisions\\E_Ship_Light_Collision",
       "GUID": "{07F1ABD5-7786-4F0E-9494-CE5980B243FC}",
+      "MaxAttenuation": "6000.000000",
       "DurationType": "OneShot",
       "DurationMin": "1.418934",
       "DurationMax": "1.517143",
@@ -1770,6 +1773,7 @@
       "Name": "E_Ship_Medium_Collision",
       "ObjectPath": "\\Events\\SFX\\Ship\\Collisions\\E_Ship_Medium_Collision",
       "GUID": "{C924D9D5-D907-4E96-8C3B-0A8D692A298F}",
+      "MaxAttenuation": "6000.000000",
       "DurationType": "OneShot",
       "DurationMin": "1.961701",
       "DurationMax": "1.961701",
@@ -1805,6 +1809,7 @@
       "Name": "E_Ship_Sail_Down",
       "ObjectPath": "\\Events\\SFX\\Ship\\Sail\\E_Ship_Sail_Down",
       "GUID": "{A88FEE74-4901-4718-8EBA-684BC53146D4}",
+      "MaxAttenuation": "6000.000000",
       "DurationType": "OneShot",
       "DurationMin": "1.075938",
       "DurationMax": "1.162458",
@@ -1844,6 +1849,7 @@
       "Name": "E_Ship_Sail_SetWindBad",
       "ObjectPath": "\\Events\\SFX\\Ship\\Sail\\E_Ship_Sail_SetWindBad",
       "GUID": "{46388320-D52D-496A-B74D-AD822F0FED80}",
+      "MaxAttenuation": "6000.000000",
       "DurationType": "Infinite",
       "IncludedMemoryFiles": [
        {
@@ -1859,6 +1865,7 @@
       "Name": "E_Ship_Sail_SetWindCorrect",
       "ObjectPath": "\\Events\\SFX\\Ship\\Sail\\E_Ship_Sail_SetWindCorrect",
       "GUID": "{98D67F20-0951-4CF0-94FD-9052BAFAB0FC}",
+      "MaxAttenuation": "6000.000000",
       "DurationType": "OneShot",
       "DurationMin": "0.677312",
       "DurationMax": "1.189583",
@@ -1900,34 +1907,11 @@
       "Name": "E_Ship_Sail_SetWindPerfect",
       "ObjectPath": "\\Events\\SFX\\Ship\\Sail\\E_Ship_Sail_SetWindPerfect",
       "GUID": "{72741832-6F73-4CCE-BF10-5FCE708DB677}",
+      "MaxAttenuation": "6000.000000",
       "DurationType": "OneShot",
-      "DurationMin": "0.563625",
-      "DurationMax": "1.275646",
+      "DurationMin": "1.040031",
+      "DurationMax": "1.310357",
       "IncludedMemoryFiles": [
-       {
-        "Id": "332812323",
-        "Language": "SFX",
-        "ShortName": "SFX_HA_Ship_Sail_Take_Perfect_Wind_03.wav",
-        "Path": "SFX\\SFX_HA_Ship_Sail_Take_Perfect_Wind_03_56D34C19.wem"
-       },
-       {
-        "Id": "367279712",
-        "Language": "SFX",
-        "ShortName": "SFX_HA_Ship_Sail_Take_Perfect_Wind_05.wav",
-        "Path": "SFX\\SFX_HA_Ship_Sail_Take_Perfect_Wind_05_56D34C19.wem"
-       },
-       {
-        "Id": "676249289",
-        "Language": "SFX",
-        "ShortName": "SFX_HA_Ship_Sail_Take_Perfect_Wind_04.wav",
-        "Path": "SFX\\SFX_HA_Ship_Sail_Take_Perfect_Wind_04_56D34C19.wem"
-       },
-       {
-        "Id": "743069458",
-        "Language": "SFX",
-        "ShortName": "SFX_HA_Ship_Sail_Take_Perfect_Wind_01.wav",
-        "Path": "SFX\\SFX_HA_Ship_Sail_Take_Perfect_Wind_01_56D34C19.wem"
-       },
        {
         "Id": "745218927",
         "Language": "SFX",
@@ -1961,6 +1945,7 @@
       "Name": "E_Ship_Sail_Up",
       "ObjectPath": "\\Events\\SFX\\Ship\\Sail\\E_Ship_Sail_Up",
       "GUID": "{C39E5576-77EA-486F-A0BF-69A31F9C1225}",
+      "MaxAttenuation": "6000.000000",
       "DurationType": "OneShot",
       "DurationMin": "0.882167",
       "DurationMax": "1.331458",
@@ -2022,6 +2007,7 @@
       "Name": "E_Ship_Sheet_Released",
       "ObjectPath": "\\Events\\SFX\\Ship\\Sheet\\E_Ship_Sheet_Released",
       "GUID": "{ADA35CBB-29D1-4716-B5AC-1F3586E2D28B}",
+      "MaxAttenuation": "6000.000000",
       "DurationType": "OneShot",
       "DurationMin": "0.958208",
       "DurationMax": "1.193146",
@@ -2087,6 +2073,7 @@
       "Name": "E_Ship_Sheet_Tightened",
       "ObjectPath": "\\Events\\SFX\\Ship\\Sheet\\E_Ship_Sheet_Tightened",
       "GUID": "{878207DA-33AA-4F46-8BCA-72351F410159}",
+      "MaxAttenuation": "6000.000000",
       "DurationType": "OneShot",
       "DurationMin": "0.804604",
       "DurationMax": "0.962979",
@@ -2122,6 +2109,7 @@
       "Name": "E_Ship_Strong_Collision",
       "ObjectPath": "\\Events\\SFX\\Ship\\Collisions\\E_Ship_Strong_Collision",
       "GUID": "{3ADC14A4-734C-4E79-95A5-AAB578BA298D}",
+      "MaxAttenuation": "6000.000000",
       "DurationType": "OneShot",
       "DurationMin": "2.142494",
       "DurationMax": "2.142494",
@@ -2157,6 +2145,7 @@
       "Name": "E_Ship_Tiller_Blocked",
       "ObjectPath": "\\Events\\SFX\\Ship\\Tiller\\E_Ship_Tiller_Blocked",
       "GUID": "{A9FD76E6-951C-4867-B44E-4F78FA42F4E6}",
+      "MaxAttenuation": "6000.000000",
       "DurationType": "OneShot",
       "DurationMin": "0.621646",
       "DurationMax": "0.967792",
@@ -2212,6 +2201,7 @@
       "Name": "E_Ship_Wave_On_Hull",
       "ObjectPath": "\\Events\\SFX\\Ship\\Wave Impacts\\E_Ship_Wave_On_Hull",
       "GUID": "{9FE148BF-B7C9-42C9-BA83-DFDAF1DF0EFE}",
+      "MaxAttenuation": "6000.000000",
       "DurationType": "OneShot",
       "DurationMin": "2.031396",
       "DurationMax": "2.246187",
