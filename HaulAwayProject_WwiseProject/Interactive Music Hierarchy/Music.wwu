@@ -3202,31 +3202,23 @@
 										</MusicTransition>
 									</TransitionList>
 									<ArgumentList>
-										<ArgumentRef Name="Mus_IsInHold_STATE" ID="{59C4C0BF-47BE-4CE3-A14F-7E8207DC3CD6}"/>
+										<ArgumentRef Name="Mus_IsInHold" ID="{272492A0-AF2B-4C68-8A95-94001BF6C919}"/>
 									</ArgumentList>
 									<EntryList>
 										<Entry>
 											<Path>
-												<PathElementRef Name="In_Hold" ID="{E19B7EE3-E36A-4D88-8054-3C0C0247FDBC}"/>
+												<PathElementRef Name="Out" ID="{CBED7C89-B2E3-47EC-A878-0D6580FF55FF}"/>
+											</Path>
+											<AudioNodeInfo>
+												<AudioNodeRef Name="Theme_Sailing_Singing_PLAYLIST" ID="{3F86FF98-5F5B-404C-AC3A-8EAE78EA9F19}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
+											</AudioNodeInfo>
+										</Entry>
+										<Entry>
+											<Path>
+												<PathElementRef Name="In" ID="{F431CC99-F201-401D-B118-93F3EE1C9EAD}"/>
 											</Path>
 											<AudioNodeInfo>
 												<AudioNodeRef Name="Theme_Sailing_PLAYLIST" ID="{350A71EF-CE87-4D17-9745-7BD37B0E4755}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
-											</AudioNodeInfo>
-										</Entry>
-										<Entry>
-											<Path>
-												<PathElementRef Name="None" ID="{141295CE-4617-432C-8DBE-52A7396D515C}"/>
-											</Path>
-											<AudioNodeInfo>
-												<AudioNodeRef Name="Theme_Sailing_Singing_PLAYLIST" ID="{3F86FF98-5F5B-404C-AC3A-8EAE78EA9F19}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
-											</AudioNodeInfo>
-										</Entry>
-										<Entry>
-											<Path>
-												<PathElementRef Name="Out_Hold" ID="{4799B397-87EA-4934-ACC2-73FA0C65A854}"/>
-											</Path>
-											<AudioNodeInfo>
-												<AudioNodeRef Name="Theme_Sailing_Singing_PLAYLIST" ID="{3F86FF98-5F5B-404C-AC3A-8EAE78EA9F19}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
 											</AudioNodeInfo>
 										</Entry>
 									</EntryList>
