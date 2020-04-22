@@ -1108,9 +1108,21 @@
 						</Event>
 						<Event Name="E_Voice_Exhale" ID="{651CEF3A-B365-4192-8915-FF62FC5E8BBF}">
 							<ChildrenList>
+								<Action Name="" ID="{5FABA4B8-4934-4017-8BBD-574BD99B1E81}" ShortID="252394192">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Voice_Drowning_BLEND" ID="{DF1A8137-83BB-49FF-BB69-9DA12644B792}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{0C29B61E-DA18-48E6-A80A-6200B63EB693}" ShortID="789682519">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="Delay" Type="Real64" Value="0.11"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -1153,7 +1165,7 @@
 								<Action Name="" ID="{4F523776-A7A4-4054-AD96-9C702F47906F}" ShortID="678100961">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
-										<Property Name="Delay" Type="Real64" Value="0.1"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -1217,8 +1229,68 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="E_Voice_InWater_STOP_LOOP" ID="{A7950F02-D9EA-4B3F-AFED-4775826DB6C8}">
+							<ChildrenList>
+								<Action Name="" ID="{119BDC9D-7BA7-4F6E-BB2C-AD615DE87414}" ShortID="734099194">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Voice_Drowning_BLEND" ID="{DF1A8137-83BB-49FF-BB69-9DA12644B792}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="E_STOP_AllVoices" ID="{0F26AA8A-3221-4A13-8722-B461DE6BD4C4}">
+					<ChildrenList>
+						<Action Name="" ID="{402C1F82-4B32-460E-A2B8-F2CDE8B2D1D8}" ShortID="424049600">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Voice Global" ID="{05AF76D9-562A-43AC-BDD7-94D03609A2B9}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="E_PAUSE_AllVoices" ID="{F3C42D5A-E629-46BA-A9D9-644E7B8838F8}">
+					<ChildrenList>
+						<Action Name="" ID="{C7E4C862-8A00-4CD1-B45E-8E576EFC831D}" ShortID="158759910">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="7"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Voice Global" ID="{05AF76D9-562A-43AC-BDD7-94D03609A2B9}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="E_RESUME_AllVoices" ID="{B304A8D6-706D-489E-B52C-41D4F470249B}">
+					<ChildrenList>
+						<Action Name="" ID="{193281D5-C8DE-4DD0-938F-F4B3E9823304}" ShortID="718744441">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="9"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Voice Global" ID="{05AF76D9-562A-43AC-BDD7-94D03609A2B9}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
