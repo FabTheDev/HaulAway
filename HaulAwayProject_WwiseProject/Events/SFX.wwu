@@ -48,6 +48,16 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
+										<Action Name="" ID="{E6AC7FBC-A70F-40EF-9E59-DDC561967984}" ShortID="672952077">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Voice_Jump_RND" ID="{5C42F8E6-F45D-42C1-9AFD-814BDF58FC14}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 									</ChildrenList>
 								</Event>
 								<Event Name="E_Character_DiveInWater" ID="{F70F8017-C70D-456E-95CC-51A0FB563ADB}">
@@ -917,6 +927,62 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="SFX_Ship_InHold_Ambience" ID="{9974E777-FE58-4366-BFB4-B92C30A9B287}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Enviro" ID="{21681DFD-6E4E-4A3C-AC3C-06D66E27A926}" ShortID="53189752">
+					<ChildrenList>
+						<Folder Name="Waves" ID="{6F03DB20-CA73-494C-8A2A-789221C7A2C8}" ShortID="268266148">
+							<ChildrenList>
+								<Event Name="E_Enviro_Waves_Beach_Loop" ID="{A964955C-ABFE-4F44-B7A6-54425CA82BD6}">
+									<ChildrenList>
+										<Action Name="" ID="{ED208525-8F58-4729-AA06-949DA3A2A9DA}" ShortID="303348503">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HA_Enviro_Waves_Beach_Loop" ID="{AF9928E8-4C3E-4C5E-A231-CB4A188413B2}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Enviro_WaveOn_Reef" ID="{D8959C8F-5108-4162-8F8D-4C9837CF8DDF}">
+									<ChildrenList>
+										<Action Name="" ID="{78F79E5C-47F3-481B-AD4B-94F781318646}" ShortID="185695156">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Wave_On_Reef_RND" ID="{5EF6A9F5-8A63-4453-83A9-F6C7ACBE388E}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Amb" ID="{D39BD8C8-C67A-4E64-89B8-5A2314D3521E}" ShortID="789527661">
+							<ChildrenList>
+								<Event Name="E_Enviro_AmbWindGlobal" ID="{F2B51A9B-EAE0-4765-853C-48D5164CE814}">
+									<ChildrenList>
+										<Action Name="" ID="{AE9D4C3A-84CE-4920-970F-240525433F5D}" ShortID="347906075">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Amb_Wind_BLEND" ID="{21DAF4D3-94C5-460F-9963-0CDB8A904E6D}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
