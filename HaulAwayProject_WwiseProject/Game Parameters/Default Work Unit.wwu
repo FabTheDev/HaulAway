@@ -17,9 +17,27 @@
 								<Property Name="RTPCRamping" Type="int16" Value="1"/>
 							</PropertyList>
 						</GameParameter>
+						<GameParameter Name="DrowningRatio_GP" ID="{DA7FBB8F-9949-4564-877C-43BA9796238A}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="1"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+							</PropertyList>
+						</GameParameter>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Weather" ID="{EAC9C7F0-BB75-4CDF-A416-AD007CC90EE1}" ShortID="764089694"/>
+				<Folder Name="Weather" ID="{EAC9C7F0-BB75-4CDF-A416-AD007CC90EE1}" ShortID="764089694">
+					<ChildrenList>
+						<GameParameter Name="Wind_Amb_Intensity_GP" ID="{E997DDF4-D043-4C9B-B2AE-152EE5C1DD00}">
+							<PropertyList>
+								<Property Name="FilterTimeDown" Type="Real64" Value="1"/>
+								<Property Name="FilterTimeUp" Type="Real64" Value="1"/>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+								<Property Name="RTPCRamping" Type="int16" Value="2"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
 				<Folder Name="Ship" ID="{5A50EF09-3341-495F-9080-172EE508318A}" ShortID="147073895">
 					<ChildrenList>
 						<GameParameter Name="ShipSpeed_GP" ID="{72DFA80D-619E-4B12-8899-29FD2767932C}">
@@ -52,17 +70,17 @@
 					<ChildrenList>
 						<GameParameter Name="Music_Volume_GP" ID="{B6A43168-1DA1-4E4B-A564-6DDAF525B065}">
 							<PropertyList>
-								<Property Name="InitialValue" Type="Real64" Value="80"/>
+								<Property Name="InitialValue" Type="Real64" Value="100"/>
 							</PropertyList>
 						</GameParameter>
 						<GameParameter Name="SFX_Volume_GP" ID="{C9F5422A-020E-4D7B-AF1B-5A807144C983}">
 							<PropertyList>
-								<Property Name="InitialValue" Type="Real64" Value="80"/>
+								<Property Name="InitialValue" Type="Real64" Value="100"/>
 							</PropertyList>
 						</GameParameter>
 						<GameParameter Name="Dialog_Volume_GP" ID="{193F0126-347C-409F-B90C-2601DAF8ECCF}">
 							<PropertyList>
-								<Property Name="InitialValue" Type="Real64" Value="80"/>
+								<Property Name="InitialValue" Type="Real64" Value="100"/>
 							</PropertyList>
 						</GameParameter>
 						<GameParameter Name="Intra_Music_LowPassFilter_GP" ID="{F457DEC5-2431-4441-8DDC-2DBD7379D01C}">
@@ -70,7 +88,56 @@
 								<Property Name="InitialValue" Type="Real64" Value="100"/>
 							</PropertyList>
 						</GameParameter>
-						<GameParameter Name="UI_Volume_GP" ID="{8A19730F-E82D-497F-9812-8D5F21AD724B}"/>
+						<GameParameter Name="UI_Volume_GP" ID="{8A19730F-E82D-497F-9812-8D5F21AD724B}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="100"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="Altitude_Camera_GP" ID="{06524578-A51A-4D48-A1F9-1583202B9716}">
+							<PropertyList>
+								<Property Name="FilterTimeDown" Type="Real64" Value="1"/>
+								<Property Name="FilterTimeUp" Type="Real64" Value="1"/>
+								<Property Name="InitialValue" Type="Real64" Value="250"/>
+								<Property Name="Max" Type="Real64" Value="5000"/>
+								<Property Name="RTPCRamping" Type="int16" Value="2"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="Master_Volume_GP" ID="{214E5230-9B98-4A2B-86DD-4B4BF66BD9EB}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="100"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Enviro" ID="{5CE74335-F87E-4A9B-B13E-CAFE39629194}" ShortID="783657072">
+					<ChildrenList>
+						<GameParameter Name="Distance_Cam_To_Grass_GP" ID="{BECB20DB-E884-4A15-91EA-2B9E82A24591}">
+							<PropertyList>
+								<Property Name="FilterTimeDown" Type="Real64" Value="1"/>
+								<Property Name="FilterTimeUp" Type="Real64" Value="2"/>
+								<Property Name="InitialValue" Type="Real64" Value="4000"/>
+								<Property Name="Max" Type="Real64" Value="4000"/>
+								<Property Name="RTPCRamping" Type="int16" Value="2"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="Distance_Cam_To_Bush_GP" ID="{0E3723AD-EEB8-4451-B6AC-E6E79C4281B7}">
+							<PropertyList>
+								<Property Name="FilterTimeDown" Type="Real64" Value="1"/>
+								<Property Name="FilterTimeUp" Type="Real64" Value="2"/>
+								<Property Name="InitialValue" Type="Real64" Value="4000"/>
+								<Property Name="Max" Type="Real64" Value="4000"/>
+								<Property Name="RTPCRamping" Type="int16" Value="2"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="Distance_Cam_To_Tree_GP" ID="{119836F0-9B41-495F-8C19-71FF16CEC3B5}">
+							<PropertyList>
+								<Property Name="FilterTimeDown" Type="Real64" Value="1"/>
+								<Property Name="FilterTimeUp" Type="Real64" Value="2"/>
+								<Property Name="InitialValue" Type="Real64" Value="4000"/>
+								<Property Name="Max" Type="Real64" Value="4000"/>
+								<Property Name="RTPCRamping" Type="int16" Value="2"/>
+							</PropertyList>
+						</GameParameter>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
