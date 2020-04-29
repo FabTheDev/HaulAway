@@ -144,6 +144,10 @@
 							<Value>1</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="Sea_Amb_Intensity_GP" ID="{5A269150-E118-4614-A105-F8713420EE7D}"/>
+							<Value>0.94</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Water_Depth_Left" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}"/>
 							<Value>0</Value>
 						</RTPCValue>
@@ -407,6 +411,14 @@
 							<Position X="0" Y="6"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="E_Voice_Anecdote_FindAChestBoardNextIsland" ID="{99D0A66A-E340-4BFF-BBB9-464FC971DA32}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}"/>
+							<Position X="0" Y="7"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Voice_Anecdote_FatherChanged" ID="{6BDA1436-DC8B-433C-9BC4-5AB2D3CFBEDC}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}"/>
+							<Position X="0" Y="8"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="E_Ship_Sail_Stop_Upping" ID="{6990B549-0987-4F09-8B91-EDAB7E6F3FAF}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
 							<Position X="1" Y="1"/>
 						</Module>
@@ -425,6 +437,10 @@
 						<Module>
 							<ObjectRef Name="E_Ship_Sheet_Stop_Releasing" ID="{CA44FAB0-A11F-4F08-87F1-0DEDA7A08677}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
 							<Position X="1" Y="6"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Voice_NoWind_EvenFasterWithSailDown" ID="{A2F415F6-C141-48A0-9CAA-421ACB338D5C}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}"/>
+							<Position X="1" Y="7"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="E_Ship_Sail_Up" ID="{C39E5576-77EA-486F-A0BF-69A31F9C1225}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
@@ -447,8 +463,20 @@
 							<Position X="2" Y="6"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="E_Voice_Humming_04" ID="{E145384E-F9BC-40CC-AB19-9EEF6747D300}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}"/>
+							<Position X="2" Y="8"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="E_Mus_Initiate_Music" ID="{3B75DBEE-0C3B-4CCC-967F-BE9786285E6F}" WorkUnitID="{0ED7EBA1-F621-4832-9054-98078A25E231}"/>
 							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Enviro_AmbSeaGlobal" ID="{DE328F8B-61CC-4E30-9178-3DD0C1609004}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
+							<Position X="3" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Enviro_AmbWindGlobal" ID="{F2B51A9B-EAE0-4765-853C-48D5164CE814}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
+							<Position X="3" Y="7"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="E_Ship_Tiller_Turning" ID="{09A2607C-CC76-4A48-8C98-57CF4D4D38AB}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
@@ -469,6 +497,10 @@
 						<Module>
 							<ObjectRef Name="E_Ship_Fall_from_Wave" ID="{AA8DEA17-3DF3-430F-B8F1-DCC635E14176}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
 							<Position X="4" Y="6"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Voice_Damaged_IfIHearYouCrack" ID="{05E52783-4B7F-4868-88B9-070537F7D66A}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}"/>
+							<Position X="4" Y="8"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="E_Ship_Light_Collision" ID="{07F1ABD5-7786-4F0E-9494-CE5980B243FC}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
@@ -502,15 +534,23 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SailHoist_GP" ID="{70F35A42-9104-442F-B66F-762CC58EE426}"/>
-							<Value>0</Value>
+							<Value>1</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Intra_Music_LowPassFilter_GP" ID="{F457DEC5-2431-4441-8DDC-2DBD7379D01C}"/>
 							<Value>100</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="Distance_Cam_To_Bush_GP" ID="{0E3723AD-EEB8-4451-B6AC-E6E79C4281B7}"/>
+							<Value>2989</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="DrowningRatio_GP" ID="{DA7FBB8F-9949-4564-877C-43BA9796238A}"/>
 							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Sea_Amb_Intensity_GP" ID="{5A269150-E118-4614-A105-F8713420EE7D}"/>
+							<Value>0.71</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Water_Depth_Left" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}"/>
@@ -521,16 +561,28 @@
 							<Value>1</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="Distance_Cam_To_Tree_GP" ID="{119836F0-9B41-495F-8C19-71FF16CEC3B5}"/>
+							<Value>4000</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="UI_Volume_GP" ID="{8A19730F-E82D-497F-9812-8D5F21AD724B}"/>
 							<Value>50</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="Distance_Cam_To_Grass_GP" ID="{BECB20DB-E884-4A15-91EA-2B9E82A24591}"/>
+							<Value>3874</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Master_Volume_GP" ID="{214E5230-9B98-4A2B-86DD-4B4BF66BD9EB}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="ShipSpeed_GP" ID="{72DFA80D-619E-4B12-8899-29FD2767932C}"/>
-							<Value>0</Value>
+							<Value>0.54</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Wind_Amb_Intensity_GP" ID="{E997DDF4-D043-4C9B-B2AE-152EE5C1DD00}"/>
-							<Value>0</Value>
+							<Value>0.52</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Altitude_Camera_GP" ID="{06524578-A51A-4D48-A1F9-1583202B9716}"/>
@@ -543,6 +595,10 @@
 						<RTPCValue>
 							<GameParameterRef Name="Music_Volume_GP" ID="{B6A43168-1DA1-4E4B-A564-6DDAF525B065}"/>
 							<Value>80</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Distance_Cam_To_Sea_GP" ID="{0F0F9107-B55D-4EE3-A4C0-5516831BA806}"/>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Water_Depth_Right" ID="{E620FFDB-2280-4F9C-A0A5-E36477031F5F}"/>

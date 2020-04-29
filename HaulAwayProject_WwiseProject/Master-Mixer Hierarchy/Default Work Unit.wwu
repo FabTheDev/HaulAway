@@ -209,7 +209,6 @@
 									</RTPCList>
 								</Property>
 							</PropertyList>
-							<ReferenceList/>
 							<ChildrenList>
 								<AuxBus Name="Exterior_Acoustic_Voice_AUX" ID="{68513103-99BC-4A30-9F0A-22590B4A8AF9}">
 									<ReferenceList>
