@@ -123,6 +123,44 @@
 						</SwitchGroup>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Weather" ID="{E5767879-692F-478B-B15C-8BAA94DB1C1A}" ShortID="153594162">
+					<ChildrenList>
+						<SwitchGroup Name="Thunder_Distance_SWITCH" ID="{571D36A4-3AE7-4364-9211-CC0A9F1FCDC0}">
+							<PropertyList>
+								<Property Name="UseGameParameter" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Switch Name="Far_Thunder" ID="{B5D774AC-EFDC-4A3E-8D5C-CC9E48E513CA}"/>
+								<Switch Name="Near_Thunder" ID="{40C8EB82-1F02-44D1-899E-4294E7547E3B}"/>
+							</ChildrenList>
+							<SwitchOnRTPC>
+								<GameParameterRef Name="Thunder_Distance_GP" ID="{64835349-BC3B-4B8E-8C4F-9C529D2709C0}"/>
+								<Curve Name="" ID="{18578546-FEA3-423F-AE5E-48C9D88B3BDD}">
+									<PropertyList>
+										<Property Name="Flags" Type="int32" Value="65537"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>2</YPos>
+											<Flags>5</Flags>
+										</Point>
+										<Point>
+											<XPos>30000</XPos>
+											<YPos>1</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>100000</XPos>
+											<YPos>1</YPos>
+											<Flags>37</Flags>
+										</Point>
+									</PointList>
+								</Curve>
+							</SwitchOnRTPC>
+						</SwitchGroup>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

@@ -10014,7 +10014,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-6</Value>
+										<Value>-8</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -10070,6 +10070,11 @@
 															</Curve>
 														</RTPC>
 													</RTPCList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
 												</Property>
 											</PropertyList>
 											<ReferenceList>
@@ -10978,6 +10983,34 @@
 										<Sound Name="SFX_HA_Enviro_SeaLarge" ID="{62967C6E-E252-4498-98A0-9123905C9632}" ShortID="511895588">
 											<PropertyList>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="MakeUpGain" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{FD266B6C-081F-456E-9C93-A5E9AB71AF3F}" ShortID="569022958">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Rain_Intensity_GP" ID="{0203CBA4-E167-40AB-BF11-53B9C72E0BA4}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{AAFD9C90-E3BB-4C1D-8A6A-0CD1061713DD}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>6</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -11012,6 +11045,34 @@
 										<Sound Name="SFX_HA_Enviro_SeaMedium" ID="{D5F292C4-327B-4423-8F8B-93B742F3A7E8}" ShortID="1001915350">
 											<PropertyList>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="MakeUpGain" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{AC8D241E-6D3F-4058-AB33-477C78030C3F}" ShortID="37140369">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Rain_Intensity_GP" ID="{0203CBA4-E167-40AB-BF11-53B9C72E0BA4}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{AD0CF1A6-7992-46BF-83C5-21D6D13695A5}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>6</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>4</Value>
@@ -11290,6 +11351,817 @@
 														<LeftEdgePos>0.6</LeftEdgePos>
 														<LeftFadingMode>Automatic</LeftFadingMode>
 														<RightEdgePos>1</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+									</BlendTrackList>
+								</BlendContainer>
+							</ChildrenList>
+						</ActorMixer>
+						<ActorMixer Name="Tempest" ID="{2E1B725C-E6C9-4A59-959E-C4E57BDDFFFD}" ShortID="122049694">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SwitchContainer Name="Tempest_ThunderDistant_SWITCH" ID="{6D996969-0588-4C53-9FB4-CD108EF88417}" ShortID="472744877">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{B8B1A362-3184-46E1-B960-F7E97722DB7B}" ShortID="332006444">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Thunder_Distance_GP" ID="{64835349-BC3B-4B8E-8C4F-9C529D2709C0}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{6247A227-0CAE-44DD-97C9-4BFD085266F4}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100000</XPos>
+																<YPos>2.94</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Far_Thunder" ID="{B5D774AC-EFDC-4A3E-8D5C-CC9E48E513CA}" WorkUnitID="{B2EF58AA-AC08-48B1-B753-34CCFE6A3AB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Thunder_Distance_SWITCH" ID="{571D36A4-3AE7-4364-9211-CC0A9F1FCDC0}" WorkUnitID="{B2EF58AA-AC08-48B1-B753-34CCFE6A3AB5}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Tempest_Thunder_DistantNear_RND" ID="{956646C6-F906-4B11-85E4-CB1D1B7A85D2}" ShortID="489360385">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="SFX_HA_Enviro_ThunderDistantNear_01" ID="{628F8530-3AB6-4923-B194-F6E8783F488F}" ShortID="340129451">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HA_Enviro_ThunderDistantNear_01" ID="{08141FE4-4680-4698-88D8-3A722F895EBF}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_HA_Enviro_ThunderDistantNear_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1027980808"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HA_Enviro_ThunderDistantNear_01" ID="{08141FE4-4680-4698-88D8-3A722F895EBF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HA_Enviro_ThunderDistantNear_02" ID="{530FCE1C-304D-402B-A76A-4DDCE9650425}" ShortID="894966604">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HA_Enviro_ThunderDistantNear_02" ID="{8E6BC22F-39EB-433B-8E45-27B63221A75B}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_HA_Enviro_ThunderDistantNear_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="588272269"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HA_Enviro_ThunderDistantNear_02" ID="{8E6BC22F-39EB-433B-8E45-27B63221A75B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Tempest_Thunder_DistantFar_RND" ID="{B39E9420-7D98-4921-8299-38B66EAB1B4B}" ShortID="711821855">
+											<PropertyList>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="6"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="SFX_HA_Enviro_ThunderDistantFar_01" ID="{647B6B1F-4C88-4FC2-8655-A062C258F87C}" ShortID="7921015">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HA_Enviro_ThunderDistantFar_01" ID="{32471897-DEEF-494C-A0FF-185691468232}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_HA_Enviro_ThunderDistantFar_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="124827617"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HA_Enviro_ThunderDistantFar_01" ID="{32471897-DEEF-494C-A0FF-185691468232}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HA_Enviro_ThunderDistantFar_02" ID="{D53ED738-7694-49F7-926E-C8591563A03B}" ShortID="390915651">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HA_Enviro_ThunderDistantFar_02" ID="{86EA610D-15E5-4E1C-AF1B-6F2C88D745A6}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_HA_Enviro_ThunderDistantFar_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="419104740"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HA_Enviro_ThunderDistantFar_02" ID="{86EA610D-15E5-4E1C-AF1B-6F2C88D745A6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HA_Enviro_ThunderDistantFar_03" ID="{D971F260-D43E-4657-8B8D-6F9A10C0F8A5}" ShortID="499287023">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HA_Enviro_ThunderDistantFar_03" ID="{40BAEDC4-1416-4349-98D3-3AF5AED4E72E}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_HA_Enviro_ThunderDistantFar_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="750165050"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HA_Enviro_ThunderDistantFar_03" ID="{40BAEDC4-1416-4349-98D3-3AF5AED4E72E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HA_Enviro_ThunderDistantFar_04" ID="{2152DE30-701D-4AF4-AA86-973639217C6E}" ShortID="102607794">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HA_Enviro_ThunderDistantFar_04" ID="{A9AEF76A-1DC3-4FC3-B105-46C81F775847}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_HA_Enviro_ThunderDistantFar_04.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1019497386"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HA_Enviro_ThunderDistantFar_04" ID="{A9AEF76A-1DC3-4FC3-B105-46C81F775847}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HA_Enviro_ThunderDistantFar_05" ID="{37AACF32-2CCE-4D46-95A0-49F69D55A0C3}" ShortID="518194582">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HA_Enviro_ThunderDistantFar_05" ID="{59A57252-C659-4B11-AFF9-70F648678C72}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_HA_Enviro_ThunderDistantFar_05.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="204730434"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HA_Enviro_ThunderDistantFar_05" ID="{59A57252-C659-4B11-AFF9-70F648678C72}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HA_Enviro_ThunderDistantFar_06" ID="{F997708C-F92E-46B0-B6EE-CB5326584649}" ShortID="804856464">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HA_Enviro_ThunderDistantFar_06" ID="{2CDDFE32-A177-4344-AA93-6924FDDA14B9}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_HA_Enviro_ThunderDistantFar_06.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="642446527"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HA_Enviro_ThunderDistantFar_06" ID="{2CDDFE32-A177-4344-AA93-6924FDDA14B9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HA_Enviro_ThunderDistantFar_07" ID="{D8F64F4C-FB6F-4E47-B68B-CB93C337596B}" ShortID="203876608">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HA_Enviro_ThunderDistantFar_07" ID="{04B400FB-1531-4F2D-B697-0E21CC2A770E}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_HA_Enviro_ThunderDistantFar_07.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="915033030"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HA_Enviro_ThunderDistantFar_07" ID="{04B400FB-1531-4F2D-B697-0E21CC2A770E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Tempest_Thunder_DistantFar_RND" ID="{B39E9420-7D98-4921-8299-38B66EAB1B4B}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Tempest_Thunder_DistantNear_RND" ID="{956646C6-F906-4B11-85E4-CB1D1B7A85D2}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Near_Thunder" ID="{40C8EB82-1F02-44D1-899E-4294E7547E3B}"/>
+												<ItemList>
+													<ItemRef Name="Tempest_Thunder_DistantNear_RND" ID="{956646C6-F906-4B11-85E4-CB1D1B7A85D2}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Far_Thunder" ID="{B5D774AC-EFDC-4A3E-8D5C-CC9E48E513CA}"/>
+												<ItemList>
+													<ItemRef Name="Tempest_Thunder_DistantFar_RND" ID="{B39E9420-7D98-4921-8299-38B66EAB1B4B}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+								<RandomSequenceContainer Name="Tempest_ThunderHere_RND" ID="{3990F4F7-3FBC-4458-88BB-387789B26B34}" ShortID="83905064">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SFX_HA_Enviro_ThunderHere_01" ID="{3446258B-2999-4F00-BE0B-22806EA90F7C}" ShortID="966726479">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_HA_Enviro_ThunderHere_01" ID="{A8914052-D82D-42BE-83FC-A555E0D1A88D}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>SFX_HA_Enviro_ThunderHere_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="490576655"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_HA_Enviro_ThunderHere_01" ID="{A8914052-D82D-42BE-83FC-A555E0D1A88D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_HA_Enviro_ThunderHere_02" ID="{7F2E6CCC-5BC6-45FC-9208-9356A7359092}" ShortID="1016021867">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_HA_Enviro_ThunderHere_02" ID="{CA3F98D7-5BC1-49BA-B831-1AB7EA460758}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>SFX_HA_Enviro_ThunderHere_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="859340246"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_HA_Enviro_ThunderHere_02" ID="{CA3F98D7-5BC1-49BA-B831-1AB7EA460758}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<BlendContainer Name="Tempest_Rain_BLEND" ID="{986BC15C-6597-4DE9-8D78-9795D30BEB6F}" ShortID="782927838">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SFX_HA_Enviro_GeneralRain_Loop" ID="{015E07B8-73AC-4D1E-B5A5-B88EBCC77345}" ShortID="11967795">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_HA_Enviro_GeneralRain_Loop" ID="{5C698181-5143-4035-918C-0C28B487BB74}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>SFX_HA_Enviro_GeneralRain_Loop.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="101227841"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_HA_Enviro_GeneralRain_Loop" ID="{5C698181-5143-4035-918C-0C28B487BB74}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_HA_Enviro_RainOnShip_Loop" ID="{2B5629F2-E9EF-4A46-9BFB-DFE4DB682D77}" ShortID="922275291">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_HA_Enviro_RainOnShip_Loop" ID="{1E72BF9C-3828-4E6C-810F-1C73A476EBBE}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>SFX_HA_Enviro_RainOnShip_Loop.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="747192416"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_HA_Enviro_RainOnShip_Loop" ID="{1E72BF9C-3828-4E6C-810F-1C73A476EBBE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_HA_Enviro_RainOnWater_Loop" ID="{A1D2CD41-4E57-40BD-83D1-62841769222E}" ShortID="103591073">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_HA_Enviro_RainOnWater_Loop" ID="{75C1A020-0EB7-4274-B6A8-796E42228627}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>SFX_HA_Enviro_RainOnWater_Loop.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="594653737"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_HA_Enviro_RainOnWater_Loop" ID="{75C1A020-0EB7-4274-B6A8-796E42228627}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<BlendTrackList>
+										<BlendTrack Name="General Rain" ID="{87C3BCE3-8ABB-45BD-938B-DF1CF7DB7B68}" ShortID="88172720">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{62A0A84B-7CD9-4A9E-988C-075DE092BF58}" ShortID="794246198">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Rain_Intensity_GP" ID="{0203CBA4-E167-40AB-BF11-53B9C72E0BA4}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{F220B22D-36C1-4A7D-966B-7814FA9E2EA4}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="Rain_Intensity_GP" ID="{0203CBA4-E167-40AB-BF11-53B9C72E0BA4}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+												</Reference>
+											</ReferenceList>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="SFX_HA_Enviro_GeneralRain_Loop" ID="{015E07B8-73AC-4D1E-B5A5-B88EBCC77345}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>0</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>1</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+										<BlendTrack Name="Distance Cam To Ship" ID="{47E1318B-5ADC-4BAE-B0B0-B7830EFE6AA6}" ShortID="439137410">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{3558E010-125C-4A8F-A5EA-3333763A7A5F}" ShortID="304316558">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Rain_Intensity_GP" ID="{0203CBA4-E167-40AB-BF11-53B9C72E0BA4}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{910D29C4-326D-46BA-8010-EBAFC438D10C}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Log3</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+														<RTPC Name="" ID="{D6B05AEA-34B8-4EB1-8F32-BF37121EE2D8}" ShortID="597779605">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Distance_Cam_To_Ship_GP" ID="{EABEA38B-65C8-43BE-AEB8-3C7B12AF4F32}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{25E911FE-4870-4DB4-A48B-210B7089A292}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Log2</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>6000</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="Distance_Cam_To_Ship_GP" ID="{EABEA38B-65C8-43BE-AEB8-3C7B12AF4F32}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+												</Reference>
+											</ReferenceList>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="SFX_HA_Enviro_RainOnShip_Loop" ID="{2B5629F2-E9EF-4A46-9BFB-DFE4DB682D77}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>0</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>6000</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+										<BlendTrack Name="Distance Cam To Water" ID="{2DD372CE-535D-4BCB-AA5A-F2EB3720BABD}" ShortID="442296410">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{DF494603-7B89-4AA0-9BF8-FF52107DEC03}" ShortID="214270162">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Altitude_Camera_GP" ID="{06524578-A51A-4D48-A1F9-1583202B9716}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{C2FA0498-339E-43D8-8695-1CB819B93C4F}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>206.5445</XPos>
+																		<YPos>-2.99098</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Log2</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>800</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Exp3</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>5000</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+														<RTPC Name="" ID="{B1E93E5B-A17C-4381-85E8-D7FDEA0CB2BE}" ShortID="582023258">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Rain_Intensity_GP" ID="{0203CBA4-E167-40AB-BF11-53B9C72E0BA4}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{C35CAC87-3EBA-439B-BDD7-C95E19F6DD26}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Log3</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="Altitude_Camera_GP" ID="{06524578-A51A-4D48-A1F9-1583202B9716}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+												</Reference>
+											</ReferenceList>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="SFX_HA_Enviro_RainOnWater_Loop" ID="{A1D2CD41-4E57-40BD-83D1-62841769222E}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>0</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>800</RightEdgePos>
 														<RightFadingMode>Automatic</RightFadingMode>
 													</CrossfadingInfo>
 												</BlendTrackAssoc>
