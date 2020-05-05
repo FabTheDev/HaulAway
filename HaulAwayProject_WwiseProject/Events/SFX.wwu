@@ -498,16 +498,6 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
-										<Action Name="" ID="{0473E2DB-F4F9-4055-818B-06BD131AC55B}" ShortID="188904793">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="1"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Ship_WaterFriction_Speed_BLEND" ID="{94B43C8B-EAA7-4C01-84F4-EA60DAC753B8}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
 										<Action Name="" ID="{A4C5A406-A6CB-416D-A7C4-1982398EE466}" ShortID="779675301">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="1"/>
@@ -983,6 +973,21 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="Amb_Wind_BLEND" ID="{21DAF4D3-94C5-460F-9963-0CDB8A904E6D}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Enviro_AmbSeaGlobal" ID="{DE328F8B-61CC-4E30-9178-3DD0C1609004}">
+									<ChildrenList>
+										<Action Name="" ID="{D66840C5-BFAB-48D5-9CE3-1AF18439FF6F}" ShortID="1004982720">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Amb_Sea_BLEND" ID="{08EC4E36-6B2A-4649-986E-A266F427A720}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
