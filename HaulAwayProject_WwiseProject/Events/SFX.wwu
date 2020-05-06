@@ -972,7 +972,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Amb_Wind_BLEND" ID="{21DAF4D3-94C5-460F-9963-0CDB8A904E6D}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+													<ObjectRef Name="Global_Amb_BLEND" ID="{10DFA683-31FD-48A1-B0F4-C6BC72FD60F2}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

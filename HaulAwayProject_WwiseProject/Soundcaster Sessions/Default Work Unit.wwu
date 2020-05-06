@@ -471,6 +471,10 @@
 							<Position X="3" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="E_Mus_Set_Storm_Theme" ID="{9FF835A8-1F1D-4386-9547-56BE8A7B5086}" WorkUnitID="{0ED7EBA1-F621-4832-9054-98078A25E231}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="E_Enviro_AmbSeaGlobal" ID="{DE328F8B-61CC-4E30-9178-3DD0C1609004}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
 							<Position X="3" Y="4"/>
 						</Module>
@@ -545,12 +549,16 @@
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="InCaveOrNot_Factor_GP" ID="{BDE15852-BC19-429F-8E06-7BCEC5A6C6A9}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="WindTaken_GP" ID="{D5E2F34F-A357-43B5-9C38-492B8A218557}"/>
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Distance_Cam_To_Ship_GP" ID="{EABEA38B-65C8-43BE-AEB8-3C7B12AF4F32}"/>
-							<Value>6000</Value>
+							<Value>10000</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SailHoist_GP" ID="{70F35A42-9104-442F-B66F-762CC58EE426}"/>
@@ -570,7 +578,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Sea_Amb_Intensity_GP" ID="{5A269150-E118-4614-A105-F8713420EE7D}"/>
-							<Value>1</Value>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Water_Depth_Left" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}"/>
