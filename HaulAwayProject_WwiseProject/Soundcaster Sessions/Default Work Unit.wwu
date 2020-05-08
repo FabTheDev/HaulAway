@@ -507,6 +507,22 @@
 							<Position X="4" Y="8"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="E_Enviro_Iceberg_Cracking_LOOP" ID="{3BE25428-9D1E-436F-B97C-D8E69EC61E54}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
+							<Position X="5" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Enviro_Iceberg_Break_HighSpeed" ID="{82DE88ED-3C2B-416A-A9CF-78A8C5D439B6}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
+							<Position X="5" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Enviro_Iceberg_Break_LowSpeed" ID="{B1786F92-3139-4842-B212-C51C9CD211D5}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
+							<Position X="5" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Enviro_StartFire" ID="{7FD20740-1BEA-44D3-AD57-70039DF87BE2}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
+							<Position X="5" Y="4"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="E_Tempest_Rain_LOOP" ID="{3729D649-8877-4779-99D8-E01E059231BD}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
 							<Position X="5" Y="7"/>
 						</Module>
@@ -558,7 +574,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Distance_Cam_To_Ship_GP" ID="{EABEA38B-65C8-43BE-AEB8-3C7B12AF4F32}"/>
-							<Value>10000</Value>
+							<Value>1474</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SailHoist_GP" ID="{70F35A42-9104-442F-B66F-762CC58EE426}"/>
@@ -578,7 +594,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Sea_Amb_Intensity_GP" ID="{5A269150-E118-4614-A105-F8713420EE7D}"/>
-							<Value>0</Value>
+							<Value>0.23</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Water_Depth_Left" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}"/>
@@ -606,7 +622,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="ShipSpeed_GP" ID="{72DFA80D-619E-4B12-8899-29FD2767932C}"/>
-							<Value>0</Value>
+							<Value>0.33</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Thunder_Distance_GP" ID="{64835349-BC3B-4B8E-8C4F-9C529D2709C0}"/>
@@ -614,7 +630,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Wind_Amb_Intensity_GP" ID="{E997DDF4-D043-4C9B-B2AE-152EE5C1DD00}"/>
-							<Value>0</Value>
+							<Value>0.28</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Altitude_Camera_GP" ID="{06524578-A51A-4D48-A1F9-1583202B9716}"/>
@@ -644,7 +660,7 @@
 						<CurrentStateRef Name="None" ID="{2CFE3A44-5351-4DE6-A79B-39203CDC3FA3}"/>
 						<CurrentStateRef Name="None" ID="{6507D9A9-729F-4C4B-AA8E-16815F487179}"/>
 						<CurrentStateRef Name="None" ID="{4F52A7E7-3240-4480-BCA4-A75985D30EDB}"/>
-						<CurrentStateRef Name="None" ID="{141295CE-4617-432C-8DBE-52A7396D515C}"/>
+						<CurrentStateRef Name="Out_Hold" ID="{4799B397-87EA-4934-ACC2-73FA0C65A854}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Approaching" ID="{14491DD2-3190-486E-8C3D-40FEE6BA2370}"/>
