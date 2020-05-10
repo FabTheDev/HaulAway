@@ -498,16 +498,6 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
-										<Action Name="" ID="{0473E2DB-F4F9-4055-818B-06BD131AC55B}" ShortID="188904793">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="1"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Ship_WaterFriction_Speed_BLEND" ID="{94B43C8B-EAA7-4C01-84F4-EA60DAC753B8}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
 										<Action Name="" ID="{A4C5A406-A6CB-416D-A7C4-1982398EE466}" ShortID="779675301">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="1"/>
@@ -982,7 +972,69 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Amb_Wind_BLEND" ID="{21DAF4D3-94C5-460F-9963-0CDB8A904E6D}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+													<ObjectRef Name="Global_Amb_BLEND" ID="{10DFA683-31FD-48A1-B0F4-C6BC72FD60F2}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Enviro_AmbSeaGlobal" ID="{DE328F8B-61CC-4E30-9178-3DD0C1609004}">
+									<ChildrenList>
+										<Action Name="" ID="{D66840C5-BFAB-48D5-9CE3-1AF18439FF6F}" ShortID="1004982720">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Amb_Sea_BLEND" ID="{08EC4E36-6B2A-4649-986E-A266F427A720}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Tempest" ID="{38481CEF-E526-4F44-A8A9-58EE4A661841}" ShortID="372274746">
+							<ChildrenList>
+								<Event Name="E_Tempest_ThunderHere" ID="{E8BCF84B-9501-4813-9118-FA0B24F9B86E}">
+									<ChildrenList>
+										<Action Name="" ID="{E9F39AF3-7448-436C-9A8F-4032E5C35314}" ShortID="683844260">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Tempest_ThunderHere_RND" ID="{3990F4F7-3FBC-4458-88BB-387789B26B34}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Tempest_Rain_LOOP" ID="{3729D649-8877-4779-99D8-E01E059231BD}">
+									<ChildrenList>
+										<Action Name="" ID="{C7F63BC0-0503-4C82-9430-2A4C9DAE7738}" ShortID="61586159">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Tempest_Rain_BLEND" ID="{986BC15C-6597-4DE9-8D78-9795D30BEB6F}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Tempest_ThunderDistant" ID="{6E26E885-014C-42F5-A007-522C36C87AB3}">
+									<ChildrenList>
+										<Action Name="" ID="{D7D01213-0958-4691-807B-8FE5C51A1B1E}" ShortID="470582866">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Tempest_ThunderDistant_SWITCH" ID="{6D996969-0588-4C53-9FB4-CD108EF88417}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

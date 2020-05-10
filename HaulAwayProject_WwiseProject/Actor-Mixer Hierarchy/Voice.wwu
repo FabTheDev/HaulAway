@@ -6,7 +6,17 @@
 				<ActorMixer Name="Voice Global" ID="{05AF76D9-562A-43AC-BDD7-94D03609A2B9}" ShortID="393394973">
 					<PropertyList>
 						<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>35</Value>
+							</ValueList>
+						</Property>
 						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>15</Value>
+							</ValueList>
+						</Property>
 						<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 						<Property Name="MaxSoundPerInstance" Type="int16">
 							<ValueList>
@@ -18,11 +28,70 @@
 								<Value>True</Value>
 							</ValueList>
 						</Property>
+						<Property Name="UserAuxSendVolume0" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{E64E0C13-263D-4E66-9DAB-9A5D2796FC18}" ShortID="596036121">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="InCaveOrNot_Factor_GP" ID="{BDE15852-BC19-429F-8E06-7BCEC5A6C6A9}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{5599F10A-B9E8-4B66-8980-EC464A94F49E}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>0</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>-200</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+						<Property Name="UserAuxSendVolume1" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{1B007687-577B-4489-83E4-7B8F02DEDFC6}" ShortID="931248268">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="InCaveOrNot_Factor_GP" ID="{BDE15852-BC19-429F-8E06-7BCEC5A6C6A9}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{013CBC6A-6660-4E2D-BBFF-EC353607CDC4}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>-4.59933</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
 						<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+						</Reference>
+						<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+							<ObjectRef Name="Dialog_Leveler_Hard" ID="{865FB36F-8717-4D30-AD05-14E56375CD40}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
@@ -30,10 +99,14 @@
 						<Reference Name="UserAuxSend0">
 							<ObjectRef Name="Exterior_Acoustic_Voice_AUX" ID="{68513103-99BC-4A30-9F0A-22590B4A8AF9}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
 						</Reference>
+						<Reference Name="UserAuxSend1">
+							<ObjectRef Name="Cave_Acoustic_SFX_AUX" ID="{01568535-8555-4C9B-B2EA-164F84B37D78}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<ActorMixer Name="Voicelines" ID="{0E2BA5FE-1AD7-4216-A635-5AF03CED4260}" ShortID="13948714">
 							<PropertyList>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-3</Value>
@@ -45,7 +118,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+									<ObjectRef Name="Voicelines_Voice_SUBBUS" ID="{8C45B67A-AE95-4F2E-B26E-082518E5A752}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -2569,6 +2642,7 @@
 						</ActorMixer>
 						<ActorMixer Name="Onomatope" ID="{282B7FB3-8CFB-4737-B594-8ABA6536BB12}" ShortID="497264210">
 							<PropertyList>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-6</Value>
@@ -2580,7 +2654,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+									<ObjectRef Name="Onomatope_Voice_SUBBUS" ID="{266E5665-EF56-47A8-8220-730F2A50EB41}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
