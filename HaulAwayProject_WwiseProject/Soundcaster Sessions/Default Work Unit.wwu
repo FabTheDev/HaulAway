@@ -148,7 +148,7 @@
 							<Value>0.94</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="Water_Depth_Left" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}"/>
+							<GameParameterRef Name="Water_Depth_Foot_Left_GP" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}"/>
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
@@ -192,7 +192,7 @@
 							<Value>100</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="Water_Depth_Right" ID="{E620FFDB-2280-4F9C-A0A5-E36477031F5F}"/>
+							<GameParameterRef Name="Water_Depth_Foot_Right_GP" ID="{E620FFDB-2280-4F9C-A0A5-E36477031F5F}"/>
 							<Value>0</Value>
 						</RTPCValue>
 					</RTPCValueList>
@@ -337,7 +337,7 @@
 							<Value>100</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="Water_Depth_Left" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}"/>
+							<GameParameterRef Name="Water_Depth_Foot_Left_GP" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}"/>
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
@@ -361,7 +361,7 @@
 							<Value>79.9019607843137</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="Water_Depth_Right" ID="{E620FFDB-2280-4F9C-A0A5-E36477031F5F}"/>
+							<GameParameterRef Name="Water_Depth_Foot_Right_GP" ID="{E620FFDB-2280-4F9C-A0A5-E36477031F5F}"/>
 							<Value>0</Value>
 						</RTPCValue>
 					</RTPCValueList>
@@ -566,7 +566,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="InCaveOrNot_Factor_GP" ID="{BDE15852-BC19-429F-8E06-7BCEC5A6C6A9}"/>
-							<Value>0</Value>
+							<Value>1.44579055251768E-311</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="WindTaken_GP" ID="{D5E2F34F-A357-43B5-9C38-492B8A218557}"/>
@@ -574,7 +574,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Distance_Cam_To_Ship_GP" ID="{EABEA38B-65C8-43BE-AEB8-3C7B12AF4F32}"/>
-							<Value>1474</Value>
+							<Value>1.44579055212243E-311</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SailHoist_GP" ID="{70F35A42-9104-442F-B66F-762CC58EE426}"/>
@@ -594,10 +594,10 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Sea_Amb_Intensity_GP" ID="{5A269150-E118-4614-A105-F8713420EE7D}"/>
-							<Value>0.23</Value>
+							<Value>0.6</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="Water_Depth_Left" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}"/>
+							<GameParameterRef Name="Water_Depth_Foot_Left_GP" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}"/>
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
@@ -622,7 +622,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="ShipSpeed_GP" ID="{72DFA80D-619E-4B12-8899-29FD2767932C}"/>
-							<Value>0.33</Value>
+							<Value>0.99</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Thunder_Distance_GP" ID="{64835349-BC3B-4B8E-8C4F-9C529D2709C0}"/>
@@ -630,11 +630,11 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Wind_Amb_Intensity_GP" ID="{E997DDF4-D043-4C9B-B2AE-152EE5C1DD00}"/>
-							<Value>0.28</Value>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Altitude_Camera_GP" ID="{06524578-A51A-4D48-A1F9-1583202B9716}"/>
-							<Value>250</Value>
+							<Value>1480.07955363216</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SFX_Volume_GP" ID="{C9F5422A-020E-4D7B-AF1B-5A807144C983}"/>
@@ -645,11 +645,11 @@
 							<Value>100</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="Distance_Cam_To_Sea_GP" ID="{0F0F9107-B55D-4EE3-A4C0-5516831BA806}"/>
-							<Value>10000</Value>
+							<GameParameterRef Name="Distance_Cam_To_IsleBorder_GP" ID="{0F0F9107-B55D-4EE3-A4C0-5516831BA806}"/>
+							<Value>1.44579055172717E-311</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="Water_Depth_Right" ID="{E620FFDB-2280-4F9C-A0A5-E36477031F5F}"/>
+							<GameParameterRef Name="Water_Depth_Foot_Right_GP" ID="{E620FFDB-2280-4F9C-A0A5-E36477031F5F}"/>
 							<Value>0</Value>
 						</RTPCValue>
 					</RTPCValueList>
@@ -667,7 +667,7 @@
 						<CurrentSwitchRef Name="Going_To_Sea_Theme" ID="{4F1D9B68-8C4D-4387-81C3-B868C53CF108}"/>
 						<CurrentSwitchRef Name="Deep" ID="{E1F17321-7537-4F0A-B16E-879CD5C93527}"/>
 						<CurrentSwitchRef Name="No" ID="{557E11F3-E18E-4406-BA2D-24998C38DA37}"/>
-						<CurrentSwitchRef Name="Wood" ID="{AD02081A-225D-437C-BF52-89E278904486}"/>
+						<CurrentSwitchRef Name="DryDirt" ID="{3ACDF8C5-731A-4217-817C-5A3173606D9C}"/>
 						<CurrentSwitchRef Name="In" ID="{F431CC99-F201-401D-B118-93F3EE1C9EAD}"/>
 						<CurrentSwitchRef Name="Yes" ID="{E4B8CC05-4AC4-4067-A717-1BA2FD1B0D32}"/>
 						<CurrentSwitchRef Name="Compass" ID="{CA054260-4F3C-411B-8F93-A47EAE9EAF92}"/>

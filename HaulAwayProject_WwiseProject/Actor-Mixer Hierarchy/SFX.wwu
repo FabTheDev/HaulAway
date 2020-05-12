@@ -84,7 +84,7 @@
 								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>6</Value>
+										<Value>10</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -6107,35 +6107,6 @@
 								</ActorMixer>
 								<ActorMixer Name="Amb Sea" ID="{1E5AE00D-6B66-4F12-BE13-DB4EA5AB62DF}" ShortID="123713519">
 									<PropertyList>
-										<Property Name="Lowpass" Type="int16">
-											<RTPCList>
-												<RTPC Name="" ID="{212D6A1B-9192-487A-A5E1-143AB0958499}" ShortID="113413028">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="InCaveOrNot_Factor_GP" ID="{BDE15852-BC19-429F-8E06-7BCEC5A6C6A9}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{5BAB0780-9979-4BC2-9148-B513A4DCF42F}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="65537"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>0</YPos>
-																<Flags>5</Flags>
-																<SegmentShape>Log3</SegmentShape>
-															</Point>
-															<Point>
-																<XPos>1</XPos>
-																<YPos>54</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-17</Value>
@@ -6151,40 +6122,47 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="SFX_HA_Enviro_WaterLapping" ID="{603F497C-069A-41DE-8B65-E98C2448F72B}" ShortID="147882286">
-											<PropertyList>
-												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="SFX_HA_Enviro_WaterLapping" ID="{BB48B1ED-3C36-4FF0-9104-7C330B2F7261}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>SFX_HA_Enviro_WaterLapping.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="771862468"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="SFX_HA_Enviro_WaterLapping" ID="{BB48B1ED-3C36-4FF0-9104-7C330B2F7261}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
 										<BlendContainer Name="Amb_Sea_BLEND" ID="{08EC4E36-6B2A-4649-986E-A266F427A720}" ShortID="519678035">
 											<PropertyList>
 												<Property Name="BlendBehavior" Type="int16" Value="1"/>
+												<Property Name="Highpass" Type="int16">
+													<RTPCList>
+														<RTPC Name="" ID="{09C13CC9-A59C-4D7A-A47A-1C2688534830}" ShortID="54502043">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Altitude_Camera_GP" ID="{06524578-A51A-4D48-A1F9-1583202B9716}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{A31A3C0E-7316-48CD-853A-52AAFF70EB20}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>500</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>3170</XPos>
+																		<YPos>31</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>5000</XPos>
+																		<YPos>30</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
 												<Property Name="Lowpass" Type="int16">
 													<ValueList>
 														<Value>60</Value>
@@ -6194,6 +6172,75 @@
 															<Modifier Name="" ID="{5B441AF2-EF6B-4A0A-A2DE-99E04298CDCA}"/>
 														</ModifierInfo>
 													</ModifierList>
+													<RTPCList>
+														<RTPC Name="" ID="{18250028-E179-4163-9418-2FB02C7E8CC1}" ShortID="676290765">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Altitude_Camera_GP" ID="{06524578-A51A-4D48-A1F9-1583202B9716}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{91AE7AAC-A233-4CCE-BC92-2957CEB846FE}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>500</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>3170</XPos>
+																		<YPos>30</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>5000</XPos>
+																		<YPos>30</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{E8F6B8B5-359B-4D50-A4AE-9B23B717A2FB}" ShortID="80302939">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Altitude_Camera_GP" ID="{06524578-A51A-4D48-A1F9-1583202B9716}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{3CDA319C-E11E-4269-8D5E-20160391B906}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>500</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>5000</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
 												</Property>
 											</PropertyList>
 											<ReferenceList>
@@ -6505,6 +6552,48 @@
 														<ActiveSource Name="SFX_HA_Enviro_SeaSoft" ID="{EA70DB7C-A0C2-4234-A95D-E61BA6FB1AD5}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
+												<Sound Name="SFX_HA_Enviro_WaterLapping" ID="{603F497C-069A-41DE-8B65-E98C2448F72B}" ShortID="147882286">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Cave_Acoustic_SFX_AUX" ID="{01568535-8555-4C9B-B2EA-164F84B37D78}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HA_Enviro_WaterLapping" ID="{BB48B1ED-3C36-4FF0-9104-7C330B2F7261}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="VolumeOffset" Type="Real64">
+																	<ValueList>
+																		<Value>1</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_HA_Enviro_WaterLapping.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="771862468"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HA_Enviro_WaterLapping" ID="{BB48B1ED-3C36-4FF0-9104-7C330B2F7261}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
 											<BlendTrackList>
 												<BlendTrack Name="Sea Soft" ID="{35396E4F-BD9A-4A4E-BFD4-85C2AF331C61}" ShortID="248732617">
@@ -6679,6 +6768,62 @@
 																<LeftEdgePos>0.6</LeftEdgePos>
 																<LeftFadingMode>Automatic</LeftFadingMode>
 																<RightEdgePos>1</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+													</BlendTrackAssocList>
+												</BlendTrack>
+												<BlendTrack Name="Flat Water Lapping" ID="{3470AFAB-59D1-4113-B47E-A8BD995CF592}" ShortID="650958155">
+													<PropertyList>
+														<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<RTPCList>
+																<RTPC Name="" ID="{3566C6F6-8631-43B6-AADA-F296E159A970}" ShortID="754348128">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="Sea_Amb_Intensity_GP" ID="{5A269150-E118-4614-A105-F8713420EE7D}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{8C84928E-9414-4345-BA58-236E6FC031AD}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-0</YPos>
+																				<Flags>5</Flags>
+																				<SegmentShape>Log3</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>0.2</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>0</Flags>
+																				<SegmentShape>Exp3</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="LayerCrossFadeControlInput">
+															<ObjectRef Name="Sea_Amb_Intensity_GP" ID="{5A269150-E118-4614-A105-F8713420EE7D}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+														</Reference>
+													</ReferenceList>
+													<BlendTrackAssocList>
+														<BlendTrackAssoc>
+															<ItemRef Name="SFX_HA_Enviro_WaterLapping" ID="{603F497C-069A-41DE-8B65-E98C2448F72B}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>0</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<RightEdgePos>0.2</RightEdgePos>
 																<RightFadingMode>Automatic</RightFadingMode>
 															</CrossfadingInfo>
 														</BlendTrackAssoc>
@@ -11266,20 +11411,43 @@
 																</Sound>
 															</ChildrenList>
 														</RandomSequenceContainer>
-														<RandomSequenceContainer Name="Fttps_LR_Water_Walk_SEQ" ID="{9FA76FE0-43EA-4141-B64A-458D06FB8F34}" ShortID="504282860">
+														<RandomSequenceContainer Name="Fttps_LR_Water_Walk_SEQ" ID="{23FDD1CC-5867-42C9-A6B7-CEDEA90FFAB4}" ShortID="501720150">
 															<PropertyList>
+																<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+																<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+																<Property Name="MaxSoundPerInstance" Type="int16">
+																	<ValueList>
+																		<Value>4</Value>
+																	</ValueList>
+																</Property>
 																<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+																<Property Name="UseMaxSoundPerInstance" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>8</Value>
+																	</ValueList>
+																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
 																</Reference>
 																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																	<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																</Reference>
+																<Reference Name="UserAuxSend0">
+																	<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																</Reference>
+																<Reference Name="UserAuxSend1">
+																	<ObjectRef Name="Cave_Acoustic_SFX_AUX" ID="{01568535-8555-4C9B-B2EA-164F84B37D78}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<BlendContainer Name="Fttps_WaterLeft_Run_BLEND" ID="{A2E6BFFE-119F-4D18-B1E8-93DC9EE8FD20}" ShortID="289566581">
+																<BlendContainer Name="Fttps_WaterLeft_Run_BLEND" ID="{AD40EF4A-27F9-4C6C-9506-85E4FEC96152}" ShortID="566750695">
 																	<PropertyList>
 																		<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 																		<Property Name="MaxSoundPerInstance" Type="int16">
@@ -11298,116 +11466,13 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<RandomSequenceContainer Name="Fttps_Puddle_Walk_RND" ID="{EACD8227-B285-4CE9-917B-BF54B24CA421}" ShortID="874691220">
-																			<PropertyList>
-																				<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
-																				<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
-																			</PropertyList>
-																			<ReferenceList>
-																				<Reference Name="Conversion">
-																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-																				</Reference>
-																				<Reference Name="OutputBus">
-																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<ChildrenList>
-																				<Sound Name="SFX_HA_Character_Footsteps_Puddle_Walk_00" ID="{BF2BC56A-FACD-4688-BD24-53CED175D543}" ShortID="215604939">
-																					<ReferenceList>
-																						<Reference Name="Conversion">
-																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-																						</Reference>
-																						<Reference Name="OutputBus">
-																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-																						</Reference>
-																					</ReferenceList>
-																					<ChildrenList>
-																						<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Walk_00" ID="{FEE6E9C7-9CD7-4F32-B1D8-4EEC9ECB758D}">
-																							<Language>SFX</Language>
-																							<AudioFile>SFX_HA_Character_Footsteps_Puddle_Walk_00.wav</AudioFile>
-																							<MediaIDList>
-																								<MediaID ID="356297204"/>
-																							</MediaIDList>
-																						</AudioFileSource>
-																					</ChildrenList>
-																					<ActiveSourceList>
-																						<ActiveSource Name="SFX_HA_Character_Footsteps_Puddle_Walk_00" ID="{FEE6E9C7-9CD7-4F32-B1D8-4EEC9ECB758D}" Platform="Linked"/>
-																					</ActiveSourceList>
-																				</Sound>
-																				<Sound Name="SFX_HA_Character_Footsteps_Puddle_Walk_01" ID="{B5371B37-35CA-4A3A-A87F-05D2EAE60477}" ShortID="176585279">
-																					<ReferenceList>
-																						<Reference Name="Conversion">
-																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-																						</Reference>
-																						<Reference Name="OutputBus">
-																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-																						</Reference>
-																					</ReferenceList>
-																					<ChildrenList>
-																						<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Walk_01" ID="{3C032768-EDD0-429C-A110-4967EEAADD05}">
-																							<Language>SFX</Language>
-																							<AudioFile>SFX_HA_Character_Footsteps_Puddle_Walk_01.wav</AudioFile>
-																							<MediaIDList>
-																								<MediaID ID="607457752"/>
-																							</MediaIDList>
-																						</AudioFileSource>
-																					</ChildrenList>
-																					<ActiveSourceList>
-																						<ActiveSource Name="SFX_HA_Character_Footsteps_Puddle_Walk_01" ID="{3C032768-EDD0-429C-A110-4967EEAADD05}" Platform="Linked"/>
-																					</ActiveSourceList>
-																				</Sound>
-																				<Sound Name="SFX_HA_Character_Footsteps_Puddle_Walk_02" ID="{0A38B9B2-D2EB-46A1-9EE6-53FC6CA6192E}" ShortID="618428068">
-																					<ReferenceList>
-																						<Reference Name="Conversion">
-																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-																						</Reference>
-																						<Reference Name="OutputBus">
-																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-																						</Reference>
-																					</ReferenceList>
-																					<ChildrenList>
-																						<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Walk_02" ID="{02CCDE7A-1988-45F0-844E-FD710B6E3EE2}">
-																							<Language>SFX</Language>
-																							<AudioFile>SFX_HA_Character_Footsteps_Puddle_Walk_02.wav</AudioFile>
-																							<MediaIDList>
-																								<MediaID ID="792008929"/>
-																							</MediaIDList>
-																						</AudioFileSource>
-																					</ChildrenList>
-																					<ActiveSourceList>
-																						<ActiveSource Name="SFX_HA_Character_Footsteps_Puddle_Walk_02" ID="{02CCDE7A-1988-45F0-844E-FD710B6E3EE2}" Platform="Linked"/>
-																					</ActiveSourceList>
-																				</Sound>
-																				<Sound Name="SFX_HA_Character_Footsteps_Puddle_Walk_03" ID="{2DBF0D9E-08CB-4A4A-ABB7-F1EE6246C5F3}" ShortID="100984099">
-																					<ReferenceList>
-																						<Reference Name="Conversion">
-																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-																						</Reference>
-																						<Reference Name="OutputBus">
-																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-																						</Reference>
-																					</ReferenceList>
-																					<ChildrenList>
-																						<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Walk_03" ID="{80616B56-0D29-440C-A4A1-718BE6E4B8E3}">
-																							<Language>SFX</Language>
-																							<AudioFile>SFX_HA_Character_Footsteps_Puddle_Walk_03.wav</AudioFile>
-																							<MediaIDList>
-																								<MediaID ID="789204039"/>
-																							</MediaIDList>
-																						</AudioFileSource>
-																					</ChildrenList>
-																					<ActiveSourceList>
-																						<ActiveSource Name="SFX_HA_Character_Footsteps_Puddle_Walk_03" ID="{80616B56-0D29-440C-A4A1-718BE6E4B8E3}" Platform="Linked"/>
-																					</ActiveSourceList>
-																				</Sound>
-																			</ChildrenList>
-																		</RandomSequenceContainer>
-																		<RandomSequenceContainer Name="Fttps_WaterIn_Walk_RND" ID="{F90B1984-30D7-44CC-B808-E197FB40D3F9}" ShortID="944407493">
+																		<RandomSequenceContainer Name="Fttps_Puddle_Run_RND" ID="{C781DA2B-6F59-42F3-AF16-5E5409C39A21}" ShortID="190922737">
 																			<PropertyList>
 																				<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+																				<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 																				<Property Name="MaxSoundPerInstance" Type="int16">
 																					<ValueList>
-																						<Value>2</Value>
+																						<Value>1</Value>
 																					</ValueList>
 																				</Property>
 																				<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
@@ -11427,7 +11492,123 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<Sound Name="SFX_HA_Character_Footsteps_WaterIn_Run_00" ID="{71F29DB1-9278-4F45-A38A-BC4A6A53695F}" ShortID="270019355">
+																				<Sound Name="SFX_HA_Character_Footsteps_Puddle_Run_00" ID="{987EE227-ABAA-4A0D-BEDA-C704BF25EA29}" ShortID="43120748">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_00" ID="{3FE72689-6D33-4262-B9C6-7C5A58805F2A}">
+																							<Language>SFX</Language>
+																							<AudioFile>SFX_HA_Character_Footsteps_Puddle_Run_00.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="4101969"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="SFX_HA_Character_Footsteps_Puddle_Run_00" ID="{3FE72689-6D33-4262-B9C6-7C5A58805F2A}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="SFX_HA_Character_Footsteps_Puddle_Run_01" ID="{E1B712A3-C1D2-42AC-B944-BCB445AC0DE6}" ShortID="210214632">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_01" ID="{1236B28B-4226-4C31-A5CD-15983FDFB43E}">
+																							<Language>SFX</Language>
+																							<AudioFile>SFX_HA_Character_Footsteps_Puddle_Run_01.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="254523341"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="SFX_HA_Character_Footsteps_Puddle_Run_01" ID="{1236B28B-4226-4C31-A5CD-15983FDFB43E}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="SFX_HA_Character_Footsteps_Puddle_Run_02" ID="{C0ED7B93-3067-4401-9357-3CF361DC6EBB}" ShortID="310534102">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_02" ID="{83C8D794-BA9A-4AFC-A202-46A69B6F0484}">
+																							<Language>SFX</Language>
+																							<AudioFile>SFX_HA_Character_Footsteps_Puddle_Run_02.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="982538254"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="SFX_HA_Character_Footsteps_Puddle_Run_02" ID="{83C8D794-BA9A-4AFC-A202-46A69B6F0484}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="SFX_HA_Character_Footsteps_Puddle_Run_03" ID="{126F4F92-1150-4EB7-93B8-441F4FDD8F80}" ShortID="675819334">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_03" ID="{38840AB2-F390-42CF-B697-6FD506417572}">
+																							<Language>SFX</Language>
+																							<AudioFile>SFX_HA_Character_Footsteps_Puddle_Run_03.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="586776565"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="SFX_HA_Character_Footsteps_Puddle_Run_03" ID="{38840AB2-F390-42CF-B697-6FD506417572}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																			</ChildrenList>
+																		</RandomSequenceContainer>
+																		<RandomSequenceContainer Name="Fttps_WaterIn_Run_RND" ID="{3366A415-961C-44EF-BE53-7D6CB96F45CF}" ShortID="16378600">
+																			<PropertyList>
+																				<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+																				<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+																				<Property Name="MaxSoundPerInstance" Type="int16">
+																					<ValueList>
+																						<Value>1</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+																				<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+																				<Property Name="UseMaxSoundPerInstance" Type="bool">
+																					<ValueList>
+																						<Value>True</Value>
+																					</ValueList>
+																				</Property>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<Sound Name="SFX_HA_Character_Footsteps_WaterIn_Run_00" ID="{C243C4C7-6963-41AD-A088-EE4B73C57767}" ShortID="602268692">
 																					<PropertyList>
 																						<Property Name="Volume" Type="Real64">
 																							<ValueList>
@@ -11444,7 +11625,7 @@
 																						</Reference>
 																					</ReferenceList>
 																					<ChildrenList>
-																						<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_00" ID="{0A986272-3244-4D86-9B2C-2880B1BF6B46}">
+																						<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_00" ID="{137D86A6-1754-4EE1-9F8B-3739CB3B8533}">
 																							<Language>SFX</Language>
 																							<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_00.wav</AudioFile>
 																							<MediaIDList>
@@ -11453,10 +11634,10 @@
 																						</AudioFileSource>
 																					</ChildrenList>
 																					<ActiveSourceList>
-																						<ActiveSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_00" ID="{0A986272-3244-4D86-9B2C-2880B1BF6B46}" Platform="Linked"/>
+																						<ActiveSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_00" ID="{137D86A6-1754-4EE1-9F8B-3739CB3B8533}" Platform="Linked"/>
 																					</ActiveSourceList>
 																				</Sound>
-																				<Sound Name="SFX_HA_Character_Footsteps_WaterIn_Run_01" ID="{D40F0F31-CCE5-40C8-AEFC-D3B137D448F6}" ShortID="50556105">
+																				<Sound Name="SFX_HA_Character_Footsteps_WaterIn_Run_01" ID="{D800B353-07B6-478D-91CF-E1285910B183}" ShortID="827220983">
 																					<PropertyList>
 																						<Property Name="Volume" Type="Real64">
 																							<ValueList>
@@ -11473,7 +11654,7 @@
 																						</Reference>
 																					</ReferenceList>
 																					<ChildrenList>
-																						<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_01" ID="{AA7F1B7D-5353-4DC2-ACCD-B3F1A2582794}">
+																						<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_01" ID="{F4898D69-DFE7-4BFB-AFC4-DB3018B404BE}">
 																							<Language>SFX</Language>
 																							<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_01.wav</AudioFile>
 																							<MediaIDList>
@@ -11482,10 +11663,10 @@
 																						</AudioFileSource>
 																					</ChildrenList>
 																					<ActiveSourceList>
-																						<ActiveSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_01" ID="{AA7F1B7D-5353-4DC2-ACCD-B3F1A2582794}" Platform="Linked"/>
+																						<ActiveSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_01" ID="{F4898D69-DFE7-4BFB-AFC4-DB3018B404BE}" Platform="Linked"/>
 																					</ActiveSourceList>
 																				</Sound>
-																				<Sound Name="SFX_HA_Character_Footsteps_WaterIn_Run_02" ID="{26971D60-1FE8-4339-AE6D-63B5EFBA3684}" ShortID="694780047">
+																				<Sound Name="SFX_HA_Character_Footsteps_WaterIn_Run_02" ID="{72898A7F-0FA2-4FB9-847A-CA6D604FE7B5}" ShortID="773809144">
 																					<PropertyList>
 																						<Property Name="Volume" Type="Real64">
 																							<ValueList>
@@ -11502,7 +11683,7 @@
 																						</Reference>
 																					</ReferenceList>
 																					<ChildrenList>
-																						<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_02" ID="{80516B19-F29B-4AAC-B518-9F6ED0792465}">
+																						<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_02" ID="{2120A1F3-5E6D-4D1D-AC6D-8909AA71836C}">
 																							<Language>SFX</Language>
 																							<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_02.wav</AudioFile>
 																							<MediaIDList>
@@ -11511,10 +11692,10 @@
 																						</AudioFileSource>
 																					</ChildrenList>
 																					<ActiveSourceList>
-																						<ActiveSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_02" ID="{80516B19-F29B-4AAC-B518-9F6ED0792465}" Platform="Linked"/>
+																						<ActiveSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_02" ID="{2120A1F3-5E6D-4D1D-AC6D-8909AA71836C}" Platform="Linked"/>
 																					</ActiveSourceList>
 																				</Sound>
-																				<Sound Name="SFX_HA_Character_Footsteps_WaterIn_Run_03" ID="{9976ABA8-A92E-43BA-9092-4A381FF6F67D}" ShortID="1066945503">
+																				<Sound Name="SFX_HA_Character_Footsteps_WaterIn_Run_03" ID="{DA8077E6-B301-4EC3-899E-17FEA49DDC33}" ShortID="308500276">
 																					<PropertyList>
 																						<Property Name="Volume" Type="Real64">
 																							<ValueList>
@@ -11531,7 +11712,7 @@
 																						</Reference>
 																					</ReferenceList>
 																					<ChildrenList>
-																						<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_03" ID="{9E37CF40-3C7F-4473-976D-14327E5612F6}">
+																						<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_03" ID="{58927443-A3A1-4DC3-835F-ADCC752FEBCC}">
 																							<Language>SFX</Language>
 																							<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_03.wav</AudioFile>
 																							<MediaIDList>
@@ -11540,25 +11721,25 @@
 																						</AudioFileSource>
 																					</ChildrenList>
 																					<ActiveSourceList>
-																						<ActiveSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_03" ID="{9E37CF40-3C7F-4473-976D-14327E5612F6}" Platform="Linked"/>
+																						<ActiveSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_03" ID="{58927443-A3A1-4DC3-835F-ADCC752FEBCC}" Platform="Linked"/>
 																					</ActiveSourceList>
 																				</Sound>
 																			</ChildrenList>
 																		</RandomSequenceContainer>
 																	</ChildrenList>
 																	<BlendTrackList>
-																		<BlendTrack Name="Shallow" ID="{2575D8A2-52A8-430C-B5DC-71283D052805}" ShortID="887547484">
+																		<BlendTrack Name="Shallow" ID="{E2D20D07-FB04-4DEA-A615-22F133756A0F}" ShortID="497349477">
 																			<PropertyList>
 																				<Property Name="EnableCrossFading" Type="bool" Value="True"/>
 																				<Property Name="Volume" Type="Real64">
 																					<RTPCList>
-																						<RTPC Name="" ID="{32229E49-4BFB-42CC-BDAC-2F4F12BB4A1E}" ShortID="951029424">
+																						<RTPC Name="" ID="{36B960C6-567C-47D6-A77A-5371E29C6C4E}" ShortID="650276610">
 																							<ReferenceList>
 																								<Reference Name="ControlInput">
-																									<ObjectRef Name="Water_Depth_Left" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																									<ObjectRef Name="Water_Depth_Foot_Left_GP" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
 																								</Reference>
 																							</ReferenceList>
-																							<Curve Name="" ID="{4E36C2B6-521A-44DF-9102-19287DC0B999}">
+																							<Curve Name="" ID="{12390B96-22B2-4D49-9D82-6A34D7E3C265}">
 																								<PropertyList>
 																									<Property Name="Flags" Type="int32" Value="3"/>
 																								</PropertyList>
@@ -11586,12 +11767,12 @@
 																			</PropertyList>
 																			<ReferenceList>
 																				<Reference Name="LayerCrossFadeControlInput">
-																					<ObjectRef Name="Water_Depth_Left" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																					<ObjectRef Name="Water_Depth_Foot_Left_GP" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
 																				</Reference>
 																			</ReferenceList>
 																			<BlendTrackAssocList>
 																				<BlendTrackAssoc>
-																					<ItemRef Name="Fttps_Puddle_Walk_RND" ID="{EACD8227-B285-4CE9-917B-BF54B24CA421}"/>
+																					<ItemRef Name="Fttps_Puddle_Run_RND" ID="{C781DA2B-6F59-42F3-AF16-5E5409C39A21}"/>
 																					<CrossfadingInfo>
 																						<LeftEdgePos>0</LeftEdgePos>
 																						<LeftFadingMode>Automatic</LeftFadingMode>
@@ -11601,18 +11782,18 @@
 																				</BlendTrackAssoc>
 																			</BlendTrackAssocList>
 																		</BlendTrack>
-																		<BlendTrack Name="Deep" ID="{0C74FD43-0651-456C-B06E-138BE9CF35E9}" ShortID="65811074">
+																		<BlendTrack Name="Deep" ID="{4B455F8E-CA70-44A1-BFFB-670C2B2B83DE}" ShortID="607109386">
 																			<PropertyList>
 																				<Property Name="EnableCrossFading" Type="bool" Value="True"/>
 																				<Property Name="Volume" Type="Real64">
 																					<RTPCList>
-																						<RTPC Name="" ID="{93A1144A-2E04-428E-A3EC-63A26E800E36}" ShortID="463494383">
+																						<RTPC Name="" ID="{C03E1793-31B4-4A2A-8F2A-C3C44CA9D0BA}" ShortID="202721229">
 																							<ReferenceList>
 																								<Reference Name="ControlInput">
-																									<ObjectRef Name="Water_Depth_Left" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																									<ObjectRef Name="Water_Depth_Foot_Left_GP" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
 																								</Reference>
 																							</ReferenceList>
-																							<Curve Name="" ID="{BF2886D1-2AD8-4DEE-A2D1-D2800ECE16FC}">
+																							<Curve Name="" ID="{061FBEF3-23B5-4B5F-9E04-4B73F2A2BE8A}">
 																								<PropertyList>
 																									<Property Name="Flags" Type="int32" Value="3"/>
 																								</PropertyList>
@@ -11640,12 +11821,12 @@
 																			</PropertyList>
 																			<ReferenceList>
 																				<Reference Name="LayerCrossFadeControlInput">
-																					<ObjectRef Name="Water_Depth_Left" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																					<ObjectRef Name="Water_Depth_Foot_Left_GP" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
 																				</Reference>
 																			</ReferenceList>
 																			<BlendTrackAssocList>
 																				<BlendTrackAssoc>
-																					<ItemRef Name="Fttps_WaterIn_Walk_RND" ID="{F90B1984-30D7-44CC-B808-E197FB40D3F9}"/>
+																					<ItemRef Name="Fttps_WaterIn_Run_RND" ID="{3366A415-961C-44EF-BE53-7D6CB96F45CF}"/>
 																					<CrossfadingInfo>
 																						<LeftEdgePos>10</LeftEdgePos>
 																						<LeftFadingMode>Automatic</LeftFadingMode>
@@ -11657,7 +11838,7 @@
 																		</BlendTrack>
 																	</BlendTrackList>
 																</BlendContainer>
-																<BlendContainer Name="Fttps_WaterRight_Run_BLEND" ID="{8B8478F8-C608-40E6-A8FF-170703CCFC9B}" ShortID="91037644">
+																<BlendContainer Name="Fttps_WaterRight_Run_BLEND" ID="{EEC840B7-C083-4519-92BA-3AEEC1CDC378}" ShortID="487949373">
 																	<PropertyList>
 																		<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 																		<Property Name="MaxSoundPerInstance" Type="int16">
@@ -11676,116 +11857,13 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<RandomSequenceContainer Name="Fttps_Puddle_Walk_RND" ID="{E067660B-D182-4099-A83A-364A437881AE}" ShortID="952653931">
-																			<PropertyList>
-																				<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
-																				<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
-																			</PropertyList>
-																			<ReferenceList>
-																				<Reference Name="Conversion">
-																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-																				</Reference>
-																				<Reference Name="OutputBus">
-																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<ChildrenList>
-																				<Sound Name="SFX_HA_Character_Footsteps_Puddle_Walk_04" ID="{3A1B1AB2-DEF9-4264-9303-512C521F39AE}" ShortID="314750814">
-																					<ReferenceList>
-																						<Reference Name="Conversion">
-																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-																						</Reference>
-																						<Reference Name="OutputBus">
-																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-																						</Reference>
-																					</ReferenceList>
-																					<ChildrenList>
-																						<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Walk_04" ID="{DCB96086-20F6-4F25-AF68-F4CAE3B49ADC}">
-																							<Language>SFX</Language>
-																							<AudioFile>SFX_HA_Character_Footsteps_Puddle_Walk_04.wav</AudioFile>
-																							<MediaIDList>
-																								<MediaID ID="332501449"/>
-																							</MediaIDList>
-																						</AudioFileSource>
-																					</ChildrenList>
-																					<ActiveSourceList>
-																						<ActiveSource Name="SFX_HA_Character_Footsteps_Puddle_Walk_04" ID="{DCB96086-20F6-4F25-AF68-F4CAE3B49ADC}" Platform="Linked"/>
-																					</ActiveSourceList>
-																				</Sound>
-																				<Sound Name="SFX_HA_Character_Footsteps_Puddle_Walk_05" ID="{41AE683A-D007-4253-8511-A103B261FD5B}" ShortID="671222412">
-																					<ReferenceList>
-																						<Reference Name="Conversion">
-																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-																						</Reference>
-																						<Reference Name="OutputBus">
-																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-																						</Reference>
-																					</ReferenceList>
-																					<ChildrenList>
-																						<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Walk_05" ID="{4DCD1974-670B-4546-9A9A-75ACD8A45BEF}">
-																							<Language>SFX</Language>
-																							<AudioFile>SFX_HA_Character_Footsteps_Puddle_Walk_05.wav</AudioFile>
-																							<MediaIDList>
-																								<MediaID ID="514965558"/>
-																							</MediaIDList>
-																						</AudioFileSource>
-																					</ChildrenList>
-																					<ActiveSourceList>
-																						<ActiveSource Name="SFX_HA_Character_Footsteps_Puddle_Walk_05" ID="{4DCD1974-670B-4546-9A9A-75ACD8A45BEF}" Platform="Linked"/>
-																					</ActiveSourceList>
-																				</Sound>
-																				<Sound Name="SFX_HA_Character_Footsteps_Puddle_Walk_06" ID="{6B5AD51B-4E6C-4A9B-9A61-D7D0526157F6}" ShortID="626114461">
-																					<ReferenceList>
-																						<Reference Name="Conversion">
-																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-																						</Reference>
-																						<Reference Name="OutputBus">
-																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-																						</Reference>
-																					</ReferenceList>
-																					<ChildrenList>
-																						<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Walk_06" ID="{CBAC90EA-A4A2-4876-924A-45F3C2EC6145}">
-																							<Language>SFX</Language>
-																							<AudioFile>SFX_HA_Character_Footsteps_Puddle_Walk_06.wav</AudioFile>
-																							<MediaIDList>
-																								<MediaID ID="360475494"/>
-																							</MediaIDList>
-																						</AudioFileSource>
-																					</ChildrenList>
-																					<ActiveSourceList>
-																						<ActiveSource Name="SFX_HA_Character_Footsteps_Puddle_Walk_06" ID="{CBAC90EA-A4A2-4876-924A-45F3C2EC6145}" Platform="Linked"/>
-																					</ActiveSourceList>
-																				</Sound>
-																				<Sound Name="SFX_HA_Character_Footsteps_Puddle_Walk_07" ID="{580F0F41-1E4B-417D-A605-6E3217DDBFC8}" ShortID="272221149">
-																					<ReferenceList>
-																						<Reference Name="Conversion">
-																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-																						</Reference>
-																						<Reference Name="OutputBus">
-																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-																						</Reference>
-																					</ReferenceList>
-																					<ChildrenList>
-																						<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Walk_07" ID="{B981B426-C78C-438C-9416-44C17361392F}">
-																							<Language>SFX</Language>
-																							<AudioFile>SFX_HA_Character_Footsteps_Puddle_Walk_07.wav</AudioFile>
-																							<MediaIDList>
-																								<MediaID ID="109065310"/>
-																							</MediaIDList>
-																						</AudioFileSource>
-																					</ChildrenList>
-																					<ActiveSourceList>
-																						<ActiveSource Name="SFX_HA_Character_Footsteps_Puddle_Walk_07" ID="{B981B426-C78C-438C-9416-44C17361392F}" Platform="Linked"/>
-																					</ActiveSourceList>
-																				</Sound>
-																			</ChildrenList>
-																		</RandomSequenceContainer>
-																		<RandomSequenceContainer Name="Fttps_WaterIn_Walk_RND" ID="{91A7A0C3-7573-43A0-8086-98BD79F99DF0}" ShortID="195998839">
+																		<RandomSequenceContainer Name="Fttps_Puddle_Run_RND" ID="{1BA27112-2DEB-4D8E-8062-C2F605C882ED}" ShortID="780973775">
 																			<PropertyList>
 																				<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+																				<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 																				<Property Name="MaxSoundPerInstance" Type="int16">
 																					<ValueList>
-																						<Value>2</Value>
+																						<Value>1</Value>
 																					</ValueList>
 																				</Property>
 																				<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
@@ -11805,7 +11883,123 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<Sound Name="SFX_HA_Character_Footsteps_WaterIn_Run_04" ID="{D6A63CE9-A358-4B3F-99B2-AEB28521D492}" ShortID="433668073">
+																				<Sound Name="SFX_HA_Character_Footsteps_Puddle_Run_04" ID="{982B7350-8DFD-4F46-8805-A400099F19D4}" ShortID="1010208377">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_04" ID="{F74C0DC4-79BB-4CCE-B564-BA672AABCE2B}">
+																							<Language>SFX</Language>
+																							<AudioFile>SFX_HA_Character_Footsteps_Puddle_Run_04.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="58757605"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="SFX_HA_Character_Footsteps_Puddle_Run_04" ID="{F74C0DC4-79BB-4CCE-B564-BA672AABCE2B}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="SFX_HA_Character_Footsteps_Puddle_Run_05" ID="{9C105444-FBC7-458F-9174-4F378044F57D}" ShortID="573526287">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_05" ID="{17E042EC-B396-434D-AE98-303E1F5ED7E2}">
+																							<Language>SFX</Language>
+																							<AudioFile>SFX_HA_Character_Footsteps_Puddle_Run_05.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="414801207"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="SFX_HA_Character_Footsteps_Puddle_Run_05" ID="{17E042EC-B396-434D-AE98-303E1F5ED7E2}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="SFX_HA_Character_Footsteps_Puddle_Run_06" ID="{A2BB9792-1CB2-44C0-8516-397DEE1F6DF6}" ShortID="606375133">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_06" ID="{02121C5F-9987-4394-9C32-8D2C83443CB4}">
+																							<Language>SFX</Language>
+																							<AudioFile>SFX_HA_Character_Footsteps_Puddle_Run_06.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="888652473"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="SFX_HA_Character_Footsteps_Puddle_Run_06" ID="{02121C5F-9987-4394-9C32-8D2C83443CB4}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="SFX_HA_Character_Footsteps_Puddle_Run_07" ID="{B4541F67-9950-46F1-B6A5-5A5F0967A0D9}" ShortID="962243006">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="SFX_HA_Character_Footsteps_Puddle_Run_07" ID="{74D7BD2A-50BD-456A-834A-878F1003FCA7}">
+																							<Language>SFX</Language>
+																							<AudioFile>SFX_HA_Character_Footsteps_Puddle_Run_07.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="1024152922"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="SFX_HA_Character_Footsteps_Puddle_Run_07" ID="{74D7BD2A-50BD-456A-834A-878F1003FCA7}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																			</ChildrenList>
+																		</RandomSequenceContainer>
+																		<RandomSequenceContainer Name="Fttps_WaterIn_Run_RND" ID="{426666EE-C18C-470C-AF18-9C686B8C0B8C}" ShortID="142473504">
+																			<PropertyList>
+																				<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+																				<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+																				<Property Name="MaxSoundPerInstance" Type="int16">
+																					<ValueList>
+																						<Value>1</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+																				<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+																				<Property Name="UseMaxSoundPerInstance" Type="bool">
+																					<ValueList>
+																						<Value>True</Value>
+																					</ValueList>
+																				</Property>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<Sound Name="SFX_HA_Character_Footsteps_WaterIn_Run_04" ID="{A33DB9EE-ED1F-46AD-95E5-516F986CF5D6}" ShortID="792040409">
 																					<PropertyList>
 																						<Property Name="Volume" Type="Real64">
 																							<ValueList>
@@ -11822,7 +12016,7 @@
 																						</Reference>
 																					</ReferenceList>
 																					<ChildrenList>
-																						<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_04" ID="{1E5DE4F4-DB14-4EAB-8F83-5BE79004B01D}">
+																						<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_04" ID="{EAF31B79-7755-4F69-9DC5-F19CA7A6A620}">
 																							<Language>SFX</Language>
 																							<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_04.wav</AudioFile>
 																							<MediaIDList>
@@ -11831,10 +12025,10 @@
 																						</AudioFileSource>
 																					</ChildrenList>
 																					<ActiveSourceList>
-																						<ActiveSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_04" ID="{1E5DE4F4-DB14-4EAB-8F83-5BE79004B01D}" Platform="Linked"/>
+																						<ActiveSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_04" ID="{EAF31B79-7755-4F69-9DC5-F19CA7A6A620}" Platform="Linked"/>
 																					</ActiveSourceList>
 																				</Sound>
-																				<Sound Name="SFX_HA_Character_Footsteps_WaterIn_Run_05" ID="{58B4DE70-5D2E-4486-A7B4-C4BFA101457A}" ShortID="572456478">
+																				<Sound Name="SFX_HA_Character_Footsteps_WaterIn_Run_05" ID="{C91E48EE-773B-4B72-A4FD-45FBC7B44C6D}" ShortID="628084763">
 																					<PropertyList>
 																						<Property Name="Volume" Type="Real64">
 																							<ValueList>
@@ -11851,7 +12045,7 @@
 																						</Reference>
 																					</ReferenceList>
 																					<ChildrenList>
-																						<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_05" ID="{D37E0E61-03DF-43BB-A9BC-1C1296ABBD45}">
+																						<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_05" ID="{BF2766DA-6BF9-4AFE-964F-610FC5BC5DAD}">
 																							<Language>SFX</Language>
 																							<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_05.wav</AudioFile>
 																							<MediaIDList>
@@ -11860,10 +12054,10 @@
 																						</AudioFileSource>
 																					</ChildrenList>
 																					<ActiveSourceList>
-																						<ActiveSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_05" ID="{D37E0E61-03DF-43BB-A9BC-1C1296ABBD45}" Platform="Linked"/>
+																						<ActiveSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_05" ID="{BF2766DA-6BF9-4AFE-964F-610FC5BC5DAD}" Platform="Linked"/>
 																					</ActiveSourceList>
 																				</Sound>
-																				<Sound Name="SFX_HA_Character_Footsteps_WaterIn_Run_06" ID="{F2F908E2-4723-408B-84DC-6C482B457DCC}" ShortID="542813955">
+																				<Sound Name="SFX_HA_Character_Footsteps_WaterIn_Run_06" ID="{1490967D-FB82-46F4-B8BC-0EDC18BE80E1}" ShortID="962509056">
 																					<PropertyList>
 																						<Property Name="Volume" Type="Real64">
 																							<ValueList>
@@ -11880,7 +12074,7 @@
 																						</Reference>
 																					</ReferenceList>
 																					<ChildrenList>
-																						<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_06" ID="{8F13B06C-A20C-484B-8A43-14AF9798F8EB}">
+																						<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_06" ID="{DD31B28F-FD3E-41DB-B25D-D6C2283A65FF}">
 																							<Language>SFX</Language>
 																							<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_06.wav</AudioFile>
 																							<MediaIDList>
@@ -11889,10 +12083,10 @@
 																						</AudioFileSource>
 																					</ChildrenList>
 																					<ActiveSourceList>
-																						<ActiveSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_06" ID="{8F13B06C-A20C-484B-8A43-14AF9798F8EB}" Platform="Linked"/>
+																						<ActiveSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_06" ID="{DD31B28F-FD3E-41DB-B25D-D6C2283A65FF}" Platform="Linked"/>
 																					</ActiveSourceList>
 																				</Sound>
-																				<Sound Name="SFX_HA_Character_Footsteps_WaterIn_Run_07" ID="{7E233D34-B438-4FDC-B700-AF7D9F254735}" ShortID="810791307">
+																				<Sound Name="SFX_HA_Character_Footsteps_WaterIn_Run_07" ID="{AFB41083-14EA-4C49-98BE-04A3AF0E3BEA}" ShortID="269504388">
 																					<PropertyList>
 																						<Property Name="Volume" Type="Real64">
 																							<ValueList>
@@ -11909,7 +12103,7 @@
 																						</Reference>
 																					</ReferenceList>
 																					<ChildrenList>
-																						<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_07" ID="{9FB6A005-4786-4183-A4D6-F9378CFBC2A6}">
+																						<AudioFileSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_07" ID="{DEE686E1-AD0B-4271-BD9F-12D374224A0F}">
 																							<Language>SFX</Language>
 																							<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_07.wav</AudioFile>
 																							<MediaIDList>
@@ -11918,25 +12112,25 @@
 																						</AudioFileSource>
 																					</ChildrenList>
 																					<ActiveSourceList>
-																						<ActiveSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_07" ID="{9FB6A005-4786-4183-A4D6-F9378CFBC2A6}" Platform="Linked"/>
+																						<ActiveSource Name="SFX_HA_Character_Footsteps_WaterIn_Run_07" ID="{DEE686E1-AD0B-4271-BD9F-12D374224A0F}" Platform="Linked"/>
 																					</ActiveSourceList>
 																				</Sound>
 																			</ChildrenList>
 																		</RandomSequenceContainer>
 																	</ChildrenList>
 																	<BlendTrackList>
-																		<BlendTrack Name="Shallow" ID="{4C6C3A28-7E38-4633-8D09-B0BC38624F45}" ShortID="234148302">
+																		<BlendTrack Name="Shallow" ID="{CB7E40A2-ED5C-4A77-A815-22A98DED0D74}" ShortID="829311626">
 																			<PropertyList>
 																				<Property Name="EnableCrossFading" Type="bool" Value="True"/>
 																				<Property Name="Volume" Type="Real64">
 																					<RTPCList>
-																						<RTPC Name="" ID="{14893E2A-BEA5-4ABA-AF22-AAF74FB767FB}" ShortID="457148479">
+																						<RTPC Name="" ID="{B0E3C43C-E18E-43AB-B8F7-CDBD2E740851}" ShortID="854251733">
 																							<ReferenceList>
 																								<Reference Name="ControlInput">
-																									<ObjectRef Name="Water_Depth_Right" ID="{E620FFDB-2280-4F9C-A0A5-E36477031F5F}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																									<ObjectRef Name="Water_Depth_Foot_Right_GP" ID="{E620FFDB-2280-4F9C-A0A5-E36477031F5F}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
 																								</Reference>
 																							</ReferenceList>
-																							<Curve Name="" ID="{7725ED63-AD71-49F5-A3B0-2A3B00983949}">
+																							<Curve Name="" ID="{F44B764E-E699-43BC-8BC3-EFF0CF9A07BB}">
 																								<PropertyList>
 																									<Property Name="Flags" Type="int32" Value="3"/>
 																								</PropertyList>
@@ -11964,12 +12158,12 @@
 																			</PropertyList>
 																			<ReferenceList>
 																				<Reference Name="LayerCrossFadeControlInput">
-																					<ObjectRef Name="Water_Depth_Left" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																					<ObjectRef Name="Water_Depth_Foot_Left_GP" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
 																				</Reference>
 																			</ReferenceList>
 																			<BlendTrackAssocList>
 																				<BlendTrackAssoc>
-																					<ItemRef Name="Fttps_Puddle_Walk_RND" ID="{E067660B-D182-4099-A83A-364A437881AE}"/>
+																					<ItemRef Name="Fttps_Puddle_Run_RND" ID="{1BA27112-2DEB-4D8E-8062-C2F605C882ED}"/>
 																					<CrossfadingInfo>
 																						<LeftEdgePos>0</LeftEdgePos>
 																						<LeftFadingMode>Automatic</LeftFadingMode>
@@ -11979,18 +12173,18 @@
 																				</BlendTrackAssoc>
 																			</BlendTrackAssocList>
 																		</BlendTrack>
-																		<BlendTrack Name="Deep" ID="{14F93A03-5681-4FE1-A54C-295DE3384629}" ShortID="71015535">
+																		<BlendTrack Name="Deep" ID="{7FFF5CBD-3DDA-4237-A185-7CFF94542EE5}" ShortID="600414128">
 																			<PropertyList>
 																				<Property Name="EnableCrossFading" Type="bool" Value="True"/>
 																				<Property Name="Volume" Type="Real64">
 																					<RTPCList>
-																						<RTPC Name="" ID="{F4785739-39C3-4A29-A51B-F1B1C32C9614}" ShortID="167145106">
+																						<RTPC Name="" ID="{AF2A6CC1-6A61-48B4-945F-4B1EB62A61A3}" ShortID="769858651">
 																							<ReferenceList>
 																								<Reference Name="ControlInput">
-																									<ObjectRef Name="Water_Depth_Right" ID="{E620FFDB-2280-4F9C-A0A5-E36477031F5F}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																									<ObjectRef Name="Water_Depth_Foot_Right_GP" ID="{E620FFDB-2280-4F9C-A0A5-E36477031F5F}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
 																								</Reference>
 																							</ReferenceList>
-																							<Curve Name="" ID="{B12BD3A8-E5C8-4187-9E02-F7C30A3B84A7}">
+																							<Curve Name="" ID="{6DB9A4C6-567B-4DA0-944D-B5571289214A}">
 																								<PropertyList>
 																									<Property Name="Flags" Type="int32" Value="3"/>
 																								</PropertyList>
@@ -12018,12 +12212,12 @@
 																			</PropertyList>
 																			<ReferenceList>
 																				<Reference Name="LayerCrossFadeControlInput">
-																					<ObjectRef Name="Water_Depth_Left" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																					<ObjectRef Name="Water_Depth_Foot_Left_GP" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
 																				</Reference>
 																			</ReferenceList>
 																			<BlendTrackAssocList>
 																				<BlendTrackAssoc>
-																					<ItemRef Name="Fttps_WaterIn_Walk_RND" ID="{91A7A0C3-7573-43A0-8086-98BD79F99DF0}"/>
+																					<ItemRef Name="Fttps_WaterIn_Run_RND" ID="{426666EE-C18C-470C-AF18-9C686B8C0B8C}"/>
 																					<CrossfadingInfo>
 																						<LeftEdgePos>10</LeftEdgePos>
 																						<LeftFadingMode>Automatic</LeftFadingMode>
@@ -12036,6 +12230,10 @@
 																	</BlendTrackList>
 																</BlendContainer>
 															</ChildrenList>
+															<Playlist>
+																<ItemRef Name="Fttps_WaterLeft_Run_BLEND" ID="{AD40EF4A-27F9-4C6C-9506-85E4FEC96152}"/>
+																<ItemRef Name="Fttps_WaterRight_Run_BLEND" ID="{EEC840B7-C083-4519-92BA-3AEEC1CDC378}"/>
+															</Playlist>
 														</RandomSequenceContainer>
 													</ChildrenList>
 													<GroupingInfo>
@@ -12065,7 +12263,7 @@
 																<ItemRef Name="Fttps_DryDirt_Walk_RND" ID="{16486CCA-F0CB-4662-9717-368DCC37470D}"/>
 															</GroupingBehavior>
 															<GroupingBehavior>
-																<ItemRef Name="Fttps_LR_Water_Walk_SEQ" ID="{9FA76FE0-43EA-4141-B64A-458D06FB8F34}"/>
+																<ItemRef Name="Fttps_LR_Water_Walk_SEQ" ID="{23FDD1CC-5867-42C9-A6B7-CEDEA90FFAB4}"/>
 															</GroupingBehavior>
 															<GroupingBehavior>
 																<ItemRef Name="Fttps_Stone_Walk_RND" ID="{C40BCBFD-E107-42C8-9A7B-B9D33EB1C4D0}"/>
@@ -12094,6 +12292,12 @@
 																<SwitchRef Name="Grass" ID="{26A91647-F9F4-4736-A9A0-8F313994C2A3}"/>
 																<ItemList>
 																	<ItemRef Name="Fttps_Grass_Walk_RND" ID="{15EEBAB9-6B19-4FBC-9518-FC4B3662233B}"/>
+																</ItemList>
+															</Grouping>
+															<Grouping>
+																<SwitchRef Name="Water" ID="{196AB4AA-232D-454E-B47B-EFA10A47FAA1}"/>
+																<ItemList>
+																	<ItemRef Name="Fttps_LR_Water_Walk_SEQ" ID="{23FDD1CC-5867-42C9-A6B7-CEDEA90FFAB4}"/>
 																</ItemList>
 															</Grouping>
 															<Grouping>
@@ -13209,6 +13413,11 @@
 																		<Value>True</Value>
 																	</ValueList>
 																</Property>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>2</Value>
+																	</ValueList>
+																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
@@ -13508,7 +13717,7 @@
 																						<RTPC Name="" ID="{6299081C-9A12-4705-8562-D9BC40AD5639}" ShortID="608207837">
 																							<ReferenceList>
 																								<Reference Name="ControlInput">
-																									<ObjectRef Name="Water_Depth_Left" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																									<ObjectRef Name="Water_Depth_Foot_Left_GP" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
 																								</Reference>
 																							</ReferenceList>
 																							<Curve Name="" ID="{57E947FB-E469-4AD9-B2BD-ECA6BCC40459}">
@@ -13539,7 +13748,7 @@
 																			</PropertyList>
 																			<ReferenceList>
 																				<Reference Name="LayerCrossFadeControlInput">
-																					<ObjectRef Name="Water_Depth_Left" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																					<ObjectRef Name="Water_Depth_Foot_Left_GP" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
 																				</Reference>
 																			</ReferenceList>
 																			<BlendTrackAssocList>
@@ -13562,7 +13771,7 @@
 																						<RTPC Name="" ID="{9638B81E-C74D-4B49-B3E0-D641107C42A5}" ShortID="573639287">
 																							<ReferenceList>
 																								<Reference Name="ControlInput">
-																									<ObjectRef Name="Water_Depth_Left" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																									<ObjectRef Name="Water_Depth_Foot_Left_GP" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
 																								</Reference>
 																							</ReferenceList>
 																							<Curve Name="" ID="{7AC43A67-5BD3-4A04-9D5E-D0784C2B4879}">
@@ -13593,7 +13802,7 @@
 																			</PropertyList>
 																			<ReferenceList>
 																				<Reference Name="LayerCrossFadeControlInput">
-																					<ObjectRef Name="Water_Depth_Left" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																					<ObjectRef Name="Water_Depth_Foot_Left_GP" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
 																				</Reference>
 																			</ReferenceList>
 																			<BlendTrackAssocList>
@@ -13899,7 +14108,7 @@
 																						<RTPC Name="" ID="{0D060C2F-47D5-4155-8A2E-880A0A13B559}" ShortID="815941979">
 																							<ReferenceList>
 																								<Reference Name="ControlInput">
-																									<ObjectRef Name="Water_Depth_Right" ID="{E620FFDB-2280-4F9C-A0A5-E36477031F5F}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																									<ObjectRef Name="Water_Depth_Foot_Right_GP" ID="{E620FFDB-2280-4F9C-A0A5-E36477031F5F}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
 																								</Reference>
 																							</ReferenceList>
 																							<Curve Name="" ID="{F96BA5E2-E0CD-40DA-AD39-91D4A97B1182}">
@@ -13930,7 +14139,7 @@
 																			</PropertyList>
 																			<ReferenceList>
 																				<Reference Name="LayerCrossFadeControlInput">
-																					<ObjectRef Name="Water_Depth_Left" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																					<ObjectRef Name="Water_Depth_Foot_Left_GP" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
 																				</Reference>
 																			</ReferenceList>
 																			<BlendTrackAssocList>
@@ -13953,7 +14162,7 @@
 																						<RTPC Name="" ID="{CBFAA8BB-BC54-4965-AEB9-EFF16715F65D}" ShortID="513818375">
 																							<ReferenceList>
 																								<Reference Name="ControlInput">
-																									<ObjectRef Name="Water_Depth_Right" ID="{E620FFDB-2280-4F9C-A0A5-E36477031F5F}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																									<ObjectRef Name="Water_Depth_Foot_Right_GP" ID="{E620FFDB-2280-4F9C-A0A5-E36477031F5F}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
 																								</Reference>
 																							</ReferenceList>
 																							<Curve Name="" ID="{78CE4036-2644-49C2-B938-B26017AC8E6B}">
@@ -13984,7 +14193,7 @@
 																			</PropertyList>
 																			<ReferenceList>
 																				<Reference Name="LayerCrossFadeControlInput">
-																					<ObjectRef Name="Water_Depth_Left" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																					<ObjectRef Name="Water_Depth_Foot_Left_GP" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
 																				</Reference>
 																			</ReferenceList>
 																			<BlendTrackAssocList>
