@@ -1042,6 +1042,81 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Icebergs" ID="{32042E8D-B666-4C1F-9860-EBB10A8A0493}" ShortID="211097463">
+							<ChildrenList>
+								<Event Name="E_Enviro_Iceberg_Cracking_LOOP" ID="{3BE25428-9D1E-436F-B97C-D8E69EC61E54}">
+									<ChildrenList>
+										<Action Name="" ID="{8C69660B-4DBB-4E70-8BA8-2E4989E183C3}" ShortID="763689511">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Iceberg_Cracking_BLEND" ID="{1A2D22D8-F727-4048-BDC5-9F61F31F7DBB}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Enviro_Iceberg_Break_HighSpeed" ID="{82DE88ED-3C2B-416A-A9CF-78A8C5D439B6}">
+									<ChildrenList>
+										<Action Name="" ID="{1D4DD986-0CF5-4810-B490-A5E510C072CD}" ShortID="830649708">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Iceberg_Break_HighSpeed_RND" ID="{A53B67BA-B25A-42DC-AD14-7EA999127852}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Enviro_Iceberg_Break_LowSpeed" ID="{B1786F92-3139-4842-B212-C51C9CD211D5}">
+									<ChildrenList>
+										<Action Name="" ID="{CECE4283-D741-436E-B7E2-E3F9C38EA568}" ShortID="704487506">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Iceberg_Break_LowSpeed_RND" ID="{DB35C4CC-A410-492D-AF21-EE1174046027}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Fire" ID="{118DFF3E-E1DD-4ED7-9FB3-45EAC17C90D1}" ShortID="601950895">
+							<ChildrenList>
+								<Event Name="E_Enviro_StartFire" ID="{7FD20740-1BEA-44D3-AD57-70039DF87BE2}">
+									<ChildrenList>
+										<Action Name="" ID="{F910A9D7-370F-4F22-8236-5F87CF8D7DA8}" ShortID="924487210">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Fire_Start_RND" ID="{73D7F573-0038-452B-B1BF-6625099FC653}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{0BDAF9CA-097B-4B4D-A0C2-9A30F8182543}" ShortID="615406437">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HA_Enviro_Fire_Loop" ID="{1BEE6ADB-87EB-447D-BDEA-00E3987AC253}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

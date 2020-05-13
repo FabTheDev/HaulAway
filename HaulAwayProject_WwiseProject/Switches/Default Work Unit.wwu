@@ -30,7 +30,7 @@
 										<Switch Name="Deep" ID="{E1F17321-7537-4F0A-B16E-879CD5C93527}"/>
 									</ChildrenList>
 									<SwitchOnRTPC>
-										<GameParameterRef Name="Water_Depth_Left" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}"/>
+										<GameParameterRef Name="Water_Depth_Foot_Left_GP" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}"/>
 										<Curve Name="" ID="{A563C14A-C726-4806-A9F5-87C95D82BC9E}">
 											<PropertyList>
 												<Property Name="Flags" Type="int32" Value="65537"/>

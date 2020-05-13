@@ -148,7 +148,7 @@
 							<Value>0.94</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="Water_Depth_Left" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}"/>
+							<GameParameterRef Name="Water_Depth_Foot_Left_GP" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}"/>
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
@@ -192,7 +192,7 @@
 							<Value>100</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="Water_Depth_Right" ID="{E620FFDB-2280-4F9C-A0A5-E36477031F5F}"/>
+							<GameParameterRef Name="Water_Depth_Foot_Right_GP" ID="{E620FFDB-2280-4F9C-A0A5-E36477031F5F}"/>
 							<Value>0</Value>
 						</RTPCValue>
 					</RTPCValueList>
@@ -337,7 +337,7 @@
 							<Value>100</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="Water_Depth_Left" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}"/>
+							<GameParameterRef Name="Water_Depth_Foot_Left_GP" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}"/>
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
@@ -361,7 +361,7 @@
 							<Value>79.9019607843137</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="Water_Depth_Right" ID="{E620FFDB-2280-4F9C-A0A5-E36477031F5F}"/>
+							<GameParameterRef Name="Water_Depth_Foot_Right_GP" ID="{E620FFDB-2280-4F9C-A0A5-E36477031F5F}"/>
 							<Value>0</Value>
 						</RTPCValue>
 					</RTPCValueList>
@@ -507,6 +507,22 @@
 							<Position X="4" Y="8"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="E_Enviro_Iceberg_Cracking_LOOP" ID="{3BE25428-9D1E-436F-B97C-D8E69EC61E54}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
+							<Position X="5" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Enviro_Iceberg_Break_HighSpeed" ID="{82DE88ED-3C2B-416A-A9CF-78A8C5D439B6}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
+							<Position X="5" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Enviro_Iceberg_Break_LowSpeed" ID="{B1786F92-3139-4842-B212-C51C9CD211D5}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
+							<Position X="5" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Enviro_StartFire" ID="{7FD20740-1BEA-44D3-AD57-70039DF87BE2}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
+							<Position X="5" Y="4"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="E_Tempest_Rain_LOOP" ID="{3729D649-8877-4779-99D8-E01E059231BD}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
 							<Position X="5" Y="7"/>
 						</Module>
@@ -550,7 +566,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="InCaveOrNot_Factor_GP" ID="{BDE15852-BC19-429F-8E06-7BCEC5A6C6A9}"/>
-							<Value>0</Value>
+							<Value>1.44579055251768E-311</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="WindTaken_GP" ID="{D5E2F34F-A357-43B5-9C38-492B8A218557}"/>
@@ -558,7 +574,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Distance_Cam_To_Ship_GP" ID="{EABEA38B-65C8-43BE-AEB8-3C7B12AF4F32}"/>
-							<Value>10000</Value>
+							<Value>1.44579055212243E-311</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SailHoist_GP" ID="{70F35A42-9104-442F-B66F-762CC58EE426}"/>
@@ -578,10 +594,10 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Sea_Amb_Intensity_GP" ID="{5A269150-E118-4614-A105-F8713420EE7D}"/>
-							<Value>0</Value>
+							<Value>0.6</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="Water_Depth_Left" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}"/>
+							<GameParameterRef Name="Water_Depth_Foot_Left_GP" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}"/>
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
@@ -606,7 +622,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="ShipSpeed_GP" ID="{72DFA80D-619E-4B12-8899-29FD2767932C}"/>
-							<Value>0</Value>
+							<Value>0.99</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Thunder_Distance_GP" ID="{64835349-BC3B-4B8E-8C4F-9C529D2709C0}"/>
@@ -618,7 +634,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Altitude_Camera_GP" ID="{06524578-A51A-4D48-A1F9-1583202B9716}"/>
-							<Value>250</Value>
+							<Value>1480.07955363216</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SFX_Volume_GP" ID="{C9F5422A-020E-4D7B-AF1B-5A807144C983}"/>
@@ -629,11 +645,11 @@
 							<Value>100</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="Distance_Cam_To_Sea_GP" ID="{0F0F9107-B55D-4EE3-A4C0-5516831BA806}"/>
-							<Value>10000</Value>
+							<GameParameterRef Name="Distance_Cam_To_IsleBorder_GP" ID="{0F0F9107-B55D-4EE3-A4C0-5516831BA806}"/>
+							<Value>1.44579055172717E-311</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="Water_Depth_Right" ID="{E620FFDB-2280-4F9C-A0A5-E36477031F5F}"/>
+							<GameParameterRef Name="Water_Depth_Foot_Right_GP" ID="{E620FFDB-2280-4F9C-A0A5-E36477031F5F}"/>
 							<Value>0</Value>
 						</RTPCValue>
 					</RTPCValueList>
@@ -644,14 +660,14 @@
 						<CurrentStateRef Name="None" ID="{2CFE3A44-5351-4DE6-A79B-39203CDC3FA3}"/>
 						<CurrentStateRef Name="None" ID="{6507D9A9-729F-4C4B-AA8E-16815F487179}"/>
 						<CurrentStateRef Name="None" ID="{4F52A7E7-3240-4480-BCA4-A75985D30EDB}"/>
-						<CurrentStateRef Name="None" ID="{141295CE-4617-432C-8DBE-52A7396D515C}"/>
+						<CurrentStateRef Name="Out_Hold" ID="{4799B397-87EA-4934-ACC2-73FA0C65A854}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Approaching" ID="{14491DD2-3190-486E-8C3D-40FEE6BA2370}"/>
 						<CurrentSwitchRef Name="Going_To_Sea_Theme" ID="{4F1D9B68-8C4D-4387-81C3-B868C53CF108}"/>
 						<CurrentSwitchRef Name="Deep" ID="{E1F17321-7537-4F0A-B16E-879CD5C93527}"/>
 						<CurrentSwitchRef Name="No" ID="{557E11F3-E18E-4406-BA2D-24998C38DA37}"/>
-						<CurrentSwitchRef Name="Wood" ID="{AD02081A-225D-437C-BF52-89E278904486}"/>
+						<CurrentSwitchRef Name="DryDirt" ID="{3ACDF8C5-731A-4217-817C-5A3173606D9C}"/>
 						<CurrentSwitchRef Name="In" ID="{F431CC99-F201-401D-B118-93F3EE1C9EAD}"/>
 						<CurrentSwitchRef Name="Yes" ID="{E4B8CC05-4AC4-4067-A717-1BA2FD1B0D32}"/>
 						<CurrentSwitchRef Name="Compass" ID="{CA054260-4F3C-411B-8F93-A47EAE9EAF92}"/>
