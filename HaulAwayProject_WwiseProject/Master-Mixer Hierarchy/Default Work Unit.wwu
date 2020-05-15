@@ -4,6 +4,37 @@
 		<WorkUnit Name="Default Work Unit" ID="{969F1B0A-73DD-4C8B-999B-29702C427718}" PersistMode="Standalone">
 			<ChildrenList>
 				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{31345420-514B-416B-A459-54CF0A24ACF1}" ShortID="693799926">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Master_Volume_GP" ID="{214E5230-9B98-4A2B-86DD-4B4BF66BD9EB}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{D0A254A1-D488-45C6-BBF3-D8C82DD6B8E9}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>Exp1</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="AudioDevice">
 							<ObjectRef Name="System" ID="{1949C455-B004-47BF-B7C8-6CDD95CCEEE1}" WorkUnitID="{0A942AB2-1B37-47DA-8986-79EA3550BA2D}"/>
@@ -62,7 +93,7 @@
 													</Point>
 													<Point>
 														<XPos>100</XPos>
-														<YPos>4.08240000000001</YPos>
+														<YPos>0</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>
@@ -71,11 +102,22 @@
 									</RTPCList>
 								</Property>
 							</PropertyList>
+							<ReferenceList/>
 							<ChildrenList>
-								<AuxBus Name="Exterior_Acoustic_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}">
+								<AuxBus Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}">
 									<ReferenceList>
 										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 											<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="Effect1" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+											<ObjectRef Name="High_Pass_60Hz" ID="{F9627628-0B10-4272-BC30-D4C20423CB38}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
+								<AuxBus Name="Cave_Acoustic_SFX_AUX" ID="{01568535-8555-4C9B-B2EA-164F84B37D78}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Hall_Large_Dark" ID="{0F6A7D6D-131C-4650-9561-FC05F5C7A37B}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 										</Reference>
 									</ReferenceList>
 								</AuxBus>
@@ -133,7 +175,7 @@
 													</Point>
 													<Point>
 														<XPos>100</XPos>
-														<YPos>4.08240000000001</YPos>
+														<YPos>0</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>
@@ -143,7 +185,7 @@
 								</Property>
 							</PropertyList>
 						</Bus>
-						<Bus Name="DIALOG_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}">
+						<Bus Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}">
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<RTPCList>
@@ -166,7 +208,7 @@
 													</Point>
 													<Point>
 														<XPos>100</XPos>
-														<YPos>4.08240000000001</YPos>
+														<YPos>0</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>
@@ -175,6 +217,41 @@
 									</RTPCList>
 								</Property>
 							</PropertyList>
+							<ChildrenList>
+								<AuxBus Name="Exterior_Acoustic_Voice_AUX" ID="{68513103-99BC-4A30-9F0A-22590B4A8AF9}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="Effect1" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+											<ObjectRef Name="High_Pass_60Hz" ID="{F9627628-0B10-4272-BC30-D4C20423CB38}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
+								<Bus Name="Voicelines_Voice_SUBBUS" ID="{8C45B67A-AE95-4F2E-B26E-082518E5A752}">
+									<DuckingList>
+										<DuckItem>
+											<BusRef Name="MUSIC_BUS" ID="{E98A5F2E-E786-43DB-8254-3BEE4959E4AF}"/>
+											<DuckingParam>
+												<Volume>-6</Volume>
+												<FadeInTime>2</FadeInTime>
+												<FadeOutTime>1</FadeOutTime>
+												<FadeCurve>FadeLinear</FadeCurve>
+											</DuckingParam>
+										</DuckItem>
+										<DuckItem>
+											<BusRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}"/>
+											<DuckingParam>
+												<Volume>-6</Volume>
+												<FadeInTime>2</FadeInTime>
+												<FadeOutTime>1</FadeOutTime>
+												<FadeCurve>FadeLinear</FadeCurve>
+											</DuckingParam>
+										</DuckItem>
+									</DuckingList>
+								</Bus>
+								<Bus Name="Onomatope_Voice_SUBBUS" ID="{266E5665-EF56-47A8-8220-730F2A50EB41}"/>
+							</ChildrenList>
 						</Bus>
 						<Bus Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}">
 							<PropertyList>
@@ -199,7 +276,7 @@
 													</Point>
 													<Point>
 														<XPos>100</XPos>
-														<YPos>4.08240000000001</YPos>
+														<YPos>0</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>

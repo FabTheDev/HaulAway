@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{0ED7EBA1-F621-4832-9054-98078A25E231}" SchemaVersion="97">
+	<Events>
+		<WorkUnit Name="MUSIC" ID="{0ED7EBA1-F621-4832-9054-98078A25E231}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Global" ID="{084C91AA-D95F-4730-B82A-B38B595D93FB}" ShortID="745614477">
+					<ChildrenList>
+						<Event Name="E_Mus_Resume_Music" ID="{B75C3503-7176-4A76-AB03-A97B84B8DFDA}">
+							<ChildrenList>
+								<Action Name="" ID="{79E2FD5B-ECCA-4EF2-993C-C8A9A5CA7EFE}" ShortID="500050805">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="9"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Main_Music_SWITCH" ID="{9BAE5B72-2FC7-4F54-ADF0-73EF29AA6804}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Mus_Pause_Music" ID="{33C54356-C04E-47E0-AA2D-E3EA35080350}">
+							<ChildrenList>
+								<Action Name="" ID="{5B888DB5-854E-42B7-893A-94AFBCFF2D0F}" ShortID="968136978">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="7"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Main_Music_SWITCH" ID="{9BAE5B72-2FC7-4F54-ADF0-73EF29AA6804}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Mus_Initiate_Music" ID="{3B75DBEE-0C3B-4CCC-967F-BE9786285E6F}">
+							<ChildrenList>
+								<Action Name="" ID="{41847C84-F84A-49F3-8737-ECF4CEF6F2B0}" ShortID="445141958">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+										<Property Name="GameParameterValue" Type="Real64" Value="100"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Intra_Music_LowPassFilter_GP" ID="{F457DEC5-2431-4441-8DDC-2DBD7379D01C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{8F4B6FAD-5422-4E77-A168-A541A8AAE0EC}" ShortID="888851248">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="No_Char_Singing" ID="{CC851A52-942B-4F5D-984D-2F321AFDD69E}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{00E35CE7-A022-4A09-9136-8644C5820FA1}" ShortID="215930307">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="No_Ship_Sinking" ID="{61F19502-08FC-437E-AFCF-D89896B4FCA5}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{0499774D-C060-4E0B-A476-F8BB97FDD9CB}" ShortID="178348304">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="No_Storm" ID="{6CB7680E-6578-4568-8BBF-6F3289ADBFBA}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{04DDA6A1-83E3-441A-94AC-3C696B31F543}" ShortID="789322687">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Out_Hold" ID="{4799B397-87EA-4934-ACC2-73FA0C65A854}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{DF3268E3-9906-43C4-B263-39E65C7A7E31}" ShortID="802888177">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="No_Theme" ID="{80DEA391-FC31-4B8E-8827-283AB4485692}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{C1D82959-CEDC-4D28-BC46-A0DCD95A8879}" ShortID="599022584">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Main_Music_SWITCH" ID="{9BAE5B72-2FC7-4F54-ADF0-73EF29AA6804}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Mus_ImmediateStop_Music" ID="{D96A48A1-A0FF-4385-85DB-B7EED24F5912}">
+							<ChildrenList>
+								<Action Name="" ID="{50E7FCA2-0FCB-4636-A487-68918C2FB2EC}" ShortID="196123579">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Main_Music_SWITCH" ID="{9BAE5B72-2FC7-4F54-ADF0-73EF29AA6804}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Themes" ID="{3789ACF6-1B65-4BF0-A0C3-EF82ACCDC77C}" ShortID="291567389">
+					<ChildrenList>
+						<Event Name="E_Mus_Set_Main_Theme" ID="{3D68DE05-DECB-474B-B343-33CB0A544A89}">
+							<ChildrenList>
+								<Action Name="" ID="{01B54B52-0AC7-4C78-B605-6F93F1377AAB}" ShortID="602420607">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Main_Theme" ID="{4D6A6F2A-117D-45C3-AEDC-915AC7F7B281}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Mus_Set_Going_To_Sea_Theme" ID="{2A0FE6B5-153A-42B1-82C7-47F9585E64D1}">
+							<ChildrenList>
+								<Action Name="" ID="{191B22B4-5109-4AAF-8279-159EF3FF2494}" ShortID="822206359">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Going_To_Sea_Theme" ID="{5B0E47F5-AEF0-4D3A-A0EC-B3F46D7B2C74}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Mus_Set_No_Theme" ID="{D2EB5110-9CA9-446B-9D83-2EF3D7D1DC6E}">
+							<ChildrenList>
+								<Action Name="" ID="{E4085554-9409-4009-BAF8-35BDF7FBEDE0}" ShortID="183004065">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="No_Theme" ID="{80DEA391-FC31-4B8E-8827-283AB4485692}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Mus_Set_Sailing_Theme" ID="{808CB8CC-C0A6-421F-8776-645480621397}">
+							<ChildrenList>
+								<Action Name="" ID="{15D1DAC4-10A6-4467-B956-5B253AF7087E}" ShortID="859615414">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Sailing_Theme" ID="{E89ACF6F-325E-4A89-ADEF-44ADD6B60929}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Mus_Set_Storm_Theme" ID="{9FF835A8-1F1D-4386-9547-56BE8A7B5086}">
+							<ChildrenList>
+								<Action Name="" ID="{8A929F75-3548-4BFA-A6A9-F44AA0EFD99C}" ShortID="66878681">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Storm_Theme" ID="{F9140ED6-73FA-43E8-A1C7-ED18288192C9}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Mus_Set_Icebergs_Theme" ID="{C2C10365-EF45-4F6C-B0D8-831B22868715}">
+							<ChildrenList>
+								<Action Name="" ID="{462C50B9-AA35-4ECC-B3DA-8696C83B2B3E}" ShortID="580566007">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Icebergs_Theme" ID="{0A9398CF-CA04-41C5-A4A5-0C4420E8B380}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Jingles" ID="{9DE79BB7-90DA-41B0-8F2F-1E6981988011}" ShortID="941993625">
+					<ChildrenList>
+						<Event Name="E_Mus_Set_Exploring_Jingle" ID="{C5D208F5-0E46-40C7-A1A1-6F310C7060C7}">
+							<ChildrenList>
+								<Action Name="" ID="{6350DFEE-FF6D-42BE-B4A4-96E1240E3A0B}" ShortID="693102624">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Jingle_Exploring" ID="{B8D7EBFC-2FA5-4EEB-B70A-9B262FBA7D1E}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Mus_Set_Fire_Lit_Jingle" ID="{99F51088-29FB-44E3-B64D-D4614A1F48F8}">
+							<ChildrenList>
+								<Action Name="" ID="{8926C8EB-3DCD-4700-B010-6BFDF5F06FCB}" ShortID="666264950">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Jingle_FireLit" ID="{9C96EBAE-96DF-43CE-99AD-D494EA16A9A7}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Mus_Set_New_Island_Jingle" ID="{E73D55AC-4F77-4D3D-887B-157A05116FA9}">
+							<ChildrenList>
+								<Action Name="" ID="{FC03D6DD-CE38-4CA5-ABBF-63702CEB97FC}" ShortID="400536036">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Jingle_NewIsland" ID="{D645922F-0EF2-48D2-99BE-B081C2ED6BC5}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Mus_Set_Standby_Jingle" ID="{1A1405B3-7C1F-4AD2-971F-2D1ABEAF6120}">
+							<ChildrenList>
+								<Action Name="" ID="{B08FD5D3-F5EA-4BBA-9E30-E680481AED44}" ShortID="416182124">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Jingle_Standby" ID="{7F245BDB-E9CC-4632-9633-045A3640C4FB}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="States" ID="{49EBE587-5FF6-4DBD-953A-202E29725324}" ShortID="963785321">
+					<ChildrenList>
+						<Event Name="E_Mus_Set_Ship_Sinking_YES" ID="{77DA8B05-AA75-4F07-8F8C-53AF1C2D55CA}">
+							<ChildrenList>
+								<Action Name="" ID="{A3854CAA-990B-4CAC-8941-A199DF33B0F1}" ShortID="753084492">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Yes_Ship_Sinking" ID="{139A3CEB-24A2-42BB-84D9-9D9AB25668E6}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Mus_Set_Ship_Sinking_NO" ID="{04F171A0-E169-4155-BC0C-8FBF80FF0BAC}">
+							<ChildrenList>
+								<Action Name="" ID="{171FAA13-636B-406B-B518-DD47872D6B14}" ShortID="70349743">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="No_Ship_Sinking" ID="{61F19502-08FC-437E-AFCF-D89896B4FCA5}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Mus_Set_Char_Singing_YES" ID="{80F59379-0A36-4271-BD67-2D0DBE50D43A}">
+							<ChildrenList>
+								<Action Name="" ID="{0A1BD249-98EF-471D-BACA-2B2E1E4EC888}" ShortID="431855416">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Yes_Char_Singing" ID="{1A488AB7-9718-4B2D-AC57-3B7BE6B57266}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Mus_Set_Char_Singing_NO" ID="{323AA92A-059F-47AF-8B83-A0C63F0293B2}">
+							<ChildrenList>
+								<Action Name="" ID="{6298210A-319A-4B74-A788-1776ECC8393B}" ShortID="1016057395">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="No_Char_Singing" ID="{CC851A52-942B-4F5D-984D-2F321AFDD69E}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Mus_Set_Storm_Appoaching" ID="{1863A054-F709-4AAA-8A18-27B1EE6C2022}">
+							<ChildrenList>
+								<Action Name="" ID="{C162F7FA-C3ED-423B-BEC8-EBADD678AEC5}" ShortID="1022167753">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Approaching_Storm" ID="{CA76B6BE-DBE1-42CD-8025-5958E2EF091C}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Mus_Set_Storm_Here" ID="{153EFD7E-E533-4216-A5F5-11F01ACE37F5}">
+							<ChildrenList>
+								<Action Name="" ID="{C164E524-DC3D-40E7-A7BA-357145D7BC81}" ShortID="810910832">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Here_Storm" ID="{A0300296-6DED-4FB9-8C27-F9CECC588BFE}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Mus_Set_Storm_None" ID="{75C6A7F6-48BE-402A-B226-2810991C5883}">
+							<ChildrenList>
+								<Action Name="" ID="{4631DA0A-C309-46E5-BA2A-35F41A608640}" ShortID="300598991">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="No_Storm" ID="{6CB7680E-6578-4568-8BBF-6F3289ADBFBA}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
