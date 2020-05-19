@@ -112,6 +112,34 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="E_Character_WaterIn" ID="{0E9F5ECB-E976-4DDD-841D-4D24185EBA2B}">
+									<ChildrenList>
+										<Action Name="" ID="{6B0573F9-1E48-4F3B-97F0-BF18C93E5C03}" ShortID="200420369">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Char_WaterIn_RND" ID="{D5FEDAC6-06D6-4D5A-8CFB-72EF64239961}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Character_WaterOut" ID="{715CFE0C-E4DE-4E4E-ACF1-DF9C9EEF3D1E}">
+									<ChildrenList>
+										<Action Name="" ID="{11A781DE-44C3-473D-A142-BE5C039A8D06}" ShortID="1037833718">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Char_WaterOut_RND" ID="{2028A878-4408-44D8-9C82-EB1B6D7CBAA8}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Interractions" ID="{1AF7EB15-0F4A-4589-8C1A-7858E5A028AB}" ShortID="721422149">
@@ -170,6 +198,34 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="FX_Pickup_SWITCH" ID="{193BCF4A-7ACB-466D-906F-4C59FB4046DD}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Character_Spyglass_On" ID="{0858190C-C8C4-46B9-B56A-1BCFFCE10C7A}">
+									<ChildrenList>
+										<Action Name="" ID="{2CBF40BA-7D8B-4A09-8D06-056B67C33CC3}" ShortID="198855353">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HA_Char_Spyglass_On" ID="{E62BE2B4-E45F-4C88-8A13-6CC9A2F52315}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Character_Spyglass_Off" ID="{AD7554B3-6C79-4133-BE3D-232E9767602B}">
+									<ChildrenList>
+										<Action Name="" ID="{7FEE0A12-5C57-4F0A-9BBC-77313666C915}" ShortID="371036922">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HA_Char_Spyglass_Off" ID="{99492728-7676-4B8C-B52A-8D0AEBF3C654}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -917,6 +973,24 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="SFX_Ship_InHold_Ambience" ID="{9974E777-FE58-4366-BFB4-B92C30A9B287}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Changing Module" ID="{F58844B6-1279-4145-A170-42EAE5A6BE2E}" ShortID="913507836">
+							<ChildrenList>
+								<Event Name="E_Ship_ChangingModule" ID="{5FF17C17-D4FF-465C-901B-3B9654B1CC26}">
+									<ChildrenList>
+										<Action Name="" ID="{B1EA43DC-935A-46A9-91BB-FF15B4BE07D5}" ShortID="934081307">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Changing_Module_RND" ID="{0CAB13A5-D6E8-40AD-AE4E-4F61FE8FD00E}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
