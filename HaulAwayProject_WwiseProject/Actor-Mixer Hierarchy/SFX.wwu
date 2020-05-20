@@ -3620,12 +3620,12 @@
 																		<SegmentShape>Log2</SegmentShape>
 																	</Point>
 																	<Point>
-																		<XPos>0.5</XPos>
+																		<XPos>12.5</XPos>
 																		<YPos>0</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>1</XPos>
+																		<XPos>25</XPos>
 																		<YPos>2</YPos>
 																		<Flags>37</Flags>
 																	</Point>
@@ -9153,9 +9153,16 @@
 																				<SegmentShape>Log2</SegmentShape>
 																			</Point>
 																			<Point>
-																				<XPos>6000</XPos>
+																				<XPos>600</XPos>
+																				<YPos>0</YPos>
+																				<Flags>0</Flags>
+																				<SegmentShape>Exp2</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>1000</XPos>
 																				<YPos>-200</YPos>
 																				<Flags>0</Flags>
+																				<SegmentShape>Exp2</SegmentShape>
 																			</Point>
 																			<Point>
 																				<XPos>10000</XPos>
@@ -9179,7 +9186,7 @@
 															<CrossfadingInfo>
 																<LeftEdgePos>0</LeftEdgePos>
 																<LeftFadingMode>Automatic</LeftFadingMode>
-																<RightEdgePos>6000</RightEdgePos>
+																<RightEdgePos>1000</RightEdgePos>
 																<RightFadingMode>Automatic</RightFadingMode>
 															</CrossfadingInfo>
 														</BlendTrackAssoc>
@@ -9207,10 +9214,10 @@
 																				<Flags>5</Flags>
 																			</Point>
 																			<Point>
-																				<XPos>206.5445</XPos>
-																				<YPos>-2.99098</YPos>
+																				<XPos>250</XPos>
+																				<YPos>0</YPos>
 																				<Flags>0</Flags>
-																				<SegmentShape>Log2</SegmentShape>
+																				<SegmentShape>Exp2</SegmentShape>
 																			</Point>
 																			<Point>
 																				<XPos>800</XPos>
@@ -13622,6 +13629,11 @@
 																	</ValueList>
 																</Property>
 																<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>4</Value>
+																	</ValueList>
+																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
@@ -14756,6 +14768,11 @@
 																	</ValueList>
 																</Property>
 																<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>4</Value>
+																	</ValueList>
+																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
