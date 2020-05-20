@@ -7,7 +7,7 @@
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-12</Value>
+								<Value>-16.5</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -2804,6 +2804,9 @@
 						<MusicSwitchContainer Name="Theme_Storm_SWITCH" ID="{EB7657E3-A3A9-40EB-BD19-FC7B755D81E3}" ShortID="762635674">
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{4AB28A02-E102-4B4F-8511-B648D22F2509}" ShortID="309641306">
 											<ReferenceList>
@@ -4340,6 +4343,8 @@
 										<MusicTransition Name="Transition" ID="{8D71ABB1-B79B-4EAD-AC6E-B24956073809}">
 											<PropertyList>
 												<Property Name="DestinationContextType" Type="int16" Value="2"/>
+												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+												<Property Name="ExitSourceAt" Type="int16" Value="2"/>
 												<Property Name="PlayDestinationPreEntry" Type="bool" Value="False"/>
 												<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
 											</PropertyList>
@@ -4348,7 +4353,18 @@
 													<ObjectRef Name="Theme_Storm_Death_PLAYLIST" ID="{8EAACEA2-C762-4D12-A086-50537C68B581}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}"/>
 												</Reference>
 											</ReferenceList>
-											<TransitionInfo/>
+											<TransitionInfo>
+												<SourceFadeOut>
+													<MusicFade Name="Source Fade-out" ID="{949CBF4A-73BB-49E3-989A-BAF626093AB0}">
+														<PropertyList>
+															<Property Name="FadeCurve" Type="int16" Value="8"/>
+															<Property Name="FadeOffset" Type="Real64" Value="1"/>
+															<Property Name="FadeTime" Type="Real64" Value="1"/>
+															<Property Name="FadeType" Type="int16" Value="1"/>
+														</PropertyList>
+													</MusicFade>
+												</SourceFadeOut>
+											</TransitionInfo>
 										</MusicTransition>
 										<MusicTransition Name="Transition" ID="{8CF2D42F-AF77-4DB4-B2F1-FCD037725E86}">
 											<PropertyList>
@@ -6243,14 +6259,14 @@
 									<ChildrenList>
 										<MusicPlaylistItem Name="" ID="{7F0CD0F6-5856-4A2C-B6EB-8DA010B68B6E}" ShortID="667245628">
 											<PropertyList>
-												<Property Name="LoopCount" Type="int16" Value="15">
+												<Property Name="LoopCount" Type="int16" Value="8">
 													<ModifierList>
 														<ModifierInfo>
 															<Modifier Name="" ID="{936720F0-022C-4B85-8CA7-9666F1F878B9}">
 																<PropertyList>
 																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="3"/>
-																	<Property Name="Min" Type="Real64" Value="-3"/>
+																	<Property Name="Max" Type="Real64" Value="2"/>
+																	<Property Name="Min" Type="Real64" Value="-2"/>
 																</PropertyList>
 															</Modifier>
 														</ModifierInfo>

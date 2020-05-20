@@ -564,6 +564,16 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
+										<Action Name="" ID="{D632A1E2-69BC-4FBE-82C8-A8B45873C833}" ShortID="1069289257">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ship_WaterSpeed_BLEND" ID="{86D9DD82-BD1B-4167-A976-E7A0257F2C0B}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 										<Action Name="" ID="{F2EDAC9C-E46E-4DDB-87A3-BED44D1494B2}" ShortID="909731789">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="1"/>
@@ -1071,7 +1081,8 @@
 										<Action Name="" ID="{2DB4317A-BA42-4BDF-A8D3-FA57DA134B27}" ShortID="525825783">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="1"/>
-												<Property Name="FadeTime" Type="Real64" Value="3"/>
+												<Property Name="FadeInCurve" Type="int16" Value="6"/>
+												<Property Name="FadeTime" Type="Real64" Value="5"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
@@ -1252,11 +1263,12 @@
 						</Folder>
 						<Folder Name="Icebergs" ID="{32042E8D-B666-4C1F-9860-EBB10A8A0493}" ShortID="211097463">
 							<ChildrenList>
-								<Event Name="E_Enviro_Iceberg_Cracking_LOOP" ID="{3BE25428-9D1E-436F-B97C-D8E69EC61E54}">
+								<Event Name="E_Enviro_Iceberg_StartCracking" ID="{3BE25428-9D1E-436F-B97C-D8E69EC61E54}">
 									<ChildrenList>
 										<Action Name="" ID="{8C69660B-4DBB-4E70-8BA8-2E4989E183C3}" ShortID="763689511">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
@@ -1289,6 +1301,21 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="Iceberg_Break_LowSpeed_RND" ID="{DB35C4CC-A410-492D-AF21-EE1174046027}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Enviro_Iceberg_StopCracking" ID="{8B0B83D5-5FE6-43A4-9040-F611F5E02F3D}">
+									<ChildrenList>
+										<Action Name="" ID="{D20B5D07-37E9-4053-A9A4-E232F5A0E71A}" ShortID="121274005">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Iceberg_Cracking_BLEND" ID="{1A2D22D8-F727-4048-BDC5-9F61F31F7DBB}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

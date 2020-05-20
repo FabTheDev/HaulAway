@@ -109,7 +109,7 @@
 								<Property Name="OverrideOutput" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-3</Value>
+										<Value>-8</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -4933,7 +4933,7 @@
 									<ChildrenList>
 										<RandomSequenceContainer Name="Voice_Jump_RND" ID="{5C42F8E6-F45D-42C1-9AFD-814BDF58FC14}" ShortID="148373454">
 											<PropertyList>
-												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="8"/>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="5"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -4948,6 +4948,11 @@
 													<PropertyList>
 														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-1</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
@@ -4980,6 +4985,11 @@
 													<PropertyList>
 														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-1</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
@@ -5012,6 +5022,11 @@
 													<PropertyList>
 														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-1</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
@@ -5140,6 +5155,11 @@
 													<PropertyList>
 														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-3</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
@@ -5172,6 +5192,11 @@
 													<PropertyList>
 														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-3</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
@@ -5204,6 +5229,11 @@
 													<PropertyList>
 														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-3</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
