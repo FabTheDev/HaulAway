@@ -112,6 +112,34 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="E_Character_WaterIn" ID="{0E9F5ECB-E976-4DDD-841D-4D24185EBA2B}">
+									<ChildrenList>
+										<Action Name="" ID="{6B0573F9-1E48-4F3B-97F0-BF18C93E5C03}" ShortID="200420369">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Char_WaterIn_RND" ID="{D5FEDAC6-06D6-4D5A-8CFB-72EF64239961}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Character_WaterOut" ID="{715CFE0C-E4DE-4E4E-ACF1-DF9C9EEF3D1E}">
+									<ChildrenList>
+										<Action Name="" ID="{11A781DE-44C3-473D-A142-BE5C039A8D06}" ShortID="1037833718">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Char_WaterOut_RND" ID="{2028A878-4408-44D8-9C82-EB1B6D7CBAA8}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Interractions" ID="{1AF7EB15-0F4A-4589-8C1A-7858E5A028AB}" ShortID="721422149">
@@ -170,6 +198,34 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="FX_Pickup_SWITCH" ID="{193BCF4A-7ACB-466D-906F-4C59FB4046DD}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Character_Spyglass_On" ID="{0858190C-C8C4-46B9-B56A-1BCFFCE10C7A}">
+									<ChildrenList>
+										<Action Name="" ID="{2CBF40BA-7D8B-4A09-8D06-056B67C33CC3}" ShortID="198855353">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HA_Char_Spyglass_On" ID="{E62BE2B4-E45F-4C88-8A13-6CC9A2F52315}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Character_Spyglass_Off" ID="{AD7554B3-6C79-4133-BE3D-232E9767602B}">
+									<ChildrenList>
+										<Action Name="" ID="{7FEE0A12-5C57-4F0A-9BBC-77313666C915}" ShortID="371036922">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HA_Char_Spyglass_Off" ID="{99492728-7676-4B8C-B52A-8D0AEBF3C654}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -508,6 +564,16 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
+										<Action Name="" ID="{D632A1E2-69BC-4FBE-82C8-A8B45873C833}" ShortID="1069289257">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ship_WaterSpeed_BLEND" ID="{86D9DD82-BD1B-4167-A976-E7A0257F2C0B}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 										<Action Name="" ID="{F2EDAC9C-E46E-4DDB-87A3-BED44D1494B2}" ShortID="909731789">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="1"/>
@@ -625,6 +691,26 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="Sail_Pulley_Or_Not_SWTCH" ID="{A3A1A278-A5BF-4976-995A-2489B99ECED0}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{38A55296-8E8F-43C4-9C29-F6081F10E232}" ShortID="454551690">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ship_Scraping_BLEND" ID="{5A3690FA-DD0A-4AD3-8C3B-0944AD9887C1}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{36622944-FB98-42D4-B056-0399892933F5}" ShortID="849028267">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="7"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ship_Scraping_BLEND" ID="{5A3690FA-DD0A-4AD3-8C3B-0944AD9887C1}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -924,6 +1010,139 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Changing Module" ID="{F58844B6-1279-4145-A170-42EAE5A6BE2E}" ShortID="913507836">
+							<ChildrenList>
+								<Event Name="E_Ship_ChangingModule" ID="{5FF17C17-D4FF-465C-901B-3B9654B1CC26}">
+									<ChildrenList>
+										<Action Name="" ID="{B1EA43DC-935A-46A9-91BB-FF15B4BE07D5}" ShortID="934081307">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Changing_Module_RND" ID="{0CAB13A5-D6E8-40AD-AE4E-4F61FE8FD00E}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Debris" ID="{3AD8CE5D-B994-4D11-AAB3-225DF48F664B}" ShortID="944882483">
+							<ChildrenList>
+								<Event Name="E_Ship_BeamDestroyed" ID="{C8DA8AEF-0BCE-4900-95A2-F69FE3A213ED}">
+									<ChildrenList>
+										<Action Name="" ID="{A8F86C06-553C-49BB-9568-E73FD6FBEE00}" ShortID="89694823">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ship_BeamDestroyed_RND" ID="{A1347417-A380-49F0-B62C-6BD8CFE53284}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Ship_PieceInWater" ID="{435D2B2F-AA31-48DB-BF7F-6422C0C749FD}">
+									<ChildrenList>
+										<Action Name="" ID="{5C08EF2E-8DAB-4F36-A361-08AE821942FE}" ShortID="856359844">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ship_PieceInWater_RND" ID="{218FEAB4-87DC-42DA-9779-CAF7CFAA76AB}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Ship_BeamInWater" ID="{E96FCBE3-506A-4E40-8D3A-9C09271D6AD5}">
+									<ChildrenList>
+										<Action Name="" ID="{3E2321AD-9F19-4396-992E-524683B90B53}" ShortID="620957641">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ship_BeamInWater_RND" ID="{83955ECF-86D2-4CD6-96D2-3C40E6B198F4}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Sinking" ID="{A1766933-F983-4D2D-AC6F-1A6B96C71C26}" ShortID="819668711">
+							<ChildrenList>
+								<Event Name="E_Ship_StartSinking" ID="{07D9CC8C-18CC-48D9-9908-50FFDED16CBE}">
+									<ChildrenList>
+										<Action Name="" ID="{2DB4317A-BA42-4BDF-A8D3-FA57DA134B27}" ShortID="525825783">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="FadeInCurve" Type="int16" Value="6"/>
+												<Property Name="FadeTime" Type="Real64" Value="5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ship_Sinking_BLEND" ID="{43053BF4-F7F6-4A95-A665-251B231F1399}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Ship_StopSinking" ID="{B8204FD1-D61E-49E0-9E6A-915731A36AC6}">
+									<ChildrenList>
+										<Action Name="" ID="{7A8F81DB-F12C-4960-ABDB-C42BEB9C40E6}" ShortID="95027723">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ship_Sinking_BLEND" ID="{43053BF4-F7F6-4A95-A665-251B231F1399}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Scraping" ID="{13D16A8E-798D-4DB0-BA21-3FAB5CC577D9}" ShortID="812244634">
+							<ChildrenList>
+								<Event Name="E_Ship_StartScraping" ID="{270A4454-114F-4729-9D07-B4E6829B0143}">
+									<ChildrenList>
+										<Action Name="" ID="{58556055-86C5-4D61-ADE7-7638A9843B06}" ShortID="376692773">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="9"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ship_Scraping_BLEND" ID="{5A3690FA-DD0A-4AD3-8C3B-0944AD9887C1}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Ship_StopScraping" ID="{C5425A1A-CFC2-4399-AA7A-27063E9ACFC6}">
+									<ChildrenList>
+										<Action Name="" ID="{D6D68E19-0EC4-4DD7-9833-ED7E1B90E2AB}" ShortID="202177714">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="7"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ship_Scraping_BLEND" ID="{5A3690FA-DD0A-4AD3-8C3B-0944AD9887C1}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Enviro" ID="{21681DFD-6E4E-4A3C-AC3C-06D66E27A926}" ShortID="53189752">
@@ -1044,11 +1263,12 @@
 						</Folder>
 						<Folder Name="Icebergs" ID="{32042E8D-B666-4C1F-9860-EBB10A8A0493}" ShortID="211097463">
 							<ChildrenList>
-								<Event Name="E_Enviro_Iceberg_Cracking_LOOP" ID="{3BE25428-9D1E-436F-B97C-D8E69EC61E54}">
+								<Event Name="E_Enviro_Iceberg_StartCracking" ID="{3BE25428-9D1E-436F-B97C-D8E69EC61E54}">
 									<ChildrenList>
 										<Action Name="" ID="{8C69660B-4DBB-4E70-8BA8-2E4989E183C3}" ShortID="763689511">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
@@ -1086,6 +1306,21 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="E_Enviro_Iceberg_StopCracking" ID="{8B0B83D5-5FE6-43A4-9040-F611F5E02F3D}">
+									<ChildrenList>
+										<Action Name="" ID="{D20B5D07-37E9-4053-A9A4-E232F5A0E71A}" ShortID="121274005">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Iceberg_Cracking_BLEND" ID="{1A2D22D8-F727-4048-BDC5-9F61F31F7DBB}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Fire" ID="{118DFF3E-E1DD-4ED7-9FB3-45EAC17C90D1}" ShortID="601950895">
@@ -1110,6 +1345,24 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="SFX_HA_Enviro_Fire_Loop" ID="{1BEE6ADB-87EB-447D-BDEA-00E3987AC253}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Water Lapping" ID="{13CF03F7-167D-4B33-AEA0-393537EA1F19}" ShortID="260500988">
+							<ChildrenList>
+								<Event Name="E_Enviro_WaterLapping_Loop" ID="{B9CFBE46-48DE-4E2C-B435-139A8741423A}">
+									<ChildrenList>
+										<Action Name="" ID="{4CEA87AB-0D60-4155-B03A-23CD172BAA1E}" ShortID="382288325">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HA_Enviro_WaterLapping" ID="{603F497C-069A-41DE-8B65-E98C2448F72B}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

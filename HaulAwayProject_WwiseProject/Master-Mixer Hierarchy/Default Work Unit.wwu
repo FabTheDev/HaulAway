@@ -102,7 +102,6 @@
 									</RTPCList>
 								</Property>
 							</PropertyList>
-							<ReferenceList/>
 							<ChildrenList>
 								<AuxBus Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}">
 									<ReferenceList>
@@ -121,6 +120,7 @@
 										</Reference>
 									</ReferenceList>
 								</AuxBus>
+								<Bus Name="Amb_SFX_SUBBUS" ID="{3A01C79B-0390-4B56-B897-17964DBC765E}"/>
 							</ChildrenList>
 						</Bus>
 						<Bus Name="MUSIC_BUS" ID="{E98A5F2E-E786-43DB-8254-3BEE4959E4AF}">
@@ -240,7 +240,7 @@
 											</DuckingParam>
 										</DuckItem>
 										<DuckItem>
-											<BusRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}"/>
+											<BusRef Name="Amb_SFX_SUBBUS" ID="{3A01C79B-0390-4B56-B897-17964DBC765E}"/>
 											<DuckingParam>
 												<Volume>-6</Volume>
 												<FadeInTime>2</FadeInTime>
