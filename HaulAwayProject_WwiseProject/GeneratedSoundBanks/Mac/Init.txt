@@ -1,9 +1,12 @@
 Switch Group	ID	Name			Wwise Object Path	Notes
 	430223108	Water_Depth			\Default Work Unit\Character\Footsteps\Water_Depth	
+	4259797720	Thunder_Distance_SWITCH			\Default Work Unit\Weather\Thunder_Distance_SWITCH	
 
 Switch	ID	Name	Switch Group			Notes
 	1976939195	Deep	Water_Depth			
 	2943574119	Shallow	Water_Depth			
+	1449995087	Far_Thunder	Thunder_Distance_SWITCH			
+	3830062896	Near_Thunder	Thunder_Distance_SWITCH			
 
 State Group	ID	Name			Wwise Object Path	Notes
 	623471236	Mus_Storm_Intensity_STATE			\Default Work Unit\Music\Mus_Storm_Intensity_STATE	
@@ -13,6 +16,7 @@ State Group	ID	Name			Wwise Object Path	Notes
 	2767790424	Mus_ShipIsSinking_STATE			\Default Work Unit\Music\Mus_ShipIsSinking_STATE	
 	3166210129	Char_Walk_Run			\Default Work Unit\Character\Footsteps\Char_Walk_Run	
 	3992907366	Mus_CharIsSinging_STATE			\Default Work Unit\Music\Mus_CharIsSinging_STATE	
+	4062772272	ContainerType_STATE			\Default Work Unit\Character\Interaction\ContainerType_STATE	
 
 State	ID	Name	State Group			Notes
 	449340473	Approaching_Storm	Mus_Storm_Intensity_STATE			
@@ -45,6 +49,10 @@ State	ID	Name	State Group			Notes
 	748895195	None	Mus_CharIsSinging_STATE			
 	2068055449	No_Char_Singing	Mus_CharIsSinging_STATE			
 	2215819083	Yes_Char_Singing	Mus_CharIsSinging_STATE			
+	14239492	Chest	ContainerType_STATE			
+	442447909	Barrel	ContainerType_STATE			
+	748895195	None	ContainerType_STATE			
+	3098439042	Crate	ContainerType_STATE			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	626750949	Intra_Music_LowPassFilter_GP			\Default Work Unit\Global\Intra_Music_LowPassFilter_GP	
@@ -52,19 +60,27 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	1986689900	Dialog_Volume_GP			\Default Work Unit\Global\Dialog_Volume_GP	
 	2093986695	Music_Volume_GP			\Default Work Unit\Global\Music_Volume_GP	
 	2518588078	UI_Volume_GP			\Default Work Unit\Global\UI_Volume_GP	
+	3931204830	Master_Volume_GP			\Default Work Unit\Global\Master_Volume_GP	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	213475909	SFX_BUS			\Default Work Unit\Master Audio Bus\SFX_BUS	
-	1177004814	DIALOG_BUS			\Default Work Unit\Master Audio Bus\DIALOG_BUS	
+	287439398	VOICE_BUS			\Default Work Unit\Master Audio Bus\VOICE_BUS	
+	835368485	Onomatope_Voice_SUBBUS			\Default Work Unit\Master Audio Bus\VOICE_BUS\Onomatope_Voice_SUBBUS	
+	2022989986	Amb_SFX_SUBBUS			\Default Work Unit\Master Audio Bus\SFX_BUS\Amb_SFX_SUBBUS	
 	2680856269	MUSIC_BUS			\Default Work Unit\Master Audio Bus\MUSIC_BUS	
+	3221490516	Voicelines_Voice_SUBBUS			\Default Work Unit\Master Audio Bus\VOICE_BUS\Voicelines_Voice_SUBBUS	
 	3247222208	UI_BUS			\Default Work Unit\Master Audio Bus\UI_BUS	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
-	1060063872	Exterior_Acoustic_AUX			\Default Work Unit\Master Audio Bus\SFX_BUS\Exterior_Acoustic_AUX	
+	408566363	Cave_Acoustic_SFX_AUX			\Default Work Unit\Master Audio Bus\SFX_BUS\Cave_Acoustic_SFX_AUX	
+	1338958676	Exterior_Acoustic_SFX_AUX			\Default Work Unit\Master Audio Bus\SFX_BUS\Exterior_Acoustic_SFX_AUX	
+	3549807355	Exterior_Acoustic_Voice_AUX			\Default Work Unit\Master Audio Bus\VOICE_BUS\Exterior_Acoustic_Voice_AUX	
 
 Effect plug-ins	ID	Name	Type				Notes
 	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
+	3442768367	Hall_Large_Dark	Wwise RoomVerb			
+	3604890626	High_Pass_60Hz	Wwise Parametric EQ			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			
