@@ -58,7 +58,7 @@
 						<GameParameter Name="ShipSpeed_GP" ID="{72DFA80D-619E-4B12-8899-29FD2767932C}">
 							<PropertyList>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
-								<Property Name="Max" Type="Real64" Value="1"/>
+								<Property Name="Max" Type="Real64" Value="25"/>
 							</PropertyList>
 						</GameParameter>
 						<GameParameter Name="ShipLife_GP" ID="{718CC684-1460-48DE-BD21-DEDF2B6A9D4A}">

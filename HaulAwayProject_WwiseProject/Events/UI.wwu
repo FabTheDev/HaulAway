@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8A36F450-6135-4EB0-87E8-D4540DB8E015}" SchemaVersion="97">
+	<Events>
+		<WorkUnit Name="UI" ID="{8A36F450-6135-4EB0-87E8-D4540DB8E015}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Book Menu" ID="{BCA67D01-0918-4C53-8121-C5CDBDDD679E}" ShortID="310910700">
+					<ChildrenList>
+						<Event Name="E_UI_Book_Hightlight" ID="{0B373985-AAEB-4229-AB09-03C1B85009EC}">
+							<ChildrenList>
+								<Action Name="" ID="{C45D4AD9-FB38-4E7C-BCA5-FF2785531590}" ShortID="152708053">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Book_Hightlight" ID="{F8F98EB5-6689-49C4-8E37-A292EE589FAC}" WorkUnitID="{BF938DC5-5BE3-4614-9C2E-2820850BD40E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_UI_Book_MapMark" ID="{BBBA1724-FB73-4752-B849-235F4F86AE22}">
+							<ChildrenList>
+								<Action Name="" ID="{1F83D7D2-4833-4EEF-AF01-3A2260D0F544}" ShortID="582719710">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Book_MapMark" ID="{F8A36213-F66D-4A9E-9E79-39EA596ED2F6}" WorkUnitID="{BF938DC5-5BE3-4614-9C2E-2820850BD40E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_UI_Book_OpenMenu" ID="{CF56E57D-7AD1-4D39-AEDD-8C8CFF8E6A48}">
+							<ChildrenList>
+								<Action Name="" ID="{C8333B57-5EFE-49DB-A8C8-A11354496341}" ShortID="380764226">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Book_OpenMenu" ID="{E9F399A1-8CD8-4109-A118-18D3F4C6433F}" WorkUnitID="{BF938DC5-5BE3-4614-9C2E-2820850BD40E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_UI_Book_Error" ID="{B1905221-18B5-4BEA-93A1-620A28DDC7E1}">
+							<ChildrenList>
+								<Action Name="" ID="{EA577E95-BDDC-4C3B-8A92-EEECAFE36D45}" ShortID="722883155">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Book_Error" ID="{0FD4F3F0-A8E5-4BF1-B819-6B0B9DD4E7DE}" WorkUnitID="{BF938DC5-5BE3-4614-9C2E-2820850BD40E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_UI_Book_Back" ID="{DFEE069A-BB05-4C0E-81DB-9688884D4BE5}">
+							<ChildrenList>
+								<Action Name="" ID="{4A6F5F08-C648-4507-8F1B-D1D9769E2D8F}" ShortID="363668030">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Book_Back" ID="{54DACABE-B76F-4227-960E-11FFCD0D686B}" WorkUnitID="{BF938DC5-5BE3-4614-9C2E-2820850BD40E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_UI_Book_LightValidation" ID="{C449DB47-24E8-4074-B240-F870FC435F15}">
+							<ChildrenList>
+								<Action Name="" ID="{A55943FB-F8B9-4335-8FF5-08E608BD0405}" ShortID="464760929">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Book_ValidationClick" ID="{3A1C4CD7-177E-4480-8D17-055588157F8A}" WorkUnitID="{BF938DC5-5BE3-4614-9C2E-2820850BD40E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{0C1579D6-2FCA-488C-BD1A-B1590E41F56F}" ShortID="988301848">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Book_LightValidation" ID="{CEF1EC36-1971-4027-A35A-7FE7D35A597D}" WorkUnitID="{BF938DC5-5BE3-4614-9C2E-2820850BD40E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_UI_Book_StrongValidation" ID="{C008158F-B19A-428F-B52F-B58B4526A6B1}">
+							<ChildrenList>
+								<Action Name="" ID="{BD4D6C56-E157-40CC-ACC9-F8596B96C525}" ShortID="822916105">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Book_ValidationClick" ID="{3A1C4CD7-177E-4480-8D17-055588157F8A}" WorkUnitID="{BF938DC5-5BE3-4614-9C2E-2820850BD40E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{7C00442D-7F83-47F6-A9D6-AF542434382E}" ShortID="806621494">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Book_StrongValidation" ID="{AF0FAEFC-4BA1-4844-8EE2-806190AE0A3D}" WorkUnitID="{BF938DC5-5BE3-4614-9C2E-2820850BD40E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_UI_Book_SubMenuChange" ID="{0C709062-CBDD-41FF-B141-0FE248660AD2}">
+							<ChildrenList>
+								<Action Name="" ID="{7ECA0183-0A5C-4181-91DB-032C8BC0930F}" ShortID="346069608">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Book_SubMenuChange" ID="{9A1C11D1-C866-4326-863F-435F0C4703AC}" WorkUnitID="{BF938DC5-5BE3-4614-9C2E-2820850BD40E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
