@@ -16,6 +16,21 @@
 								</StateGroup>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Interaction" ID="{FD0E720F-C683-4081-AA67-AAE84D8C7DE1}" ShortID="418018560">
+							<ChildrenList>
+								<StateGroup Name="ContainerType_STATE" ID="{573C1CFD-673D-493A-9878-F70EF1AB214D}">
+									<PropertyList>
+										<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+									</PropertyList>
+									<ChildrenList>
+										<State Name="None" ID="{D4F8615F-D5D9-4AD2-B41C-81F651EB2E30}"/>
+										<State Name="Barrel" ID="{8FC01A57-A9D0-4A84-86BD-1EDF59C3F5DE}"/>
+										<State Name="Crate" ID="{3EF4FD84-9C0E-4693-B4B9-EABBD5455526}"/>
+										<State Name="Chest" ID="{869F1847-684E-4F64-B817-C82253419E7E}"/>
+									</ChildrenList>
+								</StateGroup>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Ship" ID="{0B1FA637-5DB3-468E-B333-08C2930ED6CC}" ShortID="52851803">
