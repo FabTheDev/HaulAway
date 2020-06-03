@@ -45,7 +45,7 @@
 						</ConversionPluginInfo>
 					</ConversionPluginInfoList>
 				</Conversion>
-				<Conversion Name="Music_Conversion_Settings" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}">
+				<Conversion Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}">
 					<PropertyList>
 						<Property Name="Channels" Type="int32">
 							<ValueList>

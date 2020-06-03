@@ -10,6 +10,16 @@
     "DLL": "AkSilenceGenerator"
    },
    {
+    "Name": "Wwise Parametric EQ",
+    "ID": "6881283",
+    "DLL": "AkParametricEQ"
+   },
+   {
+    "Name": "Wwise Delay",
+    "ID": "6946819",
+    "DLL": "AkDelay"
+   },
+   {
     "Name": "Wwise Compressor",
     "ID": "7077891",
     "DLL": "AkCompressor"

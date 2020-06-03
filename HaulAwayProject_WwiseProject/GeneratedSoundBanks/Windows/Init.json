@@ -5,11 +5,11 @@
   "SchemaVersion": "12",
   "SoundbankVersion": "135",
   "RootPaths": {
-   "ProjectRoot": "D:\\FabDocuments\\Games\\HaulAway\\HaulAwayProject\\HaulAwayProject_WwiseProject\\",
-   "SourceFilesRoot": "D:\\FabDocuments\\Games\\HaulAway\\HaulAwayProject\\HaulAwayProject_WwiseProject\\.cache\\Windows\\",
-   "SoundBanksRoot": "D:\\FabDocuments\\Games\\HaulAway\\HaulAwayProject\\HaulAwayProject_WwiseProject\\GeneratedSoundBanks\\Windows\\",
+   "ProjectRoot": "D:\\GIT REPOSITORIES\\HaulAway\\HaulAwayProject_WwiseProject\\",
+   "SourceFilesRoot": "D:\\GIT REPOSITORIES\\HaulAway\\HaulAwayProject_WwiseProject\\.cache\\Windows\\",
+   "SoundBanksRoot": "D:\\GIT REPOSITORIES\\HaulAway\\HaulAwayProject_WwiseProject\\GeneratedSoundBanks\\Windows\\",
    "ExternalSourcesInputFile": "",
-   "ExternalSourcesOutputRoot": "D:\\FabDocuments\\Games\\HaulAway\\HaulAwayProject\\HaulAwayProject_WwiseProject\\GeneratedSoundBanks\\Windows"
+   "ExternalSourcesOutputRoot": "D:\\GIT REPOSITORIES\\HaulAway\\HaulAwayProject_WwiseProject\\GeneratedSoundBanks\\Windows"
   },
   "SoundBanks": [
    {
@@ -21,10 +21,22 @@
     "Path": "Init.bnk",
     "IncludedAuxBusses": [
      {
-      "Id": "1060063872",
-      "Name": "Exterior_Acoustic_AUX",
-      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SFX_BUS\\Exterior_Acoustic_AUX",
+      "Id": "408566363",
+      "Name": "Cave_Acoustic_SFX_AUX",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SFX_BUS\\Cave_Acoustic_SFX_AUX",
+      "GUID": "{01568535-8555-4C9B-B2EA-164F84B37D78}"
+     },
+     {
+      "Id": "1338958676",
+      "Name": "Exterior_Acoustic_SFX_AUX",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SFX_BUS\\Exterior_Acoustic_SFX_AUX",
       "GUID": "{390D116F-CA01-44C8-A8DE-FAF79069473B}"
+     },
+     {
+      "Id": "3549807355",
+      "Name": "Exterior_Acoustic_Voice_AUX",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\VOICE_BUS\\Exterior_Acoustic_Voice_AUX",
+      "GUID": "{68513103-99BC-4A30-9F0A-22590B4A8AF9}"
      }
     ],
     "GameParameters": [
@@ -57,6 +69,12 @@
       "Name": "UI_Volume_GP",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\Global\\UI_Volume_GP",
       "GUID": "{8A19730F-E82D-497F-9812-8D5F21AD724B}"
+     },
+     {
+      "Id": "3931204830",
+      "Name": "Master_Volume_GP",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Global\\Master_Volume_GP",
+      "GUID": "{214E5230-9B98-4A2B-86DD-4B4BF66BD9EB}"
      }
     ]
    }
