@@ -140,11 +140,49 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="E_Character_LandHard" ID="{750A3931-1CC3-4C23-97BD-9A3FCD52929C}">
+									<ChildrenList>
+										<Action Name="" ID="{BB2C6B17-CADC-4F84-BA0B-8FD9F0C8204D}" ShortID="998852609">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="LandClothe_Hard_RND" ID="{1F0DF46A-B60F-4BD9-BCFB-C7329C0236A8}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Character_LandDeath" ID="{2F9DDAFE-7F02-4A6E-9897-BF9492A319B3}">
+									<ChildrenList>
+										<Action Name="" ID="{057CDEF7-3201-4ABC-A599-0B102C7A2C2F}" ShortID="639540510">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="LandClothe_Hard_RND" ID="{1F0DF46A-B60F-4BD9-BCFB-C7329C0236A8}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{091AD0FC-38C5-4D73-8325-89F3E4FFAEE3}" ShortID="659606581">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="LandDeath_RND" ID="{3349E613-0751-466E-85BB-2A097E9B3143}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Interractions" ID="{1AF7EB15-0F4A-4589-8C1A-7858E5A028AB}" ShortID="721422149">
 							<ChildrenList>
-								<Event Name="E_Character_ClimbLadder" ID="{73DD60F1-5CBA-4016-8853-EBB50D50EA53}">
+								<Event Name="E_Character_ClimbLadder_Foot" ID="{73DD60F1-5CBA-4016-8853-EBB50D50EA53}">
 									<ChildrenList>
 										<Action Name="" ID="{272F8F2C-79A3-4F71-9043-5390C1D87CF3}" ShortID="1013908792">
 											<PropertyList>
@@ -152,7 +190,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="LadderClimb_SEQ" ID="{DD693375-3298-4379-A50C-3749E8C61255}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+													<ObjectRef Name="LadderFoot_RND" ID="{C38A82BD-C03A-4794-85CF-23D7C3B5FEBF}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -268,6 +306,30 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="Char_Container_Open_SWITCH" ID="{7884B4A4-71E4-453A-B1E2-326FE325DBBE}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Character_ClimbLadder_Hand" ID="{7F43198B-F934-4AEF-9CFB-E1941406A519}">
+									<ChildrenList>
+										<Action Name="" ID="{C626B501-213C-44A1-AA03-D9FBEDD94EC7}" ShortID="430619816">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="LadderHand_RND" ID="{48688EC3-643D-490E-A197-6DBDD35FB582}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{117DB3AC-3B56-4F72-A6CD-A66B23F8FA58}" ShortID="930438480">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Clothes_Walking_RND" ID="{A990149D-8D5F-41D3-9F0F-B321E76449C2}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -602,7 +664,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Ship_Health_BLEND" ID="{7F2C6DC2-F900-4774-B380-2CFA44BF00F7}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+													<ObjectRef Name="Ship_Health_Global_BLEND" ID="{FCF7594C-219F-4EDC-A809-4BAB0E7AA298}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -613,6 +675,26 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="Ship_WaterSpeed_BLEND" ID="{86D9DD82-BD1B-4167-A976-E7A0257F2C0B}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{2DDCC3A8-2800-436F-BE38-C4261734ECEC}" ShortID="213120771">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="No_OutCurrent" ID="{CF0D6809-D32C-401F-9710-092996474C8B}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{B2C257FC-D6AA-42CA-8EF8-F8D5E50E1A96}" ShortID="324421590">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ship_Current_SWITCH" ID="{13230068-6B71-4212-9905-1968BF3752E1}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

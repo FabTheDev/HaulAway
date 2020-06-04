@@ -43,6 +43,7 @@
 					<ChildrenList>
 						<Bus Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}">
 							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
 								<Property Name="Lowpass" Type="int16">
 									<RTPCList>
 										<RTPC Name="" ID="{41867B40-6C69-459E-8909-4E0CF75B6E63}" ShortID="583886207">
@@ -72,6 +73,7 @@
 										</RTPC>
 									</RTPCList>
 								</Property>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<RTPCList>
 										<RTPC Name="" ID="{9B3231B2-8B34-4777-88C5-406A52C57B91}" ShortID="397493857">
@@ -125,6 +127,7 @@
 						</Bus>
 						<Bus Name="MUSIC_BUS" ID="{E98A5F2E-E786-43DB-8254-3BEE4959E4AF}">
 							<PropertyList>
+								<Property Name="Color" Type="int16" Value="11"/>
 								<Property Name="Lowpass" Type="int16">
 									<RTPCList>
 										<RTPC Name="" ID="{E8BE1AF0-729A-40BF-9120-D9354592FD16}" ShortID="1030727728">
@@ -154,6 +157,7 @@
 										</RTPC>
 									</RTPCList>
 								</Property>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<RTPCList>
 										<RTPC Name="" ID="{8CEE326E-4CC4-4F1C-9CDF-3718A8E50B6E}" ShortID="40546951">
@@ -187,6 +191,8 @@
 						</Bus>
 						<Bus Name="VOICE_BUS" ID="{17A34A55-2233-47D9-9879-1C26277B1B04}">
 							<PropertyList>
+								<Property Name="Color" Type="int16" Value="2"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<RTPCList>
 										<RTPC Name="" ID="{6F5D8B9C-D63C-44A8-8C2E-E1D1F4FA2E38}" ShortID="254216082">
@@ -255,6 +261,8 @@
 						</Bus>
 						<Bus Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}">
 							<PropertyList>
+								<Property Name="Color" Type="int16" Value="19"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<RTPCList>
 										<RTPC Name="" ID="{CC9AD383-D32F-4FDC-B68E-C9315DA2FB31}" ShortID="267698590">

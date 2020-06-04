@@ -5,6 +5,8 @@
 			<ChildrenList>
 				<MusicSwitchContainer Name="Main_Music_SWITCH" ID="{9BAE5B72-2FC7-4F54-ADF0-73EF29AA6804}" ShortID="42603249">
 					<PropertyList>
+						<Property Name="Color" Type="int16" Value="11"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-16.5</Value>

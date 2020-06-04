@@ -59,6 +59,16 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{D2F821A5-0A59-4791-8619-28FD03DF5531}" ShortID="1005366836">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_HA_UI_Book_AddError" ID="{A0911A0D-6BA4-48AD-9F0A-5F98DA203A8A}" WorkUnitID="{BF938DC5-5BE3-4614-9C2E-2820850BD40E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="E_UI_Book_Back" ID="{DFEE069A-BB05-4C0E-81DB-9688884D4BE5}">
@@ -121,6 +131,16 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{E140DFEA-5848-426A-A4C8-3D64AF22392A}" ShortID="731409189">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_HA_UI_Book_AddValidation" ID="{C6212D61-7130-4522-B58A-99A2D859BD7F}" WorkUnitID="{BF938DC5-5BE3-4614-9C2E-2820850BD40E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="E_UI_Book_SubMenuChange" ID="{0C709062-CBDD-41FF-B141-0FE248660AD2}">
@@ -131,7 +151,52 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="UI_Book_SubMenuChange" ID="{9A1C11D1-C866-4326-863F-435F0C4703AC}" WorkUnitID="{BF938DC5-5BE3-4614-9C2E-2820850BD40E}"/>
+											<ObjectRef Name="UI_Book_SubMenuChange_BLEND_STEP" ID="{A25B8B26-F548-4855-8FE4-11C7CFF5ED71}" WorkUnitID="{BF938DC5-5BE3-4614-9C2E-2820850BD40E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_UI_Book_RepairShip" ID="{43B44A57-466D-4CDB-BD78-4C9D8A4B5932}">
+							<ChildrenList>
+								<Action Name="" ID="{8A1FCCD5-DD42-4295-AFD9-64EF3DA47311}" ShortID="488479505">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Book_RepairShip_BLEND_STEP" ID="{CA05CE2A-AD72-4079-9209-4B7B8005B1B5}" WorkUnitID="{BF938DC5-5BE3-4614-9C2E-2820850BD40E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{81712857-E517-4AF3-BA20-6F30BA451B23}" ShortID="592962587">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Book_ValidationClick" ID="{3A1C4CD7-177E-4480-8D17-055588157F8A}" WorkUnitID="{BF938DC5-5BE3-4614-9C2E-2820850BD40E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{CF96BFC0-D82F-4DEB-9E3A-1E85A211D5A9}" ShortID="575100481">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="Delay" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_PositiveDing" ID="{16924F75-6C5E-4268-9CDC-A53BFE01AC77}" WorkUnitID="{BF938DC5-5BE3-4614-9C2E-2820850BD40E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{EF01D66C-FED5-4564-9530-DB3C137258B0}" ShortID="229110704">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_HA_UI_Book_AddValidation" ID="{C6212D61-7130-4522-B58A-99A2D859BD7F}" WorkUnitID="{BF938DC5-5BE3-4614-9C2E-2820850BD40E}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

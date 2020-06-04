@@ -2,25 +2,25 @@
 <ValidationCache Version="1" SchemaVersion="97">
 	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1586538336" DateHigh="0"/>
 	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1586538336" DateHigh="0"/>
-	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1589046618" DateHigh="0"/>
-	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\States\Default Work Unit.wwu" DateLow="1590154437" DateHigh="0"/>
-	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1590153981" DateHigh="0"/>
-	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1590154796" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1591185874" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\States\Default Work Unit.wwu" DateLow="1591192975" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1591195105" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1591195134" DateHigh="0"/>
 	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\Queries\Factory Queries.wwu" DateLow="1586538336" DateHigh="0"/>
 	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1586538336" DateHigh="0"/>
 	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\Presets\Factory Spatial Audio.wwu" DateLow="1586538336" DateHigh="0"/>
 	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\Presets\Default Work Unit.wwu" DateLow="1586538336" DateHigh="0"/>
 	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="1586538336" DateHigh="0"/>
 	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="1586538336" DateHigh="0"/>
-	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1590147569" DateHigh="0"/>
-	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\Interactive Music Hierarchy\Music.wwu" DateLow="1590096839" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1591183798" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\Interactive Music Hierarchy\Music.wwu" DateLow="1591183798" DateHigh="0"/>
 	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1586538336" DateHigh="0"/>
-	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\HaulAwayProject_WwiseProject.wproj" DateLow="1590161901" DateHigh="0"/>
-	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\HaulAwayProject_WwiseProject.Simon.wsettings" DateLow="1590174279" DateHigh="0"/>
-	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1590013372" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\HaulAwayProject_WwiseProject.wproj" DateLow="1591184334" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\HaulAwayProject_WwiseProject.Simon.wsettings" DateLow="1591200467" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1591194528" DateHigh="0"/>
 	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\Events\VOICE.wwu" DateLow="1589902382" DateHigh="0"/>
-	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\Events\UI.wwu" DateLow="1590096803" DateHigh="0"/>
-	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\Events\SFX.wwu" DateLow="1590154675" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\Events\UI.wwu" DateLow="1591200422" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\Events\SFX.wwu" DateLow="1591195105" DateHigh="0"/>
 	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\Events\MUSIC.wwu" DateLow="1586538335" DateHigh="0"/>
 	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\Events\Default Work Unit.wwu" DateLow="1590154675" DateHigh="0"/>
 	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\Effects\Factory Effects.wwu" DateLow="1590144439" DateHigh="0"/>
@@ -31,8 +31,8 @@
 	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1586538335" DateHigh="0"/>
 	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1586538335" DateHigh="0"/>
 	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1590143904" DateHigh="0"/>
-	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\Actor-Mixer Hierarchy\Voice.wwu" DateLow="1590096839" DateHigh="0"/>
-	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\Actor-Mixer Hierarchy\UI.wwu" DateLow="1590096839" DateHigh="0"/>
-	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\Actor-Mixer Hierarchy\SFX.wwu" DateLow="1590154615" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\Actor-Mixer Hierarchy\Voice.wwu" DateLow="1591195551" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\Actor-Mixer Hierarchy\UI.wwu" DateLow="1591200422" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\Actor-Mixer Hierarchy\SFX.wwu" DateLow="1591197238" DateHigh="0"/>
 	<ValidationCacheItem File="D:\GIT REPOSITORIES\HaulAway\HaulAwayProject_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1587485055" DateHigh="0"/>
 </ValidationCache>
