@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="UnrealSoundbank" ID="{B52C9DCE-5CC6-45AA-9CC4-CF614CE69FE7}">
 					<ObjectInclusionList>
-						<ObjectRef Name="E_Character_ClimbLadder" ID="{73DD60F1-5CBA-4016-8853-EBB50D50EA53}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="E_Character_ClimbLadder_Foot" ID="{73DD60F1-5CBA-4016-8853-EBB50D50EA53}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Mus_Set_Storm_None" ID="{75C6A7F6-48BE-402A-B226-2810991C5883}" WorkUnitID="{0ED7EBA1-F621-4832-9054-98078A25E231}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Voice_HA_See_WeirdPlace" ID="{FAEA8982-A3F9-406D-992E-E8A54A7D92F1}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Ship_Enter_Hold" ID="{47F8F7D5-0338-4070-8140-A6A7BCF20A75}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}" Origin="Manual" Filter="7"/>
@@ -113,11 +113,13 @@
 						<ObjectRef Name="E_STOP_AllVoices" ID="{0F26AA8A-3221-4A13-8722-B461DE6BD4C4}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Ship_Tiller_Turning" ID="{09A2607C-CC76-4A48-8C98-57CF4D4D38AB}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Voice_Damaged_IKnowItsHard" ID="{8AE63DD1-0D72-4A6E-B51D-66BED231513D}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="E_Character_LandDeath" ID="{2F9DDAFE-7F02-4A6E-9897-BF9492A319B3}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Mus_Resume_Music" ID="{B75C3503-7176-4A76-AB03-A97B84B8DFDA}" WorkUnitID="{0ED7EBA1-F621-4832-9054-98078A25E231}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Mus_Set_Storm_Appoaching" ID="{1863A054-F709-4AAA-8A18-27B1EE6C2022}" WorkUnitID="{0ED7EBA1-F621-4832-9054-98078A25E231}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Voice_HA_See_Reefs" ID="{73D9F1A2-1A92-4AB7-8A84-3CA236B7DC94}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Mus_Set_Standby_Jingle" ID="{1A1405B3-7C1F-4AD2-971F-2D1ABEAF6120}" WorkUnitID="{0ED7EBA1-F621-4832-9054-98078A25E231}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Voice_Anecdote_MonstersLurkingBelow" ID="{653C5690-F010-4AEB-AEBF-57135414AF4E}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="E_Character_ClimbLadder_Hand" ID="{7F43198B-F934-4AEF-9CFB-E1941406A519}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Character_Container_Open" ID="{CADC4524-BABD-4AFE-BBB2-033126199ABF}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Voice_Found_Compass" ID="{48B9B2AF-55FA-4B2A-B415-4B905ED0940F}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Voice_HA_ColdWater_ItsSoCold" ID="{F09D40B0-C63E-4B31-8CEC-A6C1DF69B9D5}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
@@ -137,6 +139,7 @@
 						<ObjectRef Name="E_UI_Book_Back" ID="{DFEE069A-BB05-4C0E-81DB-9688884D4BE5}" WorkUnitID="{8A36F450-6135-4EB0-87E8-D4540DB8E015}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Voice_Collision_YouCanDoBetterThanThat" ID="{CFDB66EF-6F40-4C13-A1B1-90201C1472FD}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Voice_Cold_LOOP" ID="{4E0C728F-A748-4C19-BC09-28D3C8631C4C}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="E_Character_LandHard" ID="{750A3931-1CC3-4C23-97BD-9A3FCD52929C}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Voice_HA_See_Lighthouse" ID="{934499C2-93FE-4C70-9756-3E8268C9BB94}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Voice_Humming_06" ID="{2A1A3D31-46AC-4C79-8F1B-6874A6AACD00}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Character_Footstep" ID="{EFA52787-E6B3-4C96-A54B-1B96A6DD972E}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}" Origin="Manual" Filter="7"/>

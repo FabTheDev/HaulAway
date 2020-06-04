@@ -6,6 +6,7 @@
 				<ActorMixer Name="Voice Global" ID="{05AF76D9-562A-43AC-BDD7-94D03609A2B9}" ShortID="393394973">
 					<PropertyList>
 						<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+						<Property Name="Color" Type="int16" Value="2"/>
 						<Property Name="Highpass" Type="int16">
 							<ValueList>
 								<Value>35</Value>
@@ -21,6 +22,12 @@
 						<Property Name="MaxSoundPerInstance" Type="int16">
 							<ValueList>
 								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="RenderEffect0" Type="bool">
+							<ValueList>
+								<Value>True</Value>
 							</ValueList>
 						</Property>
 						<Property Name="UseMaxSoundPerInstance" Type="bool">
@@ -499,6 +506,11 @@
 										<Property Name="Priority" Type="int16">
 											<ValueList>
 												<Value>40</Value>
+											</ValueList>
+										</Property>
+										<Property Name="RenderEffect0" Type="bool">
+											<ValueList>
+												<Value>True</Value>
 											</ValueList>
 										</Property>
 										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
@@ -2276,6 +2288,7 @@
 							<ChildrenList>
 								<ActorMixer Name="Cold" ID="{4C8A0500-6108-4A51-A7AA-16715352B07B}" ShortID="213862944">
 									<PropertyList>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="OverridePriority" Type="bool" Value="True"/>
 										<Property Name="Priority" Type="int16">
 											<ValueList>
@@ -3180,6 +3193,7 @@
 								</ActorMixer>
 								<ActorMixer Name="Drowned" ID="{DE136250-1509-4D34-8E0C-0B458A2BAAE0}" ShortID="809047283">
 									<PropertyList>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="OverridePriority" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
@@ -3286,6 +3300,7 @@
 								</ActorMixer>
 								<ActorMixer Name="Drowning" ID="{6755A3A1-66A6-4037-8A77-AD8074D84D23}" ShortID="436220877">
 									<PropertyList>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="OverridePriority" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
