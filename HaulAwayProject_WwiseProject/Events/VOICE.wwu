@@ -1244,6 +1244,36 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="E_Voice_StrongEffort_STOP_LOOP" ID="{540CE3F8-7FF2-480F-8654-243B3B0242E7}">
+							<ChildrenList>
+								<Action Name="" ID="{05F4F2C8-4010-4866-A8AD-D95D65C7A5CE}" ShortID="1009426328">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Voice_StrongEffort_LOOP_RND" ID="{E16F8BCA-DC0D-4660-AE97-3DAED7721DE7}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Voice_LittleEffort_STOP_LOOP" ID="{F6B5C5BB-D0D7-453B-8514-952D89C81646}">
+							<ChildrenList>
+								<Action Name="" ID="{FC8A8CE8-0E3E-40F7-ACF9-1D8EE5730ECB}" ShortID="714605096">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Voice_LittleEffort_LOOP_RND" ID="{B9333BD2-6D12-472C-B4D9-0DA5A9B63792}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="E_STOP_AllVoices" ID="{0F26AA8A-3221-4A13-8722-B461DE6BD4C4}">
