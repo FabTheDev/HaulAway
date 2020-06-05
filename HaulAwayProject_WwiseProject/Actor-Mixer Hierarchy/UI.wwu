@@ -3,435 +3,1093 @@
 	<AudioObjects>
 		<WorkUnit Name="UI" ID="{BF938DC5-5BE3-4614-9C2E-2820850BD40E}" PersistMode="Standalone">
 			<ChildrenList>
-				<ActorMixer Name="Book" ID="{7F0D74D2-EDFC-453A-9F8E-D3BB62B96D1E}" ShortID="167642473">
+				<ActorMixer Name="UI" ID="{7BCB94EC-C585-4390-B0F5-23F53A9C1670}" ShortID="687649459">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="19"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+							<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="UI_Book_Back" ID="{54DACABE-B76F-4227-960E-11FFCD0D686B}" ShortID="102302566">
-							<PropertyList>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{1EADAC89-6DEC-4FF3-BA84-A57D16CF3A49}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="100"/>
-													<Property Name="Min" Type="Real64" Value="-100"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-							</PropertyList>
+						<ActorMixer Name="Book" ID="{7F0D74D2-EDFC-453A-9F8E-D3BB62B96D1E}" ShortID="167642473">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+									<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="HA_back_02" ID="{EF78071F-9220-4D39-AE34-EAE919713AEE}">
+								<Sound Name="UI_Book_Back" ID="{54DACABE-B76F-4227-960E-11FFCD0D686B}" ShortID="102302566">
 									<PropertyList>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.182784378591619"/>
-										<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-										<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-										<Property Name="TrimEnd" Type="Real64" Value="0.707296073680613"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{1EADAC89-6DEC-4FF3-BA84-A57D16CF3A49}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>HA_back_02.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="308523115"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="HA_back_02" ID="{EF78071F-9220-4D39-AE34-EAE919713AEE}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="UI_Book_OpenMenu" ID="{E9F399A1-8CD8-4109-A118-18D3F4C6433F}" ShortID="756808996">
-							<PropertyList>
-								<Property Name="OverrideEffect" Type="bool" Value="True"/>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{174CBA67-67FF-4115-8779-15D34223F341}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="100"/>
-													<Property Name="Min" Type="Real64" Value="-100"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="SFX_HA_UI_Book_OpenMenu" ID="{C47922AC-8DE0-4AFA-B8B8-E80C75030A54}">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="HA_back_02" ID="{EF78071F-9220-4D39-AE34-EAE919713AEE}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.182784378591619"/>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.707296073680613"/>
+												<Property Name="VolumeOffset" Type="Real64">
+													<ValueList>
+														<Value>6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>HA_back_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="308523115"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="HA_back_02" ID="{EF78071F-9220-4D39-AE34-EAE919713AEE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UI_Book_OpenMenu" ID="{E9F399A1-8CD8-4109-A118-18D3F4C6433F}" ShortID="756808996">
 									<PropertyList>
-										<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-										<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-										<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-										<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{174CBA67-67FF-4115-8779-15D34223F341}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>SFX_HA_UI_Book_OpenMenu.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="730263138"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="SFX_HA_UI_Book_OpenMenu" ID="{C47922AC-8DE0-4AFA-B8B8-E80C75030A54}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="UI_Book_SubMenuChange" ID="{9A1C11D1-C866-4326-863F-435F0C4703AC}" ShortID="587237465">
-							<PropertyList>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{B8F19ACB-D94B-4B9D-86BC-09D1AE25DE5B}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="100"/>
-													<Property Name="Min" Type="Real64" Value="-100"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="HA_paper_sheet_02" ID="{C87A3B58-C8D1-43D0-9C9B-093F2A2FE26B}">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_HA_UI_Book_OpenMenu" ID="{C47922AC-8DE0-4AFA-B8B8-E80C75030A54}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_HA_UI_Book_OpenMenu.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="730263138"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_HA_UI_Book_OpenMenu" ID="{C47922AC-8DE0-4AFA-B8B8-E80C75030A54}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UI_Book_ValidationClick" ID="{3A1C4CD7-177E-4480-8D17-055588157F8A}" ShortID="343053826">
 									<PropertyList>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.0365796912372255"/>
-										<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-										<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-										<Property Name="TrimEnd" Type="Real64" Value="0.373635417637375"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>HA_paper_sheet_02.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="545359890"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="HA_paper_sheet_02" ID="{C87A3B58-C8D1-43D0-9C9B-093F2A2FE26B}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="UI_Book_ValidationClick" ID="{3A1C4CD7-177E-4480-8D17-055588157F8A}" ShortID="343053826">
-							<PropertyList>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{1B05BD50-4ECA-4CD0-A882-9BE4F0435BBA}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="100"/>
-													<Property Name="Min" Type="Real64" Value="-100"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-7</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="HA_submenu_change_03" ID="{8EA5BC9B-6ACB-46C1-A9E4-EDAAE53C0AE9}">
-									<PropertyList>
-										<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-										<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-										<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-										<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>HA_submenu_change_03.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="70054643"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="HA_submenu_change_03" ID="{8EA5BC9B-6ACB-46C1-A9E4-EDAAE53C0AE9}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="UI_Book_Error" ID="{0FD4F3F0-A8E5-4BF1-B819-6B0B9DD4E7DE}" ShortID="74656822">
-							<PropertyList>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{B1ABFF18-1F00-469A-9A44-342D1F570BAB}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="100"/>
-													<Property Name="Min" Type="Real64" Value="-100"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="HA_validate_light_01" ID="{34DC14BC-A0AE-4240-BC0F-7EEB676B7EEF}">
-									<PropertyList>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.0199782561426397"/>
-										<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-										<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-										<Property Name="TrimEnd" Type="Real64" Value="0.353900537383903"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>HA_validate_light_01.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="492297824"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="HA_validate_light_01" ID="{34DC14BC-A0AE-4240-BC0F-7EEB676B7EEF}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="UI_Book_LightValidation" ID="{CEF1EC36-1971-4027-A35A-7FE7D35A597D}" ShortID="11322209">
-							<PropertyList>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{4129F137-8402-491E-AD04-60DDF56D1796}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="100"/>
-													<Property Name="Min" Type="Real64" Value="-100"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="HA_validate_light_02" ID="{1C76ED4E-7836-49DF-851F-A9DE174DAD4B}">
-									<PropertyList>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.0515211381356195"/>
-										<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-										<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-										<Property Name="TrimEnd" Type="Real64" Value="0.357427895815861"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>HA_validate_light_02.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="77946487"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="HA_validate_light_02" ID="{1C76ED4E-7836-49DF-851F-A9DE174DAD4B}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="UI_Book_StrongValidation" ID="{AF0FAEFC-4BA1-4844-8EE2-806190AE0A3D}" ShortID="73638811">
-							<PropertyList>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{66A4A43B-C2B1-48DB-987F-DC98A6FB657C}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="100"/>
-													<Property Name="Min" Type="Real64" Value="-100"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="HA_validate_strong_04" ID="{33620E50-07CE-454B-AF04-918689A355DA}">
-									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="0.284273289224366"/>
-										<Property Name="FadeInShape" Type="int16" Value="4"/>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.0418048954741714"/>
-										<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-										<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="0.0167219581896686"/>
-										<Property Name="TrimEnd" Type="Real64" Value="0.944790637716275"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>HA_validate_strong_04.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="43340580"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="HA_validate_strong_04" ID="{33620E50-07CE-454B-AF04-918689A355DA}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="UI_Book_Hightlight" ID="{F8F98EB5-6689-49C4-8E37-A292EE589FAC}" ShortID="617019548">
-							<PropertyList>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{21857439-129C-4AF2-8B93-3D4525D7AE00}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="100"/>
-													<Property Name="Min" Type="Real64" Value="-100"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="HA_button_highlight_03" ID="{9CC739F4-FC9B-46F8-AD26-7686481E98E1}">
-									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="0.0161003556673811"/>
-										<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-										<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="0.431489531885814"/>
-										<Property Name="TrimEnd" Type="Real64" Value="0.753496645233436"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>HA_button_highlight_03.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="300410905"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="HA_button_highlight_03" ID="{9CC739F4-FC9B-46F8-AD26-7686481E98E1}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="UI_Book_MapMark" ID="{F8A36213-F66D-4A9E-9E79-39EA596ED2F6}" ShortID="346652086">
-							<PropertyList>
-								<Property Name="Highpass" Type="int16">
-									<ValueList>
-										<Value>37</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{D7DC83D0-AE12-42F8-85C2-DB024A3429E6}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="100"/>
-													<Property Name="Min" Type="Real64" Value="-100"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="HA_map_mark_01" ID="{C89A6273-C10C-483B-8616-6B25501EBE6D}">
-									<PropertyList>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.0608815581026931"/>
-										<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-										<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-										<Property Name="TrimEnd" Type="Real64" Value="0.536518730779983"/>
-										<Property Name="VolumeOffset" Type="Real64">
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{1B05BD50-4ECA-4CD0-A882-9BE4F0435BBA}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>6</Value>
+												<Value>-7</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>HA_map_mark_01.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="397007636"/>
-									</MediaIDList>
-								</AudioFileSource>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="HA_submenu_change_03" ID="{8EA5BC9B-6ACB-46C1-A9E4-EDAAE53C0AE9}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0166526884726493"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.253953499207902"/>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.118650405367626"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.755615739446463"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>HA_submenu_change_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="70054643"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="HA_submenu_change_03" ID="{8EA5BC9B-6ACB-46C1-A9E4-EDAAE53C0AE9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UI_Book_Error" ID="{0FD4F3F0-A8E5-4BF1-B819-6B0B9DD4E7DE}" ShortID="74656822">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{B1ABFF18-1F00-469A-9A44-342D1F570BAB}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="HA_validate_light_01" ID="{34DC14BC-A0AE-4240-BC0F-7EEB676B7EEF}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0199782561426397"/>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.353900537383903"/>
+												<Property Name="VolumeOffset" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>HA_validate_light_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="492297824"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="HA_validate_light_01" ID="{34DC14BC-A0AE-4240-BC0F-7EEB676B7EEF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UI_Book_LightValidation" ID="{CEF1EC36-1971-4027-A35A-7FE7D35A597D}" ShortID="11322209">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{4129F137-8402-491E-AD04-60DDF56D1796}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="HA_validate_light_02" ID="{1C76ED4E-7836-49DF-851F-A9DE174DAD4B}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0515211381356195"/>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.357427895815861"/>
+												<Property Name="VolumeOffset" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>HA_validate_light_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="77946487"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="HA_validate_light_02" ID="{1C76ED4E-7836-49DF-851F-A9DE174DAD4B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UI_Book_StrongValidation" ID="{AF0FAEFC-4BA1-4844-8EE2-806190AE0A3D}" ShortID="73638811">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{66A4A43B-C2B1-48DB-987F-DC98A6FB657C}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="HA_validate_strong_04" ID="{33620E50-07CE-454B-AF04-918689A355DA}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.271731820582114"/>
+												<Property Name="FadeInShape" Type="int16" Value="8"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0418048954741714"/>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0961512595905942"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.944790637716275"/>
+												<Property Name="VolumeOffset" Type="Real64">
+													<ValueList>
+														<Value>6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>HA_validate_strong_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="43340580"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="HA_validate_strong_04" ID="{33620E50-07CE-454B-AF04-918689A355DA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UI_Book_Hightlight" ID="{F8F98EB5-6689-49C4-8E37-A292EE589FAC}" ShortID="617019548">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{21857439-129C-4AF2-8B93-3D4525D7AE00}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="HA_button_highlight_03" ID="{9CC739F4-FC9B-46F8-AD26-7686481E98E1}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0161003556673811"/>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.431489531885814"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.753496645233436"/>
+												<Property Name="VolumeOffset" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>HA_button_highlight_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="300410905"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="HA_button_highlight_03" ID="{9CC739F4-FC9B-46F8-AD26-7686481E98E1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UI_Book_MapMark" ID="{F8A36213-F66D-4A9E-9E79-39EA596ED2F6}" ShortID="346652086">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>37</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{D7DC83D0-AE12-42F8-85C2-DB024A3429E6}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="HA_map_mark_01" ID="{C89A6273-C10C-483B-8616-6B25501EBE6D}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0608815581026931"/>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.536518730779983"/>
+												<Property Name="VolumeOffset" Type="Real64">
+													<ValueList>
+														<Value>6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>HA_map_mark_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="397007636"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="HA_map_mark_01" ID="{C89A6273-C10C-483B-8616-6B25501EBE6D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<BlendContainer Name="UI_Book_RepairShip_BLEND_STEP" ID="{CA05CE2A-AD72-4079-9209-4B7B8005B1B5}" ShortID="384929713">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SFX_HA_UI_Book_RepairPaperLayer" ID="{2A47508A-6716-4A03-B03F-480D96199A08}" ShortID="363559577">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_HA_UI_Book_RepairPaperLayer" ID="{2410C8ED-2AC3-4B24-A3E5-16EDE1D1E092}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>SFX_HA_UI_Book_RepairPaperLayer.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="134942721"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_HA_UI_Book_RepairPaperLayer" ID="{2410C8ED-2AC3-4B24-A3E5-16EDE1D1E092}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<RandomSequenceContainer Name="UI_Book_Repair_HammerLayer_RND" ID="{01D07032-011E-4451-BCB4-7615809AC6F9}" ShortID="307021751">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="HA_ship_repaired_HammerLayer_01" ID="{F17816A8-EA58-46E1-86C2-0BD6D9FF543D}" ShortID="498818852">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HA_ship_repaired_HammerLayer_01" ID="{A0D31B69-AE3D-48F5-B297-6F5E4B9BCEFB}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0940608206753021"/>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>HA_ship_repaired_HammerLayer_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="441476156"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HA_ship_repaired_HammerLayer_01" ID="{A0D31B69-AE3D-48F5-B297-6F5E4B9BCEFB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="HA_ship_repaired_HammerLayer_02" ID="{73F3C959-A5FB-4CBA-9B25-EDA79E411CBA}" ShortID="514673511">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HA_ship_repaired_HammerLayer_02" ID="{84AC22CC-174A-476E-B144-21C6CD4DF1A4}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0752486565402417"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.178715559283074"/>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>HA_ship_repaired_HammerLayer_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="163169099"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HA_ship_repaired_HammerLayer_02" ID="{84AC22CC-174A-476E-B144-21C6CD4DF1A4}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="HA_ship_repaired_HammerLayer_03" ID="{AA676343-7DFD-4124-BC51-6958829660AD}" ShortID="981703265">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HA_ship_repaired_HammerLayer_03" ID="{13729875-AAF1-4872-AE12-D5AD8E2392B3}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0846547386077718"/>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>HA_ship_repaired_HammerLayer_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="176486213"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HA_ship_repaired_HammerLayer_03" ID="{13729875-AAF1-4872-AE12-D5AD8E2392B3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="UI_Book_Repair_SawLayer_RND" ID="{28541573-6BC8-4D02-9F48-FC1801F64E20}" ShortID="99111340">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="HA_ship_repaired_sawlayer_01" ID="{706B80AE-C7D9-45C4-99EE-617CB55F62C2}" ShortID="341817532">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HA_ship_repaired_sawlayer_01" ID="{AF4AD23C-F277-4FB0-A396-47981A450237}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>HA_ship_repaired_sawlayer_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="525381339"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HA_ship_repaired_sawlayer_01" ID="{AF4AD23C-F277-4FB0-A396-47981A450237}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="HA_ship_repaired_sawlayer_02" ID="{BD61F598-6950-40A1-BF05-2EE0E3FED861}" ShortID="434947583">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HA_ship_repaired_sawlayer_02" ID="{DF28DD48-3E43-4F7B-BA6F-4B80659066F0}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>HA_ship_repaired_sawlayer_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="905215627"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HA_ship_repaired_sawlayer_02" ID="{DF28DD48-3E43-4F7B-BA6F-4B80659066F0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="HA_ship_repaired_sawlayer_03" ID="{D79CC786-A1EA-4ADA-B133-3FBD2B9B8AB0}" ShortID="1015713494">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HA_ship_repaired_sawlayer_03" ID="{AE10FEAC-654B-4051-BD7B-DE37DF33BD9D}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>HA_ship_repaired_sawlayer_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1064669363"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HA_ship_repaired_sawlayer_03" ID="{AE10FEAC-654B-4051-BD7B-DE37DF33BD9D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</BlendContainer>
+								<Sound Name="SFX_HA_UI_Book_AddError" ID="{A0911A0D-6BA4-48AD-9F0A-5F98DA203A8A}" ShortID="715660769">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-19</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_HA_UI_Book_AddError" ID="{BDF5C463-4826-48FC-9F1B-BF64CE58D986}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_HA_UI_Book_AddError.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="289815531"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_HA_UI_Book_AddError" ID="{BDF5C463-4826-48FC-9F1B-BF64CE58D986}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_HA_UI_Book_AddValidation" ID="{C6212D61-7130-4522-B58A-99A2D859BD7F}" ShortID="528995755">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-12</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_HA_UI_Book_AddValidation" ID="{70048A7E-221B-4032-906A-41645ADAB4B6}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_HA_UI_Book_AddValidation.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="978527497"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_HA_UI_Book_AddValidation" ID="{70048A7E-221B-4032-906A-41645ADAB4B6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<BlendContainer Name="UI_Book_SubMenuChange_BLEND_STEP" ID="{A25B8B26-F548-4855-8FE4-11C7CFF5ED71}" ShortID="798729863">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="UI_Book_SubMenuChange" ID="{9A1C11D1-C866-4326-863F-435F0C4703AC}" ShortID="587237465">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{B8F19ACB-D94B-4B9D-86BC-09D1AE25DE5B}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="100"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="HA_paper_sheet_02" ID="{C87A3B58-C8D1-43D0-9C9B-093F2A2FE26B}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0365796912372255"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.373635417637375"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>HA_paper_sheet_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="545359890"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="HA_paper_sheet_02" ID="{C87A3B58-C8D1-43D0-9C9B-093F2A2FE26B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<RandomSequenceContainer Name="UI_Book_TurnPage_RND" ID="{229CAFC3-529C-4D16-A0CE-572F7C77444C}" ShortID="238444729">
+											<PropertyList>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="SFX_HA_UI_Book_TurnPage_01" ID="{E726D5E3-5A3E-4469-9B6C-DF42FF72C734}" ShortID="211342005">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HA_UI_Book_TurnPage_01" ID="{B2A1B400-A344-4DC6-8F3B-B214CDC45560}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_HA_UI_Book_TurnPage_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="350947840"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HA_UI_Book_TurnPage_01" ID="{B2A1B400-A344-4DC6-8F3B-B214CDC45560}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HA_UI_Book_TurnPage_02" ID="{468D0C62-277B-4E84-8EB4-FADDB78D4193}" ShortID="102391650">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HA_UI_Book_TurnPage_02" ID="{7B7DE424-81EF-4648-B3BE-B82D4F3A5CD6}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_HA_UI_Book_TurnPage_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="192251446"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HA_UI_Book_TurnPage_02" ID="{7B7DE424-81EF-4648-B3BE-B82D4F3A5CD6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HA_UI_Book_TurnPage_03" ID="{CA24CE93-9A8B-4523-B8C0-55196DD79EC6}" ShortID="1007173916">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HA_UI_Book_TurnPage_03" ID="{2F4A3F9D-4A34-4B64-B28F-999C8692D910}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_HA_UI_Book_TurnPage_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="738657633"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HA_UI_Book_TurnPage_03" ID="{2F4A3F9D-4A34-4B64-B28F-999C8692D910}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HA_UI_Book_TurnPage_04" ID="{B10F83ED-E6ED-4571-8F63-AE86566CFFE0}" ShortID="555496897">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HA_UI_Book_TurnPage_04" ID="{09F64E71-D11F-4A25-BDD4-388F429943B5}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_HA_UI_Book_TurnPage_04.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="896491241"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HA_UI_Book_TurnPage_04" ID="{09F64E71-D11F-4A25-BDD4-388F429943B5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HA_UI_Book_TurnPage_05" ID="{64078549-BD26-4553-BCC8-C3088974586B}" ShortID="935105299">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HA_UI_Book_TurnPage_05" ID="{B88A3FDA-F8F6-4AE0-AE82-F41332D822EF}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_HA_UI_Book_TurnPage_05.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="994306399"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HA_UI_Book_TurnPage_05" ID="{B88A3FDA-F8F6-4AE0-AE82-F41332D822EF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HA_UI_Book_TurnPage_06" ID="{71A83EFD-E665-4B4A-9A4A-F300E0CD7457}" ShortID="600067172">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HA_UI_Book_TurnPage_06" ID="{AAB9442B-423F-437A-BE36-71183EC91F15}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_HA_UI_Book_TurnPage_06.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="95729030"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HA_UI_Book_TurnPage_06" ID="{AAB9442B-423F-437A-BE36-71183EC91F15}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</BlendContainer>
 							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="HA_map_mark_01" ID="{C89A6273-C10C-483B-8616-6B25501EBE6D}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
+						</ActorMixer>
+						<ActorMixer Name="Feedbacks HUD" ID="{6BF6E773-9079-4B53-9C99-27E42F788A67}" ShortID="173777099">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<ActorMixer Name="Freezing Screen" ID="{0739DCA8-3520-4647-8308-67A7CF3F844E}" ShortID="531407807">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+									</ReferenceList>
+								</ActorMixer>
+								<ActorMixer Name="Heartbeat" ID="{CBE4DB78-FC2C-4102-B297-6B8B84040615}" ShortID="136281263">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+									</ReferenceList>
+								</ActorMixer>
+								<ActorMixer Name="Boat Character Switch" ID="{01A20573-F2BC-4AD3-BB07-8F0B7DA94566}" ShortID="393811923">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+									</ReferenceList>
+								</ActorMixer>
+								<ActorMixer Name="Positive Ding" ID="{2ED25448-5BA0-40EF-AE80-C6B4E36F682F}" ShortID="1071782830">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SFX_PositiveDing" ID="{16924F75-6C5E-4268-9CDC-A53BFE01AC77}" ShortID="388948096">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="ATT_Character" ID="{1DB49B5E-AD01-4559-90EB-186A231DFDB6}" WorkUnitID="{ECCA167F-1726-4A47-BB4C-2B3121B715A3}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+												<Reference Name="UserAuxSend1">
+													<ObjectRef Name="Cave_Acoustic_SFX_AUX" ID="{01568535-8555-4C9B-B2EA-164F84B37D78}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_HA_Character_FX_Pickup" ID="{C746AA8D-8EF8-45B2-A663-DB7BD20808B5}">
+													<PropertyList>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>10</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>SFX_HA_Character_FX_Pickup.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="78585654"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_HA_Character_FX_Pickup" ID="{C746AA8D-8EF8-45B2-A663-DB7BD20808B5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</ActorMixer>
+							</ChildrenList>
+						</ActorMixer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

@@ -16,21 +16,39 @@
 								</StateGroup>
 							</ChildrenList>
 						</Folder>
-					</ChildrenList>
-				</Folder>
-				<Folder Name="Ship" ID="{0B1FA637-5DB3-468E-B333-08C2930ED6CC}" ShortID="52851803">
-					<ChildrenList>
-						<Folder Name="Sail" ID="{48B3887A-2FC0-4A27-A55E-B73B4F4A67A1}" ShortID="384205075">
+						<Folder Name="Interaction" ID="{FD0E720F-C683-4081-AA67-AAE84D8C7DE1}" ShortID="418018560">
 							<ChildrenList>
-								<StateGroup Name="Ship_IsThereAPulley" ID="{F54E9215-423F-44C2-8279-05D3CEB5D50B}">
+								<StateGroup Name="ContainerType_STATE" ID="{573C1CFD-673D-493A-9878-F70EF1AB214D}">
+									<PropertyList>
+										<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+									</PropertyList>
 									<ChildrenList>
-										<State Name="None" ID="{B83E4870-EE12-480B-A54C-32436863F222}"/>
-										<State Name="Pulley" ID="{EF571314-96FA-4E21-B797-7371B66B4B91}"/>
-										<State Name="No_Pulley" ID="{285D0B37-CA73-4254-B956-940AB9792C61}"/>
+										<State Name="None" ID="{D4F8615F-D5D9-4AD2-B41C-81F651EB2E30}"/>
+										<State Name="Barrel" ID="{8FC01A57-A9D0-4A84-86BD-1EDF59C3F5DE}"/>
+										<State Name="Crate" ID="{3EF4FD84-9C0E-4693-B4B9-EABBD5455526}"/>
+										<State Name="Chest" ID="{869F1847-684E-4F64-B817-C82253419E7E}"/>
 									</ChildrenList>
 								</StateGroup>
 							</ChildrenList>
 						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Ship" ID="{0B1FA637-5DB3-468E-B333-08C2930ED6CC}" ShortID="52851803">
+					<ChildrenList>
+						<StateGroup Name="Ship_IsThereAPulley" ID="{F54E9215-423F-44C2-8279-05D3CEB5D50B}">
+							<ChildrenList>
+								<State Name="None" ID="{B83E4870-EE12-480B-A54C-32436863F222}"/>
+								<State Name="Pulley" ID="{EF571314-96FA-4E21-B797-7371B66B4B91}"/>
+								<State Name="No_Pulley" ID="{285D0B37-CA73-4254-B956-940AB9792C61}"/>
+							</ChildrenList>
+						</StateGroup>
+						<StateGroup Name="Ship_IsInCurrent_STATE" ID="{27264874-57B9-4134-8B74-761524D95166}">
+							<ChildrenList>
+								<State Name="None" ID="{7C2BB039-BC85-41ED-9551-86CD8710E47E}"/>
+								<State Name="Yes_InCurrent" ID="{6BB67B6D-4AF2-4A5D-8E8C-2F71D908F44A}"/>
+								<State Name="No_OutCurrent" ID="{CF0D6809-D32C-401F-9710-092996474C8B}"/>
+							</ChildrenList>
+						</StateGroup>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Music" ID="{3B07CDAB-DE57-4EC1-8B18-9BEB5E1C671F}" ShortID="506226600">
