@@ -15,16 +15,6 @@
     "DLL": "AkParametricEQ"
    },
    {
-    "Name": "Wwise Delay",
-    "ID": "6946819",
-    "DLL": "AkDelay"
-   },
-   {
-    "Name": "Wwise Compressor",
-    "ID": "7077891",
-    "DLL": "AkCompressor"
-   },
-   {
     "Name": "Wwise RoomVerb",
     "ID": "7733251",
     "DLL": "AkRoomVerb"

@@ -1,18 +1,16 @@
 Switch Group	ID	Name			Wwise Object Path	Notes
-	430223108	Water_Depth			\Default Work Unit\Character\Footsteps\Water_Depth	
 	4259797720	Thunder_Distance_SWITCH			\Default Work Unit\Weather\Thunder_Distance_SWITCH	
 
 Switch	ID	Name	Switch Group			Notes
-	1976939195	Deep	Water_Depth			
-	2943574119	Shallow	Water_Depth			
 	1449995087	Far_Thunder	Thunder_Distance_SWITCH			
 	3830062896	Near_Thunder	Thunder_Distance_SWITCH			
 
 State Group	ID	Name			Wwise Object Path	Notes
 	623471236	Mus_Storm_Intensity_STATE			\Default Work Unit\Music\Mus_Storm_Intensity_STATE	
-	755124726	Ship_IsThereAPulley			\Default Work Unit\Ship\Sail\Ship_IsThereAPulley	
+	755124726	Ship_IsThereAPulley			\Default Work Unit\Ship\Ship_IsThereAPulley	
 	848394149	Mus_IsInHold_STATE			\Default Work Unit\Music\Mus_IsInHold_STATE	
 	1913733656	Mus_Selector_STATE			\Default Work Unit\Music\Mus_Selector_STATE	
+	2048175480	Ship_IsInCurrent_STATE			\Default Work Unit\Ship\Ship_IsInCurrent_STATE	
 	2767790424	Mus_ShipIsSinking_STATE			\Default Work Unit\Music\Mus_ShipIsSinking_STATE	
 	3166210129	Char_Walk_Run			\Default Work Unit\Character\Footsteps\Char_Walk_Run	
 	3992907366	Mus_CharIsSinging_STATE			\Default Work Unit\Music\Mus_CharIsSinging_STATE	
@@ -40,6 +38,9 @@ State	ID	Name	State Group			Notes
 	3504910062	Storm_Theme	Mus_Selector_STATE			
 	3652298044	Sailing_Theme	Mus_Selector_STATE			
 	3941864196	Jingle_FireLit	Mus_Selector_STATE			
+	390884355	Yes_InCurrent	Ship_IsInCurrent_STATE			
+	495831756	No_OutCurrent	Ship_IsInCurrent_STATE			
+	748895195	None	Ship_IsInCurrent_STATE			
 	748895195	None	Mus_ShipIsSinking_STATE			
 	2571399905	Yes_Ship_Sinking	Mus_ShipIsSinking_STATE			
 	4135774875	No_Ship_Sinking	Mus_ShipIsSinking_STATE			

@@ -1852,7 +1852,7 @@
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-4</Value>
+												<Value>-6</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -13907,13 +13907,6 @@
 											</ReferenceList>
 											<ChildrenList>
 												<SwitchContainer Name="Fttps_Walking_SWITCH" ID="{AE1F5A0C-7166-44E3-9DBB-0BB401C57BEB}" ShortID="739663713">
-													<PropertyList>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-6</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>

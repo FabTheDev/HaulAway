@@ -245,19 +245,20 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Storm_Theme" ID="{F9140ED6-73FA-43E8-A1C7-ED18288192C9}"/>
+						<CurrentStateRef Name="No_OutCurrent" ID="{CF0D6809-D32C-401F-9710-092996474C8B}"/>
+						<CurrentStateRef Name="Jingle_Exploring" ID="{B8D7EBFC-2FA5-4EEB-B70A-9B262FBA7D1E}"/>
 						<CurrentStateRef Name="No_Ship_Sinking" ID="{61F19502-08FC-437E-AFCF-D89896B4FCA5}"/>
 						<CurrentStateRef Name="None" ID="{B83E4870-EE12-480B-A54C-32436863F222}"/>
-						<CurrentStateRef Name="Here_Storm" ID="{A0300296-6DED-4FB9-8C27-F9CECC588BFE}"/>
-						<CurrentStateRef Name="None" ID="{D4F8615F-D5D9-4AD2-B41C-81F651EB2E30}"/>
+						<CurrentStateRef Name="No_Storm" ID="{6CB7680E-6578-4568-8BBF-6F3289ADBFBA}"/>
+						<CurrentStateRef Name="Chest" ID="{869F1847-684E-4F64-B817-C82253419E7E}"/>
 						<CurrentStateRef Name="No_Char_Singing" ID="{CC851A52-942B-4F5D-984D-2F321AFDD69E}"/>
 						<CurrentStateRef Name="Walking" ID="{0DA3EC48-DE20-451C-A639-31F81343B6E8}"/>
 						<CurrentStateRef Name="Out_Hold" ID="{4799B397-87EA-4934-ACC2-73FA0C65A854}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Far_Thunder" ID="{B5D774AC-EFDC-4A3E-8D5C-CC9E48E513CA}"/>
-						<CurrentSwitchRef Name="Wood" ID="{AD02081A-225D-437C-BF52-89E278904486}"/>
-						<CurrentSwitchRef Name="Spyglass" ID="{7CECB4B4-5B45-409E-81D5-101D7BBA4EDC}"/>
+						<CurrentSwitchRef Name="DryDirt" ID="{3ACDF8C5-731A-4217-817C-5A3173606D9C}"/>
+						<CurrentSwitchRef Name="Compass" ID="{CA054260-4F3C-411B-8F93-A47EAE9EAF92}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 				<SoundcasterSession Name="Music" ID="{85F1E3CF-42A7-44DD-B83C-45C26F95EDD2}">

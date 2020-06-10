@@ -62,6 +62,7 @@
 						<ObjectRef Name="E_Character_Jump" ID="{5F613C6B-B30A-4518-AF7A-10E7821DAF20}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Ship_Sheet_Pulling" ID="{2390BF3F-BF98-4523-BDA0-C573538B1C89}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Voice_HA_Amelioration" ID="{91255D42-2303-452D-BB7C-261E0D3E732E}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="E_Voice_LittleEffort_STOP_LOOP" ID="{F6B5C5BB-D0D7-453B-8514-952D89C81646}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Voice_EfforRelease" ID="{4CE5B0BA-1767-456A-AEB9-D6C901FBD7FA}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Character_DiveInWater" ID="{F70F8017-C70D-456E-95CC-51A0FB563ADB}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Voice_Humming_07" ID="{8E769494-E93C-457A-ABC0-868013651DA3}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
@@ -87,6 +88,7 @@
 						<ObjectRef Name="E_Mus_Set_Char_Singing_NO" ID="{323AA92A-059F-47AF-8B83-A0C63F0293B2}" WorkUnitID="{0ED7EBA1-F621-4832-9054-98078A25E231}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Mus_Pause_Music" ID="{33C54356-C04E-47E0-AA2D-E3EA35080350}" WorkUnitID="{0ED7EBA1-F621-4832-9054-98078A25E231}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Voice_Humming_10" ID="{B4958513-F5F7-47FF-A808-1573EE9F21E9}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="E_Voice_StrongEffort_STOP_LOOP" ID="{540CE3F8-7FF2-480F-8654-243B3B0242E7}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Tempest_ThunderHere" ID="{E8BCF84B-9501-4813-9118-FA0B24F9B86E}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Voice_LittleEffort_LOOP" ID="{D757627F-47C9-4816-BA70-F894B2443192}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Enviro_Iceberg_Break_LowSpeed" ID="{B1786F92-3139-4842-B212-C51C9CD211D5}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}" Origin="Manual" Filter="7"/>
@@ -146,6 +148,7 @@
 						<ObjectRef Name="E_Mus_Initiate_Music" ID="{3B75DBEE-0C3B-4CCC-967F-BE9786285E6F}" WorkUnitID="{0ED7EBA1-F621-4832-9054-98078A25E231}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Ship_Sail_SetWindPerfect" ID="{72741832-6F73-4CCE-BF10-5FCE708DB677}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Voice_HA_FirstClue" ID="{C0A4720A-4859-4CD5-8D87-D4F3D07927C0}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="E_UI_Book_RepairShip" ID="{43B44A57-466D-4CDB-BD78-4C9D8A4B5932}" WorkUnitID="{8A36F450-6135-4EB0-87E8-D4540DB8E015}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Ship_Sail_SetWindCorrect" ID="{98D67F20-0951-4CF0-94FD-9052BAFAB0FC}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Voice_HA_See_Icebergs2" ID="{32D60957-9560-4D0E-B432-7045821A7E8D}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Voice_HA_See_Icebergs1" ID="{46042A85-AED3-4D36-9FC1-3100B2A9CE94}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
