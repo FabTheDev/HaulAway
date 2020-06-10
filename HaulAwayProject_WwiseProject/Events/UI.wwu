@@ -202,6 +202,260 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="E_UI_Book_CloseMenu" ID="{54796B78-E3F0-4BE9-BCF0-771DB1CF9593}">
+							<ChildrenList>
+								<Action Name="" ID="{5C0698ED-5983-4381-A73D-65B3019F8D09}" ShortID="1002284767">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Book_CloseMenu" ID="{F125AE84-78FC-43B6-BC1D-DFFF7A8B710F}" WorkUnitID="{BF938DC5-5BE3-4614-9C2E-2820850BD40E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="FreezingScreen" ID="{93A5B305-F3E7-49FF-ACF5-0141C35B5278}" ShortID="926246288">
+					<ChildrenList>
+						<Event Name="E_HUD_FreezingScreen_State1" ID="{D6336358-0708-4FA5-A159-233C6B34B1DB}">
+							<ChildrenList>
+								<Action Name="" ID="{1ECB8397-02FF-48C1-ADAC-17CFB374F95E}" ShortID="88797417">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Freeze_State1" ID="{A8637BB8-9C2B-4109-BCC0-13ED8D99D997}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{3771373A-98A8-45F6-A6A5-FAEC5CBF2E4E}" ShortID="659117235">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="HUD_FreezingScreen_Freeze_RND_LOOP" ID="{5E32A782-22D5-47CB-BF9E-9D9893AA045A}" WorkUnitID="{BF938DC5-5BE3-4614-9C2E-2820850BD40E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_HUD_FreezingScreen_State2" ID="{7180BA8F-3819-428A-A935-B1B912B600F1}">
+							<ChildrenList>
+								<Action Name="" ID="{77EB7F29-7CB7-4206-85DC-15E6967BDD19}" ShortID="550327694">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Freeze_State2" ID="{A58B348C-E4AA-47DA-8009-F08F8A34C70F}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{572CDD8B-B85E-4F67-9BF5-A2DA56D7B993}" ShortID="901057336">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="HUD_FreezingScreen_IceCracks_RND_LOOP" ID="{936E5059-1BF1-438A-977A-180A7DF9E0A9}" WorkUnitID="{BF938DC5-5BE3-4614-9C2E-2820850BD40E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{07DE64F1-13A6-49D1-87A8-AAC6BBA78776}" ShortID="1023581579">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_HA_HUD_FreezingScreen_LowScape" ID="{AF8DFE11-6C35-448A-85CA-4D19F00D3C9D}" WorkUnitID="{BF938DC5-5BE3-4614-9C2E-2820850BD40E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{593AD56F-311F-4462-B735-A1C2F9C8723E}" ShortID="201738329">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="4"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_HA_HUD_FreezingScreen_Heartbeat" ID="{A2CDC196-DD99-4EA6-A858-AD9D5C7D08AC}" WorkUnitID="{BF938DC5-5BE3-4614-9C2E-2820850BD40E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_HUD_FreezingScreen_STOP" ID="{1292AEBC-2DB5-4803-8CD5-D245DDEB17FB}">
+							<ChildrenList>
+								<Action Name="" ID="{A8ABBD32-237B-41A4-B7F4-8ED86F446EEC}" ShortID="724512808">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Freeze_State0" ID="{1C69310C-14BC-4B8C-90AF-35F58067C2CF}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{B3B8190A-A539-486D-BA5B-F3393393997A}" ShortID="1067582748">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_HA_HUD_FreezingScreen_LowScape" ID="{AF8DFE11-6C35-448A-85CA-4D19F00D3C9D}" WorkUnitID="{BF938DC5-5BE3-4614-9C2E-2820850BD40E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{7F52BAD8-7629-4B18-9C54-67A88090CEFD}" ShortID="600183117">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="HUD_FreezingScreen_IceCracks_RND_LOOP" ID="{936E5059-1BF1-438A-977A-180A7DF9E0A9}" WorkUnitID="{BF938DC5-5BE3-4614-9C2E-2820850BD40E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{E6BA28D9-1567-4A06-B2D9-74F5E11440BA}" ShortID="453150231">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="7"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_HA_HUD_FreezingScreen_Heartbeat" ID="{A2CDC196-DD99-4EA6-A858-AD9D5C7D08AC}" WorkUnitID="{BF938DC5-5BE3-4614-9C2E-2820850BD40E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{53733A03-33FB-41AF-986F-E5CE3EFEA8D7}" ShortID="703085384">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="HUD_FreezingScreen_Freeze_RND_LOOP" ID="{5E32A782-22D5-47CB-BF9E-9D9893AA045A}" WorkUnitID="{BF938DC5-5BE3-4614-9C2E-2820850BD40E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="HUD" ID="{DE7BE36C-E7FE-4873-ABC7-ABCE77DFCF69}" ShortID="274486703">
+					<ChildrenList>
+						<Event Name="E_HUD_Possessing_Ship" ID="{AB87C5B6-7B2F-4003-9902-9B5B62431905}">
+							<ChildrenList>
+								<Action Name="" ID="{DCF02FA0-8164-47C8-9DCB-0A2E72483A85}" ShortID="102894789">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="HUD_ShipPossessing_SEQ" ID="{32CB223F-A0AF-4F9F-8694-CE05C278554A}" WorkUnitID="{BF938DC5-5BE3-4614-9C2E-2820850BD40E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_HUD_Possessing_Character" ID="{A261169B-D1A7-499D-85B8-0CB82B57DD22}">
+							<ChildrenList>
+								<Action Name="" ID="{FD09DE6B-9A0A-4664-A432-3ED922CC520B}" ShortID="601818364">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="HUD_PossessingCharacter_Whosh_RND" ID="{ECED197E-D72F-4A7F-A3F9-0C9FA2C97670}" WorkUnitID="{BF938DC5-5BE3-4614-9C2E-2820850BD40E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_HUD_ModuleSelection_MainSail" ID="{78B2445B-7EEF-4D8A-9308-49CBD03F5584}">
+							<ChildrenList>
+								<Action Name="" ID="{01FB621E-39CC-4E08-B1E7-EF02A17FC1F7}" ShortID="101184457">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="HUD_ModuleSelection_GenericWoodClick_RND" ID="{5C9878E8-1BC3-4955-8CD6-8B5A4C5030E3}" WorkUnitID="{BF938DC5-5BE3-4614-9C2E-2820850BD40E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{06321796-8429-47AF-8957-79F3CD237AE3}" ShortID="663953529">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="HUD_ModuleSelection_MainSail_RND" ID="{568D45EA-C52E-40A5-A00C-7CA16ADEFADC}" WorkUnitID="{BF938DC5-5BE3-4614-9C2E-2820850BD40E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_HUD_ModuleSelection_Jib" ID="{46D86D0E-A053-4431-AD4C-5A3FBC77A844}">
+							<ChildrenList>
+								<Action Name="" ID="{011740EC-124F-4CD9-834F-6D792B0D1ABE}" ShortID="154745962">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="HUD_ModuleSelection_GenericWoodClick_RND" ID="{5C9878E8-1BC3-4955-8CD6-8B5A4C5030E3}" WorkUnitID="{BF938DC5-5BE3-4614-9C2E-2820850BD40E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{FE2B81BC-1704-4A0D-B05B-EB692FEFD491}" ShortID="72709332">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="HUD_ModuleSelection_Jib_RND" ID="{920EA9A1-AE31-47CA-A3F2-1233A1413D42}" WorkUnitID="{BF938DC5-5BE3-4614-9C2E-2820850BD40E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_HUD_ModuleSelection_Sheet" ID="{02E8FD5F-A744-42BA-8016-5BC2F7D5A947}">
+							<ChildrenList>
+								<Action Name="" ID="{8FFBEA98-D6CF-48A9-AAB0-3AC12BF50D23}" ShortID="782817712">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="HUD_ModuleSelection_GenericWoodClick_RND" ID="{5C9878E8-1BC3-4955-8CD6-8B5A4C5030E3}" WorkUnitID="{BF938DC5-5BE3-4614-9C2E-2820850BD40E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{F682F13A-9A6A-423C-AF36-0BF1F5F43DCF}" ShortID="841686649">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="HUD_ModuleSelection_Sheet_RND" ID="{84C119E4-EAEC-425F-9D32-DCD0AD811887}" WorkUnitID="{BF938DC5-5BE3-4614-9C2E-2820850BD40E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

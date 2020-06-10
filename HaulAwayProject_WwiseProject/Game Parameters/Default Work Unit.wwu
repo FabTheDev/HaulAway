@@ -79,6 +79,12 @@
 								<Property Name="Max" Type="Real64" Value="1"/>
 							</PropertyList>
 						</GameParameter>
+						<GameParameter Name="GoodCurrent_Factor_GP" ID="{46313E0A-A6EE-4CE2-A6A8-F636E7C7553E}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="1"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+							</PropertyList>
+						</GameParameter>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Global" ID="{B44679C3-FF14-447E-895F-9CB06AF035F4}" ShortID="878799778">
@@ -178,12 +184,6 @@
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
 								<Property Name="Max" Type="Real64" Value="1"/>
 								<Property Name="RTPCRamping" Type="int16" Value="2"/>
-							</PropertyList>
-						</GameParameter>
-						<GameParameter Name="CounterCurrent_Factor_GP" ID="{46313E0A-A6EE-4CE2-A6A8-F636E7C7553E}">
-							<PropertyList>
-								<Property Name="InitialValue" Type="Real64" Value="0"/>
-								<Property Name="Max" Type="Real64" Value="1"/>
 							</PropertyList>
 						</GameParameter>
 					</ChildrenList>

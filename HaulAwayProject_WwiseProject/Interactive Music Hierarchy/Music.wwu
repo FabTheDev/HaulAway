@@ -6289,6 +6289,287 @@
 								</MusicPlaylistItem>
 							</Playlist>
 						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="Jingle_DeathSink_PLAYLIST" ID="{B8DA14C9-C4B5-4B36-9C2A-975532B6B66F}" ShortID="134799189">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="MUS_HA_DeathOrSinkEvent_01" ID="{26F7CE82-7B39-43B8-BC11-E950AA4A15C1}" ShortID="430958415">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="6657.27083333333"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="MUS_HA_DeathOrSinkEvent_01" ID="{3D9124BC-B0DF-4238-875F-D086CC8ABFD9}" ShortID="390125990">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MUS_HA_DeathOrSinkEvent_01" ID="{2990E271-4018-428B-80F1-6F1DF3A3C5D2}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>MUS_HA_DeathOrSinkEvent_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="334202533"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{264E5C3E-AA1E-4C7A-ACBA-5584EEC5F73C}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{1D4F850A-CAE5-4669-8A08-FF0C6E87118A}">
+													<ClipList>
+														<MusicClip Name="MUS_HA_DeathOrSinkEvent_01" ID="{5C3562D0-8090-4E2D-A7AC-66D5A56E7B02}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="6657.27083333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HA_DeathOrSinkEvent_01" ID="{2990E271-4018-428B-80F1-6F1DF3A3C5D2}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{8AF068C5-8C85-4CFE-AA77-B1EABB7DA3A8}"/>
+										<MusicCue Name="Exit Cue" ID="{574C65D6-2711-426E-9E4B-950478981A37}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="6657.27083333333"/>
+											</PropertyList>
+										</MusicCue>
+										<MusicCue Name="NoPlayDeath" ID="{46A9FFD5-4526-4775-B841-BECB3B26B064}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="2"/>
+												<Property Name="TimeMs" Type="Real64" Value="6500"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
+								<MusicSegment Name="MUS_HA_DeathOrSinkEvent_02" ID="{93461D8C-81AA-4909-8F1F-07064D09A1DD}" ShortID="582360208">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="6399.29166666667"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="MUS_HA_DeathOrSinkEvent_02" ID="{E9BC2F71-0C71-4819-9759-9153923351DA}" ShortID="135385626">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MUS_HA_DeathOrSinkEvent_02" ID="{B9BFB43C-969C-441F-9601-CB2ED1ADCDD3}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>MUS_HA_DeathOrSinkEvent_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="512715456"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{4E45B209-604A-4F62-ADE8-FDF8B9BB36F9}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{FB92606A-ACF0-4C09-B0F8-17FEA50DC81D}">
+													<ClipList>
+														<MusicClip Name="MUS_HA_DeathOrSinkEvent_02" ID="{E106489A-6104-4AB8-AF62-FB474FC6D9E6}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="6399.29166666667"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HA_DeathOrSinkEvent_02" ID="{B9BFB43C-969C-441F-9601-CB2ED1ADCDD3}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{F751C921-19FE-402C-AFBC-E421063516CD}"/>
+										<MusicCue Name="Exit Cue" ID="{5E887032-07C1-4F7D-8426-EFCD3E8ED6E8}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="6399.29166666667"/>
+											</PropertyList>
+										</MusicCue>
+										<MusicCue Name="NoPlayDeath" ID="{9FDBF9C8-FB53-4AAE-AC1A-6ECF21F9F11F}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="2"/>
+												<Property Name="TimeMs" Type="Real64" Value="6250"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
+								<MusicSegment Name="MUS_HA_DeathOrSinkEvent_03" ID="{3E1EB592-DA16-4F29-A4B4-90AE0C457332}" ShortID="382128480">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="5943.625"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="MUS_HA_DeathOrSinkEvent_03" ID="{77E856D6-5C2E-4AF9-A983-1C4A040906D1}" ShortID="372052610">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MUS_HA_DeathOrSinkEvent_03" ID="{892A6AC6-84D3-4DC8-84A5-6BF4260A7075}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>MUS_HA_DeathOrSinkEvent_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="161487644"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{084E24BD-E798-4966-A4D4-816ADC0C6D79}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{76FB1BA0-1896-4965-B870-E27C6CE3A6AA}">
+													<ClipList>
+														<MusicClip Name="MUS_HA_DeathOrSinkEvent_03" ID="{9A1BB7D5-034D-45EC-B5ED-BE9666B98A3B}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="5943.625"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HA_DeathOrSinkEvent_03" ID="{892A6AC6-84D3-4DC8-84A5-6BF4260A7075}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{9D13E9F8-04ED-4E75-B782-4BDDD4A00F7E}"/>
+										<MusicCue Name="Exit Cue" ID="{EEA36FB9-EC92-4C1A-8866-62ABFC159749}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="5943.625"/>
+											</PropertyList>
+										</MusicCue>
+										<MusicCue Name="NoPlayDeath" ID="{4265EB79-AC7F-44E6-A054-4559D5E87BD3}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="2"/>
+												<Property Name="TimeMs" Type="Real64" Value="5750"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{AAF64702-7873-449C-9CB0-2D28184E87EF}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{8737CD81-091D-47CC-9C0B-1B6D5C3E5C73}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{17B508E1-A055-4B89-B5E7-C1C0E5E732B7}" ShortID="76832709">
+									<PropertyList>
+										<Property Name="PlayMode" Type="int16" Value="3"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{0E782D43-981F-4DA0-8BE5-13B4512763E0}" ShortID="1047282989">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="MUS_HA_DeathOrSinkEvent_01" ID="{26F7CE82-7B39-43B8-BC11-E950AA4A15C1}"/>
+										</MusicPlaylistItem>
+										<MusicPlaylistItem Name="" ID="{0485BF1D-F7CC-48CD-8706-A5F66AF9CDD8}" ShortID="849776782">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="MUS_HA_DeathOrSinkEvent_02" ID="{93461D8C-81AA-4909-8F1F-07064D09A1DD}"/>
+										</MusicPlaylistItem>
+										<MusicPlaylistItem Name="" ID="{2D464415-B2A3-413D-94EF-76889DF2962F}" ShortID="33592991">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="MUS_HA_DeathOrSinkEvent_03" ID="{3E1EB592-DA16-4F29-A4B4-90AE0C457332}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Playlist>
+						</MusicPlaylistContainer>
 					</ChildrenList>
 					<TransitionList>
 						<MusicTransition Name="Root" ID="{05A8B7D6-CCDA-4BC5-B60A-E5CEBF9EA2DD}">
@@ -6595,6 +6876,31 @@
 										</SourceFadeOut>
 									</TransitionInfo>
 								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{A9BDD2C4-FC83-4230-A045-6E7F002145D5}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="PlayDestinationPreEntry" Type="bool" Value="False"/>
+										<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="Jingle_DeathSink_PLAYLIST" ID="{B8DA14C9-C4B5-4B36-9C2A-975532B6B66F}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{453F34DC-0322-4DE3-8B45-BDEC2A81C55A}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="0.2"/>
+													<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+									</TransitionInfo>
+								</MusicTransition>
 							</ChildrenList>
 							<TransitionInfo/>
 						</MusicTransition>
@@ -6681,6 +6987,14 @@
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="No_Theme_PLAYLIST" ID="{6AF2E3CE-F993-4400-B6D2-42ADA3F5CF08}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="DeathSink_Jingle" ID="{309B6678-F5FB-45E2-9413-63761CE664EA}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="Jingle_DeathSink_PLAYLIST" ID="{B8DA14C9-C4B5-4B36-9C2A-975532B6B66F}" WorkUnitID="{D948F258-381B-44E1-A3CE-B932CB8DFD10}" Platform="Linked"/>
 							</AudioNodeInfo>
 						</Entry>
 					</EntryList>

@@ -33,7 +33,7 @@
 						<ObjectRef Name="E_UI_Book_Hightlight" ID="{0B373985-AAEB-4229-AB09-03C1B85009EC}" WorkUnitID="{8A36F450-6135-4EB0-87E8-D4540DB8E015}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Voice_Anecdote_HowTheyUsedToCallMe" ID="{A1BAA6D6-D61D-4230-ACA2-D79E5D1FE0B5}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Voice_Collision_WhatTheHell" ID="{E96F41E7-CAAD-425C-BD8C-233F822F2C3E}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="E_Voice_InWater_LOOP" ID="{EEBA7EFF-100F-4268-876A-3B788936C9AF}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="E_Voice_Drowning_LOOP" ID="{EEBA7EFF-100F-4268-876A-3B788936C9AF}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Mus_Set_Char_Singing_YES" ID="{80F59379-0A36-4271-BD67-2D0DBE50D43A}" WorkUnitID="{0ED7EBA1-F621-4832-9054-98078A25E231}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_UI_Book_StrongValidation" ID="{C008158F-B19A-428F-B52F-B58B4526A6B1}" WorkUnitID="{8A36F450-6135-4EB0-87E8-D4540DB8E015}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Voice_HA_Success" ID="{F4719C63-822F-4294-97CE-DC9D3FD833BF}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
@@ -125,7 +125,7 @@
 						<ObjectRef Name="E_Character_Container_Open" ID="{CADC4524-BABD-4AFE-BBB2-033126199ABF}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Voice_Found_Compass" ID="{48B9B2AF-55FA-4B2A-B415-4B905ED0940F}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Voice_HA_ColdWater_ItsSoCold" ID="{F09D40B0-C63E-4B31-8CEC-A6C1DF69B9D5}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="E_Voice_InWater_STOP_LOOP" ID="{A7950F02-D9EA-4B3F-AFED-4775826DB6C8}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="E_Voice_Drowning_STOP_LOOP" ID="{A7950F02-D9EA-4B3F-AFED-4775826DB6C8}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Voice_Collision_DamnItISwear" ID="{7C30DF37-0565-4B45-B310-EB59AB13B237}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Voice_Damaged_WeAreAlmostThere" ID="{6B18FBC7-6641-4B4B-AA99-4C439272BEC6}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Voice_Cold_STOP_LOOP" ID="{E671A7E1-7B26-4B5F-B02A-B8A004FA5669}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>

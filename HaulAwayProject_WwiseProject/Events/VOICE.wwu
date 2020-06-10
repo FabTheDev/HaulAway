@@ -1031,9 +1031,21 @@
 						</Event>
 						<Event Name="E_Voice_Cold_LOOP" ID="{4E0C728F-A748-4C19-BC09-28D3C8631C4C}">
 							<ChildrenList>
+								<Action Name="" ID="{A374C32B-FBE1-48A2-BE43-BF57EB33DE1C}" ShortID="314090914">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Drowning" ID="{6755A3A1-66A6-4037-8A77-AD8074D84D23}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{1E25A830-676D-477D-B07F-A41E3BE2858A}" ShortID="709960676">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="Delay" Type="Real64" Value="0.2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -1115,7 +1127,17 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Voice_Drowning_BLEND" ID="{DF1A8137-83BB-49FF-BB69-9DA12644B792}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+											<ObjectRef Name="Drowning" ID="{6755A3A1-66A6-4037-8A77-AD8074D84D23}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{F843DFC2-C200-4969-A211-F3ABB1835DFB}" ShortID="780770496">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Cold" ID="{4C8A0500-6108-4A51-A7AA-16715352B07B}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -1200,11 +1222,23 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="E_Voice_InWater_LOOP" ID="{EEBA7EFF-100F-4268-876A-3B788936C9AF}">
+						<Event Name="E_Voice_Drowning_LOOP" ID="{EEBA7EFF-100F-4268-876A-3B788936C9AF}">
 							<ChildrenList>
+								<Action Name="" ID="{A04FF22D-ABDE-43AE-BE16-50B68E309D41}" ShortID="476264861">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Drowning" ID="{6755A3A1-66A6-4037-8A77-AD8074D84D23}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{D375BB4B-21B2-451B-80C8-DA9F50FE599E}" ShortID="296647821">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="Delay" Type="Real64" Value="0.2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -1223,13 +1257,13 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Voice_Cold_LOOP_RND" ID="{A5999972-502C-47C2-8AF3-48BA1EC87D10}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+											<ObjectRef Name="Cold" ID="{4C8A0500-6108-4A51-A7AA-16715352B07B}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="E_Voice_InWater_STOP_LOOP" ID="{A7950F02-D9EA-4B3F-AFED-4775826DB6C8}">
+						<Event Name="E_Voice_Drowning_STOP_LOOP" ID="{A7950F02-D9EA-4B3F-AFED-4775826DB6C8}">
 							<ChildrenList>
 								<Action Name="" ID="{119BDC9D-7BA7-4F6E-BB2C-AD615DE87414}" ShortID="734099194">
 									<PropertyList>
@@ -1238,7 +1272,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Voice_Drowning_BLEND" ID="{DF1A8137-83BB-49FF-BB69-9DA12644B792}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+											<ObjectRef Name="Drowning" ID="{6755A3A1-66A6-4037-8A77-AD8074D84D23}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -1276,51 +1310,55 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="E_STOP_AllVoices" ID="{0F26AA8A-3221-4A13-8722-B461DE6BD4C4}">
+				<Folder Name="Global" ID="{30A0476E-7A94-4138-ABBB-94A7A4D01724}" ShortID="725489157">
 					<ChildrenList>
-						<Action Name="" ID="{402C1F82-4B32-460E-A2B8-F2CDE8B2D1D8}" ShortID="424049600">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Voice Global" ID="{05AF76D9-562A-43AC-BDD7-94D03609A2B9}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="E_STOP_AllVoices" ID="{0F26AA8A-3221-4A13-8722-B461DE6BD4C4}">
+							<ChildrenList>
+								<Action Name="" ID="{402C1F82-4B32-460E-A2B8-F2CDE8B2D1D8}" ShortID="424049600">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Voice Global" ID="{05AF76D9-562A-43AC-BDD7-94D03609A2B9}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_RESUME_AllVoices" ID="{B304A8D6-706D-489E-B52C-41D4F470249B}">
+							<ChildrenList>
+								<Action Name="" ID="{193281D5-C8DE-4DD0-938F-F4B3E9823304}" ShortID="718744441">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="9"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Voice Global" ID="{05AF76D9-562A-43AC-BDD7-94D03609A2B9}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_PAUSE_AllVoices" ID="{F3C42D5A-E629-46BA-A9D9-644E7B8838F8}">
+							<ChildrenList>
+								<Action Name="" ID="{C7E4C862-8A00-4CD1-B45E-8E576EFC831D}" ShortID="158759910">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="7"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Voice Global" ID="{05AF76D9-562A-43AC-BDD7-94D03609A2B9}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="E_PAUSE_AllVoices" ID="{F3C42D5A-E629-46BA-A9D9-644E7B8838F8}">
-					<ChildrenList>
-						<Action Name="" ID="{C7E4C862-8A00-4CD1-B45E-8E576EFC831D}" ShortID="158759910">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="7"/>
-								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Voice Global" ID="{05AF76D9-562A-43AC-BDD7-94D03609A2B9}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="E_RESUME_AllVoices" ID="{B304A8D6-706D-489E-B52C-41D4F470249B}">
-					<ChildrenList>
-						<Action Name="" ID="{193281D5-C8DE-4DD0-938F-F4B3E9823304}" ShortID="718744441">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="9"/>
-								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Voice Global" ID="{05AF76D9-562A-43AC-BDD7-94D03609A2B9}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
