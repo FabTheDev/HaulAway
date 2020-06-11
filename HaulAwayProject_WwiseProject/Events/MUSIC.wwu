@@ -125,6 +125,20 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="E_Mus_DeathSink" ID="{5F42E903-E130-467C-9E77-62E18BAA536E}">
+							<ChildrenList>
+								<Action Name="" ID="{CCA13627-5576-47AB-A7BC-1EEC2E0E717F}" ShortID="627947041">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="DeathSink_Jingle" ID="{309B6678-F5FB-45E2-9413-63761CE664EA}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Themes" ID="{3789ACF6-1B65-4BF0-A0C3-EF82ACCDC77C}" ShortID="291567389">

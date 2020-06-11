@@ -18,6 +18,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<ActorMixer Name="Book" ID="{7F0D74D2-EDFC-453A-9F8E-D3BB62B96D1E}" ShortID="167642473">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
@@ -92,6 +99,11 @@
 													</Modifier>
 												</ModifierInfo>
 											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
@@ -393,6 +405,11 @@
 													</Modifier>
 												</ModifierInfo>
 											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>8</Value>
+											</ValueList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
@@ -746,6 +763,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<BlendContainer Name="UI_Book_SubMenuChange_BLEND_STEP" ID="{A25B8B26-F548-4855-8FE4-11C7CFF5ED71}" ShortID="798729863">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
@@ -985,6 +1009,49 @@
 										</RandomSequenceContainer>
 									</ChildrenList>
 								</BlendContainer>
+								<Sound Name="UI_Book_CloseMenu" ID="{F125AE84-78FC-43B6-BC1D-DFFF7A8B710F}" ShortID="519443752">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{C74EAA2A-39AB-4EDB-8808-A50EC12A997F}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_UI_Book_CloseMenu" ID="{80D0C874-BB40-4F4C-BD35-56BE39F53B8A}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_UI_Book_CloseMenu.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="636516939"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_UI_Book_CloseMenu" ID="{80D0C874-BB40-4F4C-BD35-56BE39F53B8A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Feedbacks HUD" ID="{6BF6E773-9079-4B53-9C99-27E42F788A67}" ShortID="173777099">
@@ -998,6 +1065,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<ActorMixer Name="Freezing Screen" ID="{0739DCA8-3520-4647-8308-67A7CF3F844E}" ShortID="531407807">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
@@ -1006,8 +1080,333 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SFX_HA_HUD_FreezingScreen_Heartbeat" ID="{A2CDC196-DD99-4EA6-A858-AD9D5C7D08AC}" ShortID="779158692">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_HA_HUD_FreezingScreen_Heartbeat" ID="{862D5456-7085-4707-BBAB-D9B4694C0CB6}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>SFX_HA_HUD_FreezingScreen_Heartbeat.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1072775129"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_HA_HUD_FreezingScreen_Heartbeat" ID="{862D5456-7085-4707-BBAB-D9B4694C0CB6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_HA_HUD_FreezingScreen_LowScape" ID="{AF8DFE11-6C35-448A-85CA-4D19F00D3C9D}" ShortID="647970986">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_HA_HUD_FreezingScreen_LowScape" ID="{9F906FF3-363C-4DBC-997E-EE449CB781EB}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0557858875570776"/>
+														<Property Name="FadeInShape" Type="int16" Value="4"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.00459019461974464"/>
+														<Property Name="FadeOutShape" Type="int16" Value="4"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>SFX_HA_HUD_FreezingScreen_LowScape.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="874040956"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_HA_HUD_FreezingScreen_LowScape" ID="{9F906FF3-363C-4DBC-997E-EE449CB781EB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<RandomSequenceContainer Name="HUD_FreezingScreen_Freeze_RND_LOOP" ID="{5E32A782-22D5-47CB-BF9E-9D9893AA045A}" ShortID="270948058">
+											<PropertyList>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.5"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="SFX_HA_HUD_FreezingScreen_Freeze_01" ID="{60F29226-8C81-45CF-9E00-2346E640F4BF}" ShortID="432512211">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HA_HUD_FreezingScreen_Freeze_01" ID="{DFFF69E5-390B-43EA-A938-5FE2B49102A0}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_HA_HUD_FreezingScreen_Freeze_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1070593751"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HA_HUD_FreezingScreen_Freeze_01" ID="{DFFF69E5-390B-43EA-A938-5FE2B49102A0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HA_HUD_FreezingScreen_Freeze_02" ID="{41EE466F-A381-4DF7-B564-9B42B6081189}" ShortID="916258839">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HA_HUD_FreezingScreen_Freeze_02" ID="{D2378360-C276-49C2-8679-ED879689177A}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_HA_HUD_FreezingScreen_Freeze_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="271680138"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HA_HUD_FreezingScreen_Freeze_02" ID="{D2378360-C276-49C2-8679-ED879689177A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HA_HUD_FreezingScreen_Freeze_03" ID="{8AC5A0AB-68F8-4487-9C96-A703DDBF402E}" ShortID="128797756">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HA_HUD_FreezingScreen_Freeze_03" ID="{99C6B169-8CFA-4EA6-96A7-815701074140}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_HA_HUD_FreezingScreen_Freeze_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="217838631"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HA_HUD_FreezingScreen_Freeze_03" ID="{99C6B169-8CFA-4EA6-96A7-815701074140}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HA_HUD_FreezingScreen_Freeze_04" ID="{C7639045-5AF0-4311-90EA-F59609818A3E}" ShortID="671200497">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HA_HUD_FreezingScreen_Freeze_04" ID="{747AB8A1-EA83-495D-B6BC-71F1A63DA3CA}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_HA_HUD_FreezingScreen_Freeze_04.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="168048145"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HA_HUD_FreezingScreen_Freeze_04" ID="{747AB8A1-EA83-495D-B6BC-71F1A63DA3CA}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="HUD_FreezingScreen_IceCracks_RND_LOOP" ID="{936E5059-1BF1-438A-977A-180A7DF9E0A9}" ShortID="862894037">
+											<PropertyList>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.2"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="SFX_HA_HUD_FreezingScreen_IceCracks_01" ID="{70C62FB7-1E6B-4FC2-956A-70DD80DAD0EA}" ShortID="125754085">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HA_HUD_FreezingScreen_IceCracks_01" ID="{E6EF28EA-29A8-4EE2-8072-749F7681FAF6}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_HA_HUD_FreezingScreen_IceCracks_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="434306384"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HA_HUD_FreezingScreen_IceCracks_01" ID="{E6EF28EA-29A8-4EE2-8072-749F7681FAF6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HA_HUD_FreezingScreen_IceCracks_02" ID="{FAE7965A-CE4E-403B-9EB3-3BA6B7ECD204}" ShortID="1072422544">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HA_HUD_FreezingScreen_IceCracks_02" ID="{DEBEC283-2C27-43F6-9137-E4F9FAB9CFBB}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_HA_HUD_FreezingScreen_IceCracks_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="506887025"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HA_HUD_FreezingScreen_IceCracks_02" ID="{DEBEC283-2C27-43F6-9137-E4F9FAB9CFBB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HA_HUD_FreezingScreen_IceCracks_03" ID="{CA034A86-B54B-4B58-AE66-4D28476B5FA1}" ShortID="805459260">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HA_HUD_FreezingScreen_IceCracks_03" ID="{46F37029-F662-439E-9217-C29171955AA7}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_HA_HUD_FreezingScreen_IceCracks_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1054299345"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HA_HUD_FreezingScreen_IceCracks_03" ID="{46F37029-F662-439E-9217-C29171955AA7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
 								</ActorMixer>
-								<ActorMixer Name="Heartbeat" ID="{CBE4DB78-FC2C-4102-B297-6B8B84040615}" ShortID="136281263">
+								<ActorMixer Name="Ship Character Possessing" ID="{01A20573-F2BC-4AD3-BB07-8F0B7DA94566}" ShortID="393811923">
+									<PropertyList>
+										<Property Name="OverrideConversion" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
@@ -1016,16 +1415,451 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
 										</Reference>
 									</ReferenceList>
-								</ActorMixer>
-								<ActorMixer Name="Boat Character Switch" ID="{01A20573-F2BC-4AD3-BB07-8F0B7DA94566}" ShortID="393811923">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-										</Reference>
-									</ReferenceList>
+									<ChildrenList>
+										<ActorMixer Name="Ship Possessing" ID="{29940AB2-CC29-46A2-B07F-D11FBF322EE7}" ShortID="151609767">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="HUD_ShipPossessing_SEQ" ID="{32CB223F-A0AF-4F9F-8694-CE05C278554A}" ShortID="7400867">
+													<PropertyList>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.8"/>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<BlendContainer Name="HUD_PossessingShip_TillerWosh_BLEND_STEP" ID="{5362B070-1BA9-400E-9C33-60C38F7C7CA3}" ShortID="124641458">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<RandomSequenceContainer Name="HUD_PossessingShip_Wosh_RND" ID="{FB0F1EBC-02A9-4C3B-8C9F-DE4D0587DBB1}" ShortID="1015806204">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="SFX_HA_HUD_PossessingShip_Whosh_01" ID="{EBAA2D23-462F-4A9E-879D-80F4B53B7265}" ShortID="485856917">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="SFX_HA_HUD_PossessingShip_Whosh_01" ID="{3C331C3D-BA96-4C9C-8E08-6F70167B9901}">
+																					<PropertyList>
+																						<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																						<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>SFX_HA_HUD_PossessingShip_Whosh_01.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="695341009"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="SFX_HA_HUD_PossessingShip_Whosh_01" ID="{3C331C3D-BA96-4C9C-8E08-6F70167B9901}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="SFX_HA_HUD_PossessingShip_Whosh_02" ID="{CFB60A83-232F-49CC-AD33-D5B5F90AED05}" ShortID="427695837">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="SFX_HA_HUD_PossessingShip_Whosh_02" ID="{C003DCF7-BF28-4CAA-94A8-0D34187FF5BC}">
+																					<PropertyList>
+																						<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																						<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>SFX_HA_HUD_PossessingShip_Whosh_02.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="865594241"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="SFX_HA_HUD_PossessingShip_Whosh_02" ID="{C003DCF7-BF28-4CAA-94A8-0D34187FF5BC}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="SFX_HA_HUD_PossessingShip_Whosh_03" ID="{8FED1655-B555-4A03-BF4B-DA06237FED9C}" ShortID="942983225">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="SFX_HA_HUD_PossessingShip_Whosh_03" ID="{228C84D3-6A5A-4586-812D-B79A866D451E}">
+																					<PropertyList>
+																						<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																						<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>SFX_HA_HUD_PossessingShip_Whosh_03.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="407327232"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="SFX_HA_HUD_PossessingShip_Whosh_03" ID="{228C84D3-6A5A-4586-812D-B79A866D451E}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+																<RandomSequenceContainer Name="HUD_PossessingShip_TakeTiller_RND" ID="{46BDEB6E-B4A4-436A-9C6F-9A645974E652}" ShortID="803954671">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="SFX_HA_HUD_PossessingShip_TakeTiller_01" ID="{DA61202A-176A-4226-8397-E892B369BB33}" ShortID="774739688">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="SFX_HA_HUD_PossessingShip_TakeTiller_01" ID="{8D7636BD-BD33-4CE6-AFA3-2C55BBABC7DF}">
+																					<PropertyList>
+																						<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																						<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>SFX_HA_HUD_PossessingShip_TakeTiller_01.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="936001869"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="SFX_HA_HUD_PossessingShip_TakeTiller_01" ID="{8D7636BD-BD33-4CE6-AFA3-2C55BBABC7DF}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="SFX_HA_HUD_PossessingShip_TakeTiller_02" ID="{73B6D04A-2BFA-4725-8664-FC48013C90E9}" ShortID="25496850">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="SFX_HA_HUD_PossessingShip_TakeTiller_02" ID="{391314CD-2B33-4046-9727-247FB52D4CFD}">
+																					<PropertyList>
+																						<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																						<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>SFX_HA_HUD_PossessingShip_TakeTiller_02.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="871513447"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="SFX_HA_HUD_PossessingShip_TakeTiller_02" ID="{391314CD-2B33-4046-9727-247FB52D4CFD}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="SFX_HA_HUD_PossessingShip_TakeTiller_03" ID="{BAC77F3A-7DFF-4D4C-AA85-74D023B9B8D4}" ShortID="478753906">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="SFX_HA_HUD_PossessingShip_TakeTiller_03" ID="{3AAD0D5E-8877-4887-B868-3599C4093CB3}">
+																					<PropertyList>
+																						<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																						<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>SFX_HA_HUD_PossessingShip_TakeTiller_03.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="311872826"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="SFX_HA_HUD_PossessingShip_TakeTiller_03" ID="{3AAD0D5E-8877-4887-B868-3599C4093CB3}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+															</ChildrenList>
+														</BlendContainer>
+														<RandomSequenceContainer Name="HUD_PossessingShip_Boom_RND" ID="{CBD2A9C4-F18C-45F1-B588-39BA8585ED15}" ShortID="557410279">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="SFX_HA_HUD_PossessingShip_Boom_01" ID="{6709BEB3-99D9-4F9E-A2CD-85D8C595BF74}" ShortID="157215943">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_HUD_PossessingShip_Boom_01" ID="{ADE57429-08EC-422B-9CEF-4A2CEF264014}">
+																			<PropertyList>
+																				<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_HUD_PossessingShip_Boom_01.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="604905862"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_HUD_PossessingShip_Boom_01" ID="{ADE57429-08EC-422B-9CEF-4A2CEF264014}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_HUD_PossessingShip_Boom_02" ID="{63BECBB1-F001-40CE-9DB7-E029A79A88C7}" ShortID="938880644">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_HUD_PossessingShip_Boom_02" ID="{DF7665AC-748C-44E6-A81D-B5D5F9A050B9}">
+																			<PropertyList>
+																				<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_HUD_PossessingShip_Boom_02.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="396740440"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_HUD_PossessingShip_Boom_02" ID="{DF7665AC-748C-44E6-A81D-B5D5F9A050B9}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_HUD_PossessingShip_Boom_03" ID="{B60D00A3-6ACD-4221-ADEA-2E9E4E40DBA3}" ShortID="247903396">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_HUD_PossessingShip_Boom_03" ID="{82F87B47-6C86-4E0E-AA2A-29C939284248}">
+																			<PropertyList>
+																				<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_HUD_PossessingShip_Boom_03.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="290680667"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_HUD_PossessingShip_Boom_03" ID="{82F87B47-6C86-4E0E-AA2A-29C939284248}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+														</RandomSequenceContainer>
+													</ChildrenList>
+													<Playlist>
+														<ItemRef Name="HUD_PossessingShip_TillerWosh_BLEND_STEP" ID="{5362B070-1BA9-400E-9C33-60C38F7C7CA3}"/>
+														<ItemRef Name="HUD_PossessingShip_Boom_RND" ID="{CBD2A9C4-F18C-45F1-B588-39BA8585ED15}"/>
+													</Playlist>
+												</RandomSequenceContainer>
+											</ChildrenList>
+										</ActorMixer>
+										<ActorMixer Name="Character Possessing" ID="{494A9B0B-9607-486A-B3BA-1DA355DA2CD0}" ShortID="432425442">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="HUD_PossessingCharacter_Whosh_RND" ID="{ECED197E-D72F-4A7F-A3F9-0C9FA2C97670}" ShortID="333584526">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="SFX_HA_HUD_PossessingCharacter_Wosh_01" ID="{D9764C1A-45E2-41CF-AE34-3722C9F8492E}" ShortID="559255238">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="SFX_HA_HUD_PossessingCharacter_Wosh_01" ID="{2E33EDAF-ACFA-4580-AD09-F7FEBF493780}">
+																	<PropertyList>
+																		<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>SFX_HA_HUD_PossessingCharacter_Wosh_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="377130024"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="SFX_HA_HUD_PossessingCharacter_Wosh_01" ID="{2E33EDAF-ACFA-4580-AD09-F7FEBF493780}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="SFX_HA_HUD_PossessingCharacter_Wosh_02" ID="{66DD9D59-938F-4686-8CCE-A2535FF9614E}" ShortID="1060490666">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="SFX_HA_HUD_PossessingCharacter_Wosh_02" ID="{568BB56B-9D1A-4FF5-A4B0-94D0BAF0B5F9}">
+																	<PropertyList>
+																		<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>SFX_HA_HUD_PossessingCharacter_Wosh_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="559285189"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="SFX_HA_HUD_PossessingCharacter_Wosh_02" ID="{568BB56B-9D1A-4FF5-A4B0-94D0BAF0B5F9}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="SFX_HA_HUD_PossessingCharacter_Wosh_03" ID="{1F04E085-2B47-4561-9489-72BF626C5E29}" ShortID="665159560">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="SFX_HA_HUD_PossessingCharacter_Wosh_03" ID="{DE061A38-AEFE-424D-9629-0B071B3750BB}">
+																	<PropertyList>
+																		<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>SFX_HA_HUD_PossessingCharacter_Wosh_03.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="179068757"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="SFX_HA_HUD_PossessingCharacter_Wosh_03" ID="{DE061A38-AEFE-424D-9629-0B071B3750BB}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+										</ActorMixer>
+									</ChildrenList>
 								</ActorMixer>
 								<ActorMixer Name="Positive Ding" ID="{2ED25448-5BA0-40EF-AE80-C6B4E36F682F}" ShortID="1071782830">
 									<PropertyList>
@@ -1086,6 +1920,653 @@
 												<ActiveSource Name="SFX_HA_Character_FX_Pickup" ID="{C746AA8D-8EF8-45B2-A663-DB7BD20808B5}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
+									</ChildrenList>
+								</ActorMixer>
+								<ActorMixer Name="Hold Interact" ID="{A4B130FC-1D2B-4AA8-A5D1-4256EA529452}" ShortID="1072469316">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="ATT_Ship" ID="{169C76BE-EB0C-49DF-B3D1-FE9C674509EE}" WorkUnitID="{ECCA167F-1726-4A47-BB4C-2B3121B715A3}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+										<Reference Name="UserAuxSend1">
+											<ObjectRef Name="Cave_Acoustic_SFX_AUX" ID="{01568535-8555-4C9B-B2EA-164F84B37D78}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SFX_HA_Ship_leaving_hold" ID="{0ACBE3A8-9A67-4A2B-8DBD-A124AA83EE28}" ShortID="593128330">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+													<ObjectRef Name="Gentle_Program_Compressor_Minus_14dB_RMS" ID="{1595E6B0-DD58-4363-A3F0-DF0C96EC7C17}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_HA_Ship_leaving_hold" ID="{F00B20B3-8E47-4DEC-85A7-C62A7DAA6160}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0208333333333333"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.427083333333333"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0208333333333333"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.78125"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>SFX_HA_Ship_leaving_hold.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="48993912"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_HA_Ship_leaving_hold" ID="{F00B20B3-8E47-4DEC-85A7-C62A7DAA6160}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<RandomSequenceContainer Name="Ship_Entering_Hold_SEQ" ID="{D3AC215F-15AC-48A4-9193-2F85EC15A747}" ShortID="790064912">
+											<PropertyList>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="SFX_HA_Ship_Hold_Open" ID="{C379927F-D47D-46DB-9953-F4884F0F98DA}" ShortID="901151770">
+													<PropertyList>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>16</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>11</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+															<ObjectRef Name="Gentle_Program_Compressor_Minus_14dB_RMS" ID="{1595E6B0-DD58-4363-A3F0-DF0C96EC7C17}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HA_Ship_leaving_hold" ID="{23540DA5-AC8D-4823-B767-4E524599C7D8}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.203125"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0208333333333333"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.16145833333333"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_HA_Ship_leaving_hold.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="627644474"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HA_Ship_leaving_hold" ID="{23540DA5-AC8D-4823-B767-4E524599C7D8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HA_Ship_Hold_Close" ID="{ED18852F-832E-451C-B3CA-9863AF8C0181}" ShortID="3104765">
+													<PropertyList>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>16</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>11</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+															<ObjectRef Name="Gentle_Program_Compressor_Minus_14dB_RMS" ID="{1595E6B0-DD58-4363-A3F0-DF0C96EC7C17}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HA_Ship_entering_hold" ID="{18198D02-D43D-4891-8FDC-4757FFC4F056}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.046875"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.130208333333333"/>
+																<Property Name="TrimBegin" Type="Real64" Value="1.84375"/>
+																<Property Name="TrimEnd" Type="Real64" Value="3.03125"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_HA_Ship_entering_hold.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1063319655"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HA_Ship_entering_hold" ID="{18198D02-D43D-4891-8FDC-4757FFC4F056}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<Playlist>
+												<ItemRef Name="SFX_HA_Ship_Hold_Open" ID="{C379927F-D47D-46DB-9953-F4884F0F98DA}"/>
+												<ItemRef Name="SFX_HA_Ship_Hold_Close" ID="{ED18852F-832E-451C-B3CA-9863AF8C0181}"/>
+											</Playlist>
+										</RandomSequenceContainer>
+										<Sound Name="SFX_Ship_InHold_Ambience" ID="{9974E777-FE58-4366-BFB4-B92C30A9B287}" ShortID="616565794">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>75</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="RenderEffect0" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="RenderEffect1" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="ATT_Ship" ID="{169C76BE-EB0C-49DF-B3D1-FE9C674509EE}" WorkUnitID="{ECCA167F-1726-4A47-BB4C-2B3121B715A3}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+													<ObjectRef Name="Gentle_Program_Compressor_Minus_14dB_RMS" ID="{1595E6B0-DD58-4363-A3F0-DF0C96EC7C17}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="Effect1">
+													<Custom>
+														<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{9A03FD82-92F2-48CB-A86E-7655BA20F309}" ShortID="378256488" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+															<PropertyList>
+																<Property Name="FrequencyBand2" Type="Real32" Value="100"/>
+																<Property Name="GainBand2" Type="Real32" Value="-24"/>
+																<Property Name="QFactorBand2" Type="Real32" Value="11.5"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+												<Reference Name="UserAuxSend1">
+													<ObjectRef Name="Cave_Acoustic_SFX_AUX" ID="{01568535-8555-4C9B-B2EA-164F84B37D78}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_HA_Ship_ship_damaged_high" ID="{50026455-C3DC-4BA1-8821-D497311822F8}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_HA_Ship_ship_damaged_high.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="592199408"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_HA_Ship_ship_damaged_high" ID="{50026455-C3DC-4BA1-8821-D497311822F8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</ActorMixer>
+								<ActorMixer Name="Module Selection" ID="{FB24CCBB-647A-4DC8-98E3-82B0F412C923}" ShortID="692753482">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="HUD_ModuleSelection_GenericWoodClick_RND" ID="{5C9878E8-1BC3-4955-8CD6-8B5A4C5030E3}" ShortID="276045407">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="SFX_HA_HUD_ModuleSelection_GenericWoodClick_01" ID="{41878231-2078-4FC6-9534-740C0375C741}" ShortID="241488533">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HA_HUD_ModuleSelection_GenericWoodClick_01" ID="{06D24305-765A-4C3B-B0E8-72FFA73C3631}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_HA_HUD_ModuleSelection_GenericWoodClick_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="641023618"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HA_HUD_ModuleSelection_GenericWoodClick_01" ID="{06D24305-765A-4C3B-B0E8-72FFA73C3631}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HA_HUD_ModuleSelection_GenericWoodClick_02" ID="{1E485B31-1B95-42AD-83DE-A1E586B788B1}" ShortID="848505695">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HA_HUD_ModuleSelection_GenericWoodClick_02" ID="{173E9FB5-4BEB-46EF-9AC4-7AF959D2D9CD}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_HA_HUD_ModuleSelection_GenericWoodClick_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="239191826"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HA_HUD_ModuleSelection_GenericWoodClick_02" ID="{173E9FB5-4BEB-46EF-9AC4-7AF959D2D9CD}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HA_HUD_ModuleSelection_GenericWoodClick_03" ID="{F239071D-A786-4D49-A39A-3285BA97D90C}" ShortID="907854416">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HA_HUD_ModuleSelection_GenericWoodClick_03" ID="{9A9100A3-B654-40F3-857A-1FD08DB361E8}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_HA_HUD_ModuleSelection_GenericWoodClick_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="741520407"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HA_HUD_ModuleSelection_GenericWoodClick_03" ID="{9A9100A3-B654-40F3-857A-1FD08DB361E8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="HUD_ModuleSelection_Jib_RND" ID="{920EA9A1-AE31-47CA-A3F2-1233A1413D42}" ShortID="633830360">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="SFX_HA_HUD_ModuleSelection_Jib_01" ID="{BF577BB2-AE63-473E-A0E5-32AA51398B66}" ShortID="721634164">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HA_HUD_ModuleSelection_Jib_01" ID="{45DE15A4-E4CB-4A9A-8F6F-392C80BEC8F5}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_HA_HUD_ModuleSelection_Jib_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="546124852"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HA_HUD_ModuleSelection_Jib_01" ID="{45DE15A4-E4CB-4A9A-8F6F-392C80BEC8F5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HA_HUD_ModuleSelection_Jib_02" ID="{65D90962-0178-4DA7-B7D6-2B6B21D9C925}" ShortID="508483354">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HA_HUD_ModuleSelection_Jib_02" ID="{48840ABD-378B-4F28-AA3C-5D94218E902A}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_HA_HUD_ModuleSelection_Jib_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="203197882"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HA_HUD_ModuleSelection_Jib_02" ID="{48840ABD-378B-4F28-AA3C-5D94218E902A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HA_HUD_ModuleSelection_Jib_03" ID="{60C70920-E7AD-4BB5-97B4-B5B242BAB6B0}" ShortID="975111820">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HA_HUD_ModuleSelection_Jib_03" ID="{D8EFE7AE-3270-47AE-A936-036D41E8CCDF}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_HA_HUD_ModuleSelection_Jib_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1018101019"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HA_HUD_ModuleSelection_Jib_03" ID="{D8EFE7AE-3270-47AE-A936-036D41E8CCDF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="HUD_ModuleSelection_MainSail_RND" ID="{568D45EA-C52E-40A5-A00C-7CA16ADEFADC}" ShortID="738145002">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="SFX_HA_HUD_ModuleSelection_MainSail_01" ID="{385766AD-58BD-4D5A-B9EC-A40EDEFC09D4}" ShortID="750653201">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HA_HUD_ModuleSelection_MainSail_01" ID="{459E91D7-5EA6-4243-902F-5EE3907CD8A8}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_HA_HUD_ModuleSelection_MainSail_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="811992905"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HA_HUD_ModuleSelection_MainSail_01" ID="{459E91D7-5EA6-4243-902F-5EE3907CD8A8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HA_HUD_ModuleSelection_MainSail_02" ID="{849F12FD-E1E0-4052-BF57-3464416568D3}" ShortID="90875251">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HA_HUD_ModuleSelection_MainSail_02" ID="{1AD4EE69-341C-400C-9B18-EBE8B17A6D89}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_HA_HUD_ModuleSelection_MainSail_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="37559685"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HA_HUD_ModuleSelection_MainSail_02" ID="{1AD4EE69-341C-400C-9B18-EBE8B17A6D89}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HA_HUD_ModuleSelection_MainSail_03" ID="{8B86C598-45F5-4816-8C2E-E5C2F6B11905}" ShortID="739015317">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HA_HUD_ModuleSelection_MainSail_03" ID="{FBC5CD60-96B2-4B95-88EB-8BAB6238BB4D}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_HA_HUD_ModuleSelection_MainSail_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="587105055"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HA_HUD_ModuleSelection_MainSail_03" ID="{FBC5CD60-96B2-4B95-88EB-8BAB6238BB4D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="HUD_ModuleSelection_Sheet_RND" ID="{84C119E4-EAEC-425F-9D32-DCD0AD811887}" ShortID="229376579">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="SFX_HA_HUD_ModuleSelection_Sheet_01" ID="{A5199690-67CD-4845-A784-492E60A0C244}" ShortID="963625858">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HA_HUD_ModuleSelection_Sheet_01" ID="{DB520C4C-CBA8-41E5-87FC-8639BCCC7D7D}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_HA_HUD_ModuleSelection_Sheet_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="974102065"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HA_HUD_ModuleSelection_Sheet_01" ID="{DB520C4C-CBA8-41E5-87FC-8639BCCC7D7D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HA_HUD_ModuleSelection_Sheet_02" ID="{F7796EC7-B998-4F03-9AF8-AE646553D603}" ShortID="425605818">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HA_HUD_ModuleSelection_Sheet_02" ID="{727A0755-667F-4E8A-969A-5F3577536858}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_HA_HUD_ModuleSelection_Sheet_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1055241029"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HA_HUD_ModuleSelection_Sheet_02" ID="{727A0755-667F-4E8A-969A-5F3577536858}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HA_HUD_ModuleSelection_Sheet_03" ID="{99D9FC32-4FA0-41D5-9AB6-02236D01CF44}" ShortID="1049906663">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="UI_BUS" ID="{47032D69-4570-40DD-B9B1-0C72A8689CCC}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HA_HUD_ModuleSelection_Sheet_03" ID="{42BAAEFA-5C22-4A57-9F80-2DC85372442A}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_HA_HUD_ModuleSelection_Sheet_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="888127442"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HA_HUD_ModuleSelection_Sheet_03" ID="{42BAAEFA-5C22-4A57-9F80-2DC85372442A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
 									</ChildrenList>
 								</ActorMixer>
 							</ChildrenList>

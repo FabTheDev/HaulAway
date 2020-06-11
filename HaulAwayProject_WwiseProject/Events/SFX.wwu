@@ -128,6 +128,17 @@
 								</Event>
 								<Event Name="E_Character_WaterOut" ID="{715CFE0C-E4DE-4E4E-ACF1-DF9C9EEF3D1E}">
 									<ChildrenList>
+										<Action Name="" ID="{6337C299-318B-4D6C-B7EE-DBAA96B44C61}" ShortID="707797106">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Swiming" ID="{C3DC71BC-3B70-474A-A412-116466534E5F}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 										<Action Name="" ID="{11A781DE-44C3-473D-A142-BE5C039A8D06}" ShortID="1037833718">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="1"/>
@@ -996,7 +1007,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Ship_Collision_Light_RND" ID="{042B85AA-9BB2-42A6-B9A2-5972BA06F198}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+													<ObjectRef Name="Ship_Collision_Light_Global_RND" ID="{467EB629-3359-48FD-92B5-B589E3A62527}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -1010,7 +1021,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Ship_Collision_Medium_RND" ID="{324984FE-4693-4226-8933-626AD92EC34F}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+													<ObjectRef Name="Ship_Collision_Medium_Global_RND" ID="{F8ABA08B-56FC-4F5F-8F9C-7D4A1762BB0F}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -1024,7 +1035,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Ship_Collision_Strong_RND" ID="{03EDBDB8-B8BB-4DE1-B19F-F165F9AC6CDB}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+													<ObjectRef Name="Ship_Collision_Strong_Global_RND" ID="{C8B43596-C005-4C3E-A79F-811404A65B25}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -1042,7 +1053,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Ship_Entering_Hold_SEQ" ID="{D3AC215F-15AC-48A4-9193-2F85EC15A747}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+													<ObjectRef Name="Ship_Entering_Hold_SEQ" ID="{D3AC215F-15AC-48A4-9193-2F85EC15A747}" WorkUnitID="{BF938DC5-5BE3-4614-9C2E-2820850BD40E}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -1078,7 +1089,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="SFX_Ship_InHold_Ambience" ID="{9974E777-FE58-4366-BFB4-B92C30A9B287}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+													<ObjectRef Name="SFX_Ship_InHold_Ambience" ID="{9974E777-FE58-4366-BFB4-B92C30A9B287}" WorkUnitID="{BF938DC5-5BE3-4614-9C2E-2820850BD40E}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -1092,7 +1103,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="SFX_HA_Ship_leaving_hold" ID="{0ACBE3A8-9A67-4A2B-8DBD-A124AA83EE28}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+													<ObjectRef Name="SFX_HA_Ship_leaving_hold" ID="{0ACBE3A8-9A67-4A2B-8DBD-A124AA83EE28}" WorkUnitID="{BF938DC5-5BE3-4614-9C2E-2820850BD40E}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -1126,7 +1137,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="SFX_Ship_InHold_Ambience" ID="{9974E777-FE58-4366-BFB4-B92C30A9B287}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+													<ObjectRef Name="SFX_Ship_InHold_Ambience" ID="{9974E777-FE58-4366-BFB4-B92C30A9B287}" WorkUnitID="{BF938DC5-5BE3-4614-9C2E-2820850BD40E}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -1308,6 +1319,16 @@
 							<ChildrenList>
 								<Event Name="E_Enviro_AmbWindGlobal" ID="{F2B51A9B-EAE0-4765-853C-48D5164CE814}">
 									<ChildrenList>
+										<Action Name="" ID="{CBD1C84B-716C-4CB9-9772-051845392123}" ShortID="740675984">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Freeze_State0" ID="{1C69310C-14BC-4B8C-90AF-35F58067C2CF}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 										<Action Name="" ID="{AE9D4C3A-84CE-4920-970F-240525433F5D}" ShortID="347906075">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="1"/>
@@ -1487,6 +1508,58 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="SFX_HA_Enviro_WaterLapping" ID="{603F497C-069A-41DE-8B65-E98C2448F72B}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Current" ID="{5DBB2B26-4AE7-42DC-819F-4BE00E996DF2}" ShortID="978196752">
+							<ChildrenList>
+								<Event Name="E_Enviro_EnterCurrent" ID="{D12B5289-2B7A-4B8B-91C5-6AFC29B9E243}">
+									<ChildrenList>
+										<Action Name="" ID="{3EE5E9E9-46CD-4871-8E81-243505D64649}" ShortID="409847396">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="FadeInCurve" Type="int16" Value="7"/>
+												<Property Name="FadeTime" Type="Real64" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ship_Current_Global_BLEND" ID="{347E2D45-E136-417F-9D4B-E316EA0D8DA4}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Enviro_ExitCurrent" ID="{7FEF6A81-7F07-450D-A989-A62CDEB15161}">
+									<ChildrenList>
+										<Action Name="" ID="{2F4BA207-19B9-4B51-B124-9D6EBBA26FC9}" ShortID="20432369">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeOutCurve" Type="int16" Value="7"/>
+												<Property Name="FadeTime" Type="Real64" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ship_Current_Global_BLEND" ID="{347E2D45-E136-417F-9D4B-E316EA0D8DA4}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Enviro_Current_ImmediateSTOP" ID="{21A700E8-944F-4939-9D83-08F6B1160A86}">
+									<ChildrenList>
+										<Action Name="" ID="{05E09F76-54C6-4D19-B1E9-219F79783703}" ShortID="600547913">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeOutCurve" Type="int16" Value="7"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ship_Current_Global_BLEND" ID="{347E2D45-E136-417F-9D4B-E316EA0D8DA4}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

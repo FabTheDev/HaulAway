@@ -44,35 +44,6 @@
 						<Bus Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="10"/>
-								<Property Name="Lowpass" Type="int16">
-									<RTPCList>
-										<RTPC Name="" ID="{41867B40-6C69-459E-8909-4E0CF75B6E63}" ShortID="583886207">
-											<ReferenceList>
-												<Reference Name="ControlInput">
-													<ObjectRef Name="Intra_Music_LowPassFilter_GP" ID="{F457DEC5-2431-4441-8DDC-2DBD7379D01C}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
-												</Reference>
-											</ReferenceList>
-											<Curve Name="" ID="{54457A09-E58A-4A56-AC85-6FFC8ECC3BE4}">
-												<PropertyList>
-													<Property Name="Flags" Type="int32" Value="65537"/>
-												</PropertyList>
-												<PointList>
-													<Point>
-														<XPos>0</XPos>
-														<YPos>100</YPos>
-														<Flags>5</Flags>
-														<SegmentShape>Exp2</SegmentShape>
-													</Point>
-													<Point>
-														<XPos>100</XPos>
-														<YPos>-100</YPos>
-														<Flags>37</Flags>
-													</Point>
-												</PointList>
-											</Curve>
-										</RTPC>
-									</RTPCList>
-								</Property>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<RTPCList>
