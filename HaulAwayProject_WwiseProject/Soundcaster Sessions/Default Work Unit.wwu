@@ -992,7 +992,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Rain_Intensity_GP" ID="{0203CBA4-E167-40AB-BF11-53B9C72E0BA4}"/>
-							<Value>0</Value>
+							<Value>0.91</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="InCaveOrNot_Factor_GP" ID="{BDE15852-BC19-429F-8E06-7BCEC5A6C6A9}"/>
@@ -1024,7 +1024,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Sea_Amb_Intensity_GP" ID="{5A269150-E118-4614-A105-F8713420EE7D}"/>
-							<Value>1</Value>
+							<Value>0.154873164218959</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Water_Depth_Foot_Left_GP" ID="{CF3F0519-D6B8-4652-847C-ADC3E736B06C}"/>
@@ -1068,7 +1068,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Altitude_Camera_GP" ID="{06524578-A51A-4D48-A1F9-1583202B9716}"/>
-							<Value>621.375166889186</Value>
+							<Value>2683.57810413885</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SFX_Volume_GP" ID="{C9F5422A-020E-4D7B-AF1B-5A807144C983}"/>
@@ -1085,14 +1085,14 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="None" ID="{7C2BB039-BC85-41ED-9551-86CD8710E47E}"/>
-						<CurrentStateRef Name="None" ID="{E47E565D-CFAA-4A90-B728-CEF6C832CF4A}"/>
+						<CurrentStateRef Name="Storm_Theme" ID="{F9140ED6-73FA-43E8-A1C7-ED18288192C9}"/>
 						<CurrentStateRef Name="None" ID="{2A3C993C-BC43-40A0-A46B-83C2DC8B3A95}"/>
 						<CurrentStateRef Name="None" ID="{B83E4870-EE12-480B-A54C-32436863F222}"/>
-						<CurrentStateRef Name="None" ID="{2CFE3A44-5351-4DE6-A79B-39203CDC3FA3}"/>
-						<CurrentStateRef Name="None" ID="{9799993D-8E7E-437B-AFE6-0259AA0C72B0}"/>
-						<CurrentStateRef Name="None" ID="{D4F8615F-D5D9-4AD2-B41C-81F651EB2E30}"/>
+						<CurrentStateRef Name="Here_Storm" ID="{A0300296-6DED-4FB9-8C27-F9CECC588BFE}"/>
+						<CurrentStateRef Name="Freeze_State0" ID="{1C69310C-14BC-4B8C-90AF-35F58067C2CF}"/>
+						<CurrentStateRef Name="Chest" ID="{869F1847-684E-4F64-B817-C82253419E7E}"/>
 						<CurrentStateRef Name="None" ID="{6507D9A9-729F-4C4B-AA8E-16815F487179}"/>
-						<CurrentStateRef Name="None" ID="{4F52A7E7-3240-4480-BCA4-A75985D30EDB}"/>
+						<CurrentStateRef Name="Walking" ID="{0DA3EC48-DE20-451C-A639-31F81343B6E8}"/>
 						<CurrentStateRef Name="None" ID="{141295CE-4617-432C-8DBE-52A7396D515C}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
