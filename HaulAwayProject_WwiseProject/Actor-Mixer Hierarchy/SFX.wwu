@@ -509,7 +509,20 @@
 										</SwitchContainer>
 										<RandomSequenceContainer Name="Sail_Perfect_Wind_RND" ID="{AF6A5855-FB5E-46CE-B53F-F9721714F4C9}" ShortID="127161534">
 											<PropertyList>
+												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
 												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -567,7 +580,20 @@
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Sail_Correct_Wind_RND" ID="{DF02E161-67F3-4F05-98FE-55D5A21709CC}" ShortID="565898351">
 											<PropertyList>
+												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
 												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>-3</Value>
@@ -8169,7 +8195,7 @@
 																					</Point>
 																					<Point>
 																						<XPos>1</XPos>
-																						<YPos>-0</YPos>
+																						<YPos>0</YPos>
 																						<Flags>37</Flags>
 																					</Point>
 																				</PointList>
@@ -8637,7 +8663,7 @@
 																					</Point>
 																					<Point>
 																						<XPos>1</XPos>
-																						<YPos>-0</YPos>
+																						<YPos>0</YPos>
 																						<Flags>37</Flags>
 																					</Point>
 																				</PointList>
@@ -11226,11 +11252,17 @@
 																		<XPos>600</XPos>
 																		<YPos>0</YPos>
 																		<Flags>0</Flags>
+																		<SegmentShape>Exp2</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>4379.17222963952</XPos>
+																		<YPos>39</YPos>
+																		<Flags>0</Flags>
 																		<SegmentShape>Log2</SegmentShape>
 																	</Point>
 																	<Point>
 																		<XPos>5000</XPos>
-																		<YPos>60</YPos>
+																		<YPos>43</YPos>
 																		<Flags>37</Flags>
 																	</Point>
 																</PointList>
@@ -11262,8 +11294,13 @@
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
+																		<XPos>4506.00801068091</XPos>
+																		<YPos>-19.1898521481563</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
 																		<XPos>5000</XPos>
-																		<YPos>-200</YPos>
+																		<YPos>-19.04087</YPos>
 																		<Flags>37</Flags>
 																	</Point>
 																</PointList>
@@ -11580,9 +11617,6 @@
 								<ActorMixer Name="Tempest" ID="{2E1B725C-E6C9-4A59-959E-C4E57BDDFFFD}" ShortID="122049694">
 									<PropertyList>
 										<Property Name="Lowpass" Type="int16">
-											<ValueList>
-												<Value>100</Value>
-											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{5C24BAAC-9121-489A-B550-01C3179020FE}" ShortID="318434661">
 													<ReferenceList>
@@ -13551,6 +13585,1021 @@
 														<ActiveSource Name="SFX_HA_Enviro_Fire_Loop" ID="{6326F655-0248-4FA7-AE6C-8A3D51799E01}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
+											</ChildrenList>
+										</ActorMixer>
+									</ChildrenList>
+								</ActorMixer>
+								<ActorMixer Name="Amb Animals" ID="{F7B95BC5-B775-4A4D-9906-C20FE21C3810}" ShortID="876551563">
+									<PropertyList>
+										<Property Name="MakeUpGain" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{99E65B8D-29C2-4DBD-952C-0C7E2BDC8DDB}" ShortID="780339039">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="InCaveOrNot_Factor_GP" ID="{BDE15852-BC19-429F-8E06-7BCEC5A6C6A9}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{AB38F6D5-B242-4172-B7EF-8A31AFF0426C}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Log3</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>-192</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<ActorMixer Name="Seagulls" ID="{E5A68F91-D86D-47B0-AC86-203949E2C6BE}" ShortID="480227387">
+											<PropertyList>
+												<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+												<Property Name="UserAuxSendVolume0" Type="Real64">
+													<ValueList>
+														<Value>8</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="Amb_Animals_Seagulls_" ID="{B4D7633F-4A2A-4DAB-A99B-CC186EA145C3}" ShortID="451338634">
+													<PropertyList>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="20">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{568C7D70-F5E6-4EE0-BE2B-2E540E4527B0}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="10"/>
+																			<Property Name="Min" Type="Real64" Value="-10"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<RandomSequenceContainer Name="Amb_Animals_Seagulls_RND_LOOP" ID="{9F9AD098-58C3-45AC-9985-8B30DDAA9EEA}" ShortID="52428852">
+															<PropertyList>
+																<Property Name="3DPosition" Type="int16" Value="1"/>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="MakeUpGain" Type="Real64">
+																	<RTPCList>
+																		<RTPC Name="" ID="{5063C07D-DE12-4C0E-83FC-91312FEFFF9D}" ShortID="961664094">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="Sea_Amb_Intensity_GP" ID="{5A269150-E118-4614-A105-F8713420EE7D}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{16282E14-B1CA-434A-ACC5-0B4C0D56DC91}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																						<SegmentShape>Log3</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>0.27</XPos>
+																						<YPos>-0</YPos>
+																						<Flags>0</Flags>
+																						<SegmentShape>Log2</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>0.5</XPos>
+																						<YPos>-192</YPos>
+																						<Flags>0</Flags>
+																						<SegmentShape>Exp3</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>1</XPos>
+																						<YPos>-192</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="OverridePositioning" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+																<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="20">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{BB812F3C-8049-4D98-92A0-715DA8CEA777}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="30"/>
+																					<Property Name="Min" Type="Real64" Value="-10"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+																<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="10"/>
+																<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																</Reference>
+																<Reference Name="UserAuxSend0">
+																	<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="SFX_HA_AMB_Animals_Seagulls_01" ID="{DA9575E2-3708-4A9F-89A3-B9BC786A5B39}" ShortID="979104376">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend0">
+																			<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend1">
+																			<ObjectRef Name="Cave_Acoustic_SFX_AUX" ID="{01568535-8555-4C9B-B2EA-164F84B37D78}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_AMB_Animals_Seagulls_01" ID="{AA524C18-DD50-43A9-9B58-461629A4E66C}">
+																			<PropertyList>
+																				<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_AMB_Animals_Seagulls_01.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="222407274"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_AMB_Animals_Seagulls_01" ID="{AA524C18-DD50-43A9-9B58-461629A4E66C}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_AMB_Animals_Seagulls_02" ID="{6FEFF886-0B08-4338-9D9B-5DA4D2FE8430}" ShortID="280466629">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend0">
+																			<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend1">
+																			<ObjectRef Name="Cave_Acoustic_SFX_AUX" ID="{01568535-8555-4C9B-B2EA-164F84B37D78}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_AMB_Animals_Seagulls_02" ID="{4EAE7CB7-5607-4EF4-9B64-58B180F13552}">
+																			<PropertyList>
+																				<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_AMB_Animals_Seagulls_02.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="945018864"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_AMB_Animals_Seagulls_02" ID="{4EAE7CB7-5607-4EF4-9B64-58B180F13552}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_AMB_Animals_Seagulls_03" ID="{E08FB1BA-5AF1-42D3-92F6-A81C42A1ABC2}" ShortID="61703511">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend0">
+																			<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend1">
+																			<ObjectRef Name="Cave_Acoustic_SFX_AUX" ID="{01568535-8555-4C9B-B2EA-164F84B37D78}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_AMB_Animals_Seagulls_03" ID="{987B85C1-F249-48EB-9795-F59C9DA453F0}">
+																			<PropertyList>
+																				<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_AMB_Animals_Seagulls_03.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="202925456"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_AMB_Animals_Seagulls_03" ID="{987B85C1-F249-48EB-9795-F59C9DA453F0}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_AMB_Animals_Seagulls_04" ID="{710010B8-E5C1-4F98-9836-9DA402D92F60}" ShortID="1002031559">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend0">
+																			<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend1">
+																			<ObjectRef Name="Cave_Acoustic_SFX_AUX" ID="{01568535-8555-4C9B-B2EA-164F84B37D78}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_AMB_Animals_Seagulls_04" ID="{2A29110A-7470-4778-910F-3127277A97B1}">
+																			<PropertyList>
+																				<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_AMB_Animals_Seagulls_04.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="124095935"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_AMB_Animals_Seagulls_04" ID="{2A29110A-7470-4778-910F-3127277A97B1}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_AMB_Animals_Seagulls_05" ID="{8FD60E33-A9AF-4D7E-9868-FC73D7258066}" ShortID="793618696">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend0">
+																			<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend1">
+																			<ObjectRef Name="Cave_Acoustic_SFX_AUX" ID="{01568535-8555-4C9B-B2EA-164F84B37D78}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_AMB_Animals_Seagulls_05" ID="{51C5512C-9B4D-4861-9DC1-3D4B4532675F}">
+																			<PropertyList>
+																				<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_AMB_Animals_Seagulls_05.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="873640263"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_AMB_Animals_Seagulls_05" ID="{51C5512C-9B4D-4861-9DC1-3D4B4532675F}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_AMB_Animals_Seagulls_06" ID="{971DC355-381F-46B3-8312-EC3B11075A04}" ShortID="185678504">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend0">
+																			<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend1">
+																			<ObjectRef Name="Cave_Acoustic_SFX_AUX" ID="{01568535-8555-4C9B-B2EA-164F84B37D78}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_AMB_Animals_Seagulls_06" ID="{AE05DE09-7200-4A0E-A183-5EAE7AE4FE62}">
+																			<PropertyList>
+																				<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_AMB_Animals_Seagulls_06.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="593384066"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_AMB_Animals_Seagulls_06" ID="{AE05DE09-7200-4A0E-A183-5EAE7AE4FE62}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_AMB_Animals_Seagulls_07" ID="{CC268F06-45E7-4289-BDC3-35195FF0DFF0}" ShortID="400298619">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend0">
+																			<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend1">
+																			<ObjectRef Name="Cave_Acoustic_SFX_AUX" ID="{01568535-8555-4C9B-B2EA-164F84B37D78}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_AMB_Animals_Seagulls_07" ID="{BFFBCCCC-66CD-4223-993B-DF8BB982213C}">
+																			<PropertyList>
+																				<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_AMB_Animals_Seagulls_07.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="609148020"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_AMB_Animals_Seagulls_07" ID="{BFFBCCCC-66CD-4223-993B-DF8BB982213C}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_AMB_Animals_Seagulls_08" ID="{D1AEC381-A905-4D0E-827D-54F3551899DA}" ShortID="378069445">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend0">
+																			<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend1">
+																			<ObjectRef Name="Cave_Acoustic_SFX_AUX" ID="{01568535-8555-4C9B-B2EA-164F84B37D78}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_AMB_Animals_Seagulls_08" ID="{4C2BCD58-719B-4749-A29C-BB4A6C915B25}">
+																			<PropertyList>
+																				<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_AMB_Animals_Seagulls_08.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="662666118"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_AMB_Animals_Seagulls_08" ID="{4C2BCD58-719B-4749-A29C-BB4A6C915B25}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_AMB_Animals_Seagulls_09" ID="{ABE61930-CFDB-446C-BCC9-471AC5D2A1A7}" ShortID="548500816">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend0">
+																			<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend1">
+																			<ObjectRef Name="Cave_Acoustic_SFX_AUX" ID="{01568535-8555-4C9B-B2EA-164F84B37D78}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_AMB_Animals_Seagulls_09" ID="{1AB8663A-2D33-4E93-9EA2-896D3C6C8D5C}">
+																			<PropertyList>
+																				<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_AMB_Animals_Seagulls_09.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="877443499"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_AMB_Animals_Seagulls_09" ID="{1AB8663A-2D33-4E93-9EA2-896D3C6C8D5C}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_AMB_Animals_Seagulls_10" ID="{71B02460-5963-41D1-A340-B2D307A50C6B}" ShortID="246469990">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend0">
+																			<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend1">
+																			<ObjectRef Name="Cave_Acoustic_SFX_AUX" ID="{01568535-8555-4C9B-B2EA-164F84B37D78}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_AMB_Animals_Seagulls_10" ID="{5B93288F-2C7A-459E-BE3C-FC4015ADF4D2}">
+																			<PropertyList>
+																				<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_AMB_Animals_Seagulls_10.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="41865617"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_AMB_Animals_Seagulls_10" ID="{5B93288F-2C7A-459E-BE3C-FC4015ADF4D2}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_AMB_Animals_Seagulls_11" ID="{F99E5681-667F-41C4-887B-1EBF017C1FFC}" ShortID="268448327">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend0">
+																			<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend1">
+																			<ObjectRef Name="Cave_Acoustic_SFX_AUX" ID="{01568535-8555-4C9B-B2EA-164F84B37D78}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_AMB_Animals_Seagulls_11" ID="{B61DDF55-F31C-44F6-A0C7-F422DDACC881}">
+																			<PropertyList>
+																				<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_AMB_Animals_Seagulls_11.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="79219169"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_AMB_Animals_Seagulls_11" ID="{B61DDF55-F31C-44F6-A0C7-F422DDACC881}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_AMB_Animals_Seagulls_12" ID="{36355D67-69A0-40D9-A410-0FDC50C9EC44}" ShortID="726374503">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend0">
+																			<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend1">
+																			<ObjectRef Name="Cave_Acoustic_SFX_AUX" ID="{01568535-8555-4C9B-B2EA-164F84B37D78}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_AMB_Animals_Seagulls_12" ID="{18EDD864-F681-4460-9CEF-7605AA643820}">
+																			<PropertyList>
+																				<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_AMB_Animals_Seagulls_12.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="148457142"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_AMB_Animals_Seagulls_12" ID="{18EDD864-F681-4460-9CEF-7605AA643820}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_AMB_Animals_Seagulls_13" ID="{E982868E-B0B5-487F-8C72-EF603AF6C5FD}" ShortID="467955811">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend0">
+																			<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend1">
+																			<ObjectRef Name="Cave_Acoustic_SFX_AUX" ID="{01568535-8555-4C9B-B2EA-164F84B37D78}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_AMB_Animals_Seagulls_13" ID="{38567CEF-FCDC-48D6-8563-0E83DC254C33}">
+																			<PropertyList>
+																				<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_AMB_Animals_Seagulls_13.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="488753237"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_AMB_Animals_Seagulls_13" ID="{38567CEF-FCDC-48D6-8563-0E83DC254C33}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_AMB_Animals_Seagulls_14" ID="{2F76C8BB-5F32-4076-A037-971C24CEDA4E}" ShortID="1048962073">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend0">
+																			<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend1">
+																			<ObjectRef Name="Cave_Acoustic_SFX_AUX" ID="{01568535-8555-4C9B-B2EA-164F84B37D78}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_AMB_Animals_Seagulls_14" ID="{E7C0A7B5-5D73-4B50-B013-754C672EB173}">
+																			<PropertyList>
+																				<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_AMB_Animals_Seagulls_14.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="861343573"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_AMB_Animals_Seagulls_14" ID="{E7C0A7B5-5D73-4B50-B013-754C672EB173}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_AMB_Animals_Seagulls_15" ID="{85ECD6B6-5245-4207-987E-3EB388BCF4E6}" ShortID="1566679">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend0">
+																			<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend1">
+																			<ObjectRef Name="Cave_Acoustic_SFX_AUX" ID="{01568535-8555-4C9B-B2EA-164F84B37D78}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_AMB_Animals_Seagulls_15" ID="{BE96B36A-4035-4FD5-A3E6-A0D6E1137201}">
+																			<PropertyList>
+																				<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_AMB_Animals_Seagulls_15.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="725076937"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_AMB_Animals_Seagulls_15" ID="{BE96B36A-4035-4FD5-A3E6-A0D6E1137201}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_AMB_Animals_Seagulls_16" ID="{EF2F0F6C-043B-462B-A817-8702E9A10057}" ShortID="195155273">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend0">
+																			<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend1">
+																			<ObjectRef Name="Cave_Acoustic_SFX_AUX" ID="{01568535-8555-4C9B-B2EA-164F84B37D78}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_AMB_Animals_Seagulls_16" ID="{19DB6E2E-2593-400D-8579-31E6058C682C}">
+																			<PropertyList>
+																				<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_AMB_Animals_Seagulls_16.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="829002021"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_AMB_Animals_Seagulls_16" ID="{19DB6E2E-2593-400D-8579-31E6058C682C}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_AMB_Animals_Seagulls_17" ID="{F571DE24-97FE-4C57-9EB1-D26040AA3119}" ShortID="706925773">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend0">
+																			<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend1">
+																			<ObjectRef Name="Cave_Acoustic_SFX_AUX" ID="{01568535-8555-4C9B-B2EA-164F84B37D78}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_AMB_Animals_Seagulls_17" ID="{1E882A70-CA1F-4FFB-BC4C-E5EF6C8CEB12}">
+																			<PropertyList>
+																				<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_AMB_Animals_Seagulls_17.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="461727877"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_AMB_Animals_Seagulls_17" ID="{1E882A70-CA1F-4FFB-BC4C-E5EF6C8CEB12}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_AMB_Animals_Seagulls_18" ID="{74D3F6D0-90C5-48D2-B56E-CE1D3957CFB9}" ShortID="735951521">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend0">
+																			<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend1">
+																			<ObjectRef Name="Cave_Acoustic_SFX_AUX" ID="{01568535-8555-4C9B-B2EA-164F84B37D78}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_AMB_Animals_Seagulls_18" ID="{17A6F5B9-7F81-4F44-8ED9-155BFB899CFE}">
+																			<PropertyList>
+																				<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_AMB_Animals_Seagulls_18.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="153691060"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_AMB_Animals_Seagulls_18" ID="{17A6F5B9-7F81-4F44-8ED9-155BFB899CFE}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_AMB_Animals_Seagulls_19" ID="{52D4BB49-BA2C-489F-AB9D-11CDF2E43668}" ShortID="443193268">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend0">
+																			<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend1">
+																			<ObjectRef Name="Cave_Acoustic_SFX_AUX" ID="{01568535-8555-4C9B-B2EA-164F84B37D78}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_AMB_Animals_Seagulls_19" ID="{197A213F-DA71-46CE-A222-39FA00B82876}">
+																			<PropertyList>
+																				<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_AMB_Animals_Seagulls_19.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="6571856"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_AMB_Animals_Seagulls_19" ID="{197A213F-DA71-46CE-A222-39FA00B82876}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HA_AMB_Animals_Seagulls_20" ID="{6B2B2902-B417-4330-A545-CF81E70626B8}" ShortID="649853030">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend0">
+																			<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend1">
+																			<ObjectRef Name="Cave_Acoustic_SFX_AUX" ID="{01568535-8555-4C9B-B2EA-164F84B37D78}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HA_AMB_Animals_Seagulls_20" ID="{15949894-4B87-4C44-9114-3258545B68C8}">
+																			<PropertyList>
+																				<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HA_AMB_Animals_Seagulls_20.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="887349281"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HA_AMB_Animals_Seagulls_20" ID="{15949894-4B87-4C44-9114-3258545B68C8}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+															<PositioningInfo>
+																<Panner Name="" ID="{9984B5D5-35D2-4A8E-969F-DA5F802083CB}"/>
+																<Position Name="" ID="{4FFDF216-F776-448D-BFB4-7B6E63EEFA32}">
+																	<PropertyList>
+																		<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+																		<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+																	</PropertyList>
+																	<ChildrenList>
+																		<Path2D Name="Amb_Animals_Seagulls_RND_LOOP_Path" ID="{90B4201B-5F07-4E08-BB86-848874C29A65}">
+																			<PropertyList>
+																				<Property Name="Duration" Type="Uint32" Value="2000"/>
+																			</PropertyList>
+																			<PointList>
+																				<Point>
+																					<XPos>-49.36708</XPos>
+																					<YPos>57.00637</YPos>
+																					<Flags>12</Flags>
+																					<Time>0</Time>
+																				</Point>
+																				<Point>
+																					<XPos>44.93671</XPos>
+																					<YPos>56.6879</YPos>
+																					<Flags>0</Flags>
+																					<Time>2000</Time>
+																				</Point>
+																			</PointList>
+																		</Path2D>
+																		<Path2D Name="Amb_Animals_Seagulls_RND_LOOP_Path_01" ID="{3F699CB7-F891-40FD-A875-79A03B0CE727}">
+																			<PointList>
+																				<Point>
+																					<XPos>60.7595</XPos>
+																					<YPos>-41.0828</YPos>
+																					<Flags>12</Flags>
+																					<Time>0</Time>
+																				</Point>
+																				<Point>
+																					<XPos>33.5443</XPos>
+																					<YPos>49.04459</YPos>
+																					<Flags>0</Flags>
+																					<Time>5000</Time>
+																				</Point>
+																			</PointList>
+																		</Path2D>
+																		<Path2D Name="Amb_Animals_Seagulls_RND_LOOP_Path_02" ID="{9E9E0F11-3922-4153-91D0-654463F0925F}">
+																			<PointList>
+																				<Point>
+																					<XPos>-50</XPos>
+																					<YPos>48.08917</YPos>
+																					<Flags>12</Flags>
+																					<Time>0</Time>
+																				</Point>
+																				<Point>
+																					<XPos>-63.29114</XPos>
+																					<YPos>-29.93631</YPos>
+																					<Flags>0</Flags>
+																					<Time>5000</Time>
+																				</Point>
+																			</PointList>
+																		</Path2D>
+																		<Path2D Name="Amb_Animals_Seagulls_RND_LOOP_Path_03" ID="{E2E18EC5-AF55-4453-BD35-DF6F02A52AEE}">
+																			<PointList>
+																				<Point>
+																					<XPos>32.27848</XPos>
+																					<YPos>-39.17198</YPos>
+																					<Flags>12</Flags>
+																					<Time>0</Time>
+																				</Point>
+																				<Point>
+																					<XPos>-36.07595</XPos>
+																					<YPos>-38.85351</YPos>
+																					<Flags>0</Flags>
+																					<Time>5000</Time>
+																				</Point>
+																			</PointList>
+																		</Path2D>
+																		<Path2D Name="Amb_Animals_Seagulls_RND_LOOP_Path_04" ID="{B4A90403-3EEE-4AFA-BE3C-212968248ABA}">
+																			<PointList>
+																				<Point>
+																					<XPos>0</XPos>
+																					<YPos>50</YPos>
+																					<Flags>12</Flags>
+																					<Time>0</Time>
+																				</Point>
+																			</PointList>
+																		</Path2D>
+																		<Path2D Name="Amb_Animals_Seagulls_RND_LOOP_Path_05" ID="{41C9E3C2-E925-40BA-A8A5-C4AC73475D95}">
+																			<PointList>
+																				<Point>
+																					<XPos>-25.94937</XPos>
+																					<YPos>35.98726</YPos>
+																					<Flags>12</Flags>
+																					<Time>0</Time>
+																				</Point>
+																			</PointList>
+																		</Path2D>
+																		<Path2D Name="Amb_Animals_Seagulls_RND_LOOP_Path_06" ID="{64273198-8939-4072-B31E-ECBD5717B19A}">
+																			<PointList>
+																				<Point>
+																					<XPos>32.27848</XPos>
+																					<YPos>43.63057</YPos>
+																					<Flags>12</Flags>
+																					<Time>0</Time>
+																				</Point>
+																			</PointList>
+																		</Path2D>
+																		<Path2D Name="Amb_Animals_Seagulls_RND_LOOP_Path_07" ID="{6D62AC5D-A5C7-4763-A31A-6D3A813B75CB}">
+																			<PointList>
+																				<Point>
+																					<XPos>13.29114</XPos>
+																					<YPos>-41.0828</YPos>
+																					<Flags>12</Flags>
+																					<Time>0</Time>
+																				</Point>
+																			</PointList>
+																		</Path2D>
+																		<Path2D Name="Amb_Animals_Seagulls_RND_LOOP_Path_08" ID="{ACB9EB94-1B08-475D-9DCE-73658DC55FD1}">
+																			<PointList>
+																				<Point>
+																					<XPos>-13.29114</XPos>
+																					<YPos>-48.72611</YPos>
+																					<Flags>12</Flags>
+																					<Time>0</Time>
+																				</Point>
+																			</PointList>
+																		</Path2D>
+																	</ChildrenList>
+																</Position>
+															</PositioningInfo>
+														</RandomSequenceContainer>
+														<Sound Name="Silence_NoSeagulls" ID="{67017665-AE4E-4C70-9D6C-654FC0888851}" ShortID="928493772">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<SourcePlugin Name="Wwise Silence" ID="{C1997903-06EE-4CF9-AA59-3F89508C6E69}" ShortID="865318251" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+																	<PropertyList>
+																		<Property Name="Length" Type="Real32" Value="0.2"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																</SourcePlugin>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Wwise Silence" ID="{C1997903-06EE-4CF9-AA59-3F89508C6E69}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+													<Playlist>
+														<ItemRef Name="Silence_NoSeagulls" ID="{67017665-AE4E-4C70-9D6C-654FC0888851}"/>
+														<ItemRef Name="Amb_Animals_Seagulls_RND_LOOP" ID="{9F9AD098-58C3-45AC-9985-8B30DDAA9EEA}"/>
+													</Playlist>
+												</RandomSequenceContainer>
 											</ChildrenList>
 										</ActorMixer>
 									</ChildrenList>
@@ -21888,7 +22937,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-6</Value>
+												<Value>-9</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>

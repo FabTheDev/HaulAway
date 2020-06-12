@@ -1340,6 +1340,16 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
+										<Action Name="" ID="{FD25AB33-EA76-4CF0-856F-7FEC655B8AF9}" ShortID="14860544">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Amb_Animals_Seagulls_" ID="{B4D7633F-4A2A-4DAB-A99B-CC186EA145C3}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 									</ChildrenList>
 								</Event>
 								<Event Name="E_Enviro_AmbSeaGlobal" ID="{DE328F8B-61CC-4E30-9178-3DD0C1609004}">
