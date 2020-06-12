@@ -170,8 +170,8 @@
 						</GameParameter>
 						<GameParameter Name="Distance_Cam_To_Ship_GP" ID="{EABEA38B-65C8-43BE-AEB8-3C7B12AF4F32}">
 							<PropertyList>
-								<Property Name="FilterTimeDown" Type="Real64" Value="1"/>
-								<Property Name="FilterTimeUp" Type="Real64" Value="1"/>
+								<Property Name="FilterTimeDown" Type="Real64" Value="0.2"/>
+								<Property Name="FilterTimeUp" Type="Real64" Value="0.2"/>
 								<Property Name="InitialValue" Type="Real64" Value="10000"/>
 								<Property Name="Max" Type="Real64" Value="10000"/>
 								<Property Name="RTPCRamping" Type="int16" Value="2"/>
@@ -184,6 +184,12 @@
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
 								<Property Name="Max" Type="Real64" Value="1"/>
 								<Property Name="RTPCRamping" Type="int16" Value="2"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="Current_Intensity_GP" ID="{276D662E-DD1D-4996-B906-0DE63D6C5EC5}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
 							</PropertyList>
 						</GameParameter>
 					</ChildrenList>

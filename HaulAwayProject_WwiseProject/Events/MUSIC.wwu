@@ -227,6 +227,20 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="E_Mus_Set_Credits_Theme" ID="{1C972C5B-D72B-4A1F-9FD6-4E8C58B7F10B}">
+							<ChildrenList>
+								<Action Name="" ID="{D493CAF1-044E-42A3-9C16-51EA1AE97D54}" ShortID="71816550">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Credits_Theme" ID="{BFB9A67B-D59A-458B-94E9-BD409A405194}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Jingles" ID="{9DE79BB7-90DA-41B0-8F2F-1E6981988011}" ShortID="941993625">

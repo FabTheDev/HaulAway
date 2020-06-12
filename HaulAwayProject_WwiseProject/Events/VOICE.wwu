@@ -239,7 +239,7 @@
 						</Folder>
 						<Folder Name="Damaged" ID="{801FEF25-AEC0-4EF6-B58C-A36B2BCD4443}" ShortID="333109375">
 							<ChildrenList>
-								<Event Name="E_Voice_DontWorryIllFixYou" ID="{8724FB6C-A108-4FD0-BCD6-E6EB575B50AA}">
+								<Event Name="E_Voice_Damaged_DontWorryIllFixYou" ID="{8724FB6C-A108-4FD0-BCD6-E6EB575B50AA}">
 									<ChildrenList>
 										<Action Name="" ID="{7B5A15B6-998F-4D55-889C-45A3E455ECD8}" ShortID="706229600">
 											<PropertyList>
@@ -507,7 +507,7 @@
 						</Folder>
 						<Folder Name="Repaired" ID="{72139973-B6B6-4CDE-8164-3783E136D936}" ShortID="545699828">
 							<ChildrenList>
-								<Event Name="E_Voice_HA_Repaired_AsGoodAsNew" ID="{64E35089-ABA1-4F84-925E-99D4DD266DA4}">
+								<Event Name="E_Voice_Repaired_AsGoodAsNew" ID="{64E35089-ABA1-4F84-925E-99D4DD266DA4}">
 									<ChildrenList>
 										<Action Name="" ID="{70BC7193-A825-45F4-B778-087CA6C960B7}" ShortID="1050801034">
 											<PropertyList>
@@ -521,7 +521,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="E_Voice_HA_Repaired_HopeYouWillStayLikeThat" ID="{E412BAAF-6263-4F22-BEFB-BC1FEFEEBA2E}">
+								<Event Name="E_Voice_Repaired_HopeYouWillStayLikeThat" ID="{E412BAAF-6263-4F22-BEFB-BC1FEFEEBA2E}">
 									<ChildrenList>
 										<Action Name="" ID="{51F6572D-2901-45EC-96A6-B247D2CA99B1}" ShortID="1050278922">
 											<PropertyList>
@@ -535,7 +535,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="E_Voice_HA_Repaired_ThatllHaveToDo" ID="{811FCE83-6B10-4865-97D5-450193AB765E}">
+								<Event Name="E_Voice_Repaired_ThatllHaveToDo" ID="{811FCE83-6B10-4865-97D5-450193AB765E}">
 									<ChildrenList>
 										<Action Name="" ID="{2F13A7FC-6B64-43C8-B0E8-E14EDC416CAA}" ShortID="80856309">
 											<PropertyList>
@@ -549,7 +549,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="E_Voice_HA_Repaired_YouWontTakeWaterAnymore" ID="{7599EE75-82F6-4BAB-AAEA-990D7C720FD3}">
+								<Event Name="E_Voice_Repaired_YouWontTakeWaterAnymore" ID="{7599EE75-82F6-4BAB-AAEA-990D7C720FD3}">
 									<ChildrenList>
 										<Action Name="" ID="{3206F4A1-028E-429F-B7D8-538C57A8F5BE}" ShortID="733873905">
 											<PropertyList>
@@ -567,7 +567,7 @@
 						</Folder>
 						<Folder Name="See" ID="{4744C853-4B40-474E-9FF6-DD2DEE098FAF}" ShortID="278176448">
 							<ChildrenList>
-								<Event Name="E_Voice_HA_See_Anchors" ID="{0EED961F-B608-4091-AE28-4102E6FC0391}">
+								<Event Name="E_Voice_See_Anchors" ID="{0EED961F-B608-4091-AE28-4102E6FC0391}">
 									<ChildrenList>
 										<Action Name="" ID="{F582AF4D-6E82-429E-880F-D57749444B0D}" ShortID="44080294">
 											<PropertyList>
@@ -581,7 +581,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="E_Voice_HA_See_Bell" ID="{E2FF8C7D-29C4-492C-9172-6C7B639A7BBA}">
+								<Event Name="E_Voice_See_Bell" ID="{E2FF8C7D-29C4-492C-9172-6C7B639A7BBA}">
 									<ChildrenList>
 										<Action Name="" ID="{8E9F77DF-6480-4413-8FF3-B06A14964336}" ShortID="536711870">
 											<PropertyList>
@@ -595,7 +595,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="E_Voice_HA_See_CalmSea" ID="{A891F49E-5195-4F4C-9F03-9701F24FC6D1}">
+								<Event Name="E_Voice_See_CalmSea" ID="{A891F49E-5195-4F4C-9F03-9701F24FC6D1}">
 									<ChildrenList>
 										<Action Name="" ID="{3EB4CD34-E164-484D-AF9B-FAF4BC44D4E7}" ShortID="723720083">
 											<PropertyList>
@@ -609,7 +609,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="E_Voice_HA_See_DarkWater" ID="{9FA39962-91A7-430F-BCB5-C2422B37FA18}">
+								<Event Name="E_Voice_See_DarkWater" ID="{9FA39962-91A7-430F-BCB5-C2422B37FA18}">
 									<ChildrenList>
 										<Action Name="" ID="{005FBA37-EE1A-429E-8697-A2C5555B83F5}" ShortID="355972182">
 											<PropertyList>
@@ -623,7 +623,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="E_Voice_HA_See_Icebergs1" ID="{46042A85-AED3-4D36-9FC1-3100B2A9CE94}">
+								<Event Name="E_Voice_See_Icebergs1" ID="{46042A85-AED3-4D36-9FC1-3100B2A9CE94}">
 									<ChildrenList>
 										<Action Name="" ID="{D5A13BA3-3753-4418-A5EF-7AC2A012C93F}" ShortID="952510763">
 											<PropertyList>
@@ -637,7 +637,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="E_Voice_HA_See_Icebergs2" ID="{32D60957-9560-4D0E-B432-7045821A7E8D}">
+								<Event Name="E_Voice_See_Icebergs2" ID="{32D60957-9560-4D0E-B432-7045821A7E8D}">
 									<ChildrenList>
 										<Action Name="" ID="{350EDC64-66B8-4BBD-A110-256EB582648C}" ShortID="835423869">
 											<PropertyList>
@@ -651,7 +651,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="E_Voice_HA_See_Lighthouse" ID="{934499C2-93FE-4C70-9756-3E8268C9BB94}">
+								<Event Name="E_Voice_See_Lighthouse" ID="{934499C2-93FE-4C70-9756-3E8268C9BB94}">
 									<ChildrenList>
 										<Action Name="" ID="{CC54E735-D8D6-46A5-8931-95F6B3AA4C3F}" ShortID="508742387">
 											<PropertyList>
@@ -665,7 +665,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="E_Voice_HA_See_Reefs" ID="{73D9F1A2-1A92-4AB7-8A84-3CA236B7DC94}">
+								<Event Name="E_Voice_See_Reefs" ID="{73D9F1A2-1A92-4AB7-8A84-3CA236B7DC94}">
 									<ChildrenList>
 										<Action Name="" ID="{7EC2CA90-6CBF-4F68-9016-A252AE059D09}" ShortID="464263201">
 											<PropertyList>
@@ -679,7 +679,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="E_Voice_HA_See_Snow" ID="{4E3230E3-9AE3-4852-AA20-6CAF19607A06}">
+								<Event Name="E_Voice_See_Snow" ID="{4E3230E3-9AE3-4852-AA20-6CAF19607A06}">
 									<ChildrenList>
 										<Action Name="" ID="{884AA95B-5A7F-4873-B43E-A4EF9FD15962}" ShortID="907390017">
 											<PropertyList>
@@ -693,7 +693,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="E_Voice_HA_See_Storm" ID="{31D4F669-150A-4E45-936C-E7BCC86BC815}">
+								<Event Name="E_Voice_See_Storm" ID="{31D4F669-150A-4E45-936C-E7BCC86BC815}">
 									<ChildrenList>
 										<Action Name="" ID="{D4D8587E-8A38-4911-8727-C32866A7F55D}" ShortID="1067995669">
 											<PropertyList>
@@ -707,7 +707,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="E_Voice_HA_See_Tree" ID="{54C9EE06-DBC9-4E75-9C5A-9A790CF0D64F}">
+								<Event Name="E_Voice_See_Tree" ID="{54C9EE06-DBC9-4E75-9C5A-9A790CF0D64F}">
 									<ChildrenList>
 										<Action Name="" ID="{8A4B5009-2CA0-47AF-8E4A-A95D4C789AA5}" ShortID="572242145">
 											<PropertyList>
@@ -721,7 +721,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="E_Voice_HA_See_Vessel" ID="{22A2A4BF-B017-4100-BA00-F7CAD2CFDE64}">
+								<Event Name="E_Voice_See_Vessel" ID="{22A2A4BF-B017-4100-BA00-F7CAD2CFDE64}">
 									<ChildrenList>
 										<Action Name="" ID="{0DFC8226-07CC-4E85-B4DD-52C663055FC5}" ShortID="763810691">
 											<PropertyList>
@@ -735,7 +735,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="E_Voice_HA_See_WeirdPlace" ID="{FAEA8982-A3F9-406D-992E-E8A54A7D92F1}">
+								<Event Name="E_Voice_See_WeirdPlace" ID="{FAEA8982-A3F9-406D-992E-E8A54A7D92F1}">
 									<ChildrenList>
 										<Action Name="" ID="{E5D9FB2A-0650-4F3E-AB02-FC8C872CBADC}" ShortID="454335283">
 											<PropertyList>
@@ -749,7 +749,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="E_Voice_HA_See_Whale1" ID="{CCB17021-9EB1-4EA6-B70F-B46BCF9DF664}">
+								<Event Name="E_Voice_See_Whale1" ID="{CCB17021-9EB1-4EA6-B70F-B46BCF9DF664}">
 									<ChildrenList>
 										<Action Name="" ID="{6DF53A5B-642B-488A-9730-F04E441D3DF1}" ShortID="568657530">
 											<PropertyList>
@@ -763,7 +763,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="E_Voice_HA_See_Whale2" ID="{DCEE71B9-A33A-40CE-AB86-D41F3C6B1580}">
+								<Event Name="E_Voice_See_Whale2" ID="{DCEE71B9-A33A-40CE-AB86-D41F3C6B1580}">
 									<ChildrenList>
 										<Action Name="" ID="{C4BFF496-BA62-4121-98D9-BEC00D263ED3}" ShortID="560581332">
 											<PropertyList>
@@ -781,7 +781,7 @@
 						</Folder>
 						<Folder Name="Special Events" ID="{46C54D65-65DC-47CE-9DEC-1CB2D074A450}" ShortID="516210624">
 							<ChildrenList>
-								<Event Name="E_Voice_HA_Amelioration" ID="{91255D42-2303-452D-BB7C-261E0D3E732E}">
+								<Event Name="E_Voice_Amelioration" ID="{91255D42-2303-452D-BB7C-261E0D3E732E}">
 									<ChildrenList>
 										<Action Name="" ID="{0698650B-8413-4AD1-8EE8-79BCE21D92DC}" ShortID="553438488">
 											<PropertyList>
@@ -795,7 +795,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="E_Voice_HA_ColdWater_ItsSoCold" ID="{F09D40B0-C63E-4B31-8CEC-A6C1DF69B9D5}">
+								<Event Name="E_Voice_ColdWater_ItsSoCold" ID="{F09D40B0-C63E-4B31-8CEC-A6C1DF69B9D5}">
 									<ChildrenList>
 										<Action Name="" ID="{DBDD3A12-2562-43F2-833C-2526B4172535}" ShortID="525038505">
 											<PropertyList>
@@ -809,7 +809,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="E_Voice_HA_ColdWater_ThatWasNotAGoodIdea" ID="{8ECF2AF1-9957-4BB3-90B0-D56959A84758}">
+								<Event Name="E_Voice_ColdWater_ThatWasNotAGoodIdea" ID="{8ECF2AF1-9957-4BB3-90B0-D56959A84758}">
 									<ChildrenList>
 										<Action Name="" ID="{923E27E1-1444-43D4-9085-2CD6DC8EADE7}" ShortID="1020617307">
 											<PropertyList>
@@ -823,7 +823,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="E_Voice_HA_FirstClue" ID="{C0A4720A-4859-4CD5-8D87-D4F3D07927C0}">
+								<Event Name="E_Voice_FirstClue" ID="{C0A4720A-4859-4CD5-8D87-D4F3D07927C0}">
 									<ChildrenList>
 										<Action Name="" ID="{0EF4DBD9-E2F9-4888-92AF-E0693CE1C7C1}" ShortID="313391276">
 											<PropertyList>
@@ -837,7 +837,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="E_Voice_HA_IceBreakerCrafted" ID="{26AA0A8C-7599-4638-B254-52C8356DE70B}">
+								<Event Name="E_Voice_IceBreakerCrafted" ID="{26AA0A8C-7599-4638-B254-52C8356DE70B}">
 									<ChildrenList>
 										<Action Name="" ID="{D33F596F-0F00-45DD-AD43-3972502096E3}" ShortID="201919987">
 											<PropertyList>
@@ -851,7 +851,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="E_Voice_HA_Success" ID="{F4719C63-822F-4294-97CE-DC9D3FD833BF}">
+								<Event Name="E_Voice_Success" ID="{F4719C63-822F-4294-97CE-DC9D3FD833BF}">
 									<ChildrenList>
 										<Action Name="" ID="{73C008C7-4D98-48C6-B2BA-CF218D306777}" ShortID="856921391">
 											<PropertyList>
@@ -860,6 +860,34 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="VOICE_HA_Success" ID="{61CA1FC3-6562-4D75-A8C8-6D658051FB85}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_EveryGoItsAlmostTime" ID="{52B3E19E-60A9-4B10-AFCE-794F8B53E224}">
+									<ChildrenList>
+										<Action Name="" ID="{6C510AD2-2679-4A75-8227-364A993D10BC}" ShortID="983762566">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_EveryGoItsAlmostTime" ID="{08CF0810-5B90-43D3-BD2A-7C1CC2EF69E9}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Voice_LetsGo" ID="{3AD06F6C-4768-4749-AE9F-98E06570E609}">
+									<ChildrenList>
+										<Action Name="" ID="{C95955E7-FD53-4D31-8396-EE68719FD01F}" ShortID="233276513">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_HA_LetsGo" ID="{B03CEC0C-4241-4D20-BB05-E404ADDC264F}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
