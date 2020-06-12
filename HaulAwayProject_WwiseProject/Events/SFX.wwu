@@ -689,23 +689,13 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
-										<Action Name="" ID="{2DDCC3A8-2800-436F-BE38-C4261734ECEC}" ShortID="213120771">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="22"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="No_OutCurrent" ID="{CF0D6809-D32C-401F-9710-092996474C8B}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
 										<Action Name="" ID="{B2C257FC-D6AA-42CA-8EF8-F8D5E50E1A96}" ShortID="324421590">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Ship_Current_SWITCH" ID="{13230068-6B71-4212-9905-1968BF3752E1}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+													<ObjectRef Name="Ship_Current_Global_BLEND" ID="{347E2D45-E136-417F-9D4B-E316EA0D8DA4}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -1346,7 +1336,47 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Amb_Animals_Seagulls_" ID="{B4D7633F-4A2A-4DAB-A99B-CC186EA145C3}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+													<ObjectRef Name="Amb_Animals_Seagulls_SEQ" ID="{B4D7633F-4A2A-4DAB-A99B-CC186EA145C3}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{AA24D591-7FED-4CE6-BDA5-7E37544F3F9E}" ShortID="541371851">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Amb_Animals_Seals_SEQ" ID="{C435C41B-E91F-4C7C-B866-6EF3CAC45046}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{CE38E59B-844A-441A-8D53-08BD77D73844}" ShortID="857258743">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Amb_Animals_BirdsMediumAltitude_SEQ" ID="{6F67C3E6-5844-4F6F-B6E3-ECBDE117FB98}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{72CBDEF5-BA68-4BCD-A163-B83FF8BD5D7B}" ShortID="673744514">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Amb_Animals_BirdsHighAltitude_SEQ" ID="{50923880-8BD2-468C-827E-EF8D7BAD6EA8}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{7ED9EA32-C482-4D45-A1A8-8F147F5CA70F}" ShortID="963083943">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Amb_Animals_FlyOff_SEQ" ID="{C2DC338C-09FD-4F6D-A777-F413A11607B6}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -1362,6 +1392,26 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="Amb_Sea_BLEND" ID="{08EC4E36-6B2A-4649-986E-A266F427A720}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{12B30056-63BD-4CAD-B2E5-FAB81E1F34F6}" ShortID="328485782">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Amb_Animals_Whales_SEQ" ID="{3AC3A15A-7587-4796-A980-7064589DA798}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{33C1F839-4B3A-4B52-87B9-5E0AE8B89724}" ShortID="717996366">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Amb_Animals_WhalesSing_SEQ" ID="{039C2196-D816-41EC-AA5C-03C7E3373C16}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -1518,58 +1568,6 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="SFX_HA_Enviro_WaterLapping" ID="{603F497C-069A-41DE-8B65-E98C2448F72B}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-							</ChildrenList>
-						</Folder>
-						<Folder Name="Current" ID="{5DBB2B26-4AE7-42DC-819F-4BE00E996DF2}" ShortID="978196752">
-							<ChildrenList>
-								<Event Name="E_Enviro_EnterCurrent" ID="{D12B5289-2B7A-4B8B-91C5-6AFC29B9E243}">
-									<ChildrenList>
-										<Action Name="" ID="{3EE5E9E9-46CD-4871-8E81-243505D64649}" ShortID="409847396">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="1"/>
-												<Property Name="FadeInCurve" Type="int16" Value="7"/>
-												<Property Name="FadeTime" Type="Real64" Value="2"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Ship_Current_Global_BLEND" ID="{347E2D45-E136-417F-9D4B-E316EA0D8DA4}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="E_Enviro_ExitCurrent" ID="{7FEF6A81-7F07-450D-A989-A62CDEB15161}">
-									<ChildrenList>
-										<Action Name="" ID="{2F4BA207-19B9-4B51-B124-9D6EBBA26FC9}" ShortID="20432369">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="2"/>
-												<Property Name="FadeOutCurve" Type="int16" Value="7"/>
-												<Property Name="FadeTime" Type="Real64" Value="2"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Ship_Current_Global_BLEND" ID="{347E2D45-E136-417F-9D4B-E316EA0D8DA4}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="E_Enviro_Current_ImmediateSTOP" ID="{21A700E8-944F-4939-9D83-08F6B1160A86}">
-									<ChildrenList>
-										<Action Name="" ID="{05E09F76-54C6-4D19-B1E9-219F79783703}" ShortID="600547913">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="2"/>
-												<Property Name="FadeOutCurve" Type="int16" Value="7"/>
-												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Ship_Current_Global_BLEND" ID="{347E2D45-E136-417F-9D4B-E316EA0D8DA4}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

@@ -42,13 +42,6 @@
 								<State Name="No_Pulley" ID="{285D0B37-CA73-4254-B956-940AB9792C61}"/>
 							</ChildrenList>
 						</StateGroup>
-						<StateGroup Name="Ship_IsInCurrent_STATE" ID="{27264874-57B9-4134-8B74-761524D95166}">
-							<ChildrenList>
-								<State Name="None" ID="{7C2BB039-BC85-41ED-9551-86CD8710E47E}"/>
-								<State Name="Yes_InCurrent" ID="{6BB67B6D-4AF2-4A5D-8E8C-2F71D908F44A}"/>
-								<State Name="No_OutCurrent" ID="{CF0D6809-D32C-401F-9710-092996474C8B}"/>
-							</ChildrenList>
-						</StateGroup>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Music" ID="{3B07CDAB-DE57-4EC1-8B18-9BEB5E1C671F}" ShortID="506226600">
@@ -67,6 +60,7 @@
 								<State Name="Sailing_Theme" ID="{E89ACF6F-325E-4A89-ADEF-44ADD6B60929}"/>
 								<State Name="Storm_Theme" ID="{F9140ED6-73FA-43E8-A1C7-ED18288192C9}"/>
 								<State Name="DeathSink_Jingle" ID="{309B6678-F5FB-45E2-9413-63761CE664EA}"/>
+								<State Name="Credits_Theme" ID="{BFB9A67B-D59A-458B-94E9-BD409A405194}"/>
 							</ChildrenList>
 						</StateGroup>
 						<StateGroup Name="Mus_Storm_Intensity_STATE" ID="{4649E4E0-414E-4656-BE8B-4B21D4CDD009}">
