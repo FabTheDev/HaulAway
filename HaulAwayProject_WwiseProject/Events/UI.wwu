@@ -45,6 +45,43 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{B343C6E8-9A0E-42EE-8C9D-4C3622C8BB6A}" ShortID="987947778">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="7"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Voice Global" ID="{05AF76D9-562A-43AC-BDD7-94D03609A2B9}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{AC1F7BD2-2DF0-445C-B731-11BE783EB44E}" ShortID="772362839">
+									<PropertyList>
+										<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
+										<Property Name="ActionType" Type="int16" Value="12"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+										<Property Name="Volume" Type="Real64" Value="-6"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{B6A0B1D1-CBD6-48F8-8925-7BFD7DC0BD51}" ShortID="902001527">
+									<PropertyList>
+										<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
+										<Property Name="ActionType" Type="int16" Value="12"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+										<Property Name="Volume" Type="Real64" Value="-6"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MUSIC_BUS" ID="{E98A5F2E-E786-43DB-8254-3BEE4959E4AF}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="E_UI_Book_Error" ID="{B1905221-18B5-4BEA-93A1-620A28DDC7E1}">
@@ -211,6 +248,43 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="UI_Book_CloseMenu" ID="{F125AE84-78FC-43B6-BC1D-DFFF7A8B710F}" WorkUnitID="{BF938DC5-5BE3-4614-9C2E-2820850BD40E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{F5125228-982D-4510-B5C5-4FE1C9BCC4A7}" ShortID="383495172">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="9"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Voice Global" ID="{05AF76D9-562A-43AC-BDD7-94D03609A2B9}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{9FEF848A-E305-4938-826F-3DC3E6EA577F}" ShortID="730381648">
+									<PropertyList>
+										<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
+										<Property Name="ActionType" Type="int16" Value="16"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+										<Property Name="Volume" Type="Real64" Value="-6"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{37809C71-5305-4135-9806-EB3D08FD40D7}" ShortID="450625258">
+									<PropertyList>
+										<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
+										<Property Name="ActionType" Type="int16" Value="16"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+										<Property Name="Volume" Type="Real64" Value="-6"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MUSIC_BUS" ID="{E98A5F2E-E786-43DB-8254-3BEE4959E4AF}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

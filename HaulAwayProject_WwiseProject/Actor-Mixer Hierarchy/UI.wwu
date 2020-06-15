@@ -219,7 +219,7 @@
 												<Property Name="TrimEnd" Type="Real64" Value="0.353900537383903"/>
 												<Property Name="VolumeOffset" Type="Real64">
 													<ValueList>
-														<Value>3</Value>
+														<Value>6</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -696,7 +696,7 @@
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-19</Value>
+												<Value>-16</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1403,7 +1403,7 @@
 										<Property Name="OverrideConversion" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-8</Value>
+												<Value>-12</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2168,9 +2168,11 @@
 								</ActorMixer>
 								<ActorMixer Name="Module Selection" ID="{FB24CCBB-647A-4DC8-98E3-82B0F412C923}" ShortID="692753482">
 									<PropertyList>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-10</Value>
+												<Value>-13</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2596,6 +2598,14 @@
 											</ChildrenList>
 										</RandomSequenceContainer>
 									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{A47ACE04-7262-4D92-A13F-243A318A23B6}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="-29.718875502008"/>
+												<Property Name="PanY" Type="Real64" Value="18.2978723404255"/>
+											</PropertyList>
+										</Panner>
+									</PositioningInfo>
 								</ActorMixer>
 							</ChildrenList>
 						</ActorMixer>

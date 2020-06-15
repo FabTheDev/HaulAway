@@ -57,8 +57,11 @@
 					<ChildrenList>
 						<GameParameter Name="ShipSpeed_GP" ID="{72DFA80D-619E-4B12-8899-29FD2767932C}">
 							<PropertyList>
+								<Property Name="FilterTimeDown" Type="Real64" Value="0.5"/>
+								<Property Name="FilterTimeUp" Type="Real64" Value="0.5"/>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
 								<Property Name="Max" Type="Real64" Value="25"/>
+								<Property Name="RTPCRamping" Type="int16" Value="2"/>
 							</PropertyList>
 						</GameParameter>
 						<GameParameter Name="ShipLife_GP" ID="{718CC684-1460-48DE-BD21-DEDF2B6A9D4A}">
@@ -174,7 +177,6 @@
 								<Property Name="FilterTimeUp" Type="Real64" Value="0.2"/>
 								<Property Name="InitialValue" Type="Real64" Value="10000"/>
 								<Property Name="Max" Type="Real64" Value="10000"/>
-								<Property Name="RTPCRamping" Type="int16" Value="2"/>
 							</PropertyList>
 						</GameParameter>
 						<GameParameter Name="InCaveOrNot_Factor_GP" ID="{BDE15852-BC19-429F-8E06-7BCEC5A6C6A9}">
@@ -188,8 +190,11 @@
 						</GameParameter>
 						<GameParameter Name="Current_Intensity_GP" ID="{276D662E-DD1D-4996-B906-0DE63D6C5EC5}">
 							<PropertyList>
+								<Property Name="FilterTimeDown" Type="Real64" Value="1"/>
+								<Property Name="FilterTimeUp" Type="Real64" Value="1"/>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
 								<Property Name="Max" Type="Real64" Value="1"/>
+								<Property Name="RTPCRamping" Type="int16" Value="2"/>
 							</PropertyList>
 						</GameParameter>
 					</ChildrenList>
