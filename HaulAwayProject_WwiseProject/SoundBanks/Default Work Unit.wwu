@@ -117,6 +117,7 @@
 						<ObjectRef Name="E_Voice_Humming_09" ID="{D640600D-D171-491E-B85F-5C838550AF5D}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Voice_See_Bell" ID="{E2FF8C7D-29C4-492C-9172-6C7B639A7BBA}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Ship_Sail_SetWindBad" ID="{46388320-D52D-496A-B74D-AD822F0FED80}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="E_ResumeAll" ID="{94FBDE08-4104-497C-8C01-2276D0EBA807}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_HUD_Possessing_Character" ID="{A261169B-D1A7-499D-85B8-0CB82B57DD22}" WorkUnitID="{8A36F450-6135-4EB0-87E8-D4540DB8E015}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Ship_StopSinking" ID="{B8204FD1-D61E-49E0-9E6A-915731A36AC6}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Voice_Found_Drawing" ID="{EA006774-8F89-4A05-9DC0-D9D34C95A5B5}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
@@ -126,6 +127,7 @@
 						<ObjectRef Name="E_Voice_Damaged_IKnowItsHard" ID="{8AE63DD1-0D72-4A6E-B51D-66BED231513D}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Character_LandDeath" ID="{2F9DDAFE-7F02-4A6E-9897-BF9492A319B3}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Mus_Resume_Music" ID="{B75C3503-7176-4A76-AB03-A97B84B8DFDA}" WorkUnitID="{0ED7EBA1-F621-4832-9054-98078A25E231}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="E_PauseAll" ID="{0E4F6469-C916-4A89-B041-94F714DA355E}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Mus_Set_Storm_Appoaching" ID="{1863A054-F709-4AAA-8A18-27B1EE6C2022}" WorkUnitID="{0ED7EBA1-F621-4832-9054-98078A25E231}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Voice_See_Reefs" ID="{73D9F1A2-1A92-4AB7-8A84-3CA236B7DC94}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Mus_Set_Standby_Jingle" ID="{1A1405B3-7C1F-4AD2-971F-2D1ABEAF6120}" WorkUnitID="{0ED7EBA1-F621-4832-9054-98078A25E231}" Origin="Manual" Filter="7"/>

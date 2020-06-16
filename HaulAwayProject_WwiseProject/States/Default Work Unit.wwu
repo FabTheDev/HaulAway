@@ -61,6 +61,7 @@
 								<State Name="Storm_Theme" ID="{F9140ED6-73FA-43E8-A1C7-ED18288192C9}"/>
 								<State Name="DeathSink_Jingle" ID="{309B6678-F5FB-45E2-9413-63761CE664EA}"/>
 								<State Name="Credits_Theme" ID="{BFB9A67B-D59A-458B-94E9-BD409A405194}"/>
+								<State Name="No_Music" ID="{8BAC4E4B-7816-4997-8B90-00892BB45088}"/>
 							</ChildrenList>
 						</StateGroup>
 						<StateGroup Name="Mus_Storm_Intensity_STATE" ID="{4649E4E0-414E-4656-BE8B-4B21D4CDD009}">
@@ -110,7 +111,7 @@
 								<Transition>
 									<StartState Name="Freeze_State0" ID="{1C69310C-14BC-4B8C-90AF-35F58067C2CF}"/>
 									<EndState Name="Freeze_State1" ID="{A8637BB8-9C2B-4109-BCC0-13ED8D99D997}"/>
-									<Time>2</Time>
+									<Time>6</Time>
 									<IsShared>false</IsShared>
 								</Transition>
 								<Transition>
