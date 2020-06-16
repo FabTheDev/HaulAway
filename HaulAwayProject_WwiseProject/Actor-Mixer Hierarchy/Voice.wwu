@@ -113,6 +113,35 @@
 					<ChildrenList>
 						<ActorMixer Name="Voicelines" ID="{0E2BA5FE-1AD7-4216-A635-5AF03CED4260}" ShortID="13948714">
 							<PropertyList>
+								<Property Name="MakeUpGain" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{5EBE08C5-E25C-44BC-B6DA-AF27581A86C5}" ShortID="291640000">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Sea_Amb_Intensity_GP" ID="{5A269150-E118-4614-A105-F8713420EE7D}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{6C81E5F9-8E17-49A7-9A4D-95C1969CA063}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-3</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Log2</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 								<Property Name="OverrideOutput" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -2073,6 +2102,11 @@
 											<PropertyList>
 												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -6142,11 +6176,6 @@
 											</ValueList>
 										</Property>
 										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>3</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
