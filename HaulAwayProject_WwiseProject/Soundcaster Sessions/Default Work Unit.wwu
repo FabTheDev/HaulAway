@@ -267,6 +267,14 @@
 							<Position X="0" Y="2"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="E_AmbMainMenu_Play" ID="{D6877D38-2F7F-4E46-876A-1768AE8392A1}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
+							<Position X="0" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Intro_Play" ID="{CC3DC222-42EF-42BE-B1BE-BC03E6450DAB}" WorkUnitID="{4ADDE529-1277-4E72-9EF3-BDCDA35E952A}"/>
+							<Position X="0" Y="5"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="E_Mus_Initiate_Music" ID="{3B75DBEE-0C3B-4CCC-967F-BE9786285E6F}" WorkUnitID="{0ED7EBA1-F621-4832-9054-98078A25E231}"/>
 							<Position X="1" Y="0"/>
 						</Module>
@@ -281,6 +289,10 @@
 						<Module>
 							<ObjectRef Name="E_Mus_Set_Exploring_Jingle" ID="{C5D208F5-0E46-40C7-A1A1-6F310C7060C7}" WorkUnitID="{0ED7EBA1-F621-4832-9054-98078A25E231}"/>
 							<Position X="1" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Intro_Pass" ID="{196F54A1-6F42-48AE-9BE3-79CD8679F596}" WorkUnitID="{4ADDE529-1277-4E72-9EF3-BDCDA35E952A}"/>
+							<Position X="1" Y="5"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="E_Mus_Set_Char_Singing_YES" ID="{80F59379-0A36-4271-BD67-2D0DBE50D43A}" WorkUnitID="{0ED7EBA1-F621-4832-9054-98078A25E231}"/>
@@ -462,7 +474,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Altitude_Camera_GP" ID="{06524578-A51A-4D48-A1F9-1583202B9716}"/>
-							<Value>2090</Value>
+							<Value>1549.29577464789</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SFX_Volume_GP" ID="{C9F5422A-020E-4D7B-AF1B-5A807144C983}"/>
@@ -478,15 +490,15 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="No_Music" ID="{8BAC4E4B-7816-4997-8B90-00892BB45088}"/>
-						<CurrentStateRef Name="No_Ship_Sinking" ID="{61F19502-08FC-437E-AFCF-D89896B4FCA5}"/>
+						<CurrentStateRef Name="None" ID="{E47E565D-CFAA-4A90-B728-CEF6C832CF4A}"/>
+						<CurrentStateRef Name="None" ID="{2A3C993C-BC43-40A0-A46B-83C2DC8B3A95}"/>
 						<CurrentStateRef Name="None" ID="{B83E4870-EE12-480B-A54C-32436863F222}"/>
-						<CurrentStateRef Name="No_Storm" ID="{6CB7680E-6578-4568-8BBF-6F3289ADBFBA}"/>
-						<CurrentStateRef Name="Freeze_State0" ID="{1C69310C-14BC-4B8C-90AF-35F58067C2CF}"/>
+						<CurrentStateRef Name="None" ID="{2CFE3A44-5351-4DE6-A79B-39203CDC3FA3}"/>
+						<CurrentStateRef Name="None" ID="{9799993D-8E7E-437B-AFE6-0259AA0C72B0}"/>
 						<CurrentStateRef Name="None" ID="{D4F8615F-D5D9-4AD2-B41C-81F651EB2E30}"/>
-						<CurrentStateRef Name="No_Char_Singing" ID="{CC851A52-942B-4F5D-984D-2F321AFDD69E}"/>
-						<CurrentStateRef Name="Walking" ID="{0DA3EC48-DE20-451C-A639-31F81343B6E8}"/>
-						<CurrentStateRef Name="Out_Hold" ID="{4799B397-87EA-4934-ACC2-73FA0C65A854}"/>
+						<CurrentStateRef Name="None" ID="{6507D9A9-729F-4C4B-AA8E-16815F487179}"/>
+						<CurrentStateRef Name="None" ID="{4F52A7E7-3240-4480-BCA4-A75985D30EDB}"/>
+						<CurrentStateRef Name="None" ID="{141295CE-4617-432C-8DBE-52A7396D515C}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Far_Thunder" ID="{B5D774AC-EFDC-4A3E-8D5C-CC9E48E513CA}"/>

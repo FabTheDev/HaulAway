@@ -1550,6 +1550,13 @@
 																	</ChildrenList>
 																</RandomSequenceContainer>
 																<RandomSequenceContainer Name="HUD_PossessingShip_TakeTiller_RND" ID="{46BDEB6E-B4A4-436A-9C6F-9A645974E652}" ShortID="803954671">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-5</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
