@@ -1,6 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{4ADDE529-1277-4E72-9EF3-BDCDA35E952A}" SchemaVersion="97">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{4ADDE529-1277-4E72-9EF3-BDCDA35E952A}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{4ADDE529-1277-4E72-9EF3-BDCDA35E952A}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Intro" ID="{DEFA0636-8A3B-4AF0-9DA5-0D15E3AD9063}" ShortID="345652018">
+					<ChildrenList>
+						<Event Name="E_Intro_Play" ID="{CC3DC222-42EF-42BE-B1BE-BC03E6450DAB}">
+							<ChildrenList>
+								<Action Name="" ID="{76FC7C72-24B7-419E-AFCA-1436DB530487}" ShortID="382433548">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="7"/>
+										<Property Name="FadeTime" Type="Real64" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Amb Main Menu" ID="{A923D706-7872-48CA-BAA7-92B08492357F}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{D16C5C37-3249-4315-AD3F-B8AB5A3F0C7F}" ShortID="372690159">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="No_Music" ID="{8BAC4E4B-7816-4997-8B90-00892BB45088}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{23D3E52C-FA6B-4A5A-AD07-8674606A0C6E}" ShortID="665658311">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Cinematic_Intro_Audio_v4_1" ID="{07E41CE2-2112-4769-BBA3-D57C41D4019E}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Intro_Pass" ID="{196F54A1-6F42-48AE-9BE3-79CD8679F596}">
+							<ChildrenList>
+								<Action Name="" ID="{D2A6AE34-2CC2-44F9-ABD3-975D567BFE2F}" ShortID="119618984">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="7"/>
+										<Property Name="FadeTime" Type="Real64" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Cinematic_Intro_Audio_v4_1" ID="{07E41CE2-2112-4769-BBA3-D57C41D4019E}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

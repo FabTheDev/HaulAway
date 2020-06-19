@@ -10,11 +10,11 @@ State Group	ID	Name			Wwise Object Path	Notes
 	755124726	Ship_IsThereAPulley			\Default Work Unit\Ship\Ship_IsThereAPulley	
 	848394149	Mus_IsInHold_STATE			\Default Work Unit\Music\Mus_IsInHold_STATE	
 	1913733656	Mus_Selector_STATE			\Default Work Unit\Music\Mus_Selector_STATE	
-	2048175480	Ship_IsInCurrent_STATE			\Default Work Unit\Ship\Ship_IsInCurrent_STATE	
 	2767790424	Mus_ShipIsSinking_STATE			\Default Work Unit\Music\Mus_ShipIsSinking_STATE	
 	3166210129	Char_Walk_Run			\Default Work Unit\Character\Footsteps\Char_Walk_Run	
 	3992907366	Mus_CharIsSinging_STATE			\Default Work Unit\Music\Mus_CharIsSinging_STATE	
 	4062772272	ContainerType_STATE			\Default Work Unit\Character\Interaction\ContainerType_STATE	
+	4274872735	ScreenFreezing_STATE			\Default Work Unit\Global\ScreenFreezing_STATE	
 
 State	ID	Name	State Group			Notes
 	449340473	Approaching_Storm	Mus_Storm_Intensity_STATE			
@@ -36,11 +36,11 @@ State	ID	Name	State Group			Notes
 	2557777556	Main_Theme	Mus_Selector_STATE			
 	2832130701	Going_To_Sea_Theme	Mus_Selector_STATE			
 	3504910062	Storm_Theme	Mus_Selector_STATE			
+	3575812788	DeathSink_Jingle	Mus_Selector_STATE			
 	3652298044	Sailing_Theme	Mus_Selector_STATE			
+	3734914463	Credits_Theme	Mus_Selector_STATE			
+	3767268120	No_Music	Mus_Selector_STATE			
 	3941864196	Jingle_FireLit	Mus_Selector_STATE			
-	390884355	Yes_InCurrent	Ship_IsInCurrent_STATE			
-	495831756	No_OutCurrent	Ship_IsInCurrent_STATE			
-	748895195	None	Ship_IsInCurrent_STATE			
 	748895195	None	Mus_ShipIsSinking_STATE			
 	2571399905	Yes_Ship_Sinking	Mus_ShipIsSinking_STATE			
 	4135774875	No_Ship_Sinking	Mus_ShipIsSinking_STATE			
@@ -54,6 +54,10 @@ State	ID	Name	State Group			Notes
 	442447909	Barrel	ContainerType_STATE			
 	748895195	None	ContainerType_STATE			
 	3098439042	Crate	ContainerType_STATE			
+	748895195	None	ScreenFreezing_STATE			
+	1962628156	Freeze_State2	ScreenFreezing_STATE			
+	1962628158	Freeze_State0	ScreenFreezing_STATE			
+	1962628159	Freeze_State1	ScreenFreezing_STATE			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	626750949	Intra_Music_LowPassFilter_GP			\Default Work Unit\Global\Intra_Music_LowPassFilter_GP	
@@ -76,10 +80,12 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	408566363	Cave_Acoustic_SFX_AUX			\Default Work Unit\Master Audio Bus\SFX_BUS\Cave_Acoustic_SFX_AUX	
 	1338958676	Exterior_Acoustic_SFX_AUX			\Default Work Unit\Master Audio Bus\SFX_BUS\Exterior_Acoustic_SFX_AUX	
+	3301414153	Far_Acoustic_SFX_AUX			\Default Work Unit\Master Audio Bus\SFX_BUS\Far_Acoustic_SFX_AUX	
 	3549807355	Exterior_Acoustic_Voice_AUX			\Default Work Unit\Master Audio Bus\VOICE_BUS\Exterior_Acoustic_Voice_AUX	
 
 Effect plug-ins	ID	Name	Type				Notes
 	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
+	850495130	Have_U_Ever_Been_Outside_(Custom)	Wwise RoomVerb			
 	3442768367	Hall_Large_Dark	Wwise RoomVerb			
 	3604890626	High_Pass_60Hz	Wwise Parametric EQ			
 

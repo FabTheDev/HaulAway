@@ -33,6 +33,12 @@
       "GUID": "{390D116F-CA01-44C8-A8DE-FAF79069473B}"
      },
      {
+      "Id": "3301414153",
+      "Name": "Far_Acoustic_SFX_AUX",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SFX_BUS\\Far_Acoustic_SFX_AUX",
+      "GUID": "{F49D994B-F4D5-463F-9237-525DB3DC22D1}"
+     },
+     {
       "Id": "3549807355",
       "Name": "Exterior_Acoustic_Voice_AUX",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\VOICE_BUS\\Exterior_Acoustic_Voice_AUX",
