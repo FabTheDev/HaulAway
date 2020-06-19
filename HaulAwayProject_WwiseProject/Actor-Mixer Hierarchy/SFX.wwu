@@ -362,6 +362,11 @@
 										<SwitchContainer Name="Sail_Pulley_Or_Not_SWTCH" ID="{A3A1A278-A5BF-4976-995A-2489B99ECED0}" ShortID="1066855465">
 											<PropertyList>
 												<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -13770,9 +13775,22 @@
 										</Sound>
 										<Sound Name="SFX_HA_Enviro_WaterLapping_Box" ID="{B2DE98C1-9EB0-4804-8AB1-823B8B60EC69}" ShortID="575673213">
 											<PropertyList>
+												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
 												<Property Name="Volume" Type="Real64">
 													<RTPCList>
 														<RTPC Name="" ID="{95670995-25EE-47F6-9526-B64162FEC837}" ShortID="429796912">
@@ -19666,6 +19684,11 @@
 										<BlendContainer Name="Amb_MainMenu_BLEND" ID="{FCEFFCBB-7CA2-4F5B-BF51-83D5ABC4F875}" ShortID="106852414">
 											<PropertyList>
 												<Property Name="BlendBehavior" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">

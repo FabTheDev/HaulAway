@@ -699,6 +699,16 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
+										<Action Name="" ID="{9C456F4C-9272-43D8-90E8-E196A9CF895A}" ShortID="499408743">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Pulley" ID="{EF571314-96FA-4E21-B797-7371B66B4B91}" WorkUnitID="{CEE16F1D-2A46-49FD-A66B-D0A11858C292}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 									</ChildrenList>
 								</Event>
 							</ChildrenList>
@@ -1444,6 +1454,7 @@
 												<Property Name="ActionType" Type="int16" Value="2"/>
 												<Property Name="FadeOutCurve" Type="int16" Value="7"/>
 												<Property Name="FadeTime" Type="Real64" Value="2"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
@@ -1481,6 +1492,7 @@
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="7"/>
 										<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -1492,6 +1504,7 @@
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="7"/>
 										<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -1507,6 +1520,7 @@
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="9"/>
 										<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -1518,6 +1532,7 @@
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="9"/>
 										<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -1554,6 +1569,36 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Amb_MainMenu_BLEND" ID="{FCEFFCBB-7CA2-4F5B-BF51-83D5ABC4F875}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_End_FadeOut" ID="{F4095B73-84DD-4914-A5DF-F8F76313838E}">
+							<ChildrenList>
+								<Action Name="" ID="{4A45BE6B-101B-4A46-9A02-22CB4999B46A}" ShortID="501845099">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="7"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Voice Global" ID="{05AF76D9-562A-43AC-BDD7-94D03609A2B9}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{3C2669C2-43E5-4DBD-99A9-9586F729118A}" ShortID="233651291">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="7"/>
+										<Property Name="FadeTime" Type="Real64" Value="6"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX" ID="{CEF02863-FCD0-487C-887B-4755EF903DFC}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
