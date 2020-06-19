@@ -19,6 +19,7 @@
 										<Switch Name="Water" ID="{196AB4AA-232D-454E-B47B-EFA10A47FAA1}"/>
 										<Switch Name="WetSand" ID="{58FF7AD6-1DF7-4B9C-BFE8-5E82949371D7}"/>
 										<Switch Name="Wood" ID="{AD02081A-225D-437C-BF52-89E278904486}"/>
+										<Switch Name="Bridge" ID="{49AB51FC-6299-40EA-B480-7A44D775B231}"/>
 									</ChildrenList>
 								</SwitchGroup>
 							</ChildrenList>

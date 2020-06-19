@@ -204,6 +204,10 @@
 							<Value>100</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="Current_Intensity_GP" ID="{276D662E-DD1D-4996-B906-0DE63D6C5EC5}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Distance_Cam_To_Grass_GP" ID="{BECB20DB-E884-4A15-91EA-2B9E82A24591}"/>
 							<Value>4000</Value>
 						</RTPCValue>
@@ -249,6 +253,7 @@
 						<CurrentStateRef Name="No_Ship_Sinking" ID="{61F19502-08FC-437E-AFCF-D89896B4FCA5}"/>
 						<CurrentStateRef Name="None" ID="{B83E4870-EE12-480B-A54C-32436863F222}"/>
 						<CurrentStateRef Name="Here_Storm" ID="{A0300296-6DED-4FB9-8C27-F9CECC588BFE}"/>
+						<CurrentStateRef Name="None" ID="{9799993D-8E7E-437B-AFE6-0259AA0C72B0}"/>
 						<CurrentStateRef Name="Crate" ID="{3EF4FD84-9C0E-4693-B4B9-EABBD5455526}"/>
 						<CurrentStateRef Name="No_Char_Singing" ID="{CC851A52-942B-4F5D-984D-2F321AFDD69E}"/>
 						<CurrentStateRef Name="Walking" ID="{0DA3EC48-DE20-451C-A639-31F81343B6E8}"/>
@@ -256,7 +261,7 @@
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Far_Thunder" ID="{B5D774AC-EFDC-4A3E-8D5C-CC9E48E513CA}"/>
-						<CurrentSwitchRef Name="DryDirt" ID="{3ACDF8C5-731A-4217-817C-5A3173606D9C}"/>
+						<CurrentSwitchRef Name="Bridge" ID="{49AB51FC-6299-40EA-B480-7A44D775B231}"/>
 						<CurrentSwitchRef Name="Compass" ID="{CA054260-4F3C-411B-8F93-A47EAE9EAF92}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
