@@ -1138,6 +1138,67 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Anchor" ID="{AAAEF6EF-F2B0-49F7-A46D-C42C36A76774}" ShortID="695110977">
+							<ChildrenList>
+								<Event Name="E_Ship_Anchor_Raised" ID="{99F343A7-BE85-4D6A-9F5E-B3C4F99BAAA9}">
+									<ChildrenList>
+										<Action Name="" ID="{3E60398F-8B58-4886-B84E-429DD9A0F0E3}" ShortID="104328011">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ship_Anchor_Raised_RND" ID="{3C2B6C57-1F5D-4E78-98D1-79042C9101DF}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{3F469025-0F7C-4430-ACBC-100F0802DB73}" ShortID="1081793">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ship_Anchor_Raising_RND_LOOP" ID="{5F1CF308-5E3E-4B08-ADA8-5DECA8CD8A84}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Ship_Anchor_Raising" ID="{B39F84D2-1D8C-447C-817A-5D530564F5A9}">
+									<ChildrenList>
+										<Action Name="" ID="{230CB2FA-0EF4-4D96-BA2D-7C5E59744E77}" ShortID="18091922">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="FadeInCurve" Type="int16" Value="7"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ship_Anchor_Raising_RND_LOOP" ID="{5F1CF308-5E3E-4B08-ADA8-5DECA8CD8A84}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Ship_Anchor_Stop_Raising" ID="{798B3922-9306-4766-B260-6EF31E83C9C3}">
+									<ChildrenList>
+										<Action Name="" ID="{8CC4EA68-E33C-4990-B8C1-13F5508D3F98}" ShortID="322126382">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeInCurve" Type="int16" Value="7"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ship_Anchor_Raising_RND_LOOP" ID="{5F1CF308-5E3E-4B08-ADA8-5DECA8CD8A84}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Enviro" ID="{21681DFD-6E4E-4A3C-AC3C-06D66E27A926}" ShortID="53189752">

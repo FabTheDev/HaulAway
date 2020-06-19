@@ -3,7 +3,7 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{041C9DA3-1ADF-40ED-AA76-A66E20D13018}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="D:\ACFA\PROJETS JV\HAUL AWAY - Rubika\Intro\"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="D:\ACFA\PROJETS JV\HAUL AWAY - Rubika\Assets\Manquants\Ship\Anchor\"/>
 				<Property Name="Event Action List\{02E8FD5F-A744-42BA-8016-5BC2F7D5A947}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{03586636-9AB6-407F-945A-678AA7605BB9}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{03856E7F-23E0-40B3-9FD6-7026E27B1B18}\x64_Expand States" Type="string" Value=""/>
@@ -86,6 +86,7 @@
 				<Property Name="Event Action List\{75C6A7F6-48BE-402A-B226-2810991C5883}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{77DA8B05-AA75-4F07-8F8C-53AF1C2D55CA}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{78B2445B-7EEF-4D8A-9308-49CBD03F5584}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{798B3922-9306-4766-B260-6EF31E83C9C3}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{79B58E0D-F1AF-4FCF-90E8-A8447FB50460}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{7F43198B-F934-4AEF-9CFB-E1941406A519}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{7FD20740-1BEA-44D3-AD57-70039DF87BE2}\x64_Expand States" Type="string" Value=""/>
@@ -107,6 +108,7 @@
 				<Property Name="Event Action List\{934499C2-93FE-4C70-9756-3E8268C9BB94}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{94FBDE08-4104-497C-8C01-2276D0EBA807}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{98D67F20-0951-4CF0-94FD-9052BAFAB0FC}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{99F343A7-BE85-4D6A-9F5E-B3C4F99BAAA9}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{99F51088-29FB-44E3-B64D-D4614A1F48F8}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{9A5F851D-6C45-45F5-A58F-A2127FA18AA9}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{9ADCB8F5-18A6-4B93-8283-71DC643C4211}\x64_Expand States" Type="string" Value=""/>
@@ -132,6 +134,7 @@
 				<Property Name="Event Action List\{B1786F92-3139-4842-B212-C51C9CD211D5}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{B1905221-18B5-4BEA-93A1-620A28DDC7E1}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{B304A8D6-706D-489E-B52C-41D4F470249B}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{B39F84D2-1D8C-447C-817A-5D530564F5A9}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{B44F5068-F421-4DAA-ABA1-75381562FCCB}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{B63CC5A3-961F-4BEE-88C4-50AA83182F0C}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{B6957073-1D68-45EF-8E84-A03280A83950}\x64_Expand States" Type="string" Value=""/>
@@ -459,7 +462,7 @@
 					<PluginInnerObject Name="" ID="{CE04EB14-BFBF-468A-B1BC-8E64616C76A3}" PluginName="BatchRenameSettings" CompanyID="0" PluginID="992">
 						<PropertyList>
 							<Property Name="RemoveFrom" Type="int16" Value="1"/>
-							<Property Name="ReplaceFindWhat" Type="string" Value="HA_"/>
+							<Property Name="ReplaceFindWhat" Type="string" Value="_LOOP"/>
 						</PropertyList>
 					</PluginInnerObject>
 				</List>
