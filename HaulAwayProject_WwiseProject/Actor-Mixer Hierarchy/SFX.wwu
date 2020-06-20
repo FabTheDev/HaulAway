@@ -364,7 +364,7 @@
 												<Property Name="SwitchBehavior" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-3</Value>
+														<Value>-5</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -11105,7 +11105,7 @@
 												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-16</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -13008,11 +13008,6 @@
 																		</RTPC>
 																	</RTPCList>
 																</Property>
-																<Property Name="Volume" Type="Real64">
-																	<ValueList>
-																		<Value>2</Value>
-																	</ValueList>
-																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
@@ -14276,7 +14271,7 @@
 														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
 														<Property Name="VolumeOffset" Type="Real64">
 															<ValueList>
-																<Value>1</Value>
+																<Value>-1</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -14296,7 +14291,6 @@
 												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 												<Property Name="MaxSoundPerInstance" Type="int16">
 													<ValueList>
 														<Value>1</Value>
@@ -14362,7 +14356,7 @@
 														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
 														<Property Name="VolumeOffset" Type="Real64">
 															<ValueList>
-																<Value>1</Value>
+																<Value>-1</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -14456,10 +14450,8 @@
 														</RTPC>
 													</RTPCList>
 												</Property>
+												<Property Name="OverrideConversion" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-3</Value>
-													</ValueList>
 													<RTPCList>
 														<RTPC Name="" ID="{9A3ADD11-2C40-4187-BDE2-CA9235989938}" ShortID="369211871">
 															<ReferenceList>
@@ -14853,9 +14845,29 @@
 										</SwitchContainer>
 										<RandomSequenceContainer Name="Tempest_ThunderHere_RND" ID="{3990F4F7-3FBC-4458-88BB-387789B26B34}" ShortID="83905064">
 											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.5</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideConversion" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{5188F7CB-C066-44AF-ABAB-44BE78A53CF9}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="100"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>5</Value>
+														<Value>3.5</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -14869,6 +14881,13 @@
 											</ReferenceList>
 											<ChildrenList>
 												<Sound Name="SFX_HA_Enviro_ThunderHere_01" ID="{3446258B-2999-4F00-BE0B-22806EA90F7C}" ShortID="966726479">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>6</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
@@ -14899,20 +14918,17 @@
 														<ActiveSource Name="SFX_HA_Enviro_ThunderHere_01" ID="{A8914052-D82D-42BE-83FC-A555E0D1A88D}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="SFX_HA_Enviro_ThunderHere_02" ID="{7F2E6CCC-5BC6-45FC-9208-9356A7359092}" ShortID="1016021867">
+												<Sound Name="SFX_HA_Enviro_ThunderHere_03" ID="{4A98BC2B-F298-4DB0-BE50-4A6E6134EDDC}" ShortID="216256081">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-														</Reference>
-														<Reference Name="UserAuxSend0">
-															<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_HA_Enviro_ThunderHere_02" ID="{CA3F98D7-5BC1-49BA-B831-1AB7EA460758}">
+														<AudioFileSource Name="SFX_HA_Enviro_ThunderHere_03" ID="{CAFC27EF-5CD0-4328-9EA6-FD39B54FD5D7}">
 															<PropertyList>
 																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
 																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
@@ -14920,14 +14936,84 @@
 																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
 															</PropertyList>
 															<Language>SFX</Language>
-															<AudioFile>SFX_HA_Enviro_ThunderHere_02.wav</AudioFile>
+															<AudioFile>SFX_HA_Enviro_ThunderHere_03.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="859340246"/>
+																<MediaID ID="17177553"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="SFX_HA_Enviro_ThunderHere_02" ID="{CA3F98D7-5BC1-49BA-B831-1AB7EA460758}" Platform="Linked"/>
+														<ActiveSource Name="SFX_HA_Enviro_ThunderHere_03" ID="{CAFC27EF-5CD0-4328-9EA6-FD39B54FD5D7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HA_Enviro_ThunderHere_04" ID="{B30D6162-6027-4711-8E64-B6A5DC39B4D6}" ShortID="186507765">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HA_Enviro_ThunderHere_04" ID="{BEE0C8FE-908A-4A12-ABF8-D7500796D841}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_HA_Enviro_ThunderHere_04.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="546986318"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HA_Enviro_ThunderHere_04" ID="{BEE0C8FE-908A-4A12-ABF8-D7500796D841}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HA_Enviro_ThunderHere_05" ID="{CF04520D-AE4D-4EBE-9706-DF9533EE388E}" ShortID="376600151">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HA_Enviro_ThunderHere_05" ID="{708B614C-E012-40AF-A2F5-467797C767F0}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_HA_Enviro_ThunderHere_05.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1058329016"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HA_Enviro_ThunderHere_05" ID="{708B614C-E012-40AF-A2F5-467797C767F0}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
@@ -15042,6 +15128,60 @@
 													</ChildrenList>
 													<ActiveSourceList>
 														<ActiveSource Name="SFX_HA_Enviro_RainOnWater_Loop" ID="{75C1A020-0EB7-4274-B6A8-796E42228627}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HA_Amb_TempestWind" ID="{B38DB67C-E470-47BB-97E7-90CA69A62C09}" ShortID="364490130">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="RenderEffect0" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>4</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+														</Reference>
+														<Reference Name="Effect0">
+															<Custom>
+																<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{20FD660F-5067-46B2-8A6D-507DBF55B3F5}" ShortID="335732233" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+																	<PropertyList>
+																		<Property Name="FrequencyBand2" Type="Real32" Value="318"/>
+																		<Property Name="FrequencyBand3" Type="Real32" Value="878"/>
+																		<Property Name="GainBand2" Type="Real32" Value="4"/>
+																		<Property Name="GainBand3" Type="Real32" Value="-3"/>
+																	</PropertyList>
+																</Effect>
+															</Custom>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HA_Amb_TempestWind" ID="{38D6D172-DE4B-4D0F-A14A-AE6928CAE760}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_Intro_Wind.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="158770791"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HA_Amb_TempestWind" ID="{38D6D172-DE4B-4D0F-A14A-AE6928CAE760}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
@@ -15263,6 +15403,55 @@
 																<LeftEdgePos>0</LeftEdgePos>
 																<LeftFadingMode>Automatic</LeftFadingMode>
 																<RightEdgePos>800</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+													</BlendTrackAssocList>
+												</BlendTrack>
+												<BlendTrack Name="Tempest Wind" ID="{5C9D71CE-66A2-4FB9-A05D-60306124B267}" ShortID="35317325">
+													<PropertyList>
+														<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<RTPCList>
+																<RTPC Name="" ID="{BA47A83E-96B0-407E-AC99-7061DEA6E3DE}" ShortID="339419184">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="Rain_Intensity_GP" ID="{0203CBA4-E167-40AB-BF11-53B9C72E0BA4}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{1122F6A1-F5FF-44D3-9CEE-2E167FFD5A39}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="LayerCrossFadeControlInput">
+															<ObjectRef Name="Rain_Intensity_GP" ID="{0203CBA4-E167-40AB-BF11-53B9C72E0BA4}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+														</Reference>
+													</ReferenceList>
+													<BlendTrackAssocList>
+														<BlendTrackAssoc>
+															<ItemRef Name="SFX_HA_Amb_TempestWind" ID="{B38DB67C-E470-47BB-97E7-90CA69A62C09}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>0</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<RightEdgePos>1</RightEdgePos>
 																<RightFadingMode>Automatic</RightFadingMode>
 															</CrossfadingInfo>
 														</BlendTrackAssoc>
@@ -20634,11 +20823,6 @@
 																		</RTPC>
 																	</RTPCList>
 																</Property>
-																<Property Name="Volume" Type="Real64">
-																	<ValueList>
-																		<Value>2</Value>
-																	</ValueList>
-																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
@@ -21002,123 +21186,6 @@
 																	</CrossfadingInfo>
 																</BlendTrackAssoc>
 															</BlendTrackAssocList>
-														</BlendTrack>
-														<BlendTrack Name="Grass" ID="{6318BFF6-820C-4037-8A13-8F31E75238CE}" ShortID="479448821">
-															<PropertyList>
-																<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-																<Property Name="Volume" Type="Real64">
-																	<RTPCList>
-																		<RTPC Name="" ID="{6163A92E-3E0B-473E-90A4-4D4A7FF8EA74}" ShortID="48962200">
-																			<ReferenceList>
-																				<Reference Name="ControlInput">
-																					<ObjectRef Name="Distance_Cam_To_Grass_GP" ID="{BECB20DB-E884-4A15-91EA-2B9E82A24591}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<Curve Name="" ID="{39C133E7-A619-43A1-83E0-FBCAA7B7B028}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="3"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>0</YPos>
-																						<Flags>5</Flags>
-																						<SegmentShape>Log1</SegmentShape>
-																					</Point>
-																					<Point>
-																						<XPos>4000</XPos>
-																						<YPos>-200</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</RTPC>
-																	</RTPCList>
-																</Property>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="LayerCrossFadeControlInput">
-																	<ObjectRef Name="Distance_Cam_To_Grass_GP" ID="{BECB20DB-E884-4A15-91EA-2B9E82A24591}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
-																</Reference>
-															</ReferenceList>
-														</BlendTrack>
-														<BlendTrack Name="Bush" ID="{56DD0EA3-98FC-4D6B-95EF-ECB87EDEB882}" ShortID="937007141">
-															<PropertyList>
-																<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-																<Property Name="Volume" Type="Real64">
-																	<RTPCList>
-																		<RTPC Name="" ID="{F00F73F1-8358-4A67-BFDB-EE51B7E44D41}" ShortID="673317484">
-																			<ReferenceList>
-																				<Reference Name="ControlInput">
-																					<ObjectRef Name="Distance_Cam_To_Bush_GP" ID="{0E3723AD-EEB8-4451-B6AC-E6E79C4281B7}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<Curve Name="" ID="{C52F0BC1-D35F-4611-B6FA-60B7642226AD}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="3"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>0</YPos>
-																						<Flags>5</Flags>
-																						<SegmentShape>Log1</SegmentShape>
-																					</Point>
-																					<Point>
-																						<XPos>4000</XPos>
-																						<YPos>-200</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</RTPC>
-																	</RTPCList>
-																</Property>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="LayerCrossFadeControlInput">
-																	<ObjectRef Name="Distance_Cam_To_Bush_GP" ID="{0E3723AD-EEB8-4451-B6AC-E6E79C4281B7}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
-																</Reference>
-															</ReferenceList>
-														</BlendTrack>
-														<BlendTrack Name="Tree" ID="{672B9EA2-607D-4964-9525-FF73D3B3314E}" ShortID="37527876">
-															<PropertyList>
-																<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-																<Property Name="Volume" Type="Real64">
-																	<RTPCList>
-																		<RTPC Name="" ID="{B6F64C7C-2A45-45A1-92CA-B91258EF8E66}" ShortID="795310355">
-																			<ReferenceList>
-																				<Reference Name="ControlInput">
-																					<ObjectRef Name="Distance_Cam_To_Tree_GP" ID="{119836F0-9B41-495F-8C19-71FF16CEC3B5}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<Curve Name="" ID="{2E4372CF-0B7F-4ADD-BAC0-C5EEF8496A3E}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="3"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>0</YPos>
-																						<Flags>5</Flags>
-																						<SegmentShape>Log1</SegmentShape>
-																					</Point>
-																					<Point>
-																						<XPos>4000</XPos>
-																						<YPos>-200</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</RTPC>
-																	</RTPCList>
-																</Property>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="LayerCrossFadeControlInput">
-																	<ObjectRef Name="Distance_Cam_To_Tree_GP" ID="{119836F0-9B41-495F-8C19-71FF16CEC3B5}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
-																</Reference>
-															</ReferenceList>
 														</BlendTrack>
 													</BlendTrackList>
 												</BlendContainer>
@@ -25124,6 +25191,11 @@
 														<RandomSequenceContainer Name="Fttps_Mud_Walk_RND" ID="{6567146C-6D50-4011-9E0A-2B9893D0DA2A}" ShortID="627086149">
 															<PropertyList>
 																<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-3</Value>
+																	</ValueList>
+																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
@@ -25765,7 +25837,6 @@
 														</RandomSequenceContainer>
 														<RandomSequenceContainer Name="Fttps_LR_Water_Walk_SEQ" ID="{23FDD1CC-5867-42C9-A6B7-CEDEA90FFAB4}" ShortID="501720150">
 															<PropertyList>
-																<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 																<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 																<Property Name="MaxSoundPerInstance" Type="int16">
 																	<ValueList>
@@ -25773,14 +25844,9 @@
 																	</ValueList>
 																</Property>
 																<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-																<Property Name="UseMaxSoundPerInstance" Type="bool">
-																	<ValueList>
-																		<Value>True</Value>
-																	</ValueList>
-																</Property>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>8</Value>
+																		<Value>5</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -25820,7 +25886,6 @@
 																	<ChildrenList>
 																		<RandomSequenceContainer Name="Fttps_Puddle_Run_RND" ID="{C781DA2B-6F59-42F3-AF16-5E5409C39A21}" ShortID="190922737">
 																			<PropertyList>
-																				<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 																				<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 																				<Property Name="MaxSoundPerInstance" Type="int16">
 																					<ValueList>
@@ -25829,11 +25894,6 @@
 																				</Property>
 																				<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 																				<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
-																				<Property Name="UseMaxSoundPerInstance" Type="bool">
-																					<ValueList>
-																						<Value>True</Value>
-																					</ValueList>
-																				</Property>
 																			</PropertyList>
 																			<ReferenceList>
 																				<Reference Name="Conversion">
@@ -25940,10 +26000,16 @@
 																				<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 																				<Property Name="MaxSoundPerInstance" Type="int16">
 																					<ValueList>
-																						<Value>1</Value>
+																						<Value>2</Value>
 																					</ValueList>
 																				</Property>
+																				<Property Name="OverrideEffect" Type="bool" Value="True"/>
 																				<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+																				<Property Name="RenderEffect0" Type="bool">
+																					<ValueList>
+																						<Value>True</Value>
+																					</ValueList>
+																				</Property>
 																				<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 																				<Property Name="UseMaxSoundPerInstance" Type="bool">
 																					<ValueList>
@@ -25954,6 +26020,17 @@
 																			<ReferenceList>
 																				<Reference Name="Conversion">
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																				</Reference>
+																				<Reference Name="Effect0">
+																					<Custom>
+																						<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{39A5151D-2980-4898-84BC-8121AA959FCB}" ShortID="791694440" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+																							<PropertyList>
+																								<Property Name="FrequencyBand2" Type="Real32" Value="190"/>
+																								<Property Name="GainBand2" Type="Real32" Value="-6"/>
+																								<Property Name="QFactorBand2" Type="Real32" Value="2"/>
+																							</PropertyList>
+																						</Effect>
+																					</Custom>
 																				</Reference>
 																				<Reference Name="OutputBus">
 																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
@@ -26211,7 +26288,6 @@
 																	<ChildrenList>
 																		<RandomSequenceContainer Name="Fttps_Puddle_Run_RND" ID="{1BA27112-2DEB-4D8E-8062-C2F605C882ED}" ShortID="780973775">
 																			<PropertyList>
-																				<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 																				<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 																				<Property Name="MaxSoundPerInstance" Type="int16">
 																					<ValueList>
@@ -26220,11 +26296,6 @@
 																				</Property>
 																				<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 																				<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
-																				<Property Name="UseMaxSoundPerInstance" Type="bool">
-																					<ValueList>
-																						<Value>True</Value>
-																					</ValueList>
-																				</Property>
 																			</PropertyList>
 																			<ReferenceList>
 																				<Reference Name="Conversion">
@@ -26331,10 +26402,16 @@
 																				<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 																				<Property Name="MaxSoundPerInstance" Type="int16">
 																					<ValueList>
-																						<Value>1</Value>
+																						<Value>2</Value>
 																					</ValueList>
 																				</Property>
+																				<Property Name="OverrideEffect" Type="bool" Value="True"/>
 																				<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+																				<Property Name="RenderEffect0" Type="bool">
+																					<ValueList>
+																						<Value>True</Value>
+																					</ValueList>
+																				</Property>
 																				<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 																				<Property Name="UseMaxSoundPerInstance" Type="bool">
 																					<ValueList>
@@ -26345,6 +26422,17 @@
 																			<ReferenceList>
 																				<Reference Name="Conversion">
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																				</Reference>
+																				<Reference Name="Effect0">
+																					<Custom>
+																						<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{9B48209C-FB1B-4253-84B5-0F99705C33F3}" ShortID="600823727" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+																							<PropertyList>
+																								<Property Name="FrequencyBand2" Type="Real32" Value="190"/>
+																								<Property Name="GainBand2" Type="Real32" Value="-6"/>
+																								<Property Name="QFactorBand2" Type="Real32" Value="2"/>
+																							</PropertyList>
+																						</Effect>
+																					</Custom>
 																				</Reference>
 																				<Reference Name="OutputBus">
 																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
@@ -28057,6 +28145,11 @@
 														<RandomSequenceContainer Name="Fttps_Mud_Run_RND" ID="{613179A2-E108-4A93-8697-BA28366C1FAE}" ShortID="494322899">
 															<PropertyList>
 																<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-3</Value>
+																	</ValueList>
+																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
@@ -28794,7 +28887,6 @@
 														</RandomSequenceContainer>
 														<RandomSequenceContainer Name="Fttps_LR_Water_Run_SEQ" ID="{25C443C1-BF5D-4F66-AD2A-96EFECB69580}" ShortID="592873743">
 															<PropertyList>
-																<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 																<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 																<Property Name="MaxSoundPerInstance" Type="int16">
 																	<ValueList>
@@ -28802,11 +28894,6 @@
 																	</ValueList>
 																</Property>
 																<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-																<Property Name="UseMaxSoundPerInstance" Type="bool">
-																	<ValueList>
-																		<Value>True</Value>
-																	</ValueList>
-																</Property>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
 																		<Value>2</Value>
@@ -28843,7 +28930,6 @@
 																	<ChildrenList>
 																		<RandomSequenceContainer Name="Fttps_Puddle_Run_RND" ID="{560204D2-1BD4-4EB8-9BF3-13251C51CB1A}" ShortID="238029512">
 																			<PropertyList>
-																				<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 																				<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 																				<Property Name="MaxSoundPerInstance" Type="int16">
 																					<ValueList>
@@ -28852,11 +28938,6 @@
 																				</Property>
 																				<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 																				<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
-																				<Property Name="UseMaxSoundPerInstance" Type="bool">
-																					<ValueList>
-																						<Value>True</Value>
-																					</ValueList>
-																				</Property>
 																			</PropertyList>
 																			<ReferenceList>
 																				<Reference Name="Conversion">
@@ -28963,10 +29044,16 @@
 																				<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 																				<Property Name="MaxSoundPerInstance" Type="int16">
 																					<ValueList>
-																						<Value>1</Value>
+																						<Value>2</Value>
 																					</ValueList>
 																				</Property>
+																				<Property Name="OverrideEffect" Type="bool" Value="True"/>
 																				<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+																				<Property Name="RenderEffect0" Type="bool">
+																					<ValueList>
+																						<Value>True</Value>
+																					</ValueList>
+																				</Property>
 																				<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 																				<Property Name="UseMaxSoundPerInstance" Type="bool">
 																					<ValueList>
@@ -28977,6 +29064,17 @@
 																			<ReferenceList>
 																				<Reference Name="Conversion">
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																				</Reference>
+																				<Reference Name="Effect0">
+																					<Custom>
+																						<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{248ED063-6165-427E-A672-8B3C8A4CCEBB}" ShortID="156766871" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+																							<PropertyList>
+																								<Property Name="FrequencyBand2" Type="Real32" Value="190"/>
+																								<Property Name="GainBand2" Type="Real32" Value="-6"/>
+																								<Property Name="QFactorBand2" Type="Real32" Value="2"/>
+																							</PropertyList>
+																						</Effect>
+																					</Custom>
 																				</Reference>
 																				<Reference Name="OutputBus">
 																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
@@ -29004,7 +29102,7 @@
 																							<Language>SFX</Language>
 																							<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_00.wav</AudioFile>
 																							<MediaIDList>
-																								<MediaID ID="85024138"/>
+																								<MediaID ID="315979660"/>
 																							</MediaIDList>
 																						</AudioFileSource>
 																					</ChildrenList>
@@ -29033,7 +29131,7 @@
 																							<Language>SFX</Language>
 																							<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_01.wav</AudioFile>
 																							<MediaIDList>
-																								<MediaID ID="799387833"/>
+																								<MediaID ID="271833731"/>
 																							</MediaIDList>
 																						</AudioFileSource>
 																					</ChildrenList>
@@ -29062,7 +29160,7 @@
 																							<Language>SFX</Language>
 																							<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_02.wav</AudioFile>
 																							<MediaIDList>
-																								<MediaID ID="789268961"/>
+																								<MediaID ID="977243115"/>
 																							</MediaIDList>
 																						</AudioFileSource>
 																					</ChildrenList>
@@ -29091,7 +29189,7 @@
 																							<Language>SFX</Language>
 																							<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_03.wav</AudioFile>
 																							<MediaIDList>
-																								<MediaID ID="502448179"/>
+																								<MediaID ID="1023238537"/>
 																							</MediaIDList>
 																						</AudioFileSource>
 																					</ChildrenList>
@@ -29234,7 +29332,6 @@
 																	<ChildrenList>
 																		<RandomSequenceContainer Name="Fttps_Puddle_Run_RND" ID="{39F63601-8279-4ED9-983C-7BA548B86E67}" ShortID="325257136">
 																			<PropertyList>
-																				<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 																				<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 																				<Property Name="MaxSoundPerInstance" Type="int16">
 																					<ValueList>
@@ -29243,11 +29340,6 @@
 																				</Property>
 																				<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 																				<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
-																				<Property Name="UseMaxSoundPerInstance" Type="bool">
-																					<ValueList>
-																						<Value>True</Value>
-																					</ValueList>
-																				</Property>
 																			</PropertyList>
 																			<ReferenceList>
 																				<Reference Name="Conversion">
@@ -29354,10 +29446,16 @@
 																				<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 																				<Property Name="MaxSoundPerInstance" Type="int16">
 																					<ValueList>
-																						<Value>1</Value>
+																						<Value>2</Value>
 																					</ValueList>
 																				</Property>
+																				<Property Name="OverrideEffect" Type="bool" Value="True"/>
 																				<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+																				<Property Name="RenderEffect0" Type="bool">
+																					<ValueList>
+																						<Value>True</Value>
+																					</ValueList>
+																				</Property>
 																				<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 																				<Property Name="UseMaxSoundPerInstance" Type="bool">
 																					<ValueList>
@@ -29368,6 +29466,17 @@
 																			<ReferenceList>
 																				<Reference Name="Conversion">
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+																				</Reference>
+																				<Reference Name="Effect0">
+																					<Custom>
+																						<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{9247F5CE-A349-4DA7-AEEF-17DC37B17B9A}" ShortID="869757301" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+																							<PropertyList>
+																								<Property Name="FrequencyBand2" Type="Real32" Value="190"/>
+																								<Property Name="GainBand2" Type="Real32" Value="-6"/>
+																								<Property Name="QFactorBand2" Type="Real32" Value="2"/>
+																							</PropertyList>
+																						</Effect>
+																					</Custom>
 																				</Reference>
 																				<Reference Name="OutputBus">
 																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
@@ -29395,7 +29504,7 @@
 																							<Language>SFX</Language>
 																							<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_04.wav</AudioFile>
 																							<MediaIDList>
-																								<MediaID ID="433412623"/>
+																								<MediaID ID="870679079"/>
 																							</MediaIDList>
 																						</AudioFileSource>
 																					</ChildrenList>
@@ -29424,7 +29533,7 @@
 																							<Language>SFX</Language>
 																							<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_05.wav</AudioFile>
 																							<MediaIDList>
-																								<MediaID ID="843620571"/>
+																								<MediaID ID="258192512"/>
 																							</MediaIDList>
 																						</AudioFileSource>
 																					</ChildrenList>
@@ -29453,7 +29562,7 @@
 																							<Language>SFX</Language>
 																							<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_06.wav</AudioFile>
 																							<MediaIDList>
-																								<MediaID ID="677916102"/>
+																								<MediaID ID="914192816"/>
 																							</MediaIDList>
 																						</AudioFileSource>
 																					</ChildrenList>
@@ -29482,7 +29591,7 @@
 																							<Language>SFX</Language>
 																							<AudioFile>SFX_HA_Character_Footsteps_WaterIn_Run_07.wav</AudioFile>
 																							<MediaIDList>
-																								<MediaID ID="72944737"/>
+																								<MediaID ID="481315958"/>
 																							</MediaIDList>
 																						</AudioFileSource>
 																					</ChildrenList>
