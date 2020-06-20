@@ -204,6 +204,10 @@
 							<Value>100</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="Current_Intensity_GP" ID="{276D662E-DD1D-4996-B906-0DE63D6C5EC5}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Distance_Cam_To_Grass_GP" ID="{BECB20DB-E884-4A15-91EA-2B9E82A24591}"/>
 							<Value>4000</Value>
 						</RTPCValue>
@@ -249,6 +253,7 @@
 						<CurrentStateRef Name="No_Ship_Sinking" ID="{61F19502-08FC-437E-AFCF-D89896B4FCA5}"/>
 						<CurrentStateRef Name="None" ID="{B83E4870-EE12-480B-A54C-32436863F222}"/>
 						<CurrentStateRef Name="Here_Storm" ID="{A0300296-6DED-4FB9-8C27-F9CECC588BFE}"/>
+						<CurrentStateRef Name="None" ID="{9799993D-8E7E-437B-AFE6-0259AA0C72B0}"/>
 						<CurrentStateRef Name="Crate" ID="{3EF4FD84-9C0E-4693-B4B9-EABBD5455526}"/>
 						<CurrentStateRef Name="No_Char_Singing" ID="{CC851A52-942B-4F5D-984D-2F321AFDD69E}"/>
 						<CurrentStateRef Name="Walking" ID="{0DA3EC48-DE20-451C-A639-31F81343B6E8}"/>
@@ -256,7 +261,7 @@
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Far_Thunder" ID="{B5D774AC-EFDC-4A3E-8D5C-CC9E48E513CA}"/>
-						<CurrentSwitchRef Name="DryDirt" ID="{3ACDF8C5-731A-4217-817C-5A3173606D9C}"/>
+						<CurrentSwitchRef Name="Bridge" ID="{49AB51FC-6299-40EA-B480-7A44D775B231}"/>
 						<CurrentSwitchRef Name="Compass" ID="{CA054260-4F3C-411B-8F93-A47EAE9EAF92}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
@@ -273,6 +278,10 @@
 						<Module>
 							<ObjectRef Name="E_Intro_Play" ID="{CC3DC222-42EF-42BE-B1BE-BC03E6450DAB}" WorkUnitID="{4ADDE529-1277-4E72-9EF3-BDCDA35E952A}"/>
 							<Position X="0" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Ship_Anchor_Raised" ID="{99F343A7-BE85-4D6A-9F5E-B3C4F99BAAA9}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
+							<Position X="0" Y="6"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="E_Mus_Initiate_Music" ID="{3B75DBEE-0C3B-4CCC-967F-BE9786285E6F}" WorkUnitID="{0ED7EBA1-F621-4832-9054-98078A25E231}"/>
@@ -315,6 +324,10 @@
 							<Position X="2" Y="4"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="E_Ship_Anchor_Stop_Raising" ID="{798B3922-9306-4766-B260-6EF31E83C9C3}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
+							<Position X="2" Y="5"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="E_Mus_Set_Char_Singing_NO" ID="{323AA92A-059F-47AF-8B83-A0C63F0293B2}" WorkUnitID="{0ED7EBA1-F621-4832-9054-98078A25E231}"/>
 							<Position X="2" Y="6"/>
 						</Module>
@@ -325,6 +338,10 @@
 						<Module>
 							<ObjectRef Name="E_Mus_Set_New_Island_Jingle" ID="{E73D55AC-4F77-4D3D-887B-157A05116FA9}" WorkUnitID="{0ED7EBA1-F621-4832-9054-98078A25E231}"/>
 							<Position X="3" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Ship_Anchor_Raising" ID="{B39F84D2-1D8C-447C-817A-5D530564F5A9}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>
+							<Position X="3" Y="6"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="E_Ship_Enter_Hold" ID="{47F8F7D5-0338-4070-8140-A6A7BCF20A75}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}"/>

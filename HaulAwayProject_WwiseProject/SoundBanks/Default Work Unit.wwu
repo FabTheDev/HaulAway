@@ -61,6 +61,7 @@
 						<ObjectRef Name="E_HUD_ModuleSelection_Jib" ID="{46D86D0E-A053-4431-AD4C-5A3FBC77A844}" WorkUnitID="{8A36F450-6135-4EB0-87E8-D4540DB8E015}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Voice_Impact" ID="{BA62C5B6-B6E2-4454-8E5D-3D35064CC8C1}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Mus_Set_No_Theme" ID="{D2EB5110-9CA9-446B-9D83-2EF3D7D1DC6E}" WorkUnitID="{0ED7EBA1-F621-4832-9054-98078A25E231}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="E_Ship_Anchor_Raising" ID="{B39F84D2-1D8C-447C-817A-5D530564F5A9}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Voice_NoWind_GoingAnywhereLikeThat" ID="{CF36212F-E7C3-44BA-924C-65FD22DDC68B}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Enviro_StartFire" ID="{7FD20740-1BEA-44D3-AD57-70039DF87BE2}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Mus_Set_Fire_Lit_Jingle" ID="{99F51088-29FB-44E3-B64D-D4614A1F48F8}" WorkUnitID="{0ED7EBA1-F621-4832-9054-98078A25E231}" Origin="Manual" Filter="7"/>
@@ -94,6 +95,7 @@
 						<ObjectRef Name="E_Mus_Set_Main_Theme" ID="{3D68DE05-DECB-474B-B343-33CB0A544A89}" WorkUnitID="{0ED7EBA1-F621-4832-9054-98078A25E231}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_UI_Book_MapMark" ID="{BBBA1724-FB73-4752-B849-235F4F86AE22}" WorkUnitID="{8A36F450-6135-4EB0-87E8-D4540DB8E015}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Enviro_AmbWindGlobal" ID="{F2B51A9B-EAE0-4765-853C-48D5164CE814}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="E_Ship_Anchor_Stop_Raising" ID="{798B3922-9306-4766-B260-6EF31E83C9C3}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Tempest_Rain_LOOP" ID="{3729D649-8877-4779-99D8-E01E059231BD}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Mus_Set_Char_Singing_NO" ID="{323AA92A-059F-47AF-8B83-A0C63F0293B2}" WorkUnitID="{0ED7EBA1-F621-4832-9054-98078A25E231}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Mus_Pause_Music" ID="{33C54356-C04E-47E0-AA2D-E3EA35080350}" WorkUnitID="{0ED7EBA1-F621-4832-9054-98078A25E231}" Origin="Manual" Filter="7"/>
@@ -175,6 +177,7 @@
 						<ObjectRef Name="E_Ship_Sail_Downing" ID="{358B4B0B-29F3-4D38-A8AB-F6068D64988E}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_UI_Book_OpenMenu" ID="{CF56E57D-7AD1-4D39-AEDD-8C8CFF8E6A48}" WorkUnitID="{8A36F450-6135-4EB0-87E8-D4540DB8E015}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Mus_Set_New_Island_Jingle" ID="{E73D55AC-4F77-4D3D-887B-157A05116FA9}" WorkUnitID="{0ED7EBA1-F621-4832-9054-98078A25E231}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="E_Ship_Anchor_Raised" ID="{99F343A7-BE85-4D6A-9F5E-B3C4F99BAAA9}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_HUD_ModuleSelection_MainSail" ID="{78B2445B-7EEF-4D8A-9308-49CBD03F5584}" WorkUnitID="{8A36F450-6135-4EB0-87E8-D4540DB8E015}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Voice_Inhale" ID="{B44F5068-F421-4DAA-ABA1-75381562FCCB}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Character_WaterIn" ID="{0E9F5ECB-E976-4DDD-841D-4D24185EBA2B}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}" Origin="Manual" Filter="7"/>
