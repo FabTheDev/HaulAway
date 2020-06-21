@@ -11105,7 +11105,7 @@
 												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-16</Value>
+														<Value>-14</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -13141,150 +13141,6 @@
 																<ActiveSource Name="SFX_HA_Enviro_WindSoft" ID="{C69F2E56-C21B-4EEC-9988-015EDB1666E5}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
-														<Sound Name="SFX_HA_Enviro_TreeWind" ID="{FCA6259D-7C86-4502-986C-E537ADD89A0E}" ShortID="820447522">
-															<PropertyList>
-																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-																<Property Name="MakeUpGain" Type="Real64">
-																	<RTPCList>
-																		<RTPC Name="" ID="{2D9A31CE-CF56-43FE-A0A9-F41C8A0C4AA7}" ShortID="625235746">
-																			<ReferenceList>
-																				<Reference Name="ControlInput">
-																					<ObjectRef Name="Wind_Amb_Intensity_GP" ID="{E997DDF4-D043-4C9B-B2AE-152EE5C1DD00}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<Curve Name="" ID="{418BD71A-5C8B-4E4B-ADC2-700CA714DD70}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="3"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>-6</YPos>
-																						<Flags>5</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>0.6</XPos>
-																						<YPos>0</YPos>
-																						<Flags>0</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>1</XPos>
-																						<YPos>0</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</RTPC>
-																	</RTPCList>
-																</Property>
-																<Property Name="Volume" Type="Real64">
-																	<ValueList>
-																		<Value>3</Value>
-																	</ValueList>
-																</Property>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-																</Reference>
-																<Reference Name="UserAuxSend0">
-																	<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Enviro_TreeWind" ID="{3FF78FD3-B501-4E8B-94A0-5D4D89F7446C}">
-																	<PropertyList>
-																		<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-																		<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-																		<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-																		<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-																	</PropertyList>
-																	<Language>SFX</Language>
-																	<AudioFile>SFX_HA_Enviro_TreeWind.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="50905507"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="SFX_HA_Enviro_TreeWind" ID="{3FF78FD3-B501-4E8B-94A0-5D4D89F7446C}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="SFX_HA_Enviro_BushWind" ID="{1A19AF77-4743-46DB-AE75-E5B626C90376}" ShortID="80420517">
-															<PropertyList>
-																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-																<Property Name="MakeUpGain" Type="Real64">
-																	<RTPCList>
-																		<RTPC Name="" ID="{BDA951CB-C25C-42C6-88CF-51D9E3816854}" ShortID="878739506">
-																			<ReferenceList>
-																				<Reference Name="ControlInput">
-																					<ObjectRef Name="Wind_Amb_Intensity_GP" ID="{E997DDF4-D043-4C9B-B2AE-152EE5C1DD00}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<Curve Name="" ID="{4516350C-5743-441C-99C0-5D0A63C7C2C0}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="3"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>-6</YPos>
-																						<Flags>5</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>0.6</XPos>
-																						<YPos>0</YPos>
-																						<Flags>0</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>1</XPos>
-																						<YPos>0</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</RTPC>
-																	</RTPCList>
-																</Property>
-																<Property Name="Volume" Type="Real64">
-																	<ValueList>
-																		<Value>3</Value>
-																	</ValueList>
-																</Property>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="SFX_BUS" ID="{20983A35-6851-4A44-8984-9706797EFD8A}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-																</Reference>
-																<Reference Name="UserAuxSend0">
-																	<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="SFX_HA_Enviro_BushWind" ID="{C45B0130-F5DB-43A7-8E5A-1FBEDD25F9E4}">
-																	<PropertyList>
-																		<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-																		<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-																		<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-																		<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-																	</PropertyList>
-																	<Language>SFX</Language>
-																	<AudioFile>SFX_HA_Enviro_BushWind.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="881939943"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="SFX_HA_Enviro_BushWind" ID="{C45B0130-F5DB-43A7-8E5A-1FBEDD25F9E4}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
 														<Sound Name="SFX_HA_Enviro_GrassWind" ID="{75F2D47B-7026-492B-906D-9D71B5FA56A7}" ShortID="359494885">
 															<PropertyList>
 																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
@@ -13638,106 +13494,6 @@
 																</BlendTrackAssoc>
 															</BlendTrackAssocList>
 														</BlendTrack>
-														<BlendTrack Name="Bush" ID="{57DD8717-D6E4-421D-91EE-F9906A31E4AC}" ShortID="543632515">
-															<PropertyList>
-																<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-																<Property Name="Volume" Type="Real64">
-																	<RTPCList>
-																		<RTPC Name="" ID="{DDBCD24B-B096-4D3A-B698-426E41FFC2EA}" ShortID="849199844">
-																			<ReferenceList>
-																				<Reference Name="ControlInput">
-																					<ObjectRef Name="Distance_Cam_To_Bush_GP" ID="{0E3723AD-EEB8-4451-B6AC-E6E79C4281B7}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<Curve Name="" ID="{EAD5B74A-A3F6-4A09-82D2-2B2F8E8DEF72}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="3"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>0</YPos>
-																						<Flags>5</Flags>
-																						<SegmentShape>Log1</SegmentShape>
-																					</Point>
-																					<Point>
-																						<XPos>4000</XPos>
-																						<YPos>-200</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</RTPC>
-																	</RTPCList>
-																</Property>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="LayerCrossFadeControlInput">
-																	<ObjectRef Name="Distance_Cam_To_Bush_GP" ID="{0E3723AD-EEB8-4451-B6AC-E6E79C4281B7}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
-																</Reference>
-															</ReferenceList>
-															<BlendTrackAssocList>
-																<BlendTrackAssoc>
-																	<ItemRef Name="SFX_HA_Enviro_BushWind" ID="{1A19AF77-4743-46DB-AE75-E5B626C90376}"/>
-																	<CrossfadingInfo>
-																		<LeftEdgePos>0</LeftEdgePos>
-																		<LeftFadingMode>Automatic</LeftFadingMode>
-																		<RightEdgePos>4000</RightEdgePos>
-																		<RightFadingMode>Automatic</RightFadingMode>
-																	</CrossfadingInfo>
-																</BlendTrackAssoc>
-															</BlendTrackAssocList>
-														</BlendTrack>
-														<BlendTrack Name="Tree" ID="{95103C68-8194-4DA2-A0E4-9C047B0A667D}" ShortID="14186871">
-															<PropertyList>
-																<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-																<Property Name="Volume" Type="Real64">
-																	<RTPCList>
-																		<RTPC Name="" ID="{13A68EB8-09B4-4949-83B9-3BD14375F4F6}" ShortID="56537974">
-																			<ReferenceList>
-																				<Reference Name="ControlInput">
-																					<ObjectRef Name="Distance_Cam_To_Tree_GP" ID="{119836F0-9B41-495F-8C19-71FF16CEC3B5}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<Curve Name="" ID="{9DA71584-D372-4AB3-A6E4-EC545F05F713}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="3"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>0</YPos>
-																						<Flags>5</Flags>
-																						<SegmentShape>Log1</SegmentShape>
-																					</Point>
-																					<Point>
-																						<XPos>4000</XPos>
-																						<YPos>-200</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</RTPC>
-																	</RTPCList>
-																</Property>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="LayerCrossFadeControlInput">
-																	<ObjectRef Name="Distance_Cam_To_Tree_GP" ID="{119836F0-9B41-495F-8C19-71FF16CEC3B5}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
-																</Reference>
-															</ReferenceList>
-															<BlendTrackAssocList>
-																<BlendTrackAssoc>
-																	<ItemRef Name="SFX_HA_Enviro_TreeWind" ID="{FCA6259D-7C86-4502-986C-E537ADD89A0E}"/>
-																	<CrossfadingInfo>
-																		<LeftEdgePos>0</LeftEdgePos>
-																		<LeftFadingMode>Automatic</LeftFadingMode>
-																		<RightEdgePos>4000</RightEdgePos>
-																		<RightFadingMode>Automatic</RightFadingMode>
-																	</CrossfadingInfo>
-																</BlendTrackAssoc>
-															</BlendTrackAssocList>
-														</BlendTrack>
 													</BlendTrackList>
 												</BlendContainer>
 											</ChildrenList>
@@ -13842,6 +13598,168 @@
 												</BlendTrack>
 											</BlendTrackList>
 										</BlendContainer>
+										<Sound Name="SFX_HA_Enviro_BushWind" ID="{1A19AF77-4743-46DB-AE75-E5B626C90376}" ShortID="80420517">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="MakeUpGain" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{BDA951CB-C25C-42C6-88CF-51D9E3816854}" ShortID="878739506">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Wind_Amb_Intensity_GP" ID="{E997DDF4-D043-4C9B-B2AE-152EE5C1DD00}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{4516350C-5743-441C-99C0-5D0A63C7C2C0}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-6</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.6</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Amb_SFX_SUBBUS" ID="{3A01C79B-0390-4B56-B897-17964DBC765E}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+												<Reference Name="UserAuxSend1">
+													<ObjectRef Name="Cave_Acoustic_SFX_AUX" ID="{01568535-8555-4C9B-B2EA-164F84B37D78}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_HA_Enviro_BushWind" ID="{C45B0130-F5DB-43A7-8E5A-1FBEDD25F9E4}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>SFX_HA_Enviro_BushWind.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="881939943"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_HA_Enviro_BushWind" ID="{C45B0130-F5DB-43A7-8E5A-1FBEDD25F9E4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_HA_Enviro_TreeWind" ID="{FCA6259D-7C86-4502-986C-E537ADD89A0E}" ShortID="820447522">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="MakeUpGain" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{2D9A31CE-CF56-43FE-A0A9-F41C8A0C4AA7}" ShortID="625235746">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Wind_Amb_Intensity_GP" ID="{E997DDF4-D043-4C9B-B2AE-152EE5C1DD00}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{418BD71A-5C8B-4E4B-ADC2-700CA714DD70}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-6</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.6</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="ATT_Tree" ID="{B1CE5A55-0D6F-4BC7-8CEE-57F9048BDF49}" WorkUnitID="{ECCA167F-1726-4A47-BB4C-2B3121B715A3}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis_Conversion_MaxQuality" ID="{DE149B12-ECFA-4271-B28F-EAE606C5CEB2}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Amb_SFX_SUBBUS" ID="{3A01C79B-0390-4B56-B897-17964DBC765E}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Exterior_Acoustic_SFX_AUX" ID="{390D116F-CA01-44C8-A8DE-FAF79069473B}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+												<Reference Name="UserAuxSend1">
+													<ObjectRef Name="Cave_Acoustic_SFX_AUX" ID="{01568535-8555-4C9B-B2EA-164F84B37D78}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_HA_Enviro_TreeWind" ID="{3FF78FD3-B501-4E8B-94A0-5D4D89F7446C}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>SFX_HA_Enviro_TreeWind.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="50905507"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_HA_Enviro_TreeWind" ID="{3FF78FD3-B501-4E8B-94A0-5D4D89F7446C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 								</ActorMixer>
 								<ActorMixer Name="Amb Sea" ID="{1E5AE00D-6B66-4F12-BE13-DB4EA5AB62DF}" ShortID="123713519">
@@ -18938,6 +18856,35 @@
 															<PropertyList>
 																<Property Name="3DPosition" Type="int16" Value="1"/>
 																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="MakeUpGain" Type="Real64">
+																	<RTPCList>
+																		<RTPC Name="" ID="{96C2C6EA-433E-401E-9DA0-95447DAC9644}" ShortID="335634714">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="Distance_Cam_To_Grass_GP" ID="{BECB20DB-E884-4A15-91EA-2B9E82A24591}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{DF35567F-53BA-4240-BBB5-FB785EE6A4E1}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																						<SegmentShape>Exp3</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>4000</XPos>
+																						<YPos>-192</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
 																<Property Name="OverridePositioning" Type="bool" Value="True"/>
 																<Property Name="Pitch" Type="int32">
 																	<ModifierList>
@@ -20039,6 +19986,35 @@
 															<PropertyList>
 																<Property Name="3DPosition" Type="int16" Value="1"/>
 																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="MakeUpGain" Type="Real64">
+																	<RTPCList>
+																		<RTPC Name="" ID="{30AC803D-24B0-4928-9615-A791876B4D4E}" ShortID="996810664">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="Distance_Cam_To_Grass_GP" ID="{BECB20DB-E884-4A15-91EA-2B9E82A24591}" WorkUnitID="{1A7FBC17-7773-4724-AF80-50744009062C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{B420321D-E918-4602-B553-1045D7A7D271}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																						<SegmentShape>Exp3</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>4000</XPos>
+																						<YPos>-192</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
 																<Property Name="OverridePositioning" Type="bool" Value="True"/>
 																<Property Name="Pitch" Type="int32">
 																	<ModifierList>
@@ -22188,6 +22164,13 @@
 											</ReferenceList>
 											<ChildrenList>
 												<Sound Name="SFX_HA_Character_Pickup_MetalPiece" ID="{EB89008A-FECA-4937-B96E-7C4D49B57B2A}" ShortID="678483305">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
@@ -22600,7 +22583,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D17D95CF-37DF-4BBD-9C51-64DF2C0BF05D}"/>
 												</Reference>
 												<Reference Name="DefaultSwitchOrState">
-													<ObjectRef Name="MetalPiece" ID="{519E237A-8D7C-4ADE-8896-3F24C4CC8A8C}" WorkUnitID="{B2EF58AA-AC08-48B1-B753-34CCFE6A3AB5}"/>
+													<ObjectRef Name="SailPiece" ID="{7B24844F-977A-40C6-B5BA-60EAB428EC4B}" WorkUnitID="{B2EF58AA-AC08-48B1-B753-34CCFE6A3AB5}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{969F1B0A-73DD-4C8B-999B-29702C427718}"/>
@@ -22715,13 +22698,13 @@
 													<Grouping>
 														<SwitchRef Name="PaperSheet" ID="{6325DC74-50A2-43D5-9061-1D7C0CD1CB9A}"/>
 														<ItemList>
-															<ItemRef Name="Silence" ID="{5D8A6A72-64A2-44B1-9089-798CCC174770}"/>
+															<ItemRef Name="SFX_PickUp_SpecialItem" ID="{742542E3-F90B-4293-A3B4-ACF7192E80FA}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
 														<SwitchRef Name="MetalPiece" ID="{519E237A-8D7C-4ADE-8896-3F24C4CC8A8C}"/>
 														<ItemList>
-															<ItemRef Name="Silence" ID="{5D8A6A72-64A2-44B1-9089-798CCC174770}"/>
+															<ItemRef Name="SFX_PickUp_SpecialItem" ID="{742542E3-F90B-4293-A3B4-ACF7192E80FA}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>

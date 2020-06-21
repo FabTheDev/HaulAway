@@ -34,12 +34,14 @@
 						<ObjectRef Name="E_Mus_Set_Sailing_Theme" ID="{808CB8CC-C0A6-421F-8776-645480621397}" WorkUnitID="{0ED7EBA1-F621-4832-9054-98078A25E231}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_UI_Book_Hightlight" ID="{0B373985-AAEB-4229-AB09-03C1B85009EC}" WorkUnitID="{8A36F450-6135-4EB0-87E8-D4540DB8E015}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Voice_Anecdote_HowTheyUsedToCallMe" ID="{A1BAA6D6-D61D-4230-ACA2-D79E5D1FE0B5}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="E_Enviro_TreeWind_Play" ID="{336512AD-2F7B-4255-9D42-54EC341BD979}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Voice_Collision_WhatTheHell" ID="{E96F41E7-CAAD-425C-BD8C-233F822F2C3E}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Voice_Drowning_LOOP" ID="{EEBA7EFF-100F-4268-876A-3B788936C9AF}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Mus_Set_Char_Singing_YES" ID="{80F59379-0A36-4271-BD67-2D0DBE50D43A}" WorkUnitID="{0ED7EBA1-F621-4832-9054-98078A25E231}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_HUD_FreezingScreen_State2" ID="{7180BA8F-3819-428A-A935-B1B912B600F1}" WorkUnitID="{8A36F450-6135-4EB0-87E8-D4540DB8E015}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_UI_Book_StrongValidation" ID="{C008158F-B19A-428F-B52F-B58B4526A6B1}" WorkUnitID="{8A36F450-6135-4EB0-87E8-D4540DB8E015}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Voice_Success" ID="{F4719C63-822F-4294-97CE-DC9D3FD833BF}" WorkUnitID="{4B96F509-AAEF-4520-8D4E-5194A5EA0189}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="E_Enviro_TreeWind_Stop" ID="{8AFE4D0E-9B2E-42A4-ACBE-2181806FE579}" WorkUnitID="{B3567B93-CA6F-4D7B-8B4A-994FDCFCE9FD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Mus_Set_Going_To_Sea_Theme" ID="{2A0FE6B5-153A-42B1-82C7-47F9585E64D1}" WorkUnitID="{0ED7EBA1-F621-4832-9054-98078A25E231}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_HUD_ModuleSelection_Sheet" ID="{02E8FD5F-A744-42BA-8016-5BC2F7D5A947}" WorkUnitID="{8A36F450-6135-4EB0-87E8-D4540DB8E015}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="E_Intro_Play" ID="{CC3DC222-42EF-42BE-B1BE-BC03E6450DAB}" WorkUnitID="{4ADDE529-1277-4E72-9EF3-BDCDA35E952A}" Origin="Manual" Filter="7"/>
