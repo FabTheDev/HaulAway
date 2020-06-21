@@ -1122,14 +1122,28 @@
 						</Event>
 						<Event Name="E_Voice_Drowned" ID="{EFEC4E06-D06F-4676-8FBE-7A359743F43B}">
 							<ChildrenList>
+								<Action Name="" ID="{3680E7EB-DB22-4212-ACFF-93786A2302D1}" ShortID="677537697">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Cold" ID="{4C8A0500-6108-4A51-A7AA-16715352B07B}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{8A10DB6C-EE3A-4521-A5C0-CC92A055F168}" ShortID="643330539">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
 										<Property Name="Delay" Type="Real64" Value="0.1"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Voice_Drowning_BLEND" ID="{DF1A8137-83BB-49FF-BB69-9DA12644B792}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+											<ObjectRef Name="Drowning" ID="{6755A3A1-66A6-4037-8A77-AD8074D84D23}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -1152,6 +1166,7 @@
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
 										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -1162,6 +1177,7 @@
 								<Action Name="" ID="{F843DFC2-C200-4969-A211-F3ABB1835DFB}" ShortID="780770496">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -1216,10 +1232,11 @@
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
 										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Voice_Drowning_BLEND" ID="{DF1A8137-83BB-49FF-BB69-9DA12644B792}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+											<ObjectRef Name="Drowning" ID="{6755A3A1-66A6-4037-8A77-AD8074D84D23}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -1256,10 +1273,11 @@
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
 										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Drowning" ID="{6755A3A1-66A6-4037-8A77-AD8074D84D23}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
+											<ObjectRef Name="Cold" ID="{4C8A0500-6108-4A51-A7AA-16715352B07B}" WorkUnitID="{DB22F246-6ABF-435C-BD49-5F706FFA9473}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -1312,6 +1330,7 @@
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
 										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -1327,6 +1346,7 @@
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
 										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">

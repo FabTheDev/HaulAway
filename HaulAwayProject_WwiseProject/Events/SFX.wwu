@@ -1350,6 +1350,39 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="E_Enviro_TreeWind_Play" ID="{336512AD-2F7B-4255-9D42-54EC341BD979}">
+									<ChildrenList>
+										<Action Name="" ID="{AFB19859-5519-42AE-B4AF-2ABDE9638B72}" ShortID="1038216157">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="FadeInCurve" Type="int16" Value="7"/>
+												<Property Name="FadeTime" Type="Real64" Value="3"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HA_Enviro_TreeWind" ID="{FCA6259D-7C86-4502-986C-E537ADD89A0E}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Enviro_TreeWind_Stop" ID="{8AFE4D0E-9B2E-42A4-ACBE-2181806FE579}">
+									<ChildrenList>
+										<Action Name="" ID="{3D087978-6D6B-4992-9397-565DF0B06588}" ShortID="699571495">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeOutCurve" Type="int16" Value="7"/>
+												<Property Name="FadeTime" Type="Real64" Value="3"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HA_Enviro_TreeWind" ID="{FCA6259D-7C86-4502-986C-E537ADD89A0E}" WorkUnitID="{98F83E6F-8972-458D-8F2B-9636C851CCCA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Tempest" ID="{38481CEF-E526-4F44-A8A9-58EE4A661841}" ShortID="372274746">
@@ -1653,8 +1686,9 @@
 								<Action Name="" ID="{3C2669C2-43E5-4DBD-99A9-9586F729118A}" ShortID="233651291">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Delay" Type="Real64" Value="0.5"/>
 										<Property Name="FadeOutCurve" Type="int16" Value="7"/>
-										<Property Name="FadeTime" Type="Real64" Value="6"/>
+										<Property Name="FadeTime" Type="Real64" Value="10"/>
 										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
