@@ -5,6 +5,7 @@
 
 
 
+
 void UHaulAwayBlueprintFunctionLibrary::Editor_MoveActorToOutlinerFolder(AActor* Target, const FName & NewFolderPath)
 {
 	if (Target != nullptr)
@@ -14,4 +15,12 @@ void UHaulAwayBlueprintFunctionLibrary::Editor_MoveActorToOutlinerFolder(AActor*
 		#endif
 	}
 	
+}
+
+bool UHaulAwayBlueprintFunctionLibrary::IsEditorMode()
+{
+	#if WITH_EDITOR
+	return true;
+	#endif
+	return false;
 }
