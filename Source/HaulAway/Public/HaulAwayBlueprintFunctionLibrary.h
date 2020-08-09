@@ -5,8 +5,8 @@
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "GameFramework/Actor.h"
-#include "HaulAwayBlueprintFunctionLibrary.generated.h"
 #include "Engine/World.h"
+#include "HaulAwayBlueprintFunctionLibrary.generated.h"
 
 
 /**
